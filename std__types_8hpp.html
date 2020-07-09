@@ -52,7 +52,8 @@ $(function() {
 <div class="title">std_types.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
@@ -97,17 +98,18 @@ Typedefs</h2></td></tr>
 <tr class="separator:afdb0b0272a15d6baa52cee8bfc6cf5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8c13a502727ed2560ac9e037f42b29"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a7a8c13a502727ed2560ac9e037f42b29">le::f64</a> = double</td></tr>
 <tr class="separator:a7a8c13a502727ed2560ac9e037f42b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b8460028fc5dd6f2d9ffeafa7307ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a39b8460028fc5dd6f2d9ffeafa7307ed">le::size_t</a> = std::size_t</td></tr>
-<tr class="separator:a39b8460028fc5dd6f2d9ffeafa7307ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4b6b35bf1146e8039b26cb0cef0c3d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">le::bytearray</a> = std::vector&lt; std::byte &gt;</td></tr>
 <tr class="separator:ab4b6b35bf1146e8039b26cb0cef0c3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcc061547215a62e0a2fdd7b10de830"><td class="memTemplParams" colspan="2">template&lt;typename T , typename E , std::size_t N = (std::size_t)E::eCOUNT_&gt; </td></tr>
+<tr class="memitem:afbcc061547215a62e0a2fdd7b10de830"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#afbcc061547215a62e0a2fdd7b10de830">le::EnumArray</a> = std::array&lt; T, N &gt;</td></tr>
+<tr class="separator:afbcc061547215a62e0a2fdd7b10de830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac92258c5dddd4448dcebff9c9e00edb5"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:ac92258c5dddd4448dcebff9c9e00edb5"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#ac92258c5dddd4448dcebff9c9e00edb5">le::arraySize</a> (T(&amp;)[N])</td></tr>
-<tr class="memdesc:ac92258c5dddd4448dcebff9c9e00edb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the number of elements in a stack array.  <a href="namespacele.html#ac92258c5dddd4448dcebff9c9e00edb5">More...</a><br /></td></tr>
-<tr class="separator:ac92258c5dddd4448dcebff9c9e00edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a0ffa913c7e4371d2a5ce1f5935317ba3">le::arraySize</a> (T(&amp;)[N])</td></tr>
+<tr class="memdesc:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the number of elements in a stack array.  <a href="namespacele.html#a0ffa913c7e4371d2a5ce1f5935317ba3">More...</a><br /></td></tr>
+<tr class="separator:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06341041235ae1ebc1a617aa90551f06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a06341041235ae1ebc1a617aa90551f06"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a06341041235ae1ebc1a617aa90551f06">le::maxVal</a> ()</td></tr>
 <tr class="memdesc:a06341041235ae1ebc1a617aa90551f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the max value for <code>T</code>  <a href="namespacele.html#a06341041235ae1ebc1a617aa90551f06">More...</a><br /></td></tr>
