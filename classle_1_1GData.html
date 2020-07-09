@@ -43,6 +43,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classle_1_1GData-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -50,8 +51,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Dumb wrapper for reading JSON strings.  
+ <a href="classle_1_1GData.html#details">More...</a></p>
+
 <p><code>#include &lt;gdata.hpp&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3a4ff19e6f7435e343e64882a9cca453"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a3a4ff19e6f7435e343e64882a9cca453">Span</a> = std::pair&lt; std::size_t, std::size_t &gt;</td></tr>
+<tr class="separator:a3a4ff19e6f7435e343e64882a9cca453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c57dc656f81b5d8348181c8f8886536"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a7c57dc656f81b5d8348181c8f8886536">read</a> (std::string json)</td></tr>
@@ -60,28 +69,63 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22730cd6edd2d3bbfa8b27e5703d4880"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a22730cd6edd2d3bbfa8b27e5703d4880">get</a> (std::string const &amp;key) const</td></tr>
 <tr class="separator:a22730cd6edd2d3bbfa8b27e5703d4880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7bc0dabab015f1cbecd4790f3fd269"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#acb7bc0dabab015f1cbecd4790f3fd269">getString</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:acb7bc0dabab015f1cbecd4790f3fd269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain string value corresponding to <code>key</code>  <a href="classle_1_1GData.html#acb7bc0dabab015f1cbecd4790f3fd269">More...</a><br /></td></tr>
 <tr class="separator:acb7bc0dabab015f1cbecd4790f3fd269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6fc833043fefdca842eb4719505bfb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a5d6fc833043fefdca842eb4719505bfb">getArray</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:a5d6fc833043fefdca842eb4719505bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain array value corresponding to <code>key</code> (must be enclosed in [])  <a href="classle_1_1GData.html#a5d6fc833043fefdca842eb4719505bfb">More...</a><br /></td></tr>
 <tr class="separator:a5d6fc833043fefdca842eb4719505bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a214593687c6b49d2545f669c0e3c6e91"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classle_1_1GData.html">GData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a214593687c6b49d2545f669c0e3c6e91">getDataArray</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:a214593687c6b49d2545f669c0e3c6e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain array of <a class="el" href="classle_1_1GData.html" title="Dumb wrapper for reading JSON strings.">GData</a> per array value corresponding to <code>key</code>  <a href="classle_1_1GData.html#a214593687c6b49d2545f669c0e3c6e91">More...</a><br /></td></tr>
 <tr class="separator:a214593687c6b49d2545f669c0e3c6e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d973790d467cb3a6f19e032ce8980ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1GData.html">GData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a4d973790d467cb3a6f19e032ce8980ed">getData</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:a4d973790d467cb3a6f19e032ce8980ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <a class="el" href="classle_1_1GData.html" title="Dumb wrapper for reading JSON strings.">GData</a> of value corresponding to <code>key</code> (must be enclosed in {})  <a href="classle_1_1GData.html#a4d973790d467cb3a6f19e032ce8980ed">More...</a><br /></td></tr>
 <tr class="separator:a4d973790d467cb3a6f19e032ce8980ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ea416342440983f9f9c952acab5a24c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a6ea416342440983f9f9c952acab5a24c">getS32</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:a6ea416342440983f9f9c952acab5a24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <code>s32</code> value corresponding to <code>key</code>  <a href="classle_1_1GData.html#a6ea416342440983f9f9c952acab5a24c">More...</a><br /></td></tr>
 <tr class="separator:a6ea416342440983f9f9c952acab5a24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0477071b0aab844945a308da5a042f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a7a8c13a502727ed2560ac9e037f42b29">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#ab0477071b0aab844945a308da5a042f8">getF64</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:ab0477071b0aab844945a308da5a042f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <code>f64</code> value corresponding to <code>key</code>  <a href="classle_1_1GData.html#ab0477071b0aab844945a308da5a042f8">More...</a><br /></td></tr>
 <tr class="separator:ab0477071b0aab844945a308da5a042f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64817d117f6db500adca760d521ab5b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a64817d117f6db500adca760d521ab5b5">getBool</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:a64817d117f6db500adca760d521ab5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <code>bool</code> value corresponding to <code>key</code>  <a href="classle_1_1GData.html#a64817d117f6db500adca760d521ab5b5">More...</a><br /></td></tr>
 <tr class="separator:a64817d117f6db500adca760d521ab5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276e5a3b8a0d39c445cf335828653839"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a276e5a3b8a0d39c445cf335828653839">contains</a> (std::string const &amp;key) const</td></tr>
+<tr class="memdesc:a276e5a3b8a0d39c445cf335828653839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether <code>key</code> was parsed and is present in map.  <a href="classle_1_1GData.html#a276e5a3b8a0d39c445cf335828653839">More...</a><br /></td></tr>
 <tr class="separator:a276e5a3b8a0d39c445cf335828653839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c715d3c4264a2d6b396c1bca2cd728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#aa8c715d3c4264a2d6b396c1bca2cd728">clear</a> ()</td></tr>
+<tr class="memdesc:aa8c715d3c4264a2d6b396c1bca2cd728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset (as if default constructed)  <a href="classle_1_1GData.html#aa8c715d3c4264a2d6b396c1bca2cd728">More...</a><br /></td></tr>
 <tr class="separator:aa8c715d3c4264a2d6b396c1bca2cd728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10d6ad9386b9b4ff370d228e50cd5576"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a39b8460028fc5dd6f2d9ffeafa7307ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a10d6ad9386b9b4ff370d228e50cd5576">fieldCount</a> () const</td></tr>
-<tr class="separator:a10d6ad9386b9b4ff370d228e50cd5576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541c1b80641ee4bd0452bf36ff7b82a8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#a541c1b80641ee4bd0452bf36ff7b82a8">fieldCount</a> () const</td></tr>
+<tr class="memdesc:a541c1b80641ee4bd0452bf36ff7b82a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the count of fields parsed and saved.  <a href="classle_1_1GData.html#a541c1b80641ee4bd0452bf36ff7b82a8">More...</a><br /></td></tr>
+<tr class="separator:a541c1b80641ee4bd0452bf36ff7b82a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac945395470639ba17a240ced284f8873"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#ac945395470639ba17a240ced284f8873">allFields</a> () const</td></tr>
+<tr class="memdesc:ac945395470639ba17a240ced284f8873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain all fields.  <a href="classle_1_1GData.html#ac945395470639ba17a240ced284f8873">More...</a><br /></td></tr>
 <tr class="separator:ac945395470639ba17a240ced284f8873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3ceb229b1b7462fcfdbda5257438cb"><td class="memItemLeft" align="right" valign="top">std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html#afa3ceb229b1b7462fcfdbda5257438cb">original</a> () const</td></tr>
+<tr class="memdesc:afa3ceb229b1b7462fcfdbda5257438cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain original raw string.  <a href="classle_1_1GData.html#afa3ceb229b1b7462fcfdbda5257438cb">More...</a><br /></td></tr>
+<tr class="separator:afa3ceb229b1b7462fcfdbda5257438cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dumb wrapper for reading JSON strings. </p>
+<p>Supported:</p><ol type="1">
+<li>arrays ([...]), objects ({...}), and values</li>
+<li>escaped characters (") </li>
+</ol>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3a4ff19e6f7435e343e64882a9cca453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4ff19e6f7435e343e64882a9cca453">&#9670;&nbsp;</a></span>Span</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1GData.html#a3a4ff19e6f7435e343e64882a9cca453">le::GData::Span</a> =  std::pair&lt;std::size_t, std::size_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac945395470639ba17a240ced284f8873"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac945395470639ba17a240ced284f8873">&#9670;&nbsp;</a></span>allFields()</h2>
@@ -97,6 +141,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain all fields. </p>
 
 </div>
 </div>
@@ -114,6 +160,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reset (as if default constructed) </p>
 
 </div>
 </div>
@@ -133,22 +181,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain whether <code>key</code> was parsed and is present in map. </p>
+
 </div>
 </div>
-<a id="a10d6ad9386b9b4ff370d228e50cd5576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10d6ad9386b9b4ff370d228e50cd5576">&#9670;&nbsp;</a></span>fieldCount()</h2>
+<a id="a541c1b80641ee4bd0452bf36ff7b82a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541c1b80641ee4bd0452bf36ff7b82a8">&#9670;&nbsp;</a></span>fieldCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele.html#a39b8460028fc5dd6f2d9ffeafa7307ed">size_t</a> le::GData::fieldCount </td>
+          <td class="memname">std::size_t le::GData::fieldCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain the count of fields parsed and saved. </p>
 
 </div>
 </div>
@@ -188,6 +240,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain array value corresponding to <code>key</code> (must be enclosed in []) </p>
+
 </div>
 </div>
 <a id="a64817d117f6db500adca760d521ab5b5"></a>
@@ -205,6 +259,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain <code>bool</code> value corresponding to <code>key</code> </p>
 
 </div>
 </div>
@@ -224,6 +280,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain <a class="el" href="classle_1_1GData.html" title="Dumb wrapper for reading JSON strings.">GData</a> of value corresponding to <code>key</code> (must be enclosed in {}) </p>
+
 </div>
 </div>
 <a id="a214593687c6b49d2545f669c0e3c6e91"></a>
@@ -241,6 +299,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain array of <a class="el" href="classle_1_1GData.html" title="Dumb wrapper for reading JSON strings.">GData</a> per array value corresponding to <code>key</code> </p>
 
 </div>
 </div>
@@ -260,6 +320,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain <code>f64</code> value corresponding to <code>key</code> </p>
+
 </div>
 </div>
 <a id="a6ea416342440983f9f9c952acab5a24c"></a>
@@ -278,6 +340,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain <code>s32</code> value corresponding to <code>key</code> </p>
+
 </div>
 </div>
 <a id="acb7bc0dabab015f1cbecd4790f3fd269"></a>
@@ -295,6 +359,27 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain string value corresponding to <code>key</code> </p>
+
+</div>
+</div>
+<a id="afa3ceb229b1b7462fcfdbda5257438cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3ceb229b1b7462fcfdbda5257438cb">&#9670;&nbsp;</a></span>original()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string const&amp; le::GData::original </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain original raw string. </p>
 
 </div>
 </div>

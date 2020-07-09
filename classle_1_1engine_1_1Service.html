@@ -44,6 +44,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classle_1_1engine_1_1Service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">le::engine::Service Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -71,12 +72,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8108c9b6adc2bcdb7754cfb94032fdf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a8108c9b6adc2bcdb7754cfb94032fdf6">start</a> (<a class="el" href="classle_1_1World.html#aaa246a90829687fa45477ad5e2162621">World::ID</a> world)</td></tr>
 <tr class="memdesc:a8108c9b6adc2bcdb7754cfb94032fdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start running the desired world.  <a href="classle_1_1engine_1_1Service.html#a8108c9b6adc2bcdb7754cfb94032fdf6">More...</a><br /></td></tr>
 <tr class="separator:a8108c9b6adc2bcdb7754cfb94032fdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d364a870bb331343392763c064b252"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a70d364a870bb331343392763c064b252">isRunning</a> () const</td></tr>
+<tr class="memdesc:a70d364a870bb331343392763c064b252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether any windows are active.  <a href="classle_1_1engine_1_1Service.html#a70d364a870bb331343392763c064b252">More...</a><br /></td></tr>
+<tr class="separator:a70d364a870bb331343392763c064b252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56056b43e4fae35672de381d7f69fc98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a56056b43e4fae35672de381d7f69fc98">tick</a> (<a class="el" href="structle_1_1Time.html">Time</a> dt) const</td></tr>
 <tr class="memdesc:a56056b43e4fae35672de381d7f69fc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all services and tick active world.  <a href="classle_1_1engine_1_1Service.html#a56056b43e4fae35672de381d7f69fc98">More...</a><br /></td></tr>
 <tr class="separator:a56056b43e4fae35672de381d7f69fc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41972e2cda1a4121283d3755d10a6547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a41972e2cda1a4121283d3755d10a6547">submitScene</a> () const</td></tr>
-<tr class="memdesc:a41972e2cda1a4121283d3755d10a6547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit scene from active world.  <a href="classle_1_1engine_1_1Service.html#a41972e2cda1a4121283d3755d10a6547">More...</a><br /></td></tr>
-<tr class="separator:a41972e2cda1a4121283d3755d10a6547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf551ffe07d310000e3de8ac1a30a80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#aabf551ffe07d310000e3de8ac1a30a80">submitScene</a> () const</td></tr>
+<tr class="memdesc:aabf551ffe07d310000e3de8ac1a30a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit scene from active world.  <a href="classle_1_1engine_1_1Service.html#aabf551ffe07d310000e3de8ac1a30a80">More...</a><br /></td></tr>
+<tr class="separator:aabf551ffe07d310000e3de8ac1a30a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516a5fc3082afafedb7886b201435f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a516a5fc3082afafedb7886b201435f9c">render</a> () const</td></tr>
+<tr class="memdesc:a516a5fc3082afafedb7886b201435f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render all active windows.  <a href="classle_1_1engine_1_1Service.html#a516a5fc3082afafedb7886b201435f9c">More...</a><br /></td></tr>
+<tr class="separator:a516a5fc3082afafedb7886b201435f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a085efb1fdb513834ffbbd01651c2f61e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a085efb1fdb513834ffbbd01651c2f61e">shutdown</a> ()</td></tr>
+<tr class="memdesc:a085efb1fdb513834ffbbd01651c2f61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown engine and close main window.  <a href="classle_1_1engine_1_1Service.html#a085efb1fdb513834ffbbd01651c2f61e">More...</a><br /></td></tr>
+<tr class="separator:a085efb1fdb513834ffbbd01651c2f61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0f5dbbb97847150de921efa2403ef8ff"></a>
@@ -164,6 +177,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a70d364a870bb331343392763c064b252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d364a870bb331343392763c064b252">&#9670;&nbsp;</a></span>isRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::engine::Service::isRunning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether any windows are active. </p>
+
+</div>
+</div>
 <a id="a9f7b3890a0eae17c19684dbd3305cd55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f7b3890a0eae17c19684dbd3305cd55">&#9670;&nbsp;</a></span>locateData()</h2>
 
@@ -209,6 +241,52 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a516a5fc3082afafedb7886b201435f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516a5fc3082afafedb7886b201435f9c">&#9670;&nbsp;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::engine::Service::render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render all active windows. </p>
+
+</div>
+</div>
+<a id="a085efb1fdb513834ffbbd01651c2f61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085efb1fdb513834ffbbd01651c2f61e">&#9670;&nbsp;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool le::engine::Service::shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shutdown engine and close main window. </p>
+
+</div>
+</div>
 <a id="a8108c9b6adc2bcdb7754cfb94032fdf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8108c9b6adc2bcdb7754cfb94032fdf6">&#9670;&nbsp;</a></span>start()</h2>
 
@@ -230,14 +308,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a41972e2cda1a4121283d3755d10a6547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41972e2cda1a4121283d3755d10a6547">&#9670;&nbsp;</a></span>submitScene()</h2>
+<a id="aabf551ffe07d310000e3de8ac1a30a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf551ffe07d310000e3de8ac1a30a80">&#9670;&nbsp;</a></span>submitScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool le::engine::Service::submitScene </td>
+          <td class="memname">void le::engine::Service::submitScene </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -267,7 +345,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Update all services and tick active world. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>false</code> if no world is active </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>false</code> if shutting down </dd></dl>
 
 </div>
 </div>

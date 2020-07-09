@@ -52,6 +52,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classle_1_1jobs_1_1Handle.html" title="Handle to a scheduled/running/completed job task.">Handle</a> to a scheduled/running/completed job task.  <a href="classle_1_1jobs_1_1Handle.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1jobs_1_1IndexedTask.html">IndexedTask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct for running indexed tasks across multiple workers.  <a href="structle_1_1jobs_1_1IndexedTask.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1jobs_1_1Service.html">Service</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII wrapper for job system init/deinit.  <a href="structle_1_1jobs_1_1Service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -64,18 +70,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a6a215a28a939fc4b995be32095ab7cf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a6a215a28a939fc4b995be32095ab7cf1">deinit</a> (bool bFlushQueue=false)</td></tr>
 <tr class="memdesc:a6a215a28a939fc4b995be32095ab7cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialise job system.  <a href="namespacele_1_1jobs.html#a6a215a28a939fc4b995be32095ab7cf1">More...</a><br /></td></tr>
 <tr class="separator:a6a215a28a939fc4b995be32095ab7cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcda2bd110234951a38a00ab30a8ebbd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classle_1_1HJob.html">HJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#afcda2bd110234951a38a00ab30a8ebbd">enqueue</a> (std::function&lt; std::any()&gt; task, std::string name=&quot;&quot;, bool bSilent=false)</td></tr>
-<tr class="memdesc:afcda2bd110234951a38a00ab30a8ebbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a job task that returns <code>std::any</code>  <a href="namespacele_1_1jobs.html#afcda2bd110234951a38a00ab30a8ebbd">More...</a><br /></td></tr>
-<tr class="separator:afcda2bd110234951a38a00ab30a8ebbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d5bc8816546b8ad02c63e2bd769392b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classle_1_1HJob.html">HJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a0d5bc8816546b8ad02c63e2bd769392b">enqueue</a> (std::function&lt; void()&gt; task, std::string name=&quot;&quot;, bool bSilent=false)</td></tr>
-<tr class="memdesc:a0d5bc8816546b8ad02c63e2bd769392b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a job task.  <a href="namespacele_1_1jobs.html#a0d5bc8816546b8ad02c63e2bd769392b">More...</a><br /></td></tr>
-<tr class="separator:a0d5bc8816546b8ad02c63e2bd769392b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29466bbbbbd531db2aa8b54adcf06940"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classle_1_1HJob.html">HJob</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a29466bbbbbd531db2aa8b54adcf06940">forEach</a> (<a class="el" href="structle_1_1IndexedTask.html">IndexedTask</a> const &amp;indexedTask)</td></tr>
-<tr class="memdesc:a29466bbbbbd531db2aa8b54adcf06940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribute an <code><a class="el" href="structle_1_1IndexedTask.html" title="Helper struct for running indexed tasks across multiple workers.">IndexedTask</a></code> across all workers.  <a href="namespacele_1_1jobs.html#a29466bbbbbd531db2aa8b54adcf06940">More...</a><br /></td></tr>
-<tr class="separator:a29466bbbbbd531db2aa8b54adcf06940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab412ca1e69f535b4b3304a81e3d31fb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#ab412ca1e69f535b4b3304a81e3d31fb3">waitAll</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="classle_1_1HJob.html">HJob</a> &gt;&gt; const &amp;handles)</td></tr>
-<tr class="memdesc:ab412ca1e69f535b4b3304a81e3d31fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block until all passed jobs are ready.  <a href="namespacele_1_1jobs.html#ab412ca1e69f535b4b3304a81e3d31fb3">More...</a><br /></td></tr>
-<tr class="separator:ab412ca1e69f535b4b3304a81e3d31fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b7c4b8ccfa3c36af958bc59600ea8c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#ab2b7c4b8ccfa3c36af958bc59600ea8c">enqueue</a> (std::function&lt; std::any()&gt; task, std::string name=&quot;&quot;, bool bSilent=false)</td></tr>
+<tr class="memdesc:ab2b7c4b8ccfa3c36af958bc59600ea8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a job task that returns <code>std::any</code>  <a href="namespacele_1_1jobs.html#ab2b7c4b8ccfa3c36af958bc59600ea8c">More...</a><br /></td></tr>
+<tr class="separator:ab2b7c4b8ccfa3c36af958bc59600ea8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ffda4e4342c2cf6c496e9b8959de94"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a91ffda4e4342c2cf6c496e9b8959de94">enqueue</a> (std::function&lt; void()&gt; task, std::string name=&quot;&quot;, bool bSilent=false)</td></tr>
+<tr class="memdesc:a91ffda4e4342c2cf6c496e9b8959de94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a job task.  <a href="namespacele_1_1jobs.html#a91ffda4e4342c2cf6c496e9b8959de94">More...</a><br /></td></tr>
+<tr class="separator:a91ffda4e4342c2cf6c496e9b8959de94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f52800c2e0cce1844b4e8892a2cfe65"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a7f52800c2e0cce1844b4e8892a2cfe65">forEach</a> (<a class="el" href="structle_1_1jobs_1_1IndexedTask.html">IndexedTask</a> const &amp;indexedTask)</td></tr>
+<tr class="memdesc:a7f52800c2e0cce1844b4e8892a2cfe65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribute an <code><a class="el" href="structle_1_1jobs_1_1IndexedTask.html" title="Helper struct for running indexed tasks across multiple workers.">IndexedTask</a></code> across all workers.  <a href="namespacele_1_1jobs.html#a7f52800c2e0cce1844b4e8892a2cfe65">More...</a><br /></td></tr>
+<tr class="separator:a7f52800c2e0cce1844b4e8892a2cfe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6ff25d3c224b48294023210267a1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a8c6ff25d3c224b48294023210267a1d3">waitAll</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a> &gt;&gt; const &amp;handles)</td></tr>
+<tr class="memdesc:a8c6ff25d3c224b48294023210267a1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block until all passed jobs are ready.  <a href="namespacele_1_1jobs.html#a8c6ff25d3c224b48294023210267a1d3">More...</a><br /></td></tr>
+<tr class="separator:a8c6ff25d3c224b48294023210267a1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460fa21c1f946a5a18a8c83b23e8772e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1jobs.html#a460fa21c1f946a5a18a8c83b23e8772e">isIdle</a> ()</td></tr>
 <tr class="memdesc:a460fa21c1f946a5a18a8c83b23e8772e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether any job tasks are running.  <a href="namespacele_1_1jobs.html#a460fa21c1f946a5a18a8c83b23e8772e">More...</a><br /></td></tr>
 <tr class="separator:a460fa21c1f946a5a18a8c83b23e8772e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,14 +116,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afcda2bd110234951a38a00ab30a8ebbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcda2bd110234951a38a00ab30a8ebbd">&#9670;&nbsp;</a></span>enqueue() <span class="overload">[1/2]</span></h2>
+<a id="ab2b7c4b8ccfa3c36af958bc59600ea8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b7c4b8ccfa3c36af958bc59600ea8c">&#9670;&nbsp;</a></span>enqueue() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classle_1_1HJob.html">HJob</a>&gt; le::jobs::enqueue </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a>&gt; le::jobs::enqueue </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; std::any()&gt;&#160;</td>
           <td class="paramname"><em>task</em>, </td>
@@ -146,14 +152,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d5bc8816546b8ad02c63e2bd769392b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d5bc8816546b8ad02c63e2bd769392b">&#9670;&nbsp;</a></span>enqueue() <span class="overload">[2/2]</span></h2>
+<a id="a91ffda4e4342c2cf6c496e9b8959de94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ffda4e4342c2cf6c496e9b8959de94">&#9670;&nbsp;</a></span>enqueue() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classle_1_1HJob.html">HJob</a>&gt; le::jobs::enqueue </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a>&gt; le::jobs::enqueue </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>task</em>, </td>
@@ -182,23 +188,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a29466bbbbbd531db2aa8b54adcf06940"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29466bbbbbd531db2aa8b54adcf06940">&#9670;&nbsp;</a></span>forEach()</h2>
+<a id="a7f52800c2e0cce1844b4e8892a2cfe65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f52800c2e0cce1844b4e8892a2cfe65">&#9670;&nbsp;</a></span>forEach()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classle_1_1HJob.html">HJob</a>&gt; &gt; le::jobs::forEach </td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a>&gt; &gt; le::jobs::forEach </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1IndexedTask.html">IndexedTask</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1jobs_1_1IndexedTask.html">IndexedTask</a> const &amp;&#160;</td>
           <td class="paramname"><em>indexedTask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Distribute an <code><a class="el" href="structle_1_1IndexedTask.html" title="Helper struct for running indexed tasks across multiple workers.">IndexedTask</a></code> across all workers. </p>
+<p>Distribute an <code><a class="el" href="structle_1_1jobs_1_1IndexedTask.html" title="Helper struct for running indexed tasks across multiple workers.">IndexedTask</a></code> across all workers. </p>
 
 </div>
 </div>
@@ -247,8 +253,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab412ca1e69f535b4b3304a81e3d31fb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab412ca1e69f535b4b3304a81e3d31fb3">&#9670;&nbsp;</a></span>waitAll()</h2>
+<a id="a8c6ff25d3c224b48294023210267a1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6ff25d3c224b48294023210267a1d3">&#9670;&nbsp;</a></span>waitAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +262,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void le::jobs::waitAll </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classle_1_1HJob.html">HJob</a> &gt;&gt; const &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classle_1_1jobs_1_1Handle.html">Handle</a> &gt;&gt; const &amp;&#160;</td>
           <td class="paramname"><em>handles</em></td><td>)</td>
           <td></td>
         </tr>

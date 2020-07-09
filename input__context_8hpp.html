@@ -59,6 +59,7 @@ $(function() {
 <code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;glm/vec2.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="gdata_8hpp.html">core/gdata.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="hash_8hpp.html">core/hash.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="input__types_8hpp.html">engine/window/input_types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -85,8 +86,8 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a038ed3bceb702d18fa96088c3a4d3859"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a038ed3bceb702d18fa96088c3a4d3859">le::input::Trigger</a> = std::tuple&lt; Key, Action, Mods::VALUE &gt;</td></tr>
 <tr class="separator:a038ed3bceb702d18fa96088c3a4d3859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc183417fcac97c6eda7f2ef2bf655b5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#adc183417fcac97c6eda7f2ef2bf655b5">le::input::State</a> = Key</td></tr>
-<tr class="separator:adc183417fcac97c6eda7f2ef2bf655b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7b6265772779ae3f239769bb10ddea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ace7b6265772779ae3f239769bb10ddea">le::input::State</a> = std::vector&lt; Key &gt;</td></tr>
+<tr class="separator:ace7b6265772779ae3f239769bb10ddea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e59d084b0ca756e9adbd1789ffa5cd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a06e59d084b0ca756e9adbd1789ffa5cd">le::input::Range</a> = std::variant&lt; std::pair&lt; Axis, bool &gt;, std::pair&lt; Key, Key &gt; &gt;</td></tr>
 <tr class="separator:a06e59d084b0ca756e9adbd1789ffa5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78aa885ed6ffcd77e000f436c8e707b5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a78aa885ed6ffcd77e000f436c8e707b5">le::input::OnTrigger</a> = std::function&lt; void()&gt;</td></tr>

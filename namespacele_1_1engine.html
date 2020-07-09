@@ -61,9 +61,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae695060520b5f8414f358ec646e8148b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#ae695060520b5f8414f358ec646e8148b">isTerminating</a> ()</td></tr>
-<tr class="memdesc:ae695060520b5f8414f358ec646e8148b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether the engine is shutting down.  <a href="namespacele_1_1engine.html#ae695060520b5f8414f358ec646e8148b">More...</a><br /></td></tr>
-<tr class="separator:ae695060520b5f8414f358ec646e8148b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#ab5a13c593dad709f25aac6eb9b68f4dd">isShuttingDown</a> ()</td></tr>
+<tr class="memdesc:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether the engine is shutting down.  <a href="namespacele_1_1engine.html#ab5a13c593dad709f25aac6eb9b68f4dd">More...</a><br /></td></tr>
+<tr class="separator:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a595e2d0c95d29c9e9facb6cf9d0a55f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a595e2d0c95d29c9e9facb6cf9d0a55f2">mainWindow</a> ()</td></tr>
 <tr class="memdesc:a595e2d0c95d29c9e9facb6cf9d0a55f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the main window.  <a href="namespacele_1_1engine.html#a595e2d0c95d29c9e9facb6cf9d0a55f2">More...</a><br /></td></tr>
 <tr class="separator:a595e2d0c95d29c9e9facb6cf9d0a55f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -76,8 +76,48 @@ Functions</h2></td></tr>
 <tr class="memitem:a1419ec956199e8865cd416055d305eb4"><td class="memItemLeft" align="right" valign="top">stdfs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a1419ec956199e8865cd416055d305eb4">exePath</a> ()</td></tr>
 <tr class="memdesc:a1419ec956199e8865cd416055d305eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the path to the running executable.  <a href="namespacele_1_1engine.html#a1419ec956199e8865cd416055d305eb4">More...</a><br /></td></tr>
 <tr class="separator:a1419ec956199e8865cd416055d305eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02ca7c50b31cb857ef78c262046199f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Version.html">Version</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#ae02ca7c50b31cb857ef78c262046199f">engineVersion</a> ()</td></tr>
+<tr class="separator:ae02ca7c50b31cb857ef78c262046199f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919f73bde225b11e6fa9faad697500db"><td class="memItemLeft" align="right" valign="top">std::string_view const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a919f73bde225b11e6fa9faad697500db">gitCommitHash</a> ()</td></tr>
+<tr class="separator:a919f73bde225b11e6fa9faad697500db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8934030d766251f2fdad23b939ab277a"><td class="memItemLeft" align="right" valign="top">std::string_view const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a8934030d766251f2fdad23b939ab277a">buildVersion</a> ()</td></tr>
+<tr class="separator:a8934030d766251f2fdad23b939ab277a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a8934030d766251f2fdad23b939ab277a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8934030d766251f2fdad23b939ab277a">&#9670;&nbsp;</a></span>buildVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view const le::engine::buildVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae02ca7c50b31cb857ef78c262046199f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02ca7c50b31cb857ef78c262046199f">&#9670;&nbsp;</a></span>engineVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1Version.html">Version</a> const le::engine::engineVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1419ec956199e8865cd416055d305eb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1419ec956199e8865cd416055d305eb4">&#9670;&nbsp;</a></span>exePath()</h2>
 
@@ -116,14 +156,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae695060520b5f8414f358ec646e8148b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae695060520b5f8414f358ec646e8148b">&#9670;&nbsp;</a></span>isTerminating()</h2>
+<a id="a919f73bde225b11e6fa9faad697500db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919f73bde225b11e6fa9faad697500db">&#9670;&nbsp;</a></span>gitCommitHash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool le::engine::isTerminating </td>
+          <td class="memname">std::string_view const le::engine::gitCommitHash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5a13c593dad709f25aac6eb9b68f4dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a13c593dad709f25aac6eb9b68f4dd">&#9670;&nbsp;</a></span>isShuttingDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::engine::isShuttingDown </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
