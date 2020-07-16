@@ -367,6 +367,20 @@ Functions</h2></td></tr>
 <tr class="separator:a85db83167df52cb211b2b0a1f32fd7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad529e2c664f136451171ec14689326bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96be">Axis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad529e2c664f136451171ec14689326bc">parseAxis</a> (std::string_view str)</td></tr>
 <tr class="separator:ad529e2c664f136451171ec14689326bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2305ffe22236bab82c19da11d953c1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structle_1_1input_1_1Gamepad.html">Gamepad</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#adb2305ffe22236bab82c19da11d953c1">activeGamepads</a> ()</td></tr>
+<tr class="separator:adb2305ffe22236bab82c19da11d953c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13e41a2eb19458251edf7cd60df30e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1Joystick.html">Joystick</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ae13e41a2eb19458251edf7cd60df30e4">joyState</a> (<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> id)</td></tr>
+<tr class="separator:ae13e41a2eb19458251edf7cd60df30e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c8ed02486f881440494a29be06211a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1Gamepad.html">Gamepad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad8c8ed02486f881440494a29be06211a">gamepadState</a> (<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> id)</td></tr>
+<tr class="separator:ad8c8ed02486f881440494a29be06211a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60b3caa4be7047f9195053930799eb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aa60b3caa4be7047f9195053930799eb3">triggerToAxis</a> (<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> triggerValue)</td></tr>
+<tr class="separator:aa60b3caa4be7047f9195053930799eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95bb947f0b8c573c176a198ee400472"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ac95bb947f0b8c573c176a198ee400472">joystickAxesCount</a> (<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> id)</td></tr>
+<tr class="separator:ac95bb947f0b8c573c176a198ee400472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb7d2ef12f97a36046e43c03bf8cbcc"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#addb7d2ef12f97a36046e43c03bf8cbcc">joysticKButtonsCount</a> (<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> id)</td></tr>
+<tr class="separator:addb7d2ef12f97a36046e43c03bf8cbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582e93f83fee84541b6410450ef8624c"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a582e93f83fee84541b6410450ef8624c">toString</a> (<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> key)</td></tr>
+<tr class="separator:a582e93f83fee84541b6410450ef8624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a7593e03129b154b7016eb6f3e3cc45c8"></a>
@@ -863,6 +877,23 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="adb2305ffe22236bab82c19da11d953c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb2305ffe22236bab82c19da11d953c1">&#9670;&nbsp;</a></span>activeGamepads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structle_1_1input_1_1Gamepad.html">Gamepad</a>&gt; le::input::activeGamepads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a207e83de785bd9a51770355989de4042"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a207e83de785bd9a51770355989de4042">&#9670;&nbsp;</a></span>cursorPosition()</h2>
 
@@ -874,6 +905,24 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bIgnoreDisabled</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c8ed02486f881440494a29be06211a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c8ed02486f881440494a29be06211a">&#9670;&nbsp;</a></span>gamepadState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Gamepad.html">Gamepad</a> le::input::gamepadState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -945,6 +994,60 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">Key</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae13e41a2eb19458251edf7cd60df30e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae13e41a2eb19458251edf7cd60df30e4">&#9670;&nbsp;</a></span>joyState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Joystick.html">Joystick</a> le::input::joyState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac95bb947f0b8c573c176a198ee400472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95bb947f0b8c573c176a198ee400472">&#9670;&nbsp;</a></span>joystickAxesCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t le::input::joystickAxesCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addb7d2ef12f97a36046e43c03bf8cbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb7d2ef12f97a36046e43c03bf8cbcc">&#9670;&nbsp;</a></span>joysticKButtonsCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t le::input::joysticKButtonsCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1089,6 +1192,42 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a582e93f83fee84541b6410450ef8624c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582e93f83fee84541b6410450ef8624c">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view le::input::toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa60b3caa4be7047f9195053930799eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60b3caa4be7047f9195053930799eb3">&#9670;&nbsp;</a></span>triggerToAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::input::triggerToAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td>
+          <td class="paramname"><em>triggerValue</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

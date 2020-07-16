@@ -65,9 +65,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab81f6c076e1582663d081833d5472068"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Resources.html#ab81f6c076e1582663d081833d5472068">init</a> (<a class="el" href="classle_1_1IOReader.html">IOReader</a> const &amp;data)</td></tr>
-<tr class="memdesc:ab81f6c076e1582663d081833d5472068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise singleton and turn on service.  <a href="classle_1_1Resources.html#ab81f6c076e1582663d081833d5472068">More...</a><br /></td></tr>
-<tr class="separator:ab81f6c076e1582663d081833d5472068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e9932c6f4396693b1913a4a8a48e22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Resources.html#a58e9932c6f4396693b1913a4a8a48e22">init</a> (<a class="el" href="classle_1_1io_1_1Reader.html">io::Reader</a> const &amp;data)</td></tr>
+<tr class="memdesc:a58e9932c6f4396693b1913a4a8a48e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise singleton and turn on service.  <a href="classle_1_1Resources.html#a58e9932c6f4396693b1913a4a8a48e22">More...</a><br /></td></tr>
+<tr class="separator:a58e9932c6f4396693b1913a4a8a48e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7fb16c4bbcadc7baf747596e38846f3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab7fb16c4bbcadc7baf747596e38846f3"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Resources.html#ab7fb16c4bbcadc7baf747596e38846f3">create</a> (stdfs::path const &amp;id, typename T::Info info)</td></tr>
 <tr class="memdesc:ab7fb16c4bbcadc7baf747596e38846f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and store an <a class="el" href="classle_1_1Asset.html">Asset</a>.  <a href="classle_1_1Resources.html#ab7fb16c4bbcadc7baf747596e38846f3">More...</a><br /></td></tr>
@@ -109,7 +109,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singleton for managing all classes derived from <a class="el" href="classle_1_1Asset.html">Asset</a>. </p>
-<p>Important: <a class="el" href="classle_1_1Resources.html" title="Singleton for managing all classes derived from Asset.">Resources</a> is a static singleton, it does not participate in RAII, and requires explicit calls to <code><a class="el" href="classle_1_1Resources.html#ab81f6c076e1582663d081833d5472068" title="Initialise singleton and turn on service.">init()</a></code> / <code><a class="el" href="classle_1_1Resources.html#ad92e4f21d935779a8b16e7026e2470e3" title="Unload all assets and turn off service.">deinit()</a></code>. </p>
+<p>Important: <a class="el" href="classle_1_1Resources.html" title="Singleton for managing all classes derived from Asset.">Resources</a> is a static singleton, it does not participate in RAII, and requires explicit calls to <code><a class="el" href="classle_1_1Resources.html#a58e9932c6f4396693b1913a4a8a48e22" title="Initialise singleton and turn on service.">init()</a></code> / <code><a class="el" href="classle_1_1Resources.html#ad92e4f21d935779a8b16e7026e2470e3" title="Unload all assets and turn off service.">deinit()</a></code>. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="abcbd625f5a255b46094280e18c1ab237"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcbd625f5a255b46094280e18c1ab237">&#9670;&nbsp;</a></span>Semaphore</h2>
@@ -201,8 +201,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab81f6c076e1582663d081833d5472068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab81f6c076e1582663d081833d5472068">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a58e9932c6f4396693b1913a4a8a48e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e9932c6f4396693b1913a4a8a48e22">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool le::Resources::init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1IOReader.html">IOReader</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1io_1_1Reader.html">io::Reader</a> const &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>

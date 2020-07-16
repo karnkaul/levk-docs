@@ -143,8 +143,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af792b37ca62a49e42242a4a45e18a090"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="namespacele_1_1log.html#aa574487e581237cde2a246a516b33a3b">log::Level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#af792b37ca62a49e42242a4a45e18a090">m_logLevel</a> = <a class="el" href="namespacele_1_1log.html#aa574487e581237cde2a246a516b33a3ba63751a38ef3979cde8e8fd54844fd5e2">log::Level::eInfo</a></td></tr>
-<tr class="separator:af792b37ca62a49e42242a4a45e18a090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba5d0b9e1801914ac2ae6a954ec5289"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">io::Level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a0ba5d0b9e1801914ac2ae6a954ec5289">m_logLevel</a> = <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a63751a38ef3979cde8e8fd54844fd5e2">io::Level::eInfo</a></td></tr>
+<tr class="separator:a0ba5d0b9e1801914ac2ae6a954ec5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -161,8 +161,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a034884e5747e776c76f14c5461931a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50d7d6925e0f3bd072a53bcf53b271db"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, std::unordered_map&lt; <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::unique_ptr&lt; Component &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a50d7d6925e0f3bd072a53bcf53b271db">m_db</a></td></tr>
 <tr class="separator:a50d7d6925e0f3bd072a53bcf53b271db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87bd0a273783fcd03b0371c158ad8cdb"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a87bd0a273783fcd03b0371c158ad8cdb">m_mutex</a></td></tr>
-<tr class="separator:a87bd0a273783fcd03b0371c158ad8cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3463945141db7d5e9cc995f732ada44c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Lockable.html">Lockable</a>&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a3463945141db7d5e9cc995f732ada44c">m_mutex</a></td></tr>
+<tr class="separator:a3463945141db7d5e9cc995f732ada44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a01b809019e834282f192c289b1fe3c73"></a>
@@ -852,22 +852,22 @@ template&lt;typename T1 , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="af792b37ca62a49e42242a4a45e18a090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af792b37ca62a49e42242a4a45e18a090">&#9670;&nbsp;</a></span>m_logLevel</h2>
+<a id="a0ba5d0b9e1801914ac2ae6a954ec5289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba5d0b9e1801914ac2ae6a954ec5289">&#9670;&nbsp;</a></span>m_logLevel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt;<a class="el" href="namespacele_1_1log.html#aa574487e581237cde2a246a516b33a3b">log::Level</a>&gt; le::Registry::m_logLevel = <a class="el" href="namespacele_1_1log.html#aa574487e581237cde2a246a516b33a3ba63751a38ef3979cde8e8fd54844fd5e2">log::Level::eInfo</a></td>
+          <td class="memname">std::optional&lt;<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">io::Level</a>&gt; le::Registry::m_logLevel = <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a63751a38ef3979cde8e8fd54844fd5e2">io::Level::eInfo</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a87bd0a273783fcd03b0371c158ad8cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87bd0a273783fcd03b0371c158ad8cdb">&#9670;&nbsp;</a></span>m_mutex</h2>
+<a id="a3463945141db7d5e9cc995f732ada44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3463945141db7d5e9cc995f732ada44c">&#9670;&nbsp;</a></span>m_mutex</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -876,7 +876,7 @@ template&lt;typename T1 , typename... Ts&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::mutex le::Registry::m_mutex</td>
+          <td class="memname"><a class="el" href="structle_1_1Lockable.html">Lockable</a>&lt;std::mutex&gt; le::Registry::m_mutex</td>
         </tr>
       </table>
   </td>
