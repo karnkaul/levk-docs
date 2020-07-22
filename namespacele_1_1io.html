@@ -94,10 +94,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad39392d6b7fe1269880a096471285076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#ad39392d6b7fe1269880a096471285076">log</a> (<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">Level</a> level, std::string text, std::string_view file, <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> line)</td></tr>
 <tr class="memdesc:ad39392d6b7fe1269880a096471285076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#ad39392d6b7fe1269880a096471285076">More...</a><br /></td></tr>
 <tr class="separator:ad39392d6b7fe1269880a096471285076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">fmtLog</a> (<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">Level</a> level, std::string_view text, std::string_view file, <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> line, Args... args)</td></tr>
-<tr class="memdesc:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">More...</a><br /></td></tr>
-<tr class="separator:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab04380c83aa1b26d747cc9e03de3605"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aab04380c83aa1b26d747cc9e03de3605"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">fmtLog</a> (<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">Level</a> level, std::string_view text, std::string_view file, <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> line, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aab04380c83aa1b26d747cc9e03de3605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">More...</a><br /></td></tr>
+<tr class="separator:aab04380c83aa1b26d747cc9e03de3605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">logToFile</a> (std::filesystem::path path, <a class="el" href="structle_1_1Time.html">Time</a> pollRate=500ms)</td></tr>
 <tr class="memdesc:ad4b60c3aa8d538b41159eeec19982ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start file logging (on another thread)  <a href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">More...</a><br /></td></tr>
 <tr class="separator:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +113,8 @@ Variables</h2></td></tr>
 <tr class="separator:adeee566dd2dda1cc408d474fa7dd90e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcef06de21dd84da14f5b832a54552d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1io.html#a1a48378218fbd31dab3e90bf496477f7">OnLog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#acbcef06de21dd84da14f5b832a54552d">g_onLog</a> = nullptr</td></tr>
 <tr class="separator:acbcef06de21dd84da14f5b832a54552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e50db651542d6d90e5adf39bf917b6"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view,(std::size_t) <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a98ce873df53900dd5454baba574ecb06">Level::eCOUNT_</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a65e50db651542d6d90e5adf39bf917b6">g_logLevels</a> = {&quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;}</td></tr>
+<tr class="separator:a65e50db651542d6d90e5adf39bf917b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a1a48378218fbd31dab3e90bf496477f7"></a>
@@ -160,8 +162,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4a7d32190ba7d1328a343e546b2f4a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7d32190ba7d1328a343e546b2f4a7e">&#9670;&nbsp;</a></span>fmtLog()</h2>
+<a id="aab04380c83aa1b26d747cc9e03de3605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab04380c83aa1b26d747cc9e03de3605">&#9670;&nbsp;</a></span>fmtLog()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +197,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Args...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -325,6 +327,28 @@ template&lt;typename... Args&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65e50db651542d6d90e5adf39bf917b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e50db651542d6d90e5adf39bf917b6">&#9670;&nbsp;</a></span>g_logLevels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array&lt;std::string_view, (std::size_t)<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a98ce873df53900dd5454baba574ecb06">Level::eCOUNT_</a>&gt; le::io::g_logLevels = {&quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

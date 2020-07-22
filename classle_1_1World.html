@@ -79,12 +79,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4b2b3ee718e72c2c94598565b0e670f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46507691bc61e378430f260303876ba2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a46507691bc61e378430f260303876ba2">destroyEntity</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity)</td></tr>
 <tr class="separator:a46507691bc61e378430f260303876ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df059d0d53fa235856f3c6e873bf386"><td class="memTemplParams" colspan="2">template&lt;typename T  = gfx::Camera, typename... Args&gt; </td></tr>
+<tr class="memitem:a1df059d0d53fa235856f3c6e873bf386"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a1df059d0d53fa235856f3c6e873bf386">setSceneCamera</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a1df059d0d53fa235856f3c6e873bf386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c6b5dea29458421d47298d383c129b"><td class="memTemplParams" colspan="2">template&lt;typename T  = gfx::Camera&gt; </td></tr>
+<tr class="memitem:ae2c6b5dea29458421d47298d383c129b"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#ae2c6b5dea29458421d47298d383c129b">sceneCamera</a> ()</td></tr>
+<tr class="separator:ae2c6b5dea29458421d47298d383c129b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5370bcde1796501d515e20a0a89ef9e"><td class="memTemplParams" colspan="2">template&lt;typename T  = gfx::Camera&gt; </td></tr>
+<tr class="memitem:af5370bcde1796501d515e20a0a89ef9e"><td class="memTemplItemLeft" align="right" valign="top">T const  *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#af5370bcde1796501d515e20a0a89ef9e">sceneCamPtr</a> () const</td></tr>
+<tr class="separator:af5370bcde1796501d515e20a0a89ef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a880defea55429999599bb8fda893fef1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:a880defea55429999599bb8fda893fef1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1World.html#aaa246a90829687fa45477ad5e2162621">ID</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a880defea55429999599bb8fda893fef1">addWorld</a> (Args... args)</td></tr>
-<tr class="separator:a880defea55429999599bb8fda893fef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967067483e960251bd9d9a8187fa2f6c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a967067483e960251bd9d9a8187fa2f6c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1World.html#aaa246a90829687fa45477ad5e2162621">ID</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a967067483e960251bd9d9a8187fa2f6c">addWorld</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a967067483e960251bd9d9a8187fa2f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6d697eb3e9a902c1af76eb48fe21b4"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename... Tn&gt; </td></tr>
 <tr class="memitem:a3a6d697eb3e9a902c1af76eb48fe21b4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a3a6d697eb3e9a902c1af76eb48fe21b4">addWorld</a> ()</td></tr>
 <tr class="separator:a3a6d697eb3e9a902c1af76eb48fe21b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,8 +131,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a267f9d77473691092b15c61540bfe51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f3581269e1cfb2a2aa24a33bba2527"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a79f3581269e1cfb2a2aa24a33bba2527">tick</a> (<a class="el" href="structle_1_1Time.html">Time</a> dt)=0</td></tr>
 <tr class="separator:a79f3581269e1cfb2a2aa24a33bba2527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db2e069b1cb323ccec4f9cb859a640d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structle_1_1gfx_1_1Renderer_1_1Scene.html">gfx::Renderer::Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a3db2e069b1cb323ccec4f9cb859a640d">buildScene</a> () const =0</td></tr>
-<tr class="separator:a3db2e069b1cb323ccec4f9cb859a640d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54c43fd10b9f087fd74742828ff9b00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1SceneBuilder.html">SceneBuilder</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#af54c43fd10b9f087fd74742828ff9b00">sceneBuilder</a> () const =0</td></tr>
+<tr class="separator:af54c43fd10b9f087fd74742828ff9b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da5a80647c293c1b8742229fa739377"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a2da5a80647c293c1b8742229fa739377">stop</a> ()=0</td></tr>
 <tr class="separator:a2da5a80647c293c1b8742229fa739377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadfc15268ea96746e5fdbe6e0ea3bc3b"><td class="memItemLeft" align="right" valign="top">virtual stdfs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#aadfc15268ea96746e5fdbe6e0ea3bc3b">manifestID</a> () const</td></tr>
@@ -139,10 +148,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a5de2b9cd6c260a1d3ce095bed683ae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28580dc9df73ef90f7a91fc8f8770ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Registry.html">Registry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#aa28580dc9df73ef90f7a91fc8f8770ad">m_registry</a> = <a class="el" href="classle_1_1Registry.html">Registry</a>(<a class="el" href="classle_1_1Registry.html#a94a07e2be4b4089625656800a252991aaaf15e622936042b36ffe0258ae7cc271">Registry::DestroyMode::eDeferred</a>)</td></tr>
 <tr class="separator:aa28580dc9df73ef90f7a91fc8f8770ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5214cd0ad43715c6ff1bf60f69c4eff8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a5214cd0ad43715c6ff1bf60f69c4eff8">m_tName</a></td></tr>
-<tr class="separator:a5214cd0ad43715c6ff1bf60f69c4eff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38256e4e299fabc919d970b3c21e85a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#ad38256e4e299fabc919d970b3c21e85a">m_name</a></td></tr>
+<tr class="separator:ad38256e4e299fabc919d970b3c21e85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082c880ba10eae9be8e0bfb7ec5d8652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1CtxWrapper.html">input::CtxWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a082c880ba10eae9be8e0bfb7ec5d8652">m_inputContext</a></td></tr>
 <tr class="separator:a082c880ba10eae9be8e0bfb7ec5d8652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1006be591b06f8613119d80a605c8966"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classle_1_1gfx_1_1Camera.html">gfx::Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#a1006be591b06f8613119d80a605c8966">m_uSceneCam</a></td></tr>
+<tr class="separator:a1006be591b06f8613119d80a605c8966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00b336e12b7f3f38dff809efd962396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1World.html#aaa246a90829687fa45477ad5e2162621">ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1World.html#af00b336e12b7f3f38dff809efd962396">m_previousWorldID</a></td></tr>
 <tr class="separator:af00b336e12b7f3f38dff809efd962396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -308,8 +319,8 @@ template&lt;typename T1 , typename T2 , typename... Tn&gt; </div>
 
 </div>
 </div>
-<a id="a880defea55429999599bb8fda893fef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880defea55429999599bb8fda893fef1">&#9670;&nbsp;</a></span>addWorld() <span class="overload">[2/2]</span></h2>
+<a id="a967067483e960251bd9d9a8187fa2f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967067483e960251bd9d9a8187fa2f6c">&#9670;&nbsp;</a></span>addWorld() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +333,7 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classle_1_1World.html#aaa246a90829687fa45477ad5e2162621">World::ID</a> le::World::addWorld </td>
           <td>(</td>
-          <td class="paramtype">Args...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
@@ -330,31 +341,6 @@ template&lt;typename T , typename... Args&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3db2e069b1cb323ccec4f9cb859a640d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3db2e069b1cb323ccec4f9cb859a640d">&#9670;&nbsp;</a></span>buildScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="structle_1_1gfx_1_1Renderer_1_1Scene.html">gfx::Renderer::Scene</a> le::World::buildScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -639,6 +625,83 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af54c43fd10b9f087fd74742828ff9b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54c43fd10b9f087fd74742828ff9b00">&#9670;&nbsp;</a></span>sceneBuilder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classle_1_1SceneBuilder.html">SceneBuilder</a> const&amp; le::World::sceneBuilder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2c6b5dea29458421d47298d383c129b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c6b5dea29458421d47298d383c129b">&#9670;&nbsp;</a></span>sceneCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; le::World::sceneCamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5370bcde1796501d515e20a0a89ef9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5370bcde1796501d515e20a0a89ef9e">&#9670;&nbsp;</a></span>sceneCamPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T const  * le::World::sceneCamPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1df059d0d53fa235856f3c6e873bf386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df059d0d53fa235856f3c6e873bf386">&#9670;&nbsp;</a></span>setSceneCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; le::World::setSceneCamera </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae4b2b3ee718e72c2c94598565b0e670f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4b2b3ee718e72c2c94598565b0e670f">&#9670;&nbsp;</a></span>spawnEntity()</h2>
 
@@ -854,6 +917,28 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ad38256e4e299fabc919d970b3c21e85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38256e4e299fabc919d970b3c21e85a">&#9670;&nbsp;</a></span>m_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string le::World::m_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af00b336e12b7f3f38dff809efd962396"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af00b336e12b7f3f38dff809efd962396">&#9670;&nbsp;</a></span>m_previousWorldID</h2>
 
@@ -898,8 +983,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a5214cd0ad43715c6ff1bf60f69c4eff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5214cd0ad43715c6ff1bf60f69c4eff8">&#9670;&nbsp;</a></span>m_tName</h2>
+<a id="a1006be591b06f8613119d80a605c8966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1006be591b06f8613119d80a605c8966">&#9670;&nbsp;</a></span>m_uSceneCam</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -908,7 +993,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string le::World::m_tName</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classle_1_1gfx_1_1Camera.html">gfx::Camera</a>&gt; le::World::m_uSceneCam</td>
         </tr>
       </table>
   </td>

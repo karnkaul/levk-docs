@@ -52,7 +52,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper for thread-safe invocation of multiple registered callbacks.  
+<p>Wrapper for invocation of multiple registered callbacks.  
  <a href="classle_1_1Delegate.html#details">More...</a></p>
 
 <p><code>#include &lt;delegate.hpp&gt;</code></p>
@@ -61,12 +61,12 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:abb4c401d33db0245f82f63e7c57d8aa4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a> = std::shared_ptr&lt; int32_t &gt;</td></tr>
 <tr class="separator:abb4c401d33db0245f82f63e7c57d8aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12e839f7936fe5be4284c2a3cb9a9bd3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a12e839f7936fe5be4284c2a3cb9a9bd3">Callback</a> = std::function&lt; void(Args... t)&gt;</td></tr>
-<tr class="separator:a12e839f7936fe5be4284c2a3cb9a9bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5350006a8ddf040f73b9fac79f734bd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> = std::function&lt; void(Args...)&gt;</td></tr>
+<tr class="separator:ac5350006a8ddf040f73b9fac79f734bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a94d8d8d4752ead1a308a17c951b7da46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a94d8d8d4752ead1a308a17c951b7da46">subscribe</a> (<a class="el" href="classle_1_1Delegate.html#a12e839f7936fe5be4284c2a3cb9a9bd3">Callback</a> callback)</td></tr>
+<tr class="memitem:a94d8d8d4752ead1a308a17c951b7da46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a94d8d8d4752ead1a308a17c951b7da46">subscribe</a> (<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> callback)</td></tr>
 <tr class="memdesc:a94d8d8d4752ead1a308a17c951b7da46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback and obtain token.  <a href="classle_1_1Delegate.html#a94d8d8d4752ead1a308a17c951b7da46">More...</a><br /></td></tr>
 <tr class="separator:a94d8d8d4752ead1a308a17c951b7da46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ad13ef5a10676e011c1940e6e5f418c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a8ad13ef5a10676e011c1940e6e5f418c">operator()</a> (Args... t)</td></tr>
@@ -89,10 +89,10 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename... Args&gt;<br />
 class le::Delegate&lt; Args &gt;</h3>
 
-<p>Wrapper for thread-safe invocation of multiple registered callbacks. </p>
+<p>Wrapper for invocation of multiple registered callbacks. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a12e839f7936fe5be4284c2a3cb9a9bd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12e839f7936fe5be4284c2a3cb9a9bd3">&#9670;&nbsp;</a></span>Callback</h2>
+<a id="ac5350006a8ddf040f73b9fac79f734bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5350006a8ddf040f73b9fac79f734bd">&#9670;&nbsp;</a></span>Callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,7 +100,7 @@ class le::Delegate&lt; Args &gt;</h3>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#a12e839f7936fe5be4284c2a3cb9a9bd3">Callback</a> =  std::function&lt;void(Args... t)&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> =  std::function&lt;void(Args...)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -237,7 +237,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt; Args... &gt;::<a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a> <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::subscribe </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1Delegate.html#a12e839f7936fe5be4284c2a3cb9a9bd3">Callback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>

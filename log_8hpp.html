@@ -76,7 +76,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abd6fe5076f89ccb79fb42dfa3d308d66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#abd6fe5076f89ccb79fb42dfa3d308d66">LOG</a>(level,  text, ...)&#160;&#160;&#160;<a class="el" href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:abd6fe5076f89ccb79fb42dfa3d308d66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#abd6fe5076f89ccb79fb42dfa3d308d66">LOG</a>(level,  text, ...)&#160;&#160;&#160;<a class="el" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__)</td></tr>
 <tr class="separator:abd6fe5076f89ccb79fb42dfa3d308d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a224a28230fd2856f2feaeb3f49ece144"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a224a28230fd2856f2feaeb3f49ece144">LOGIF</a>(predicate,  level,  text, ...)</td></tr>
 <tr class="separator:a224a28230fd2856f2feaeb3f49ece144"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,10 +102,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad39392d6b7fe1269880a096471285076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#ad39392d6b7fe1269880a096471285076">le::io::log</a> (Level level, std::string text, std::string_view file, u64 line)</td></tr>
 <tr class="memdesc:ad39392d6b7fe1269880a096471285076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#ad39392d6b7fe1269880a096471285076">More...</a><br /></td></tr>
 <tr class="separator:ad39392d6b7fe1269880a096471285076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">le::io::fmtLog</a> (Level level, std::string_view text, std::string_view file, u64 line, Args... args)</td></tr>
-<tr class="memdesc:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">More...</a><br /></td></tr>
-<tr class="separator:a4a7d32190ba7d1328a343e546b2f4a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab04380c83aa1b26d747cc9e03de3605"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aab04380c83aa1b26d747cc9e03de3605"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a> (Level level, std::string_view text, std::string_view file, u64 line, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aab04380c83aa1b26d747cc9e03de3605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">More...</a><br /></td></tr>
+<tr class="separator:aab04380c83aa1b26d747cc9e03de3605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">le::io::logToFile</a> (std::filesystem::path path, Time pollRate=500ms)</td></tr>
 <tr class="memdesc:ad4b60c3aa8d538b41159eeec19982ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start file logging (on another thread)  <a href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">More...</a><br /></td></tr>
 <tr class="separator:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,8 +298,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (predicate)                                                      \</div>
-<div class="line">    {                                                                   <a class="code" href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">\</a></div>
-<div class="line"><a class="code" href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">		le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__); \</div>
+<div class="line">    {                                                                   <a class="code" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">\</a></div>
+<div class="line"><a class="code" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">		le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__); \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -441,7 +441,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="anamespacele_1_1io_html_a4a7d32190ba7d1328a343e546b2f4a7e"><div class="ttname"><a href="namespacele_1_1io.html#a4a7d32190ba7d1328a343e546b2f4a7e">le::io::fmtLog</a></div><div class="ttdeci">void fmtLog(Level level, std::string_view text, std::string_view file, u64 line, Args... args)</div><div class="ttdoc">Print to stdout</div><div class="ttdef"><b>Definition:</b> log.hpp:75</div></div>
+<div class="ttc" id="anamespacele_1_1io_html_aab04380c83aa1b26d747cc9e03de3605"><div class="ttname"><a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a></div><div class="ttdeci">void fmtLog(Level level, std::string_view text, std::string_view file, u64 line, Args &amp;&amp;... args)</div><div class="ttdoc">Print to stdout</div><div class="ttdef"><b>Definition:</b> log.hpp:75</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

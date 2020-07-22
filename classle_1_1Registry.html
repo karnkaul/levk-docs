@@ -48,7 +48,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classle_1_1Registry-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -64,19 +63,23 @@ Public Types</h2></td></tr>
 <a class="el" href="classle_1_1Registry.html#a94a07e2be4b4089625656800a252991aaec542c2ef8027972e68f333095eef609">DestroyMode::eImmediate</a>, 
 <a class="el" href="classle_1_1Registry.html#a94a07e2be4b4089625656800a252991aa98ce873df53900dd5454baba574ecb06">DestroyMode::eCOUNT_</a>
  }</td></tr>
+<tr class="memdesc:a94a07e2be4b4089625656800a252991a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum describing when destroyed entities are removed from the db.  <a href="classle_1_1Registry.html#a94a07e2be4b4089625656800a252991a">More...</a><br /></td></tr>
 <tr class="separator:a94a07e2be4b4089625656800a252991a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5b3287e2dddbbc449bf1a206259fb1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1">Flag</a> : s8 { <a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1ab32b520e58e1334ea07d4df5a4c5c402">Flag::eDisabled</a>, 
 <a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1a05506081854bf82f3c49501d68693121">Flag::eDestroyed</a>, 
 <a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1a54aa5966939e3ea8616b09cc2f635312">Flag::eDebug</a>, 
 <a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1a98ce873df53900dd5454baba574ecb06">Flag::eCOUNT_</a>
  }</td></tr>
+<tr class="memdesc:abb5b3287e2dddbbc449bf1a206259fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired flags can be combined with a mask as per-Entity filters for <code><a class="el" href="classle_1_1Registry.html#a66656791676186bfb37f188ac11740d2" title="Obtain View of T1, Ts...">view()</a></code>  <a href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1">More...</a><br /></td></tr>
 <tr class="separator:abb5b3287e2dddbbc449bf1a206259fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b809019e834282f192c289b1fe3c73"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a> = <a class="el" href="structle_1_1TFlags.html">TFlags</a>&lt; <a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1">Flag</a> &gt;</td></tr>
 <tr class="separator:a01b809019e834282f192c289b1fe3c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d68a8973dfea0983e302340c036df7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a> = std::size_t</td></tr>
+<tr class="memdesc:ab4d68a8973dfea0983e302340c036df7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structle_1_1Hash.html" title="Wrapper struct for storing the hash (via std::hash) for common types.">Hash</a> code of component type.  <a href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">More...</a><br /></td></tr>
 <tr class="separator:ab4d68a8973dfea0983e302340c036df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2b4dd2da1dc2b08c391487037db9368"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:aa2b4dd2da1dc2b08c391487037db9368"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#aa2b4dd2da1dc2b08c391487037db9368">View</a> = std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html">Entity</a>, std::tuple&lt; T *... &gt;, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a> &gt;</td></tr>
+<tr class="memdesc:aa2b4dd2da1dc2b08c391487037db9368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type of <code><a class="el" href="classle_1_1Registry.html#a66656791676186bfb37f188ac11740d2" title="Obtain View of T1, Ts...">view()</a></code>  <a href="classle_1_1Registry.html#aa2b4dd2da1dc2b08c391487037db9368">More...</a><br /></td></tr>
 <tr class="separator:aa2b4dd2da1dc2b08c391487037db9368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -87,80 +90,99 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab71f115d552df76f831eab9f23f1dd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4aebe5e6c9f38dec1fabe73cb2bd8a6"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:af4aebe5e6c9f38dec1fabe73cb2bd8a6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Entity.html">Entity</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#af4aebe5e6c9f38dec1fabe73cb2bd8a6">spawnEntity</a> (std::string name)</td></tr>
+<tr class="memdesc:af4aebe5e6c9f38dec1fabe73cb2bd8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make new <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#af4aebe5e6c9f38dec1fabe73cb2bd8a6">More...</a><br /></td></tr>
 <tr class="separator:af4aebe5e6c9f38dec1fabe73cb2bd8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fbac81c195fd6ab5c788fd9d981a9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a80fbac81c195fd6ab5c788fd9d981a9f">setEnabled</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity, bool bEnabled)</td></tr>
+<tr class="memdesc:a80fbac81c195fd6ab5c788fd9d981a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle Enabled flag.  <a href="classle_1_1Registry.html#a80fbac81c195fd6ab5c788fd9d981a9f">More...</a><br /></td></tr>
 <tr class="separator:a80fbac81c195fd6ab5c788fd9d981a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6dc7269f84fbbff7c492ef08bfcf86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a7a6dc7269f84fbbff7c492ef08bfcf86">setDebug</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity, bool bDebug)</td></tr>
+<tr class="memdesc:a7a6dc7269f84fbbff7c492ef08bfcf86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle Debug flag.  <a href="classle_1_1Registry.html#a7a6dc7269f84fbbff7c492ef08bfcf86">More...</a><br /></td></tr>
 <tr class="separator:a7a6dc7269f84fbbff7c492ef08bfcf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4b0664d1aaff8d48b6c7bb2eae5cfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a2f4b0664d1aaff8d48b6c7bb2eae5cfb">isEnabled</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:a2f4b0664d1aaff8d48b6c7bb2eae5cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Enabled flag is set.  <a href="classle_1_1Registry.html#a2f4b0664d1aaff8d48b6c7bb2eae5cfb">More...</a><br /></td></tr>
 <tr class="separator:a2f4b0664d1aaff8d48b6c7bb2eae5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10d8413f69bd99ccae1cc8777c61109"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ab10d8413f69bd99ccae1cc8777c61109">isAlive</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:ab10d8413f69bd99ccae1cc8777c61109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Destroyed flag is not set.  <a href="classle_1_1Registry.html#ab10d8413f69bd99ccae1cc8777c61109">More...</a><br /></td></tr>
 <tr class="separator:ab10d8413f69bd99ccae1cc8777c61109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae573165a11718c3536674367edd4802e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ae573165a11718c3536674367edd4802e">isDebugSet</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:ae573165a11718c3536674367edd4802e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Debug flag is set.  <a href="classle_1_1Registry.html#ae573165a11718c3536674367edd4802e">More...</a><br /></td></tr>
 <tr class="separator:ae573165a11718c3536674367edd4802e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06352fff0f6e697be71034912ff445e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ab06352fff0f6e697be71034912ff445e">destroyEntity</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> const &amp;entity)</td></tr>
+<tr class="memdesc:ab06352fff0f6e697be71034912ff445e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#ab06352fff0f6e697be71034912ff445e">More...</a><br /></td></tr>
 <tr class="separator:ab06352fff0f6e697be71034912ff445e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d2fa610920986541cdb45a7b59a405"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a97d2fa610920986541cdb45a7b59a405">destroyEntity</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> &amp;out_entity)</td></tr>
+<tr class="memdesc:a97d2fa610920986541cdb45a7b59a405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a> and set to default handle.  <a href="classle_1_1Registry.html#a97d2fa610920986541cdb45a7b59a405">More...</a><br /></td></tr>
 <tr class="separator:a97d2fa610920986541cdb45a7b59a405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a265d4a3548eece82bb2da237407f2789"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:a265d4a3548eece82bb2da237407f2789"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a265d4a3548eece82bb2da237407f2789">addComponent</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity, Args... args)</td></tr>
-<tr class="separator:a265d4a3548eece82bb2da237407f2789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e474b28e4dfc04c234240e2844d480f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a2e474b28e4dfc04c234240e2844d480f"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a2e474b28e4dfc04c234240e2844d480f">addComponent</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a2e474b28e4dfc04c234240e2844d480f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Component to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#a2e474b28e4dfc04c234240e2844d480f">More...</a><br /></td></tr>
+<tr class="separator:a2e474b28e4dfc04c234240e2844d480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a603a69c2118ecbc24af3f003c134e5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename... Ts&gt; </td></tr>
 <tr class="memitem:a5a603a69c2118ecbc24af3f003c134e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a5a603a69c2118ecbc24af3f003c134e5">addComponent</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity)</td></tr>
+<tr class="memdesc:a5a603a69c2118ecbc24af3f003c134e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Components to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#a5a603a69c2118ecbc24af3f003c134e5">More...</a><br /></td></tr>
 <tr class="separator:a5a603a69c2118ecbc24af3f003c134e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af471efeb61aa77de84ea77b5e7474eea"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af471efeb61aa77de84ea77b5e7474eea"><td class="memTemplItemLeft" align="right" valign="top">T const  *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#af471efeb61aa77de84ea77b5e7474eea">component</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:af471efeb61aa77de84ea77b5e7474eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain pointer to Component attached to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#af471efeb61aa77de84ea77b5e7474eea">More...</a><br /></td></tr>
 <tr class="separator:af471efeb61aa77de84ea77b5e7474eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee389b3e0a6a98f83583b7f57d32b3d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7ee389b3e0a6a98f83583b7f57d32b3d"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a7ee389b3e0a6a98f83583b7f57d32b3d">component</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity)</td></tr>
+<tr class="memdesc:a7ee389b3e0a6a98f83583b7f57d32b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain pointer to Component attached to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#a7ee389b3e0a6a98f83583b7f57d32b3d">More...</a><br /></td></tr>
 <tr class="separator:a7ee389b3e0a6a98f83583b7f57d32b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca7d9bcc5586c3f376b87d5daa01463"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:afca7d9bcc5586c3f376b87d5daa01463"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#afca7d9bcc5586c3f376b87d5daa01463">destroyComponent</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity)</td></tr>
+<tr class="memdesc:afca7d9bcc5586c3f376b87d5daa01463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy Component if attached to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>.  <a href="classle_1_1Registry.html#afca7d9bcc5586c3f376b87d5daa01463">More...</a><br /></td></tr>
 <tr class="separator:afca7d9bcc5586c3f376b87d5daa01463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66656791676186bfb37f188ac11740d2"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename... Ts&gt; </td></tr>
 <tr class="memitem:a66656791676186bfb37f188ac11740d2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Registry.html#aa2b4dd2da1dc2b08c391487037db9368">View</a>&lt; T1 const, Ts const ... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a66656791676186bfb37f188ac11740d2">view</a> (<a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a> mask=<a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1a05506081854bf82f3c49501d68693121">Flag::eDestroyed</a>|<a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1ab32b520e58e1334ea07d4df5a4c5c402">Flag::eDisabled</a>, <a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a> pattern={}) const</td></tr>
+<tr class="memdesc:a66656791676186bfb37f188ac11740d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain View of T1, Ts...  <a href="classle_1_1Registry.html#a66656791676186bfb37f188ac11740d2">More...</a><br /></td></tr>
 <tr class="separator:a66656791676186bfb37f188ac11740d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61daf9a1b6becfa894f7a8b702c3a57c"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename... Ts&gt; </td></tr>
 <tr class="memitem:a61daf9a1b6becfa894f7a8b702c3a57c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Registry.html#aa2b4dd2da1dc2b08c391487037db9368">View</a>&lt; T1, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a61daf9a1b6becfa894f7a8b702c3a57c">view</a> (<a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a> mask=<a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1a05506081854bf82f3c49501d68693121">Flag::eDestroyed</a>|<a class="el" href="classle_1_1Registry.html#abb5b3287e2dddbbc449bf1a206259fb1ab32b520e58e1334ea07d4df5a4c5c402">Flag::eDisabled</a>, <a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a> pattern={})</td></tr>
+<tr class="memdesc:a61daf9a1b6becfa894f7a8b702c3a57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain View of T1, Ts...  <a href="classle_1_1Registry.html#a61daf9a1b6becfa894f7a8b702c3a57c">More...</a><br /></td></tr>
 <tr class="separator:a61daf9a1b6becfa894f7a8b702c3a57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8e534b91a4ee5fa4a99c37fd769010"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#abb8e534b91a4ee5fa4a99c37fd769010">flush</a> ()</td></tr>
+<tr class="memdesc:abb8e534b91a4ee5fa4a99c37fd769010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy all entities with Destroy flag set.  <a href="classle_1_1Registry.html#abb8e534b91a4ee5fa4a99c37fd769010">More...</a><br /></td></tr>
 <tr class="separator:abb8e534b91a4ee5fa4a99c37fd769010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66b932273445ee1ef608d59d3163be0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a66b932273445ee1ef608d59d3163be0a">clear</a> ()</td></tr>
+<tr class="memdesc:a66b932273445ee1ef608d59d3163be0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy everything.  <a href="classle_1_1Registry.html#a66b932273445ee1ef608d59d3163be0a">More...</a><br /></td></tr>
 <tr class="separator:a66b932273445ee1ef608d59d3163be0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00eddf3259cae9d74d8dfb754a36b58f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a00eddf3259cae9d74d8dfb754a36b58f">entityCount</a> () const</td></tr>
+<tr class="memdesc:a00eddf3259cae9d74d8dfb754a36b58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain total entities spawned.  <a href="classle_1_1Registry.html#a00eddf3259cae9d74d8dfb754a36b58f">More...</a><br /></td></tr>
 <tr class="separator:a00eddf3259cae9d74d8dfb754a36b58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6722059e2892bb2d704a799d551dab6"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ae6722059e2892bb2d704a799d551dab6">entityName</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:ae6722059e2892bb2d704a799d551dab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a> name.  <a href="classle_1_1Registry.html#ae6722059e2892bb2d704a799d551dab6">More...</a><br /></td></tr>
 <tr class="separator:ae6722059e2892bb2d704a799d551dab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a46a0cf778941e1cd22ad855e78d14089"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a46a0cf778941e1cd22ad855e78d14089"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a46a0cf778941e1cd22ad855e78d14089">signature</a> ()</td></tr>
+<tr class="memdesc:a46a0cf778941e1cd22ad855e78d14089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain signature of T.  <a href="classle_1_1Registry.html#a46a0cf778941e1cd22ad855e78d14089">More...</a><br /></td></tr>
 <tr class="separator:a46a0cf778941e1cd22ad855e78d14089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a5eccc065a4378266832def61ca850"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a16a5eccc065a4378266832def61ca850"><td class="memTemplItemLeft" align="right" valign="top">static std::array&lt; <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a16a5eccc065a4378266832def61ca850">signatures</a> ()</td></tr>
+<tr class="memdesc:a16a5eccc065a4378266832def61ca850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain signatures of Ts.  <a href="classle_1_1Registry.html#a16a5eccc065a4378266832def61ca850">More...</a><br /></td></tr>
 <tr class="separator:a16a5eccc065a4378266832def61ca850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a145d4932ccdfeff6b25cc6adca89ea7c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a145d4932ccdfeff6b25cc6adca89ea7c">m_name</a></td></tr>
+<tr class="separator:a145d4932ccdfeff6b25cc6adca89ea7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba5d0b9e1801914ac2ae6a954ec5289"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">io::Level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a0ba5d0b9e1801914ac2ae6a954ec5289">m_logLevel</a> = <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a63751a38ef3979cde8e8fd54844fd5e2">io::Level::eInfo</a></td></tr>
+<tr class="memdesc:a0ba5d0b9e1801914ac2ae6a954ec5289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts <code><a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">io::Level</a></code> on database changes (unset to disable)  <a href="classle_1_1Registry.html#a0ba5d0b9e1801914ac2ae6a954ec5289">More...</a><br /></td></tr>
 <tr class="separator:a0ba5d0b9e1801914ac2ae6a954ec5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a460e3e3793b0dee4318d1e94176e2622"><td class="memItemLeft" align="right" valign="top">static std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a460e3e3793b0dee4318d1e94176e2622">s_tName</a></td></tr>
-<tr class="separator:a460e3e3793b0dee4318d1e94176e2622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a41a27e5e22780ba1a0ebe8f94f439c19"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, <a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a41a27e5e22780ba1a0ebe8f94f439c19">m_entityFlags</a></td></tr>
-<tr class="separator:a41a27e5e22780ba1a0ebe8f94f439c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b6050f6dba68d0d8bfa9d1fcdadec5"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a27b6050f6dba68d0d8bfa9d1fcdadec5">m_entityNames</a></td></tr>
-<tr class="separator:a27b6050f6dba68d0d8bfa9d1fcdadec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02127dc5d11a9892aaa427b19e1739bb"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html">Entity</a>, <a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a>, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a02127dc5d11a9892aaa427b19e1739bb">m_entityFlags</a></td></tr>
+<tr class="separator:a02127dc5d11a9892aaa427b19e1739bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656cd9161dfab659d5a4770d1c7c8208"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html">Entity</a>, std::string, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a656cd9161dfab659d5a4770d1c7c8208">m_entityNames</a></td></tr>
+<tr class="separator:a656cd9161dfab659d5a4770d1c7c8208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034884e5747e776c76f14c5461931a39"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a034884e5747e776c76f14c5461931a39">m_componentNames</a></td></tr>
 <tr class="separator:a034884e5747e776c76f14c5461931a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50d7d6925e0f3bd072a53bcf53b271db"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, std::unordered_map&lt; <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::unique_ptr&lt; Component &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a50d7d6925e0f3bd072a53bcf53b271db">m_db</a></td></tr>
-<tr class="separator:a50d7d6925e0f3bd072a53bcf53b271db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1eb85e07424a2c0ee4721074cfd677c"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html">Entity</a>, std::unordered_map&lt; <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::unique_ptr&lt; Component &gt; &gt;, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#af1eb85e07424a2c0ee4721074cfd677c">m_db</a></td></tr>
+<tr class="separator:af1eb85e07424a2c0ee4721074cfd677c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3463945141db7d5e9cc995f732ada44c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Lockable.html">Lockable</a>&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a3463945141db7d5e9cc995f732ada44c">m_mutex</a></td></tr>
 <tr class="separator:a3463945141db7d5e9cc995f732ada44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -191,6 +213,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="structle_1_1Hash.html" title="Wrapper struct for storing the hash (via std::hash) for common types.">Hash</a> code of component type. </p>
+
 </div>
 </div>
 <a id="aa2b4dd2da1dc2b08c391487037db9368"></a>
@@ -206,6 +230,8 @@ template&lt;typename... T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return type of <code><a class="el" href="classle_1_1Registry.html#a66656791676186bfb37f188ac11740d2" title="Obtain View of T1, Ts...">view()</a></code> </p>
 
 </div>
 </div>
@@ -229,6 +255,8 @@ template&lt;typename... T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enum describing when destroyed entities are removed from the db. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a94a07e2be4b4089625656800a252991aaaf15e622936042b36ffe0258ae7cc271"></a>eDeferred&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a94a07e2be4b4089625656800a252991aaec542c2ef8027972e68f333095eef609"></a>eImmediate&#160;</td><td class="fielddoc"></td></tr>
@@ -256,6 +284,8 @@ template&lt;typename... T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Desired flags can be combined with a mask as per-Entity filters for <code><a class="el" href="classle_1_1Registry.html#a66656791676186bfb37f188ac11740d2" title="Obtain View of T1, Ts...">view()</a></code> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb5b3287e2dddbbc449bf1a206259fb1ab32b520e58e1334ea07d4df5a4c5c402"></a>eDisabled&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abb5b3287e2dddbbc449bf1a206259fb1a05506081854bf82f3c49501d68693121"></a>eDestroyed&#160;</td><td class="fielddoc"></td></tr>
@@ -328,10 +358,12 @@ template&lt;typename T1 , typename T2 , typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Add Components to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
+
 </div>
 </div>
-<a id="a265d4a3548eece82bb2da237407f2789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a265d4a3548eece82bb2da237407f2789">&#9670;&nbsp;</a></span>addComponent() <span class="overload">[2/2]</span></h2>
+<a id="a2e474b28e4dfc04c234240e2844d480f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e474b28e4dfc04c234240e2844d480f">&#9670;&nbsp;</a></span>addComponent() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +379,7 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Args...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -357,6 +389,8 @@ template&lt;typename T , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add Component to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
 
 </div>
 </div>
@@ -374,6 +408,8 @@ template&lt;typename T , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destroy everything. </p>
 
 </div>
 </div>
@@ -395,6 +431,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain pointer to Component attached to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
+
 </div>
 </div>
 <a id="af471efeb61aa77de84ea77b5e7474eea"></a>
@@ -414,6 +452,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain pointer to Component attached to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
 
 </div>
 </div>
@@ -435,6 +475,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Destroy Component if attached to <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
+
 </div>
 </div>
 <a id="a97d2fa610920986541cdb45a7b59a405"></a>
@@ -452,6 +494,8 @@ template&lt;typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destroy <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a> and set to default handle. </p>
 
 </div>
 </div>
@@ -471,6 +515,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Destroy <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
+
 </div>
 </div>
 <a id="a00eddf3259cae9d74d8dfb754a36b58f"></a>
@@ -487,6 +533,8 @@ template&lt;typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain total entities spawned. </p>
 
 </div>
 </div>
@@ -506,6 +554,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a> name. </p>
+
 </div>
 </div>
 <a id="abb8e534b91a4ee5fa4a99c37fd769010"></a>
@@ -522,6 +572,8 @@ template&lt;typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destroy all entities with Destroy flag set. </p>
 
 </div>
 </div>
@@ -541,6 +593,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain whether Destroyed flag is not set. </p>
+
 </div>
 </div>
 <a id="ae573165a11718c3536674367edd4802e"></a>
@@ -559,6 +613,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain whether Debug flag is set. </p>
+
 </div>
 </div>
 <a id="a2f4b0664d1aaff8d48b6c7bb2eae5cfb"></a>
@@ -576,6 +632,8 @@ template&lt;typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Obtain whether Enabled flag is set. </p>
 
 </div>
 </div>
@@ -605,6 +663,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Toggle Debug flag. </p>
+
 </div>
 </div>
 <a id="a80fbac81c195fd6ab5c788fd9d981a9f"></a>
@@ -633,6 +693,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Toggle Enabled flag. </p>
+
 </div>
 </div>
 <a id="a46a0cf778941e1cd22ad855e78d14089"></a>
@@ -656,6 +718,8 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Obtain signature of T. </p>
 
 </div>
 </div>
@@ -681,6 +745,8 @@ template&lt;typename... Ts&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Obtain signatures of Ts. </p>
+
 </div>
 </div>
 <a id="af4aebe5e6c9f38dec1fabe73cb2bd8a6"></a>
@@ -700,6 +766,8 @@ template&lt;typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Make new <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a>. </p>
 
 </div>
 </div>
@@ -731,6 +799,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain View of T1, Ts... </p>
+
 </div>
 </div>
 <a id="a66656791676186bfb37f188ac11740d2"></a>
@@ -761,6 +831,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain View of T1, Ts... </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -786,8 +858,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a50d7d6925e0f3bd072a53bcf53b271db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50d7d6925e0f3bd072a53bcf53b271db">&#9670;&nbsp;</a></span>m_db</h2>
+<a id="af1eb85e07424a2c0ee4721074cfd677c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1eb85e07424a2c0ee4721074cfd677c">&#9670;&nbsp;</a></span>m_db</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -796,7 +868,7 @@ template&lt;typename T1 , typename... Ts&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;<a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, std::unordered_map&lt;<a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::unique_ptr&lt;Component&gt; &gt; &gt; le::Registry::m_db</td>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="structle_1_1Entity.html">Entity</a>, std::unordered_map&lt;<a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::unique_ptr&lt;Component&gt; &gt;, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a>&gt; le::Registry::m_db</td>
         </tr>
       </table>
   </td>
@@ -808,8 +880,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a41a27e5e22780ba1a0ebe8f94f439c19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41a27e5e22780ba1a0ebe8f94f439c19">&#9670;&nbsp;</a></span>m_entityFlags</h2>
+<a id="a02127dc5d11a9892aaa427b19e1739bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02127dc5d11a9892aaa427b19e1739bb">&#9670;&nbsp;</a></span>m_entityFlags</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -818,7 +890,7 @@ template&lt;typename T1 , typename... Ts&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;<a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, <a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a>&gt; le::Registry::m_entityFlags</td>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="structle_1_1Entity.html">Entity</a>, <a class="el" href="classle_1_1Registry.html#a01b809019e834282f192c289b1fe3c73">Flags</a>, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a>&gt; le::Registry::m_entityFlags</td>
         </tr>
       </table>
   </td>
@@ -830,8 +902,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a27b6050f6dba68d0d8bfa9d1fcdadec5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27b6050f6dba68d0d8bfa9d1fcdadec5">&#9670;&nbsp;</a></span>m_entityNames</h2>
+<a id="a656cd9161dfab659d5a4770d1c7c8208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656cd9161dfab659d5a4770d1c7c8208">&#9670;&nbsp;</a></span>m_entityNames</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -840,7 +912,7 @@ template&lt;typename T1 , typename... Ts&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;<a class="el" href="structle_1_1Entity.html#a1dfe5c39f550d582ee3994dae9161e18">Entity::ID</a>, std::string&gt; le::Registry::m_entityNames</td>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="structle_1_1Entity.html">Entity</a>, std::string, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a>&gt; le::Registry::m_entityNames</td>
         </tr>
       </table>
   </td>
@@ -863,6 +935,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adjusts <code><a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">io::Level</a></code> on database changes (unset to disable) </p>
 
 </div>
 </div>
@@ -888,24 +962,16 @@ template&lt;typename T1 , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a460e3e3793b0dee4318d1e94176e2622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a460e3e3793b0dee4318d1e94176e2622">&#9670;&nbsp;</a></span>s_tName</h2>
+<a id="a145d4932ccdfeff6b25cc6adca89ea7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145d4932ccdfeff6b25cc6adca89ea7c">&#9670;&nbsp;</a></span>m_name</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string const le::Registry::s_tName</td>
+          <td class="memname">std::string le::Registry::m_name</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

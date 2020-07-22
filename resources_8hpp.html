@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/include/engine/assets/resources.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/include/engine/resources/resources.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,43 +38,175 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a7f531b1c37460085cedd304cb8df01d.html">engine</a></li><li class="navelem"><a class="el" href="dir_740f89088fa43306fe6e792df15d866d.html">assets</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a7f531b1c37460085cedd304cb8df01d.html">engine</a></li><li class="navelem"><a class="el" href="dir_b9c6ede0b8125e1113b39153c3df0234.html">resources</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">resources.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;mutex&gt;</code><br />
+<div class="textblock"><code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;<a class="el" href="assert_8hpp.html">core/assert.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="atomic__counter_8hpp.html">core/atomic_counter.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="hash_8hpp.html">core/hash.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="reader_8hpp.html">core/reader.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utils_8hpp.html">core/utils.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="map__store_8hpp.html">core/map_store.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="asset_8hpp.html">engine/assets/asset.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="resource__types_8hpp.html">engine/resources/resource_types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TAsset.html">le::TAsset&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Component" wrapper for <a class="el" href="classle_1_1Asset.html">Asset</a> types  <a href="structle_1_1TAsset.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Resources.html">le::Resources</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton for managing all classes derived from <a class="el" href="classle_1_1Asset.html">Asset</a>.  <a href="classle_1_1Resources.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacele_1_1res"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html">le::res</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a644c41b4d5c5e4f1a13471e59e999ab1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a644c41b4d5c5e4f1a13471e59e999ab1">le::res::Semaphore</a> = Counter&lt; s32 &gt;::Semaphore</td></tr>
+<tr class="separator:a644c41b4d5c5e4f1a13471e59e999ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7492352af1d6c94eafddb3a924d09620"><td class="memItemLeft" align="right" valign="top">Semaphore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a7492352af1d6c94eafddb3a924d09620">le::res::acquire</a> ()</td></tr>
+<tr class="memdesc:a7492352af1d6c94eafddb3a924d09620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a semaphore to block deinit/unload until (all have been) released.  <a href="namespacele_1_1res.html#a7492352af1d6c94eafddb3a924d09620">More...</a><br /></td></tr>
+<tr class="separator:a7492352af1d6c94eafddb3a924d09620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e5a9c1c06d2dce244dc268f5e03678"><td class="memItemLeft" align="right" valign="top">Shader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae1e5a9c1c06d2dce244dc268f5e03678">le::res::load</a> (stdfs::path const &amp;id, Shader::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:ae1e5a9c1c06d2dce244dc268f5e03678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#ae1e5a9c1c06d2dce244dc268f5e03678">More...</a><br /></td></tr>
+<tr class="separator:ae1e5a9c1c06d2dce244dc268f5e03678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d4f934421e7d31d3742821d54d5010"><td class="memItemLeft" align="right" valign="top">TResult&lt; Shader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a72d4f934421e7d31d3742821d54d5010">le::res::findShader</a> (Hash id)</td></tr>
+<tr class="memdesc:a72d4f934421e7d31d3742821d54d5010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a72d4f934421e7d31d3742821d54d5010">More...</a><br /></td></tr>
+<tr class="separator:a72d4f934421e7d31d3742821d54d5010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a2b083df77c6986fd4118f37d65d41"><td class="memItemLeft" align="right" valign="top">Shader::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad3a2b083df77c6986fd4118f37d65d41">le::res::info</a> (Shader shader)</td></tr>
+<tr class="memdesc:ad3a2b083df77c6986fd4118f37d65d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#ad3a2b083df77c6986fd4118f37d65d41">More...</a><br /></td></tr>
+<tr class="separator:ad3a2b083df77c6986fd4118f37d65d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5dbbbebddf111a3251bb3341d812d9"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#acc5dbbbebddf111a3251bb3341d812d9">le::res::status</a> (Shader shader)</td></tr>
+<tr class="memdesc:acc5dbbbebddf111a3251bb3341d812d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#acc5dbbbebddf111a3251bb3341d812d9">More...</a><br /></td></tr>
+<tr class="separator:acc5dbbbebddf111a3251bb3341d812d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935521fff8a4ffc416f797d1e0116d14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a935521fff8a4ffc416f797d1e0116d14">le::res::unload</a> (Shader shader)</td></tr>
+<tr class="memdesc:a935521fff8a4ffc416f797d1e0116d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a935521fff8a4ffc416f797d1e0116d14">More...</a><br /></td></tr>
+<tr class="separator:a935521fff8a4ffc416f797d1e0116d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37472b1dd8112d6df99940cfc1c99e14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a37472b1dd8112d6df99940cfc1c99e14">le::res::unloadShader</a> (Hash id)</td></tr>
+<tr class="memdesc:a37472b1dd8112d6df99940cfc1c99e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a37472b1dd8112d6df99940cfc1c99e14">More...</a><br /></td></tr>
+<tr class="separator:a37472b1dd8112d6df99940cfc1c99e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3126ccf3bcbb391ed4db29cf60066749"><td class="memItemLeft" align="right" valign="top">Sampler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a3126ccf3bcbb391ed4db29cf60066749">le::res::load</a> (stdfs::path const &amp;id, Sampler::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:a3126ccf3bcbb391ed4db29cf60066749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#a3126ccf3bcbb391ed4db29cf60066749">More...</a><br /></td></tr>
+<tr class="separator:a3126ccf3bcbb391ed4db29cf60066749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd5e416421c401ca619156a343fdcee"><td class="memItemLeft" align="right" valign="top">TResult&lt; Sampler &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#afbd5e416421c401ca619156a343fdcee">le::res::findSampler</a> (Hash id)</td></tr>
+<tr class="memdesc:afbd5e416421c401ca619156a343fdcee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#afbd5e416421c401ca619156a343fdcee">More...</a><br /></td></tr>
+<tr class="separator:afbd5e416421c401ca619156a343fdcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a52d5b9f1ba69d30e54656dca081d8"><td class="memItemLeft" align="right" valign="top">Sampler::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac8a52d5b9f1ba69d30e54656dca081d8">le::res::info</a> (Sampler sampler)</td></tr>
+<tr class="memdesc:ac8a52d5b9f1ba69d30e54656dca081d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#ac8a52d5b9f1ba69d30e54656dca081d8">More...</a><br /></td></tr>
+<tr class="separator:ac8a52d5b9f1ba69d30e54656dca081d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c0b14a9396d65cac775fea66a32857"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af0c0b14a9396d65cac775fea66a32857">le::res::status</a> (Sampler sampler)</td></tr>
+<tr class="memdesc:af0c0b14a9396d65cac775fea66a32857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#af0c0b14a9396d65cac775fea66a32857">More...</a><br /></td></tr>
+<tr class="separator:af0c0b14a9396d65cac775fea66a32857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af159cc1a0faa360ed4ea0cd75e090ec5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af159cc1a0faa360ed4ea0cd75e090ec5">le::res::unload</a> (Sampler sampler)</td></tr>
+<tr class="memdesc:af159cc1a0faa360ed4ea0cd75e090ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#af159cc1a0faa360ed4ea0cd75e090ec5">More...</a><br /></td></tr>
+<tr class="separator:af159cc1a0faa360ed4ea0cd75e090ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac525a813e6e6b3ae743190cac2a8530d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac525a813e6e6b3ae743190cac2a8530d">le::res::unloadSampler</a> (Hash id)</td></tr>
+<tr class="memdesc:ac525a813e6e6b3ae743190cac2a8530d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#ac525a813e6e6b3ae743190cac2a8530d">More...</a><br /></td></tr>
+<tr class="separator:ac525a813e6e6b3ae743190cac2a8530d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290714941d54d3ea0674e9344e5bfabe"><td class="memItemLeft" align="right" valign="top">Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a290714941d54d3ea0674e9344e5bfabe">le::res::load</a> (stdfs::path const &amp;id, Texture::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:a290714941d54d3ea0674e9344e5bfabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a290714941d54d3ea0674e9344e5bfabe">More...</a><br /></td></tr>
+<tr class="separator:a290714941d54d3ea0674e9344e5bfabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d8a467ad8a6beb60149f37e3a903bb"><td class="memItemLeft" align="right" valign="top">TResult&lt; Texture &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a55d8a467ad8a6beb60149f37e3a903bb">le::res::findTexture</a> (Hash id)</td></tr>
+<tr class="memdesc:a55d8a467ad8a6beb60149f37e3a903bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a55d8a467ad8a6beb60149f37e3a903bb">More...</a><br /></td></tr>
+<tr class="separator:a55d8a467ad8a6beb60149f37e3a903bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a8589b63858a17ba2becc9a269ef2b"><td class="memItemLeft" align="right" valign="top">Texture::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a80a8589b63858a17ba2becc9a269ef2b">le::res::info</a> (Texture texture)</td></tr>
+<tr class="memdesc:a80a8589b63858a17ba2becc9a269ef2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a80a8589b63858a17ba2becc9a269ef2b">More...</a><br /></td></tr>
+<tr class="separator:a80a8589b63858a17ba2becc9a269ef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85e07c4872084826fcd71a93f6127b8"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae85e07c4872084826fcd71a93f6127b8">le::res::status</a> (Texture texture)</td></tr>
+<tr class="memdesc:ae85e07c4872084826fcd71a93f6127b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#ae85e07c4872084826fcd71a93f6127b8">More...</a><br /></td></tr>
+<tr class="separator:ae85e07c4872084826fcd71a93f6127b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e482a8632a5fdb92220efcee34ad4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a40e482a8632a5fdb92220efcee34ad4e">le::res::unload</a> (Texture texture)</td></tr>
+<tr class="memdesc:a40e482a8632a5fdb92220efcee34ad4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a40e482a8632a5fdb92220efcee34ad4e">More...</a><br /></td></tr>
+<tr class="separator:a40e482a8632a5fdb92220efcee34ad4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11626e8ceeed740e0303f253044183e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a11626e8ceeed740e0303f253044183e1">le::res::unloadTexture</a> (Hash id)</td></tr>
+<tr class="memdesc:a11626e8ceeed740e0303f253044183e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a11626e8ceeed740e0303f253044183e1">More...</a><br /></td></tr>
+<tr class="separator:a11626e8ceeed740e0303f253044183e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e016c66be6d97375db322aee87f739"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a88e016c66be6d97375db322aee87f739">le::res::load</a> (stdfs::path const &amp;id, Material::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:a88e016c66be6d97375db322aee87f739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a88e016c66be6d97375db322aee87f739">More...</a><br /></td></tr>
+<tr class="separator:a88e016c66be6d97375db322aee87f739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53be65b1d3634825a3fd5b6793bedd5"><td class="memItemLeft" align="right" valign="top">TResult&lt; Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad53be65b1d3634825a3fd5b6793bedd5">le::res::findMaterial</a> (Hash id)</td></tr>
+<tr class="memdesc:ad53be65b1d3634825a3fd5b6793bedd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#ad53be65b1d3634825a3fd5b6793bedd5">More...</a><br /></td></tr>
+<tr class="separator:ad53be65b1d3634825a3fd5b6793bedd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef778d571ff3c43ed19cb5ba8277778"><td class="memItemLeft" align="right" valign="top">Material::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a9ef778d571ff3c43ed19cb5ba8277778">le::res::info</a> (Material material)</td></tr>
+<tr class="memdesc:a9ef778d571ff3c43ed19cb5ba8277778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a9ef778d571ff3c43ed19cb5ba8277778">More...</a><br /></td></tr>
+<tr class="separator:a9ef778d571ff3c43ed19cb5ba8277778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592eb7c066ef2252e267f1c16126125c"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a592eb7c066ef2252e267f1c16126125c">le::res::status</a> (Material material)</td></tr>
+<tr class="memdesc:a592eb7c066ef2252e267f1c16126125c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a592eb7c066ef2252e267f1c16126125c">More...</a><br /></td></tr>
+<tr class="separator:a592eb7c066ef2252e267f1c16126125c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fecfa7eba40b9c97905e7c097f6a0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af4fecfa7eba40b9c97905e7c097f6a0d">le::res::unload</a> (Material material)</td></tr>
+<tr class="memdesc:af4fecfa7eba40b9c97905e7c097f6a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#af4fecfa7eba40b9c97905e7c097f6a0d">More...</a><br /></td></tr>
+<tr class="separator:af4fecfa7eba40b9c97905e7c097f6a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8d8b4e9e9b52823517631fd5adb5e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a3f8d8b4e9e9b52823517631fd5adb5e7">le::res::unloadMaterial</a> (Hash id)</td></tr>
+<tr class="memdesc:a3f8d8b4e9e9b52823517631fd5adb5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a3f8d8b4e9e9b52823517631fd5adb5e7">More...</a><br /></td></tr>
+<tr class="separator:a3f8d8b4e9e9b52823517631fd5adb5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e837e529baff16e9ed8df0960f65081"><td class="memItemLeft" align="right" valign="top">Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a5e837e529baff16e9ed8df0960f65081">le::res::load</a> (stdfs::path const &amp;id, Mesh::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:a5e837e529baff16e9ed8df0960f65081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a5e837e529baff16e9ed8df0960f65081">More...</a><br /></td></tr>
+<tr class="separator:a5e837e529baff16e9ed8df0960f65081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7141ced570346785ef2875310535e8e5"><td class="memItemLeft" align="right" valign="top">TResult&lt; Mesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a7141ced570346785ef2875310535e8e5">le::res::findMesh</a> (Hash id)</td></tr>
+<tr class="memdesc:a7141ced570346785ef2875310535e8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a7141ced570346785ef2875310535e8e5">More...</a><br /></td></tr>
+<tr class="separator:a7141ced570346785ef2875310535e8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d58d14e012a2fef56248d3e3aaae910"><td class="memItemLeft" align="right" valign="top">Mesh::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a0d58d14e012a2fef56248d3e3aaae910">le::res::info</a> (Mesh mesh)</td></tr>
+<tr class="memdesc:a0d58d14e012a2fef56248d3e3aaae910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a0d58d14e012a2fef56248d3e3aaae910">More...</a><br /></td></tr>
+<tr class="separator:a0d58d14e012a2fef56248d3e3aaae910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee8498d6c5db2918928b4d35b53d70f"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a5ee8498d6c5db2918928b4d35b53d70f">le::res::status</a> (Mesh mesh)</td></tr>
+<tr class="memdesc:a5ee8498d6c5db2918928b4d35b53d70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a5ee8498d6c5db2918928b4d35b53d70f">More...</a><br /></td></tr>
+<tr class="separator:a5ee8498d6c5db2918928b4d35b53d70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf01597e298060793b6a7a49c3b0866f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aaf01597e298060793b6a7a49c3b0866f">le::res::unload</a> (Mesh mesh)</td></tr>
+<tr class="memdesc:aaf01597e298060793b6a7a49c3b0866f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#aaf01597e298060793b6a7a49c3b0866f">More...</a><br /></td></tr>
+<tr class="separator:aaf01597e298060793b6a7a49c3b0866f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c48eecd186c87d644c61e716f62cae2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a6c48eecd186c87d644c61e716f62cae2">le::res::unloadMesh</a> (Hash id)</td></tr>
+<tr class="memdesc:a6c48eecd186c87d644c61e716f62cae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a6c48eecd186c87d644c61e716f62cae2">More...</a><br /></td></tr>
+<tr class="separator:a6c48eecd186c87d644c61e716f62cae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff622570f6e35f490ce4c0903e193825"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aff622570f6e35f490ce4c0903e193825">le::res::load</a> (stdfs::path const &amp;id, Font::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:aff622570f6e35f490ce4c0903e193825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#aff622570f6e35f490ce4c0903e193825">More...</a><br /></td></tr>
+<tr class="separator:aff622570f6e35f490ce4c0903e193825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c5a397c4b4d45ff2ce493a62132dff"><td class="memItemLeft" align="right" valign="top">TResult&lt; Font &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a84c5a397c4b4d45ff2ce493a62132dff">le::res::findFont</a> (Hash id)</td></tr>
+<tr class="memdesc:a84c5a397c4b4d45ff2ce493a62132dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a84c5a397c4b4d45ff2ce493a62132dff">More...</a><br /></td></tr>
+<tr class="separator:a84c5a397c4b4d45ff2ce493a62132dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6966576613dec8b92b874401319084c"><td class="memItemLeft" align="right" valign="top">Font::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af6966576613dec8b92b874401319084c">le::res::info</a> (Font font)</td></tr>
+<tr class="memdesc:af6966576613dec8b92b874401319084c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#af6966576613dec8b92b874401319084c">More...</a><br /></td></tr>
+<tr class="separator:af6966576613dec8b92b874401319084c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad581c498eccfd8af4a4ca3c07a514f67"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad581c498eccfd8af4a4ca3c07a514f67">le::res::status</a> (Font font)</td></tr>
+<tr class="memdesc:ad581c498eccfd8af4a4ca3c07a514f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#ad581c498eccfd8af4a4ca3c07a514f67">More...</a><br /></td></tr>
+<tr class="separator:ad581c498eccfd8af4a4ca3c07a514f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0647863d16092295479b0d396fcf9eb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a0647863d16092295479b0d396fcf9eb7">le::res::unload</a> (Font font)</td></tr>
+<tr class="memdesc:a0647863d16092295479b0d396fcf9eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a0647863d16092295479b0d396fcf9eb7">More...</a><br /></td></tr>
+<tr class="separator:a0647863d16092295479b0d396fcf9eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cddc2b27305835b3b9d87ee5c640de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae1cddc2b27305835b3b9d87ee5c640de">le::res::unloadFont</a> (Hash id)</td></tr>
+<tr class="memdesc:ae1cddc2b27305835b3b9d87ee5c640de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#ae1cddc2b27305835b3b9d87ee5c640de">More...</a><br /></td></tr>
+<tr class="separator:ae1cddc2b27305835b3b9d87ee5c640de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd61d0ab08c7fda00a44585e6cbc934e"><td class="memItemLeft" align="right" valign="top">Model&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#afd61d0ab08c7fda00a44585e6cbc934e">le::res::load</a> (stdfs::path const &amp;id, Model::CreateInfo createInfo)</td></tr>
+<tr class="memdesc:afd61d0ab08c7fda00a44585e6cbc934e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#afd61d0ab08c7fda00a44585e6cbc934e">More...</a><br /></td></tr>
+<tr class="separator:afd61d0ab08c7fda00a44585e6cbc934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9767a155e3c0c57e1e8240f034f0fd"><td class="memItemLeft" align="right" valign="top">TResult&lt; Model &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aac9767a155e3c0c57e1e8240f034f0fd">le::res::findModel</a> (Hash id)</td></tr>
+<tr class="memdesc:aac9767a155e3c0c57e1e8240f034f0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#aac9767a155e3c0c57e1e8240f034f0fd">More...</a><br /></td></tr>
+<tr class="separator:aac9767a155e3c0c57e1e8240f034f0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd79537ab662db623c8da872b287ca9"><td class="memItemLeft" align="right" valign="top">Model::Info const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a2bd79537ab662db623c8da872b287ca9">le::res::info</a> (Model model)</td></tr>
+<tr class="memdesc:a2bd79537ab662db623c8da872b287ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a2bd79537ab662db623c8da872b287ca9">More...</a><br /></td></tr>
+<tr class="separator:a2bd79537ab662db623c8da872b287ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791cd4356ab69b2491a810badec1229a"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a791cd4356ab69b2491a810badec1229a">le::res::status</a> (Model model)</td></tr>
+<tr class="memdesc:a791cd4356ab69b2491a810badec1229a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a791cd4356ab69b2491a810badec1229a">More...</a><br /></td></tr>
+<tr class="separator:a791cd4356ab69b2491a810badec1229a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444ff02224b582eb84974145704c2141"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a444ff02224b582eb84974145704c2141">le::res::unload</a> (Model model)</td></tr>
+<tr class="memdesc:a444ff02224b582eb84974145704c2141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a444ff02224b582eb84974145704c2141">More...</a><br /></td></tr>
+<tr class="separator:a444ff02224b582eb84974145704c2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf7d092292217cc2984fc39bb5cb9c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aebf7d092292217cc2984fc39bb5cb9c8">le::res::unloadModel</a> (Hash id)</td></tr>
+<tr class="memdesc:aebf7d092292217cc2984fc39bb5cb9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#aebf7d092292217cc2984fc39bb5cb9c8">More...</a><br /></td></tr>
+<tr class="separator:aebf7d092292217cc2984fc39bb5cb9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a1aed3c6ed794e33f00a35a86aba49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a12a1aed3c6ed794e33f00a35a86aba49">le::res::unload</a> (Hash id)</td></tr>
+<tr class="memdesc:a12a1aed3c6ed794e33f00a35a86aba49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Resource.html" title="Base struct for all resources.">Resource</a>.  <a href="namespacele_1_1res.html#a12a1aed3c6ed794e33f00a35a86aba49">More...</a><br /></td></tr>
+<tr class="separator:a12a1aed3c6ed794e33f00a35a86aba49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e993862db5bc66f5ce9cb1fce8075b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad6e993862db5bc66f5ce9cb1fce8075b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad6e993862db5bc66f5ce9cb1fce8075b">le::res::load</a> (stdfs::path const &amp;id, typename T::CreateInfo createInfo)</td></tr>
+<tr class="separator:ad6e993862db5bc66f5ce9cb1fce8075b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3cad4e5735d711b6db04ddedee797c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7e3cad4e5735d711b6db04ddedee797c"><td class="memTemplItemLeft" align="right" valign="top">TResult&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a7e3cad4e5735d711b6db04ddedee797c">le::res::find</a> (Hash id)</td></tr>
+<tr class="separator:a7e3cad4e5735d711b6db04ddedee797c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
