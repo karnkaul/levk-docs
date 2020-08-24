@@ -55,15 +55,15 @@ $(function() {
 <code>#include &lt;glm/vec2.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="colour_8hpp.html">core/colour.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="flags_8hpp.html">core/flags.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="gdata_8hpp.html">core/gdata.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hash_8hpp.html">core/hash.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8hpp.html">core/utils.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="zero_8hpp.html">core/zero.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dumb__json_8hpp.html">dumb_json/dumb_json.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="geometry_8hpp.html">engine/gfx/geometry.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Resource.html">le::res::Resource</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Resource.html">le::res::Resource&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base struct for all resources.  <a href="structle_1_1res_1_1Resource.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Shader.html">le::res::Shader</a></td></tr>
@@ -89,6 +89,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1InfoBase.html">le::res::InfoBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1LoadBase.html">le::res::LoadBase&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Shader_1_1Info.html">le::res::Shader::Info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Shader_1_1CreateInfo.html">le::res::Shader::CreateInfo</a></td></tr>
@@ -102,6 +104,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Texture_1_1Info.html">le::res::Texture::Info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Texture_1_1CreateInfo.html">le::res::Texture::CreateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Texture_1_1LoadInfo.html">le::res::Texture::LoadInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Material_1_1Inst.html">le::res::Material::Inst</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +134,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Model_1_1Info.html">le::res::Model::Info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Model_1_1CreateInfo.html">le::res::Model::CreateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Model_1_1LoadInfo.html">le::res::Model::LoadInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: le::Lockable&lt; M &gt; Struct Template Reference</title>
+<title>LittleEngineVk: kt::lockable&lt; Mutex &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,48 +38,57 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacele.html">le</a></li><li class="navelem"><a class="el" href="structle_1_1Lockable.html">Lockable</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacekt.html">kt</a></li><li class="navelem"><a class="el" href="structkt_1_1lockable.html">lockable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structle_1_1Lockable-members.html">List of all members</a>  </div>
+<a href="structkt_1_1lockable-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">le::Lockable&lt; M &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">kt::lockable&lt; Mutex &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;utils.hpp&gt;</code></p>
+<p>Wrapper for a mutex and associated locks.  
+ <a href="structkt_1_1lockable.html#details">More...</a></p>
+
+<p><code>#include &lt;async_queue.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ff059677b7c06689f33ad4546fd4c2a"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename... &gt; typename L = std::scoped_lock&gt; </td></tr>
-<tr class="memitem:a5ff059677b7c06689f33ad4546fd4c2a"><td class="memTemplItemLeft" align="right" valign="top">L&lt; M &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Lockable.html#a5ff059677b7c06689f33ad4546fd4c2a">lock</a> ()</td></tr>
-<tr class="separator:a5ff059677b7c06689f33ad4546fd4c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8efa9949870d1ab4179623fa68ec5ae"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename... &gt; typename Lock = std::scoped_lock&gt; </td></tr>
+<tr class="memitem:af8efa9949870d1ab4179623fa68ec5ae"><td class="memTemplItemLeft" align="right" valign="top">Lock&lt; Mutex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structkt_1_1lockable.html#af8efa9949870d1ab4179623fa68ec5ae">lock</a> ()</td></tr>
+<tr class="memdesc:af8efa9949870d1ab4179623fa68ec5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a Lock on mutex.  <a href="structkt_1_1lockable.html#af8efa9949870d1ab4179623fa68ec5ae">More...</a><br /></td></tr>
+<tr class="separator:af8efa9949870d1ab4179623fa68ec5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad3f76d4be6d02f9f84408fdd77e4bae2"><td class="memItemLeft" align="right" valign="top">M&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Lockable.html#ad3f76d4be6d02f9f84408fdd77e4bae2">mutex</a></td></tr>
-<tr class="separator:ad3f76d4be6d02f9f84408fdd77e4bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950017302c9a6974cd35ae2f60272212"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1lockable.html#a950017302c9a6974cd35ae2f60272212">mutex</a></td></tr>
+<tr class="separator:a950017302c9a6974cd35ae2f60272212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5ff059677b7c06689f33ad4546fd4c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ff059677b7c06689f33ad4546fd4c2a">&#9670;&nbsp;</a></span>lock()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Mutex = std::mutex&gt;<br />
+struct kt::lockable&lt; Mutex &gt;</h3>
+
+<p>Wrapper for a mutex and associated locks. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af8efa9949870d1ab4179623fa68ec5ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8efa9949870d1ab4179623fa68ec5ae">&#9670;&nbsp;</a></span>lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename M &gt; </div>
+template&lt;typename Mutex  = std::mutex&gt; </div>
 <div class="memtemplate">
-template&lt;template&lt; typename... &gt; typename L = std::scoped_lock&gt; </div>
+template&lt;template&lt; typename... &gt; typename Lock = std::scoped_lock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">L&lt;M&gt; <a class="el" href="structle_1_1Lockable.html">le::Lockable</a>&lt; M &gt;::lock </td>
+          <td class="memname">Lock&lt;Mutex&gt; <a class="el" href="structkt_1_1lockable.html">kt::lockable</a>&lt; Mutex &gt;::lock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -92,19 +101,21 @@ template&lt;template&lt; typename... &gt; typename L = std::scoped_lock&gt; </di
 </table>
 </div><div class="memdoc">
 
+<p>Obtain a Lock on mutex. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad3f76d4be6d02f9f84408fdd77e4bae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3f76d4be6d02f9f84408fdd77e4bae2">&#9670;&nbsp;</a></span>mutex</h2>
+<a id="a950017302c9a6974cd35ae2f60272212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a950017302c9a6974cd35ae2f60272212">&#9670;&nbsp;</a></span>mutex</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename M &gt; </div>
+template&lt;typename Mutex  = std::mutex&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">M <a class="el" href="structle_1_1Lockable.html">le::Lockable</a>&lt; M &gt;::mutex</td>
+          <td class="memname">Mutex <a class="el" href="structkt_1_1lockable.html">kt::lockable</a>&lt; Mutex &gt;::mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">

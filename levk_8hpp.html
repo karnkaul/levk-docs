@@ -45,7 +45,9 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">levk.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -77,6 +79,23 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacele_1_1engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html">le::engine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a52ca1f49f65ff3f2c212c3c07e2ea98a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98a">le::engine::Status</a> : s8 { <br />
+&#160;&#160;<a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98aa7b9cf82c13307a24d74c2fec226a83cc">le::engine::Status::eIdle</a>, 
+<a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98aa687f134674ba62b5ac32eee9a7f03850">le::engine::Status::eInitialised</a>, 
+<a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98aad2e4e7df5c40270c3383a6e42c1621f3">le::engine::Status::eTicking</a>, 
+<a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98aae35cd0aaebf80e59e4c56df5055fd92c">le::engine::Status::eShuttingDown</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98aa464977ec46fbac0d8d202851a7a1e299">le::engine::Status::eShutdown</a>
+<br />
+ }</td></tr>
+<tr class="separator:a52ca1f49f65ff3f2c212c3c07e2ea98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e90a1bd26b100733db0332bfea4255"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a40e90a1bd26b100733db0332bfea4255">le::engine::ShutdownSequence</a> : s8 { <a class="el" href="namespacele_1_1engine.html#a40e90a1bd26b100733db0332bfea4255afc5b3d7c4488e6ec7c0d74923a9612b7">le::engine::ShutdownSequence::eCloseWindow_Shutdown</a>, 
+<a class="el" href="namespacele_1_1engine.html#a40e90a1bd26b100733db0332bfea4255ab488a82514b4e5cfb8b820da03684e73">le::engine::ShutdownSequence::eShutdown_CloseWindow</a>
+ }</td></tr>
+<tr class="separator:a40e90a1bd26b100733db0332bfea4255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#ab5a13c593dad709f25aac6eb9b68f4dd">le::engine::isShuttingDown</a> ()</td></tr>
@@ -91,9 +110,17 @@ Functions</h2></td></tr>
 <tr class="memitem:abcad9153c49f0fcb83af0bab9378310b"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#abcad9153c49f0fcb83af0bab9378310b">le::engine::framebufferSize</a> ()</td></tr>
 <tr class="memdesc:abcad9153c49f0fcb83af0bab9378310b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the framebuffer size.  <a href="namespacele_1_1engine.html#abcad9153c49f0fcb83af0bab9378310b">More...</a><br /></td></tr>
 <tr class="separator:abcad9153c49f0fcb83af0bab9378310b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fd86127d86181eaa948d586a03d9b5"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#af2fd86127d86181eaa948d586a03d9b5">le::engine::gameRectSize</a> ()</td></tr>
+<tr class="memdesc:af2fd86127d86181eaa948d586a03d9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the (normalised) gameRect size.  <a href="namespacele_1_1engine.html#af2fd86127d86181eaa948d586a03d9b5">More...</a><br /></td></tr>
+<tr class="separator:af2fd86127d86181eaa948d586a03d9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1419ec956199e8865cd416055d305eb4"><td class="memItemLeft" align="right" valign="top">stdfs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a1419ec956199e8865cd416055d305eb4">le::engine::exePath</a> ()</td></tr>
 <tr class="memdesc:a1419ec956199e8865cd416055d305eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the path to the running executable.  <a href="namespacele_1_1engine.html#a1419ec956199e8865cd416055d305eb4">More...</a><br /></td></tr>
 <tr class="separator:a1419ec956199e8865cd416055d305eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a91f786fce8d0e8a76d3a786fac459804"><td class="memItemLeft" align="right" valign="top">ShutdownSequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a91f786fce8d0e8a76d3a786fac459804">le::engine::g_shutdownSequence</a> = ShutdownSequence::eCloseWindow_Shutdown</td></tr>
+<tr class="separator:a91f786fce8d0e8a76d3a786fac459804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

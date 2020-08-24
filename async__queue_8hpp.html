@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/core/include/core/gdata.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/core/include/kt/async_queue/async_queue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_6f77a39b07c019ccd7492ea87272f732.html">core</a></li><li class="navelem"><a class="el" href="dir_25de89a49d1da2858ac6330785c12b40.html">include</a></li><li class="navelem"><a class="el" href="dir_675588880d5acaab1ae503e87aff3526.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_6f77a39b07c019ccd7492ea87272f732.html">core</a></li><li class="navelem"><a class="el" href="dir_25de89a49d1da2858ac6330785c12b40.html">include</a></li><li class="navelem"><a class="el" href="dir_ce3d637c1ef4011797c9ab5a91246151.html">kt</a></li><li class="navelem"><a class="el" href="dir_7fb2da605c778d52e50ac5172003a2bb.html">async_queue</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -46,25 +46,26 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">gdata.hpp File Reference</div>  </div>
+<div class="title">async_queue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;condition_variable&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1GData.html">le::GData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumb wrapper for reading JSON strings.  <a href="classle_1_1GData.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1lockable.html">kt::lockable&lt; Mutex &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a mutex and associated locks.  <a href="structkt_1_1lockable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html">kt::async_queue&lt; T, Mutex &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO std::deque wrapper with thread safe API.  <a href="classkt_1_1async__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
+<tr class="memitem:namespacekt"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html">kt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

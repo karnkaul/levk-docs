@@ -46,6 +46,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -53,10 +54,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;fmt/format.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="args__parser_8hpp.html">kt/args_parser/args_parser.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -82,6 +85,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ad2373c2f2cdf4fd7815e035117c3c4e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#ad2373c2f2cdf4fd7815e035117c3c4e7">LEVK_COMPILER_UNKNOWN</a></td></tr>
 <tr class="separator:ad2373c2f2cdf4fd7815e035117c3c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aac188eeceec50bfa17b06f0dc10719d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aac188eeceec50bfa17b06f0dc10719d5">le::os::ArgsParser</a> = <a class="el" href="structkt_1_1args__parser.html">kt::args_parser</a>&lt;&gt;</td></tr>
+<tr class="separator:aac188eeceec50bfa17b06f0dc10719d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a8e13516ac1e2110dc1c13d3f989f5b21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21">le::os::Dir</a> : s8 { <a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21a043cc156fb230924515432e8533ec067">le::os::Dir::eWorking</a>, 
@@ -101,12 +109,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ae42604e32ec1009458a21bd23bb906ac"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#ae42604e32ec1009458a21bd23bb906ac">le::os::dirPath</a> (Dir dir)</td></tr>
 <tr class="memdesc:ae42604e32ec1009458a21bd23bb906ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain working/executable directory.  <a href="namespacele_1_1os.html#ae42604e32ec1009458a21bd23bb906ac">More...</a><br /></td></tr>
 <tr class="separator:ae42604e32ec1009458a21bd23bb906ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264c12b7acf98c1347cc16624e67128e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string_view &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a264c12b7acf98c1347cc16624e67128e">le::os::args</a> ()</td></tr>
-<tr class="memdesc:a264c12b7acf98c1347cc16624e67128e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain all command line arguments passed to the runtime.  <a href="namespacele_1_1os.html#a264c12b7acf98c1347cc16624e67128e">More...</a><br /></td></tr>
-<tr class="separator:a264c12b7acf98c1347cc16624e67128e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab777ba32832d3ffe406ff5d5a61a70d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#ab777ba32832d3ffe406ff5d5a61a70d3">le::os::isDefined</a> (std::string_view arg)</td></tr>
-<tr class="memdesc:ab777ba32832d3ffe406ff5d5a61a70d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an expression was passed as a command line argument.  <a href="namespacele_1_1os.html#ab777ba32832d3ffe406ff5d5a61a70d3">More...</a><br /></td></tr>
-<tr class="separator:ab777ba32832d3ffe406ff5d5a61a70d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a803f6c128e7085a81f2a908dec208"><td class="memItemLeft" align="right" valign="top">std::deque&lt; ArgsParser::entry &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">le::os::args</a> () noexcept</td></tr>
+<tr class="memdesc:a11a803f6c128e7085a81f2a908dec208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain all command line arguments passed to the runtime.  <a href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">More...</a><br /></td></tr>
+<tr class="separator:a11a803f6c128e7085a81f2a908dec208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
+<tr class="memitem:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; std::string_view &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aba57e91697de0cbdab1e1f0ceae0cc58">le::os::isDefined</a> (Arg &amp;&amp;key, Args &amp;&amp;... variants) noexcept</td></tr>
+<tr class="memdesc:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string or its variant was passed as a command line argument.  <a href="namespacele_1_1os.html#aba57e91697de0cbdab1e1f0ceae0cc58">More...</a><br /></td></tr>
+<tr class="separator:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893fc6fddc12ef383ef66789bc6b794b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a893fc6fddc12ef383ef66789bc6b794b">le::os::isDebuggerAttached</a> ()</td></tr>
 <tr class="memdesc:a893fc6fddc12ef383ef66789bc6b794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a debugger is attached to the runtime.  <a href="namespacele_1_1os.html#a893fc6fddc12ef383ef66789bc6b794b">More...</a><br /></td></tr>
 <tr class="separator:a893fc6fddc12ef383ef66789bc6b794b"><td class="memSeparator" colspan="2">&#160;</td></tr>

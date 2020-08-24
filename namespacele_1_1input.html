@@ -331,6 +331,17 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a0e5d27692a650594febda232933e96be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782686ea8cffec10a53ac526ebeff30d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30d">CursorType</a> : s8 { <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30daaf71f03861810014d736fcbae9d6050e">CursorType::eDefault</a> = 0, 
+<a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30da154bf6087fa136b789b652f5440c063e">CursorType::eResizeEW</a>, 
+<a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30dafe10c54264cd09811d5946ede116a890">CursorType::eResizeNS</a>, 
+<a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30da5cc51d9171ee6f547ca0a0e24ca88930">CursorType::eResizeNWSE</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30dabe3d8953bc2e83f8746ed6632a4354a6">CursorType::eResizeNESW</a>, 
+<a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30da98ce873df53900dd5454baba574ecb06">CursorType::eCOUNT_</a>
+<br />
+ }</td></tr>
+<tr class="separator:a782686ea8cffec10a53ac526ebeff30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6b7ae72cdc596a2e56c506e125c279"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279">CursorMode</a> : s8 { <a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279aaf71f03861810014d736fcbae9d6050e">CursorMode::eDefault</a> = 0, 
 <a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279a5d5e849c9eb69ef3b3ec6673c57df883">CursorMode::eHidden</a>, 
 <a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279ab32b520e58e1334ea07d4df5a4c5c402">CursorMode::eDisabled</a>
@@ -343,14 +354,18 @@ Functions</h2></td></tr>
 <tr class="separator:a741e8f1d8d556c9c343b5abc6dce814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9506216bba493c05d08604b0cb6e1b87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1input.html#a1bbb1ee13c12e96a61b213948a964e02">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a9506216bba493c05d08604b0cb6e1b87">registerContext</a> (<a class="el" href="classle_1_1input_1_1Context.html">Context</a> const &amp;context)</td></tr>
 <tr class="separator:a9506216bba493c05d08604b0cb6e1b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a207e83de785bd9a51770355989de4042"><td class="memItemLeft" align="right" valign="top">glm::vec2 const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a207e83de785bd9a51770355989de4042">cursorPosition</a> (bool bIgnoreDisabled=false)</td></tr>
-<tr class="separator:a207e83de785bd9a51770355989de4042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce7fbd6927db106a2bcf5550dc1dce6"><td class="memItemLeft" align="right" valign="top">glm::vec2 const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a5ce7fbd6927db106a2bcf5550dc1dce6">cursorPosition</a> (bool bRaw=false)</td></tr>
+<tr class="separator:a5ce7fbd6927db106a2bcf5550dc1dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4009f6b7de5b326485b9fada014c3be"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad4009f6b7de5b326485b9fada014c3be">screenToWorld</a> (glm::vec2 const &amp;screen)</td></tr>
 <tr class="separator:ad4009f6b7de5b326485b9fada014c3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50bf9c981aaa6b29ff8c925061f38b1"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aa50bf9c981aaa6b29ff8c925061f38b1">worldToUI</a> (glm::vec2 const &amp;world)</td></tr>
 <tr class="separator:aa50bf9c981aaa6b29ff8c925061f38b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ba152ef62fd34042f9f6ee18b4559a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#af9ba152ef62fd34042f9f6ee18b4559a">isInFocus</a> ()</td></tr>
 <tr class="separator:af9ba152ef62fd34042f9f6ee18b4559a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47207a7fa4f95dfbd47b2338ee1d20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#af47207a7fa4f95dfbd47b2338ee1d20d">setCursorMode</a> (<a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279">CursorMode</a> mode)</td></tr>
+<tr class="separator:af47207a7fa4f95dfbd47b2338ee1d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad424693500543776a76b163d819c0286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279">CursorMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad424693500543776a76b163d819c0286">cursorMode</a> ()</td></tr>
+<tr class="separator:ad424693500543776a76b163d819c0286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa381f3c74e65bc06789b8276d8827546"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aa381f3c74e65bc06789b8276d8827546">isMouseButton</a> (<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">Key</a> key)</td></tr>
 <tr class="separator:aa381f3c74e65bc06789b8276d8827546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cce8440b65eb9f5e52378a923383dbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a4cce8440b65eb9f5e52378a923383dbd">isGamepadButton</a> (<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">Key</a> key)</td></tr>
@@ -667,6 +682,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a782686ea8cffec10a53ac526ebeff30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782686ea8cffec10a53ac526ebeff30d">&#9670;&nbsp;</a></span>CursorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacele_1_1input.html#a782686ea8cffec10a53ac526ebeff30d">le::input::CursorType</a> : <a class="el" href="namespacele.html#af9e0cf7215603bba4aa12fe79e815d5f">s8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a782686ea8cffec10a53ac526ebeff30daaf71f03861810014d736fcbae9d6050e"></a>eDefault&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a782686ea8cffec10a53ac526ebeff30da154bf6087fa136b789b652f5440c063e"></a>eResizeEW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a782686ea8cffec10a53ac526ebeff30dafe10c54264cd09811d5946ede116a890"></a>eResizeNS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a782686ea8cffec10a53ac526ebeff30da5cc51d9171ee6f547ca0a0e24ca88930"></a>eResizeNWSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a782686ea8cffec10a53ac526ebeff30dabe3d8953bc2e83f8746ed6632a4354a6"></a>eResizeNESW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a782686ea8cffec10a53ac526ebeff30da98ce873df53900dd5454baba574ecb06"></a>eCOUNT_&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="adda856c8317e5219d3838e54f6ca640b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adda856c8317e5219d3838e54f6ca640b">&#9670;&nbsp;</a></span>Key</h2>
 
@@ -892,8 +937,25 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a207e83de785bd9a51770355989de4042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a207e83de785bd9a51770355989de4042">&#9670;&nbsp;</a></span>cursorPosition()</h2>
+<a id="ad424693500543776a76b163d819c0286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad424693500543776a76b163d819c0286">&#9670;&nbsp;</a></span>cursorMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279">CursorMode</a> le::input::cursorMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ce7fbd6927db106a2bcf5550dc1dce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce7fbd6927db106a2bcf5550dc1dce6">&#9670;&nbsp;</a></span>cursorPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -902,7 +964,7 @@ Functions</h2></td></tr>
           <td class="memname">glm::vec2 const&amp; le::input::cursorPosition </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bIgnoreDisabled</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>bRaw</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1172,6 +1234,24 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">glm::vec2 const &amp;&#160;</td>
           <td class="paramname"><em>screen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af47207a7fa4f95dfbd47b2338ee1d20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47207a7fa4f95dfbd47b2338ee1d20d">&#9670;&nbsp;</a></span>setCursorMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::input::setCursorMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1input.html#a6b6b7ae72cdc596a2e56c506e125c279">CursorMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

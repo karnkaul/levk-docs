@@ -43,7 +43,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classle_1_1Delegate-members.html">List of all members</a>  </div>
@@ -59,31 +58,31 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abb4c401d33db0245f82f63e7c57d8aa4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a> = std::shared_ptr&lt; int32_t &gt;</td></tr>
-<tr class="separator:abb4c401d33db0245f82f63e7c57d8aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85849167f4cca1e3111ffb7274caccdb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a85849167f4cca1e3111ffb7274caccdb">Token</a> = <a class="el" href="classle_1_1UniqueToken.html">UniqueToken</a>&lt; <a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> &gt;</td></tr>
+<tr class="separator:a85849167f4cca1e3111ffb7274caccdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5350006a8ddf040f73b9fac79f734bd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> = std::function&lt; void(Args...)&gt;</td></tr>
 <tr class="separator:ac5350006a8ddf040f73b9fac79f734bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a94d8d8d4752ead1a308a17c951b7da46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a94d8d8d4752ead1a308a17c951b7da46">subscribe</a> (<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> callback)</td></tr>
+<tr class="memitem:a94d8d8d4752ead1a308a17c951b7da46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#a85849167f4cca1e3111ffb7274caccdb">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a94d8d8d4752ead1a308a17c951b7da46">subscribe</a> (<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> callback)</td></tr>
 <tr class="memdesc:a94d8d8d4752ead1a308a17c951b7da46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback and obtain token.  <a href="classle_1_1Delegate.html#a94d8d8d4752ead1a308a17c951b7da46">More...</a><br /></td></tr>
 <tr class="separator:a94d8d8d4752ead1a308a17c951b7da46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad13ef5a10676e011c1940e6e5f418c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a8ad13ef5a10676e011c1940e6e5f418c">operator()</a> (Args... t)</td></tr>
-<tr class="memdesc:a8ad13ef5a10676e011c1940e6e5f418c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up dead callbacks and invoke the rest.  <a href="classle_1_1Delegate.html#a8ad13ef5a10676e011c1940e6e5f418c">More...</a><br /></td></tr>
-<tr class="separator:a8ad13ef5a10676e011c1940e6e5f418c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02371f8f33a2eaa0e700ec941f067fc3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a02371f8f33a2eaa0e700ec941f067fc3">operator()</a> (Args... t) const</td></tr>
-<tr class="memdesc:a02371f8f33a2eaa0e700ec941f067fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip dead callbacks and invoke the rest; returns live count.  <a href="classle_1_1Delegate.html#a02371f8f33a2eaa0e700ec941f067fc3">More...</a><br /></td></tr>
-<tr class="separator:a02371f8f33a2eaa0e700ec941f067fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7524186a90061f5853520f858f67a2ea"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a7524186a90061f5853520f858f67a2ea">operator()</a> (Args... args)</td></tr>
+<tr class="memdesc:a7524186a90061f5853520f858f67a2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up dead callbacks and invoke the rest.  <a href="classle_1_1Delegate.html#a7524186a90061f5853520f858f67a2ea">More...</a><br /></td></tr>
+<tr class="separator:a7524186a90061f5853520f858f67a2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d32b983a5afb16ddeb0f5b77d11348"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a98d32b983a5afb16ddeb0f5b77d11348">operator()</a> (Args... args) const</td></tr>
+<tr class="memdesc:a98d32b983a5afb16ddeb0f5b77d11348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip dead callbacks and invoke the rest; returns live count.  <a href="classle_1_1Delegate.html#a98d32b983a5afb16ddeb0f5b77d11348">More...</a><br /></td></tr>
+<tr class="separator:a98d32b983a5afb16ddeb0f5b77d11348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6f6e1cac580adfc8e101c25ff62ba1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#ace6f6e1cac580adfc8e101c25ff62ba1">isAlive</a> ()</td></tr>
 <tr class="memdesc:ace6f6e1cac580adfc8e101c25ff62ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any registered callbacks exist.  <a href="classle_1_1Delegate.html#ace6f6e1cac580adfc8e101c25ff62ba1">More...</a><br /></td></tr>
 <tr class="separator:ace6f6e1cac580adfc8e101c25ff62ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a921b78762a8c6c20f67769867d81cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a5a921b78762a8c6c20f67769867d81cc">clear</a> ()</td></tr>
 <tr class="memdesc:a5a921b78762a8c6c20f67769867d81cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all registered callbacks.  <a href="classle_1_1Delegate.html#a5a921b78762a8c6c20f67769867d81cc">More...</a><br /></td></tr>
 <tr class="separator:a5a921b78762a8c6c20f67769867d81cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b46bac9732d05c6959c0460e107cabd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a3b46bac9732d05c6959c0460e107cabd">cleanup</a> ()</td></tr>
-<tr class="memdesc:a3b46bac9732d05c6959c0460e107cabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove unregistered callbacks.  <a href="classle_1_1Delegate.html#a3b46bac9732d05c6959c0460e107cabd">More...</a><br /></td></tr>
-<tr class="separator:a3b46bac9732d05c6959c0460e107cabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9167a5d2650ba52bc23cefb93c6cb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a6f9167a5d2650ba52bc23cefb93c6cb5">sweep</a> ()</td></tr>
+<tr class="memdesc:a6f9167a5d2650ba52bc23cefb93c6cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove unregistered callbacks.  <a href="classle_1_1Delegate.html#a6f9167a5d2650ba52bc23cefb93c6cb5">More...</a><br /></td></tr>
+<tr class="separator:a6f9167a5d2650ba52bc23cefb93c6cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename... Args&gt;<br />
@@ -107,8 +106,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="abb4c401d33db0245f82f63e7c57d8aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb4c401d33db0245f82f63e7c57d8aa4">&#9670;&nbsp;</a></span>Token</h2>
+<a id="a85849167f4cca1e3111ffb7274caccdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85849167f4cca1e3111ffb7274caccdb">&#9670;&nbsp;</a></span>Token</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,7 +115,7 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a> =  std::shared_ptr&lt;int32_t&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#a85849167f4cca1e3111ffb7274caccdb">Token</a> =  <a class="el" href="classle_1_1UniqueToken.html">UniqueToken</a>&lt;<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -124,24 +123,6 @@ template&lt;typename... Args&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3b46bac9732d05c6959c0460e107cabd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b46bac9732d05c6959c0460e107cabd">&#9670;&nbsp;</a></span>cleanup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::cleanup</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove unregistered callbacks. </p>
-
-</div>
-</div>
 <a id="a5a921b78762a8c6c20f67769867d81cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a921b78762a8c6c20f67769867d81cc">&#9670;&nbsp;</a></span>clear()</h2>
 
@@ -176,12 +157,12 @@ template&lt;typename... Args&gt; </div>
 
 <p>Check if any registered callbacks exist. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if any previously distributed Token is still alive</dd></dl>
-<p>Calls <code><a class="el" href="classle_1_1Delegate.html#a3b46bac9732d05c6959c0460e107cabd" title="Remove unregistered callbacks.">cleanup()</a></code> </p>
+<p>Calls <code>cleanup()</code> </p>
 
 </div>
 </div>
-<a id="a8ad13ef5a10676e011c1940e6e5f418c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad13ef5a10676e011c1940e6e5f418c">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+<a id="a7524186a90061f5853520f858f67a2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7524186a90061f5853520f858f67a2ea">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,10 +170,10 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::operator() </td>
+          <td class="memname">std::size_t <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">Args...&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -203,8 +184,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a02371f8f33a2eaa0e700ec941f067fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02371f8f33a2eaa0e700ec941f067fc3">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+<a id="a98d32b983a5afb16ddeb0f5b77d11348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d32b983a5afb16ddeb0f5b77d11348">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,10 +193,10 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::operator() </td>
+          <td class="memname">std::size_t <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">Args...&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -235,7 +216,7 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt; Args... &gt;::<a class="el" href="classle_1_1Delegate.html#abb4c401d33db0245f82f63e7c57d8aa4">Token</a> <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::subscribe </td>
+          <td class="memname"><a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt; Args... &gt;::<a class="el" href="classle_1_1Delegate.html#a85849167f4cca1e3111ffb7274caccdb">Token</a> <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::subscribe </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
@@ -246,6 +227,24 @@ template&lt;typename... Args&gt; </div>
 
 <p>Register callback and obtain token. </p>
 <dl class="section return"><dt>Returns</dt><dd>Subscription token (discard to unregister) </dd></dl>
+
+</div>
+</div>
+<a id="a6f9167a5d2650ba52bc23cefb93c6cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9167a5d2650ba52bc23cefb93c6cb5">&#9670;&nbsp;</a></span>sweep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::sweep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove unregistered callbacks. </p>
 
 </div>
 </div>

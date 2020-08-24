@@ -65,13 +65,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af9dd06bedf9a4e4b87d0337d271464ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Counter.html#af9dd06bedf9a4e4b87d0337d271464ff">increment</a> ()</td></tr>
-<tr class="separator:af9dd06bedf9a4e4b87d0337d271464ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e3f9cec887b0b2bc04484564c7893e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Counter.html#ac5e3f9cec887b0b2bc04484564c7893e">decrement</a> ()</td></tr>
-<tr class="separator:ac5e3f9cec887b0b2bc04484564c7893e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e2e40544172a69170a7910cb73af92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Counter.html#a13e2e40544172a69170a7910cb73af92">isZero</a> (bool bAllowNegative) const</td></tr>
-<tr class="memdesc:a13e2e40544172a69170a7910cb73af92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if counter value is 0.  <a href="structle_1_1Counter.html#a13e2e40544172a69170a7910cb73af92">More...</a><br /></td></tr>
-<tr class="separator:a13e2e40544172a69170a7910cb73af92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50af84784c2805ed858d056ff0f301eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Counter.html#a50af84784c2805ed858d056ff0f301eb">increment</a> () noexcept</td></tr>
+<tr class="separator:a50af84784c2805ed858d056ff0f301eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bca59f4d331bbaac40694e1b7a16c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Counter.html#a6bca59f4d331bbaac40694e1b7a16c55">decrement</a> () noexcept</td></tr>
+<tr class="separator:a6bca59f4d331bbaac40694e1b7a16c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6868f59200438ef93beb033b3c36e466"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Counter.html#a6868f59200438ef93beb033b3c36e466">isZero</a> (bool bAllowNegative) const noexcept</td></tr>
+<tr class="memdesc:a6868f59200438ef93beb033b3c36e466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if counter value is 0.  <a href="structle_1_1Counter.html#a6868f59200438ef93beb033b3c36e466">More...</a><br /></td></tr>
+<tr class="separator:a6868f59200438ef93beb033b3c36e466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -84,45 +84,64 @@ struct le::Counter&lt; T &gt;</h3>
 
 <p>Simple counter that increments/decrements atomically. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5e3f9cec887b0b2bc04484564c7893e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5e3f9cec887b0b2bc04484564c7893e">&#9670;&nbsp;</a></span>decrement()</h2>
+<a id="a6bca59f4d331bbaac40694e1b7a16c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bca59f4d331bbaac40694e1b7a16c55">&#9670;&nbsp;</a></span>decrement()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structle_1_1Counter.html">le::Counter</a>&lt; T &gt;::decrement</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af9dd06bedf9a4e4b87d0337d271464ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9dd06bedf9a4e4b87d0337d271464ff">&#9670;&nbsp;</a></span>increment()</h2>
+<a id="a50af84784c2805ed858d056ff0f301eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50af84784c2805ed858d056ff0f301eb">&#9670;&nbsp;</a></span>increment()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structle_1_1Counter.html">le::Counter</a>&lt; T &gt;::increment</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a13e2e40544172a69170a7910cb73af92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e2e40544172a69170a7910cb73af92">&#9670;&nbsp;</a></span>isZero()</h2>
+<a id="a6868f59200438ef93beb033b3c36e466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6868f59200438ef93beb033b3c36e466">&#9670;&nbsp;</a></span>isZero()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="structle_1_1Counter.html">le::Counter</a>&lt; T &gt;::isZero </td>
@@ -132,6 +151,11 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if counter value is 0. </p>

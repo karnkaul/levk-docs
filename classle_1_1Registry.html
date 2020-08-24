@@ -55,7 +55,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;registry.hpp&gt;</code></p>
+<p><code>#include &lt;ecs_registry.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -183,8 +183,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a034884e5747e776c76f14c5461931a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1eb85e07424a2c0ee4721074cfd677c"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structle_1_1Entity.html">Entity</a>, std::unordered_map&lt; <a class="el" href="classle_1_1Registry.html#ab4d68a8973dfea0983e302340c036df7">Signature</a>, std::unique_ptr&lt; Component &gt; &gt;, <a class="el" href="structle_1_1EntityHasher.html">EntityHasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#af1eb85e07424a2c0ee4721074cfd677c">m_db</a></td></tr>
 <tr class="separator:af1eb85e07424a2c0ee4721074cfd677c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3463945141db7d5e9cc995f732ada44c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Lockable.html">Lockable</a>&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a3463945141db7d5e9cc995f732ada44c">m_mutex</a></td></tr>
-<tr class="separator:a3463945141db7d5e9cc995f732ada44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad147d39a604fc9ee803b8043286d33bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkt_1_1lockable.html">kt::lockable</a>&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ad147d39a604fc9ee803b8043286d33bc">m_mutex</a></td></tr>
+<tr class="separator:ad147d39a604fc9ee803b8043286d33bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a01b809019e834282f192c289b1fe3c73"></a>
@@ -940,8 +940,8 @@ template&lt;typename T1 , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a3463945141db7d5e9cc995f732ada44c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3463945141db7d5e9cc995f732ada44c">&#9670;&nbsp;</a></span>m_mutex</h2>
+<a id="ad147d39a604fc9ee803b8043286d33bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad147d39a604fc9ee803b8043286d33bc">&#9670;&nbsp;</a></span>m_mutex</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -950,7 +950,7 @@ template&lt;typename T1 , typename... Ts&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Lockable.html">Lockable</a>&lt;std::mutex&gt; le::Registry::m_mutex</td>
+          <td class="memname"><a class="el" href="structkt_1_1lockable.html">kt::lockable</a>&lt;std::mutex&gt; le::Registry::m_mutex</td>
         </tr>
       </table>
   </td>

@@ -54,10 +54,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1res_1_1Async.html">Async</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html">Font</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for bitmap font using texture atlas.  <a href="structle_1_1res_1_1Font.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1InfoBase.html">InfoBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1LoadBase.html">LoadBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Material.html">Material</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for base material used in <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="structle_1_1res_1_1Material.html#details">More...</a><br /></td></tr>
@@ -111,141 +115,189 @@ Functions</h2></td></tr>
 <tr class="memitem:a7492352af1d6c94eafddb3a924d09620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#a644c41b4d5c5e4f1a13471e59e999ab1">Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a7492352af1d6c94eafddb3a924d09620">acquire</a> ()</td></tr>
 <tr class="memdesc:a7492352af1d6c94eafddb3a924d09620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a semaphore to block deinit/unload until (all have been) released.  <a href="namespacele_1_1res.html#a7492352af1d6c94eafddb3a924d09620">More...</a><br /></td></tr>
 <tr class="separator:a7492352af1d6c94eafddb3a924d09620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6364bcdb21b7cf3d0b0feed3212ba980"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6364bcdb21b7cf3d0b0feed3212ba980"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">find</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="separator:a6364bcdb21b7cf3d0b0feed3212ba980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126f12d72eb14d31e89771ada5da2472"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a126f12d72eb14d31e89771ada5da2472"><td class="memTemplItemLeft" align="right" valign="top">T::Info const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">info</a> (T resource)</td></tr>
+<tr class="separator:a126f12d72eb14d31e89771ada5da2472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2cef166a39322468c21e24570d2e68d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad2cef166a39322468c21e24570d2e68d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">status</a> (T resource)</td></tr>
+<tr class="separator:ad2cef166a39322468c21e24570d2e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21ecb41d31110d4bbdbe3c1c43237ed"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac21ecb41d31110d4bbdbe3c1c43237ed"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">unload</a> (T resource)</td></tr>
+<tr class="separator:ac21ecb41d31110d4bbdbe3c1c43237ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea7dfb56d0118579fb3e5e3e20a3c17"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aeea7dfb56d0118579fb3e5e3e20a3c17"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aeea7dfb56d0118579fb3e5e3e20a3c17">unload</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:aeea7dfb56d0118579fb3e5e3e20a3c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Resource.html" title="Base struct for all resources.">Resource</a>.  <a href="namespacele_1_1res.html#aeea7dfb56d0118579fb3e5e3e20a3c17">More...</a><br /></td></tr>
+<tr class="separator:aeea7dfb56d0118579fb3e5e3e20a3c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e5a9c1c06d2dce244dc268f5e03678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae1e5a9c1c06d2dce244dc268f5e03678">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Shader_1_1CreateInfo.html">Shader::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:ae1e5a9c1c06d2dce244dc268f5e03678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#ae1e5a9c1c06d2dce244dc268f5e03678">More...</a><br /></td></tr>
 <tr class="separator:ae1e5a9c1c06d2dce244dc268f5e03678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72d4f934421e7d31d3742821d54d5010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a72d4f934421e7d31d3742821d54d5010">findShader</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a72d4f934421e7d31d3742821d54d5010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a72d4f934421e7d31d3742821d54d5010">More...</a><br /></td></tr>
-<tr class="separator:a72d4f934421e7d31d3742821d54d5010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a2b083df77c6986fd4118f37d65d41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Shader_1_1Info.html">Shader::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad3a2b083df77c6986fd4118f37d65d41">info</a> (<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> shader)</td></tr>
-<tr class="memdesc:ad3a2b083df77c6986fd4118f37d65d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#ad3a2b083df77c6986fd4118f37d65d41">More...</a><br /></td></tr>
-<tr class="separator:ad3a2b083df77c6986fd4118f37d65d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc5dbbbebddf111a3251bb3341d812d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#acc5dbbbebddf111a3251bb3341d812d9">status</a> (<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> shader)</td></tr>
-<tr class="memdesc:acc5dbbbebddf111a3251bb3341d812d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#acc5dbbbebddf111a3251bb3341d812d9">More...</a><br /></td></tr>
-<tr class="separator:acc5dbbbebddf111a3251bb3341d812d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a935521fff8a4ffc416f797d1e0116d14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a935521fff8a4ffc416f797d1e0116d14">unload</a> (<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> shader)</td></tr>
-<tr class="memdesc:a935521fff8a4ffc416f797d1e0116d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a935521fff8a4ffc416f797d1e0116d14">More...</a><br /></td></tr>
-<tr class="separator:a935521fff8a4ffc416f797d1e0116d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37472b1dd8112d6df99940cfc1c99e14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a37472b1dd8112d6df99940cfc1c99e14">unloadShader</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a37472b1dd8112d6df99940cfc1c99e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a37472b1dd8112d6df99940cfc1c99e14">More...</a><br /></td></tr>
-<tr class="separator:a37472b1dd8112d6df99940cfc1c99e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a80451d541e2780daa232d164652022"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a2a80451d541e2780daa232d164652022"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a2a80451d541e2780daa232d164652022">find&lt; Shader &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a2a80451d541e2780daa232d164652022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a2a80451d541e2780daa232d164652022">More...</a><br /></td></tr>
+<tr class="separator:a2a80451d541e2780daa232d164652022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22caf0f1196033089bf48e35db4be83"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:af22caf0f1196033089bf48e35db4be83"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Shader_1_1Info.html">Shader::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af22caf0f1196033089bf48e35db4be83">info&lt; Shader &gt;</a> (<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> shader)</td></tr>
+<tr class="memdesc:af22caf0f1196033089bf48e35db4be83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#af22caf0f1196033089bf48e35db4be83">More...</a><br /></td></tr>
+<tr class="separator:af22caf0f1196033089bf48e35db4be83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68128799aa0bcfcb30cb270692a6fe72"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a68128799aa0bcfcb30cb270692a6fe72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a68128799aa0bcfcb30cb270692a6fe72">status&lt; Shader &gt;</a> (<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> shader)</td></tr>
+<tr class="memdesc:a68128799aa0bcfcb30cb270692a6fe72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a68128799aa0bcfcb30cb270692a6fe72">More...</a><br /></td></tr>
+<tr class="separator:a68128799aa0bcfcb30cb270692a6fe72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b74dd69669db82ea75ad57a720ee8b"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a49b74dd69669db82ea75ad57a720ee8b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a49b74dd69669db82ea75ad57a720ee8b">unload&lt; Shader &gt;</a> (<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> shader)</td></tr>
+<tr class="memdesc:a49b74dd69669db82ea75ad57a720ee8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a49b74dd69669db82ea75ad57a720ee8b">More...</a><br /></td></tr>
+<tr class="separator:a49b74dd69669db82ea75ad57a720ee8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7feb4b4e90f193641eb8f53e56e6be"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a6f7feb4b4e90f193641eb8f53e56e6be"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a6f7feb4b4e90f193641eb8f53e56e6be">unload&lt; Shader &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a6f7feb4b4e90f193641eb8f53e56e6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>.  <a href="namespacele_1_1res.html#a6f7feb4b4e90f193641eb8f53e56e6be">More...</a><br /></td></tr>
+<tr class="separator:a6f7feb4b4e90f193641eb8f53e56e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3126ccf3bcbb391ed4db29cf60066749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a3126ccf3bcbb391ed4db29cf60066749">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Sampler_1_1CreateInfo.html">Sampler::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:a3126ccf3bcbb391ed4db29cf60066749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#a3126ccf3bcbb391ed4db29cf60066749">More...</a><br /></td></tr>
 <tr class="separator:a3126ccf3bcbb391ed4db29cf60066749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd5e416421c401ca619156a343fdcee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#afbd5e416421c401ca619156a343fdcee">findSampler</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:afbd5e416421c401ca619156a343fdcee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#afbd5e416421c401ca619156a343fdcee">More...</a><br /></td></tr>
-<tr class="separator:afbd5e416421c401ca619156a343fdcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a52d5b9f1ba69d30e54656dca081d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Sampler_1_1Info.html">Sampler::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac8a52d5b9f1ba69d30e54656dca081d8">info</a> (<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> sampler)</td></tr>
-<tr class="memdesc:ac8a52d5b9f1ba69d30e54656dca081d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#ac8a52d5b9f1ba69d30e54656dca081d8">More...</a><br /></td></tr>
-<tr class="separator:ac8a52d5b9f1ba69d30e54656dca081d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c0b14a9396d65cac775fea66a32857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af0c0b14a9396d65cac775fea66a32857">status</a> (<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> sampler)</td></tr>
-<tr class="memdesc:af0c0b14a9396d65cac775fea66a32857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#af0c0b14a9396d65cac775fea66a32857">More...</a><br /></td></tr>
-<tr class="separator:af0c0b14a9396d65cac775fea66a32857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af159cc1a0faa360ed4ea0cd75e090ec5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af159cc1a0faa360ed4ea0cd75e090ec5">unload</a> (<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> sampler)</td></tr>
-<tr class="memdesc:af159cc1a0faa360ed4ea0cd75e090ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#af159cc1a0faa360ed4ea0cd75e090ec5">More...</a><br /></td></tr>
-<tr class="separator:af159cc1a0faa360ed4ea0cd75e090ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac525a813e6e6b3ae743190cac2a8530d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac525a813e6e6b3ae743190cac2a8530d">unloadSampler</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:ac525a813e6e6b3ae743190cac2a8530d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#ac525a813e6e6b3ae743190cac2a8530d">More...</a><br /></td></tr>
-<tr class="separator:ac525a813e6e6b3ae743190cac2a8530d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62711df25d4f1e8f118942dc7f34ed37"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a62711df25d4f1e8f118942dc7f34ed37"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a62711df25d4f1e8f118942dc7f34ed37">find&lt; Sampler &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a62711df25d4f1e8f118942dc7f34ed37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#a62711df25d4f1e8f118942dc7f34ed37">More...</a><br /></td></tr>
+<tr class="separator:a62711df25d4f1e8f118942dc7f34ed37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae133431af73655adf346751816bb93e1"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ae133431af73655adf346751816bb93e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Sampler_1_1Info.html">Sampler::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae133431af73655adf346751816bb93e1">info&lt; Sampler &gt;</a> (<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> sampler)</td></tr>
+<tr class="memdesc:ae133431af73655adf346751816bb93e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#ae133431af73655adf346751816bb93e1">More...</a><br /></td></tr>
+<tr class="separator:ae133431af73655adf346751816bb93e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690ef1038b92855da7e1293b132aa27d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a690ef1038b92855da7e1293b132aa27d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a690ef1038b92855da7e1293b132aa27d">status&lt; Sampler &gt;</a> (<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> sampler)</td></tr>
+<tr class="memdesc:a690ef1038b92855da7e1293b132aa27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#a690ef1038b92855da7e1293b132aa27d">More...</a><br /></td></tr>
+<tr class="separator:a690ef1038b92855da7e1293b132aa27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9071489bf3f5ec705953ed437237070c"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a9071489bf3f5ec705953ed437237070c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a9071489bf3f5ec705953ed437237070c">unload&lt; Sampler &gt;</a> (<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> sampler)</td></tr>
+<tr class="memdesc:a9071489bf3f5ec705953ed437237070c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#a9071489bf3f5ec705953ed437237070c">More...</a><br /></td></tr>
+<tr class="separator:a9071489bf3f5ec705953ed437237070c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f89e0e66795b4112254ea9faaa5855"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a34f89e0e66795b4112254ea9faaa5855"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a34f89e0e66795b4112254ea9faaa5855">unload&lt; Sampler &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a34f89e0e66795b4112254ea9faaa5855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>.  <a href="namespacele_1_1res.html#a34f89e0e66795b4112254ea9faaa5855">More...</a><br /></td></tr>
+<tr class="separator:a34f89e0e66795b4112254ea9faaa5855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a290714941d54d3ea0674e9344e5bfabe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a290714941d54d3ea0674e9344e5bfabe">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Texture_1_1CreateInfo.html">Texture::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:a290714941d54d3ea0674e9344e5bfabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a290714941d54d3ea0674e9344e5bfabe">More...</a><br /></td></tr>
 <tr class="separator:a290714941d54d3ea0674e9344e5bfabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d8a467ad8a6beb60149f37e3a903bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a55d8a467ad8a6beb60149f37e3a903bb">findTexture</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a55d8a467ad8a6beb60149f37e3a903bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a55d8a467ad8a6beb60149f37e3a903bb">More...</a><br /></td></tr>
-<tr class="separator:a55d8a467ad8a6beb60149f37e3a903bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a8589b63858a17ba2becc9a269ef2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Texture_1_1Info.html">Texture::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a80a8589b63858a17ba2becc9a269ef2b">info</a> (<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> texture)</td></tr>
-<tr class="memdesc:a80a8589b63858a17ba2becc9a269ef2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a80a8589b63858a17ba2becc9a269ef2b">More...</a><br /></td></tr>
-<tr class="separator:a80a8589b63858a17ba2becc9a269ef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae85e07c4872084826fcd71a93f6127b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae85e07c4872084826fcd71a93f6127b8">status</a> (<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> texture)</td></tr>
-<tr class="memdesc:ae85e07c4872084826fcd71a93f6127b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#ae85e07c4872084826fcd71a93f6127b8">More...</a><br /></td></tr>
-<tr class="separator:ae85e07c4872084826fcd71a93f6127b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40e482a8632a5fdb92220efcee34ad4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a40e482a8632a5fdb92220efcee34ad4e">unload</a> (<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> texture)</td></tr>
-<tr class="memdesc:a40e482a8632a5fdb92220efcee34ad4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a40e482a8632a5fdb92220efcee34ad4e">More...</a><br /></td></tr>
-<tr class="separator:a40e482a8632a5fdb92220efcee34ad4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11626e8ceeed740e0303f253044183e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a11626e8ceeed740e0303f253044183e1">unloadTexture</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a11626e8ceeed740e0303f253044183e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a11626e8ceeed740e0303f253044183e1">More...</a><br /></td></tr>
-<tr class="separator:a11626e8ceeed740e0303f253044183e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0de2d792c07f5030f32c58863a6a0d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1res_1_1Async.html">Async</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae0de2d792c07f5030f32c58863a6a0d1">loadAsync</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Texture_1_1LoadInfo.html">Texture::LoadInfo</a> loadInfo)</td></tr>
+<tr class="memdesc:ae0de2d792c07f5030f32c58863a6a0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a> on a separate thread.  <a href="namespacele_1_1res.html#ae0de2d792c07f5030f32c58863a6a0d1">More...</a><br /></td></tr>
+<tr class="separator:ae0de2d792c07f5030f32c58863a6a0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a4e68e842be74732a706ceb277695f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a10a4e68e842be74732a706ceb277695f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a10a4e68e842be74732a706ceb277695f">find&lt; Texture &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a10a4e68e842be74732a706ceb277695f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#a10a4e68e842be74732a706ceb277695f">More...</a><br /></td></tr>
+<tr class="separator:a10a4e68e842be74732a706ceb277695f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92907289545ff78b35db4c4efb359e0"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ab92907289545ff78b35db4c4efb359e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Texture_1_1Info.html">Texture::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ab92907289545ff78b35db4c4efb359e0">info&lt; Texture &gt;</a> (<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> texture)</td></tr>
+<tr class="memdesc:ab92907289545ff78b35db4c4efb359e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#ab92907289545ff78b35db4c4efb359e0">More...</a><br /></td></tr>
+<tr class="separator:ab92907289545ff78b35db4c4efb359e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa70202f5d716cb9ac6a7647ea6ac18e"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aaa70202f5d716cb9ac6a7647ea6ac18e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aaa70202f5d716cb9ac6a7647ea6ac18e">status&lt; Texture &gt;</a> (<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> texture)</td></tr>
+<tr class="memdesc:aaa70202f5d716cb9ac6a7647ea6ac18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#aaa70202f5d716cb9ac6a7647ea6ac18e">More...</a><br /></td></tr>
+<tr class="separator:aaa70202f5d716cb9ac6a7647ea6ac18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fa67ea6c834ee1de1f17a4e69e883e"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ac9fa67ea6c834ee1de1f17a4e69e883e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac9fa67ea6c834ee1de1f17a4e69e883e">unload&lt; Texture &gt;</a> (<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> texture)</td></tr>
+<tr class="memdesc:ac9fa67ea6c834ee1de1f17a4e69e883e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#ac9fa67ea6c834ee1de1f17a4e69e883e">More...</a><br /></td></tr>
+<tr class="separator:ac9fa67ea6c834ee1de1f17a4e69e883e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88b82a3b3c3be84b38709c37198bc34"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aa88b82a3b3c3be84b38709c37198bc34"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aa88b82a3b3c3be84b38709c37198bc34">unload&lt; Texture &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:aa88b82a3b3c3be84b38709c37198bc34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>.  <a href="namespacele_1_1res.html#aa88b82a3b3c3be84b38709c37198bc34">More...</a><br /></td></tr>
+<tr class="separator:aa88b82a3b3c3be84b38709c37198bc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e016c66be6d97375db322aee87f739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Material.html">Material</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a88e016c66be6d97375db322aee87f739">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Material_1_1CreateInfo.html">Material::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:a88e016c66be6d97375db322aee87f739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a88e016c66be6d97375db322aee87f739">More...</a><br /></td></tr>
 <tr class="separator:a88e016c66be6d97375db322aee87f739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad53be65b1d3634825a3fd5b6793bedd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad53be65b1d3634825a3fd5b6793bedd5">findMaterial</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:ad53be65b1d3634825a3fd5b6793bedd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#ad53be65b1d3634825a3fd5b6793bedd5">More...</a><br /></td></tr>
-<tr class="separator:ad53be65b1d3634825a3fd5b6793bedd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef778d571ff3c43ed19cb5ba8277778"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Material_1_1Info.html">Material::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a9ef778d571ff3c43ed19cb5ba8277778">info</a> (<a class="el" href="structle_1_1res_1_1Material.html">Material</a> material)</td></tr>
-<tr class="memdesc:a9ef778d571ff3c43ed19cb5ba8277778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a9ef778d571ff3c43ed19cb5ba8277778">More...</a><br /></td></tr>
-<tr class="separator:a9ef778d571ff3c43ed19cb5ba8277778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a592eb7c066ef2252e267f1c16126125c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a592eb7c066ef2252e267f1c16126125c">status</a> (<a class="el" href="structle_1_1res_1_1Material.html">Material</a> material)</td></tr>
-<tr class="memdesc:a592eb7c066ef2252e267f1c16126125c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a592eb7c066ef2252e267f1c16126125c">More...</a><br /></td></tr>
-<tr class="separator:a592eb7c066ef2252e267f1c16126125c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4fecfa7eba40b9c97905e7c097f6a0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af4fecfa7eba40b9c97905e7c097f6a0d">unload</a> (<a class="el" href="structle_1_1res_1_1Material.html">Material</a> material)</td></tr>
-<tr class="memdesc:af4fecfa7eba40b9c97905e7c097f6a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#af4fecfa7eba40b9c97905e7c097f6a0d">More...</a><br /></td></tr>
-<tr class="separator:af4fecfa7eba40b9c97905e7c097f6a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8d8b4e9e9b52823517631fd5adb5e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a3f8d8b4e9e9b52823517631fd5adb5e7">unloadMaterial</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a3f8d8b4e9e9b52823517631fd5adb5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a3f8d8b4e9e9b52823517631fd5adb5e7">More...</a><br /></td></tr>
-<tr class="separator:a3f8d8b4e9e9b52823517631fd5adb5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248be220716402c408fb7595d832f0bd"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a248be220716402c408fb7595d832f0bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a248be220716402c408fb7595d832f0bd">find&lt; Material &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a248be220716402c408fb7595d832f0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a248be220716402c408fb7595d832f0bd">More...</a><br /></td></tr>
+<tr class="separator:a248be220716402c408fb7595d832f0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969306ae115ed00f5c4d461f5ee096fc"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a969306ae115ed00f5c4d461f5ee096fc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Material_1_1Info.html">Material::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a969306ae115ed00f5c4d461f5ee096fc">info&lt; Material &gt;</a> (<a class="el" href="structle_1_1res_1_1Material.html">Material</a> material)</td></tr>
+<tr class="memdesc:a969306ae115ed00f5c4d461f5ee096fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a969306ae115ed00f5c4d461f5ee096fc">More...</a><br /></td></tr>
+<tr class="separator:a969306ae115ed00f5c4d461f5ee096fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1749d3993a4f4f1b8e3c4b6dba254a24"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a1749d3993a4f4f1b8e3c4b6dba254a24"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a1749d3993a4f4f1b8e3c4b6dba254a24">status&lt; Material &gt;</a> (<a class="el" href="structle_1_1res_1_1Material.html">Material</a> material)</td></tr>
+<tr class="memdesc:a1749d3993a4f4f1b8e3c4b6dba254a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a1749d3993a4f4f1b8e3c4b6dba254a24">More...</a><br /></td></tr>
+<tr class="separator:a1749d3993a4f4f1b8e3c4b6dba254a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab9c6839bca8e58b67680c78d1e13e9"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a9ab9c6839bca8e58b67680c78d1e13e9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a9ab9c6839bca8e58b67680c78d1e13e9">unload&lt; Material &gt;</a> (<a class="el" href="structle_1_1res_1_1Material.html">Material</a> material)</td></tr>
+<tr class="memdesc:a9ab9c6839bca8e58b67680c78d1e13e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#a9ab9c6839bca8e58b67680c78d1e13e9">More...</a><br /></td></tr>
+<tr class="separator:a9ab9c6839bca8e58b67680c78d1e13e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7032b672b5a1aedc459f964f492baff"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ac7032b672b5a1aedc459f964f492baff"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac7032b672b5a1aedc459f964f492baff">unload&lt; Material &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:ac7032b672b5a1aedc459f964f492baff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>.  <a href="namespacele_1_1res.html#ac7032b672b5a1aedc459f964f492baff">More...</a><br /></td></tr>
+<tr class="separator:ac7032b672b5a1aedc459f964f492baff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e837e529baff16e9ed8df0960f65081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a5e837e529baff16e9ed8df0960f65081">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Mesh_1_1CreateInfo.html">Mesh::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:a5e837e529baff16e9ed8df0960f65081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a5e837e529baff16e9ed8df0960f65081">More...</a><br /></td></tr>
 <tr class="separator:a5e837e529baff16e9ed8df0960f65081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7141ced570346785ef2875310535e8e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a7141ced570346785ef2875310535e8e5">findMesh</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a7141ced570346785ef2875310535e8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a7141ced570346785ef2875310535e8e5">More...</a><br /></td></tr>
-<tr class="separator:a7141ced570346785ef2875310535e8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d58d14e012a2fef56248d3e3aaae910"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Mesh_1_1Info.html">Mesh::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a0d58d14e012a2fef56248d3e3aaae910">info</a> (<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> mesh)</td></tr>
-<tr class="memdesc:a0d58d14e012a2fef56248d3e3aaae910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a0d58d14e012a2fef56248d3e3aaae910">More...</a><br /></td></tr>
-<tr class="separator:a0d58d14e012a2fef56248d3e3aaae910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ee8498d6c5db2918928b4d35b53d70f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a5ee8498d6c5db2918928b4d35b53d70f">status</a> (<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> mesh)</td></tr>
-<tr class="memdesc:a5ee8498d6c5db2918928b4d35b53d70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a5ee8498d6c5db2918928b4d35b53d70f">More...</a><br /></td></tr>
-<tr class="separator:a5ee8498d6c5db2918928b4d35b53d70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf01597e298060793b6a7a49c3b0866f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aaf01597e298060793b6a7a49c3b0866f">unload</a> (<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> mesh)</td></tr>
-<tr class="memdesc:aaf01597e298060793b6a7a49c3b0866f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#aaf01597e298060793b6a7a49c3b0866f">More...</a><br /></td></tr>
-<tr class="separator:aaf01597e298060793b6a7a49c3b0866f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c48eecd186c87d644c61e716f62cae2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a6c48eecd186c87d644c61e716f62cae2">unloadMesh</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a6c48eecd186c87d644c61e716f62cae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a6c48eecd186c87d644c61e716f62cae2">More...</a><br /></td></tr>
-<tr class="separator:a6c48eecd186c87d644c61e716f62cae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469cce1da60fb5edaaeaa6e98de1e79a"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a469cce1da60fb5edaaeaa6e98de1e79a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a469cce1da60fb5edaaeaa6e98de1e79a">find&lt; Mesh &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a469cce1da60fb5edaaeaa6e98de1e79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a469cce1da60fb5edaaeaa6e98de1e79a">More...</a><br /></td></tr>
+<tr class="separator:a469cce1da60fb5edaaeaa6e98de1e79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57d0ccb203fd71df0738fc66d6b0eda"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ac57d0ccb203fd71df0738fc66d6b0eda"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Mesh_1_1Info.html">Mesh::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac57d0ccb203fd71df0738fc66d6b0eda">info&lt; Mesh &gt;</a> (<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> mesh)</td></tr>
+<tr class="memdesc:ac57d0ccb203fd71df0738fc66d6b0eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#ac57d0ccb203fd71df0738fc66d6b0eda">More...</a><br /></td></tr>
+<tr class="separator:ac57d0ccb203fd71df0738fc66d6b0eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af067e22fe28dbbf709ac9a205a43adbb"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:af067e22fe28dbbf709ac9a205a43adbb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af067e22fe28dbbf709ac9a205a43adbb">status&lt; Mesh &gt;</a> (<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> mesh)</td></tr>
+<tr class="memdesc:af067e22fe28dbbf709ac9a205a43adbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#af067e22fe28dbbf709ac9a205a43adbb">More...</a><br /></td></tr>
+<tr class="separator:af067e22fe28dbbf709ac9a205a43adbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd42a4ef51d6d12626bc804e7187125d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:abd42a4ef51d6d12626bc804e7187125d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#abd42a4ef51d6d12626bc804e7187125d">unload&lt; Mesh &gt;</a> (<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> mesh)</td></tr>
+<tr class="memdesc:abd42a4ef51d6d12626bc804e7187125d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#abd42a4ef51d6d12626bc804e7187125d">More...</a><br /></td></tr>
+<tr class="separator:abd42a4ef51d6d12626bc804e7187125d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1708874060ac074f0446c0af466bc695"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a1708874060ac074f0446c0af466bc695"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a1708874060ac074f0446c0af466bc695">unload&lt; Mesh &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a1708874060ac074f0446c0af466bc695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>.  <a href="namespacele_1_1res.html#a1708874060ac074f0446c0af466bc695">More...</a><br /></td></tr>
+<tr class="separator:a1708874060ac074f0446c0af466bc695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff622570f6e35f490ce4c0903e193825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aff622570f6e35f490ce4c0903e193825">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Font_1_1CreateInfo.html">Font::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:aff622570f6e35f490ce4c0903e193825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#aff622570f6e35f490ce4c0903e193825">More...</a><br /></td></tr>
 <tr class="separator:aff622570f6e35f490ce4c0903e193825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c5a397c4b4d45ff2ce493a62132dff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a84c5a397c4b4d45ff2ce493a62132dff">findFont</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a84c5a397c4b4d45ff2ce493a62132dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a84c5a397c4b4d45ff2ce493a62132dff">More...</a><br /></td></tr>
-<tr class="separator:a84c5a397c4b4d45ff2ce493a62132dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6966576613dec8b92b874401319084c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Font_1_1Info.html">Font::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#af6966576613dec8b92b874401319084c">info</a> (<a class="el" href="structle_1_1res_1_1Font.html">Font</a> font)</td></tr>
-<tr class="memdesc:af6966576613dec8b92b874401319084c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#af6966576613dec8b92b874401319084c">More...</a><br /></td></tr>
-<tr class="separator:af6966576613dec8b92b874401319084c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad581c498eccfd8af4a4ca3c07a514f67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad581c498eccfd8af4a4ca3c07a514f67">status</a> (<a class="el" href="structle_1_1res_1_1Font.html">Font</a> font)</td></tr>
-<tr class="memdesc:ad581c498eccfd8af4a4ca3c07a514f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#ad581c498eccfd8af4a4ca3c07a514f67">More...</a><br /></td></tr>
-<tr class="separator:ad581c498eccfd8af4a4ca3c07a514f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0647863d16092295479b0d396fcf9eb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a0647863d16092295479b0d396fcf9eb7">unload</a> (<a class="el" href="structle_1_1res_1_1Font.html">Font</a> font)</td></tr>
-<tr class="memdesc:a0647863d16092295479b0d396fcf9eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a0647863d16092295479b0d396fcf9eb7">More...</a><br /></td></tr>
-<tr class="separator:a0647863d16092295479b0d396fcf9eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1cddc2b27305835b3b9d87ee5c640de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ae1cddc2b27305835b3b9d87ee5c640de">unloadFont</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:ae1cddc2b27305835b3b9d87ee5c640de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#ae1cddc2b27305835b3b9d87ee5c640de">More...</a><br /></td></tr>
-<tr class="separator:ae1cddc2b27305835b3b9d87ee5c640de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f548bace282f9bc7058c06b1def816"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ac6f548bace282f9bc7058c06b1def816"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ac6f548bace282f9bc7058c06b1def816">find&lt; Font &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:ac6f548bace282f9bc7058c06b1def816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#ac6f548bace282f9bc7058c06b1def816">More...</a><br /></td></tr>
+<tr class="separator:ac6f548bace282f9bc7058c06b1def816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24919725910cc4dc7972e03387916483"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a24919725910cc4dc7972e03387916483"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Font_1_1Info.html">Font::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a24919725910cc4dc7972e03387916483">info&lt; Font &gt;</a> (<a class="el" href="structle_1_1res_1_1Font.html">Font</a> font)</td></tr>
+<tr class="memdesc:a24919725910cc4dc7972e03387916483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a24919725910cc4dc7972e03387916483">More...</a><br /></td></tr>
+<tr class="separator:a24919725910cc4dc7972e03387916483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694d8433d521b662360c678d2c9d2062"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a694d8433d521b662360c678d2c9d2062"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a694d8433d521b662360c678d2c9d2062">status&lt; Font &gt;</a> (<a class="el" href="structle_1_1res_1_1Font.html">Font</a> font)</td></tr>
+<tr class="memdesc:a694d8433d521b662360c678d2c9d2062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a694d8433d521b662360c678d2c9d2062">More...</a><br /></td></tr>
+<tr class="separator:a694d8433d521b662360c678d2c9d2062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1f9ea12ba95af6202be02f585a3f85"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a3f1f9ea12ba95af6202be02f585a3f85"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a3f1f9ea12ba95af6202be02f585a3f85">unload&lt; Font &gt;</a> (<a class="el" href="structle_1_1res_1_1Font.html">Font</a> font)</td></tr>
+<tr class="memdesc:a3f1f9ea12ba95af6202be02f585a3f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a3f1f9ea12ba95af6202be02f585a3f85">More...</a><br /></td></tr>
+<tr class="separator:a3f1f9ea12ba95af6202be02f585a3f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2b0e3f61b0b460180a3967e8d1fca5"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a5b2b0e3f61b0b460180a3967e8d1fca5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a5b2b0e3f61b0b460180a3967e8d1fca5">unload&lt; Font &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a5b2b0e3f61b0b460180a3967e8d1fca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>.  <a href="namespacele_1_1res.html#a5b2b0e3f61b0b460180a3967e8d1fca5">More...</a><br /></td></tr>
+<tr class="separator:a5b2b0e3f61b0b460180a3967e8d1fca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd61d0ab08c7fda00a44585e6cbc934e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Model.html">Model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#afd61d0ab08c7fda00a44585e6cbc934e">load</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Model_1_1CreateInfo.html">Model::CreateInfo</a> createInfo)</td></tr>
 <tr class="memdesc:afd61d0ab08c7fda00a44585e6cbc934e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#afd61d0ab08c7fda00a44585e6cbc934e">More...</a><br /></td></tr>
 <tr class="separator:afd61d0ab08c7fda00a44585e6cbc934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9767a155e3c0c57e1e8240f034f0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aac9767a155e3c0c57e1e8240f034f0fd">findModel</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:aac9767a155e3c0c57e1e8240f034f0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#aac9767a155e3c0c57e1e8240f034f0fd">More...</a><br /></td></tr>
-<tr class="separator:aac9767a155e3c0c57e1e8240f034f0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd79537ab662db623c8da872b287ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Model_1_1Info.html">Model::Info</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a2bd79537ab662db623c8da872b287ca9">info</a> (<a class="el" href="structle_1_1res_1_1Model.html">Model</a> model)</td></tr>
-<tr class="memdesc:a2bd79537ab662db623c8da872b287ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a2bd79537ab662db623c8da872b287ca9">More...</a><br /></td></tr>
-<tr class="separator:a2bd79537ab662db623c8da872b287ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a791cd4356ab69b2491a810badec1229a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a791cd4356ab69b2491a810badec1229a">status</a> (<a class="el" href="structle_1_1res_1_1Model.html">Model</a> model)</td></tr>
-<tr class="memdesc:a791cd4356ab69b2491a810badec1229a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a791cd4356ab69b2491a810badec1229a">More...</a><br /></td></tr>
-<tr class="separator:a791cd4356ab69b2491a810badec1229a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a444ff02224b582eb84974145704c2141"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a444ff02224b582eb84974145704c2141">unload</a> (<a class="el" href="structle_1_1res_1_1Model.html">Model</a> model)</td></tr>
-<tr class="memdesc:a444ff02224b582eb84974145704c2141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a444ff02224b582eb84974145704c2141">More...</a><br /></td></tr>
-<tr class="separator:a444ff02224b582eb84974145704c2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebf7d092292217cc2984fc39bb5cb9c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#aebf7d092292217cc2984fc39bb5cb9c8">unloadModel</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:aebf7d092292217cc2984fc39bb5cb9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#aebf7d092292217cc2984fc39bb5cb9c8">More...</a><br /></td></tr>
-<tr class="separator:aebf7d092292217cc2984fc39bb5cb9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a1aed3c6ed794e33f00a35a86aba49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a12a1aed3c6ed794e33f00a35a86aba49">unload</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="memdesc:a12a1aed3c6ed794e33f00a35a86aba49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Resource.html" title="Base struct for all resources.">Resource</a>.  <a href="namespacele_1_1res.html#a12a1aed3c6ed794e33f00a35a86aba49">More...</a><br /></td></tr>
-<tr class="separator:a12a1aed3c6ed794e33f00a35a86aba49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e993862db5bc66f5ce9cb1fce8075b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad6e993862db5bc66f5ce9cb1fce8075b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#ad6e993862db5bc66f5ce9cb1fce8075b">load</a> (stdfs::path const &amp;id, typename T::CreateInfo createInfo)</td></tr>
-<tr class="separator:ad6e993862db5bc66f5ce9cb1fce8075b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e3cad4e5735d711b6db04ddedee797c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7e3cad4e5735d711b6db04ddedee797c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a7e3cad4e5735d711b6db04ddedee797c">find</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
-<tr class="separator:a7e3cad4e5735d711b6db04ddedee797c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1ca24aba1328c7b53948c25da1f86a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1res_1_1Async.html">Async</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a8f1ca24aba1328c7b53948c25da1f86a">loadAsync</a> (stdfs::path const &amp;id, <a class="el" href="structle_1_1res_1_1Model_1_1LoadInfo.html">Model::LoadInfo</a> loadInfo)</td></tr>
+<tr class="memdesc:a8f1ca24aba1328c7b53948c25da1f86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load new <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a> on a separate thread.  <a href="namespacele_1_1res.html#a8f1ca24aba1328c7b53948c25da1f86a">More...</a><br /></td></tr>
+<tr class="separator:a8f1ca24aba1328c7b53948c25da1f86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544e16d5fc704c06b1ad67202379537b"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a544e16d5fc704c06b1ad67202379537b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a544e16d5fc704c06b1ad67202379537b">find&lt; Model &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a544e16d5fc704c06b1ad67202379537b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a544e16d5fc704c06b1ad67202379537b">More...</a><br /></td></tr>
+<tr class="separator:a544e16d5fc704c06b1ad67202379537b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9fc0f3188d2b7f28848fb1f88c888d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a1b9fc0f3188d2b7f28848fb1f88c888d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Model_1_1Info.html">Model::Info</a> const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a1b9fc0f3188d2b7f28848fb1f88c888d">info&lt; Model &gt;</a> (<a class="el" href="structle_1_1res_1_1Model.html">Model</a> model)</td></tr>
+<tr class="memdesc:a1b9fc0f3188d2b7f28848fb1f88c888d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Info for a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a1b9fc0f3188d2b7f28848fb1f88c888d">More...</a><br /></td></tr>
+<tr class="separator:a1b9fc0f3188d2b7f28848fb1f88c888d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0c3ccae472ff35e1dc280d5b5f6d06"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a3d0c3ccae472ff35e1dc280d5b5f6d06"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a3d0c3ccae472ff35e1dc280d5b5f6d06">status&lt; Model &gt;</a> (<a class="el" href="structle_1_1res_1_1Model.html">Model</a> model)</td></tr>
+<tr class="memdesc:a3d0c3ccae472ff35e1dc280d5b5f6d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain Status for a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a3d0c3ccae472ff35e1dc280d5b5f6d06">More...</a><br /></td></tr>
+<tr class="separator:a3d0c3ccae472ff35e1dc280d5b5f6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce4dcd2abf0a5996e7940c8110cb6d9"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a8ce4dcd2abf0a5996e7940c8110cb6d9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a8ce4dcd2abf0a5996e7940c8110cb6d9">unload&lt; Model &gt;</a> (<a class="el" href="structle_1_1res_1_1Model.html">Model</a> model)</td></tr>
+<tr class="memdesc:a8ce4dcd2abf0a5996e7940c8110cb6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a8ce4dcd2abf0a5996e7940c8110cb6d9">More...</a><br /></td></tr>
+<tr class="separator:a8ce4dcd2abf0a5996e7940c8110cb6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193ce418bb6e5462e054f4a1d57452f0"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a193ce418bb6e5462e054f4a1d57452f0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1res.html#a193ce418bb6e5462e054f4a1d57452f0">unload&lt; Model &gt;</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> id)</td></tr>
+<tr class="memdesc:a193ce418bb6e5462e054f4a1d57452f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>.  <a href="namespacele_1_1res.html#a193ce418bb6e5462e054f4a1d57452f0">More...</a><br /></td></tr>
+<tr class="separator:a193ce418bb6e5462e054f4a1d57452f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a537a89e7c6e44c753da9b612ba6d7643"></a>
@@ -329,8 +381,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e3cad4e5735d711b6db04ddedee797c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e3cad4e5735d711b6db04ddedee797c">&#9670;&nbsp;</a></span>find()</h2>
+<a id="a6364bcdb21b7cf3d0b0feed3212ba980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6364bcdb21b7cf3d0b0feed3212ba980">&#9670;&nbsp;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +390,7 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;T&gt; le::res::find </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt; T &gt; le::res::find </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -349,14 +401,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a84c5a397c4b4d45ff2ce493a62132dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84c5a397c4b4d45ff2ce493a62132dff">&#9670;&nbsp;</a></span>findFont()</h2>
+<a id="ac6f548bace282f9bc7058c06b1def816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f548bace282f9bc7058c06b1def816">&#9670;&nbsp;</a></span>find&lt; Font &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Font.html">Font</a>&gt; le::res::findFont </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Font.html">Font</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -369,14 +423,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad53be65b1d3634825a3fd5b6793bedd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad53be65b1d3634825a3fd5b6793bedd5">&#9670;&nbsp;</a></span>findMaterial()</h2>
+<a id="a248be220716402c408fb7595d832f0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248be220716402c408fb7595d832f0bd">&#9670;&nbsp;</a></span>find&lt; Material &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Material.html">Material</a>&gt; le::res::findMaterial </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Material.html">Material</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -389,14 +445,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7141ced570346785ef2875310535e8e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7141ced570346785ef2875310535e8e5">&#9670;&nbsp;</a></span>findMesh()</h2>
+<a id="a469cce1da60fb5edaaeaa6e98de1e79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469cce1da60fb5edaaeaa6e98de1e79a">&#9670;&nbsp;</a></span>find&lt; Mesh &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&gt; le::res::findMesh </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -409,14 +467,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aac9767a155e3c0c57e1e8240f034f0fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac9767a155e3c0c57e1e8240f034f0fd">&#9670;&nbsp;</a></span>findModel()</h2>
+<a id="a544e16d5fc704c06b1ad67202379537b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544e16d5fc704c06b1ad67202379537b">&#9670;&nbsp;</a></span>find&lt; Model &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Model.html">Model</a>&gt; le::res::findModel </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Model.html">Model</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -429,14 +489,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="afbd5e416421c401ca619156a343fdcee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbd5e416421c401ca619156a343fdcee">&#9670;&nbsp;</a></span>findSampler()</h2>
+<a id="a62711df25d4f1e8f118942dc7f34ed37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62711df25d4f1e8f118942dc7f34ed37">&#9670;&nbsp;</a></span>find&lt; Sampler &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&gt; le::res::findSampler </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -449,14 +511,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a72d4f934421e7d31d3742821d54d5010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72d4f934421e7d31d3742821d54d5010">&#9670;&nbsp;</a></span>findShader()</h2>
+<a id="a2a80451d541e2780daa232d164652022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a80451d541e2780daa232d164652022">&#9670;&nbsp;</a></span>find&lt; Shader &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&gt; le::res::findShader </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -469,14 +533,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a55d8a467ad8a6beb60149f37e3a903bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d8a467ad8a6beb60149f37e3a903bb">&#9670;&nbsp;</a></span>findTexture()</h2>
+<a id="a10a4e68e842be74732a706ceb277695f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a4e68e842be74732a706ceb277695f">&#9670;&nbsp;</a></span>find&lt; Texture &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&gt; le::res::findTexture </td>
+          <td class="memname"><a class="el" href="structle_1_1TResult.html">TResult</a>&lt;<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&gt; <a class="el" href="namespacele_1_1res.html#a6364bcdb21b7cf3d0b0feed3212ba980">le::res::find</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -489,14 +555,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af6966576613dec8b92b874401319084c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6966576613dec8b92b874401319084c">&#9670;&nbsp;</a></span>info() <span class="overload">[1/7]</span></h2>
+<a id="a126f12d72eb14d31e89771ada5da2472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126f12d72eb14d31e89771ada5da2472">&#9670;&nbsp;</a></span>info()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Font_1_1Info.html">Font::Info</a> const&amp; le::res::info </td>
+          <td class="memname">T::Info const&amp; le::res::info </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24919725910cc4dc7972e03387916483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24919725910cc4dc7972e03387916483">&#9670;&nbsp;</a></span>info&lt; Font &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Font_1_1Info.html">Font::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Font.html">Font</a>&#160;</td>
           <td class="paramname"><em>font</em></td><td>)</td>
@@ -509,14 +597,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a9ef778d571ff3c43ed19cb5ba8277778"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ef778d571ff3c43ed19cb5ba8277778">&#9670;&nbsp;</a></span>info() <span class="overload">[2/7]</span></h2>
+<a id="a969306ae115ed00f5c4d461f5ee096fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969306ae115ed00f5c4d461f5ee096fc">&#9670;&nbsp;</a></span>info&lt; Material &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Material_1_1Info.html">Material::Info</a> const&amp; le::res::info </td>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Material_1_1Info.html">Material::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Material.html">Material</a>&#160;</td>
           <td class="paramname"><em>material</em></td><td>)</td>
@@ -529,14 +619,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0d58d14e012a2fef56248d3e3aaae910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d58d14e012a2fef56248d3e3aaae910">&#9670;&nbsp;</a></span>info() <span class="overload">[3/7]</span></h2>
+<a id="ac57d0ccb203fd71df0738fc66d6b0eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57d0ccb203fd71df0738fc66d6b0eda">&#9670;&nbsp;</a></span>info&lt; Mesh &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Mesh_1_1Info.html">Mesh::Info</a> const&amp; le::res::info </td>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Mesh_1_1Info.html">Mesh::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&#160;</td>
           <td class="paramname"><em>mesh</em></td><td>)</td>
@@ -549,14 +641,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a2bd79537ab662db623c8da872b287ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd79537ab662db623c8da872b287ca9">&#9670;&nbsp;</a></span>info() <span class="overload">[4/7]</span></h2>
+<a id="a1b9fc0f3188d2b7f28848fb1f88c888d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9fc0f3188d2b7f28848fb1f88c888d">&#9670;&nbsp;</a></span>info&lt; Model &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Model_1_1Info.html">Model::Info</a> const&amp; le::res::info </td>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Model_1_1Info.html">Model::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Model.html">Model</a>&#160;</td>
           <td class="paramname"><em>model</em></td><td>)</td>
@@ -569,14 +663,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac8a52d5b9f1ba69d30e54656dca081d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8a52d5b9f1ba69d30e54656dca081d8">&#9670;&nbsp;</a></span>info() <span class="overload">[5/7]</span></h2>
+<a id="ae133431af73655adf346751816bb93e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae133431af73655adf346751816bb93e1">&#9670;&nbsp;</a></span>info&lt; Sampler &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Sampler_1_1Info.html">Sampler::Info</a> const&amp; le::res::info </td>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Sampler_1_1Info.html">Sampler::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&#160;</td>
           <td class="paramname"><em>sampler</em></td><td>)</td>
@@ -589,14 +685,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad3a2b083df77c6986fd4118f37d65d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a2b083df77c6986fd4118f37d65d41">&#9670;&nbsp;</a></span>info() <span class="overload">[6/7]</span></h2>
+<a id="af22caf0f1196033089bf48e35db4be83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22caf0f1196033089bf48e35db4be83">&#9670;&nbsp;</a></span>info&lt; Shader &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Shader_1_1Info.html">Shader::Info</a> const&amp; le::res::info </td>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Shader_1_1Info.html">Shader::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&#160;</td>
           <td class="paramname"><em>shader</em></td><td>)</td>
@@ -609,14 +707,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a80a8589b63858a17ba2becc9a269ef2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a8589b63858a17ba2becc9a269ef2b">&#9670;&nbsp;</a></span>info() <span class="overload">[7/7]</span></h2>
+<a id="ab92907289545ff78b35db4c4efb359e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92907289545ff78b35db4c4efb359e0">&#9670;&nbsp;</a></span>info&lt; Texture &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1res_1_1Texture_1_1Info.html">Texture::Info</a> const&amp; le::res::info </td>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Texture_1_1Info.html">Texture::Info</a> const&amp; <a class="el" href="namespacele_1_1res.html#a126f12d72eb14d31e89771ada5da2472">le::res::info</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&#160;</td>
           <td class="paramname"><em>texture</em></td><td>)</td>
@@ -630,7 +730,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aff622570f6e35f490ce4c0903e193825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff622570f6e35f490ce4c0903e193825">&#9670;&nbsp;</a></span>load() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff622570f6e35f490ce4c0903e193825">&#9670;&nbsp;</a></span>load() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -660,7 +760,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a88e016c66be6d97375db322aee87f739"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88e016c66be6d97375db322aee87f739">&#9670;&nbsp;</a></span>load() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e016c66be6d97375db322aee87f739">&#9670;&nbsp;</a></span>load() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -690,7 +790,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a5e837e529baff16e9ed8df0960f65081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e837e529baff16e9ed8df0960f65081">&#9670;&nbsp;</a></span>load() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e837e529baff16e9ed8df0960f65081">&#9670;&nbsp;</a></span>load() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -720,7 +820,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="afd61d0ab08c7fda00a44585e6cbc934e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd61d0ab08c7fda00a44585e6cbc934e">&#9670;&nbsp;</a></span>load() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd61d0ab08c7fda00a44585e6cbc934e">&#9670;&nbsp;</a></span>load() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -750,7 +850,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a3126ccf3bcbb391ed4db29cf60066749"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3126ccf3bcbb391ed4db29cf60066749">&#9670;&nbsp;</a></span>load() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3126ccf3bcbb391ed4db29cf60066749">&#9670;&nbsp;</a></span>load() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -780,7 +880,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ae1e5a9c1c06d2dce244dc268f5e03678"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1e5a9c1c06d2dce244dc268f5e03678">&#9670;&nbsp;</a></span>load() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e5a9c1c06d2dce244dc268f5e03678">&#9670;&nbsp;</a></span>load() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -810,7 +910,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a290714941d54d3ea0674e9344e5bfabe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a290714941d54d3ea0674e9344e5bfabe">&#9670;&nbsp;</a></span>load() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a290714941d54d3ea0674e9344e5bfabe">&#9670;&nbsp;</a></span>load() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,16 +939,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad6e993862db5bc66f5ce9cb1fce8075b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e993862db5bc66f5ce9cb1fce8075b">&#9670;&nbsp;</a></span>load() <span class="overload">[8/8]</span></h2>
+<a id="a8f1ca24aba1328c7b53948c25da1f86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1ca24aba1328c7b53948c25da1f86a">&#9670;&nbsp;</a></span>loadAsync() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T le::res::load </td>
+          <td class="memname"><a class="el" href="classle_1_1res_1_1Async.html">Async</a>&lt;<a class="el" href="structle_1_1res_1_1Model.html">Model</a>&gt; le::res::loadAsync </td>
           <td>(</td>
           <td class="paramtype">stdfs::path const &amp;&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -856,8 +954,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename T::CreateInfo&#160;</td>
-          <td class="paramname"><em>createInfo</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Model_1_1LoadInfo.html">Model::LoadInfo</a>&#160;</td>
+          <td class="paramname"><em>loadInfo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -867,16 +965,70 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Load new <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a> on a separate thread. </p>
+
 </div>
 </div>
-<a id="ad581c498eccfd8af4a4ca3c07a514f67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad581c498eccfd8af4a4ca3c07a514f67">&#9670;&nbsp;</a></span>status() <span class="overload">[1/7]</span></h2>
+<a id="ae0de2d792c07f5030f32c58863a6a0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0de2d792c07f5030f32c58863a6a0d1">&#9670;&nbsp;</a></span>loadAsync() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="classle_1_1res_1_1Async.html">Async</a>&lt;<a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&gt; le::res::loadAsync </td>
+          <td>(</td>
+          <td class="paramtype">stdfs::path const &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Texture_1_1LoadInfo.html">Texture::LoadInfo</a>&#160;</td>
+          <td class="paramname"><em>loadInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load new <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a> on a separate thread. </p>
+
+</div>
+</div>
+<a id="ad2cef166a39322468c21e24570d2e68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2cef166a39322468c21e24570d2e68d">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
           <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a694d8433d521b662360c678d2c9d2062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694d8433d521b662360c678d2c9d2062">&#9670;&nbsp;</a></span>status&lt; Font &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Font.html">Font</a>&#160;</td>
           <td class="paramname"><em>font</em></td><td>)</td>
@@ -889,14 +1041,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a592eb7c066ef2252e267f1c16126125c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a592eb7c066ef2252e267f1c16126125c">&#9670;&nbsp;</a></span>status() <span class="overload">[2/7]</span></h2>
+<a id="a1749d3993a4f4f1b8e3c4b6dba254a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1749d3993a4f4f1b8e3c4b6dba254a24">&#9670;&nbsp;</a></span>status&lt; Material &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Material.html">Material</a>&#160;</td>
           <td class="paramname"><em>material</em></td><td>)</td>
@@ -909,14 +1063,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a5ee8498d6c5db2918928b4d35b53d70f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ee8498d6c5db2918928b4d35b53d70f">&#9670;&nbsp;</a></span>status() <span class="overload">[3/7]</span></h2>
+<a id="af067e22fe28dbbf709ac9a205a43adbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af067e22fe28dbbf709ac9a205a43adbb">&#9670;&nbsp;</a></span>status&lt; Mesh &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&#160;</td>
           <td class="paramname"><em>mesh</em></td><td>)</td>
@@ -929,14 +1085,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a791cd4356ab69b2491a810badec1229a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a791cd4356ab69b2491a810badec1229a">&#9670;&nbsp;</a></span>status() <span class="overload">[4/7]</span></h2>
+<a id="a3d0c3ccae472ff35e1dc280d5b5f6d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0c3ccae472ff35e1dc280d5b5f6d06">&#9670;&nbsp;</a></span>status&lt; Model &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Model.html">Model</a>&#160;</td>
           <td class="paramname"><em>model</em></td><td>)</td>
@@ -949,14 +1107,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af0c0b14a9396d65cac775fea66a32857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c0b14a9396d65cac775fea66a32857">&#9670;&nbsp;</a></span>status() <span class="overload">[5/7]</span></h2>
+<a id="a690ef1038b92855da7e1293b132aa27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a690ef1038b92855da7e1293b132aa27d">&#9670;&nbsp;</a></span>status&lt; Sampler &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&#160;</td>
           <td class="paramname"><em>sampler</em></td><td>)</td>
@@ -969,14 +1129,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="acc5dbbbebddf111a3251bb3341d812d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc5dbbbebddf111a3251bb3341d812d9">&#9670;&nbsp;</a></span>status() <span class="overload">[6/7]</span></h2>
+<a id="a68128799aa0bcfcb30cb270692a6fe72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68128799aa0bcfcb30cb270692a6fe72">&#9670;&nbsp;</a></span>status&lt; Shader &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&#160;</td>
           <td class="paramname"><em>shader</em></td><td>)</td>
@@ -989,14 +1151,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae85e07c4872084826fcd71a93f6127b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae85e07c4872084826fcd71a93f6127b8">&#9670;&nbsp;</a></span>status() <span class="overload">[7/7]</span></h2>
+<a id="aaa70202f5d716cb9ac6a7647ea6ac18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa70202f5d716cb9ac6a7647ea6ac18e">&#9670;&nbsp;</a></span>status&lt; Texture &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> le::res::status </td>
+          <td class="memname"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a> <a class="el" href="namespacele_1_1res.html#ad2cef166a39322468c21e24570d2e68d">le::res::status</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&#160;</td>
           <td class="paramname"><em>texture</em></td><td>)</td>
@@ -1009,31 +1173,13 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0647863d16092295479b0d396fcf9eb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0647863d16092295479b0d396fcf9eb7">&#9670;&nbsp;</a></span>unload() <span class="overload">[1/8]</span></h2>
+<a id="aeea7dfb56d0118579fb3e5e3e20a3c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea7dfb56d0118579fb3e5e3e20a3c17">&#9670;&nbsp;</a></span>unload() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::res::unload </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Font.html">Font</a>&#160;</td>
-          <td class="paramname"><em>font</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>. </p>
-
-</div>
-</div>
-<a id="a12a1aed3c6ed794e33f00a35a86aba49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12a1aed3c6ed794e33f00a35a86aba49">&#9670;&nbsp;</a></span>unload() <span class="overload">[2/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool le::res::unload </td>
@@ -1049,134 +1195,58 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af4fecfa7eba40b9c97905e7c097f6a0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4fecfa7eba40b9c97905e7c097f6a0d">&#9670;&nbsp;</a></span>unload() <span class="overload">[3/8]</span></h2>
+<a id="ac21ecb41d31110d4bbdbe3c1c43237ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21ecb41d31110d4bbdbe3c1c43237ed">&#9670;&nbsp;</a></span>unload() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool le::res::unload </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Material.html">Material</a>&#160;</td>
-          <td class="paramname"><em>material</em></td><td>)</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>. </p>
-
 </div>
 </div>
-<a id="aaf01597e298060793b6a7a49c3b0866f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf01597e298060793b6a7a49c3b0866f">&#9670;&nbsp;</a></span>unload() <span class="overload">[4/8]</span></h2>
+<a id="a3f1f9ea12ba95af6202be02f585a3f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1f9ea12ba95af6202be02f585a3f85">&#9670;&nbsp;</a></span>unload&lt; Font &gt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unload </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&#160;</td>
-          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Font.html">Font</a>&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>. </p>
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Font.html" title="Handle for bitmap font using texture atlas.">Font</a>. </p>
 
 </div>
 </div>
-<a id="a444ff02224b582eb84974145704c2141"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a444ff02224b582eb84974145704c2141">&#9670;&nbsp;</a></span>unload() <span class="overload">[5/8]</span></h2>
+<a id="a5b2b0e3f61b0b460180a3967e8d1fca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2b0e3f61b0b460180a3967e8d1fca5">&#9670;&nbsp;</a></span>unload&lt; Font &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unload </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Model.html">Model</a>&#160;</td>
-          <td class="paramname"><em>model</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>. </p>
-
-</div>
-</div>
-<a id="af159cc1a0faa360ed4ea0cd75e090ec5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af159cc1a0faa360ed4ea0cd75e090ec5">&#9670;&nbsp;</a></span>unload() <span class="overload">[6/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::res::unload </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&#160;</td>
-          <td class="paramname"><em>sampler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>. </p>
-
-</div>
-</div>
-<a id="a935521fff8a4ffc416f797d1e0116d14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a935521fff8a4ffc416f797d1e0116d14">&#9670;&nbsp;</a></span>unload() <span class="overload">[7/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::res::unload </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&#160;</td>
-          <td class="paramname"><em>shader</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>. </p>
-
-</div>
-</div>
-<a id="a40e482a8632a5fdb92220efcee34ad4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40e482a8632a5fdb92220efcee34ad4e">&#9670;&nbsp;</a></span>unload() <span class="overload">[8/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::res::unload </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&#160;</td>
-          <td class="paramname"><em>texture</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>. </p>
-
-</div>
-</div>
-<a id="ae1cddc2b27305835b3b9d87ee5c640de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1cddc2b27305835b3b9d87ee5c640de">&#9670;&nbsp;</a></span>unloadFont()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::res::unloadFont </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Font.html">Font</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1189,14 +1259,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3f8d8b4e9e9b52823517631fd5adb5e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8d8b4e9e9b52823517631fd5adb5e7">&#9670;&nbsp;</a></span>unloadMaterial()</h2>
+<a id="ac7032b672b5a1aedc459f964f492baff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7032b672b5a1aedc459f964f492baff">&#9670;&nbsp;</a></span>unload&lt; Material &gt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unloadMaterial </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1209,14 +1281,38 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6c48eecd186c87d644c61e716f62cae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c48eecd186c87d644c61e716f62cae2">&#9670;&nbsp;</a></span>unloadMesh()</h2>
+<a id="a9ab9c6839bca8e58b67680c78d1e13e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab9c6839bca8e58b67680c78d1e13e9">&#9670;&nbsp;</a></span>unload&lt; Material &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unloadMesh </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Material.html">Material</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Material.html">Material</a>&#160;</td>
+          <td class="paramname"><em>material</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Material.html" title="Handle for base material used in Mesh.">Material</a>. </p>
+
+</div>
+</div>
+<a id="a1708874060ac074f0446c0af466bc695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1708874060ac074f0446c0af466bc695">&#9670;&nbsp;</a></span>unload&lt; Mesh &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1229,14 +1325,38 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aebf7d092292217cc2984fc39bb5cb9c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebf7d092292217cc2984fc39bb5cb9c8">&#9670;&nbsp;</a></span>unloadModel()</h2>
+<a id="abd42a4ef51d6d12626bc804e7187125d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd42a4ef51d6d12626bc804e7187125d">&#9670;&nbsp;</a></span>unload&lt; Mesh &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unloadModel </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Mesh.html">Mesh</a>&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Mesh.html" title="Handle for drawable resource using Geometry.">Mesh</a>. </p>
+
+</div>
+</div>
+<a id="a193ce418bb6e5462e054f4a1d57452f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193ce418bb6e5462e054f4a1d57452f0">&#9670;&nbsp;</a></span>unload&lt; Model &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1249,14 +1369,38 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac525a813e6e6b3ae743190cac2a8530d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac525a813e6e6b3ae743190cac2a8530d">&#9670;&nbsp;</a></span>unloadSampler()</h2>
+<a id="a8ce4dcd2abf0a5996e7940c8110cb6d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce4dcd2abf0a5996e7940c8110cb6d9">&#9670;&nbsp;</a></span>unload&lt; Model &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unloadSampler </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Model.html">Model</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Model.html">Model</a>&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Model.html" title="Handle for model described as a number of meshes, materials, and textures.">Model</a>. </p>
+
+</div>
+</div>
+<a id="a34f89e0e66795b4112254ea9faaa5855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f89e0e66795b4112254ea9faaa5855">&#9670;&nbsp;</a></span>unload&lt; Sampler &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1269,14 +1413,38 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a37472b1dd8112d6df99940cfc1c99e14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37472b1dd8112d6df99940cfc1c99e14">&#9670;&nbsp;</a></span>unloadShader()</h2>
+<a id="a9071489bf3f5ec705953ed437237070c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9071489bf3f5ec705953ed437237070c">&#9670;&nbsp;</a></span>unload&lt; Sampler &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unloadShader </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Sampler.html">Sampler</a>&#160;</td>
+          <td class="paramname"><em>sampler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Sampler.html" title="Handle for Vulkan Image Sampler.">Sampler</a>. </p>
+
+</div>
+</div>
+<a id="a6f7feb4b4e90f193641eb8f53e56e6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7feb4b4e90f193641eb8f53e56e6be">&#9670;&nbsp;</a></span>unload&lt; Shader &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1289,17 +1457,63 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a11626e8ceeed740e0303f253044183e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11626e8ceeed740e0303f253044183e1">&#9670;&nbsp;</a></span>unloadTexture()</h2>
+<a id="a49b74dd69669db82ea75ad57a720ee8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b74dd69669db82ea75ad57a720ee8b">&#9670;&nbsp;</a></span>unload&lt; Shader &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool le::res::unloadTexture </td>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Shader.html">Shader</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Shader.html">Shader</a>&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Shader.html" title="Handle for Vulkan shader program.">Shader</a>. </p>
+
+</div>
+</div>
+<a id="aa88b82a3b3c3be84b38709c37198bc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88b82a3b3c3be84b38709c37198bc34">&#9670;&nbsp;</a></span>unload&lt; Texture &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload a loaded <a class="el" href="structle_1_1res_1_1Texture.html" title="Handle for Vulkan Image and ImageView.">Texture</a>. </p>
+
+</div>
+</div>
+<a id="ac9fa67ea6c834ee1de1f17a4e69e883e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9fa67ea6c834ee1de1f17a4e69e883e">&#9670;&nbsp;</a></span>unload&lt; Texture &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacele_1_1res.html#ac21ecb41d31110d4bbdbe3c1c43237ed">le::res::unload</a>&lt; <a class="el" href="structle_1_1res_1_1Texture.html">Texture</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Texture.html">Texture</a>&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

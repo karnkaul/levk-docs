@@ -73,8 +73,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8108c9b6adc2bcdb7754cfb94032fdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start running the desired world.  <a href="classle_1_1engine_1_1Service.html#a8108c9b6adc2bcdb7754cfb94032fdf6">More...</a><br /></td></tr>
 <tr class="separator:a8108c9b6adc2bcdb7754cfb94032fdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70d364a870bb331343392763c064b252"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a70d364a870bb331343392763c064b252">isRunning</a> () const</td></tr>
-<tr class="memdesc:a70d364a870bb331343392763c064b252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether any windows are active.  <a href="classle_1_1engine_1_1Service.html#a70d364a870bb331343392763c064b252">More...</a><br /></td></tr>
+<tr class="memdesc:a70d364a870bb331343392763c064b252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether engine is currently running (or shutting down)  <a href="classle_1_1engine_1_1Service.html#a70d364a870bb331343392763c064b252">More...</a><br /></td></tr>
 <tr class="separator:a70d364a870bb331343392763c064b252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987d2decf6c360a7a1858a52304df623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98a">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a987d2decf6c360a7a1858a52304df623">status</a> () const</td></tr>
+<tr class="memdesc:a987d2decf6c360a7a1858a52304df623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain current engine Status.  <a href="classle_1_1engine_1_1Service.html#a987d2decf6c360a7a1858a52304df623">More...</a><br /></td></tr>
+<tr class="separator:a987d2decf6c360a7a1858a52304df623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56056b43e4fae35672de381d7f69fc98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a56056b43e4fae35672de381d7f69fc98">tick</a> (<a class="el" href="structle_1_1Time.html">Time</a> dt) const</td></tr>
 <tr class="memdesc:a56056b43e4fae35672de381d7f69fc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all services and tick active world.  <a href="classle_1_1engine_1_1Service.html#a56056b43e4fae35672de381d7f69fc98">More...</a><br /></td></tr>
 <tr class="separator:a56056b43e4fae35672de381d7f69fc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +195,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check whether any windows are active. </p>
+<p>Check whether engine is currently running (or shutting down) </p>
 
 </div>
 </div>
@@ -305,6 +308,25 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Start running the desired world. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if world does not exist / could not be started </dd></dl>
+
+</div>
+</div>
+<a id="a987d2decf6c360a7a1858a52304df623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987d2decf6c360a7a1858a52304df623">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele_1_1engine.html#a52ca1f49f65ff3f2c212c3c07e2ea98a">Status</a> le::engine::Service::status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain current engine Status. </p>
 
 </div>
 </div>

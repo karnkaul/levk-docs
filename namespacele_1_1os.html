@@ -44,6 +44,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -59,6 +60,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII wrapper for OS service Destructor joins all running threads.  <a href="structle_1_1os_1_1Service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aac188eeceec50bfa17b06f0dc10719d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aac188eeceec50bfa17b06f0dc10719d5">ArgsParser</a> = <a class="el" href="structkt_1_1args__parser.html">kt::args_parser</a>&lt;&gt;</td></tr>
+<tr class="separator:aac188eeceec50bfa17b06f0dc10719d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a8e13516ac1e2110dc1c13d3f989f5b21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21">Dir</a> : s8 { <a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21a043cc156fb230924515432e8533ec067">Dir::eWorking</a>, 
@@ -69,7 +75,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8cda551081957bd2c83f1b91ee899518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">init</a> (<a class="el" href="structle_1_1os_1_1Args.html">Args</a> const &amp;<a class="el" href="namespacele_1_1os.html#a264c12b7acf98c1347cc16624e67128e">args</a>)</td></tr>
+<tr class="memitem:a8cda551081957bd2c83f1b91ee899518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">init</a> (<a class="el" href="structle_1_1os_1_1Args.html">Args</a> const &amp;<a class="el" href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">args</a>)</td></tr>
 <tr class="memdesc:a8cda551081957bd2c83f1b91ee899518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise OS service.  <a href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">More...</a><br /></td></tr>
 <tr class="separator:a8cda551081957bd2c83f1b91ee899518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1af9175831888005d47fa21a0b91d31"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa1af9175831888005d47fa21a0b91d31">argv0</a> ()</td></tr>
@@ -78,12 +84,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ae42604e32ec1009458a21bd23bb906ac"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#ae42604e32ec1009458a21bd23bb906ac">dirPath</a> (<a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21">Dir</a> dir)</td></tr>
 <tr class="memdesc:ae42604e32ec1009458a21bd23bb906ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain working/executable directory.  <a href="namespacele_1_1os.html#ae42604e32ec1009458a21bd23bb906ac">More...</a><br /></td></tr>
 <tr class="separator:ae42604e32ec1009458a21bd23bb906ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264c12b7acf98c1347cc16624e67128e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string_view &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a264c12b7acf98c1347cc16624e67128e">args</a> ()</td></tr>
-<tr class="memdesc:a264c12b7acf98c1347cc16624e67128e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain all command line arguments passed to the runtime.  <a href="namespacele_1_1os.html#a264c12b7acf98c1347cc16624e67128e">More...</a><br /></td></tr>
-<tr class="separator:a264c12b7acf98c1347cc16624e67128e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab777ba32832d3ffe406ff5d5a61a70d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#ab777ba32832d3ffe406ff5d5a61a70d3">isDefined</a> (std::string_view arg)</td></tr>
-<tr class="memdesc:ab777ba32832d3ffe406ff5d5a61a70d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an expression was passed as a command line argument.  <a href="namespacele_1_1os.html#ab777ba32832d3ffe406ff5d5a61a70d3">More...</a><br /></td></tr>
-<tr class="separator:ab777ba32832d3ffe406ff5d5a61a70d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a803f6c128e7085a81f2a908dec208"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="structkt_1_1args__parser_1_1entry.html">ArgsParser::entry</a> &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">args</a> () noexcept</td></tr>
+<tr class="memdesc:a11a803f6c128e7085a81f2a908dec208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain all command line arguments passed to the runtime.  <a href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">More...</a><br /></td></tr>
+<tr class="separator:a11a803f6c128e7085a81f2a908dec208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
+<tr class="memitem:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; std::string_view &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aba57e91697de0cbdab1e1f0ceae0cc58">isDefined</a> (Arg &amp;&amp;key, <a class="el" href="structle_1_1os_1_1Args.html">Args</a> &amp;&amp;... variants) noexcept</td></tr>
+<tr class="memdesc:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string or its variant was passed as a command line argument.  <a href="namespacele_1_1os.html#aba57e91697de0cbdab1e1f0ceae0cc58">More...</a><br /></td></tr>
+<tr class="separator:aba57e91697de0cbdab1e1f0ceae0cc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893fc6fddc12ef383ef66789bc6b794b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a893fc6fddc12ef383ef66789bc6b794b">isDebuggerAttached</a> ()</td></tr>
 <tr class="memdesc:a893fc6fddc12ef383ef66789bc6b794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a debugger is attached to the runtime.  <a href="namespacele_1_1os.html#a893fc6fddc12ef383ef66789bc6b794b">More...</a><br /></td></tr>
 <tr class="separator:a893fc6fddc12ef383ef66789bc6b794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,10 +101,25 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a system call.  <a href="namespacele_1_1os.html#a1acd051f29dc28241f3dda61ca4fa5f2">More...</a><br /></td></tr>
 <tr class="separator:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplParams" colspan="2">template&lt;typename Arg1 , typename... Args&gt; </td></tr>
-<tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">sysCall</a> (std::string_view expr, Arg1 &amp;&amp;arg1, <a class="el" href="structle_1_1os_1_1Args.html">Args</a> &amp;&amp;... <a class="el" href="namespacele_1_1os.html#a264c12b7acf98c1347cc16624e67128e">args</a>)</td></tr>
+<tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">sysCall</a> (std::string_view expr, Arg1 &amp;&amp;arg1, <a class="el" href="structle_1_1os_1_1Args.html">Args</a> &amp;&amp;... <a class="el" href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">args</a>)</td></tr>
 <tr class="memdesc:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a system call.  <a href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">More...</a><br /></td></tr>
 <tr class="separator:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aac188eeceec50bfa17b06f0dc10719d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac188eeceec50bfa17b06f0dc10719d5">&#9670;&nbsp;</a></span>ArgsParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacele_1_1os.html#aac188eeceec50bfa17b06f0dc10719d5">le::os::ArgsParser</a> = typedef <a class="el" href="structkt_1_1args__parser.html">kt::args_parser</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a8e13516ac1e2110dc1c13d3f989f5b21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e13516ac1e2110dc1c13d3f989f5b21">&#9670;&nbsp;</a></span>Dir</h2>
@@ -127,19 +149,27 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a264c12b7acf98c1347cc16624e67128e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a264c12b7acf98c1347cc16624e67128e">&#9670;&nbsp;</a></span>args()</h2>
+<a id="a11a803f6c128e7085a81f2a908dec208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a803f6c128e7085a81f2a908dec208">&#9670;&nbsp;</a></span>args()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::string_view&gt; const&amp; le::os::args </td>
+          <td class="memname">std::deque&lt;<a class="el" href="structkt_1_1args__parser_1_1entry.html">ArgsParser::entry</a>&gt; const&amp; le::os::args </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Obtain all command line arguments passed to the runtime. </p>
@@ -243,23 +273,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab777ba32832d3ffe406ff5d5a61a70d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab777ba32832d3ffe406ff5d5a61a70d3">&#9670;&nbsp;</a></span>isDefined()</h2>
+<a id="aba57e91697de0cbdab1e1f0ceae0cc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba57e91697de0cbdab1e1f0ceae0cc58">&#9670;&nbsp;</a></span>isDefined()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Arg , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool le::os::isDefined </td>
+          <td class="memname">std::optional&lt;std::string_view&gt; le::os::isDefined </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td class="paramtype">Arg &amp;&amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1os_1_1Args.html">Args</a> &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>variants</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Check if an expression was passed as a command line argument. </p>
+<p>Check if a string or its variant was passed as a command line argument. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>std::nullopt</code> if arg is not defined, else the value of the arg (empty if key-only arg) </dd></dl>
 
 </div>
 </div>

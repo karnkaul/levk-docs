@@ -74,6 +74,10 @@ Functions</h2></td></tr>
 <tr class="memitem:affd3f67b19faf16d2ca88fb10ef114bd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#affd3f67b19faf16d2ca88fb10ef114bd">equals</a> (T lhs, T rhs, T epsilon=std::numeric_limits&lt; T &gt;::epsilon())</td></tr>
 <tr class="memdesc:affd3f67b19faf16d2ca88fb10ef114bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>abs(lhs - rhs)</code> is less than <code>epsilon</code>  <a href="namespacele_1_1maths.html#affd3f67b19faf16d2ca88fb10ef114bd">More...</a><br /></td></tr>
 <tr class="separator:affd3f67b19faf16d2ca88fb10ef114bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb677aa9dc1e83910965bd40d53c042e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abb677aa9dc1e83910965bd40d53c042e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#abb677aa9dc1e83910965bd40d53c042e">withinRange</a> (T value, T min, T max, bool bInclusive=true)</td></tr>
+<tr class="memdesc:abb677aa9dc1e83910965bd40d53c042e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>value</code> is within <code>min</code> and <code>max</code>  <a href="namespacele_1_1maths.html#abb677aa9dc1e83910965bd40d53c042e">More...</a><br /></td></tr>
+<tr class="separator:abb677aa9dc1e83910965bd40d53c042e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0ed1bed578ceeb6508ac5b1d9711503a"></a>
@@ -203,6 +207,50 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Obtain a random number between min and max. </p>
+
+</div>
+</div>
+<a id="abb677aa9dc1e83910965bd40d53c042e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb677aa9dc1e83910965bd40d53c042e">&#9670;&nbsp;</a></span>withinRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::maths::withinRange </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInclusive</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether <code>value</code> is within <code>min</code> and <code>max</code> </p>
 
 </div>
 </div>
