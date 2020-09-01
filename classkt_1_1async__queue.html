@@ -72,9 +72,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2df00acac2567383dddd4958ea2fb714"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a2df00acac2567383dddd4958ea2fb714">~async_queue</a> ()</td></tr>
 <tr class="memdesc:a2df00acac2567383dddd4958ea2fb714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polymorhic destructor.  <a href="classkt_1_1async__queue.html#a2df00acac2567383dddd4958ea2fb714">More...</a><br /></td></tr>
 <tr class="separator:a2df00acac2567383dddd4958ea2fb714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa295827008221b86bc26674fee6ae1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#aa295827008221b86bc26674fee6ae1a6">push</a> (T &amp;&amp;t)</td></tr>
-<tr class="memdesc:aa295827008221b86bc26674fee6ae1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward a T to the back of the queue and notify one.  <a href="classkt_1_1async__queue.html#aa295827008221b86bc26674fee6ae1a6">More...</a><br /></td></tr>
-<tr class="separator:aa295827008221b86bc26674fee6ae1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a8b434d7cd518d4c2ce741c67a6dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#ac8a8b434d7cd518d4c2ce741c67a6dea">push</a> (T t)</td></tr>
+<tr class="memdesc:ac8a8b434d7cd518d4c2ce741c67a6dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a T to the back of the queue and notify one.  <a href="classkt_1_1async__queue.html#ac8a8b434d7cd518d4c2ce741c67a6dea">More...</a><br /></td></tr>
+<tr class="separator:ac8a8b434d7cd518d4c2ce741c67a6dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f35bd4cbbd3c0e8bb53349814af18e5"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename... &gt; typename C, typename... Args&gt; </td></tr>
 <tr class="memitem:a5f35bd4cbbd3c0e8bb53349814af18e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a5f35bd4cbbd3c0e8bb53349814af18e5">push</a> (C&lt; T, Args... &gt; &amp;&amp;ts)</td></tr>
 <tr class="memdesc:a5f35bd4cbbd3c0e8bb53349814af18e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward a T to the back of the queue and notify one.  <a href="classkt_1_1async__queue.html#a5f35bd4cbbd3c0e8bb53349814af18e5">More...</a><br /></td></tr>
@@ -98,7 +98,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab51507dbf2e339ea83aa856302765a79"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#ab51507dbf2e339ea83aa856302765a79">m_cv</a></td></tr>
-<tr class="memdesc:ab51507dbf2e339ea83aa856302765a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to wait on <a class="el" href="classkt_1_1async__queue.html#a0341ecadbb99a83cd980d3eb1266f4dd" title="Pop a T from the front of the queue, wait until populated / not active.">pop()</a> and notify on <a class="el" href="classkt_1_1async__queue.html#aa295827008221b86bc26674fee6ae1a6" title="Forward a T to the back of the queue and notify one.">push()</a>/clear()  <a href="classkt_1_1async__queue.html#ab51507dbf2e339ea83aa856302765a79">More...</a><br /></td></tr>
+<tr class="memdesc:ab51507dbf2e339ea83aa856302765a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to wait on <a class="el" href="classkt_1_1async__queue.html#a0341ecadbb99a83cd980d3eb1266f4dd" title="Pop a T from the front of the queue, wait until populated / not active.">pop()</a> and notify on <a class="el" href="classkt_1_1async__queue.html#ac8a8b434d7cd518d4c2ce741c67a6dea" title="Add a T to the back of the queue and notify one.">push()</a>/clear()  <a href="classkt_1_1async__queue.html#ab51507dbf2e339ea83aa856302765a79">More...</a><br /></td></tr>
 <tr class="separator:ab51507dbf2e339ea83aa856302765a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3fe8e005c32ed851eb65bbd33bade91"><td class="memItemLeft" align="right" valign="top">std::deque&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#ae3fe8e005c32ed851eb65bbd33bade91">m_queue</a></td></tr>
 <tr class="separator:ae3fe8e005c32ed851eb65bbd33bade91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,8 +341,8 @@ template&lt;template&lt; typename... &gt; typename C, typename... Args&gt; </div
 
 </div>
 </div>
-<a id="aa295827008221b86bc26674fee6ae1a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa295827008221b86bc26674fee6ae1a6">&#9670;&nbsp;</a></span>push() <span class="overload">[2/2]</span></h2>
+<a id="ac8a8b434d7cd518d4c2ce741c67a6dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a8b434d7cd518d4c2ce741c67a6dea">&#9670;&nbsp;</a></span>push() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,14 +352,14 @@ template&lt;typename T , typename Mutex &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classkt_1_1async__queue.html">kt::async_queue</a>&lt; T, Mutex &gt;::push </td>
           <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Forward a T to the back of the queue and notify one. </p>
+<p>Add a T to the back of the queue and notify one. </p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ template&lt;typename T , typename Mutex  = std::mutex&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Used to wait on <a class="el" href="classkt_1_1async__queue.html#a0341ecadbb99a83cd980d3eb1266f4dd" title="Pop a T from the front of the queue, wait until populated / not active.">pop()</a> and notify on <a class="el" href="classkt_1_1async__queue.html#aa295827008221b86bc26674fee6ae1a6" title="Forward a T to the back of the queue and notify one.">push()</a>/clear() </p>
+<p>Used to wait on <a class="el" href="classkt_1_1async__queue.html#a0341ecadbb99a83cd980d3eb1266f4dd" title="Pop a T from the front of the queue, wait until populated / not active.">pop()</a> and notify on <a class="el" href="classkt_1_1async__queue.html#ac8a8b434d7cd518d4c2ce741c67a6dea" title="Add a T to the back of the queue and notify one.">push()</a>/clear() </p>
 
 </div>
 </div>

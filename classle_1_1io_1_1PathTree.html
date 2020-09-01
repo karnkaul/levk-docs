@@ -68,21 +68,21 @@ Public Types</h2></td></tr>
 <tr class="memitem:a3a87ce05f0ddaf3d8c4f1dbabacd6955"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#a3a87ce05f0ddaf3d8c4f1dbabacd6955">Entry</a> = std::tuple&lt; std::string, T... &gt;</td></tr>
 <tr class="memdesc:a3a87ce05f0ddaf3d8c4f1dbabacd6955"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename and T...  <a href="classle_1_1io_1_1PathTree.html#a3a87ce05f0ddaf3d8c4f1dbabacd6955">More...</a><br /></td></tr>
 <tr class="separator:a3a87ce05f0ddaf3d8c4f1dbabacd6955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5bcefa66d92cd70362a6bd256756e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#aec5bcefa66d92cd70362a6bd256756e9">Nodes</a> = std::vector&lt; <a class="el" href="structle_1_1io_1_1PathTree_1_1Node.html">Node</a> const  * &gt;</td></tr>
-<tr class="separator:aec5bcefa66d92cd70362a6bd256756e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae346d7718a3a47bfb329b1668d591848"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#ae346d7718a3a47bfb329b1668d591848">Nodes</a> = std::vector&lt; <a class="el" href="structle_1_1Ref.html">Ref</a>&lt; <a class="el" href="structle_1_1io_1_1PathTree_1_1Node.html">Node</a> const  &gt; &gt;</td></tr>
+<tr class="separator:ae346d7718a3a47bfb329b1668d591848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a89cc310f1f26d1fbc145a0d2a2ed7912"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#a89cc310f1f26d1fbc145a0d2a2ed7912">emplace</a> (stdfs::path id, T &amp;&amp;... ts)</td></tr>
-<tr class="memdesc:a89cc310f1f26d1fbc145a0d2a2ed7912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Entry.  <a href="classle_1_1io_1_1PathTree.html#a89cc310f1f26d1fbc145a0d2a2ed7912">More...</a><br /></td></tr>
-<tr class="separator:a89cc310f1f26d1fbc145a0d2a2ed7912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887985e1149bd8e8f4d8279c405f655e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#a887985e1149bd8e8f4d8279c405f655e">emplace</a> (stdfs::path id, T... ts)</td></tr>
+<tr class="memdesc:a887985e1149bd8e8f4d8279c405f655e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Entry.  <a href="classle_1_1io_1_1PathTree.html#a887985e1149bd8e8f4d8279c405f655e">More...</a><br /></td></tr>
+<tr class="separator:a887985e1149bd8e8f4d8279c405f655e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1621700004592f5440639949b3477aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#af1621700004592f5440639949b3477aa">import</a> (std::vector&lt; <a class="el" href="classle_1_1io_1_1PathTree.html#a3a87ce05f0ddaf3d8c4f1dbabacd6955">Entry</a> &gt; entries)</td></tr>
 <tr class="memdesc:af1621700004592f5440639949b3477aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import flat list into tree.  <a href="classle_1_1io_1_1PathTree.html#af1621700004592f5440639949b3477aa">More...</a><br /></td></tr>
 <tr class="separator:af1621700004592f5440639949b3477aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b3cd11d17c1ab30b53cc40f65d566f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#ae5b3cd11d17c1ab30b53cc40f65d566f">print</a> (<a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a> indent=2) const</td></tr>
 <tr class="memdesc:ae5b3cd11d17c1ab30b53cc40f65d566f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain depth-first string representation of tree.  <a href="classle_1_1io_1_1PathTree.html#ae5b3cd11d17c1ab30b53cc40f65d566f">More...</a><br /></td></tr>
 <tr class="separator:ae5b3cd11d17c1ab30b53cc40f65d566f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36cfc268310ef294046ef56183a2bea9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1io_1_1PathTree.html#aec5bcefa66d92cd70362a6bd256756e9">Nodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#a36cfc268310ef294046ef56183a2bea9">rootNodes</a> () const</td></tr>
+<tr class="memitem:a36cfc268310ef294046ef56183a2bea9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1io_1_1PathTree.html#ae346d7718a3a47bfb329b1668d591848">Nodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1PathTree.html#a36cfc268310ef294046ef56183a2bea9">rootNodes</a> () const</td></tr>
 <tr class="memdesc:a36cfc268310ef294046ef56183a2bea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain all root nodes.  <a href="classle_1_1io_1_1PathTree.html#a36cfc268310ef294046ef56183a2bea9">More...</a><br /></td></tr>
 <tr class="separator:a36cfc268310ef294046ef56183a2bea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -110,8 +110,8 @@ template&lt;typename... T&gt; </div>
 
 </div>
 </div>
-<a id="aec5bcefa66d92cd70362a6bd256756e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec5bcefa66d92cd70362a6bd256756e9">&#9670;&nbsp;</a></span>Nodes</h2>
+<a id="ae346d7718a3a47bfb329b1668d591848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae346d7718a3a47bfb329b1668d591848">&#9670;&nbsp;</a></span>Nodes</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,7 +119,7 @@ template&lt;typename... T&gt; </div>
 template&lt;typename... T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1io_1_1PathTree.html">le::io::PathTree</a>&lt; T &gt;::<a class="el" href="classle_1_1io_1_1PathTree.html#aec5bcefa66d92cd70362a6bd256756e9">Nodes</a> =  std::vector&lt;<a class="el" href="structle_1_1io_1_1PathTree_1_1Node.html">Node</a> const*&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1io_1_1PathTree.html">le::io::PathTree</a>&lt; T &gt;::<a class="el" href="classle_1_1io_1_1PathTree.html#ae346d7718a3a47bfb329b1668d591848">Nodes</a> =  std::vector&lt;<a class="el" href="structle_1_1Ref.html">Ref</a>&lt;<a class="el" href="structle_1_1io_1_1PathTree_1_1Node.html">Node</a> const&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -127,8 +127,8 @@ template&lt;typename... T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a89cc310f1f26d1fbc145a0d2a2ed7912"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89cc310f1f26d1fbc145a0d2a2ed7912">&#9670;&nbsp;</a></span>emplace()</h2>
+<a id="a887985e1149bd8e8f4d8279c405f655e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887985e1149bd8e8f4d8279c405f655e">&#9670;&nbsp;</a></span>emplace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,7 +144,7 @@ template&lt;typename... T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T &amp;&amp;...&#160;</td>
+          <td class="paramtype">T...&#160;</td>
           <td class="paramname"><em>ts</em>&#160;</td>
         </tr>
         <tr>
@@ -222,7 +222,7 @@ template&lt;typename... T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1io_1_1PathTree.html#aec5bcefa66d92cd70362a6bd256756e9">Nodes</a> <a class="el" href="classle_1_1io_1_1PathTree.html">le::io::PathTree</a>&lt; T &gt;::rootNodes </td>
+          <td class="memname"><a class="el" href="classle_1_1io_1_1PathTree.html#ae346d7718a3a47bfb329b1668d591848">Nodes</a> <a class="el" href="classle_1_1io_1_1PathTree.html">le::io::PathTree</a>&lt; T &gt;::rootNodes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

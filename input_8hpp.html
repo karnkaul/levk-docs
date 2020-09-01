@@ -43,23 +43,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">input.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="input__context_8hpp.html">engine/game/input_context.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1CtxWrapper.html">le::input::CtxWrapper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
@@ -67,25 +59,18 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacele_1_1input"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html">le::input</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a1bbb1ee13c12e96a61b213948a964e02"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a1bbb1ee13c12e96a61b213948a964e02">le::input::Token</a> = std::shared_ptr&lt; s8 &gt;</td></tr>
-<tr class="separator:a1bbb1ee13c12e96a61b213948a964e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a741e8f1d8d556c9c343b5abc6dce814f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a741e8f1d8d556c9c343b5abc6dce814f">le::input::registerContext</a> (CtxWrapper const &amp;context)</td></tr>
-<tr class="separator:a741e8f1d8d556c9c343b5abc6dce814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9506216bba493c05d08604b0cb6e1b87"><td class="memItemLeft" align="right" valign="top">Token&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a9506216bba493c05d08604b0cb6e1b87">le::input::registerContext</a> (Context const &amp;context)</td></tr>
-<tr class="separator:a9506216bba493c05d08604b0cb6e1b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4554e6f461411342e693b673281874"><td class="memItemLeft" align="right" valign="top">Token&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#afa4554e6f461411342e693b673281874">le::input::registerContext</a> (Context const *pContext)</td></tr>
+<tr class="separator:afa4554e6f461411342e693b673281874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce7fbd6927db106a2bcf5550dc1dce6"><td class="memItemLeft" align="right" valign="top">glm::vec2 const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a5ce7fbd6927db106a2bcf5550dc1dce6">le::input::cursorPosition</a> (bool bRaw=false)</td></tr>
 <tr class="separator:a5ce7fbd6927db106a2bcf5550dc1dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4009f6b7de5b326485b9fada014c3be"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad4009f6b7de5b326485b9fada014c3be">le::input::screenToWorld</a> (glm::vec2 const &amp;screen)</td></tr>
 <tr class="separator:ad4009f6b7de5b326485b9fada014c3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50bf9c981aaa6b29ff8c925061f38b1"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aa50bf9c981aaa6b29ff8c925061f38b1">le::input::worldToUI</a> (glm::vec2 const &amp;world)</td></tr>
 <tr class="separator:aa50bf9c981aaa6b29ff8c925061f38b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ba152ef62fd34042f9f6ee18b4559a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#af9ba152ef62fd34042f9f6ee18b4559a">le::input::isInFocus</a> ()</td></tr>
-<tr class="separator:af9ba152ef62fd34042f9f6ee18b4559a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331b6f12a3852bdb314084bb531e30a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a331b6f12a3852bdb314084bb531e30a9">le::input::focused</a> ()</td></tr>
+<tr class="separator:a331b6f12a3852bdb314084bb531e30a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af47207a7fa4f95dfbd47b2338ee1d20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#af47207a7fa4f95dfbd47b2338ee1d20d">le::input::setCursorMode</a> (CursorMode mode)</td></tr>
 <tr class="separator:af47207a7fa4f95dfbd47b2338ee1d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad424693500543776a76b163d819c0286"><td class="memItemLeft" align="right" valign="top">CursorMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad424693500543776a76b163d819c0286">le::input::cursorMode</a> ()</td></tr>

@@ -64,9 +64,11 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1FalseType.html">le::FalseType&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1NoCopy.html">le::NoCopy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience base type with deleted copy semantics.  <a href="structle_1_1NoCopy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TrueType.html">le::TrueType&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Ref.html">le::Ref&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ultra-light reference wrapper.  <a href="structle_1_1Ref.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TResult.html">le::TResult&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structured Binding of a payload and a <code>bool</code> (indicating the result of an operation)  <a href="structle_1_1TResult.html#details">More...</a><br /></td></tr>
@@ -117,9 +119,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a06341041235ae1ebc1a617aa90551f06"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a06341041235ae1ebc1a617aa90551f06">le::maxVal</a> ()</td></tr>
 <tr class="memdesc:a06341041235ae1ebc1a617aa90551f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the max value for <code>T</code>  <a href="namespacele.html#a06341041235ae1ebc1a617aa90551f06">More...</a><br /></td></tr>
 <tr class="separator:a06341041235ae1ebc1a617aa90551f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acfb8fb58272744d287b7c5f0712beb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1acfb8fb58272744d287b7c5f0712beb"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a1acfb8fb58272744d287b7c5f0712beb">le::operator==</a> (Ref&lt; T &gt; lhs, Ref&lt; T &gt; rhs)</td></tr>
+<tr class="separator:a1acfb8fb58272744d287b7c5f0712beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ff7be91f49ad218c65930dff19e083"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a84ff7be91f49ad218c65930dff19e083"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a84ff7be91f49ad218c65930dff19e083">le::operator!=</a> (Ref&lt; T &gt; lhs, Ref&lt; T &gt; rhs)</td></tr>
+<tr class="separator:a84ff7be91f49ad218c65930dff19e083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a9775e49c1617290bf3caba485e0d10ac"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__types_8hpp.html#a9775e49c1617290bf3caba485e0d10ac">levk_debug</a> = false</td></tr>
+<tr class="separator:a9775e49c1617290bf3caba485e0d10ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a83cfa24c1b289626fe208936017da9"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a1a83cfa24c1b289626fe208936017da9"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a1a83cfa24c1b289626fe208936017da9">le::alwaysFalse</a> = false</td></tr>
 <tr class="separator:a1a83cfa24c1b289626fe208936017da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +137,29 @@ Variables</h2></td></tr>
 <tr class="memitem:a3538e218e8bae8933bb3816a2a8a2eab"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a3538e218e8bae8933bb3816a2a8a2eab">le::alwaysTrue</a> = true</td></tr>
 <tr class="separator:a3538e218e8bae8933bb3816a2a8a2eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9775e49c1617290bf3caba485e0d10ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9775e49c1617290bf3caba485e0d10ac">&#9670;&nbsp;</a></span>levk_debug</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool levk_debug = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

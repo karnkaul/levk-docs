@@ -98,12 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a6dc7269f84fbbff7c492ef08bfcf86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a7a6dc7269f84fbbff7c492ef08bfcf86">setDebug</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity, bool bDebug)</td></tr>
 <tr class="memdesc:a7a6dc7269f84fbbff7c492ef08bfcf86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle Debug flag.  <a href="classle_1_1Registry.html#a7a6dc7269f84fbbff7c492ef08bfcf86">More...</a><br /></td></tr>
 <tr class="separator:a7a6dc7269f84fbbff7c492ef08bfcf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f4b0664d1aaff8d48b6c7bb2eae5cfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a2f4b0664d1aaff8d48b6c7bb2eae5cfb">isEnabled</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
-<tr class="memdesc:a2f4b0664d1aaff8d48b6c7bb2eae5cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Enabled flag is set.  <a href="classle_1_1Registry.html#a2f4b0664d1aaff8d48b6c7bb2eae5cfb">More...</a><br /></td></tr>
-<tr class="separator:a2f4b0664d1aaff8d48b6c7bb2eae5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab10d8413f69bd99ccae1cc8777c61109"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ab10d8413f69bd99ccae1cc8777c61109">isAlive</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
-<tr class="memdesc:ab10d8413f69bd99ccae1cc8777c61109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Destroyed flag is not set.  <a href="classle_1_1Registry.html#ab10d8413f69bd99ccae1cc8777c61109">More...</a><br /></td></tr>
-<tr class="separator:ab10d8413f69bd99ccae1cc8777c61109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd07880aa4abbfc88325ce5132663668"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#acd07880aa4abbfc88325ce5132663668">enabled</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:acd07880aa4abbfc88325ce5132663668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Enabled flag is set.  <a href="classle_1_1Registry.html#acd07880aa4abbfc88325ce5132663668">More...</a><br /></td></tr>
+<tr class="separator:acd07880aa4abbfc88325ce5132663668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fefb867464bf19cb506219bbb99e6d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#a8fefb867464bf19cb506219bbb99e6d5">alive</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
+<tr class="memdesc:a8fefb867464bf19cb506219bbb99e6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Destroyed flag is not set.  <a href="classle_1_1Registry.html#a8fefb867464bf19cb506219bbb99e6d5">More...</a><br /></td></tr>
+<tr class="separator:a8fefb867464bf19cb506219bbb99e6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae573165a11718c3536674367edd4802e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Registry.html#ae573165a11718c3536674367edd4802e">isDebugSet</a> (<a class="el" href="structle_1_1Entity.html">Entity</a> entity) const</td></tr>
 <tr class="memdesc:ae573165a11718c3536674367edd4802e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether Debug flag is set.  <a href="classle_1_1Registry.html#ae573165a11718c3536674367edd4802e">More...</a><br /></td></tr>
 <tr class="separator:ae573165a11718c3536674367edd4802e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,6 +394,26 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="a8fefb867464bf19cb506219bbb99e6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fefb867464bf19cb506219bbb99e6d5">&#9670;&nbsp;</a></span>alive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::Registry::alive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Entity.html">Entity</a>&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain whether Destroyed flag is not set. </p>
+
+</div>
+</div>
 <a id="a66b932273445ee1ef608d59d3163be0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66b932273445ee1ef608d59d3163be0a">&#9670;&nbsp;</a></span>clear()</h2>
 
@@ -519,6 +539,26 @@ template&lt;typename... Ts&gt; </div>
 
 </div>
 </div>
+<a id="acd07880aa4abbfc88325ce5132663668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd07880aa4abbfc88325ce5132663668">&#9670;&nbsp;</a></span>enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::Registry::enabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Entity.html">Entity</a>&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain whether Enabled flag is set. </p>
+
+</div>
+</div>
 <a id="a00eddf3259cae9d74d8dfb754a36b58f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00eddf3259cae9d74d8dfb754a36b58f">&#9670;&nbsp;</a></span>entityCount()</h2>
 
@@ -577,26 +617,6 @@ template&lt;typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="ab10d8413f69bd99ccae1cc8777c61109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab10d8413f69bd99ccae1cc8777c61109">&#9670;&nbsp;</a></span>isAlive()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::Registry::isAlive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1Entity.html">Entity</a>&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Obtain whether Destroyed flag is not set. </p>
-
-</div>
-</div>
 <a id="ae573165a11718c3536674367edd4802e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae573165a11718c3536674367edd4802e">&#9670;&nbsp;</a></span>isDebugSet()</h2>
 
@@ -614,26 +634,6 @@ template&lt;typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Obtain whether Debug flag is set. </p>
-
-</div>
-</div>
-<a id="a2f4b0664d1aaff8d48b6c7bb2eae5cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f4b0664d1aaff8d48b6c7bb2eae5cfb">&#9670;&nbsp;</a></span>isEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::Registry::isEnabled </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1Entity.html">Entity</a>&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Obtain whether Enabled flag is set. </p>
 
 </div>
 </div>

@@ -73,9 +73,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b4fe303c39d7a97adf50323fef4f851"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TFlags.html#a7b4fe303c39d7a97adf50323fef4f851">TFlags</a> (std::initializer_list&lt; Enum &gt; flags) noexcept</td></tr>
 <tr class="memdesc:a7b4fe303c39d7a97adf50323fef4f851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with a number of flags set.  <a href="structle_1_1TFlags.html#a7b4fe303c39d7a97adf50323fef4f851">More...</a><br /></td></tr>
 <tr class="separator:a7b4fe303c39d7a97adf50323fef4f851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad246a998047f38056022a11b237e3de9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TFlags.html#ad246a998047f38056022a11b237e3de9">isSet</a> (Enum flag) const noexcept</td></tr>
-<tr class="memdesc:ad246a998047f38056022a11b237e3de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a flag is set.  <a href="structle_1_1TFlags.html#ad246a998047f38056022a11b237e3de9">More...</a><br /></td></tr>
-<tr class="separator:ad246a998047f38056022a11b237e3de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858d8616d0d6dd640878d1ce452aa870"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TFlags.html#a858d8616d0d6dd640878d1ce452aa870">test</a> (Enum flag) const noexcept</td></tr>
+<tr class="memdesc:a858d8616d0d6dd640878d1ce452aa870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a flag is set.  <a href="structle_1_1TFlags.html#a858d8616d0d6dd640878d1ce452aa870">More...</a><br /></td></tr>
+<tr class="separator:a858d8616d0d6dd640878d1ce452aa870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51e8259e849943f5e18c15c8799987fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TFlags.html#a51e8259e849943f5e18c15c8799987fd">set</a> (Enum flag) noexcept</td></tr>
 <tr class="memdesc:a51e8259e849943f5e18c15c8799987fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a flag.  <a href="structle_1_1TFlags.html#a51e8259e849943f5e18c15c8799987fd">More...</a><br /></td></tr>
 <tr class="separator:a51e8259e849943f5e18c15c8799987fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,36 +369,6 @@ template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div
 </div><div class="memdoc">
 
 <p>Flip a flag. </p>
-
-</div>
-</div>
-<a id="ad246a998047f38056022a11b237e3de9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad246a998047f38056022a11b237e3de9">&#9670;&nbsp;</a></span>isSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="structle_1_1TFlags.html">le::TFlags</a>&lt; Enum, N &gt;::isSet </td>
-          <td>(</td>
-          <td class="paramtype">Enum&#160;</td>
-          <td class="paramname"><em>flag</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if a flag is set. </p>
 
 </div>
 </div>
@@ -757,6 +727,36 @@ template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div
 </div><div class="memdoc">
 
 <p>Set a number of flags. </p>
+
+</div>
+</div>
+<a id="a858d8616d0d6dd640878d1ce452aa870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858d8616d0d6dd640878d1ce452aa870">&#9670;&nbsp;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structle_1_1TFlags.html">le::TFlags</a>&lt; Enum, N &gt;::test </td>
+          <td>(</td>
+          <td class="paramtype">Enum&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a flag is set. </p>
 
 </div>
 </div>

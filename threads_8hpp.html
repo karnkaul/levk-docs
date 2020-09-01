@@ -43,6 +43,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -56,6 +57,12 @@ $(function() {
 <code>#include &lt;<a class="el" href="time_8hpp.html">core/time.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="zero_8hpp.html">core/zero.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1threads_1_1Scoped.html">le::threads::Scoped</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII wrapper for a thread instance (joins in destructor)  <a href="structle_1_1threads_1_1Scoped.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
@@ -65,27 +72,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a35387368f2353175a47657dfa0f8573c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#a35387368f2353175a47657dfa0f8573c">le::threads::Handle</a> = TZero&lt; u64 &gt;</td></tr>
-<tr class="memdesc:a35387368f2353175a47657dfa0f8573c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for a running thread.  <a href="namespacele_1_1threads.html#a35387368f2353175a47657dfa0f8573c">More...</a><br /></td></tr>
-<tr class="separator:a35387368f2353175a47657dfa0f8573c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bfaea831a78e9d58b332ea242c6027"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#af4bfaea831a78e9d58b332ea242c6027">le::threads::ID</a> = TZero&lt; u64 &gt;</td></tr>
+<tr class="memdesc:af4bfaea831a78e9d58b332ea242c6027"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of a running thread.  <a href="namespacele_1_1threads.html#af4bfaea831a78e9d58b332ea242c6027">More...</a><br /></td></tr>
+<tr class="separator:af4bfaea831a78e9d58b332ea242c6027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad752c66da2dcd50459e357b5943a0768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#ad752c66da2dcd50459e357b5943a0768">le::threads::init</a> ()</td></tr>
 <tr class="memdesc:ad752c66da2dcd50459e357b5943a0768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise threads.  <a href="namespacele_1_1threads.html#ad752c66da2dcd50459e357b5943a0768">More...</a><br /></td></tr>
 <tr class="separator:ad752c66da2dcd50459e357b5943a0768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20373a9b5c13388abd826b3fdd780343"><td class="memItemLeft" align="right" valign="top">Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#a20373a9b5c13388abd826b3fdd780343">le::threads::newThread</a> (std::function&lt; void()&gt; task)</td></tr>
-<tr class="memdesc:a20373a9b5c13388abd826b3fdd780343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread.  <a href="namespacele_1_1threads.html#a20373a9b5c13388abd826b3fdd780343">More...</a><br /></td></tr>
-<tr class="separator:a20373a9b5c13388abd826b3fdd780343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e528ecdd83d6ffd2e9ab930b9ed937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#a22e528ecdd83d6ffd2e9ab930b9ed937">le::threads::join</a> (Handle &amp;id)</td></tr>
-<tr class="memdesc:a22e528ecdd83d6ffd2e9ab930b9ed937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a thread.  <a href="namespacele_1_1threads.html#a22e528ecdd83d6ffd2e9ab930b9ed937">More...</a><br /></td></tr>
-<tr class="separator:a22e528ecdd83d6ffd2e9ab930b9ed937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab372d0ccd1ecc6fce1639a9a12dc4948"><td class="memItemLeft" align="right" valign="top">Scoped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#ab372d0ccd1ecc6fce1639a9a12dc4948">le::threads::newThread</a> (std::function&lt; void()&gt; task)</td></tr>
+<tr class="memdesc:ab372d0ccd1ecc6fce1639a9a12dc4948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread.  <a href="namespacele_1_1threads.html#ab372d0ccd1ecc6fce1639a9a12dc4948">More...</a><br /></td></tr>
+<tr class="separator:ab372d0ccd1ecc6fce1639a9a12dc4948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1541f3c922840de02a01156491b7ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#afc1541f3c922840de02a01156491b7ea">le::threads::join</a> (ID &amp;out_id)</td></tr>
+<tr class="memdesc:afc1541f3c922840de02a01156491b7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a thread.  <a href="namespacele_1_1threads.html#afc1541f3c922840de02a01156491b7ea">More...</a><br /></td></tr>
+<tr class="separator:afc1541f3c922840de02a01156491b7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd8e9a436d8277448ac913cf202854c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#abd8e9a436d8277448ac913cf202854c2">le::threads::joinAll</a> ()</td></tr>
 <tr class="memdesc:abd8e9a436d8277448ac913cf202854c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join all running threads.  <a href="namespacele_1_1threads.html#abd8e9a436d8277448ac913cf202854c2">More...</a><br /></td></tr>
 <tr class="separator:abd8e9a436d8277448ac913cf202854c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e9a722710e57b7eef0820437639937"><td class="memItemLeft" align="right" valign="top">Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#a44e9a722710e57b7eef0820437639937">le::threads::thisThreadID</a> ()</td></tr>
-<tr class="memdesc:a44e9a722710e57b7eef0820437639937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the handle for this thread.  <a href="namespacele_1_1threads.html#a44e9a722710e57b7eef0820437639937">More...</a><br /></td></tr>
-<tr class="separator:a44e9a722710e57b7eef0820437639937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525dcf8d5669667d5700b8e23e5cbea0"><td class="memItemLeft" align="right" valign="top">ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#a525dcf8d5669667d5700b8e23e5cbea0">le::threads::thisThreadID</a> ()</td></tr>
+<tr class="memdesc:a525dcf8d5669667d5700b8e23e5cbea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the ID for this thread.  <a href="namespacele_1_1threads.html#a525dcf8d5669667d5700b8e23e5cbea0">More...</a><br /></td></tr>
+<tr class="separator:a525dcf8d5669667d5700b8e23e5cbea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e2217e3feb462cff27fe75b41165124"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1threads.html#a6e2217e3feb462cff27fe75b41165124">le::threads::isMainThread</a> ()</td></tr>
 <tr class="memdesc:a6e2217e3feb462cff27fe75b41165124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this is the main thread (which called <code><a class="el" href="namespacele_1_1threads.html#ad752c66da2dcd50459e357b5943a0768" title="Initialise threads.">init()</a></code>)  <a href="namespacele_1_1threads.html#a6e2217e3feb462cff27fe75b41165124">More...</a><br /></td></tr>
 <tr class="separator:a6e2217e3feb462cff27fe75b41165124"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -46,7 +46,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">log.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -54,12 +55,14 @@ $(function() {
 <div class="textblock"><code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;fmt/format.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="assert_8hpp.html">core/assert.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__config_8hpp.html">core/log_config.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="os_8hpp.html">core/os.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="time_8hpp.html">core/time.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -106,12 +109,13 @@ Functions</h2></td></tr>
 <tr class="memitem:aab04380c83aa1b26d747cc9e03de3605"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a> (Level level, std::string_view text, std::string_view file, u64 line, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:aab04380c83aa1b26d747cc9e03de3605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">More...</a><br /></td></tr>
 <tr class="separator:aab04380c83aa1b26d747cc9e03de3605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">le::io::logToFile</a> (std::filesystem::path path, Time pollRate=500ms)</td></tr>
-<tr class="memdesc:ad4b60c3aa8d538b41159eeec19982ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start file logging (on another thread)  <a href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">More...</a><br /></td></tr>
-<tr class="separator:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ab1e560b0594deb60c958505e65046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a10ab1e560b0594deb60c958505e65046">le::io::stopFileLogging</a> ()</td></tr>
-<tr class="memdesc:a10ab1e560b0594deb60c958505e65046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop file logging.  <a href="namespacele_1_1io.html#a10ab1e560b0594deb60c958505e65046">More...</a><br /></td></tr>
-<tr class="separator:a10ab1e560b0594deb60c958505e65046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ade3eb04e3950e8deedcb7dcad1858319"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#ade3eb04e3950e8deedcb7dcad1858319">levk_logDebug</a> = false</td></tr>
+<tr class="separator:ade3eb04e3950e8deedcb7dcad1858319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e19d8fcdbeeb819137617e3db5efa39"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a0e19d8fcdbeeb819137617e3db5efa39">levk_logCatchFmtExceptions</a> = false</td></tr>
+<tr class="separator:a0e19d8fcdbeeb819137617e3db5efa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="abd6fe5076f89ccb79fb42dfa3d308d66"></a>
@@ -297,10 +301,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (predicate)                                                        \</div>
-<div class="line">    {                                                                     <a class="code" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">\</a></div>
-<div class="line"><a class="code" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">		::le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__); \</div>
-<div class="line">    }</div>
+<b>Value:</b><div class="fragment"><div class="line">    do                                                                        \</div>
+<div class="line">        if (predicate)                                                        \</div>
+<div class="line">        {                                                                     <a class="code" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">\</a></div>
+<div class="line"><a class="code" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">			::le::io::fmtLog</a>(level, text, __FILE__, __LINE__, ##__VA_ARGS__); \</div>
+<div class="line">        }                                                                     \</div>
+<div class="line">    while (0)</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -440,8 +446,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0e19d8fcdbeeb819137617e3db5efa39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e19d8fcdbeeb819137617e3db5efa39">&#9670;&nbsp;</a></span>levk_logCatchFmtExceptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool levk_logCatchFmtExceptions = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade3eb04e3950e8deedcb7dcad1858319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3eb04e3950e8deedcb7dcad1858319">&#9670;&nbsp;</a></span>levk_logDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool levk_logDebug = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
-<div class="ttc" id="anamespacele_1_1io_html_aab04380c83aa1b26d747cc9e03de3605"><div class="ttname"><a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a></div><div class="ttdeci">void fmtLog(Level level, std::string_view text, std::string_view file, u64 line, Args &amp;&amp;... args)</div><div class="ttdoc">Print to stdout</div><div class="ttdef"><b>Definition:</b> log.hpp:75</div></div>
+<div class="ttc" id="anamespacele_1_1io_html_aab04380c83aa1b26d747cc9e03de3605"><div class="ttname"><a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">le::io::fmtLog</a></div><div class="ttdeci">void fmtLog(Level level, std::string_view text, std::string_view file, u64 line, Args &amp;&amp;... args)</div><div class="ttdoc">Print to stdout</div><div class="ttdef"><b>Definition:</b> log.hpp:80</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

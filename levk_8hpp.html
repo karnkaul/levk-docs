@@ -45,6 +45,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -54,6 +55,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="atomic__counter_8hpp.html">core/atomic_counter.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="time_8hpp.html">core/time.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reader_8hpp.html">core/reader.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
@@ -61,11 +63,12 @@ $(function() {
 <code>#include &lt;<a class="el" href="os_8hpp.html">core/os.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="screen__rect_8hpp.html">engine/gfx/screen_rect.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="window_8hpp.html">engine/window/window.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="world_8hpp.html">engine/game/world.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1engine_1_1DataSearch.html">le::engine::DataSearch</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1engine_1_1MemRange.html">le::engine::MemRange</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1engine_1_1Info.html">le::engine::Info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -78,6 +81,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacele_1_1engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html">le::engine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:afd5f622d44c8c3f2636b751c7bc51199"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#afd5f622d44c8c3f2636b751c7bc51199">le::engine::Semaphore</a> = Counter&lt; s32 &gt;::Semaphore</td></tr>
+<tr class="separator:afd5f622d44c8c3f2636b751c7bc51199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -98,9 +106,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#ab5a13c593dad709f25aac6eb9b68f4dd">le::engine::isShuttingDown</a> ()</td></tr>
-<tr class="memdesc:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether the engine is shutting down.  <a href="namespacele_1_1engine.html#ab5a13c593dad709f25aac6eb9b68f4dd">More...</a><br /></td></tr>
-<tr class="separator:ab5a13c593dad709f25aac6eb9b68f4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81df3a5ed225603905cb3bc62236b579"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a81df3a5ed225603905cb3bc62236b579">le::engine::shuttingDown</a> ()</td></tr>
+<tr class="memdesc:a81df3a5ed225603905cb3bc62236b579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether the engine is shutting down.  <a href="namespacele_1_1engine.html#a81df3a5ed225603905cb3bc62236b579">More...</a><br /></td></tr>
+<tr class="separator:a81df3a5ed225603905cb3bc62236b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a595e2d0c95d29c9e9facb6cf9d0a55f2"><td class="memItemLeft" align="right" valign="top">Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a595e2d0c95d29c9e9facb6cf9d0a55f2">le::engine::mainWindow</a> ()</td></tr>
 <tr class="memdesc:a595e2d0c95d29c9e9facb6cf9d0a55f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the main window.  <a href="namespacele_1_1engine.html#a595e2d0c95d29c9e9facb6cf9d0a55f2">More...</a><br /></td></tr>
 <tr class="separator:a595e2d0c95d29c9e9facb6cf9d0a55f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,12 +124,46 @@ Functions</h2></td></tr>
 <tr class="memitem:a1419ec956199e8865cd416055d305eb4"><td class="memItemLeft" align="right" valign="top">stdfs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a1419ec956199e8865cd416055d305eb4">le::engine::exePath</a> ()</td></tr>
 <tr class="memdesc:a1419ec956199e8865cd416055d305eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the path to the running executable.  <a href="namespacele_1_1engine.html#a1419ec956199e8865cd416055d305eb4">More...</a><br /></td></tr>
 <tr class="separator:a1419ec956199e8865cd416055d305eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa189f43c9827e98921b13e10514e821"><td class="memItemLeft" align="right" valign="top">io::Reader const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#aaa189f43c9827e98921b13e10514e821">le::engine::reader</a> ()</td></tr>
+<tr class="memdesc:aaa189f43c9827e98921b13e10514e821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the data reader.  <a href="namespacele_1_1engine.html#aaa189f43c9827e98921b13e10514e821">More...</a><br /></td></tr>
+<tr class="separator:aaa189f43c9827e98921b13e10514e821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf6a49f358d8e2305ecb95426414513"><td class="memItemLeft" align="right" valign="top">Semaphore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#afaf6a49f358d8e2305ecb95426414513">le::engine::setBusy</a> ()</td></tr>
+<tr class="memdesc:afaf6a49f358d8e2305ecb95426414513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain busy Semaphore.  <a href="namespacele_1_1engine.html#afaf6a49f358d8e2305ecb95426414513">More...</a><br /></td></tr>
+<tr class="separator:afaf6a49f358d8e2305ecb95426414513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be1bbd02a51cfdfdbd2746604a9fef8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a9be1bbd02a51cfdfdbd2746604a9fef8">le::engine::busy</a> ()</td></tr>
+<tr class="memdesc:a9be1bbd02a51cfdfdbd2746604a9fef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether any Semaphore is active.  <a href="namespacele_1_1engine.html#a9be1bbd02a51cfdfdbd2746604a9fef8">More...</a><br /></td></tr>
+<tr class="separator:a9be1bbd02a51cfdfdbd2746604a9fef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a7266d92197733443c12b70f7b1f16347"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="levk_8hpp.html#a7266d92197733443c12b70f7b1f16347">levk_editor</a> = false</td></tr>
+<tr class="separator:a7266d92197733443c12b70f7b1f16347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f786fce8d0e8a76d3a786fac459804"><td class="memItemLeft" align="right" valign="top">ShutdownSequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a91f786fce8d0e8a76d3a786fac459804">le::engine::g_shutdownSequence</a> = ShutdownSequence::eCloseWindow_Shutdown</td></tr>
 <tr class="separator:a91f786fce8d0e8a76d3a786fac459804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a7266d92197733443c12b70f7b1f16347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7266d92197733443c12b70f7b1f16347">&#9670;&nbsp;</a></span>levk_editor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool levk_editor = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

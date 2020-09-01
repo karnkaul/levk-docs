@@ -101,12 +101,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aab04380c83aa1b26d747cc9e03de3605"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">fmtLog</a> (<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280">Level</a> level, std::string_view text, std::string_view file, <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> line, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:aab04380c83aa1b26d747cc9e03de3605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to <code>stdout</code>  <a href="namespacele_1_1io.html#aab04380c83aa1b26d747cc9e03de3605">More...</a><br /></td></tr>
 <tr class="separator:aab04380c83aa1b26d747cc9e03de3605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">logToFile</a> (std::filesystem::path path, <a class="el" href="structle_1_1Time.html">Time</a> pollRate=500ms)</td></tr>
-<tr class="memdesc:ad4b60c3aa8d538b41159eeec19982ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start file logging (on another thread)  <a href="namespacele_1_1io.html#ad4b60c3aa8d538b41159eeec19982ab8">More...</a><br /></td></tr>
-<tr class="separator:ad4b60c3aa8d538b41159eeec19982ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ab1e560b0594deb60c958505e65046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a10ab1e560b0594deb60c958505e65046">stopFileLogging</a> ()</td></tr>
-<tr class="memdesc:a10ab1e560b0594deb60c958505e65046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop file logging.  <a href="namespacele_1_1io.html#a10ab1e560b0594deb60c958505e65046">More...</a><br /></td></tr>
-<tr class="separator:a10ab1e560b0594deb60c958505e65046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -116,8 +110,8 @@ Variables</h2></td></tr>
 <tr class="separator:adeee566dd2dda1cc408d474fa7dd90e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcef06de21dd84da14f5b832a54552d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1io.html#a1a48378218fbd31dab3e90bf496477f7">OnLog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#acbcef06de21dd84da14f5b832a54552d">g_onLog</a> = nullptr</td></tr>
 <tr class="separator:acbcef06de21dd84da14f5b832a54552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e50db651542d6d90e5adf39bf917b6"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view,(std::size_t) <a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a98ce873df53900dd5454baba574ecb06">Level::eCOUNT_</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a65e50db651542d6d90e5adf39bf917b6">g_logLevels</a> = {&quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;}</td></tr>
-<tr class="separator:a65e50db651542d6d90e5adf39bf917b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cea5a89d49b1caaaacc7f09c06342ff"><td class="memItemLeft" align="right" valign="top">constexpr std::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html#a4cea5a89d49b1caaaacc7f09c06342ff">g_logLevels</a> = {&quot;Debug&quot;sv, &quot;Info&quot;sv, &quot;Warning&quot;sv, &quot;Error&quot;sv}</td></tr>
+<tr class="separator:a4cea5a89d49b1caaaacc7f09c06342ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a1a48378218fbd31dab3e90bf496477f7"></a>
@@ -257,62 +251,6 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ad4b60c3aa8d538b41159eeec19982ab8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4b60c3aa8d538b41159eeec19982ab8">&#9670;&nbsp;</a></span>logToFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void le::io::logToFile </td>
-          <td>(</td>
-          <td class="paramtype">std::filesystem::path&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1Time.html">Time</a>&#160;</td>
-          <td class="paramname"><em>pollRate</em> = <code>500ms</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start file logging (on another thread) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>fully qualified path to store log file as </td></tr>
-    <tr><td class="paramname">pollRate</td><td>rate at which file logging thread polls for new logs </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a10ab1e560b0594deb60c958505e65046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10ab1e560b0594deb60c958505e65046">&#9670;&nbsp;</a></span>stopFileLogging()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void le::io::stopFileLogging </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stop file logging. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a1dde5bc06dda846e714f0cba01039e26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dde5bc06dda846e714f0cba01039e26">&#9670;&nbsp;</a></span>g_log_bSourceLocation</h2>
@@ -336,8 +274,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a65e50db651542d6d90e5adf39bf917b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65e50db651542d6d90e5adf39bf917b6">&#9670;&nbsp;</a></span>g_logLevels</h2>
+<a id="a4cea5a89d49b1caaaacc7f09c06342ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cea5a89d49b1caaaacc7f09c06342ff">&#9670;&nbsp;</a></span>g_logLevels</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +284,7 @@ template&lt;typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::array&lt;std::string_view, (std::size_t)<a class="el" href="namespacele_1_1io.html#a9eda9a2474380e7212b91752d8c0a280a98ce873df53900dd5454baba574ecb06">Level::eCOUNT_</a>&gt; le::io::g_logLevels = {&quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;}</td>
+          <td class="memname">constexpr std::array le::io::g_logLevels = {&quot;Debug&quot;sv, &quot;Info&quot;sv, &quot;Warning&quot;sv, &quot;Error&quot;sv}</td>
         </tr>
       </table>
   </td>
