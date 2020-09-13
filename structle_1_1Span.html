@@ -52,7 +52,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>View-only class for an object / an array / <code>std::vector</code>  
+<p>View-only class for an object / a contiguous range of objects.  
  <a href="structle_1_1Span.html#details">More...</a></p>
 
 <p><code>#include &lt;utils.hpp&gt;</code></p>
@@ -72,21 +72,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5264d24489be78a8f21742f78f2c9cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b04407fce42f8a81d5c5c8d6c5e883"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a27b04407fce42f8a81d5c5c8d6c5e883">Span</a> (T const &amp;data) noexcept</td></tr>
 <tr class="separator:a27b04407fce42f8a81d5c5c8d6c5e883"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6dae87ac1c2089206523d2385082d7"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
-<tr class="memitem:acf6dae87ac1c2089206523d2385082d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#acf6dae87ac1c2089206523d2385082d7">Span</a> (Container const &amp;container) noexcept</td></tr>
-<tr class="separator:acf6dae87ac1c2089206523d2385082d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76488f4f96bab622fb4606f6e4962db1"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a76488f4f96bab622fb4606f6e4962db1">Span</a> (std::initializer_list&lt; T &gt; const &amp;list) noexcept</td></tr>
 <tr class="separator:a76488f4f96bab622fb4606f6e4962db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5832ae1f1171c348314f67879f04ee4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a5832ae1f1171c348314f67879f04ee4f">Span</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:a5832ae1f1171c348314f67879f04ee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36ac3a4318329a5bd677499787455014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a36ac3a4318329a5bd677499787455014">operator=</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:a36ac3a4318329a5bd677499787455014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e1a84662e038f8f52b24839f3b5db0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a20e1a84662e038f8f52b24839f3b5db0">Span</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; const &amp;) noexcept=default</td></tr>
-<tr class="separator:a20e1a84662e038f8f52b24839f3b5db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323e04b78995ef5b9f32dfc12f48f342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a323e04b78995ef5b9f32dfc12f48f342">operator=</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; const &amp;) noexcept=default</td></tr>
-<tr class="separator:a323e04b78995ef5b9f32dfc12f48f342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478594ab47d6b06175d4a7c6c023c8b8"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a478594ab47d6b06175d4a7c6c023c8b8"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a478594ab47d6b06175d4a7c6c023c8b8">Span</a> (std::array&lt; T, N &gt; const &amp;arr) noexcept</td></tr>
+<tr class="separator:a478594ab47d6b06175d4a7c6c023c8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfed8b1b1dd9d8a71575fbce68b7b775"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:adfed8b1b1dd9d8a71575fbce68b7b775"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#adfed8b1b1dd9d8a71575fbce68b7b775">Span</a> (T(&amp;arr)[N]) noexcept</td></tr>
+<tr class="separator:adfed8b1b1dd9d8a71575fbce68b7b775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da8541cf18959f6fcd52b318fe98bfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a4da8541cf18959f6fcd52b318fe98bfd">Span</a> (std::vector&lt; T &gt; const &amp;vec) noexcept</td></tr>
+<tr class="separator:a4da8541cf18959f6fcd52b318fe98bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21aa55b5834984dbbfb03c956dbc9330"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a21aa55b5834984dbbfb03c956dbc9330">Span</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&amp;) noexcept=default</td></tr>
+<tr class="separator:a21aa55b5834984dbbfb03c956dbc9330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88306edd5aadd55baae4167ddd264ff6"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a88306edd5aadd55baae4167ddd264ff6">operator=</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&amp;) noexcept=default</td></tr>
+<tr class="separator:a88306edd5aadd55baae4167ddd264ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03f9478e7cedbe2f0d17875ce6b2e37"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#ac03f9478e7cedbe2f0d17875ce6b2e37">Span</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; const &amp;) noexcept=default</td></tr>
+<tr class="separator:ac03f9478e7cedbe2f0d17875ce6b2e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bed3e2f3422e3a7e75ba713cd0635f6"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a1bed3e2f3422e3a7e75ba713cd0635f6">operator=</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; const &amp;) noexcept=default</td></tr>
+<tr class="separator:a1bed3e2f3422e3a7e75ba713cd0635f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62997d8a6982aeb73049248b15a6c469"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a62997d8a6982aeb73049248b15a6c469">size</a> () const noexcept</td></tr>
 <tr class="separator:a62997d8a6982aeb73049248b15a6c469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f8fb42bde2235dee53246a910842f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a27f8fb42bde2235dee53246a910842f5">empty</a> () const noexcept</td></tr>
+<tr class="separator:a27f8fb42bde2235dee53246a910842f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfd4dc6aef51c7f1a8fea7627e7bce31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Span.html#a2984f529340c975b37c23c57c2dc6b58">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#abfd4dc6aef51c7f1a8fea7627e7bce31">begin</a> () const noexcept</td></tr>
 <tr class="separator:abfd4dc6aef51c7f1a8fea7627e7bce31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72046da2a626c292b606e7037fc6d7a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Span.html#a2984f529340c975b37c23c57c2dc6b58">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Span.html#a72046da2a626c292b606e7037fc6d7a7">end</a> () const noexcept</td></tr>
@@ -105,7 +112,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 struct le::Span&lt; T &gt;</h3>
 
-<p>View-only class for an object / an array / <code>std::vector</code> </p>
+<p>View-only class for an object / a contiguous range of objects. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2984f529340c975b37c23c57c2dc6b58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2984f529340c975b37c23c57c2dc6b58">&#9670;&nbsp;</a></span>const_iterator</h2>
@@ -141,7 +148,7 @@ template&lt;typename T &gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3f9e9ddbfa926626522f7ffceae8d3ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f9e9ddbfa926626522f7ffceae8d3ec">&#9670;&nbsp;</a></span>Span() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9e9ddbfa926626522f7ffceae8d3ec">&#9670;&nbsp;</a></span>Span() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +175,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a5264d24489be78a8f21742f78f2c9cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5264d24489be78a8f21742f78f2c9cad">&#9670;&nbsp;</a></span>Span() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5264d24489be78a8f21742f78f2c9cad">&#9670;&nbsp;</a></span>Span() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +213,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a27b04407fce42f8a81d5c5c8d6c5e883"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27b04407fce42f8a81d5c5c8d6c5e883">&#9670;&nbsp;</a></span>Span() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b04407fce42f8a81d5c5c8d6c5e883">&#9670;&nbsp;</a></span>Span() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,38 +240,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="acf6dae87ac1c2089206523d2385082d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf6dae87ac1c2089206523d2385082d7">&#9670;&nbsp;</a></span>Span() <span class="overload">[4/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<div class="memtemplate">
-template&lt;typename Container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
-          <td>(</td>
-          <td class="paramtype">Container const &amp;&#160;</td>
-          <td class="paramname"><em>container</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a76488f4f96bab622fb4606f6e4962db1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76488f4f96bab622fb4606f6e4962db1">&#9670;&nbsp;</a></span>Span() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a76488f4f96bab622fb4606f6e4962db1">&#9670;&nbsp;</a></span>Span() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,15 +261,75 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5832ae1f1171c348314f67879f04ee4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5832ae1f1171c348314f67879f04ee4f">&#9670;&nbsp;</a></span>Span() <span class="overload">[6/7]</span></h2>
+<a id="a478594ab47d6b06175d4a7c6c023c8b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478594ab47d6b06175d4a7c6c023c8b8">&#9670;&nbsp;</a></span>Span() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfed8b1b1dd9d8a71575fbce68b7b775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfed8b1b1dd9d8a71575fbce68b7b775">&#9670;&nbsp;</a></span>Span() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)&#160;</td>
+          <td class="paramname"><em>arr</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4da8541cf18959f6fcd52b318fe98bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da8541cf18959f6fcd52b318fe98bfd">&#9670;&nbsp;</a></span>Span() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,6 +341,34 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21aa55b5834984dbbfb03c956dbc9330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21aa55b5834984dbbfb03c956dbc9330">&#9670;&nbsp;</a></span>Span() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -312,15 +377,15 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a20e1a84662e038f8f52b24839f3b5db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20e1a84662e038f8f52b24839f3b5db0">&#9670;&nbsp;</a></span>Span() <span class="overload">[7/7]</span></h2>
+<a id="ac03f9478e7cedbe2f0d17875ce6b2e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03f9478e7cedbe2f0d17875ce6b2e37">&#9670;&nbsp;</a></span>Span() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +396,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
+          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::<a class="el" href="structle_1_1Span.html">Span</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -340,7 +405,7 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -403,6 +468,33 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a27f8fb42bde2235dee53246a910842f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f8fb42bde2235dee53246a910842f5">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a72046da2a626c292b606e7037fc6d7a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72046da2a626c292b606e7037fc6d7a7">&#9670;&nbsp;</a></span>end()</h2>
 
@@ -430,8 +522,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a36ac3a4318329a5bd677499787455014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36ac3a4318329a5bd677499787455014">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a88306edd5aadd55baae4167ddd264ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88306edd5aadd55baae4167ddd264ff6">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +534,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Span.html">Span</a>&lt;T&gt;&amp; <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">Span</a>&lt;T&gt;&amp; <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -451,15 +543,15 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a323e04b78995ef5b9f32dfc12f48f342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323e04b78995ef5b9f32dfc12f48f342">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a1bed3e2f3422e3a7e75ba713cd0635f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bed3e2f3422e3a7e75ba713cd0635f6">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +562,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Span.html">Span</a>&lt;T&gt;&amp; <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="structle_1_1Span.html">Span</a>&lt;T&gt;&amp; <a class="el" href="structle_1_1Span.html">le::Span</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1Span.html">Span</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -479,7 +571,7 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

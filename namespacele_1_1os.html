@@ -97,9 +97,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8cda551081957bd2c83f1b91ee899518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">init</a> (<a class="el" href="structle_1_1os_1_1Args.html">Args</a> const &amp;<a class="el" href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">args</a>)</td></tr>
-<tr class="memdesc:a8cda551081957bd2c83f1b91ee899518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise OS service.  <a href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">More...</a><br /></td></tr>
-<tr class="separator:a8cda551081957bd2c83f1b91ee899518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2542a1f100c4aa95dff099d75a66f011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a2542a1f100c4aa95dff099d75a66f011">args</a> (<a class="el" href="structle_1_1os_1_1Args.html">Args</a> args)</td></tr>
+<tr class="memdesc:a2542a1f100c4aa95dff099d75a66f011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise OS service.  <a href="namespacele_1_1os.html#a2542a1f100c4aa95dff099d75a66f011">More...</a><br /></td></tr>
+<tr class="separator:a2542a1f100c4aa95dff099d75a66f011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1af9175831888005d47fa21a0b91d31"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa1af9175831888005d47fa21a0b91d31">argv0</a> ()</td></tr>
 <tr class="memdesc:aa1af9175831888005d47fa21a0b91d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <code>argv[0]</code>  <a href="namespacele_1_1os.html#aa1af9175831888005d47fa21a0b91d31">More...</a><br /></td></tr>
 <tr class="separator:aa1af9175831888005d47fa21a0b91d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a system call.  <a href="namespacele_1_1os.html#a1acd051f29dc28241f3dda61ca4fa5f2">More...</a><br /></td></tr>
 <tr class="separator:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplParams" colspan="2">template&lt;typename Arg1 , typename... Args&gt; </td></tr>
-<tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">sysCall</a> (std::string_view expr, Arg1 &amp;&amp;arg1, <a class="el" href="structle_1_1os_1_1Args.html">Args</a> &amp;&amp;... <a class="el" href="namespacele_1_1os.html#a11a803f6c128e7085a81f2a908dec208">args</a>)</td></tr>
+<tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">sysCall</a> (std::string_view expr, Arg1 &amp;&amp;arg1, <a class="el" href="structle_1_1os_1_1Args.html">Args</a> &amp;&amp;... <a class="el" href="namespacele_1_1os.html#a2542a1f100c4aa95dff099d75a66f011">args</a>)</td></tr>
 <tr class="memdesc:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a system call.  <a href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">More...</a><br /></td></tr>
 <tr class="separator:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -282,7 +282,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a11a803f6c128e7085a81f2a908dec208"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11a803f6c128e7085a81f2a908dec208">&#9670;&nbsp;</a></span>args()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a803f6c128e7085a81f2a908dec208">&#9670;&nbsp;</a></span>args() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,6 +305,26 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtain all command line arguments passed to the runtime. </p>
+
+</div>
+</div>
+<a id="a2542a1f100c4aa95dff099d75a66f011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2542a1f100c4aa95dff099d75a66f011">&#9670;&nbsp;</a></span>args() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::os::args </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1os_1_1Args.html">Args</a>&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise OS service. </p>
 
 </div>
 </div>
@@ -363,26 +383,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtain working/executable directory. </p>
-
-</div>
-</div>
-<a id="a8cda551081957bd2c83f1b91ee899518"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cda551081957bd2c83f1b91ee899518">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void le::os::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1os_1_1Args.html">Args</a> const &amp;&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialise OS service. </p>
 
 </div>
 </div>

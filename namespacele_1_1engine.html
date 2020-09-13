@@ -55,8 +55,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1engine_1_1DataSearch.html">DataSearch</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1engine_1_1Driver.html">Driver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for engine to drive frames.  <a href="structle_1_1engine_1_1Driver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,6 +89,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6c1597810538aa86e846e195b6ebaf8e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; stdfs::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a6c1597810538aa86e846e195b6ebaf8e">locate</a> (<a class="el" href="structle_1_1Span.html">Span</a>&lt; stdfs::path &gt; patterns, <a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21">os::Dir</a> dirType=<a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21a223bae50f5666feab99c8b7ad31ce4e1">os::Dir::eExecutable</a>)</td></tr>
+<tr class="memdesc:a6c1597810538aa86e846e195b6ebaf8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate files / directories on the filesysten by searching upwards from the executable/working directory path.  <a href="namespacele_1_1engine.html#a6c1597810538aa86e846e195b6ebaf8e">More...</a><br /></td></tr>
+<tr class="separator:a6c1597810538aa86e846e195b6ebaf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81df3a5ed225603905cb3bc62236b579"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1engine.html#a81df3a5ed225603905cb3bc62236b579">shuttingDown</a> ()</td></tr>
 <tr class="memdesc:a81df3a5ed225603905cb3bc62236b579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain whether the engine is shutting down.  <a href="namespacele_1_1engine.html#a81df3a5ed225603905cb3bc62236b579">More...</a><br /></td></tr>
 <tr class="separator:a81df3a5ed225603905cb3bc62236b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +270,44 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtain the (normalised) gameRect size. </p>
+
+</div>
+</div>
+<a id="a6c1597810538aa86e846e195b6ebaf8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1597810538aa86e846e195b6ebaf8e">&#9670;&nbsp;</a></span>locate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;stdfs::path&gt; le::engine::locate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Span.html">Span</a>&lt; stdfs::path &gt;&#160;</td>
+          <td class="paramname"><em>patterns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21">os::Dir</a>&#160;</td>
+          <td class="paramname"><em>dirType</em> = <code><a class="el" href="namespacele_1_1os.html#a8e13516ac1e2110dc1c13d3f989f5b21a223bae50f5666feab99c8b7ad31ce4e1">os::Dir::eExecutable</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Locate files / directories on the filesysten by searching upwards from the executable/working directory path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patterns</td><td>List of directory / filename patterns to search for </td></tr>
+    <tr><td class="paramname">dirType</td><td>Starting directory (executable / working) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Fully qualified paths for each found pattern </dd></dl>
 
 </div>
 </div>

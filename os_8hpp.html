@@ -123,9 +123,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8cda551081957bd2c83f1b91ee899518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">le::os::init</a> (Args const &amp;args)</td></tr>
-<tr class="memdesc:a8cda551081957bd2c83f1b91ee899518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise OS service.  <a href="namespacele_1_1os.html#a8cda551081957bd2c83f1b91ee899518">More...</a><br /></td></tr>
-<tr class="separator:a8cda551081957bd2c83f1b91ee899518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2542a1f100c4aa95dff099d75a66f011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a2542a1f100c4aa95dff099d75a66f011">le::os::args</a> (Args args)</td></tr>
+<tr class="memdesc:a2542a1f100c4aa95dff099d75a66f011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise OS service.  <a href="namespacele_1_1os.html#a2542a1f100c4aa95dff099d75a66f011">More...</a><br /></td></tr>
+<tr class="separator:a2542a1f100c4aa95dff099d75a66f011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1af9175831888005d47fa21a0b91d31"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa1af9175831888005d47fa21a0b91d31">le::os::argv0</a> ()</td></tr>
 <tr class="memdesc:aa1af9175831888005d47fa21a0b91d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain <code>argv[0]</code>  <a href="namespacele_1_1os.html#aa1af9175831888005d47fa21a0b91d31">More...</a><br /></td></tr>
 <tr class="separator:aa1af9175831888005d47fa21a0b91d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,10 +157,16 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a189eb4704e698eff9449ba17cc686d7c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele_1_1os.html#abf3dcace7d57a8cde82253c824e1abcf">le::os::OS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#a189eb4704e698eff9449ba17cc686d7c">levk_OS</a> = <a class="el" href="namespacele_1_1os.html#abf3dcace7d57a8cde82253c824e1abcfa64c3acc11ffdb1be30ea339290bd1508">le::os::OS::eUnknown</a></td></tr>
 <tr class="separator:a189eb4704e698eff9449ba17cc686d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5eb5d9102914d2b0f0f207e0532907"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#abb5eb5d9102914d2b0f0f207e0532907">levk_OS_name</a> = &quot;Unknown&quot;</td></tr>
+<tr class="separator:abb5eb5d9102914d2b0f0f207e0532907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf56b52af31f88f21b72ccae4d5a4814"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele_1_1os.html#ad849657ce4c5e663abc649584760d1dc">le::os::StdLib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#aaf56b52af31f88f21b72ccae4d5a4814">levk_stdlib</a> = <a class="el" href="namespacele_1_1os.html#ad849657ce4c5e663abc649584760d1dca64c3acc11ffdb1be30ea339290bd1508">le::os::StdLib::eUnknown</a></td></tr>
 <tr class="separator:aaf56b52af31f88f21b72ccae4d5a4814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2fb9acec6f2112d96cde0a00bf37ac"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#a6d2fb9acec6f2112d96cde0a00bf37ac">levk_stdlib_name</a> = &quot;Unknown&quot;</td></tr>
+<tr class="separator:a6d2fb9acec6f2112d96cde0a00bf37ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76e9422dce90c4d00442cd998f14442"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele_1_1os.html#a55a328a56c99f75fe2826060875c99c0">le::os::Compiler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#ad76e9422dce90c4d00442cd998f14442">levk_compiler</a> = <a class="el" href="namespacele_1_1os.html#a55a328a56c99f75fe2826060875c99c0a64c3acc11ffdb1be30ea339290bd1508">le::os::Compiler::eUnknown</a></td></tr>
 <tr class="separator:ad76e9422dce90c4d00442cd998f14442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a42b67043ff1aa6fe407910045c7cd"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8hpp.html#a73a42b67043ff1aa6fe407910045c7cd">levk_compiler_name</a> = &quot;Unknown&quot;</td></tr>
+<tr class="separator:a73a42b67043ff1aa6fe407910045c7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad2373c2f2cdf4fd7815e035117c3c4e7"></a>
@@ -228,6 +234,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a73a42b67043ff1aa6fe407910045c7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a42b67043ff1aa6fe407910045c7cd">&#9670;&nbsp;</a></span>levk_compiler_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view levk_compiler_name = &quot;Unknown&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a189eb4704e698eff9449ba17cc686d7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a189eb4704e698eff9449ba17cc686d7c">&#9670;&nbsp;</a></span>levk_OS</h2>
 
@@ -250,6 +278,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="abb5eb5d9102914d2b0f0f207e0532907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5eb5d9102914d2b0f0f207e0532907">&#9670;&nbsp;</a></span>levk_OS_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view levk_OS_name = &quot;Unknown&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaf56b52af31f88f21b72ccae4d5a4814"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf56b52af31f88f21b72ccae4d5a4814">&#9670;&nbsp;</a></span>levk_stdlib</h2>
 
@@ -261,6 +311,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">constexpr <a class="el" href="namespacele_1_1os.html#ad849657ce4c5e663abc649584760d1dc">le::os::StdLib</a> levk_stdlib = <a class="el" href="namespacele_1_1os.html#ad849657ce4c5e663abc649584760d1dca64c3acc11ffdb1be30ea339290bd1508">le::os::StdLib::eUnknown</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d2fb9acec6f2112d96cde0a00bf37ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d2fb9acec6f2112d96cde0a00bf37ac">&#9670;&nbsp;</a></span>levk_stdlib_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view levk_stdlib_name = &quot;Unknown&quot;</td>
         </tr>
       </table>
   </td>

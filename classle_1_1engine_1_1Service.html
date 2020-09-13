@@ -55,17 +55,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f5dbbb97847150de921efa2403ef8ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a0f5dbbb97847150de921efa2403ef8ff">Service</a> (<a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> argc, char const *const *const argv)</td></tr>
-<tr class="separator:a0f5dbbb97847150de921efa2403ef8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35557e81dae50192bca695794bfc7ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#ad35557e81dae50192bca695794bfc7ae">Service</a> (<a class="el" href="structle_1_1os_1_1Args.html">os::Args</a> args={})</td></tr>
+<tr class="separator:ad35557e81dae50192bca695794bfc7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a994a08734a4fd9bc1d274993a8555a49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a994a08734a4fd9bc1d274993a8555a49">Service</a> (<a class="el" href="classle_1_1engine_1_1Service.html">Service</a> &amp;&amp;)</td></tr>
 <tr class="separator:a994a08734a4fd9bc1d274993a8555a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0991347155d74b2be04a6f334c7b9be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1engine_1_1Service.html">Service</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#ab0991347155d74b2be04a6f334c7b9be">operator=</a> (<a class="el" href="classle_1_1engine_1_1Service.html">Service</a> &amp;&amp;)</td></tr>
 <tr class="separator:ab0991347155d74b2be04a6f334c7b9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead02786a3e26ebf2c126bada86b7411"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#aead02786a3e26ebf2c126bada86b7411">~Service</a> ()</td></tr>
 <tr class="separator:aead02786a3e26ebf2c126bada86b7411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7b3890a0eae17c19684dbd3305cd55"><td class="memItemLeft" align="right" valign="top">std::vector&lt; stdfs::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#a9f7b3890a0eae17c19684dbd3305cd55">locateData</a> (std::vector&lt; <a class="el" href="structle_1_1engine_1_1DataSearch.html">DataSearch</a> &gt; const &amp;searchPatterns)</td></tr>
-<tr class="memdesc:a9f7b3890a0eae17c19684dbd3305cd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate data files for engine and/or app by searching upwards from the executable/working directory path.  <a href="classle_1_1engine_1_1Service.html#a9f7b3890a0eae17c19684dbd3305cd55">More...</a><br /></td></tr>
-<tr class="separator:a9f7b3890a0eae17c19684dbd3305cd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a350774c0503a04f57114f53432ea1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1engine_1_1Service.html#ae6a350774c0503a04f57114f53432ea1">init</a> (<a class="el" href="structle_1_1engine_1_1Info.html">Info</a> const &amp;info={})</td></tr>
 <tr class="memdesc:ae6a350774c0503a04f57114f53432ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise engine and dependent services.  <a href="classle_1_1engine_1_1Service.html#ae6a350774c0503a04f57114f53432ea1">More...</a><br /></td></tr>
 <tr class="separator:ae6a350774c0503a04f57114f53432ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,8 +86,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a085efb1fdb513834ffbbd01651c2f61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0f5dbbb97847150de921efa2403ef8ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f5dbbb97847150de921efa2403ef8ff">&#9670;&nbsp;</a></span>Service() <span class="overload">[1/2]</span></h2>
+<a id="ad35557e81dae50192bca695794bfc7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35557e81dae50192bca695794bfc7ae">&#9670;&nbsp;</a></span>Service() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,19 +95,9 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">le::engine::Service::Service </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structle_1_1os_1_1Args.html">os::Args</a>&#160;</td>
+          <td class="paramname"><em>args</em> = <code>{}</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">char const *const *const&#160;</td>
-          <td class="paramname"><em>argv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -171,33 +158,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Initialise engine and dependent services. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if initialisation failed </dd></dl>
-
-</div>
-</div>
-<a id="a9f7b3890a0eae17c19684dbd3305cd55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f7b3890a0eae17c19684dbd3305cd55">&#9670;&nbsp;</a></span>locateData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;stdfs::path&gt; le::engine::Service::locateData </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structle_1_1engine_1_1DataSearch.html">DataSearch</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>searchPatterns</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Locate data files for engine and/or app by searching upwards from the executable/working directory path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">searchPatterns</td><td>List of directory / ZIP name patterns and start directories (executable / working) to search for (can include </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Fully qualified paths for each found pattern </dd></dl>
 
 </div>
 </div>
