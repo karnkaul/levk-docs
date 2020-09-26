@@ -58,75 +58,123 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0ed1bed578ceeb6508ac5b1d9711503a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0ed1bed578ceeb6508ac5b1d9711503a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a0ed1bed578ceeb6508ac5b1d9711503a">abs</a> (T val)</td></tr>
-<tr class="memdesc:a0ed1bed578ceeb6508ac5b1d9711503a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the absolute value of <code>val</code>  <a href="namespacele_1_1maths.html#a0ed1bed578ceeb6508ac5b1d9711503a">More...</a><br /></td></tr>
-<tr class="separator:a0ed1bed578ceeb6508ac5b1d9711503a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8acaca961bedf9aa2c7860f2ceb4d0c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae8acaca961bedf9aa2c7860f2ceb4d0c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#ae8acaca961bedf9aa2c7860f2ceb4d0c">randomRange</a> (T min, T max)</td></tr>
-<tr class="memdesc:ae8acaca961bedf9aa2c7860f2ceb4d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a random number between min and max.  <a href="namespacele_1_1maths.html#ae8acaca961bedf9aa2c7860f2ceb4d0c">More...</a><br /></td></tr>
-<tr class="separator:ae8acaca961bedf9aa2c7860f2ceb4d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5238f6253f5998bfa21747dd2b8a16b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af5238f6253f5998bfa21747dd2b8a16b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#af5238f6253f5998bfa21747dd2b8a16b">lerp</a> (T const &amp;min, T const &amp;max, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> alpha)</td></tr>
-<tr class="memdesc:af5238f6253f5998bfa21747dd2b8a16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolate between <code>min</code> to <code>max</code> based on <code>alpha</code>  <a href="namespacele_1_1maths.html#af5238f6253f5998bfa21747dd2b8a16b">More...</a><br /></td></tr>
-<tr class="separator:af5238f6253f5998bfa21747dd2b8a16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd3f67b19faf16d2ca88fb10ef114bd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:affd3f67b19faf16d2ca88fb10ef114bd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#affd3f67b19faf16d2ca88fb10ef114bd">equals</a> (T lhs, T rhs, T epsilon=std::numeric_limits&lt; T &gt;::epsilon())</td></tr>
-<tr class="memdesc:affd3f67b19faf16d2ca88fb10ef114bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>abs(lhs - rhs)</code> is less than <code>epsilon</code>  <a href="namespacele_1_1maths.html#affd3f67b19faf16d2ca88fb10ef114bd">More...</a><br /></td></tr>
-<tr class="separator:affd3f67b19faf16d2ca88fb10ef114bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb677aa9dc1e83910965bd40d53c042e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abb677aa9dc1e83910965bd40d53c042e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#abb677aa9dc1e83910965bd40d53c042e">withinRange</a> (T value, T min, T max, bool bInclusive=true)</td></tr>
-<tr class="memdesc:abb677aa9dc1e83910965bd40d53c042e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>value</code> is within <code>min</code> and <code>max</code>  <a href="namespacele_1_1maths.html#abb677aa9dc1e83910965bd40d53c042e">More...</a><br /></td></tr>
-<tr class="separator:abb677aa9dc1e83910965bd40d53c042e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547218b4f8abea61d21b7471e9dd0fac"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a547218b4f8abea61d21b7471e9dd0fac"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a> () noexcept</td></tr>
+<tr class="memdesc:a547218b4f8abea61d21b7471e9dd0fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the max value for <code>T</code>  <a href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">More...</a><br /></td></tr>
+<tr class="separator:a547218b4f8abea61d21b7471e9dd0fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182d08856d1d7779271e87436466c42b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a182d08856d1d7779271e87436466c42b"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a182d08856d1d7779271e87436466c42b">epsilon</a> () noexcept</td></tr>
+<tr class="memdesc:a182d08856d1d7779271e87436466c42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the epsilon value for <code>T</code>  <a href="namespacele_1_1maths.html#a182d08856d1d7779271e87436466c42b">More...</a><br /></td></tr>
+<tr class="separator:a182d08856d1d7779271e87436466c42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802b49d47e173d25beec82915f6524fc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a802b49d47e173d25beec82915f6524fc"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a802b49d47e173d25beec82915f6524fc">abs</a> (T const &amp;val) noexcept</td></tr>
+<tr class="memdesc:a802b49d47e173d25beec82915f6524fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the absolute value of <code>val</code>  <a href="namespacele_1_1maths.html#a802b49d47e173d25beec82915f6524fc">More...</a><br /></td></tr>
+<tr class="separator:a802b49d47e173d25beec82915f6524fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c681757249d9b2536ca89e718191ac9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0c681757249d9b2536ca89e718191ac9"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a0c681757249d9b2536ca89e718191ac9">equals</a> (T const &amp;lhs, T const &amp;rhs, T const &amp;e=<a class="el" href="namespacele_1_1maths.html#a182d08856d1d7779271e87436466c42b">epsilon</a>&lt; T &gt;()) noexcept</td></tr>
+<tr class="memdesc:a0c681757249d9b2536ca89e718191ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>abs(lhs - rhs)</code> is less than <code>e</code>  <a href="namespacele_1_1maths.html#a0c681757249d9b2536ca89e718191ac9">More...</a><br /></td></tr>
+<tr class="separator:a0c681757249d9b2536ca89e718191ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced9cf4d9f318f8646ce37c9695fad80"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aced9cf4d9f318f8646ce37c9695fad80"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#aced9cf4d9f318f8646ce37c9695fad80">inRange</a> (T const &amp;value, T const &amp;min, T const &amp;<a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a>, bool bInclusive=true) noexcept</td></tr>
+<tr class="memdesc:aced9cf4d9f318f8646ce37c9695fad80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>value</code> is within <code>min</code> and <code>max</code>  <a href="namespacele_1_1maths.html#aced9cf4d9f318f8646ce37c9695fad80">More...</a><br /></td></tr>
+<tr class="separator:aced9cf4d9f318f8646ce37c9695fad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0769e1217d8375b13e2c18bb16aa6286"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0769e1217d8375b13e2c18bb16aa6286"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a0769e1217d8375b13e2c18bb16aa6286">lerp</a> (T const &amp;min, T const &amp;<a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> alpha) noexcept</td></tr>
+<tr class="memdesc:a0769e1217d8375b13e2c18bb16aa6286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolate between <code>min</code> to <code>max</code> based on <code>alpha</code>  <a href="namespacele_1_1maths.html#a0769e1217d8375b13e2c18bb16aa6286">More...</a><br /></td></tr>
+<tr class="separator:a0769e1217d8375b13e2c18bb16aa6286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdda8ff8f80aaa39f6a7685232556c8e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acdda8ff8f80aaa39f6a7685232556c8e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#acdda8ff8f80aaa39f6a7685232556c8e">randomRange</a> (T min, T <a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a>) noexcept</td></tr>
+<tr class="memdesc:acdda8ff8f80aaa39f6a7685232556c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a random number between min and max.  <a href="namespacele_1_1maths.html#acdda8ff8f80aaa39f6a7685232556c8e">More...</a><br /></td></tr>
+<tr class="separator:acdda8ff8f80aaa39f6a7685232556c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0ed1bed578ceeb6508ac5b1d9711503a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ed1bed578ceeb6508ac5b1d9711503a">&#9670;&nbsp;</a></span>abs()</h2>
+<a id="a802b49d47e173d25beec82915f6524fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802b49d47e173d25beec82915f6524fc">&#9670;&nbsp;</a></span>abs()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T le::maths::abs </td>
+          <td class="memname">constexpr T le::maths::abs </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">T const &amp;&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Obtain the absolute value of <code>val</code> </p>
 
 </div>
 </div>
-<a id="affd3f67b19faf16d2ca88fb10ef114bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd3f67b19faf16d2ca88fb10ef114bd">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="a182d08856d1d7779271e87436466c42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182d08856d1d7779271e87436466c42b">&#9670;&nbsp;</a></span>epsilon()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool le::maths::equals </td>
+          <td class="memname">constexpr T le::maths::epsilon </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the epsilon value for <code>T</code> </p>
+
+</div>
+</div>
+<a id="a0c681757249d9b2536ca89e718191ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c681757249d9b2536ca89e718191ac9">&#9670;&nbsp;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool le::maths::equals </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">T const &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>epsilon</em> = <code>std::numeric_limits&lt;T&gt;::epsilon()</code>&#160;</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>e</em> = <code><a class="el" href="namespacele_1_1maths.html#a182d08856d1d7779271e87436466c42b">epsilon</a>&lt;T&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -134,22 +182,82 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Check whether <code>abs(lhs - rhs)</code> is less than <code>epsilon</code> </p>
+<p>Check whether <code>abs(lhs - rhs)</code> is less than <code>e</code> </p>
 
 </div>
 </div>
-<a id="af5238f6253f5998bfa21747dd2b8a16b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5238f6253f5998bfa21747dd2b8a16b">&#9670;&nbsp;</a></span>lerp()</h2>
+<a id="aced9cf4d9f318f8646ce37c9695fad80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced9cf4d9f318f8646ce37c9695fad80">&#9670;&nbsp;</a></span>inRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T le::maths::lerp </td>
+          <td class="memname">constexpr bool le::maths::inRange </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInclusive</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether <code>value</code> is within <code>min</code> and <code>max</code> </p>
+
+</div>
+</div>
+<a id="a0769e1217d8375b13e2c18bb16aa6286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0769e1217d8375b13e2c18bb16aa6286">&#9670;&nbsp;</a></span>lerp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T le::maths::lerp </td>
           <td>(</td>
           <td class="paramtype">T const &amp;&#160;</td>
           <td class="paramname"><em>min</em>, </td>
@@ -172,19 +280,56 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Linearly interpolate between <code>min</code> to <code>max</code> based on <code>alpha</code> </p>
 
 </div>
 </div>
-<a id="ae8acaca961bedf9aa2c7860f2ceb4d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8acaca961bedf9aa2c7860f2ceb4d0c">&#9670;&nbsp;</a></span>randomRange()</h2>
+<a id="a547218b4f8abea61d21b7471e9dd0fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547218b4f8abea61d21b7471e9dd0fac">&#9670;&nbsp;</a></span>max()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T le::maths::max </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the max value for <code>T</code> </p>
+
+</div>
+</div>
+<a id="acdda8ff8f80aaa39f6a7685232556c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdda8ff8f80aaa39f6a7685232556c8e">&#9670;&nbsp;</a></span>randomRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">T le::maths::randomRange </td>
@@ -204,53 +349,14 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Obtain a random number between min and max. </p>
-
-</div>
-</div>
-<a id="abb677aa9dc1e83910965bd40d53c042e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb677aa9dc1e83910965bd40d53c042e">&#9670;&nbsp;</a></span>withinRange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::maths::withinRange </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bInclusive</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check whether <code>value</code> is within <code>min</code> and <code>max</code> </p>
 
 </div>
 </div>

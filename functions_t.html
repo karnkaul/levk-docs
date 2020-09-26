@@ -42,7 +42,7 @@ $(function() {
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>t
-: <a class="el" href="structle_1_1gs_1_1TScoped.html#ae1aaee07fe41ffde68c0f9974e5a7587">le::gs::TScoped&lt; T &gt;</a>
+: <a class="el" href="structle_1_1TTrigger.html#ac141f256cb4514ee44b48fd473f797eb">le::TTrigger&lt; T, Default &gt;</a>
 </li>
 <li>tan()
 : <a class="el" href="structle_1_1Fixed.html#a64eec68a2d135e88656ace1cd127a277">le::Fixed</a>
@@ -76,6 +76,7 @@ $(function() {
 <li>tick()
 : <a class="el" href="structle_1_1engine_1_1Driver.html#a6370cab084f6dade6ebe21610eba475c">le::engine::Driver</a>
 , <a class="el" href="classle_1_1FreeCam.html#aa6656adeaf039652126c1f6fd13b4c2f">le::FreeCam</a>
+, <a class="el" href="classle_1_1Stopwatch.html#a0a74e329965b58731a8373c15ee4de76">le::Stopwatch&lt; Tag &gt;</a>
 </li>
 <li>TimeSpan()
 : <a class="el" href="structle_1_1TimeSpan.html#a7411901de27f7cd9f0f3f2de6cd670d8">le::TimeSpan&lt; Duration, Clock &gt;</a>
@@ -90,9 +91,6 @@ $(function() {
 </li>
 <li>Tk
 : <a class="el" href="classle_1_1Delegate.html#a7696ceab12d15097f55dee257fde21ac">le::Delegate&lt; Args &gt;</a>
-</li>
-<li>TNode()
-: <a class="el" href="structle_1_1TNode.html#a81100059daa2454d17d72d033edc1afa">le::TNode&lt; T &gt;</a>
 </li>
 <li>to_ms()
 : <a class="el" href="structle_1_1TimeSpan.html#a7f75e67c28fe1299b8bcdab1a60c76bf">le::TimeSpan&lt; Duration, Clock &gt;</a>
@@ -140,17 +138,17 @@ $(function() {
 : <a class="el" href="structle_1_1Colour.html#a6152ef946c454b57644fb6c6bb4de2b7">le::Colour</a>
 </li>
 <li>transform
-: <a class="el" href="structle_1_1gfx_1_1Renderer_1_1Drawable.html#aed497fad87384cc572e963c3d850996e">le::gfx::Renderer::Drawable</a>
-, <a class="el" href="structle_1_1Prop.html#ad0aa6aee50b836feded11d04e6d0e370">le::Prop</a>
-</li>
-<li>Transform()
-: <a class="el" href="classle_1_1Transform.html#ab235d648d566e8a85688c4be06f26988">le::Transform</a>
+: <a class="el" href="structle_1_1gfx_1_1render_1_1Driver_1_1Drawable.html#a782dcfd3a869d9bd08b7935b32af25d4">le::gfx::render::Driver::Drawable</a>
+, <a class="el" href="structle_1_1Prop.html#a0ccbd1353804a9ead5bdc51b0886c4b6">le::Prop</a>
 </li>
 <li>TRect()
 : <a class="el" href="structle_1_1gfx_1_1TRect.html#afb7ac4e02482f3acf606609cff75bb98">le::gfx::TRect&lt; T, Min, Max &gt;</a>
 </li>
+<li>Tree()
+: <a class="el" href="classle_1_1Tree.html#afc4d1b4d9742efe402c1f9b15abd5727">le::Tree&lt; T &gt;</a>
+</li>
 <li>TResult()
-: <a class="el" href="structle_1_1TResult.html#af713fad1b352c4e9847b9f15a388ff85">le::TResult&lt; T &gt;</a>
+: <a class="el" href="structle_1_1TResult.html#a27f24518af297d92439c66c31633ff9a">le::TResult&lt; T &gt;</a>
 , <a class="el" href="structle_1_1TResult_3_01void_01_4.html#a5a6db4100973e7bbdc45094faf4154af">le::TResult&lt; void &gt;</a>
 </li>
 <li>triCount
@@ -160,12 +158,17 @@ $(function() {
 : <a class="el" href="structle_1_1input_1_1Binding.html#ae6a9c14211023b069108fdbc02c9f242">le::input::Binding</a>
 </li>
 <li>trisDrawn
-: <a class="el" href="structle_1_1gfx_1_1Renderer_1_1Stats.html#a10ab48c68db83b9806446fd794d40927">le::gfx::Renderer::Stats</a>
+: <a class="el" href="structle_1_1gfx_1_1render_1_1Driver_1_1Stats.html#a6e6b2f413c5de013b9a593cb1216d42f">le::gfx::render::Driver::Stats</a>
 </li>
 <li>TScoped()
-: <a class="el" href="structle_1_1gs_1_1TScoped.html#a117bee27cab33456ef403a971ed96838">le::gs::TScoped&lt; T &gt;</a>
-, <a class="el" href="structle_1_1res_1_1TScoped.html#a525b4d764b2ab99d881cff04a3830dd6">le::res::TScoped&lt; T &gt;</a>
+: <a class="el" href="structle_1_1res_1_1TScoped.html#a525b4d764b2ab99d881cff04a3830dd6">le::res::TScoped&lt; T &gt;</a>
 , <a class="el" href="structle_1_1threads_1_1TScoped.html#a39a60806267c7c6b736ef92d771daccd">le::threads::TScoped</a>
+</li>
+<li>ttl
+: <a class="el" href="structle_1_1TTrigger.html#ae7f0424c147c6e38d48349ce391b07d7">le::TTrigger&lt; T, Default &gt;</a>
+</li>
+<li>TTrigger()
+: <a class="el" href="structle_1_1TTrigger.html#a396d4f47794e23b80aa6044a9a18f8fd">le::TTrigger&lt; T, Default &gt;</a>
 </li>
 <li>tweak()
 : <a class="el" href="structle_1_1Version.html#a43491416e523e572a70c91d3b0317e8b">le::Version</a>
@@ -207,13 +210,14 @@ $(function() {
 : <a class="el" href="structle_1_1TCounter_3_01T_00_01false_01_4.html#af769a721855bd27f2caa7176579576da">le::TCounter&lt; T, false &gt;</a>
 , <a class="el" href="structle_1_1TCounter_3_01T_00_01true_01_4.html#a90996fd45d501142a5de42400119f6c8">le::TCounter&lt; T, true &gt;</a>
 , <a class="el" href="structle_1_1TFlags.html#a461a7aa5e2900052e2e15b44440554ed">le::TFlags&lt; Enum, N &gt;</a>
-, <a class="el" href="structle_1_1TNodeBase.html#acfe257ea1ed163b6343da32aa6d4d442">le::TNodeBase&lt; T, Node &gt;</a>
 , <a class="el" href="structle_1_1TProp.html#a08b7edc5061567df0b2bea02055e372b">le::TProp&lt; T &gt;</a>
 , <a class="el" href="structle_1_1TProp_3_4.html#ab7da1e86c08c79514220033d2709fb91">le::TProp&lt;&gt;</a>
 , <a class="el" href="structle_1_1TResult.html#a9007eb2814fc0a070091271693eb9094">le::TResult&lt; T &gt;</a>
 , <a class="el" href="structle_1_1TResult_3_01void_01_4.html#a01220e39d8c53b354bbf2ea2ecab4aeb">le::TResult&lt; void &gt;</a>
-, <a class="el" href="structle_1_1TTree.html#ad9e79e633684d16777cf39db824cadf9">le::TTree&lt; T, Node &gt;</a>
+, <a class="el" href="structle_1_1TTrigger.html#acb09c10215c977bfafad5d77dd03f84a">le::TTrigger&lt; T, Default &gt;</a>
 , <a class="el" href="structle_1_1TZero.html#afff6d2eaad2e85efb14582c7750775f8">le::TZero&lt; T, Zero &gt;</a>
+, <a class="el" href="structle_1_1utils_1_1Lockable.html#a8f5d5dd7c6aae4819027f4a7bd2ba1d5">le::utils::Lockable&lt; UseMutex, M &gt;</a>
+, <a class="el" href="structle_1_1utils_1_1Lockable_3_01false_00_01M_01_4.html#a04666a9cbf310a19313d380906138dd3">le::utils::Lockable&lt; false, M &gt;</a>
 </li>
 <li>type_float
 : <a class="el" href="structle_1_1gfx_1_1TRect.html#abb01289237e9f19b6d773e647ed69ffe">le::gfx::TRect&lt; T, Min, Max &gt;</a>
@@ -222,7 +226,7 @@ $(function() {
 : <a class="el" href="structkt_1_1args__parser.html#aafb5f3e1bb0c0b7d9c62467204bb1e22">kt::args_parser&lt; Cont, Args &gt;</a>
 </li>
 <li>TZero()
-: <a class="el" href="structle_1_1TZero.html#ae4811662e27df2347215d9aa21eecc65">le::TZero&lt; T, Zero &gt;</a>
+: <a class="el" href="structle_1_1TZero.html#ac8d7325293b27b51e58a0f8142cd5ec8">le::TZero&lt; T, Zero &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

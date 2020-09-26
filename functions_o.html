@@ -87,6 +87,9 @@ $(function() {
 <li>operator T&amp;()
 : <a class="el" href="structle_1_1Ref.html#a9e4ea38abed8dfb11348ff651586a151">le::Ref&lt; T &gt;</a>
 </li>
+<li>operator Time()
+: <a class="el" href="structle_1_1Stopwatch_1_1Stamp.html#afc11a867f838aae8bb17d076279a47be">le::Stopwatch&lt; Tag &gt;::Stamp</a>
+</li>
 <li>operator!=()
 : <a class="el" href="structle_1_1TimeSpan.html#a0eef25503750a86a2de96020c623898c">le::TimeSpan&lt; Duration, Clock &gt;</a>
 , <a class="el" href="structle_1_1Version.html#ac865c063ad001b4cafff9de51f350bd9">le::Version</a>
@@ -104,11 +107,12 @@ $(function() {
 : <a class="el" href="classle_1_1Delegate.html#a8f20bc6124e956a969601a3c7991a177">le::Delegate&lt; Args &gt;</a>
 , <a class="el" href="structle_1_1EntityHasher.html#a898a0424d4a031a6219c1c6e5300bc14">le::EntityHasher</a>
 , <a class="el" href="structstd_1_1hash_3_01le_1_1Hash_01_4.html#a39f095c867a2e6d2e1ffe7c8a8e32b61">std::hash&lt; le::Hash &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01le_1_1Ref_3_01T_01_4_01_4.html#a0338abd6dad1e2a13c159fe28fdc12f0">std::hash&lt; le::Ref&lt; T &gt; &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01le_1_1TZero_3_01T_00_01Zero_01_4_01_4.html#a43c9e793dc40855277f9cf4dc537df89">std::hash&lt; le::TZero&lt; T, Zero &gt; &gt;</a>
 </li>
 <li>operator*()
 : <a class="el" href="structle_1_1res_1_1ResourceList.html#afae61978b0dea50ed21d07460f7ea7b0">le::res::ResourceList</a>
-, <a class="el" href="structle_1_1TResult.html#a5455f2a16f11af4f90fa9775464577f1">le::TResult&lt; T &gt;</a>
+, <a class="el" href="structle_1_1TResult.html#aca3b76e1d173e293f728285fb95abf23">le::TResult&lt; T &gt;</a>
 </li>
 <li>operator*=()
 : <a class="el" href="structle_1_1Fixed.html#a615261c67641f064b4c69b782441ea05">le::Fixed</a>
@@ -162,20 +166,20 @@ $(function() {
 </li>
 <li>operator=()
 : <a class="el" href="classle_1_1engine_1_1Service.html#ab0991347155d74b2be04a6f334c7b9be">le::engine::Service</a>
-, <a class="el" href="classle_1_1gfx_1_1Renderer.html#a1d3a91c300189210fdc16702953b889d">le::gfx::Renderer</a>
-, <a class="el" href="structle_1_1gs_1_1TScoped.html#a4f9b266b79da5b22556eb51178aa837e">le::gs::TScoped&lt; T &gt;</a>
+, <a class="el" href="classle_1_1gfx_1_1render_1_1Driver.html#a35044d6326b4a8f6bb2d6fb9b75e4802">le::gfx::render::Driver</a>
 , <a class="el" href="classle_1_1io_1_1FileMonitor.html#aa7a6ee14fade1999cb675da0df8a4952">le::io::FileMonitor</a>
-, <a class="el" href="classle_1_1io_1_1Reader.html#a6ea4f18fe2fd08745732fc9fe6d1f995">le::io::Reader</a>
-, <a class="el" href="structle_1_1NoCopy.html#aaf83bb9f1b31f9750e5a1943bddc137f">le::NoCopy</a>
+, <a class="el" href="classle_1_1io_1_1Reader.html#a0d2f3912f74cfe72e8f00be6b0a3a417">le::io::Reader</a>
+, <a class="el" href="structle_1_1NoCopy.html#a7fa546ebee3a17a64b4c625eb7bfe848">le::NoCopy</a>
 , <a class="el" href="classle_1_1res_1_1Async.html#abedb8347dac7a0c71758f13ffd0c552d">le::res::Async&lt; T &gt;</a>
 , <a class="el" href="structle_1_1res_1_1TScoped.html#ac883676657bfa6c9468e0d8623358b90">le::res::TScoped&lt; T &gt;</a>
 , <a class="el" href="classle_1_1Services.html#a48ab970e48430ee8dbb00aa688da81f2">le::Services</a>
-, <a class="el" href="structle_1_1Span.html#a88306edd5aadd55baae4167ddd264ff6">le::Span&lt; T &gt;</a>
 , <a class="el" href="classle_1_1StaticAny.html#a67a0a869767cdd09623e340cdf2243f2">le::StaticAny&lt; N &gt;</a>
-, <a class="el" href="structle_1_1TCounter_1_1Semaphore.html#a8108072a1ab908a2a47430b70a5cb80f">le::TCounter&lt; T, Atomic &gt;::Semaphore</a>
+, <a class="el" href="structle_1_1Stopwatch_1_1Scoped.html#a3e8d987af83e1769520eb0972cc08371">le::Stopwatch&lt; Tag &gt;::Scoped</a>
+, <a class="el" href="structle_1_1TCounter_1_1Semaphore.html#a77b17b2615e432166dfb9112f7d61669">le::TCounter&lt; T, Atomic &gt;::Semaphore</a>
 , <a class="el" href="classle_1_1Text2D.html#a6a4fdadca65796630c8102e95b4b4949">le::Text2D</a>
 , <a class="el" href="structle_1_1threads_1_1TScoped.html#abb2bb3779fe105cc167c68612fa614d6">le::threads::TScoped</a>
 , <a class="el" href="structle_1_1Token.html#af8f3458a0dae12ee45efce6e5e84c9c0">le::Token</a>
+, <a class="el" href="classle_1_1Tree.html#ac274bb60fd5c37debf64390e8c09007e">le::Tree&lt; T &gt;</a>
 , <a class="el" href="structle_1_1TZero.html#acd27612e3154eebd791b476af83ad46b">le::TZero&lt; T, Zero &gt;</a>
 , <a class="el" href="classle_1_1Window.html#adc8e88e88479eaf30ccc52a6eb237224">le::Window</a>
 </li>
@@ -196,7 +200,8 @@ $(function() {
 , <a class="el" href="structle_1_1Version.html#ae600ecddbf56076319f9d137ac74369e">le::Version</a>
 </li>
 <li>operator[]()
-: <a class="el" href="structle_1_1TFlags.html#a6190ab882c08d26946fcc692493eda62">le::TFlags&lt; Enum, N &gt;</a>
+: <a class="el" href="structle_1_1Span.html#ab04e61b81df2451d7a362b6e224b07fa">le::Span&lt; T &gt;</a>
+, <a class="el" href="structle_1_1TFlags.html#a6190ab882c08d26946fcc692493eda62">le::TFlags&lt; Enum, N &gt;</a>
 </li>
 <li>operator^()
 : <a class="el" href="structle_1_1TFlags.html#a026eae1af50d5a03d05317f775dbb99c">le::TFlags&lt; Enum, N &gt;</a>
@@ -217,12 +222,11 @@ $(function() {
 : <a class="el" href="structle_1_1res_1_1Font_1_1Glyph.html#acd0199c3a4bb37566d43b8018a83526c">le::res::Font::Glyph</a>
 </li>
 <li>orient()
-: <a class="el" href="classle_1_1Transform.html#a3af0b7868009ae4b7fdfc2843cc74bfe">le::Transform</a>
+: <a class="el" href="classle_1_1Transform.html#a83dd7b95a40d6c4148e0045376f8f872">le::Transform</a>
 </li>
 <li>orientation
-: <a class="el" href="structle_1_1foo_1_1Transform.html#a1f8b22c4399d027cb93b36874dcdb047">le::foo::Transform</a>
-, <a class="el" href="structle_1_1gfx_1_1Camera.html#a004d3ffcf18b27288de53253e4714dd1">le::gfx::Camera</a>
-, <a class="el" href="classle_1_1Transform.html#aedbb718ca607e372e634d9beb5679508">le::Transform</a>
+: <a class="el" href="structle_1_1gfx_1_1Camera.html#a004d3ffcf18b27288de53253e4714dd1">le::gfx::Camera</a>
+, <a class="el" href="classle_1_1Transform.html#a8f33296f07abf498bd88e5d2544a41d9">le::Transform</a>
 </li>
 <li>origin
 : <a class="el" href="structle_1_1res_1_1Model_1_1CreateInfo.html#ad955dd8277116dd19bd90be5e57808be">le::res::Model::CreateInfo</a>

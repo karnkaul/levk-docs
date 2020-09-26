@@ -54,35 +54,13 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;fmt/format.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="delegate_8hpp.html">core/delegate.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ecs__registry_8hpp.html">core/ecs_registry.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="time_8hpp.html">core/time.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="transform_8hpp.html">core/transform.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utils_8hpp.html">core/utils.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="input_8hpp.html">engine/game/input.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="camera_8hpp.html">engine/gfx/camera.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="light_8hpp.html">engine/gfx/light.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="pipeline_8hpp.html">engine/gfx/pipeline.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="screen__rect_8hpp.html">engine/gfx/screen_rect.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scene_8hpp.html">engine/game/scene.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="resources_8hpp.html">engine/resources/resources.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Prop.html">le::Prop</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for <a class="el" href="structle_1_1Entity.html" title="Entity is a glorified, type-safe combination of ID and registryID.">Entity</a> + <a class="el" href="classle_1_1Transform.html" title="Class for user-friendly and cached 4x4 matrix transformation with support for parenting.">Transform</a>.  <a href="structle_1_1Prop.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TProp.html">le::TProp&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type wrapper for <code>spawnProp&lt;T...&gt;()</code>  <a href="structle_1_1TProp.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TProp_3_4.html">le::TProp&lt;&gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gs_1_1TScoped.html">le::gs::TScoped&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII wrapper for <a class="el" href="structle_1_1Prop.html" title="Wrapper for Entity + Transform.">Prop</a> etc.  <a href="structle_1_1gs_1_1TScoped.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gs_1_1SceneDesc.html">le::gs::SceneDesc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gs_1_1Context.html">le::gs::Context</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure describing game frame context.  <a href="structle_1_1gs_1_1Context.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gs_1_1LoadReq.html">le::gs::LoadReq</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manifest load request.  <a href="structle_1_1gs_1_1LoadReq.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,21 +74,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a436bd3adb36ce3ff8dbcab97dfc6c5fe"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a436bd3adb36ce3ff8dbcab97dfc6c5fe"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a436bd3adb36ce3ff8dbcab97dfc6c5fe">le::TProp_t</a> = typename TProp&lt; T... &gt;::type</td></tr>
-<tr class="separator:a436bd3adb36ce3ff8dbcab97dfc6c5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00d0b715c954d99f578c56495cc7fec0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#a00d0b715c954d99f578c56495cc7fec0">le::gs::ManifestLoaded</a> = Delegate&lt;&gt;</td></tr>
 <tr class="memdesc:a00d0b715c954d99f578c56495cc7fec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for callback on manifest loaded.  <a href="namespacele_1_1gs.html#a00d0b715c954d99f578c56495cc7fec0">More...</a><br /></td></tr>
 <tr class="separator:a00d0b715c954d99f578c56495cc7fec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2ddfd58fd3e332fcc8452db4ec0ed803"><td class="memItemLeft" align="right" valign="top">SceneDesc &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#a2ddfd58fd3e332fcc8452db4ec0ed803">le::gs::sceneDesc</a> ()</td></tr>
-<tr class="memdesc:a2ddfd58fd3e332fcc8452db4ec0ed803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain (a reference to) the scene descriptor.  <a href="namespacele_1_1gs.html#a2ddfd58fd3e332fcc8452db4ec0ed803">More...</a><br /></td></tr>
-<tr class="separator:a2ddfd58fd3e332fcc8452db4ec0ed803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4fb80c6428ae019d901ed133bf4dd2b"><td class="memItemLeft" align="right" valign="top">gfx::Camera &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#aa4fb80c6428ae019d901ed133bf4dd2b">le::gs::mainCamera</a> ()</td></tr>
-<tr class="memdesc:aa4fb80c6428ae019d901ed133bf4dd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain (a reference to) the main scene camera.  <a href="namespacele_1_1gs.html#aa4fb80c6428ae019d901ed133bf4dd2b">More...</a><br /></td></tr>
-<tr class="separator:aa4fb80c6428ae019d901ed133bf4dd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a635c0bf5ad458ed5f1960a9be15a6e1f"><td class="memItemLeft" align="right" valign="top">Token&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#a635c0bf5ad458ed5f1960a9be15a6e1f">le::gs::registerInput</a> (input::Context const *pContext)</td></tr>
 <tr class="memdesc:a635c0bf5ad458ed5f1960a9be15a6e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register input context.  <a href="namespacele_1_1gs.html#a635c0bf5ad458ed5f1960a9be15a6e1f">More...</a><br /></td></tr>
 <tr class="separator:a635c0bf5ad458ed5f1960a9be15a6e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,26 +89,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ae78db93adb3393ad89dea63804c25eff"><td class="memItemLeft" align="right" valign="top">Token&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#ae78db93adb3393ad89dea63804c25eff">le::gs::loadInputMap</a> (stdfs::path const &amp;id, input::Context *out_pContext)</td></tr>
 <tr class="memdesc:ae78db93adb3393ad89dea63804c25eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load input map into input context and and register it.  <a href="namespacele_1_1gs.html#ae78db93adb3393ad89dea63804c25eff">More...</a><br /></td></tr>
 <tr class="separator:ae78db93adb3393ad89dea63804c25eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a157be6f29721da217efbc055b5470"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:ae2a157be6f29721da217efbc055b5470"><td class="memTemplItemLeft" align="right" valign="top">TProp&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#ae2a157be6f29721da217efbc055b5470">le::gs::spawnProp</a> (std::string name, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:ae2a157be6f29721da217efbc055b5470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="structle_1_1Prop.html" title="Wrapper for Entity + Transform.">Prop</a>.  <a href="namespacele_1_1gs.html#ae2a157be6f29721da217efbc055b5470">More...</a><br /></td></tr>
-<tr class="separator:ae2a157be6f29721da217efbc055b5470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a649c4de7e00daac668338f8ae9a3b"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:ac9a649c4de7e00daac668338f8ae9a3b"><td class="memTemplItemLeft" align="right" valign="top">TProp_t&lt; T... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#ac9a649c4de7e00daac668338f8ae9a3b">le::gs::spawnProp</a> (std::string name)</td></tr>
-<tr class="memdesc:ac9a649c4de7e00daac668338f8ae9a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="structle_1_1Prop.html" title="Wrapper for Entity + Transform.">Prop</a>.  <a href="namespacele_1_1gs.html#ac9a649c4de7e00daac668338f8ae9a3b">More...</a><br /></td></tr>
-<tr class="separator:ac9a649c4de7e00daac668338f8ae9a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e3513a8b5199aade73c3f3e1f9f66c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#a47e3513a8b5199aade73c3f3e1f9f66c">le::gs::destroy</a> (Span&lt; Prop &gt; props)</td></tr>
-<tr class="memdesc:a47e3513a8b5199aade73c3f3e1f9f66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy one or more props.  <a href="namespacele_1_1gs.html#a47e3513a8b5199aade73c3f3e1f9f66c">More...</a><br /></td></tr>
-<tr class="separator:a47e3513a8b5199aade73c3f3e1f9f66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b309d8bde2eb445235422ac8f733cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#ac3b309d8bde2eb445235422ac8f733cc">le::gs::reset</a> ()</td></tr>
-<tr class="memdesc:ac3b309d8bde2eb445235422ac8f733cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset game state.  <a href="namespacele_1_1gs.html#ac3b309d8bde2eb445235422ac8f733cc">More...</a><br /></td></tr>
 <tr class="separator:ac3b309d8bde2eb445235422ac8f733cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a522436adde574ccd3733067b523078df"><td class="memItemLeft" align="right" valign="top">Context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#a522436adde574ccd3733067b523078df">le::gs::g_context</a></td></tr>
-<tr class="memdesc:a522436adde574ccd3733067b523078df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global context instance.  <a href="namespacele_1_1gs.html#a522436adde574ccd3733067b523078df">More...</a><br /></td></tr>
-<tr class="separator:a522436adde574ccd3733067b523078df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6433aa40f2254e1782d0661e9bc551"><td class="memItemLeft" align="right" valign="top">GameScene&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gs.html#a2f6433aa40f2254e1782d0661e9bc551">le::gs::g_game</a></td></tr>
+<tr class="memdesc:a2f6433aa40f2254e1782d0661e9bc551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global context instance.  <a href="namespacele_1_1gs.html#a2f6433aa40f2254e1782d0661e9bc551">More...</a><br /></td></tr>
+<tr class="separator:a2f6433aa40f2254e1782d0661e9bc551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
