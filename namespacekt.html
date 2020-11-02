@@ -39,12 +39,22 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">kt Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacekt_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt_1_1detail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1args__parser.html">args_parser</a></td></tr>
@@ -53,10 +63,343 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html">async_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO std::deque wrapper with thread safe API.  <a href="classkt_1_1async__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-safe and index-safe wrapper for <code>std::bitset</code>  <a href="structkt_1_1enum__flags.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1lockable.html">lockable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a mutex and associated locks.  <a href="structkt_1_1lockable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1result.html">result</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure containing T / RD::err (if non-void) and RD::sig  <a href="structkt_1_1result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1result__dispatch.html">result_dispatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default result dispatch tag type.  <a href="structkt_1_1result__dispatch.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1result__dispatch_3_01Err_00_01result__signal_01_4.html">result_dispatch&lt; Err, result_signal &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default result dispatch tag type.  <a href="structkt_1_1result__dispatch_3_01Err_00_01result__signal_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:af3db15b9bd032cd5b593d75c02677351"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sig  = result_signal&gt; </td></tr>
+<tr class="memitem:af3db15b9bd032cd5b593d75c02677351"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#af3db15b9bd032cd5b593d75c02677351">result_void</a> = <a class="el" href="structkt_1_1result.html">result</a>&lt; T, <a class="el" href="structkt_1_1result__dispatch.html">result_dispatch</a>&lt; void, Sig &gt; &gt;</td></tr>
+<tr class="memdesc:af3db15b9bd032cd5b593d75c02677351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for result with no error value (void)  <a href="namespacekt.html#af3db15b9bd032cd5b593d75c02677351">More...</a><br /></td></tr>
+<tr class="separator:af3db15b9bd032cd5b593d75c02677351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84249e91f8ca50a919e48972efcd9ba1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sig  = result_signal&gt; </td></tr>
+<tr class="memitem:a84249e91f8ca50a919e48972efcd9ba1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a84249e91f8ca50a919e48972efcd9ba1">result_sv</a> = <a class="el" href="structkt_1_1result.html">result</a>&lt; T, <a class="el" href="structkt_1_1result__dispatch.html">result_dispatch</a>&lt; std::string_view, Sig &gt; &gt;</td></tr>
+<tr class="memdesc:a84249e91f8ca50a919e48972efcd9ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for result with std::string_view error value.  <a href="namespacekt.html#a84249e91f8ca50a919e48972efcd9ba1">More...</a><br /></td></tr>
+<tr class="separator:a84249e91f8ca50a919e48972efcd9ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:af8a42bf7f9f25ad0609ac7d6500ce170"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#af8a42bf7f9f25ad0609ac7d6500ce170">result_signal</a> { <a class="el" href="namespacekt.html#af8a42bf7f9f25ad0609ac7d6500ce170a444bcb3a3fcf8389296c49467f27e1d6">result_signal::ok</a>, 
+<a class="el" href="namespacekt.html#af8a42bf7f9f25ad0609ac7d6500ce170acb5e100e5a9a3e7f6d1fd97512215282">result_signal::error</a>
+ }</td></tr>
+<tr class="memdesc:af8a42bf7f9f25ad0609ac7d6500ce170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default success/failure indicator type.  <a href="namespacekt.html#af8a42bf7f9f25ad0609ac7d6500ce170">More...</a><br /></td></tr>
+<tr class="separator:af8a42bf7f9f25ad0609ac7d6500ce170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8f060756b533bab9dde50364de42ee90"><td class="memTemplParams" colspan="2">template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </td></tr>
+<tr class="memitem:a8f060756b533bab9dde50364de42ee90"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a8f060756b533bab9dde50364de42ee90">operator==</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; lhs, <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; rhs) noexcept</td></tr>
+<tr class="memdesc:a8f060756b533bab9dde50364de42ee90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if flags are equal.  <a href="namespacekt.html#a8f060756b533bab9dde50364de42ee90">More...</a><br /></td></tr>
+<tr class="separator:a8f060756b533bab9dde50364de42ee90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c9d5469306f048756dcf5006792c28"><td class="memTemplParams" colspan="2">template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </td></tr>
+<tr class="memitem:a98c9d5469306f048756dcf5006792c28"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a98c9d5469306f048756dcf5006792c28">operator!=</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; lhs, <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; rhs) noexcept</td></tr>
+<tr class="memdesc:a98c9d5469306f048756dcf5006792c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if flags are not equal.  <a href="namespacekt.html#a98c9d5469306f048756dcf5006792c28">More...</a><br /></td></tr>
+<tr class="separator:a98c9d5469306f048756dcf5006792c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6886415810a1413e5b33975d629e33"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#a3b6886415810a1413e5b33975d629e33">format_str</a> (std::ostream &amp;out, std::string_view fmt)</td></tr>
+<tr class="separator:a3b6886415810a1413e5b33975d629e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace35b0a7280bc6450069c5d1d4d09708"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
+<tr class="memitem:ace35b0a7280bc6450069c5d1d4d09708"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ace35b0a7280bc6450069c5d1d4d09708">format_str</a> (std::ostream &amp;out, std::string_view fmt, Arg &amp;&amp;arg, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:ace35b0a7280bc6450069c5d1d4d09708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad279c298bcf8094cd3c4c83a58ee057c"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ad279c298bcf8094cd3c4c83a58ee057c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ad279c298bcf8094cd3c4c83a58ee057c">format_str</a> (std::string_view fmt, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:ad279c298bcf8094cd3c4c83a58ee057c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#aa0963dd3a6d75717a2a10eb32b5bd9f7">fmt_token</a> = &quot;{}&quot;</td></tr>
+<tr class="separator:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a84249e91f8ca50a919e48972efcd9ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84249e91f8ca50a919e48972efcd9ba1">&#9670;&nbsp;</a></span>result_sv</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Sig  = result_signal&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacekt.html#a84249e91f8ca50a919e48972efcd9ba1">kt::result_sv</a> = typedef <a class="el" href="structkt_1_1result.html">result</a>&lt;T, <a class="el" href="structkt_1_1result__dispatch.html">result_dispatch</a>&lt;std::string_view, Sig&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typedef for result with std::string_view error value. </p>
+
+</div>
+</div>
+<a id="af3db15b9bd032cd5b593d75c02677351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3db15b9bd032cd5b593d75c02677351">&#9670;&nbsp;</a></span>result_void</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Sig  = result_signal&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacekt.html#af3db15b9bd032cd5b593d75c02677351">kt::result_void</a> = typedef <a class="el" href="structkt_1_1result.html">result</a>&lt;T, <a class="el" href="structkt_1_1result__dispatch.html">result_dispatch</a>&lt;void, Sig&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typedef for result with no error value (void) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af8a42bf7f9f25ad0609ac7d6500ce170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a42bf7f9f25ad0609ac7d6500ce170">&#9670;&nbsp;</a></span>result_signal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacekt.html#af8a42bf7f9f25ad0609ac7d6500ce170">kt::result_signal</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default success/failure indicator type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8a42bf7f9f25ad0609ac7d6500ce170a444bcb3a3fcf8389296c49467f27e1d6"></a>ok&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8a42bf7f9f25ad0609ac7d6500ce170acb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a3b6886415810a1413e5b33975d629e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6886415810a1413e5b33975d629e33">&#9670;&nbsp;</a></span>format_str() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; kt::format_str </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>fmt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace35b0a7280bc6450069c5d1d4d09708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace35b0a7280bc6450069c5d1d4d09708">&#9670;&nbsp;</a></span>format_str() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Arg , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; kt::format_str </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Arg &amp;&amp;&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad279c298bcf8094cd3c4c83a58ee057c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad279c298bcf8094cd3c4c83a58ee057c">&#9670;&nbsp;</a></span>format_str() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string kt::format_str </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98c9d5469306f048756dcf5006792c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c9d5469306f048756dcf5006792c28">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool kt::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test if flags are not equal. </p>
+
+</div>
+</div>
+<a id="a8f060756b533bab9dde50364de42ee90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f060756b533bab9dde50364de42ee90">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool kt::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test if flags are equal. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa0963dd3a6d75717a2a10eb32b5bd9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0963dd3a6d75717a2a10eb32b5bd9f7">&#9670;&nbsp;</a></span>fmt_token</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view kt::fmt_token = &quot;{}&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

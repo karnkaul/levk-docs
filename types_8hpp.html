@@ -52,7 +52,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;<a class="el" href="ref_8hpp.html">core/ref.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="zero_8hpp.html">core/zero.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
@@ -76,6 +75,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacele_1_1ecs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs.html">le::ecs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacele_1_1ecs_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs_1_1detail.html">le::ecs::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -97,9 +98,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4a4ebdd0d6f4e9691c28df40ebb6827d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs.html#a4a4ebdd0d6f4e9691c28df40ebb6827d">le::ecs::Sign</a> = std::size_t</td></tr>
 <tr class="memdesc:a4a4ebdd0d6f4e9691c28df40ebb6827d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structle_1_1Hash.html" title="Wrapper struct for storing the hash (via std::hash) for common types.">Hash</a> signature of component types.  <a href="namespacele_1_1ecs.html#a4a4ebdd0d6f4e9691c28df40ebb6827d">More...</a><br /></td></tr>
 <tr class="separator:a4a4ebdd0d6f4e9691c28df40ebb6827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dbf23ab21248c05133e1999c5b7ebf"><td class="memTemplParams" colspan="2">template&lt;bool... B&gt; </td></tr>
+<tr class="memitem:a65dbf23ab21248c05133e1999c5b7ebf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs_1_1detail.html#a65dbf23ab21248c05133e1999c5b7ebf">le::ecs::detail::require</a> = std::enable_if_t&lt;(B &amp;&amp;...)&gt;</td></tr>
+<tr class="separator:a65dbf23ab21248c05133e1999c5b7ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2711b114d03b22336a0d298fb177424a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs_1_1detail.html#a2711b114d03b22336a0d298fb177424a">le::ecs::detail::demangle</a> (std::string_view name)</td></tr>
+<tr class="separator:a2711b114d03b22336a0d298fb177424a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee1d7f5c2490ea91e678e9bd9acd44d6"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs.html#aee1d7f5c2490ea91e678e9bd9acd44d6">le::ecs::operator==</a> (Entity lhs, Entity rhs) noexcept</td></tr>
 <tr class="separator:aee1d7f5c2490ea91e678e9bd9acd44d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee80c1cd1057283fd541e75ab93fabc"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1ecs.html#a5ee80c1cd1057283fd541e75ab93fabc">le::ecs::operator!=</a> (Entity lhs, Entity rhs) noexcept</td></tr>

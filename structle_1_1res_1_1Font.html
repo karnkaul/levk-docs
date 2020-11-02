@@ -44,6 +44,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structle_1_1res_1_1Font-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -73,8 +74,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font_1_1Info.html">Info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font_1_1Layout.html">Layout</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font_1_1Text.html">Text</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adc499def4e06a4f6174055de25e5745c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html#adc499def4e06a4f6174055de25e5745c">Size</a> = std::variant&lt; <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;</td></tr>
+<tr class="separator:adc499def4e06a4f6174055de25e5745c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -82,8 +90,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ef3fe4b33d44ebbfec8fe9f5fcf1719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e311b6a5b119ea2465c0fca91ceee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1res.html#aaae19b07176cc8887d5459899fe2b1b5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html#a52e311b6a5b119ea2465c0fca91ceee3">status</a> () const</td></tr>
 <tr class="separator:a52e311b6a5b119ea2465c0fca91ceee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed567aa7802675ac02bdb35107fdef2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1gfx_1_1Geometry.html">gfx::Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html#aed567aa7802675ac02bdb35107fdef2a">generate</a> (<a class="el" href="structle_1_1res_1_1Font_1_1Text.html">Text</a> const &amp;text) const</td></tr>
-<tr class="separator:aed567aa7802675ac02bdb35107fdef2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554a82edd630ccaad31b53ed35ca1c69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1gfx_1_1Geometry.html">gfx::Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html#a554a82edd630ccaad31b53ed35ca1c69">generate</a> (<a class="el" href="structle_1_1res_1_1Font_1_1Text.html">Text</a> const &amp;text, std::optional&lt; <a class="el" href="structle_1_1res_1_1Font_1_1Layout.html">Layout</a> &gt; <a class="el" href="structle_1_1res_1_1Font.html#ae7a8db5202c1d1e54b7ac3dab1acb44c">layout</a>=std::nullopt) const</td></tr>
+<tr class="separator:a554a82edd630ccaad31b53ed35ca1c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1b1d1ccf80a1a6f854e501826e330c"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html#aad1b1d1ccf80a1a6f854e501826e330c">glyphBounds</a> (std::string_view text={}) const</td></tr>
+<tr class="separator:aad1b1d1ccf80a1a6f854e501826e330c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a8db5202c1d1e54b7ac3dab1acb44c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1res_1_1Font_1_1Layout.html">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html#ae7a8db5202c1d1e54b7ac3dab1acb44c">layout</a> (std::string_view text, <a class="el" href="structle_1_1res_1_1Font.html#adc499def4e06a4f6174055de25e5745c">Size</a> size=1.0f, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> nPadY=0.1f) const</td></tr>
+<tr class="separator:ae7a8db5202c1d1e54b7ac3dab1acb44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -97,9 +109,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handle for bitmap font using texture atlas. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aed567aa7802675ac02bdb35107fdef2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed567aa7802675ac02bdb35107fdef2a">&#9670;&nbsp;</a></span>generate()</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="adc499def4e06a4f6174055de25e5745c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc499def4e06a4f6174055de25e5745c">&#9670;&nbsp;</a></span>Size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structle_1_1res_1_1Font.html#adc499def4e06a4f6174055de25e5745c">le::res::Font::Size</a> =  std::variant&lt;<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a554a82edd630ccaad31b53ed35ca1c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554a82edd630ccaad31b53ed35ca1c69">&#9670;&nbsp;</a></span>generate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,7 +135,35 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="structle_1_1gfx_1_1Geometry.html">gfx::Geometry</a> le::res::Font::generate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structle_1_1res_1_1Font_1_1Text.html">Text</a> const &amp;&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; <a class="el" href="structle_1_1res_1_1Font_1_1Layout.html">Layout</a> &gt;&#160;</td>
+          <td class="paramname"><em>layout</em> = <code>std::nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad1b1d1ccf80a1a6f854e501826e330c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1b1d1ccf80a1a6f854e501826e330c">&#9670;&nbsp;</a></span>glyphBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 le::res::Font::glyphBounds </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>text</em> = <code>{}</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -127,6 +182,40 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7a8db5202c1d1e54b7ac3dab1acb44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a8db5202c1d1e54b7ac3dab1acb44c">&#9670;&nbsp;</a></span>layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1res_1_1Font_1_1Layout.html">Layout</a> le::res::Font::layout </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1res_1_1Font.html#adc499def4e06a4f6174055de25e5745c">Size</a>&#160;</td>
+          <td class="paramname"><em>size</em> = <code>1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td>
+          <td class="paramname"><em>nPadY</em> = <code>0.1f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">

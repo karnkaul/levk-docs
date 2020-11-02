@@ -52,18 +52,19 @@ $(function() {
 <div class="title">resource_types.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;glm/vec2.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;variant&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;<a class="el" href="colour_8hpp.html">core/colour.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="flags_8hpp.html">core/flags.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hash_8hpp.html">core/hash.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="result_8hpp.html">core/result.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="span_8hpp.html">core/span.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="token__gen_8hpp.html">core/token_gen.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8hpp.html">core/utils.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="zero_8hpp.html">core/zero.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dumb__json_8hpp.html">dumb_json/dumb_json.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="geometry_8hpp.html">engine/gfx/geometry.hpp</a>&gt;</code><br />
+<code>#include &lt;glm/vec2.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="enum__flags_8hpp.html">kt/enum_flags/enum_flags.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="result_8hpp.html">kt/result/result.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -87,6 +88,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font.html">le::res::Font</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for bitmap font using texture atlas.  <a href="structle_1_1res_1_1Font.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Font_1_1Layout.html">le::res::Font::Layout</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1res_1_1Model.html">le::res::Model</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for model described as a number of meshes, materials, and textures.  <a href="structle_1_1res_1_1Model.html#details">More...</a><br /></td></tr>
@@ -171,32 +174,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0a351398b8df7be34ccbff024a49c5f9"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resource__types_8hpp.html#a0a351398b8df7be34ccbff024a49c5f9">levk_resourcesHotReload</a> = false</td></tr>
-<tr class="separator:a0a351398b8df7be34ccbff024a49c5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea118c0ecccbcffc53315a3880f149f4"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aea118c0ecccbcffc53315a3880f149f4">le::levk_resourcesHotReload</a> = false</td></tr>
+<tr class="separator:aea118c0ecccbcffc53315a3880f149f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0a351398b8df7be34ccbff024a49c5f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a351398b8df7be34ccbff024a49c5f9">&#9670;&nbsp;</a></span>levk_resourcesHotReload</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool levk_resourcesHotReload = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

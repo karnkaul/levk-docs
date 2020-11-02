@@ -87,8 +87,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9f83b78c3acd1c090de8cd05eb1c74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a887c840a6840706bec279d7b491f29d7"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gfx_1_1render_1_1Driver.html#a887c840a6840706bec279d7b491f29d7">screenToN</a> (glm::vec2 const &amp;screenXY) const</td></tr>
 <tr class="separator:a887c840a6840706bec279d7b491f29d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c550811e6a67e38f99c026b4798ab2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1gfx.html#a5d68b2574d46386f94a91e2ffadd5479">ScreenRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gfx_1_1render_1_1Driver.html#a34c550811e6a67e38f99c026b4798ab2">clampToView</a> (glm::vec2 const &amp;screenXY, glm::vec2 const &amp;nViewport, glm::vec2 const &amp;padding={}) const</td></tr>
-<tr class="separator:a34c550811e6a67e38f99c026b4798ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af591a9d192493a23ce4309ba9f5d7cd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1gfx.html#a5d68b2574d46386f94a91e2ffadd5479">ScreenRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gfx_1_1render_1_1Driver.html#af591a9d192493a23ce4309ba9f5d7cd9">clampToView</a> (glm::vec2 const &amp;screenXY, glm::vec2 const &amp;nRect, glm::vec2 const &amp;padding={}) const</td></tr>
+<tr class="separator:af591a9d192493a23ce4309ba9f5d7cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a346f0b9f78c18fe9e9c8500d2772d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gfx_1_1render_1_1Driver.html#a20a346f0b9f78c18fe9e9c8500d2772d">fill</a> (<a class="el" href="structle_1_1gfx_1_1render_1_1Driver_1_1View.html">View</a> &amp;out_view, <a class="el" href="structle_1_1gfx_1_1Viewport.html">Viewport</a> const &amp;viewport, <a class="el" href="structle_1_1gfx_1_1Camera.html">Camera</a> const &amp;camera, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> orthoDepth=2.0f) const</td></tr>
+<tr class="separator:a20a346f0b9f78c18fe9e9c8500d2772d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -161,8 +163,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a34c550811e6a67e38f99c026b4798ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34c550811e6a67e38f99c026b4798ab2">&#9670;&nbsp;</a></span>clampToView()</h2>
+<a id="af591a9d192493a23ce4309ba9f5d7cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af591a9d192493a23ce4309ba9f5d7cd9">&#9670;&nbsp;</a></span>clampToView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,13 +179,53 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">glm::vec2 const &amp;&#160;</td>
-          <td class="paramname"><em>nViewport</em>, </td>
+          <td class="paramname"><em>nRect</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">glm::vec2 const &amp;&#160;</td>
           <td class="paramname"><em>padding</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20a346f0b9f78c18fe9e9c8500d2772d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a346f0b9f78c18fe9e9c8500d2772d">&#9670;&nbsp;</a></span>fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::gfx::render::Driver::fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1gfx_1_1render_1_1Driver_1_1View.html">View</a> &amp;&#160;</td>
+          <td class="paramname"><em>out_view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1gfx_1_1Viewport.html">Viewport</a> const &amp;&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1gfx_1_1Camera.html">Camera</a> const &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td>
+          <td class="paramname"><em>orthoDepth</em> = <code>2.0f</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

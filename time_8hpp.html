@@ -52,8 +52,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fixed_8hpp.html">core/fixed.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -73,18 +73,36 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab3073fcdc8d8d9c41c6f2d678b35863e"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:ab3073fcdc8d8d9c41c6f2d678b35863e"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#ab3073fcdc8d8d9c41c6f2d678b35863e">le::operator+</a> (TimeSpan&lt; Duration, Clock &gt; const &amp;lhs, TimeSpan&lt; Duration, Clock &gt; const &amp;rhs) noexcept</td></tr>
-<tr class="separator:ab3073fcdc8d8d9c41c6f2d678b35863e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fc58c1ef33ab0c9359e674d6291603"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:af6fc58c1ef33ab0c9359e674d6291603"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#af6fc58c1ef33ab0c9359e674d6291603">le::operator-</a> (TimeSpan&lt; Duration, Clock &gt; const &amp;lhs, TimeSpan&lt; Duration, Clock &gt; const &amp;rhs) noexcept</td></tr>
-<tr class="separator:af6fc58c1ef33ab0c9359e674d6291603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59f62b1a6378aba0041de991006509da"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a59f62b1a6378aba0041de991006509da"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a59f62b1a6378aba0041de991006509da">le::operator*</a> (TimeSpan&lt; Duration, Clock &gt; const &amp;lhs, TimeSpan&lt; Duration, Clock &gt; const &amp;rhs) noexcept</td></tr>
-<tr class="separator:a59f62b1a6378aba0041de991006509da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a5e5f04bb30d68b27a9798dac91c16"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:aa5a5e5f04bb30d68b27a9798dac91c16"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#aa5a5e5f04bb30d68b27a9798dac91c16">le::operator/</a> (TimeSpan&lt; Duration, Clock &gt; const &amp;lhs, TimeSpan&lt; Duration, Clock &gt; const &amp;rhs) noexcept</td></tr>
-<tr class="separator:aa5a5e5f04bb30d68b27a9798dac91c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ae3caeb0fbdf7a0d2477ae82db6e82"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a22ae3caeb0fbdf7a0d2477ae82db6e82"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a22ae3caeb0fbdf7a0d2477ae82db6e82">le::operator==</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a22ae3caeb0fbdf7a0d2477ae82db6e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e44408257786e3d961c90e8581e9f87"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a2e44408257786e3d961c90e8581e9f87"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a2e44408257786e3d961c90e8581e9f87">le::operator!=</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a2e44408257786e3d961c90e8581e9f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230d4428e2468c9a1b3630aae34f33e5"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a230d4428e2468c9a1b3630aae34f33e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a230d4428e2468c9a1b3630aae34f33e5">le::operator&lt;</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a230d4428e2468c9a1b3630aae34f33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3f9758c8db8269ea774203fb1b10fa"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a7b3f9758c8db8269ea774203fb1b10fa"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a7b3f9758c8db8269ea774203fb1b10fa">le::operator&lt;=</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a7b3f9758c8db8269ea774203fb1b10fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1cf84158a9e917ba4ea8c35d956c45"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a3e1cf84158a9e917ba4ea8c35d956c45"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a3e1cf84158a9e917ba4ea8c35d956c45">le::operator&gt;</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a3e1cf84158a9e917ba4ea8c35d956c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa3f3f4d73acf86ca26df0eea30721d"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a3fa3f3f4d73acf86ca26df0eea30721d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a3fa3f3f4d73acf86ca26df0eea30721d">le::operator&gt;=</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a3fa3f3f4d73acf86ca26df0eea30721d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0338dfa6dfc77e5c607fb10fcd1288b0"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a0338dfa6dfc77e5c607fb10fcd1288b0"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a0338dfa6dfc77e5c607fb10fcd1288b0">le::operator+</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a0338dfa6dfc77e5c607fb10fcd1288b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c05ec1d90443022672210e3d4415c2d"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a8c05ec1d90443022672210e3d4415c2d"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a8c05ec1d90443022672210e3d4415c2d">le::operator-</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a8c05ec1d90443022672210e3d4415c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065c5bcbb75f022ed449abbdf15a5fc1"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a065c5bcbb75f022ed449abbdf15a5fc1"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a065c5bcbb75f022ed449abbdf15a5fc1">le::operator*</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a065c5bcbb75f022ed449abbdf15a5fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0108a9f88008ab05eaf50c2367bae3b6"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
+<tr class="memitem:a0108a9f88008ab05eaf50c2367bae3b6"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a0108a9f88008ab05eaf50c2367bae3b6">le::operator/</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
+<tr class="separator:a0108a9f88008ab05eaf50c2367bae3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
