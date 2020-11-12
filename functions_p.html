@@ -63,8 +63,13 @@ $(function() {
 <li>path()
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#afc3e0f9f43303afdc11c4002567e988a">le::io::FileMonitor</a>
 </li>
+<li>paused()
+: <a class="el" href="classle_1_1graphics_1_1Swapchain.html#a65ae327ceda9100b99f597458680e719">le::graphics::Swapchain</a>
+</li>
 <li>payload
-: <a class="el" href="structle_1_1TZero.html#a77e54a3e2f95e0a01335410511ee7943">le::TZero&lt; T, Zero &gt;</a>
+: <a class="el" href="structle_1_1Asset.html#aaf7bbf80c5694c4c55921cb074cd932c">le::Asset&lt; T &gt;</a>
+, <a class="el" href="structle_1_1TZero.html#a77e54a3e2f95e0a01335410511ee7943">le::TZero&lt; T, Zero &gt;</a>
+, <a class="el" href="structle_1_1window_1_1Event.html#a08aa75de9fa25b53d933fe0777c51fb6">le::window::Event</a>
 </li>
 <li>pCustomCam
 : <a class="el" href="structle_1_1GameScene_1_1Desc.html#ae0d1bb6c4032f2366784d4b59d06d2e6">le::GameScene::Desc</a>
@@ -74,6 +79,15 @@ $(function() {
 </li>
 <li>perspective()
 : <a class="el" href="structle_1_1gfx_1_1Camera.html#a9fc0c4aa8abdf1770e793710664daac7">le::gfx::Camera</a>
+</li>
+<li>physicalDevice
+: <a class="el" href="structle_1_1graphics_1_1AvailableDevice.html#a54c3b2484b9d1e7a948366a3f4d4416e">le::graphics::AvailableDevice</a>
+</li>
+<li>pickDevice
+: <a class="el" href="structle_1_1graphics_1_1Device_1_1CreateInfo.html#a7c4cb436ac50fa02e7ef8e224af07e11">le::graphics::Device::CreateInfo</a>
+</li>
+<li>picked
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a54d238b2bfb4ed531e97c5f7f68bafd2">le::graphics::Device</a>
 </li>
 <li>pilfer()
 : <a class="el" href="classle_1_1Tree.html#a423302e4d815c17ab4c51f618358363d">le::Tree&lt; T &gt;</a>
@@ -91,11 +105,19 @@ $(function() {
 <li>pitch
 : <a class="el" href="structle_1_1FreeCam_1_1State.html#ae43790ff26356e7bfc69e8c337cbf83b">le::FreeCam::State</a>
 </li>
+<li>pMap
+: <a class="el" href="structle_1_1graphics_1_1Buffer.html#ad30aee566092f58cd1355d48fac57167">le::graphics::Buffer</a>
+</li>
+<li>pointer
+: <a class="el" href="structle_1_1TTokenGen_1_1const__iterator.html#a02261b6dae7fe8ba977ec5ca0fff5335">le::TTokenGen&lt; T, Spec &gt;::const_iterator</a>
+, <a class="el" href="structle_1_1TTokenGen_1_1iterator.html#ac636aad412536482b54f598423b6ab04">le::TTokenGen&lt; T, Spec &gt;::iterator</a>
+</li>
 <li>points
 : <a class="el" href="structle_1_1Stopwatch_1_1Stamp.html#a24ea20ccc64886b3b720781bca7ee360">le::Stopwatch&lt; Tag &gt;::Stamp</a>
 </li>
 <li>pollEvents()
-: <a class="el" href="classle_1_1Window.html#a22336d38b0a554c287acb8e9e39d7eb1">le::Window</a>
+: <a class="el" href="classle_1_1window_1_1Instance.html#ae08dbf9a1c3e9c476207854915998b6f">le::window::Instance&lt; T &gt;</a>
+, <a class="el" href="classle_1_1Window.html#a22336d38b0a554c287acb8e9e39d7eb1">le::Window</a>
 </li>
 <li>Polygon
 : <a class="el" href="structle_1_1gfx_1_1Pipeline.html#a4cfb8f350dba7cbe741e372f14e1901c">le::gfx::Pipeline</a>
@@ -103,8 +125,13 @@ $(function() {
 <li>polygonMode
 : <a class="el" href="structle_1_1gfx_1_1Pipeline.html#a3a2c286fd572d08a0bb199d3ca0ad216">le::gfx::Pipeline</a>
 </li>
+<li>pool
+: <a class="el" href="structle_1_1graphics_1_1CommandBuffer.html#a9202e111cbedb1d8664dc33678f189a5">le::graphics::CommandBuffer</a>
+, <a class="el" href="classle_1_1graphics_1_1Transfer.html#a1f9b5e7fc949945d7ce4963759836047">le::graphics::Transfer</a>
+</li>
 <li>pop()
 : <a class="el" href="classkt_1_1async__queue.html#a0341ecadbb99a83cd980d3eb1266f4dd">kt::async_queue&lt; T, Mutex &gt;</a>
+, <a class="el" href="structle_1_1window_1_1EventQueue.html#acbc71a98c0bef202ceaf0530b1041453">le::window::EventQueue</a>
 </li>
 <li>pos
 : <a class="el" href="structle_1_1res_1_1Font_1_1Text.html#aaba81349e30e914925f456550a6c6957">le::res::Font::Text</a>
@@ -127,14 +154,24 @@ $(function() {
 <li>preloaded
 : <a class="el" href="structle_1_1res_1_1Model_1_1CreateInfo.html#a8edb69bcc4cc4fbb6b99201391bf2020">le::res::Model::CreateInfo</a>
 </li>
-<li>presentMode()
-: <a class="el" href="classle_1_1Window.html#ad7226e5bf6a696b617f34017b4c9f586">le::Window</a>
+<li>present
+: <a class="el" href="classle_1_1graphics_1_1Device.html#aa75d138d824e080be5c95cf1f816c65a">le::graphics::Device</a>
+, <a class="el" href="classle_1_1graphics_1_1Swapchain.html#aa9a7a4f09bc9d35758705549fcb74ee9">le::graphics::Swapchain</a>
+</li>
+<li>presentMode
+: <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1Metadata.html#a9344ef3f8af099570956184cad682a6f">le::graphics::Swapchain::Metadata</a>
+, <a class="el" href="classle_1_1Window.html#ad7226e5bf6a696b617f34017b4c9f586">le::Window</a>
 </li>
 <li>presentModes
-: <a class="el" href="structle_1_1Window_1_1Info.html#a895836529ddd73418da97693d050102a">le::Window::Info</a>
+: <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1Options.html#a8cf7474325609a76eb29620fb09a0e11">le::graphics::Swapchain::Options</a>
+, <a class="el" href="structle_1_1Window_1_1Info.html#a895836529ddd73418da97693d050102a">le::Window::Info</a>
+</li>
+<li>presentReady
+: <a class="el" href="structle_1_1graphics_1_1NBuffer_1_1Sync.html#a69ab27631360c9ebc2e9bc190e9f42a4">le::graphics::NBuffer&lt; N &gt;::Sync</a>
 </li>
 <li>pressed()
 : <a class="el" href="structle_1_1input_1_1Gamepad.html#a863b748cef1d80864920a919b75375d4">le::input::Gamepad</a>
+, <a class="el" href="structle_1_1window_1_1Gamepad.html#a0c57c5e4b5ae971c7f5668cc15044e5d">le::window::Gamepad</a>
 </li>
 <li>pretty
 : <a class="el" href="structdj_1_1serial__opts.html#a76b91b38e5c32f2c4d20e12014726d33">dj::serial_opts</a>
@@ -143,17 +180,21 @@ $(function() {
 : <a class="el" href="classle_1_1io_1_1PathTree.html#abff2aa6dae7c4fc0c107ebb471ba2eb6">le::io::PathTree&lt; T &gt;</a>
 , <a class="el" href="structle_1_1res_1_1ResourceList.html#a5cf57a78296d94461cf9453b7063b912">le::res::ResourceList</a>
 </li>
+<li>Promise
+: <a class="el" href="classle_1_1graphics_1_1Transfer.html#ad838401d45bb24ba542f86cb1984c994">le::graphics::Transfer</a>
+</li>
 <li>Prop()
-: <a class="el" href="structle_1_1Prop.html#ae4b44d949833dd3b74ed43033a2be71e">le::Prop</a>
+: <a class="el" href="structle_1_1Prop.html#a25a134756a1833f1982159216f28dbfe">le::Prop</a>
 </li>
 <li>prop
 : <a class="el" href="structle_1_1TProp.html#af578817950383ab0dda20df1e65b0459">le::TProp&lt; T &gt;</a>
 </li>
+<li>properties
+: <a class="el" href="structle_1_1graphics_1_1AvailableDevice.html#a176d4d10f7abb9db333c8cbb0fdf668a">le::graphics::AvailableDevice</a>
+, <a class="el" href="structle_1_1graphics_1_1Buffer_1_1CreateInfo.html#a08ab8b7d37596074c4eb44d1455ab2ec">le::graphics::Buffer::CreateInfo</a>
+</li>
 <li>pTarget
 : <a class="el" href="structle_1_1SpringArm.html#af006fa2b8160d2accbcc4f2f8c47cc22">le::SpringArm</a>
-</li>
-<li>ptr()
-: <a class="el" href="classle_1_1StaticAny.html#a4d76559df2fa849563a50628d949d0eb">le::StaticAny&lt; N &gt;</a>
 </li>
 <li>pTransform
 : <a class="el" href="structle_1_1Prop.html#a51a2a85b303f54a41729dd8ead288122">le::Prop</a>
@@ -162,8 +203,8 @@ $(function() {
 : <a class="el" href="classle_1_1Tree.html#af725d9eee71d3e3a66b6c0380d11ea13">le::Tree&lt; T &gt;</a>
 </li>
 <li>push()
-: <a class="el" href="classkt_1_1async__queue.html#ac8a8b434d7cd518d4c2ce741c67a6dea">kt::async_queue&lt; T, Mutex &gt;</a>
-, <a class="el" href="classle_1_1TTokenGen.html#ad93322c5c447d963172687a3520e0985">le::TTokenGen&lt; T, C, Args &gt;</a>
+: <a class="el" href="classkt_1_1async__queue.html#a5f35bd4cbbd3c0e8bb53349814af18e5">kt::async_queue&lt; T, Mutex &gt;</a>
+, <a class="el" href="classle_1_1TTokenGen.html#a7802748bc319324087c1bd282c65ff73">le::TTokenGen&lt; T, Spec &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

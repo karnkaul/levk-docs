@@ -53,9 +53,6 @@ $(function() {
 <li>editorWindow()
 : <a class="el" href="classle_1_1Window.html#a4c550f33d2a387f978f9b4b64d51cc91">le::Window</a>
 </li>
-<li>elapsed()
-: <a class="el" href="structle_1_1TimeSpan.html#a6ed2d237ee3afa99ef3c6d220cbe44a1">le::TimeSpan&lt; Duration, Clock &gt;</a>
-</li>
 <li>emplace()
 : <a class="el" href="classle_1_1io_1_1PathTree.html#a887985e1149bd8e8f4d8279c405f655e">le::io::PathTree&lt; T &gt;</a>
 , <a class="el" href="classle_1_1TMapStore.html#a666105149a388acc8d840621b6c8b2b6">le::TMapStore&lt; MapContainer &gt;</a>
@@ -66,7 +63,7 @@ $(function() {
 , <a class="el" href="structle_1_1res_1_1ResourceList.html#a23b9ee5d0325576ae1747f1ae9fae7d2">le::res::ResourceList</a>
 , <a class="el" href="structle_1_1Span.html#a87af5d359f52fc5523f723a9c60d9dab">le::Span&lt; T &gt;</a>
 , <a class="el" href="classle_1_1StaticAny.html#ad66e0f336cf7ee0290c098cbec7e5ded">le::StaticAny&lt; N &gt;</a>
-, <a class="el" href="classle_1_1TTokenGen.html#a1307026c15b14d9691684e1b3fd42521">le::TTokenGen&lt; T, C, Args &gt;</a>
+, <a class="el" href="classle_1_1TTokenGen.html#a4f5e9e3ed0e3c0845017091a089c8473">le::TTokenGen&lt; T, Spec &gt;</a>
 </li>
 <li>enable()
 : <a class="el" href="classle_1_1ecs_1_1Registry.html#a5febca2a410f2766eb46557fee90ef35">le::ecs::Registry</a>
@@ -75,8 +72,13 @@ $(function() {
 : <a class="el" href="classle_1_1ecs_1_1Registry.html#ae738488edec00ee25526a7456856df81">le::ecs::Registry</a>
 </li>
 <li>end()
-: <a class="el" href="structle_1_1Span.html#af7bb2d252f4236f5f2c1a9de525ef3e1">le::Span&lt; T &gt;</a>
-, <a class="el" href="structle_1_1Stopwatch_1_1Stamp.html#a5112eb51075f577bea57006dc9ee12ac">le::Stopwatch&lt; Tag &gt;::Stamp</a>
+: <a class="el" href="structle_1_1graphics_1_1CommandBuffer.html#a841c428b546b78ce139ad28e2cef4b71">le::graphics::CommandBuffer</a>
+, <a class="el" href="structle_1_1Span.html#af7bb2d252f4236f5f2c1a9de525ef3e1">le::Span&lt; T &gt;</a>
+, <a class="el" href="structle_1_1Stopwatch_1_1Stamp.html#a9d414c147701005c09f9a7b8a34953df">le::Stopwatch&lt; Tag &gt;::Stamp</a>
+, <a class="el" href="classle_1_1TTokenGen.html#aba95df36ebbc6ef4244833b16e02dd7e">le::TTokenGen&lt; T, Spec &gt;</a>
+</li>
+<li>endFrame()
+: <a class="el" href="classle_1_1graphics_1_1RenderContext.html#aa96ad7c009a6b1d6cbb30cfc14829838">le::graphics::RenderContext</a>
 </li>
 <li>eNONE
 : <a class="el" href="structle_1_1input_1_1Mods.html#ab7b4abbb966b9be7bb736d4bedd85961a96621fba4e7ac7d1448cc04cb73e638d">le::input::Mods</a>
@@ -90,19 +92,24 @@ $(function() {
 </li>
 <li>entries
 : <a class="el" href="structkt_1_1args__parser.html#a8aa1dad537f1e6f9c11d2abbc41129ee">kt::args_parser&lt; Cont, Args &gt;</a>
+, <a class="el" href="structle_1_1graphics_1_1Transfer_1_1Batch.html#a3d9e45a8896f057dcc8e23da9954194a">le::graphics::Transfer::Batch</a>
 , <a class="el" href="structle_1_1io_1_1PathTree_1_1Node.html#a203745f6fc2c91adca554cb3d3fb43e4">le::io::PathTree&lt; T &gt;::Node</a>
 </li>
 <li>Entry
-: <a class="el" href="classle_1_1io_1_1PathTree.html#a3a87ce05f0ddaf3d8c4f1dbabacd6955">le::io::PathTree&lt; T &gt;</a>
+: <a class="el" href="structle_1_1graphics_1_1Transfer_1_1Batch.html#a84c68e1049ea6a559ae3aaff35495be4">le::graphics::Transfer::Batch</a>
+, <a class="el" href="classle_1_1io_1_1PathTree.html#a3a87ce05f0ddaf3d8c4f1dbabacd6955">le::io::PathTree&lt; T &gt;</a>
 </li>
 <li>enum_flags()
-: <a class="el" href="structkt_1_1enum__flags.html#a2e46ab3320b7b7fa1d623ed4b9b9d651">kt::enum_flags&lt; Enum, N &gt;</a>
+: <a class="el" href="structkt_1_1enum__flags.html#ab22f0942a3a9d798a94e40a6ba96a1f0">kt::enum_flags&lt; Enum, N &gt;</a>
 </li>
 <li>eNUM_LOCK
 : <a class="el" href="structle_1_1input_1_1Mods.html#ab7b4abbb966b9be7bb736d4bedd85961a9f00bf3360b0c63e2a093f931f4cb374">le::input::Mods</a>
 </li>
 <li>erase()
 : <a class="el" href="classle_1_1Stopwatch.html#ad6b2a19553fedce75a494080faf91e07">le::Stopwatch&lt; Tag &gt;</a>
+</li>
+<li>ErasedRef()
+: <a class="el" href="structle_1_1ErasedRef.html#a4d4229a9568f606916564db015bbe777">le::ErasedRef</a>
 </li>
 <li>err
 : <a class="el" href="structkt_1_1result.html#a51ed0bcf54a854fe638a3a7a2c7c9060">kt::result&lt; T, RD &gt;</a>
@@ -127,8 +134,16 @@ $(function() {
 : <a class="el" href="classle_1_1ecs_1_1Registry.html#a30a45ce380b4c8937f0dc3a2c3731705">le::ecs::Registry</a>
 , <a class="el" href="classle_1_1Window.html#ad24386a51c65d2184cf6c5cee8bec5a6">le::Window</a>
 </li>
+<li>extensions
+: <a class="el" href="structle_1_1graphics_1_1Instance_1_1CreateInfo.html#ad5c55a80eb14924c33da5917a85cb523">le::graphics::Instance::CreateInfo</a>
+, <a class="el" href="classle_1_1graphics_1_1Instance.html#ac3b5e45ce0947edb34ad45ea90ecd72c">le::graphics::Instance</a>
+</li>
 <li>extent
-: <a class="el" href="structle_1_1Span.html#a3cdd81f0872488fb3551314fa377f43b">le::Span&lt; T &gt;</a>
+: <a class="el" href="structle_1_1graphics_1_1Image.html#a8d1a4f568f3786752d99d67b025f1938">le::graphics::Image</a>
+, <a class="el" href="structle_1_1graphics_1_1RenderImage.html#afccbf7f7b4303c5350b8c630fee8aff4">le::graphics::RenderImage</a>
+, <a class="el" href="structle_1_1graphics_1_1RenderTarget.html#a2f52e2ba6f139393be330075703c0175">le::graphics::RenderTarget</a>
+, <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1Storage.html#a5282d61fee3063070fe67c01e56c0001">le::graphics::Swapchain::Storage</a>
+, <a class="el" href="structle_1_1Span.html#a3cdd81f0872488fb3551314fa377f43b">le::Span&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

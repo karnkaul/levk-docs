@@ -43,7 +43,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">le::detail Namespace Reference</div>  </div>
 </div><!--header-->
@@ -51,11 +53,149 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>Base</b></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>concrete_map</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>erased_map</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>SingletonBase</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>TGStorage_Base</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>TokenGenBase</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a24b714743515cc432d2cbd3455c17e68"><td class="memTemplParams" colspan="2">template&lt;typename Key &gt; </td></tr>
+<tr class="memitem:a24b714743515cc432d2cbd3455c17e68"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a24b714743515cc432d2cbd3455c17e68">erased_map_ptr</a> = std::unique_ptr&lt; erased_map&lt; Key &gt; &gt;</td></tr>
+<tr class="separator:a24b714743515cc432d2cbd3455c17e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a21760a07a1762f866e66a8969e4a6c50"><td class="memTemplParams" colspan="2">template&lt;bool Front, typename TGS , typename T &gt; </td></tr>
+<tr class="memitem:a21760a07a1762f866e66a8969e4a6c50"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a21760a07a1762f866e66a8969e4a6c50">tgsPush</a> (typename TGS::container_type &amp;out_tgs, <a class="el" href="structle_1_1Token.html#a0811462a3f9a12e4ab51a57e1eb46e70">Token::id_type</a> id, T &amp;&amp;t)</td></tr>
+<tr class="separator:a21760a07a1762f866e66a8969e4a6c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ffe5060b236694bf6953f828e453a1"><td class="memTemplParams" colspan="2">template&lt;typename Tag , typename T , typename TGSC &gt; </td></tr>
+<tr class="memitem:ae7ffe5060b236694bf6953f828e453a1"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#ae7ffe5060b236694bf6953f828e453a1">tgsFind</a> (TGSC &amp;&amp;container, <a class="el" href="structle_1_1Token.html#a0811462a3f9a12e4ab51a57e1eb46e70">Token::id_type</a> id)</td></tr>
+<tr class="separator:ae7ffe5060b236694bf6953f828e453a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dac516bc6ae374ad3ba97ae5e7e49f"><td class="memTemplParams" colspan="2">template&lt;typename TGS &gt; </td></tr>
+<tr class="memitem:ab0dac516bc6ae374ad3ba97ae5e7e49f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#ab0dac516bc6ae374ad3ba97ae5e7e49f">tgsPop</a> (typename TGS::container_type &amp;out_tgs, <a class="el" href="structle_1_1Token.html#a0811462a3f9a12e4ab51a57e1eb46e70">Token::id_type</a> id)</td></tr>
+<tr class="separator:ab0dac516bc6ae374ad3ba97ae5e7e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a24b714743515cc432d2cbd3455c17e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b714743515cc432d2cbd3455c17e68">&#9670;&nbsp;</a></span>erased_map_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Key &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacele_1_1detail.html#a24b714743515cc432d2cbd3455c17e68">le::detail::erased_map_ptr</a> = typedef std::unique_ptr&lt;erased_map&lt;Key&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae7ffe5060b236694bf6953f828e453a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ffe5060b236694bf6953f828e453a1">&#9670;&nbsp;</a></span>tgsFind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tag , typename T , typename TGSC &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T* le::detail::tgsFind </td>
+          <td>(</td>
+          <td class="paramtype">TGSC &amp;&amp;&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1Token.html#a0811462a3f9a12e4ab51a57e1eb46e70">Token::id_type</a>&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0dac516bc6ae374ad3ba97ae5e7e49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0dac516bc6ae374ad3ba97ae5e7e49f">&#9670;&nbsp;</a></span>tgsPop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TGS &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::detail::tgsPop </td>
+          <td>(</td>
+          <td class="paramtype">typename TGS::container_type &amp;&#160;</td>
+          <td class="paramname"><em>out_tgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1Token.html#a0811462a3f9a12e4ab51a57e1eb46e70">Token::id_type</a>&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21760a07a1762f866e66a8969e4a6c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21760a07a1762f866e66a8969e4a6c50">&#9670;&nbsp;</a></span>tgsPush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool Front, typename TGS , typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::detail::tgsPush </td>
+          <td>(</td>
+          <td class="paramtype">typename TGS::container_type &amp;&#160;</td>
+          <td class="paramname"><em>out_tgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1Token.html#a0811462a3f9a12e4ab51a57e1eb46e70">Token::id_type</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

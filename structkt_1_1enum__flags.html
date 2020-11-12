@@ -48,6 +48,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structkt_1_1enum__flags-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">kt::enum_flags&lt; Enum, N &gt; Struct Template Reference</div>  </div>
@@ -63,6 +64,10 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:ac2e7319b1b3fdf80149b37b83deeca79"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#ac2e7319b1b3fdf80149b37b83deeca79">type</a> = Enum</td></tr>
 <tr class="separator:ac2e7319b1b3fdf80149b37b83deeca79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b610e242e93fb91c638941d0426c2ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#a1b610e242e93fb91c638941d0426c2ef">storage</a> = std::bitset&lt; N &gt;</td></tr>
+<tr class="separator:a1b610e242e93fb91c638941d0426c2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577b1950441d05312e80744aac6ef90c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#a577b1950441d05312e80744aac6ef90c">reference</a> = typename storage::reference</td></tr>
+<tr class="separator:a577b1950441d05312e80744aac6ef90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -107,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a696880a3332d93fcc14fe6a934ddde02"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#a696880a3332d93fcc14fe6a934ddde02">count</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; flags=<a class="el" href="structkt_1_1enum__flags.html#add4f0a33d2917d8d09bedecd822ff534">inverse</a>()) const noexcept</td></tr>
 <tr class="memdesc:a696880a3332d93fcc14fe6a934ddde02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain count of set flags.  <a href="structkt_1_1enum__flags.html#a696880a3332d93fcc14fe6a934ddde02">More...</a><br /></td></tr>
 <tr class="separator:a696880a3332d93fcc14fe6a934ddde02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a2a0354c49e12632f0ee9e8e529c90"><td class="memItemLeft" align="right" valign="top">constexpr std::bitset&lt; N &gt;::reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#a04a2a0354c49e12632f0ee9e8e529c90">operator[]</a> (Enum flag) noexcept</td></tr>
-<tr class="memdesc:a04a2a0354c49e12632f0ee9e8e529c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a reference to the flag.  <a href="structkt_1_1enum__flags.html#a04a2a0354c49e12632f0ee9e8e529c90">More...</a><br /></td></tr>
-<tr class="separator:a04a2a0354c49e12632f0ee9e8e529c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd06b3ed3529cb1cdf9eab911ee8251b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structkt_1_1enum__flags.html#a577b1950441d05312e80744aac6ef90c">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#afd06b3ed3529cb1cdf9eab911ee8251b">operator[]</a> (Enum flag) noexcept</td></tr>
+<tr class="memdesc:afd06b3ed3529cb1cdf9eab911ee8251b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a reference to the flag.  <a href="structkt_1_1enum__flags.html#afd06b3ed3529cb1cdf9eab911ee8251b">More...</a><br /></td></tr>
+<tr class="separator:afd06b3ed3529cb1cdf9eab911ee8251b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afadcd7c4549cab38dc65fb5b0febd64d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#afadcd7c4549cab38dc65fb5b0febd64d">operator|=</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; flags) noexcept</td></tr>
 <tr class="memdesc:afadcd7c4549cab38dc65fb5b0febd64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bitwise <code>OR</code> / add flags.  <a href="structkt_1_1enum__flags.html#afadcd7c4549cab38dc65fb5b0febd64d">More...</a><br /></td></tr>
 <tr class="separator:afadcd7c4549cab38dc65fb5b0febd64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,13 +141,20 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a75f88a33973803cd7dc266fd90f4c3b4"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#a75f88a33973803cd7dc266fd90f4c3b4">bits</a></td></tr>
-<tr class="separator:a75f88a33973803cd7dc266fd90f4c3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec53eb4e10a63d762f612e07c2e5637d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkt_1_1enum__flags.html#a1b610e242e93fb91c638941d0426c2ef">storage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#aec53eb4e10a63d762f612e07c2e5637d">bits</a></td></tr>
+<tr class="separator:aec53eb4e10a63d762f612e07c2e5637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1d56e85eeb72d1545faa9538fe253b13"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#a1d56e85eeb72d1545faa9538fe253b13">size</a> = N</td></tr>
 <tr class="separator:a1d56e85eeb72d1545faa9538fe253b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ad2d3bd133697bf761b86fd143100c520"><td class="memItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#ad2d3bd133697bf761b86fd143100c520">operator==</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; lhs, <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; rhs) noexcept</td></tr>
+<tr class="separator:ad2d3bd133697bf761b86fd143100c520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5460754b9f20e201b017a5041341708"><td class="memItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1enum__flags.html#ac5460754b9f20e201b017a5041341708">operator!=</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; lhs, <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; rhs) noexcept</td></tr>
+<tr class="separator:ac5460754b9f20e201b017a5041341708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Enum, std::size_t N = (std::size_t)Enum::eCOUNT_&gt;<br />
@@ -157,6 +169,38 @@ struct kt::enum_flags&lt; Enum, N &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a577b1950441d05312e80744aac6ef90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577b1950441d05312e80744aac6ef90c">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; Enum, N &gt;::<a class="el" href="structkt_1_1enum__flags.html#a577b1950441d05312e80744aac6ef90c">reference</a> =  typename storage::reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b610e242e93fb91c638941d0426c2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b610e242e93fb91c638941d0426c2ef">&#9670;&nbsp;</a></span>storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; Enum, N &gt;::<a class="el" href="structkt_1_1enum__flags.html#a1b610e242e93fb91c638941d0426c2ef">storage</a> =  std::bitset&lt;N&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac2e7319b1b3fdf80149b37b83deeca79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2e7319b1b3fdf80149b37b83deeca79">&#9670;&nbsp;</a></span>type</h2>
 
@@ -495,8 +539,8 @@ template&lt;typename Enum , std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a04a2a0354c49e12632f0ee9e8e529c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04a2a0354c49e12632f0ee9e8e529c90">&#9670;&nbsp;</a></span>operator[]()</h2>
+<a id="afd06b3ed3529cb1cdf9eab911ee8251b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd06b3ed3529cb1cdf9eab911ee8251b">&#9670;&nbsp;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,7 +551,7 @@ template&lt;typename Enum , std::size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::bitset&lt; N &gt;::reference <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; Enum, N &gt;::operator[] </td>
+          <td class="memname">constexpr <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;::<a class="el" href="structkt_1_1enum__flags.html#a577b1950441d05312e80744aac6ef90c">reference</a> <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; Enum, N &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype">Enum&#160;</td>
           <td class="paramname"><em>flag</em></td><td>)</td>
@@ -819,9 +863,86 @@ template&lt;typename Enum , std::size_t N&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ac5460754b9f20e201b017a5041341708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5460754b9f20e201b017a5041341708">&#9670;&nbsp;</a></span>operator!=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d3bd133697bf761b86fd143100c520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d3bd133697bf761b86fd143100c520">&#9670;&nbsp;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend bool operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a75f88a33973803cd7dc266fd90f4c3b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f88a33973803cd7dc266fd90f4c3b4">&#9670;&nbsp;</a></span>bits</h2>
+<a id="aec53eb4e10a63d762f612e07c2e5637d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec53eb4e10a63d762f612e07c2e5637d">&#9670;&nbsp;</a></span>bits</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,7 +950,7 @@ template&lt;typename Enum , std::size_t N&gt; </div>
 template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::bitset&lt;N&gt; <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; Enum, N &gt;::bits</td>
+          <td class="memname"><a class="el" href="structkt_1_1enum__flags.html#a1b610e242e93fb91c638941d0426c2ef">storage</a> <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; Enum, N &gt;::bits</td>
         </tr>
       </table>
 </div><div class="memdoc">

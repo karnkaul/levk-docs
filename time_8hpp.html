@@ -43,7 +43,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -55,54 +54,48 @@ $(function() {
 <code>#include &lt;<a class="el" href="fixed_8hpp.html">core/fixed.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TimeSpan.html">le::TimeSpan&lt; Duration, Clock &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a time span.  <a href="structle_1_1TimeSpan.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacele_1_1time"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html">le::time</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a91b9aff7aec2c49789f4800530008449"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a91b9aff7aec2c49789f4800530008449">le::Time</a> = TimeSpan&lt; stdch::microseconds &gt;</td></tr>
-<tr class="separator:a91b9aff7aec2c49789f4800530008449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706c934a6a576201c9a38a0a5bb5f5f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a706c934a6a576201c9a38a0a5bb5f5f5">le::time::Clock</a> = stdch::steady_clock</td></tr>
+<tr class="memdesc:a706c934a6a576201c9a38a0a5bb5f5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for clock used for <a class="el" href="namespacele_1_1time.html#aae8bd4e10d494180e464fc176acb3486" title="Obtain the current time Point.">now()</a>  <a href="namespacele_1_1time.html#a706c934a6a576201c9a38a0a5bb5f5f5">More...</a><br /></td></tr>
+<tr class="separator:a706c934a6a576201c9a38a0a5bb5f5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d863df615210d1fc8707f9b452c637"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a49d863df615210d1fc8707f9b452c637">le::time::Point</a> = Clock::time_point</td></tr>
+<tr class="memdesc:a49d863df615210d1fc8707f9b452c637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a time point on Clock.  <a href="namespacele_1_1time.html#a49d863df615210d1fc8707f9b452c637">More...</a><br /></td></tr>
+<tr class="separator:a49d863df615210d1fc8707f9b452c637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f25ad2d724ea7d526e27ec08e72d321"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period &gt; </td></tr>
+<tr class="memitem:a1f25ad2d724ea7d526e27ec08e72d321"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a1f25ad2d724ea7d526e27ec08e72d321">le::time::Duration</a> = stdch::duration&lt; Rep, Period &gt;</td></tr>
+<tr class="memdesc:a1f25ad2d724ea7d526e27ec08e72d321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a duration of time.  <a href="namespacele_1_1time.html#a1f25ad2d724ea7d526e27ec08e72d321">More...</a><br /></td></tr>
+<tr class="separator:a1f25ad2d724ea7d526e27ec08e72d321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e65d34b625e4188f4f7c1f023a02f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">le::Time_s</a> = time::Duration&lt; f32, std::ratio&lt; 1 &gt; &gt;</td></tr>
+<tr class="memdesc:a05e65d34b625e4188f4f7c1f023a02f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for f32 seconds.  <a href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">More...</a><br /></td></tr>
+<tr class="separator:a05e65d34b625e4188f4f7c1f023a02f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be6bd550d2d4d643195576cc0e9b6e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a1be6bd550d2d4d643195576cc0e9b6e9">le::Time_ms</a> = time::Duration&lt; s64, std::milli &gt;</td></tr>
+<tr class="memdesc:a1be6bd550d2d4d643195576cc0e9b6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for s64 milliseconds.  <a href="namespacele.html#a1be6bd550d2d4d643195576cc0e9b6e9">More...</a><br /></td></tr>
+<tr class="separator:a1be6bd550d2d4d643195576cc0e9b6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48263257198660bccabe3559c92e8ba7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a48263257198660bccabe3559c92e8ba7">le::Time_us</a> = time::Duration&lt; s64, std::micro &gt;</td></tr>
+<tr class="memdesc:a48263257198660bccabe3559c92e8ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for s64 microseconds.  <a href="namespacele.html#a48263257198660bccabe3559c92e8ba7">More...</a><br /></td></tr>
+<tr class="separator:a48263257198660bccabe3559c92e8ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a22ae3caeb0fbdf7a0d2477ae82db6e82"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a22ae3caeb0fbdf7a0d2477ae82db6e82"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a22ae3caeb0fbdf7a0d2477ae82db6e82">le::operator==</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a22ae3caeb0fbdf7a0d2477ae82db6e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e44408257786e3d961c90e8581e9f87"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a2e44408257786e3d961c90e8581e9f87"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a2e44408257786e3d961c90e8581e9f87">le::operator!=</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a2e44408257786e3d961c90e8581e9f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a230d4428e2468c9a1b3630aae34f33e5"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a230d4428e2468c9a1b3630aae34f33e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a230d4428e2468c9a1b3630aae34f33e5">le::operator&lt;</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a230d4428e2468c9a1b3630aae34f33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b3f9758c8db8269ea774203fb1b10fa"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a7b3f9758c8db8269ea774203fb1b10fa"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a7b3f9758c8db8269ea774203fb1b10fa">le::operator&lt;=</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a7b3f9758c8db8269ea774203fb1b10fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1cf84158a9e917ba4ea8c35d956c45"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a3e1cf84158a9e917ba4ea8c35d956c45"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a3e1cf84158a9e917ba4ea8c35d956c45">le::operator&gt;</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a3e1cf84158a9e917ba4ea8c35d956c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fa3f3f4d73acf86ca26df0eea30721d"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a3fa3f3f4d73acf86ca26df0eea30721d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a3fa3f3f4d73acf86ca26df0eea30721d">le::operator&gt;=</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a3fa3f3f4d73acf86ca26df0eea30721d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0338dfa6dfc77e5c607fb10fcd1288b0"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a0338dfa6dfc77e5c607fb10fcd1288b0"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a0338dfa6dfc77e5c607fb10fcd1288b0">le::operator+</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a0338dfa6dfc77e5c607fb10fcd1288b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c05ec1d90443022672210e3d4415c2d"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a8c05ec1d90443022672210e3d4415c2d"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a8c05ec1d90443022672210e3d4415c2d">le::operator-</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a8c05ec1d90443022672210e3d4415c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065c5bcbb75f022ed449abbdf15a5fc1"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a065c5bcbb75f022ed449abbdf15a5fc1"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a065c5bcbb75f022ed449abbdf15a5fc1">le::operator*</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a065c5bcbb75f022ed449abbdf15a5fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0108a9f88008ab05eaf50c2367bae3b6"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Clock &gt; </td></tr>
-<tr class="memitem:a0108a9f88008ab05eaf50c2367bae3b6"><td class="memTemplItemLeft" align="right" valign="top">constexpr TimeSpan&lt; Duration, Clock &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a0108a9f88008ab05eaf50c2367bae3b6">le::operator/</a> (TimeSpan&lt; Duration, Clock &gt; lhs, TimeSpan&lt; Duration, Clock &gt; rhs) noexcept</td></tr>
-<tr class="separator:a0108a9f88008ab05eaf50c2367bae3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8bd4e10d494180e464fc176acb3486"><td class="memItemLeft" align="right" valign="top">Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#aae8bd4e10d494180e464fc176acb3486">le::time::now</a> () noexcept</td></tr>
+<tr class="memdesc:aae8bd4e10d494180e464fc176acb3486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the current time Point.  <a href="namespacele_1_1time.html#aae8bd4e10d494180e464fc176acb3486">More...</a><br /></td></tr>
+<tr class="separator:aae8bd4e10d494180e464fc176acb3486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b678305b64af99df594a53a7eb30715"><td class="memTemplParams" colspan="2">template&lt;typename Ret , typename Dur &gt; </td></tr>
+<tr class="memitem:a2b678305b64af99df594a53a7eb30715"><td class="memTemplItemLeft" align="right" valign="top">constexpr Ret&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a2b678305b64af99df594a53a7eb30715">le::time::cast</a> (Dur &amp;&amp;dur) noexcept</td></tr>
+<tr class="memdesc:a2b678305b64af99df594a53a7eb30715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast a Duration to another.  <a href="namespacele_1_1time.html#a2b678305b64af99df594a53a7eb30715">More...</a><br /></td></tr>
+<tr class="separator:a2b678305b64af99df594a53a7eb30715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac825d9be03cb563844e7c56a852c34b1"><td class="memTemplParams" colspan="2">template&lt;typename Ret  = Duration&lt;s64, std::milli&gt;&gt; </td></tr>
+<tr class="memitem:ac825d9be03cb563844e7c56a852c34b1"><td class="memTemplItemLeft" align="right" valign="top">constexpr Ret&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#ac825d9be03cb563844e7c56a852c34b1">le::time::diff</a> (Point const &amp;from, Point const &amp;to=now()) noexcept</td></tr>
+<tr class="memdesc:ac825d9be03cb563844e7c56a852c34b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the difference between two time Point instances as a Duration.  <a href="namespacele_1_1time.html#ac825d9be03cb563844e7c56a852c34b1">More...</a><br /></td></tr>
+<tr class="separator:ac825d9be03cb563844e7c56a852c34b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

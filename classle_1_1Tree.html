@@ -43,6 +43,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -58,6 +59,13 @@ $(function() {
 
 <p><code>#include &lt;tree.hpp&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adc19e0febe4534ac66a3ac300b8009f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Tree.html#adc19e0febe4534ac66a3ac300b8009f1">type</a> = T</td></tr>
+<tr class="separator:adc19e0febe4534ac66a3ac300b8009f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b5b267555d033b1174fa717772a0f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Tree.html#af7b5b267555d033b1174fa717772a0f5">container_type</a> = std::list&lt; <a class="el" href="structle_1_1Ref.html">Ref</a>&lt; <a class="el" href="classle_1_1Tree.html#adc19e0febe4534ac66a3ac300b8009f1">type</a> &gt; &gt;</td></tr>
+<tr class="separator:af7b5b267555d033b1174fa717772a0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afc4d1b4d9742efe402c1f9b15abd5727"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Tree.html#afc4d1b4d9742efe402c1f9b15abd5727">Tree</a> () noexcept</td></tr>
@@ -105,9 +113,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a98084aa0aa7de27078bf2b9c5596e6ba"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="structle_1_1Ref.html">Ref</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Tree.html#a98084aa0aa7de27078bf2b9c5596e6ba">m_children</a></td></tr>
-<tr class="memdesc:a98084aa0aa7de27078bf2b9c5596e6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of child trees.  <a href="classle_1_1Tree.html#a98084aa0aa7de27078bf2b9c5596e6ba">More...</a><br /></td></tr>
-<tr class="separator:a98084aa0aa7de27078bf2b9c5596e6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9b37b4e3916427fa8afe97f98860a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Tree.html#af7b5b267555d033b1174fa717772a0f5">container_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Tree.html#a6f9b37b4e3916427fa8afe97f98860a0">m_children</a></td></tr>
+<tr class="memdesc:a6f9b37b4e3916427fa8afe97f98860a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of child trees.  <a href="classle_1_1Tree.html#a6f9b37b4e3916427fa8afe97f98860a0">More...</a><br /></td></tr>
+<tr class="separator:a6f9b37b4e3916427fa8afe97f98860a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09833d27b2bc08457191309deaca3bbc"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Tree.html#a09833d27b2bc08457191309deaca3bbc">m_pParent</a> = nullptr</td></tr>
 <tr class="memdesc:a09833d27b2bc08457191309deaca3bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to parent.  <a href="classle_1_1Tree.html#a09833d27b2bc08457191309deaca3bbc">More...</a><br /></td></tr>
 <tr class="separator:a09833d27b2bc08457191309deaca3bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,7 +128,40 @@ Protected Attributes</h2></td></tr>
 class le::Tree&lt; T &gt;</h3>
 
 <p>CRTP base class for a self-contained N-tree. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af7b5b267555d033b1174fa717772a0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b5b267555d033b1174fa717772a0f5">&#9670;&nbsp;</a></span>container_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1Tree.html">le::Tree</a>&lt; T &gt;::<a class="el" href="classle_1_1Tree.html#af7b5b267555d033b1174fa717772a0f5">container_type</a> =  std::list&lt;<a class="el" href="structle_1_1Ref.html">Ref</a>&lt;<a class="el" href="classle_1_1Tree.html#adc19e0febe4534ac66a3ac300b8009f1">type</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc19e0febe4534ac66a3ac300b8009f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc19e0febe4534ac66a3ac300b8009f1">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1Tree.html">le::Tree</a>&lt; T &gt;::<a class="el" href="classle_1_1Tree.html#adc19e0febe4534ac66a3ac300b8009f1">type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afc4d1b4d9742efe402c1f9b15abd5727"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc4d1b4d9742efe402c1f9b15abd5727">&#9670;&nbsp;</a></span>Tree() <span class="overload">[1/3]</span></h2>
 
@@ -518,8 +559,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a98084aa0aa7de27078bf2b9c5596e6ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98084aa0aa7de27078bf2b9c5596e6ba">&#9670;&nbsp;</a></span>m_children</h2>
+<a id="a6f9b37b4e3916427fa8afe97f98860a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9b37b4e3916427fa8afe97f98860a0">&#9670;&nbsp;</a></span>m_children</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -530,7 +571,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="structle_1_1Ref.html">Ref</a>&lt;T&gt; &gt; <a class="el" href="classle_1_1Tree.html">le::Tree</a>&lt; T &gt;::m_children</td>
+          <td class="memname"><a class="el" href="classle_1_1Tree.html#af7b5b267555d033b1174fa717772a0f5">container_type</a> <a class="el" href="classle_1_1Tree.html">le::Tree</a>&lt; T &gt;::m_children</td>
         </tr>
       </table>
   </td>

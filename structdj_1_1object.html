@@ -76,9 +76,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8696a4f7584218f2557cc87fc0bf95b3"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a8696a4f7584218f2557cc87fc0bf95b3">add</a> (std::string_view key, std::string_view <a class="el" href="structdj_1_1object.html#abad69a1b925af49302adcc756f073969">value</a>, std::int8_t max_depth=8)</td></tr>
 <tr class="memdesc:a8696a4f7584218f2557cc87fc0bf95b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom field of type T.  <a href="structdj_1_1object.html#a8696a4f7584218f2557cc87fc0bf95b3">More...</a><br /></td></tr>
 <tr class="separator:a8696a4f7584218f2557cc87fc0bf95b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6a39f6b0afd103c4f0ab05ddef5113"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a5a6a39f6b0afd103c4f0ab05ddef5113">add</a> (std::string_view key, <a class="el" href="structdj_1_1base.html">base</a> &amp;&amp;entry)</td></tr>
-<tr class="memdesc:a5a6a39f6b0afd103c4f0ab05ddef5113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an existing entry (move the instance)  <a href="structdj_1_1object.html#a5a6a39f6b0afd103c4f0ab05ddef5113">More...</a><br /></td></tr>
-<tr class="separator:a5a6a39f6b0afd103c4f0ab05ddef5113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb9830ff8c0b887e48cfcc6715eeba4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afdb9830ff8c0b887e48cfcc6715eeba4"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#afdb9830ff8c0b887e48cfcc6715eeba4">add</a> (std::string_view key, typename T::value_type &amp;&amp;<a class="el" href="structdj_1_1object.html#abad69a1b925af49302adcc756f073969">value</a>)</td></tr>
+<tr class="memdesc:afdb9830ff8c0b887e48cfcc6715eeba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom value_type field of type T.  <a href="structdj_1_1object.html#afdb9830ff8c0b887e48cfcc6715eeba4">More...</a><br /></td></tr>
+<tr class="separator:afdb9830ff8c0b887e48cfcc6715eeba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e13fbf6c1bf742815b5915e903605da"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1e13fbf6c1bf742815b5915e903605da"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a1e13fbf6c1bf742815b5915e903605da">add</a> (std::string_view key, typename T::value_type const &amp;<a class="el" href="structdj_1_1object.html#abad69a1b925af49302adcc756f073969">value</a>)</td></tr>
+<tr class="memdesc:a1e13fbf6c1bf742815b5915e903605da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom value_type field of type T.  <a href="structdj_1_1object.html#a1e13fbf6c1bf742815b5915e903605da">More...</a><br /></td></tr>
+<tr class="separator:a1e13fbf6c1bf742815b5915e903605da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d256041121333e88a379b82ad05b8c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdj_1_1base.html">base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a7d256041121333e88a379b82ad05b8c5">add</a> (std::string_view key, <a class="el" href="structdj_1_1base.html">base</a> &amp;&amp;entry)</td></tr>
+<tr class="memdesc:a7d256041121333e88a379b82ad05b8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an existing entry (move the instance)  <a href="structdj_1_1object.html#a7d256041121333e88a379b82ad05b8c5">More...</a><br /></td></tr>
+<tr class="separator:a7d256041121333e88a379b82ad05b8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec329f612e735a30120a835bc42a49a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aeec329f612e735a30120a835bc42a49a"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#aeec329f612e735a30120a835bc42a49a">find</a> (std::string const &amp;id) const</td></tr>
 <tr class="memdesc:aeec329f612e735a30120a835bc42a49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a field of type T.  <a href="structdj_1_1object.html#aeec329f612e735a30120a835bc42a49a">More...</a><br /></td></tr>
@@ -94,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a60d940c2a4d19d126827c80ca554442b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a60d940c2a4d19d126827c80ca554442b">contains</a> (std::string const &amp;id) const</td></tr>
 <tr class="memdesc:a60d940c2a4d19d126827c80ca554442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a key of type T is present.  <a href="structdj_1_1object.html#a60d940c2a4d19d126827c80ca554442b">More...</a><br /></td></tr>
 <tr class="separator:a60d940c2a4d19d126827c80ca554442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c56ff53bb8cff709cd360a4d2942ed"><td class="memItemLeft" align="right" valign="top">std::stringstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#ae2c56ff53bb8cff709cd360a4d2942ed">serialise</a> (std::stringstream &amp;out, <a class="el" href="structdj_1_1serial__opts.html">serial_opts</a> const &amp;options=<a class="el" href="namespacedj.html#acdeb48b0d36ec95e7e716d18c9adc2a2">g_serial_opts</a>, std::uint8_t indent=0) const</td></tr>
-<tr class="memdesc:ae2c56ff53bb8cff709cd360a4d2942ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialise fields into JSON string (adds escapes)  <a href="structdj_1_1object.html#ae2c56ff53bb8cff709cd360a4d2942ed">More...</a><br /></td></tr>
-<tr class="separator:ae2c56ff53bb8cff709cd360a4d2942ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924c13fa8941e9a2166468140917ab17"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a924c13fa8941e9a2166468140917ab17">serialise</a> (std::ostream &amp;out, <a class="el" href="structdj_1_1serial__opts.html">serial_opts</a> const &amp;options=<a class="el" href="namespacedj.html#acdeb48b0d36ec95e7e716d18c9adc2a2">g_serial_opts</a>, std::uint8_t indent=0) const</td></tr>
+<tr class="memdesc:a924c13fa8941e9a2166468140917ab17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialise fields into JSON string (adds escapes)  <a href="structdj_1_1object.html#a924c13fa8941e9a2166468140917ab17">More...</a><br /></td></tr>
+<tr class="separator:a924c13fa8941e9a2166468140917ab17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e89c3200ca5bcf2718517ef635bf65"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1object.html#a79e89c3200ca5bcf2718517ef635bf65">serialise</a> (<a class="el" href="structdj_1_1serial__opts.html">serial_opts</a> const &amp;options=<a class="el" href="namespacedj.html#acdeb48b0d36ec95e7e716d18c9adc2a2">g_serial_opts</a>, std::uint8_t indent=0) const</td></tr>
 <tr class="memdesc:a79e89c3200ca5bcf2718517ef635bf65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialise fields into JSON string (adds escapes)  <a href="structdj_1_1object.html#a79e89c3200ca5bcf2718517ef635bf65">More...</a><br /></td></tr>
 <tr class="separator:a79e89c3200ca5bcf2718517ef635bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,14 +126,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:abbeb729ad9685a091255050dde7ffd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5a6a39f6b0afd103c4f0ab05ddef5113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a6a39f6b0afd103c4f0ab05ddef5113">&#9670;&nbsp;</a></span>add() <span class="overload">[1/3]</span></h2>
+<a id="a7d256041121333e88a379b82ad05b8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d256041121333e88a379b82ad05b8c5">&#9670;&nbsp;</a></span>add() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool dj::object::add </td>
+          <td class="memname"><a class="el" href="structdj_1_1base.html">base</a>* dj::object::add </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -149,7 +157,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a186e3f929400b7b0010f13d2fce67aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a186e3f929400b7b0010f13d2fce67aea">&#9670;&nbsp;</a></span>add() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a186e3f929400b7b0010f13d2fce67aea">&#9670;&nbsp;</a></span>add() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +199,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a8696a4f7584218f2557cc87fc0bf95b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8696a4f7584218f2557cc87fc0bf95b3">&#9670;&nbsp;</a></span>add() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8696a4f7584218f2557cc87fc0bf95b3">&#9670;&nbsp;</a></span>add() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,6 +233,70 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Add a custom field of type T. </p>
+
+</div>
+</div>
+<a id="afdb9830ff8c0b887e48cfcc6715eeba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb9830ff8c0b887e48cfcc6715eeba4">&#9670;&nbsp;</a></span>add() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * dj::object::add </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename T::value_type &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a custom value_type field of type T. </p>
+
+</div>
+</div>
+<a id="a1e13fbf6c1bf742815b5915e903605da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e13fbf6c1bf742815b5915e903605da">&#9670;&nbsp;</a></span>add() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * dj::object::add </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename T::value_type const &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a custom value_type field of type T. </p>
 
 </div>
 </div>
@@ -365,16 +437,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae2c56ff53bb8cff709cd360a4d2942ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c56ff53bb8cff709cd360a4d2942ed">&#9670;&nbsp;</a></span>serialise() <span class="overload">[2/2]</span></h2>
+<a id="a924c13fa8941e9a2166468140917ab17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924c13fa8941e9a2166468140917ab17">&#9670;&nbsp;</a></span>serialise() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::stringstream&amp; dj::object::serialise </td>
+          <td class="memname">std::ostream&amp; dj::object::serialise </td>
           <td>(</td>
-          <td class="paramtype">std::stringstream &amp;&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>

@@ -47,8 +47,14 @@ $(function() {
 <li>m_active
 : <a class="el" href="classkt_1_1async__queue.html#a5e62b11a493341fe6f871ff547f20a31">kt::async_queue&lt; T, Mutex &gt;</a>
 </li>
+<li>m_bActive
+: <a class="el" href="classle_1_1TMonoInstance.html#a5d45484b8790cc13eb2269c089bf0e21">le::TMonoInstance&lt; T &gt;</a>
+</li>
 <li>m_bDirty
 : <a class="el" href="classle_1_1Tree.html#ac5828cd76796460fe425dc1130469df0">le::Tree&lt; T &gt;</a>
+</li>
+<li>m_bLogAllocs
+: <a class="el" href="classle_1_1graphics_1_1Resources.html#ad9ce1d3394452186fd4111bd4989041a">le::graphics::Resources</a>
 </li>
 <li>m_bytes
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#a987e9bc171aaa7b942cdc29609455e61">le::io::FileMonitor</a>
@@ -57,7 +63,7 @@ $(function() {
 : <a class="el" href="classle_1_1FreeCam.html#a7e9335326e967f9a2c1cbaff70c6e353">le::FreeCam</a>
 </li>
 <li>m_children
-: <a class="el" href="classle_1_1Tree.html#a98084aa0aa7de27078bf2b9c5596e6ba">le::Tree&lt; T &gt;</a>
+: <a class="el" href="classle_1_1Tree.html#a6f9b37b4e3916427fa8afe97f98860a0">le::Tree&lt; T &gt;</a>
 </li>
 <li>m_config
 : <a class="el" href="classle_1_1FreeCam.html#a0607212399c8cd8125e254edb8370868">le::FreeCam</a>
@@ -68,8 +74,18 @@ $(function() {
 <li>m_data
 : <a class="el" href="classle_1_1Text2D.html#ad031e5da71794fcef0a11c9aa6f255d6">le::Text2D</a>
 </li>
+<li>m_deferred
+: <a class="el" href="classle_1_1graphics_1_1DeferQueue.html#a61624079ae83f5eb39c8bc4d562fb14d">le::graphics::DeferQueue</a>
+, <a class="el" href="classle_1_1graphics_1_1Device.html#ae1c022eddd4b9c25c78734c76f5cbe3c">le::graphics::Device</a>
+</li>
 <li>m_device
-: <a class="el" href="classle_1_1maths_1_1Random.html#a14d0ea311d43f1754b5adcfd7182ce16">le::maths::Random</a>
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a4f8a01bd95d28f321d3e9225339c995d">le::graphics::Device</a>
+, <a class="el" href="classle_1_1graphics_1_1NBuffer.html#af218d173cea251c2ff228f16860e369b">le::graphics::NBuffer&lt; N &gt;</a>
+, <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a1a25dfceacdde63eaa3c1d186295eb53">le::graphics::RenderContext</a>
+, <a class="el" href="classle_1_1graphics_1_1Resources.html#a754f42b0d721f3e35d0fdaddc02268f3">le::graphics::Resources</a>
+, <a class="el" href="classle_1_1graphics_1_1Swapchain.html#a4850a29aad347cd64831ef2b8ad5d530">le::graphics::Swapchain</a>
+, <a class="el" href="classle_1_1graphics_1_1VRAM.html#a2bad39ef02b9a4ffc326fa426b4fedd9">le::graphics::VRAM</a>
+, <a class="el" href="classle_1_1maths_1_1Random.html#a14d0ea311d43f1754b5adcfd7182ce16">le::maths::Random</a>
 </li>
 <li>m_engine
 : <a class="el" href="classle_1_1maths_1_1Random.html#af4d5daa18c70574cbb129440e448dcb6">le::maths::Random</a>
@@ -77,11 +93,18 @@ $(function() {
 <li>m_entityMap
 : <a class="el" href="classle_1_1GameScene.html#a0876f526a1ceed1dbb1684baecd9f2cd">le::GameScene</a>
 </li>
+<li>m_events
+: <a class="el" href="structle_1_1window_1_1EventQueue.html#a0dfd14f6dbbbfc203d4785a5a2d3b663">le::window::EventQueue</a>
+</li>
 <li>m_font
 : <a class="el" href="classle_1_1Text2D.html#a160bc1da6bb35e51f6976b72bcfbe625">le::Text2D</a>
 </li>
 <li>m_infos
 : <a class="el" href="classle_1_1Stopwatch.html#a88d809ffd57bbab5824d855bfabe1b70">le::Stopwatch&lt; Tag &gt;</a>
+</li>
+<li>m_instance
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a69f9d401d9d82dce82a25d5f73a474cd">le::graphics::Device</a>
+, <a class="el" href="classle_1_1graphics_1_1Instance.html#a0c394a48a8e850b6a8568ebb1f37eaa5">le::graphics::Instance</a>
 </li>
 <li>m_lastModifiedTime
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#ab7795e213505097ffe52249b6ab821bd">le::io::FileMonitor</a>
@@ -89,8 +112,12 @@ $(function() {
 <li>m_lastWriteTime
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#afbca3e6a69a59d97d93d3a3ecb99e641">le::io::FileMonitor</a>
 </li>
+<li>m_loader
+: <a class="el" href="classle_1_1graphics_1_1Instance.html#ac4203143e16bcf2b25d9184dda3b341f">le::graphics::Instance</a>
+</li>
 <li>m_logLevel
 : <a class="el" href="classle_1_1ecs_1_1Registry.html#a52351d5a96f280c66a7deab3aee1ea75">le::ecs::Registry</a>
+, <a class="el" href="classle_1_1graphics_1_1Resources.html#ab3a10b489ed0127e4367b4bf562c8fd6">le::graphics::Resources</a>
 </li>
 <li>m_map
 : <a class="el" href="classle_1_1TMapStore.html#ad8b8946ad0ca3450fd23a89fe6901394">le::TMapStore&lt; MapContainer &gt;</a>
@@ -101,12 +128,21 @@ $(function() {
 <li>m_mesh
 : <a class="el" href="classle_1_1Text2D.html#aef35e7989d624f1d4a61835a3f643dc3">le::Text2D</a>
 </li>
+<li>m_messenger
+: <a class="el" href="classle_1_1graphics_1_1Instance.html#a18f29c7f64d0a29ba64368b8286c3e02">le::graphics::Instance</a>
+</li>
+<li>m_metadata
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a996ff5ba0839156818aba40aecf25c7c">le::graphics::Device</a>
+, <a class="el" href="classle_1_1graphics_1_1Instance.html#a8be7858b0901207f337fbd23ec892dea">le::graphics::Instance</a>
+, <a class="el" href="classle_1_1graphics_1_1Swapchain.html#afa12a88922d6eba9f27c0a9930bc8ea4">le::graphics::Swapchain</a>
+</li>
 <li>m_mode
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#a17a84a8a946da68d1e2367c017eda5c9">le::io::FileMonitor</a>
 </li>
 <li>m_mutex
 : <a class="el" href="classkt_1_1async__queue.html#aaa335c7227bf22d19790e540e6ef7a4d">kt::async_queue&lt; T, Mutex &gt;</a>
 , <a class="el" href="classle_1_1ecs_1_1Registry.html#ac8f3a6948f178d5fc0838bb52ff55f06">le::ecs::Registry</a>
+, <a class="el" href="classle_1_1graphics_1_1DeferQueue.html#a34c77f629c8371cb33847aff79c0f0d5">le::graphics::DeferQueue</a>
 , <a class="el" href="classle_1_1Stopwatch.html#a51f6bc1978d2a913282cded04e64a8af">le::Stopwatch&lt; Tag &gt;</a>
 </li>
 <li>m_name
@@ -117,11 +153,18 @@ $(function() {
 <li>m_path
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#ae4744f6fb3547193a7dba9f38f6fbf7f">le::io::FileMonitor</a>
 </li>
+<li>m_physicalDevice
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a4a6845d2305050214082ecbd9a0bc10d">le::graphics::Device</a>
+</li>
 <li>m_pParent
 : <a class="el" href="classle_1_1Tree.html#a09833d27b2bc08457191309deaca3bbc">le::Tree&lt; T &gt;</a>
 </li>
 <li>m_queue
 : <a class="el" href="classkt_1_1async__queue.html#ae3fe8e005c32ed851eb65bbd33bade91">kt::async_queue&lt; T, Mutex &gt;</a>
+, <a class="el" href="classle_1_1graphics_1_1Transfer.html#a6b0b99ae636a082a853acca5a845e5ff">le::graphics::Transfer</a>
+</li>
+<li>m_queues
+: <a class="el" href="classle_1_1graphics_1_1Device.html#aae1e4755d966f774befa3e964566ab9f">le::graphics::Device</a>
 </li>
 <li>m_registry
 : <a class="el" href="classle_1_1GameScene.html#a7dfc43095aa0c32ad5525e713a146607">le::GameScene</a>
@@ -137,9 +180,25 @@ $(function() {
 </li>
 <li>m_status
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#a3abf43f21ed6e0ead77f5c634eb65a35">le::io::FileMonitor</a>
+, <a class="el" href="classle_1_1window_1_1Instance.html#ad71ad77797195d98cfcf2ce4b3ac0bbb">le::window::Instance&lt; T &gt;</a>
+</li>
+<li>m_storage
+: <a class="el" href="classle_1_1graphics_1_1Swapchain.html#a53932cc53f24f888a665ec62ae5233ff">le::graphics::Swapchain</a>
+</li>
+<li>m_swapchain
+: <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a84c41c967db5fc4e8b44c559911c4bfb">le::graphics::RenderContext</a>
 </li>
 <li>m_text
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#a7570e9bbd51654ddab15d153405f686b">le::io::FileMonitor</a>
+</li>
+<li>m_total
+: <a class="el" href="classle_1_1graphics_1_1NBuffer.html#a5c36c8c190d4f472e62f1745d2bdb7fe">le::graphics::NBuffer&lt; N &gt;</a>
+</li>
+<li>m_transfer
+: <a class="el" href="classle_1_1graphics_1_1VRAM.html#a1012f39437cb88c40a9d9a329c25f655">le::graphics::VRAM</a>
+</li>
+<li>m_vram
+: <a class="el" href="classle_1_1graphics_1_1Swapchain.html#a922deab97d24d912aaf51dea31923065">le::graphics::Swapchain</a>
 </li>
 <li>mag
 : <a class="el" href="structle_1_1res_1_1Sampler_1_1CreateInfo.html#a85cca1b59e6930276bf8ae5ffb211878">le::res::Sampler::CreateInfo</a>
@@ -150,6 +209,15 @@ $(function() {
 </li>
 <li>major()
 : <a class="el" href="structle_1_1Version.html#a2bc03e5128c881bcfa595916b9ac9d8e">le::Version</a>
+</li>
+<li>make()
+: <a class="el" href="structle_1_1graphics_1_1CommandBuffer.html#a0c082087a6926fe44160a0b66cafb8ab">le::graphics::CommandBuffer</a>
+</li>
+<li>makePromise()
+: <a class="el" href="classle_1_1graphics_1_1Transfer.html#a155e3b4ab9f94b9e8fd7056fee6f5634">le::graphics::Transfer</a>
+</li>
+<li>mapMemory()
+: <a class="el" href="classle_1_1graphics_1_1Resources.html#a985cc248002d5fe77d66c0094b6dd04a">le::graphics::Resources</a>
 </li>
 <li>mapRange()
 : <a class="el" href="classle_1_1input_1_1Context.html#a5c4e06b3d0e0235156548836ebe00aa1">le::input::Context</a>
@@ -203,6 +271,9 @@ $(function() {
 <li>medium()
 : <a class="el" href="classle_1_1io_1_1Reader.html#a53d23686736c64564f84b77d0522deea">le::io::Reader</a>
 </li>
+<li>memory
+: <a class="el" href="structle_1_1graphics_1_1AllocInfo.html#afc6b32a8cfa0b9a9167078ba505b36f2">le::graphics::AllocInfo</a>
+</li>
 <li>mesh()
 : <a class="el" href="classle_1_1Text2D.html#ab862d8eab424ad09758d510475a22b2c">le::Text2D</a>
 , <a class="el" href="structle_1_1UIComponent.html#a28f849f565df0e46ba952acea1c14c5e">le::UIComponent</a>
@@ -234,6 +305,9 @@ $(function() {
 <li>mm()
 : <a class="el" href="structle_1_1Length.html#a815e2b5a977a936f9f50b8ad24402bfe">le::Length</a>
 </li>
+<li>mode
+: <a class="el" href="structle_1_1graphics_1_1VkResource.html#ab63f9997ad92756839cab79eca81e62a">le::graphics::VkResource</a>
+</li>
 <li>Mode
 : <a class="el" href="classle_1_1io_1_1FileMonitor.html#a4757ccf2bbafe4bdb66f5a133f9b1d3f">le::io::FileMonitor</a>
 </li>
@@ -262,6 +336,7 @@ $(function() {
 </li>
 <li>mods
 : <a class="el" href="structle_1_1FreeCam_1_1KeyToggle.html#a73746be93af02158b9862e2e01e3abab">le::FreeCam::KeyToggle</a>
+, <a class="el" href="structle_1_1window_1_1Event_1_1Input.html#af7e1543d368a74ff2d2e7f1f5a219e7f">le::window::Event::Input</a>
 </li>
 <li>mount()
 : <a class="el" href="classle_1_1io_1_1FileReader.html#a7d291b594317c8e5bf4c0ce4cebccf24">le::io::FileReader</a>
@@ -282,6 +357,7 @@ $(function() {
 </li>
 <li>mutex
 : <a class="el" href="structkt_1_1lockable.html#a950017302c9a6974cd35ae2f60272212">kt::lockable&lt; Mutex &gt;</a>
+, <a class="el" href="classle_1_1graphics_1_1Transfer.html#a360d933f7d8ab356521d16dc52281c1b">le::graphics::Transfer</a>
 , <a class="el" href="structle_1_1utils_1_1Lockable.html#ae6ac1d7b947c55e9bbb1724759898e9f">le::utils::Lockable&lt; UseMutex, M &gt;</a>
 </li>
 </ul>

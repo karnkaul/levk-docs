@@ -100,14 +100,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f060756b533bab9dde50364de42ee90"><td class="memTemplParams" colspan="2">template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </td></tr>
-<tr class="memitem:a8f060756b533bab9dde50364de42ee90"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a8f060756b533bab9dde50364de42ee90">operator==</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; lhs, <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; rhs) noexcept</td></tr>
-<tr class="memdesc:a8f060756b533bab9dde50364de42ee90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if flags are equal.  <a href="namespacekt.html#a8f060756b533bab9dde50364de42ee90">More...</a><br /></td></tr>
-<tr class="separator:a8f060756b533bab9dde50364de42ee90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c9d5469306f048756dcf5006792c28"><td class="memTemplParams" colspan="2">template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </td></tr>
-<tr class="memitem:a98c9d5469306f048756dcf5006792c28"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a98c9d5469306f048756dcf5006792c28">operator!=</a> (<a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; lhs, <a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt; rhs) noexcept</td></tr>
-<tr class="memdesc:a98c9d5469306f048756dcf5006792c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if flags are not equal.  <a href="namespacekt.html#a98c9d5469306f048756dcf5006792c28">More...</a><br /></td></tr>
-<tr class="separator:a98c9d5469306f048756dcf5006792c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b6886415810a1413e5b33975d629e33"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#a3b6886415810a1413e5b33975d629e33">format_str</a> (std::ostream &amp;out, std::string_view fmt)</td></tr>
 <tr class="separator:a3b6886415810a1413e5b33975d629e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace35b0a7280bc6450069c5d1d4d09708"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
@@ -294,86 +286,6 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98c9d5469306f048756dcf5006792c28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98c9d5469306f048756dcf5006792c28">&#9670;&nbsp;</a></span>operator!=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool kt::operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Test if flags are not equal. </p>
-
-</div>
-</div>
-<a id="a8f060756b533bab9dde50364de42ee90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f060756b533bab9dde50364de42ee90">&#9670;&nbsp;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , std::size_t N = (std::size_t)Enum::eCOUNT_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool kt::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structkt_1_1enum__flags.html">enum_flags</a>&lt; Enum, N &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Test if flags are equal. </p>
 
 </div>
 </div>
