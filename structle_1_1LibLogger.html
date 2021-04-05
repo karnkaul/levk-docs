@@ -46,6 +46,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structle_1_1LibLogger-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">le::LibLogger Struct Reference</div>  </div>
@@ -74,8 +75,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5553b284857850bf4df48fc2b3bcebe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">Verbosity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1LibLogger.html#a5553b284857850bf4df48fc2b3bcebe7">minVerbosity</a> = <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aa884ce9b83b2f52e05f144d33379e5cbd">Verbosity::eLibrary</a></td></tr>
+<tr class="memitem:a5553b284857850bf4df48fc2b3bcebe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">Verbosity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1LibLogger.html#a5553b284857850bf4df48fc2b3bcebe7">minVerbosity</a> = <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aaa3b2b50e4628d5715beb7cabeec6f121">Verbosity::eLibUser</a></td></tr>
 <tr class="separator:a5553b284857850bf4df48fc2b3bcebe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae696f2abe5d2669924e2666b344b17af"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">Verbosity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1LibLogger.html#ae696f2abe5d2669924e2666b344b17af">libVerbosity</a> = <a class="el" href="std__types_8hpp.html#a4cc9b5f3a680eb787ad77a9f3b06befe">levk_pre_release</a> ? <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aa884ce9b83b2f52e05f144d33379e5cbd">Verbosity::eLibrary</a> : <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aab2725afe80544736672873fe8d6d561b">Verbosity::eEndUser</a></td></tr>
+<tr class="separator:ae696f2abe5d2669924e2666b344b17af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a813da2f624d2d4920c0b27e7eb2f042a"></a>
@@ -209,6 +215,28 @@ template&lt;typename... Args&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae696f2abe5d2669924e2666b344b17af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae696f2abe5d2669924e2666b344b17af">&#9670;&nbsp;</a></span>libVerbosity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">Verbosity</a> le::LibLogger::libVerbosity = <a class="el" href="std__types_8hpp.html#a4cc9b5f3a680eb787ad77a9f3b06befe">levk_pre_release</a> ? <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aa884ce9b83b2f52e05f144d33379e5cbd">Verbosity::eLibrary</a> : <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aab2725afe80544736672873fe8d6d561b">Verbosity::eEndUser</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5553b284857850bf4df48fc2b3bcebe7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5553b284857850bf4df48fc2b3bcebe7">&#9670;&nbsp;</a></span>minVerbosity</h2>
 
@@ -216,7 +244,7 @@ template&lt;typename... Args&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">Verbosity</a> le::LibLogger::minVerbosity = <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aa884ce9b83b2f52e05f144d33379e5cbd">Verbosity::eLibrary</a></td>
+          <td class="memname"><a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">Verbosity</a> le::LibLogger::minVerbosity = <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042aaa3b2b50e4628d5715beb7cabeec6f121">Verbosity::eLibUser</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
