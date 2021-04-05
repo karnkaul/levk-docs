@@ -10,6 +10,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -80,7 +82,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3743505e3af27d27353ce0dfad2b34ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a3743505e3af27d27353ce0dfad2b34ab">SceneNode</a> (<a class="el" href="classle_1_1SceneNode.html#adb2f100d12bf28c2ff3de6c7466876af">Root</a> &amp;<a class="el" href="classle_1_1RefTreeNode.html#a4a93ab3106db9e6f8f168c580118922c">root</a>, decf::entity_t <a class="el" href="classle_1_1SceneNode.html#a91c51b0df79318326d5cc790e9f16b7d">entity</a>={}, <a class="el" href="structle_1_1SceneTransform.html">SceneTransform</a> const &amp;<a class="el" href="classle_1_1SceneNode.html#a885c658f5faa309c023c9f66d0c98222">transform</a>={})</td></tr>
+<tr class="memitem:a3743505e3af27d27353ce0dfad2b34ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a3743505e3af27d27353ce0dfad2b34ab">SceneNode</a> (<a class="el" href="classle_1_1SceneNode.html#adb2f100d12bf28c2ff3de6c7466876af">Root</a> &amp;<a class="el" href="classle_1_1RefTreeNode.html#a4a93ab3106db9e6f8f168c580118922c">root</a>, <a class="el" href="classdecf_1_1entity__t.html">decf::entity_t</a> <a class="el" href="classle_1_1SceneNode.html#a91c51b0df79318326d5cc790e9f16b7d">entity</a>={}, <a class="el" href="structle_1_1SceneTransform.html">SceneTransform</a> const &amp;<a class="el" href="classle_1_1SceneNode.html#a885c658f5faa309c023c9f66d0c98222">transform</a>={})</td></tr>
 <tr class="separator:a3743505e3af27d27353ce0dfad2b34ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d1acccdd0ff73da2bf524bd37c2221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1SceneNode.html">SceneNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#ae9d1acccdd0ff73da2bf524bd37c2221">position</a> (glm::vec3 const &amp;position) noexcept</td></tr>
 <tr class="memdesc:ae9d1acccdd0ff73da2bf524bd37c2221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set (local) position.  <a href="classle_1_1SceneNode.html#ae9d1acccdd0ff73da2bf524bd37c2221">More...</a><br /></td></tr>
@@ -135,9 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6786a06be3a3f8d73dd338aa2c4820ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a6786a06be3a3f8d73dd338aa2c4820ef">refresh</a> () const noexcept</td></tr>
 <tr class="memdesc:a6786a06be3a3f8d73dd338aa2c4820ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recompute transformation matrices if stale.  <a href="classle_1_1SceneNode.html#a6786a06be3a3f8d73dd338aa2c4820ef">More...</a><br /></td></tr>
 <tr class="separator:a6786a06be3a3f8d73dd338aa2c4820ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c51b0df79318326d5cc790e9f16b7d"><td class="memItemLeft" align="right" valign="top">decf::entity_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a91c51b0df79318326d5cc790e9f16b7d">entity</a> () const noexcept</td></tr>
+<tr class="memitem:a91c51b0df79318326d5cc790e9f16b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdecf_1_1entity__t.html">decf::entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a91c51b0df79318326d5cc790e9f16b7d">entity</a> () const noexcept</td></tr>
 <tr class="separator:a91c51b0df79318326d5cc790e9f16b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c01afe4cff7b3b0e162834da8a4d6de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a2c01afe4cff7b3b0e162834da8a4d6de">entity</a> (decf::entity_t entity) noexcept</td></tr>
+<tr class="memitem:a2c01afe4cff7b3b0e162834da8a4d6de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneNode.html#a2c01afe4cff7b3b0e162834da8a4d6de">entity</a> (<a class="el" href="classdecf_1_1entity__t.html">decf::entity_t</a> entity) noexcept</td></tr>
 <tr class="separator:a2c01afe4cff7b3b0e162834da8a4d6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classle_1_1RefTreeNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classle_1_1RefTreeNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classle_1_1RefTreeNode.html">le::RefTreeNode&lt; SceneNode &gt;</a></td></tr>
 <tr class="memitem:a1f3c2a9ee4503785e35a0bd706c2c02b inherit pub_methods_classle_1_1RefTreeNode"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeNode.html#a1f3c2a9ee4503785e35a0bd706c2c02b">RefTreeNode</a> (<a class="el" href="classle_1_1RefTreeNode.html#a8e934380eb6bd1a377060fa9c5d32869">Root</a> &amp;<a class="el" href="classle_1_1RefTreeNode.html#a4a93ab3106db9e6f8f168c580118922c">root</a>)</td></tr>
@@ -221,7 +223,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decf::entity_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classdecf_1_1entity__t.html">decf::entity_t</a>&#160;</td>
           <td class="paramname"><em>entity</em> = <code>{}</code>, </td>
         </tr>
         <tr>
@@ -256,7 +258,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decf::entity_t le::SceneNode::entity </td>
+          <td class="memname"><a class="el" href="classdecf_1_1entity__t.html">decf::entity_t</a> le::SceneNode::entity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -283,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void le::SceneNode::entity </td>
           <td>(</td>
-          <td class="paramtype">decf::entity_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classdecf_1_1entity__t.html">decf::entity_t</a>&#160;</td>
           <td class="paramname"><em>entity</em></td><td>)</td>
           <td></td>
         </tr>

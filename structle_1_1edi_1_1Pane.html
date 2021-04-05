@@ -10,6 +10,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -65,8 +67,10 @@ Inheritance diagram for le::edi::Pane:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaf55023247fbb8ff96bf32f6fb802cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#aaf55023247fbb8ff96bf32f6fb802cdb">Pane</a> (std::string_view id, glm::vec2 size, glm::vec2 pos, bool <a class="el" href="structle_1_1edi_1_1Pane.html#a9908fbbf6021f584835d806c1a30255e">child</a>, <a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> flags=0)</td></tr>
-<tr class="separator:aaf55023247fbb8ff96bf32f6fb802cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c706c58972548f38f72530765c31b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#a37c706c58972548f38f72530765c31b5">Pane</a> (std::string_view id, glm::vec2 size, glm::vec2 pos, bool *open, bool blockResize=true, <a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> flags=0)</td></tr>
+<tr class="separator:a37c706c58972548f38f72530765c31b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf672f4917d83a949784942ce811cb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#adaf672f4917d83a949784942ce811cb0">Pane</a> (std::string_view id, glm::vec2 size={}, bool border=false, <a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> flags=0)</td></tr>
+<tr class="separator:adaf672f4917d83a949784942ce811cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a8939ecdae431987ad0c39977f7395"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#a31a8939ecdae431987ad0c39977f7395">~Pane</a> () override</td></tr>
 <tr class="separator:a31a8939ecdae431987ad0c39977f7395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0a1507c34eb819bae42ac77fd9285a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#ad0a1507c34eb819bae42ac77fd9285a3">operator bool</a> () const override</td></tr>
@@ -89,20 +93,18 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9908fbbf6021f584835d806c1a30255e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#a9908fbbf6021f584835d806c1a30255e">child</a> = false</td></tr>
 <tr class="separator:a9908fbbf6021f584835d806c1a30255e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a527d6be73248a019c6307410c2c3e27d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#a527d6be73248a019c6307410c2c3e27d">open</a> = true</td></tr>
-<tr class="separator:a527d6be73248a019c6307410c2c3e27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structle_1_1edi_1_1GUIStateful"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structle_1_1edi_1_1GUIStateful')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structle_1_1edi_1_1GUIStateful.html">le::edi::GUIStateful</a></td></tr>
 <tr class="memitem:acca4b79f5ed04b02a447755fab068405 inherit pub_attribs_structle_1_1edi_1_1GUIStateful"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1edi.html#aa92fa1e50d53a48faff7a01a3858086a">GUIState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1GUIStateful.html#acca4b79f5ed04b02a447755fab068405">guiState</a></td></tr>
 <tr class="separator:acca4b79f5ed04b02a447755fab068405 inherit pub_attribs_structle_1_1edi_1_1GUIStateful"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a263ec5f4f097e3ae411c71ca8f569a73"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#a263ec5f4f097e3ae411c71ca8f569a73">s_open</a> = 0</td></tr>
-<tr class="separator:a263ec5f4f097e3ae411c71ca8f569a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631e43b4333c42de1c77443617674aa2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1edi_1_1Pane.html#a631e43b4333c42de1c77443617674aa2">s_blockResize</a> = false</td></tr>
+<tr class="separator:a631e43b4333c42de1c77443617674aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aaf55023247fbb8ff96bf32f6fb802cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf55023247fbb8ff96bf32f6fb802cdb">&#9670;&nbsp;</a></span>Pane()</h2>
+<a id="a37c706c58972548f38f72530765c31b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c706c58972548f38f72530765c31b5">&#9670;&nbsp;</a></span>Pane() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,8 +130,54 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>open</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>child</em>, </td>
+          <td class="paramname"><em>blockResize</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a>&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaf672f4917d83a949784942ce811cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf672f4917d83a949784942ce811cb0">&#9670;&nbsp;</a></span>Pane() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">le::edi::Pane::Pane </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec2&#160;</td>
+          <td class="paramname"><em>size</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>border</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -215,22 +263,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a527d6be73248a019c6307410c2c3e27d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a527d6be73248a019c6307410c2c3e27d">&#9670;&nbsp;</a></span>open</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::edi::Pane::open = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a263ec5f4f097e3ae411c71ca8f569a73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a263ec5f4f097e3ae411c71ca8f569a73">&#9670;&nbsp;</a></span>s_open</h2>
+<a id="a631e43b4333c42de1c77443617674aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631e43b4333c42de1c77443617674aa2">&#9670;&nbsp;</a></span>s_blockResize</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +273,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t le::edi::Pane::s_open = 0</td>
+          <td class="memname">bool le::edi::Pane::s_blockResize = false</td>
         </tr>
       </table>
   </td>

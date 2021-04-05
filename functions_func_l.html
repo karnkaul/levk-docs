@@ -10,6 +10,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -66,7 +68,7 @@ $(function() {
 <li>load()
 : <a class="el" href="classle_1_1AssetListLoader.html#ad1774c1cb0f3753159b260d1e2eb39fc">le::AssetListLoader</a>
 , <a class="el" href="structle_1_1AssetLoader.html#a5b02a2b8ed4403b7340d32d77aa0085f">le::AssetLoader&lt; T &gt;</a>
-, <a class="el" href="structle_1_1AssetLoader_3_01BitmapFont_01_4.html#a1da8f34f4b124f4a3dd8ee9740ce9d39">le::AssetLoader&lt; BitmapFont &gt;</a>
+, <a class="el" href="structle_1_1AssetLoader_3_01BitmapFont_01_4.html#a73e7c88b82b0c8cc5d793d3d1dde7d90">le::AssetLoader&lt; BitmapFont &gt;</a>
 , <a class="el" href="structle_1_1AssetLoader_3_01graphics_1_1Pipeline_01_4.html#a9f1aa2fb13049435ab800c61c8c746d2">le::AssetLoader&lt; graphics::Pipeline &gt;</a>
 , <a class="el" href="structle_1_1AssetLoader_3_01graphics_1_1Shader_01_4.html#afc45f86d938039195816ee3b6c8f88b4">le::AssetLoader&lt; graphics::Shader &gt;</a>
 , <a class="el" href="structle_1_1AssetLoader_3_01graphics_1_1Texture_01_4.html#a55d6627af26471f7621272784c12ae76">le::AssetLoader&lt; graphics::Texture &gt;</a>
@@ -82,12 +84,21 @@ $(function() {
 : <a class="el" href="classle_1_1graphics_1_1Instance.html#a8b90edd70d57ddabd2553f3710d85e7d">le::graphics::Instance</a>
 </li>
 <li>locate()
-: <a class="el" href="classle_1_1Services.html#aada2f52bf9f6a70951e73c5ea29d7653">le::Services</a>
+: <a class="el" href="classle_1_1Services.html#aa63c2e5110dcb46189fc04b43955be64">le::Services</a>
 </li>
 <li>lock()
-: <a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#abc35dd78c8d6dd61e12057fb0f44d03d">le::graphics::QueueMultiplex</a>
+: <a class="el" href="structkt_1_1lockable__t.html#aa7d84948a5eeadc208b01b63792105e1">kt::lockable_t&lt; Mutex &gt;</a>
+, <a class="el" href="structkt_1_1locker__t.html#a63600c5f8c46d6c77470d5fadb72c7ea">kt::locker_t&lt; T, M &gt;</a>
+, <a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#abc35dd78c8d6dd61e12057fb0f44d03d">le::graphics::QueueMultiplex</a>
 , <a class="el" href="structle_1_1utils_1_1Lockable.html#a34482a18f82a8237b34330f1b71f2718">le::utils::Lockable&lt; UseMutex, M &gt;</a>
 , <a class="el" href="structle_1_1utils_1_1Lockable_3_01false_00_01M_01_4.html#a09b7d06d31b48367224949f03f98ace5">le::utils::Lockable&lt; false, M &gt;</a>
+</li>
+<li>locked_t()
+: <a class="el" href="structkt_1_1locked__t.html#aea8294ed5e0c1487da6980f56edf6f49">kt::locked_t&lt; T, L, M &gt;</a>
+, <a class="el" href="structkt_1_1locked__t_3_01T_01const_00_01L_00_01M_01_4.html#ac757269e1b0fd49c9caae1c3aaa3ecc2">kt::locked_t&lt; T const, L, M &gt;</a>
+</li>
+<li>locker_t()
+: <a class="el" href="structkt_1_1locker__t.html#adb5a75edff36f26e19c410dd39ba8641">kt::locker_t&lt; T, M &gt;</a>
 </li>
 <li>lockMutex()
 : <a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#aba691478dedb4a54763766b8ea0846ad">le::graphics::QueueMultiplex</a>
