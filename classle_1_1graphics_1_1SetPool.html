@@ -57,8 +57,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab29658e8156cab19839205b85afaa369"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1SetPool.html#ab29658e8156cab19839205b85afaa369">SetPool</a> (<a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &amp;device, <a class="el" href="structle_1_1graphics_1_1DescriptorSet_1_1CreateInfo.html">DescriptorSet::CreateInfo</a> const &amp;info)</td></tr>
-<tr class="separator:ab29658e8156cab19839205b85afaa369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6065142691c926a67413e1c8cc270e3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1SetPool.html#a6065142691c926a67413e1c8cc270e3b">SetPool</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, <a class="el" href="structle_1_1graphics_1_1DescriptorSet_1_1CreateInfo.html">DescriptorSet::CreateInfo</a> const &amp;info)</td></tr>
+<tr class="separator:a6065142691c926a67413e1c8cc270e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1105f23b21e1dc951fa922ba5fbf618a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1DescriptorSet.html">DescriptorSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1SetPool.html#a1105f23b21e1dc951fa922ba5fbf618a">front</a> ()</td></tr>
 <tr class="separator:a1105f23b21e1dc951fa922ba5fbf618a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04a40f2a4bfeccf9968ca63edafe8a7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1DescriptorSet.html">DescriptorSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1SetPool.html#a04a40f2a4bfeccf9968ca63edafe8a7a">index</a> (std::size_t idx)</td></tr>
@@ -75,10 +75,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae9996b5dddd4c021ab763da9667d1b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77b2645d8b62788932266088b36a9850"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1SetPool.html#a77b2645d8b62788932266088b36a9850">unassigned</a> () const noexcept</td></tr>
 <tr class="separator:a77b2645d8b62788932266088b36a9850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a78eb28fd9f910d0ccb7fabbc1f890f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1SetPool.html#a0a78eb28fd9f910d0ccb7fabbc1f890f">clear</a> () noexcept</td></tr>
+<tr class="separator:a0a78eb28fd9f910d0ccb7fabbc1f890f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab29658e8156cab19839205b85afaa369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab29658e8156cab19839205b85afaa369">&#9670;&nbsp;</a></span>SetPool()</h2>
+<a id="a6065142691c926a67413e1c8cc270e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6065142691c926a67413e1c8cc270e3b">&#9670;&nbsp;</a></span>SetPool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -86,7 +88,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">le::graphics::SetPool::SetPool </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -106,6 +108,31 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0a78eb28fd9f910d0ccb7fabbc1f890f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a78eb28fd9f910d0ccb7fabbc1f890f">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::graphics::SetPool::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae9996b5dddd4c021ab763da9667d1b54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9996b5dddd4c021ab763da9667d1b54">&#9670;&nbsp;</a></span>contains()</h2>
 

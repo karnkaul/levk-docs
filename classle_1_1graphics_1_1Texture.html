@@ -62,15 +62,7 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Texture_1_1CreateInfo.html">CreateInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Texture_1_1Cubemap.html">Cubemap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Texture_1_1Data.html">Data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Texture_1_1Img.html">Img</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Texture_1_1Raw.html">Raw</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Texture_1_1RawImage.html">RawImage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -79,11 +71,15 @@ Public Types</h2></td></tr>
 , <a class="el" href="classle_1_1graphics_1_1Texture.html#a73d61b47d3332540887f5ce02b81b99cae622fe59a44cd50bb762b1f61e0e79f8">eCube</a>
  }</td></tr>
 <tr class="separator:a73d61b47d3332540887f5ce02b81b99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e4cb51a80ea779d954a130909d599d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#ad3e4cb51a80ea779d954a130909d599d">Img</a> = <a class="el" href="structle_1_1graphics_1_1TBitmap.html#a37b2abff0af0edaef6514379a234ca14">Bitmap::type</a></td></tr>
+<tr class="separator:ad3e4cb51a80ea779d954a130909d599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8996448e016a15dcf89d38be78b68e31"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a8996448e016a15dcf89d38be78b68e31">Cubemap</a> = std::array&lt; <a class="el" href="structle_1_1graphics_1_1TBitmap.html#a37b2abff0af0edaef6514379a234ca14">Bitmap::type</a>, 6 &gt;</td></tr>
+<tr class="separator:a8996448e016a15dcf89d38be78b68e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2af7bed1fd5814659829637e003a6aa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a2af7bed1fd5814659829637e003a6aa2">Texture</a> (std::string name, <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> &amp;vram)</td></tr>
-<tr class="separator:a2af7bed1fd5814659829637e003a6aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab840dba2fade1e958a2ac734b46bc5d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#ab840dba2fade1e958a2ac734b46bc5d5">Texture</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram)</td></tr>
+<tr class="separator:ab840dba2fade1e958a2ac734b46bc5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac141b6eabff915d238d9ec1ac951a0a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#ac141b6eabff915d238d9ec1ac951a0a8">Texture</a> (<a class="el" href="classle_1_1graphics_1_1Texture.html">Texture</a> &amp;&amp;)</td></tr>
 <tr class="separator:ac141b6eabff915d238d9ec1ac951a0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880a4fdfbb229d8397dfa4a7a615e551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a880a4fdfbb229d8397dfa4a7a615e551">operator=</a> (<a class="el" href="classle_1_1graphics_1_1Texture.html">Texture</a> &amp;&amp;)</td></tr>
@@ -107,16 +103,45 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:adf45e358bc9a1fb04b829f1578b8bdc3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#adf45e358bc9a1fb04b829f1578b8bdc3">m_name</a></td></tr>
-<tr class="separator:adf45e358bc9a1fb04b829f1578b8bdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e80e8112e5a0c9bd9ffcdceb14bc6e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Ref.html">Ref</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a8e80e8112e5a0c9bd9ffcdceb14bc6e2">m_vram</a></td></tr>
-<tr class="separator:a8e80e8112e5a0c9bd9ffcdceb14bc6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8116407e6727cda6aa82d7af5b98cab7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a8116407e6727cda6aa82d7af5b98cab7">m_vram</a></td></tr>
+<tr class="separator:a8116407e6727cda6aa82d7af5b98cab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a100f332d762c9f788c5b2cb3ebf0789e"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a100f332d762c9f788c5b2cb3ebf0789e">srgbFormat</a> = vk::Format::eR8G8B8A8Srgb</td></tr>
-<tr class="separator:a100f332d762c9f788c5b2cb3ebf0789e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15913c1c3c588451b57803ccdec39498"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a15913c1c3c588451b57803ccdec39498">srgb</a> = vk::Format::eR8G8B8A8Srgb</td></tr>
+<tr class="separator:a15913c1c3c588451b57803ccdec39498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d176dfcd6b1f4e051a5fcf47f921471"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Texture.html#a1d176dfcd6b1f4e051a5fcf47f921471">linear</a> = vk::Format::eR8G8B8A8Unorm</td></tr>
+<tr class="separator:a1d176dfcd6b1f4e051a5fcf47f921471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8996448e016a15dcf89d38be78b68e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8996448e016a15dcf89d38be78b68e31">&#9670;&nbsp;</a></span>Cubemap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1Texture.html#a8996448e016a15dcf89d38be78b68e31">le::graphics::Texture::Cubemap</a> =  std::array&lt;<a class="el" href="structle_1_1graphics_1_1TBitmap.html#a37b2abff0af0edaef6514379a234ca14">Bitmap::type</a>, 6&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3e4cb51a80ea779d954a130909d599d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e4cb51a80ea779d954a130909d599d">&#9670;&nbsp;</a></span>Img</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1Texture.html#ad3e4cb51a80ea779d954a130909d599d">le::graphics::Texture::Img</a> =  <a class="el" href="structle_1_1graphics_1_1TBitmap.html#a37b2abff0af0edaef6514379a234ca14">Bitmap::type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a73d61b47d3332540887f5ce02b81b99c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73d61b47d3332540887f5ce02b81b99c">&#9670;&nbsp;</a></span>Type</h2>
@@ -145,8 +170,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2af7bed1fd5814659829637e003a6aa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2af7bed1fd5814659829637e003a6aa2">&#9670;&nbsp;</a></span>Texture() <span class="overload">[1/2]</span></h2>
+<a id="ab840dba2fade1e958a2ac734b46bc5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab840dba2fade1e958a2ac734b46bc5d5">&#9670;&nbsp;</a></span>Texture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,19 +179,9 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">le::graphics::Texture::Texture </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt;&#160;</td>
+          <td class="paramname"><em>vram</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> &amp;&#160;</td>
-          <td class="paramname"><em>vram</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -372,36 +387,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="adf45e358bc9a1fb04b829f1578b8bdc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf45e358bc9a1fb04b829f1578b8bdc3">&#9670;&nbsp;</a></span>m_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string le::graphics::Texture::m_name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e80e8112e5a0c9bd9ffcdceb14bc6e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e80e8112e5a0c9bd9ffcdceb14bc6e2">&#9670;&nbsp;</a></span>m_vram</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structle_1_1Ref.html">Ref</a>&lt;<a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a>&gt; le::graphics::Texture::m_vram</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a100f332d762c9f788c5b2cb3ebf0789e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a100f332d762c9f788c5b2cb3ebf0789e">&#9670;&nbsp;</a></span>srgbFormat</h2>
+<a id="a1d176dfcd6b1f4e051a5fcf47f921471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d176dfcd6b1f4e051a5fcf47f921471">&#9670;&nbsp;</a></span>linear</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,7 +397,43 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto le::graphics::Texture::srgbFormat = vk::Format::eR8G8B8A8Srgb</td>
+          <td class="memname">constexpr auto le::graphics::Texture::linear = vk::Format::eR8G8B8A8Unorm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8116407e6727cda6aa82d7af5b98cab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8116407e6727cda6aa82d7af5b98cab7">&#9670;&nbsp;</a></span>m_vram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt;<a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a>*&gt; le::graphics::Texture::m_vram</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15913c1c3c588451b57803ccdec39498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15913c1c3c588451b57803ccdec39498">&#9670;&nbsp;</a></span>srgb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto le::graphics::Texture::srgb = vk::Format::eR8G8B8A8Srgb</td>
         </tr>
       </table>
   </td>

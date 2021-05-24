@@ -65,9 +65,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa5308ad7bfad6047c8798863af390e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa57ac0e647e563cb6f28cf156466814"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#afa57ac0e647e563cb6f28cf156466814">Path</a> (std::string_view str)</td></tr>
 <tr class="separator:afa57ac0e647e563cb6f28cf156466814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acb81635680cb616757e26033f08833"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = require&lt;!std::is_same_v&lt;T, Path&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a8acb81635680cb616757e26033f08833"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#a8acb81635680cb616757e26033f08833">Path</a> (T const &amp;t)</td></tr>
-<tr class="separator:a8acb81635680cb616757e26033f08833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9a08ec3000bdc9e91a2134cf97c757"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a4b9a08ec3000bdc9e91a2134cf97c757"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#a4b9a08ec3000bdc9e91a2134cf97c757">Path</a> (char const (&amp;str)[N])</td></tr>
+<tr class="separator:a4b9a08ec3000bdc9e91a2134cf97c757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad407fbd7403d41cb006314c933a7ca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#aad407fbd7403d41cb006314c933a7ca2">Path</a> (char const *szStr)</td></tr>
+<tr class="separator:aad407fbd7403d41cb006314c933a7ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b418181ed3556aab5a495d8dd4f2a16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#a3b418181ed3556aab5a495d8dd4f2a16">Path</a> (std::string const &amp;str)</td></tr>
+<tr class="separator:a3b418181ed3556aab5a495d8dd4f2a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acb2557fd409d296a2b1c28dde1c07e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#a7acb2557fd409d296a2b1c28dde1c07e">operator==</a> (<a class="el" href="classle_1_1io_1_1Path.html">Path</a> const &amp;rhs) const noexcept</td></tr>
+<tr class="separator:a7acb2557fd409d296a2b1c28dde1c07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51cff6c845370650b4be38572942ab5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#ac51cff6c845370650b4be38572942ab5">has_parent_path</a> () const</td></tr>
 <tr class="separator:ac51cff6c845370650b4be38572942ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9823443f69a97981ebff61cd0b4124e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Path.html#ad9823443f69a97981ebff61cd0b4124e">empty</a> () const</td></tr>
@@ -115,7 +121,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Lightweight std::filesystem::path alternative. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa5308ad7bfad6047c8798863af390e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5308ad7bfad6047c8798863af390e44">&#9670;&nbsp;</a></span>Path() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5308ad7bfad6047c8798863af390e44">&#9670;&nbsp;</a></span>Path() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +146,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="afa57ac0e647e563cb6f28cf156466814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa57ac0e647e563cb6f28cf156466814">&#9670;&nbsp;</a></span>Path() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa57ac0e647e563cb6f28cf156466814">&#9670;&nbsp;</a></span>Path() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,28 +163,88 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8acb81635680cb616757e26033f08833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8acb81635680cb616757e26033f08833">&#9670;&nbsp;</a></span>Path() <span class="overload">[3/4]</span></h2>
+<a id="a4b9a08ec3000bdc9e91a2134cf97c757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9a08ec3000bdc9e91a2134cf97c757">&#9670;&nbsp;</a></span>Path() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename &gt; </div>
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">le::io::Path::Path </td>
           <td>(</td>
-          <td class="paramtype">T const &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype">char const (&amp;)&#160;</td>
+          <td class="paramname"><em>str</em>[N]</td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad407fbd7403d41cb006314c933a7ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad407fbd7403d41cb006314c933a7ca2">&#9670;&nbsp;</a></span>Path() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">le::io::Path::Path </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>szStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b418181ed3556aab5a495d8dd4f2a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b418181ed3556aab5a495d8dd4f2a16">&#9670;&nbsp;</a></span>Path() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">le::io::Path::Path </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <a id="a2dbc90bafc47228f22e43a33e8696830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dbc90bafc47228f22e43a33e8696830">&#9670;&nbsp;</a></span>Path() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbc90bafc47228f22e43a33e8696830">&#9670;&nbsp;</a></span>Path() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,6 +491,32 @@ template&lt;typename T , typename &gt; </div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7acb2557fd409d296a2b1c28dde1c07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acb2557fd409d296a2b1c28dde1c07e">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::io::Path::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">Path</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

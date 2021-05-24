@@ -45,31 +45,38 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">array_map.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1ArrayMap.html">le::ArrayMap&lt; A, B, N &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1ArrayMap_1_1Pair.html">le::ArrayMap&lt; A, B, N &gt;::Pair</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:acaf569429962d6d5102699f4c94f41ee"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, typename... T&gt; </td></tr>
-<tr class="memitem:acaf569429962d6d5102699f4c94f41ee"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#acaf569429962d6d5102699f4c94f41ee">le::ArrayMap</a> = std::tuple&lt; T... &gt;[N]</td></tr>
-<tr class="separator:acaf569429962d6d5102699f4c94f41ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:af80742eedbf06fbf84a45efe1a29aed3"><td class="memTemplParams" colspan="2">template&lt;typename Out , typename In , std::size_t N, typename... T&gt; </td></tr>
-<tr class="memitem:af80742eedbf06fbf84a45efe1a29aed3"><td class="memTemplItemLeft" align="right" valign="top">constexpr Out const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#af80742eedbf06fbf84a45efe1a29aed3">le::mapped</a> (ArrayMap&lt; N, T... &gt; const &amp;map, In const &amp;key, Out const &amp;fallback={}) noexcept</td></tr>
-<tr class="separator:af80742eedbf06fbf84a45efe1a29aed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4b7c5c9b7029b17f5a29b3a6b2ad31ea"><td class="memTemplParams" colspan="2">template&lt;typename A , typename B , typename T , typename U &gt; </td></tr>
+<tr class="memitem:a4b7c5c9b7029b17f5a29b3a6b2ad31ea"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a4b7c5c9b7029b17f5a29b3a6b2ad31ea">le::combination_types</a> = (std::is_same_v&lt;A, T&gt; &amp;&amp; std::is_same_v&lt;B, U&gt;) || (std::is_same_v&lt;A, U&gt; &amp;&amp; std::is_same_v&lt;B, T&gt;)</td></tr>
+<tr class="separator:a4b7c5c9b7029b17f5a29b3a6b2ad31ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6174f6ca95ea9a03665d21cbeb34b5af"><td class="memItemLeft" align="right" valign="top">Out const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a6174f6ca95ea9a03665d21cbeb34b5af">le::B</a></td></tr>
+<tr class="separator:a6174f6ca95ea9a03665d21cbeb34b5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e849af6a13285d04f4606dc36621d19"><td class="memItemLeft" align="right" valign="top">Out const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a3e849af6a13285d04f4606dc36621d19">le::In</a></td></tr>
+<tr class="separator:a3e849af6a13285d04f4606dc36621d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a9e87f7c9ed4b0ee92ef862b47ac7e"><td class="memItemLeft" align="right" valign="top">Out const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a87a9e87f7c9ed4b0ee92ef862b47ac7e">le::Out</a></td></tr>
+<tr class="separator:a87a9e87f7c9ed4b0ee92ef862b47ac7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

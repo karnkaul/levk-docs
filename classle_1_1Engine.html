@@ -50,6 +50,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classle_1_1Engine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">le::Engine Class Reference</div>  </div>
@@ -62,7 +63,11 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1CreateInfo.html">CreateInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1DrawFrame.html">DrawFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1GFX.html">GFX</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1Options.html">Options</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1Stats.html">Stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -80,20 +85,30 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab368c7b372323706e76ff8be1bead8e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ab368c7b372323706e76ff8be1bead8e1">Engine</a> (<a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a> &amp;winInst, <a class="el" href="structle_1_1Engine_1_1CreateInfo.html">CreateInfo</a> const &amp;info)</td></tr>
-<tr class="separator:ab368c7b372323706e76ff8be1bead8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64337c2980e8ec16aa239b3f314cd887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Input_1_1Out.html">Input::Out</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a64337c2980e8ec16aa239b3f314cd887">poll</a> (bool consume) noexcept</td></tr>
-<tr class="separator:a64337c2980e8ec16aa239b3f314cd887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace10b6b67a5016a72983f3d97bfc9e9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ace10b6b67a5016a72983f3d97bfc9e9d">pushReceiver</a> (<a class="el" href="classle_1_1Input_1_1IReceiver.html">Input::IReceiver</a> &amp;context)</td></tr>
-<tr class="separator:ace10b6b67a5016a72983f3d97bfc9e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9893cbd4bb58a4b50bc9de8adc6b36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a4e9893cbd4bb58a4b50bc9de8adc6b36">Engine</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a> * &gt; winInst, <a class="el" href="structle_1_1Engine_1_1CreateInfo.html">CreateInfo</a> const &amp;info)</td></tr>
+<tr class="separator:a4e9893cbd4bb58a4b50bc9de8adc6b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5cfae9c594cddd222ba679568ca32e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1Driver_1_1Out.html">input::Driver::Out</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a7b5cfae9c594cddd222ba679568ca32e">poll</a> (bool consume) noexcept</td></tr>
+<tr class="separator:a7b5cfae9c594cddd222ba679568ca32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205d57c4ff334847792d243de9ef56e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a205d57c4ff334847792d243de9ef56e5">pushReceiver</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1input_1_1Receiver.html">input::Receiver</a> * &gt; context)</td></tr>
+<tr class="separator:a205d57c4ff334847792d243de9ef56e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450dd0363f63f0b57b3fcbe7f6b6e155"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a450dd0363f63f0b57b3fcbe7f6b6e155">update</a> (<a class="el" href="classle_1_1gui_1_1Root.html">gui::Root</a> *root)</td></tr>
+<tr class="separator:a450dd0363f63f0b57b3fcbe7f6b6e155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8057f1718610da8bdb6b61820062faf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a8057f1718610da8bdb6b61820062faf7">editorActive</a> () const noexcept</td></tr>
 <tr class="separator:a8057f1718610da8bdb6b61820062faf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac560c870d5722a5443b9b0d528a22c69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ac560c870d5722a5443b9b0d528a22c69">editorEngaged</a> () const noexcept</td></tr>
 <tr class="separator:ac560c870d5722a5443b9b0d528a22c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a38f7effd18a6edf2512fa19b88c9fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a3a38f7effd18a6edf2512fa19b88c9fa">update</a> ()</td></tr>
-<tr class="separator:a3a38f7effd18a6edf2512fa19b88c9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac735d65dd1aecdf018d04c735bbf8972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ac735d65dd1aecdf018d04c735bbf8972">boot</a> (<a class="el" href="structle_1_1graphics_1_1Bootstrap_1_1CreateInfo.html">Boot::CreateInfo</a> const &amp;boot)</td></tr>
-<tr class="separator:ac735d65dd1aecdf018d04c735bbf8972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d264501f7015c5f8bbd99a98f99c3eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a8d264501f7015c5f8bbd99a98f99c3eb">beginFrame</a> (bool waitDrawReady)</td></tr>
+<tr class="separator:a8d264501f7015c5f8bbd99a98f99c3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0824c837d224480725932344feaf15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a3b0824c837d224480725932344feaf15">drawReady</a> ()</td></tr>
+<tr class="separator:a3b0824c837d224480725932344feaf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae305f0cc17412951c65c06d0f9ed4c9a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structle_1_1graphics_1_1RenderContext_1_1Frame.html">Context::Frame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ae305f0cc17412951c65c06d0f9ed4c9a">beginDraw</a> (<a class="el" href="structle_1_1Colour.html">Colour</a> clear=<a class="el" href="namespacele_1_1colours.html#a02cf1a9745b6d0546ea46a03b02ce23f">colours::black</a>, vk::ClearDepthStencilValue depth={1.0f, 0})</td></tr>
+<tr class="separator:ae305f0cc17412951c65c06d0f9ed4c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8167601bedf30c1cf889ec0b101586"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structle_1_1Engine_1_1DrawFrame.html">DrawFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a6f8167601bedf30c1cf889ec0b101586">drawFrame</a> (<a class="el" href="structle_1_1Colour.html">Colour</a> clear=<a class="el" href="namespacele_1_1colours.html#a02cf1a9745b6d0546ea46a03b02ce23f">colours::black</a>, vk::ClearDepthStencilValue depth={1.0f, 0})</td></tr>
+<tr class="separator:a6f8167601bedf30c1cf889ec0b101586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340348ab1c056e03e37d161d3e5b2e23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a340348ab1c056e03e37d161d3e5b2e23">endDraw</a> (<a class="el" href="structle_1_1graphics_1_1RenderContext_1_1Frame.html">Context::Frame</a> const &amp;<a class="el" href="classle_1_1Engine.html#a5a68647fcc142d1b82827ff0102b7201">frame</a>)</td></tr>
+<tr class="separator:a340348ab1c056e03e37d161d3e5b2e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01c7b38794f9a7e77f9972117ef509a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ab01c7b38794f9a7e77f9972117ef509a">boot</a> (<a class="el" href="structle_1_1graphics_1_1Bootstrap_1_1CreateInfo.html">Boot::CreateInfo</a> boot)</td></tr>
+<tr class="separator:ab01c7b38794f9a7e77f9972117ef509a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b274735ee311c45f201a38cd699a8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ae8b274735ee311c45f201a38cd699a8f">unboot</a> () noexcept</td></tr>
 <tr class="separator:ae8b274735ee311c45f201a38cd699a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b677cfb70400ca218fbbd6f0656eab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a35b677cfb70400ca218fbbd6f0656eab">booted</a> () const noexcept</td></tr>
@@ -102,12 +117,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a361723049e19a9dba103fe1333b80cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae24e567de1f3ece917b32c7bedba9fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Engine_1_1GFX.html">GFX</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ae24e567de1f3ece917b32c7bedba9fea">gfx</a> () const</td></tr>
 <tr class="separator:ae24e567de1f3ece917b32c7bedba9fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b6e1f9bafe9c85d621158567c28d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Input_1_1State.html">Input::State</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ac2b6e1f9bafe9c85d621158567c28d5c">inputState</a> () const noexcept</td></tr>
-<tr class="separator:ac2b6e1f9bafe9c85d621158567c28d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac865fc4489c6046f853261b3726da6ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1State.html">input::State</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ac865fc4489c6046f853261b3726da6ae">inputState</a> () const noexcept</td></tr>
+<tr class="separator:ac865fc4489c6046f853261b3726da6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fc080778af2bce219aed67aa6b3e005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Engine.html#a2da443cc8c236c5645bb5c26e73854eb">Desktop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a1fc080778af2bce219aed67aa6b3e005">desktop</a> () const noexcept</td></tr>
 <tr class="separator:a1fc080778af2bce219aed67aa6b3e005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd18927df7444a70d069839f6fec3e4"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a7cd18927df7444a70d069839f6fec3e4">framebufferSize</a> () const noexcept</td></tr>
+<tr class="separator:a7cd18927df7444a70d069839f6fec3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c13f74300c89caf5aa80499903ddeaa"><td class="memItemLeft" align="right" valign="top">vk::Viewport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a5c13f74300c89caf5aa80499903ddeaa">viewport</a> (<a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;view={}, glm::vec2 depth={0.0f, 1.0f}) const noexcept</td></tr>
 <tr class="separator:a5c13f74300c89caf5aa80499903ddeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4685442c364fa50e9575d1432ca149a"><td class="memItemLeft" align="right" valign="top">vk::Rect2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ac4685442c364fa50e9575d1432ca149a">scissor</a> (<a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;view={}) const noexcept</td></tr>
+<tr class="separator:ac4685442c364fa50e9575d1432ca149a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae733ab79dbe5e5b3c40be025eb70f8a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Viewport.html">Viewport</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ae733ab79dbe5e5b3c40be025eb70f8a6">gameView</a> () const noexcept</td></tr>
+<tr class="separator:ae733ab79dbe5e5b3c40be025eb70f8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -115,11 +136,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af8c4944aa312ab0421f907fc8f005b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c14f2206aa214e7334ec709f7286a64"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1Engine_1_1Stats.html">Stats</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a9c14f2206aa214e7334ec709f7286a64">stats</a> () noexcept</td></tr>
 <tr class="separator:a9c14f2206aa214e7334ec709f7286a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299c4d558e2df1c70c57f9df508f13b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt; <a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html">graphics::PhysicalDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a299c4d558e2df1c70c57f9df508f13b4">availableDevices</a> ()</td></tr>
+<tr class="separator:a299c4d558e2df1c70c57f9df508f13b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3ea0fa7b9a02899beff221d73ef36ac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Ref.html">Ref</a>&lt; <a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a3ea0fa7b9a02899beff221d73ef36ac4">m_win</a></td></tr>
-<tr class="separator:a3ea0fa7b9a02899beff221d73ef36ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1250d32382c1d7f55488e08d4cc31b7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a1250d32382c1d7f55488e08d4cc31b7e">m_win</a></td></tr>
+<tr class="separator:a1250d32382c1d7f55488e08d4cc31b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a836b96c97e41c479bc4b8c55ec62bdab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1time.html#a49d863df615210d1fc8707f9b452c637">time::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a836b96c97e41c479bc4b8c55ec62bdab">stamp</a> {}</td></tr>
 <tr class="separator:a836b96c97e41c479bc4b8c55ec62bdab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a932f52cd5b7868c130b38d8529d49f52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">Time_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a932f52cd5b7868c130b38d8529d49f52">elapsed</a> {}</td></tr>
@@ -135,6 +158,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af7eee0622cda57b45a143c58bfb92f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a68647fcc142d1b82827ff0102b7201"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#a5a68647fcc142d1b82827ff0102b7201">frame</a></td></tr>
 <tr class="separator:a5a68647fcc142d1b82827ff0102b7201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ad21b43cde52ed5f7c0c36ad503ed4ec7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1Engine_1_1Options.html">Options</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html#ad21b43cde52ed5f7c0c36ad503ed4ec7">s_options</a></td></tr>
+<tr class="separator:ad21b43cde52ed5f7c0c36ad503ed4ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0abce13152da00c040d19314ffbc3d76"></a>
@@ -194,8 +222,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab368c7b372323706e76ff8be1bead8e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab368c7b372323706e76ff8be1bead8e1">&#9670;&nbsp;</a></span>Engine()</h2>
+<a id="a4e9893cbd4bb58a4b50bc9de8adc6b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9893cbd4bb58a4b50bc9de8adc6b36">&#9670;&nbsp;</a></span>Engine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +231,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">le::Engine::Engine </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a> * &gt;&#160;</td>
           <td class="paramname"><em>winInst</em>, </td>
         </tr>
         <tr>
@@ -223,8 +251,79 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac735d65dd1aecdf018d04c735bbf8972"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac735d65dd1aecdf018d04c735bbf8972">&#9670;&nbsp;</a></span>boot()</h2>
+<a id="a299c4d558e2df1c70c57f9df508f13b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299c4d558e2df1c70c57f9df508f13b4">&#9670;&nbsp;</a></span>availableDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt;<a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html">graphics::PhysicalDevice</a>&gt; le::Engine::availableDevices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae305f0cc17412951c65c06d0f9ed4c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae305f0cc17412951c65c06d0f9ed4c9a">&#9670;&nbsp;</a></span>beginDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;<a class="el" href="structle_1_1graphics_1_1RenderContext_1_1Frame.html">Context::Frame</a>&gt; le::Engine::beginDraw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Colour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>clear</em> = <code><a class="el" href="namespacele_1_1colours.html#a02cf1a9745b6d0546ea46a03b02ce23f">colours::black</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::ClearDepthStencilValue&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>{1.0f,&#160;0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d264501f7015c5f8bbd99a98f99c3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d264501f7015c5f8bbd99a98f99c3eb">&#9670;&nbsp;</a></span>beginFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::Engine::beginFrame </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitDrawReady</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab01c7b38794f9a7e77f9972117ef509a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01c7b38794f9a7e77f9972117ef509a">&#9670;&nbsp;</a></span>boot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +331,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool le::Engine::boot </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1Bootstrap_1_1CreateInfo.html">Boot::CreateInfo</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1Bootstrap_1_1CreateInfo.html">Boot::CreateInfo</a>&#160;</td>
           <td class="paramname"><em>boot</em></td><td>)</td>
           <td></td>
         </tr>
@@ -291,6 +390,51 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6f8167601bedf30c1cf889ec0b101586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8167601bedf30c1cf889ec0b101586">&#9670;&nbsp;</a></span>drawFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;<a class="el" href="structle_1_1Engine_1_1DrawFrame.html">DrawFrame</a>&gt; le::Engine::drawFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Colour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>clear</em> = <code><a class="el" href="namespacele_1_1colours.html#a02cf1a9745b6d0546ea46a03b02ce23f">colours::black</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::ClearDepthStencilValue&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>{1.0f,&#160;0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b0824c837d224480725932344feaf15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0824c837d224480725932344feaf15">&#9670;&nbsp;</a></span>drawReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::Engine::drawReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8057f1718610da8bdb6b61820062faf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8057f1718610da8bdb6b61820062faf7">&#9670;&nbsp;</a></span>editorActive()</h2>
 
@@ -327,6 +471,74 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool le::Engine::editorEngaged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a340348ab1c056e03e37d161d3e5b2e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340348ab1c056e03e37d161d3e5b2e23">&#9670;&nbsp;</a></span>endDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::Engine::endDraw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1RenderContext_1_1Frame.html">Context::Frame</a> const &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cd18927df7444a70d069839f6fec3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd18927df7444a70d069839f6fec3e4">&#9670;&nbsp;</a></span>framebufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 le::Engine::framebufferSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae733ab79dbe5e5b3c40be025eb70f8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae733ab79dbe5e5b3c40be025eb70f8a6">&#9670;&nbsp;</a></span>gameView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1Viewport.html">Viewport</a> const  &amp; le::Engine::gameView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -391,8 +603,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac2b6e1f9bafe9c85d621158567c28d5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2b6e1f9bafe9c85d621158567c28d5c">&#9670;&nbsp;</a></span>inputState()</h2>
+<a id="ac865fc4489c6046f853261b3726da6ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac865fc4489c6046f853261b3726da6ae">&#9670;&nbsp;</a></span>inputState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +613,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Input_1_1State.html">Input::State</a> const  &amp; le::Engine::inputState </td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1State.html">input::State</a> const  &amp; le::Engine::inputState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -416,8 +628,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a64337c2980e8ec16aa239b3f314cd887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64337c2980e8ec16aa239b3f314cd887">&#9670;&nbsp;</a></span>poll()</h2>
+<a id="a7b5cfae9c594cddd222ba679568ca32e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5cfae9c594cddd222ba679568ca32e">&#9670;&nbsp;</a></span>poll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +638,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Input_1_1Out.html">Input::Out</a> le::Engine::poll </td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Driver_1_1Out.html">input::Driver::Out</a> le::Engine::poll </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>consume</em></td><td>)</td>
@@ -442,8 +654,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ace10b6b67a5016a72983f3d97bfc9e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace10b6b67a5016a72983f3d97bfc9e9d">&#9670;&nbsp;</a></span>pushReceiver()</h2>
+<a id="a205d57c4ff334847792d243de9ef56e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205d57c4ff334847792d243de9ef56e5">&#9670;&nbsp;</a></span>pushReceiver()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,11 +663,37 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void le::Engine::pushReceiver </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1Input_1_1IReceiver.html">Input::IReceiver</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1input_1_1Receiver.html">input::Receiver</a> * &gt;&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4685442c364fa50e9575d1432ca149a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4685442c364fa50e9575d1432ca149a">&#9670;&nbsp;</a></span>scissor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vk::Rect2D le::Engine::scissor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;&#160;</td>
+          <td class="paramname"><em>view</em> = <code>{}</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -510,8 +748,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3a38f7effd18a6edf2512fa19b88c9fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a38f7effd18a6edf2512fa19b88c9fa">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a450dd0363f63f0b57b3fcbe7f6b6e155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450dd0363f63f0b57b3fcbe7f6b6e155">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,7 +757,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void le::Engine::update </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classle_1_1gui_1_1Root.html">gui::Root</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -631,16 +870,38 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3ea0fa7b9a02899beff221d73ef36ac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ea0fa7b9a02899beff221d73ef36ac4">&#9670;&nbsp;</a></span>m_win</h2>
+<a id="a1250d32382c1d7f55488e08d4cc31b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1250d32382c1d7f55488e08d4cc31b7e">&#9670;&nbsp;</a></span>m_win</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Ref.html">Ref</a>&lt;<a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a>&gt; le::Engine::m_win</td>
+          <td class="memname"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt;<a class="el" href="classle_1_1Engine.html#ab4488192684765b304343433be278580">Window</a>*&gt; le::Engine::m_win</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad21b43cde52ed5f7c0c36ad503ed4ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21b43cde52ed5f7c0c36ad503ed4ec7">&#9670;&nbsp;</a></span>s_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1Engine_1_1Options.html">Options</a> le::Engine::s_options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

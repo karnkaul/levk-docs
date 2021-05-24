@@ -55,6 +55,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;concepts&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
@@ -65,6 +66,8 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1EnumArray.html">le::EnumArray&lt; Enum, Ty, N &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1NoCopy.html">le::NoCopy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience base type with deleted copy semantics.  <a href="structle_1_1NoCopy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,8 +89,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a56501e02cd15f29bf608e4114d9f8563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f346d22347931735dc4fb93ae793f40"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">le::u32</a> = std::uint32_t</td></tr>
 <tr class="separator:a3f346d22347931735dc4fb93ae793f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0f4de3aac68c30a36e665a34575763"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#afa0f4de3aac68c30a36e665a34575763">le::u64</a> = std::uint64_t</td></tr>
-<tr class="separator:afa0f4de3aac68c30a36e665a34575763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afef247f7b9cf645212e059314a2fa8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">le::u64</a> = std::uint64_t</td></tr>
+<tr class="separator:a7afef247f7b9cf645212e059314a2fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91909e6ad816de8befedf38bd648d7d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">le::s32</a> = std::int32_t</td></tr>
 <tr class="separator:ae91909e6ad816de8befedf38bd648d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af102ad97535d937c823a88bede36a503"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#af102ad97535d937c823a88bede36a503">le::s64</a> = std::int64_t</td></tr>
@@ -98,16 +101,13 @@ Typedefs</h2></td></tr>
 <tr class="separator:a7a8c13a502727ed2560ac9e037f42b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4b6b35bf1146e8039b26cb0cef0c3d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">le::bytearray</a> = std::vector&lt; std::byte &gt;</td></tr>
 <tr class="separator:ab4b6b35bf1146e8039b26cb0cef0c3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbcc061547215a62e0a2fdd7b10de830"><td class="memTemplParams" colspan="2">template&lt;typename E , typename T  = std::string_view, std::size_t N = (std::size_t)E::eCOUNT_&gt; </td></tr>
-<tr class="memitem:afbcc061547215a62e0a2fdd7b10de830"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#afbcc061547215a62e0a2fdd7b10de830">le::EnumArray</a> = std::array&lt; T, N &gt;</td></tr>
-<tr class="separator:afbcc061547215a62e0a2fdd7b10de830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a0ffa913c7e4371d2a5ce1f5935317ba3">le::arraySize</a> (T(&amp;)[N])</td></tr>
-<tr class="memdesc:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the number of elements in a stack array.  <a href="namespacele.html#a0ffa913c7e4371d2a5ce1f5935317ba3">More...</a><br /></td></tr>
-<tr class="separator:a0ffa913c7e4371d2a5ce1f5935317ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec219562bece368a8c921742edf88aa"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:afec219562bece368a8c921742edf88aa"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#afec219562bece368a8c921742edf88aa">le::arraySize</a> (T(&amp;)[N]) noexcept</td></tr>
+<tr class="memdesc:afec219562bece368a8c921742edf88aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the number of elements in a stack array.  <a href="namespacele.html#afec219562bece368a8c921742edf88aa">More...</a><br /></td></tr>
+<tr class="separator:afec219562bece368a8c921742edf88aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

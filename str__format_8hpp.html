@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/djson/include/str_format/str_format.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/djson/include/kt/str_format/str_format.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_5a5529efcd0f7fdb04aae2273c0f6d92.html">djson</a></li><li class="navelem"><a class="el" href="dir_b3b88b7018920b42ae2c998dd60a49d4.html">include</a></li><li class="navelem"><a class="el" href="dir_871e2a4a83a265c62be6895cb5126ecf.html">str_format</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_5a5529efcd0f7fdb04aae2273c0f6d92.html">djson</a></li><li class="navelem"><a class="el" href="dir_b3b88b7018920b42ae2c998dd60a49d4.html">include</a></li><li class="navelem"><a class="el" href="dir_89db21c236c1933ac4babacf230a41c7.html">kt</a></li><li class="navelem"><a class="el" href="dir_772803d3abd4b4585c96d3f29818bfa1.html">str_format</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -63,18 +63,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a546ffa713abaaa8ceefe0b7d157af47e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a546ffa713abaaa8ceefe0b7d157af47e"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a546ffa713abaaa8ceefe0b7d157af47e">kt::format_str</a> (std::string_view fmt, Args const &amp;... args)</td></tr>
+<tr class="memdesc:a546ffa713abaaa8ceefe0b7d157af47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain formatted string.  <a href="namespacekt.html#a546ffa713abaaa8ceefe0b7d157af47e">More...</a><br /></td></tr>
+<tr class="separator:a546ffa713abaaa8ceefe0b7d157af47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b6886415810a1413e5b33975d629e33"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#a3b6886415810a1413e5b33975d629e33">kt::format_str</a> (std::ostream &amp;out, std::string_view fmt)</td></tr>
 <tr class="separator:a3b6886415810a1413e5b33975d629e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace35b0a7280bc6450069c5d1d4d09708"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
-<tr class="memitem:ace35b0a7280bc6450069c5d1d4d09708"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ace35b0a7280bc6450069c5d1d4d09708">kt::format_str</a> (std::ostream &amp;out, std::string_view fmt, Arg &amp;&amp;arg, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ace35b0a7280bc6450069c5d1d4d09708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad279c298bcf8094cd3c4c83a58ee057c"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ad279c298bcf8094cd3c4c83a58ee057c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ad279c298bcf8094cd3c4c83a58ee057c">kt::format_str</a> (std::string_view fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ad279c298bcf8094cd3c4c83a58ee057c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c648eb23017e3f68e0abc63f659729"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
+<tr class="memitem:ab4c648eb23017e3f68e0abc63f659729"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ab4c648eb23017e3f68e0abc63f659729">kt::format_str</a> (std::ostream &amp;out, std::string_view fmt, Arg const &amp;arg, Args const &amp;... args)</td></tr>
+<tr class="separator:ab4c648eb23017e3f68e0abc63f659729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#aa0963dd3a6d75717a2a10eb32b5bd9f7">kt::fmt_token</a> = &quot;{}&quot;</td></tr>
+<tr class="memdesc:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format token.  <a href="namespacekt.html#aa0963dd3a6d75717a2a10eb32b5bd9f7">More...</a><br /></td></tr>
 <tr class="separator:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

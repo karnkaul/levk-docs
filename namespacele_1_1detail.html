@@ -47,7 +47,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">le::detail Namespace Reference</div>  </div>
 </div><!--header-->
@@ -63,10 +64,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>AssetMap</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>SingletonBase</b></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>is_comparable_to_nullptr</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>TaggedStoreBase</b></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for Tags to store a pointer to (to call pop() on destruction) <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>is_comparable_to_nullptr&lt; T, std::enable_if_t&lt; std::is_convertible_v&lt; decltype(std::declval&lt; T &gt;() !=nullptr), bool &gt; &gt; &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>SingletonBase</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -82,6 +84,12 @@ Functions</h2></td></tr>
 <tr class="memitem:afc674df139d93991edeb5c73ef3b4a61"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:afc674df139d93991edeb5c73ef3b4a61"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#afc674df139d93991edeb5c73ef3b4a61">logImpl</a> (<a class="el" href="namespacedl.html#a64bf6957dc7a07332cf5cff75ea9c766">dl::level</a> level, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:afc674df139d93991edeb5c73ef3b4a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abdb4f16077796f3eb6a2df92c5b3babd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abdb4f16077796f3eb6a2df92c5b3babd"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#abdb4f16077796f3eb6a2df92c5b3babd">is_comparable_to_nullptr_v</a> = is_comparable_to_nullptr&lt;T&gt;::value</td></tr>
+<tr class="separator:abdb4f16077796f3eb6a2df92c5b3babd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a00e2edf05eb2df3ff988008dc4f91cae"></a>
@@ -167,6 +175,31 @@ template&lt;typename T , typename U &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abdb4f16077796f3eb6a2df92c5b3babd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb4f16077796f3eb6a2df92c5b3babd">&#9670;&nbsp;</a></span>is_comparable_to_nullptr_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool le::detail::is_comparable_to_nullptr_v = is_comparable_to_nullptr&lt;T&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -91,6 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79704050e5d680b83ee3978668b06f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531d707bdffe85f67935c89c446849a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a531d707bdffe85f67935c89c446849a4">begin</a> (vk::RenderPass renderPass, vk::Framebuffer framebuffer, vk::Extent2D extent, <a class="el" href="structle_1_1graphics_1_1CommandBuffer_1_1PassInfo.html">PassInfo</a> const &amp;info)</td></tr>
 <tr class="separator:a531d707bdffe85f67935c89c446849a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db141c7c3e12c820831090c9ac81712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a5db141c7c3e12c820831090c9ac81712">setViewport</a> (vk::Viewport viewport) const</td></tr>
+<tr class="separator:a5db141c7c3e12c820831090c9ac81712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e558405102f8e5c59632c0d2b5281a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a69e558405102f8e5c59632c0d2b5281a">setScissor</a> (vk::Rect2D scissor) const</td></tr>
+<tr class="separator:a69e558405102f8e5c59632c0d2b5281a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe628fb918ddd46476c85ae22d5918c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#aebe628fb918ddd46476c85ae22d5918c">setViewportScissor</a> (vk::Viewport viewport, vk::Rect2D scissor) const</td></tr>
 <tr class="separator:aebe628fb918ddd46476c85ae22d5918c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75cb6d1798459c918967c0652121573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ae75cb6d1798459c918967c0652121573">bindPipe</a> (<a class="el" href="classle_1_1graphics_1_1Pipeline.html">Pipeline</a> const &amp;pipeline, <a class="el" href="structle_1_1Hash.html">Hash</a> variant=<a class="el" href="structle_1_1Hash.html">Hash</a>()) const</td></tr>
@@ -110,10 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49887037b8934ec622f00838c11a6d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75da4e8f08dea82bd616eb676a358241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a75da4e8f08dea82bd616eb676a358241">bindVBO</a> (<a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> const &amp;vbo, <a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> const *pIbo=nullptr) const</td></tr>
 <tr class="separator:a75da4e8f08dea82bd616eb676a358241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99dde096413ee9fce34a090a1edcc537"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a99dde096413ee9fce34a090a1edcc537">drawIndexed</a> (<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> indexCount, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> instanceCount=1, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstIndex=0, <a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> vertexOffset=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstInstance=0) const</td></tr>
-<tr class="separator:a99dde096413ee9fce34a090a1edcc537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26184fafa652d4ee055ebc3b9257d416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a26184fafa652d4ee055ebc3b9257d416">draw</a> (<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> vertexCount, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> instanceCount=1, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstVertex=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstInstance=0) const</td></tr>
-<tr class="separator:a26184fafa652d4ee055ebc3b9257d416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e8916ebd40127dc8c3f6eae7454732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a70e8916ebd40127dc8c3f6eae7454732">drawIndexed</a> (<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> indexCount, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> instanceCount=1, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstInstance=0, <a class="el" href="namespacele.html#ae91909e6ad816de8befedf38bd648d7d">s32</a> vertexOffset=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstIndex=0) const</td></tr>
+<tr class="separator:a70e8916ebd40127dc8c3f6eae7454732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ed49609d5ff5c04a72adf27b2e07c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a68ed49609d5ff5c04a72adf27b2e07c3">draw</a> (<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> vertexCount, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> instanceCount=1, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstInstance=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstVertex=0) const</td></tr>
+<tr class="separator:a68ed49609d5ff5c04a72adf27b2e07c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2d67495214ba727e972811297c6188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#abe2d67495214ba727e972811297c6188">transitionImage</a> (<a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;image, vk::ImageAspectFlags aspect, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a51e71c72f961ea6d13328f69e1506087">Layouts</a> transition, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a428ad4e45d8a25c9f12a4357d79fa3ac">Access</a> access, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a02b0cc222d83019c7f53e29a7c21d9ca">Stages</a> stages) const</td></tr>
 <tr class="separator:abe2d67495214ba727e972811297c6188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadaf6d61a519e215d035067150ad5078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#aadaf6d61a519e215d035067150ad5078">transitionImage</a> (vk::Image image, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerCount, vk::ImageAspectFlags aspect, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a51e71c72f961ea6d13328f69e1506087">Layouts</a> transition, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a428ad4e45d8a25c9f12a4357d79fa3ac">Access</a> access, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a02b0cc222d83019c7f53e29a7c21d9ca">Stages</a> stages) const</td></tr>
@@ -131,8 +135,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a221af4a055c95650b1298b161218adc3"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a221af4a055c95650b1298b161218adc3">make</a> (<a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &amp;device, vk::CommandPool pool, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> count, bool bSecondary)</td></tr>
-<tr class="separator:a221af4a055c95650b1298b161218adc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6a6a1edf6b091255180370372da7be"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a6b6a6a1edf6b091255180370372da7be">make</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, vk::CommandPool pool, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> count, bool bSecondary)</td></tr>
+<tr class="separator:a6b6a6a1edf6b091255180370372da7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -574,8 +578,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a26184fafa652d4ee055ebc3b9257d416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26184fafa652d4ee055ebc3b9257d416">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a68ed49609d5ff5c04a72adf27b2e07c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ed49609d5ff5c04a72adf27b2e07c3">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,13 +600,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>firstVertex</em> = <code>0</code>, </td>
+          <td class="paramname"><em>firstInstance</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>firstInstance</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>firstVertex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -614,8 +618,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a99dde096413ee9fce34a090a1edcc537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99dde096413ee9fce34a090a1edcc537">&#9670;&nbsp;</a></span>drawIndexed()</h2>
+<a id="a70e8916ebd40127dc8c3f6eae7454732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e8916ebd40127dc8c3f6eae7454732">&#9670;&nbsp;</a></span>drawIndexed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -636,7 +640,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>firstIndex</em> = <code>0</code>, </td>
+          <td class="paramname"><em>firstInstance</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -648,7 +652,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>firstInstance</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>firstIndex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -694,8 +698,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a221af4a055c95650b1298b161218adc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a221af4a055c95650b1298b161218adc3">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a6b6a6a1edf6b091255180370372da7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6a6a1edf6b091255180370372da7be">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -706,7 +710,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">static std::vector&lt;<a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a>&gt; le::graphics::CommandBuffer::make </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -830,6 +834,42 @@ template&lt;typename T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69e558405102f8e5c59632c0d2b5281a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e558405102f8e5c59632c0d2b5281a">&#9670;&nbsp;</a></span>setScissor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::graphics::CommandBuffer::setScissor </td>
+          <td>(</td>
+          <td class="paramtype">vk::Rect2D&#160;</td>
+          <td class="paramname"><em>scissor</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5db141c7c3e12c820831090c9ac81712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db141c7c3e12c820831090c9ac81712">&#9670;&nbsp;</a></span>setViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le::graphics::CommandBuffer::setViewport </td>
+          <td>(</td>
+          <td class="paramtype">vk::Viewport&#160;</td>
+          <td class="paramname"><em>viewport</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

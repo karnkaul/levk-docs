@@ -62,12 +62,14 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:ac5350006a8ddf040f73b9fac79f734bd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> = std::function&lt; void(Args...)&gt;</td></tr>
 <tr class="separator:ac5350006a8ddf040f73b9fac79f734bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcbc9d01768cb2de6e72000418a6b541"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#afcbc9d01768cb2de6e72000418a6b541">Tk</a> = <a class="el" href="structle_1_1Tag.html">Tag</a>&lt;&gt;</td></tr>
-<tr class="separator:afcbc9d01768cb2de6e72000418a6b541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf83dc909c89499a3f4af0e60935ddd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#abdf83dc909c89499a3f4af0e60935ddd">Storage</a> = <a class="el" href="classkt_1_1monotonic__map.html">kt::monotonic_map</a>&lt; <a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> &gt;</td></tr>
+<tr class="separator:abdf83dc909c89499a3f4af0e60935ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2346e74ee54874e7e15510770640105a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a2346e74ee54874e7e15510770640105a">Tk</a> = typename <a class="el" href="classkt_1_1monotonic__map.html#ad5131fca8411651b7eaed9ca2b4a6fef">Storage::handle</a></td></tr>
+<tr class="separator:a2346e74ee54874e7e15510770640105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9832ec7a7a313c6135dd39eedb10235a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#afcbc9d01768cb2de6e72000418a6b541">Tk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a9832ec7a7a313c6135dd39eedb10235a">subscribe</a> (<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> const &amp;callback)</td></tr>
+<tr class="memitem:a9832ec7a7a313c6135dd39eedb10235a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#a2346e74ee54874e7e15510770640105a">Tk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a9832ec7a7a313c6135dd39eedb10235a">subscribe</a> (<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> const &amp;callback)</td></tr>
 <tr class="memdesc:a9832ec7a7a313c6135dd39eedb10235a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback and obtain token.  <a href="classle_1_1Delegate.html#a9832ec7a7a313c6135dd39eedb10235a">More...</a><br /></td></tr>
 <tr class="separator:a9832ec7a7a313c6135dd39eedb10235a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f20bc6124e956a969601a3c7991a177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Delegate.html#a8f20bc6124e956a969601a3c7991a177">operator()</a> (Args... args) const</td></tr>
@@ -102,8 +104,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="afcbc9d01768cb2de6e72000418a6b541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbc9d01768cb2de6e72000418a6b541">&#9670;&nbsp;</a></span>Tk</h2>
+<a id="abdf83dc909c89499a3f4af0e60935ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf83dc909c89499a3f4af0e60935ddd">&#9670;&nbsp;</a></span>Storage</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,7 +113,23 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#afcbc9d01768cb2de6e72000418a6b541">Tk</a> =  <a class="el" href="structle_1_1Tag.html">Tag</a>&lt;&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#abdf83dc909c89499a3f4af0e60935ddd">Storage</a> =  <a class="el" href="classkt_1_1monotonic__map.html">kt::monotonic_map</a>&lt;<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2346e74ee54874e7e15510770640105a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2346e74ee54874e7e15510770640105a">&#9670;&nbsp;</a></span>Tk</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::<a class="el" href="classle_1_1Delegate.html#a2346e74ee54874e7e15510770640105a">Tk</a> =  typename <a class="el" href="classkt_1_1monotonic__map.html#ad5131fca8411651b7eaed9ca2b4a6fef">Storage::handle</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -203,7 +221,7 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt; Args... &gt;::<a class="el" href="classle_1_1Delegate.html#afcbc9d01768cb2de6e72000418a6b541">Tk</a> <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::subscribe </td>
+          <td class="memname"><a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt; Args... &gt;::<a class="el" href="classle_1_1Delegate.html#a2346e74ee54874e7e15510770640105a">Tk</a> <a class="el" href="classle_1_1Delegate.html">le::Delegate</a>&lt; Args &gt;::subscribe </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">Callback</a> const &amp;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>

@@ -46,31 +46,42 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">control.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;variant&gt;</code><br />
-<code>#include &lt;<a class="el" href="input_8hpp.html">engine/input/input.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="include_2engine_2input_2types_8hpp.html">engine/input/types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Control.html">le::Control</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1AxisRange.html">le::input::AxisRange</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Control_1_1AxisRange.html">le::Control::AxisRange</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1KeyRange.html">le::input::KeyRange</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Control_1_1KeyRange.html">le::Control::KeyRange</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Trigger.html">le::input::Trigger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Control_1_1Trigger.html">le::Control::Trigger</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Control_1_1Range.html">le::Control::Range</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Range.html">le::input::Range</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacele_1_1input"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html">le::input</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6a89c23c1a5d7d300c49fddd8879ad46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a6a89c23c1a5d7d300c49fddd8879ad46">le::input::KeyAction</a> = KeyCombo&lt; Action &gt;</td></tr>
+<tr class="separator:a6a89c23c1a5d7d300c49fddd8879ad46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74dc2b716b8b9e32d66c657e9ab9e229"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a74dc2b716b8b9e32d66c657e9ab9e229">le::input::VRange</a> = std::variant&lt; KeyRange, AxisRange &gt;</td></tr>
+<tr class="separator:a74dc2b716b8b9e32d66c657e9ab9e229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4479cfee76a82944e2f5b691092e14ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4479cfee76a82944e2f5b691092e14ee"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a4479cfee76a82944e2f5b691092e14ee">le::input::Options</a> = <a class="el" href="classkt_1_1fixed__vector.html">kt::fixed_vector</a>&lt; T, maxOptions &gt;</td></tr>
+<tr class="separator:a4479cfee76a82944e2f5b691092e14ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -50,17 +50,21 @@ $(function() {
 <li>cached
 : <a class="el" href="classle_1_1Editor.html#a5246bde2ffb02ad892fdd62ddbcac1ba">le::Editor</a>
 </li>
+<li>callback
+: <a class="el" href="structclap_1_1basic__interpreter_1_1spec__t_1_1params__t.html#a17664d55809fa9201041fe2ef5b0e1ff">clap::basic_interpreter&lt; Ch &gt;::spec_t::params_t</a>
+</li>
 <li>Callback
 : <a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">le::Delegate&lt; Args &gt;</a>
 </li>
 <li>callback
 : <a class="el" href="structle_1_1edi_1_1MenuList_1_1Menu.html#a767ac1d040291b2f4f6f150bbb71a4c8">le::edi::MenuList::Menu</a>
+, <a class="el" href="structle_1_1graphics_1_1Deferred.html#a6322a4a418581700761708b86c19bc0f">le::graphics::Deferred</a>
 </li>
 <li>Callback
 : <a class="el" href="structle_1_1graphics_1_1Deferred.html#ad7c1bb20879692afe6aa92c7c05f51cf">le::graphics::Deferred</a>
 </li>
 <li>callback
-: <a class="el" href="structle_1_1graphics_1_1Deferred.html#a6322a4a418581700761708b86c19bc0f">le::graphics::Deferred</a>
+: <a class="el" href="structle_1_1utils_1_1Exec.html#a73b7b912c6ebd5e339822fbd1d63585f">le::utils::Exec</a>
 </li>
 <li>callbacks()
 : <a class="el" href="classle_1_1AssetList.html#ad38963e3059e70365ca18e357759c69c">le::AssetList&lt; T &gt;</a>
@@ -70,18 +74,16 @@ $(function() {
 </li>
 <li>cbegin()
 : <a class="el" href="classkt_1_1fixed__vector.html#a749e477d3725151b20dc1032eca8d7ec">kt::fixed_vector&lt; T, N &gt;</a>
-, <a class="el" href="classle_1_1TaggedStore.html#a4edccab09b770b1474b4c65d295be1e3">le::TaggedStore&lt; Ty, Tg, St &gt;</a>
 </li>
 <li>cell
 : <a class="el" href="structle_1_1graphics_1_1Glyph.html#a15256dbfce2e94b3aaf97c90efc4fdc0">le::graphics::Glyph</a>
 </li>
 <li>cend()
 : <a class="el" href="classkt_1_1fixed__vector.html#a47930b1a46ea40a67db6c0312dc03b7b">kt::fixed_vector&lt; T, N &gt;</a>
-, <a class="el" href="classle_1_1TaggedStore.html#a6022f0aae9b5bf35685b2f5fc691baf4">le::TaggedStore&lt; Ty, Tg, St &gt;</a>
 </li>
 <li>centre()
 : <a class="el" href="structle_1_1graphics_1_1TRect.html#a58de66944406dc0847f9832234cce622">le::graphics::TRect&lt; T, Min, Max &gt;</a>
-, <a class="el" href="structle_1_1Viewport.html#abd0a8e3ba04cf0274bfd7496467db803">le::Viewport</a>
+, <a class="el" href="structle_1_1Viewport.html#ace3870442b4c4b077c3459a98a100749">le::Viewport</a>
 </li>
 <li>centreOffset
 : <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#a8288a46110854e72b94248cb28df410a">le::window::IInstance::CreateInfo</a>
@@ -91,6 +93,13 @@ $(function() {
 </li>
 <li>changed
 : <a class="el" href="structle_1_1edi_1_1TWidgetWrap.html#a832ab6e13137d069475aa1b5e48dad8a">le::edi::TWidgetWrap&lt; T &gt;</a>
+</li>
+<li>char_t
+: <a class="el" href="classclap_1_1basic__interpreter.html#a147fe6208a7734f398a131bce9dd86b5">clap::basic_interpreter&lt; Ch &gt;</a>
+, <a class="el" href="classclap_1_1basic__parser.html#a6440082dced4e3868fee3c0d955aa174">clap::basic_parser&lt; Ch &gt;</a>
+</li>
+<li>check()
+: <a class="el" href="structktest_1_1helper__t.html#a43d673f61bfba02bd6237f2477d35044">ktest::helper_t</a>
 </li>
 <li>checkPresence()
 : <a class="el" href="classle_1_1io_1_1Reader.html#adeb94fbcb70f68a5c0da392b10df810b">le::io::Reader</a>
@@ -103,8 +112,7 @@ $(function() {
 </li>
 <li>children()
 : <a class="el" href="classkt_1_1n__tree.html#a6529ef6363a976f6d10948d81d1dd9ce">kt::n_tree&lt; T &gt;</a>
-, <a class="el" href="classle_1_1CRTPTree.html#a8048485c11f7ef30137ccd1ec32c8362">le::CRTPTree&lt; T &gt;</a>
-, <a class="el" href="classle_1_1RefTreeRoot.html#ae15a3d248bc3b4200e2837c0be4eb970">le::RefTreeRoot&lt; T &gt;</a>
+, <a class="el" href="classle_1_1RefTreeRoot.html#a0a57a1fbc739552d486245152ccb8bb3">le::RefTreeRoot&lt; T, Base &gt;</a>
 </li>
 <li>clear()
 : <a class="el" href="classdecf_1_1registry__t.html#a97c42937020e213b8417853421f3eb6d">decf::registry_t</a>
@@ -112,20 +120,36 @@ $(function() {
 , <a class="el" href="classkt_1_1async__queue.html#ab25bff1782730ceaeb50f9989c209da3">kt::async_queue&lt; T, Mutex &gt;</a>
 , <a class="el" href="classkt_1_1fixed__any.html#ae7baf6ece25a96d87ddf8b28a0c0d800">kt::fixed_any&lt; N &gt;</a>
 , <a class="el" href="classkt_1_1fixed__vector.html#ac336acd12c74bcb0ab6c47956dea8642">kt::fixed_vector&lt; T, N &gt;</a>
+, <a class="el" href="classkt_1_1monotonic__map.html#a5000caacc4fde7f20583451264aadfb5">kt::monotonic_map&lt; T, Mp &gt;</a>
 , <a class="el" href="classle_1_1AssetStore.html#aba01d5ea6d0f76f9dba20c28b4621c3e">le::AssetStore</a>
 , <a class="el" href="classle_1_1Delegate.html#afb4cb04d6a744455dc5a5f507a7e19b7">le::Delegate&lt; Args &gt;</a>
+, <a class="el" href="classle_1_1graphics_1_1SetPool.html#a0a78eb28fd9f910d0ccb7fabbc1f890f">le::graphics::SetPool</a>
 , <a class="el" href="classle_1_1io_1_1Path.html#af1e80f3b6df4b16b38af8aa21474635f">le::io::Path</a>
 , <a class="el" href="classle_1_1Resources.html#a6751fa40edb1bad14a10b346b93931fe">le::Resources</a>
-, <a class="el" href="classle_1_1TaggedStore.html#a8c07efabbb7892a2c3645bdaf4b0864c">le::TaggedStore&lt; Ty, Tg, St &gt;</a>
 </li>
 <li>clear_children()
 : <a class="el" href="classkt_1_1n__tree.html#aa53bde53a9a93ebd0f49c923673f07a2">kt::n_tree&lt; T &gt;</a>
 </li>
+<li>clearSets()
+: <a class="el" href="classle_1_1graphics_1_1ShaderInput.html#a5b9e8a7ac9ec0da7d756ba01b02d8c36">le::graphics::ShaderInput</a>
+</li>
 <li>clearValues
 : <a class="el" href="structle_1_1graphics_1_1CommandBuffer_1_1PassInfo.html#a88130713aa774c7f8607e9771c821d70">le::graphics::CommandBuffer::PassInfo</a>
 </li>
+<li>clicked()
+: <a class="el" href="classle_1_1gui_1_1Widget.html#a264ff9412bf34e94bbe1307fb7200357">le::gui::Widget</a>
+</li>
 <li>cm
 : <a class="el" href="structle_1_1Length.html#abf4a0ed512db86f8387bd7d1975ae894">le::Length</a>
+</li>
+<li>cmd()
+: <a class="el" href="structle_1_1Engine_1_1DrawFrame.html#ac142165fa49e7bbb7441697c5118cdde">le::Engine::DrawFrame</a>
+</li>
+<li>cmd_map_t
+: <a class="el" href="structclap_1_1basic__interpreter_1_1spec__t.html#abbca53d06ae38e655f569829bd98c60e">clap::basic_interpreter&lt; Ch &gt;::spec_t</a>
+</li>
+<li>cmd_t
+: <a class="el" href="classclap_1_1basic__interpreter_1_1printer__t.html#a234be479d2071508f60c34138184e5e3">clap::basic_interpreter&lt; Ch &gt;::printer_t</a>
 </li>
 <li>CodeMap
 : <a class="el" href="classle_1_1graphics_1_1Shader.html#ad49d84d341f8b257065afc73fa09c288">le::graphics::Shader</a>
@@ -137,36 +161,37 @@ $(function() {
 : <a class="el" href="structle_1_1Colour.html#a7ca6203a498e7b0bb2957228276243e2">le::Colour</a>
 </li>
 <li>colour
-: <a class="el" href="structle_1_1graphics_1_1BitmapText.html#a9c16c32abf4f804c4c0e79bbeccd1994">le::graphics::BitmapText</a>
-, <a class="el" href="structle_1_1graphics_1_1RenderTarget.html#ac2daa25f260a0f496ec802c377cf7b02">le::graphics::RenderTarget</a>
+: <a class="el" href="structle_1_1graphics_1_1RenderTarget.html#ac2daa25f260a0f496ec802c377cf7b02">le::graphics::RenderTarget</a>
 , <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1CreateInfo.html#afe129bfaedd604fe36cd84b8e662cdcc">le::graphics::Swapchain::CreateInfo</a>
+, <a class="el" href="structle_1_1graphics_1_1TextFactory.html#ad6b9f7b447e68e88abe84a98d7dd9120">le::graphics::TextFactory</a>
 , <a class="el" href="structle_1_1graphics_1_1Vert_3_01VertType_1_1ePosCol_01_4.html#a30768f5c26b75c1698f63cc5ea822912">le::graphics::Vert&lt; VertType::ePosCol &gt;</a>
 , <a class="el" href="structle_1_1graphics_1_1Vert_3_01VertType_1_1ePosColNormUV_01_4.html#a885a0409093d0f708c994b173ac75c8b">le::graphics::Vert&lt; VertType::ePosColNormUV &gt;</a>
 , <a class="el" href="structle_1_1graphics_1_1Vert_3_01VertType_1_1ePosColUV_01_4.html#abbc89583a896e64c7c3d44617ddccbd0">le::graphics::Vert&lt; VertType::ePosColUV &gt;</a>
 </li>
+<li>colourCorrection()
+: <a class="el" href="classle_1_1graphics_1_1RenderContext.html#aab5e57d9ec791a7b957b0e2b4bff0186">le::graphics::RenderContext</a>
+</li>
 <li>colourFormat()
-: <a class="el" href="classle_1_1graphics_1_1Swapchain.html#ad98c37051f9086cc37a7a83b05c787ae">le::graphics::Swapchain</a>
+: <a class="el" href="classle_1_1graphics_1_1Swapchain.html#a5690bb04d1b23546f271108df87d26d4">le::graphics::Swapchain</a>
 </li>
-<li>colourFormats
-: <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1CreateInfo.html#ae89016c63cfabe30e5912202d29b8256">le::graphics::Swapchain::CreateInfo</a>
-</li>
-<li>colourSpaces
-: <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1CreateInfo.html#a62727805e943c273b891b25de8fd4896">le::graphics::Swapchain::CreateInfo</a>
+<li>colourImageFormat()
+: <a class="el" href="classle_1_1graphics_1_1RenderContext.html#af188ca91307fdd4de257a307e73a6db8">le::graphics::RenderContext</a>
 </li>
 <li>column
 : <a class="el" href="structdj_1_1error__location__t.html#adf4a03120073ff5e0fe50a916f35a539">dj::error_location_t</a>
 </li>
 <li>combine()
-: <a class="el" href="structkt_1_1uint__flags.html#a8c15cd9b744d6897051a52e884cab383">kt::uint_flags&lt; Ty &gt;</a>
+: <a class="el" href="structkt_1_1uint__flags.html#a75f5108d099abc00b36ae24b8e09810c">kt::uint_flags&lt; Ty &gt;</a>
 </li>
 <li>Combo()
 : <a class="el" href="structle_1_1edi_1_1Combo.html#aef82e4121da49355481f5fdf279e5ef9">le::edi::Combo</a>
 </li>
 <li>combos
-: <a class="el" href="structle_1_1Control_1_1Trigger.html#a9838a1dc8d4fa2e9c2165dd8ba8a9165">le::Control::Trigger</a>
+: <a class="el" href="structle_1_1input_1_1Trigger.html#a6d1ba73f8287a6631bf85bc312178069">le::input::Trigger</a>
 </li>
 <li>command
-: <a class="el" href="structle_1_1graphics_1_1Transfer_1_1Stage.html#ac93479b50e5be0760f16c6c0abafb6fc">le::graphics::Transfer::Stage</a>
+: <a class="el" href="structclap_1_1basic__parser_1_1expr__t.html#a20459e4835adc02bae8e70202a151631">clap::basic_parser&lt; Ch &gt;::expr_t</a>
+, <a class="el" href="structle_1_1graphics_1_1Transfer_1_1Stage.html#ac93479b50e5be0760f16c6c0abafb6fc">le::graphics::Transfer::Stage</a>
 </li>
 <li>CommandBuffer()
 : <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#acce09565b494a5eb1119bb8e18185742">le::graphics::CommandBuffer</a>
@@ -175,7 +200,8 @@ $(function() {
 : <a class="el" href="structle_1_1graphics_1_1FrameSync_1_1Command.html#ac751f33fcf64db87fee80dae647d44e0">le::graphics::FrameSync::Command</a>
 </li>
 <li>commands
-: <a class="el" href="classle_1_1graphics_1_1Transfer.html#ae0fbf6a1bd4448df32a9d4ca51503141">le::graphics::Transfer</a>
+: <a class="el" href="structclap_1_1basic__interpreter_1_1spec__t.html#adcdef5d068ba8f75ee091001c97d28b7">clap::basic_interpreter&lt; Ch &gt;::spec_t</a>
+, <a class="el" href="classle_1_1graphics_1_1Transfer.html#ae0fbf6a1bd4448df32a9d4ca51503141">le::graphics::Transfer</a>
 </li>
 <li>compiler
 : <a class="el" href="structle_1_1graphics_1_1Shader_1_1Resources.html#a5bc42b365aad7a8fcaad3a287cecce34">le::graphics::Shader::Resources</a>
@@ -187,14 +213,14 @@ $(function() {
 : <a class="el" href="classle_1_1io_1_1Path.html#a0d9eec91613b88c2195903433e774eef">le::io::Path</a>
 </li>
 <li>config
-: <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#a18adb35c6529948f8fcfb5e637dadfc3">le::window::IInstance::CreateInfo</a>
+: <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#a15bfe6566d395d56ffe7aad9259fb3b3">le::window::IInstance::CreateInfo</a>
 </li>
 <li>const_iterator
 : <a class="el" href="classkt_1_1fixed__vector.html#ae40a7efcf735d409a867d51fa9ab273a">kt::fixed_vector&lt; T, N &gt;</a>
 , <a class="el" href="structkt_1_1fixed__vector_1_1const__iterator.html#ad2178c6bd83fe49682e3bf8f4af49983">kt::fixed_vector&lt; T, N &gt;::const_iterator</a>
+, <a class="el" href="classkt_1_1monotonic__map.html#a43d71f976ef7321bdadf61e888ca90c2">kt::monotonic_map&lt; T, Mp &gt;</a>
 , <a class="el" href="classle_1_1Span.html#a2984f529340c975b37c23c57c2dc6b58">le::Span&lt; T &gt;</a>
 , <a class="el" href="classle_1_1Span_3_01T_01const_01_4.html#a4925236a5763faad7daaaff6b3cff64e">le::Span&lt; T const &gt;</a>
-, <a class="el" href="classle_1_1TaggedStore.html#a72275d4a6453b760d8b319e3334e3024">le::TaggedStore&lt; Ty, Tg, St &gt;</a>
 </li>
 <li>const_pointer
 : <a class="el" href="classkt_1_1fixed__vector.html#a98ec5c004f2ff95da7817289f2388f0a">kt::fixed_vector&lt; T, N &gt;</a>
@@ -204,23 +230,17 @@ $(function() {
 </li>
 <li>construct()
 : <a class="el" href="classle_1_1graphics_1_1Device.html#a3ab8a37a791a3a0683c7b8566eb47ea5">le::graphics::Device</a>
-, <a class="el" href="classle_1_1graphics_1_1Mesh.html#a51c1c1cc054837742386911eb6e58288">le::graphics::Mesh</a>
+, <a class="el" href="classle_1_1graphics_1_1Mesh.html#a31b05355a35ccfeae0fdd55c5f321ff6">le::graphics::Mesh</a>
 , <a class="el" href="classle_1_1graphics_1_1Shader.html#afbe2fe91129eab7b4a798194c1af4d9b">le::graphics::Shader</a>
 , <a class="el" href="classle_1_1graphics_1_1Texture.html#a950f889b5424aeae2dde38e71b111176">le::graphics::Texture</a>
-, <a class="el" href="classle_1_1Model.html#af2cb3fe0e22c31ebf7eb3ca9d85b7d88">le::Model</a>
+, <a class="el" href="classle_1_1Model.html#a4de99fd50cc0ab1624dfae917c5e71d5">le::Model</a>
 , <a class="el" href="classle_1_1Singleton_3_01T_00_01SingletonStorage_1_1eHeap_01_4.html#a6f1bf4e2f05187bbb0d4afc86638a15d">le::Singleton&lt; T, SingletonStorage::eHeap &gt;</a>
 </li>
 <li>constructVariant()
 : <a class="el" href="classle_1_1graphics_1_1Pipeline.html#a8179d66f4ad994214102c40b8af17e51">le::graphics::Pipeline</a>
 </li>
 <li>container_t
-: <a class="el" href="classle_1_1RefTreeRoot.html#a48d8aa0a0f1a2f9fc10a60cdfc6d3139">le::RefTreeRoot&lt; T &gt;</a>
-, <a class="el" href="structle_1_1TaggedDeque.html#a297ee0417c60d7ff65ec32633e515358">le::TaggedDeque&lt; Ty, Id &gt;</a>
-, <a class="el" href="structle_1_1TaggedMap.html#adc8ccffc9617c7f6a5222cfd91f8d038">le::TaggedMap&lt; Ty, Id &gt;</a>
-, <a class="el" href="classle_1_1TaggedStore.html#a80c23edd5ba0ff6826954c159dde5cad">le::TaggedStore&lt; Ty, Tg, St &gt;</a>
-</li>
-<li>container_type
-: <a class="el" href="classle_1_1CRTPTree.html#a1752369f30e5320a50a3fb30a9e9afff">le::CRTPTree&lt; T &gt;</a>
+: <a class="el" href="classle_1_1RefTreeRoot.html#a79eb74f3677a6cfad12adfc76b07ca45">le::RefTreeRoot&lt; T, Base &gt;</a>
 </li>
 <li>contains()
 : <a class="el" href="classdecf_1_1registry__t.html#ac13852fd40ae741d346333c024cb5bff">decf::registry_t</a>
@@ -228,13 +248,13 @@ $(function() {
 , <a class="el" href="classkt_1_1fixed__any.html#a0ddfec79359a0db4eca07f2739e58dda">kt::fixed_any&lt; N &gt;</a>
 , <a class="el" href="classle_1_1AssetList.html#a3aabd490c8b20554a6fdfb27eb3a49c9">le::AssetList&lt; T &gt;</a>
 , <a class="el" href="classle_1_1AssetStore.html#a9953d3b097c5e5ae04b9327f74363061">le::AssetStore</a>
-, <a class="el" href="structle_1_1ErasedRef.html#aa8aa3124532915f57fa3fd92cf9d94c0">le::ErasedRef</a>
+, <a class="el" href="classle_1_1ErasedPtr.html#a82380677aee6f9dd3096556a8aad2670">le::ErasedPtr</a>
 , <a class="el" href="classle_1_1graphics_1_1DescriptorSet.html#a3f0442d648909425b401448a604016b2">le::graphics::DescriptorSet</a>
 , <a class="el" href="classle_1_1graphics_1_1SetPool.html#ae9996b5dddd4c021ab763da9667d1b54">le::graphics::SetPool</a>
 , <a class="el" href="classle_1_1graphics_1_1ShaderInput.html#af255267c42dd5dc385f6e30980040734">le::graphics::ShaderInput</a>
 </li>
 <li>context
-: <a class="el" href="structle_1_1AssetLoadData_3_01graphics_1_1Pipeline_01_4.html#aae819d8da96cc3c7ff1e472af642df2f">le::AssetLoadData&lt; graphics::Pipeline &gt;</a>
+: <a class="el" href="structle_1_1AssetLoadData_3_01graphics_1_1Pipeline_01_4.html#a25b5f358f5c1bb8f72454b31319ee16d">le::AssetLoadData&lt; graphics::Pipeline &gt;</a>
 </li>
 <li>Context
 : <a class="el" href="classle_1_1Engine.html#add50c9625f14c99d159513e5c86a07bc">le::Engine</a>
@@ -244,6 +264,9 @@ $(function() {
 </li>
 <li>copy()
 : <a class="el" href="classle_1_1graphics_1_1VRAM.html#ab797cc55ff744c45e3d1c44aac5cb54a">le::graphics::VRAM</a>
+</li>
+<li>correctStyleColours
+: <a class="el" href="structle_1_1DearImGui_1_1CreateInfo.html#ae329be2a5f3e7c70cde9f6ed3acb4dc3">le::DearImGui::CreateInfo</a>
 </li>
 <li>cos()
 : <a class="el" href="structle_1_1Fixed.html#a916ada99b1d9356d3b8405299771b5b8">le::Fixed</a>
@@ -259,29 +282,9 @@ $(function() {
 : <a class="el" href="structle_1_1TCounter_3_01T_00_01false_01_4.html#a44d0afcdf41890d6113f31a0be4f4993">le::TCounter&lt; T, false &gt;</a>
 , <a class="el" href="structle_1_1TCounter_3_01T_00_01true_01_4.html#a8270a2e49dd9172b7070a0eecddf560a">le::TCounter&lt; T, true &gt;</a>
 </li>
-<li>countsText()
-: <a class="el" href="classle_1_1graphics_1_1Memory.html#a9fe553fb85bd665346dd6c890b4b12d0">le::graphics::Memory</a>
-</li>
 <li>create()
-: <a class="el" href="classle_1_1BitmapFont.html#a657bac8961521565e02fad0e2ddb4079">le::BitmapFont</a>
-</li>
-<li>createBO()
-: <a class="el" href="classle_1_1graphics_1_1VRAM.html#a40a7ea9b337f151b1af98852d2de6cbe">le::graphics::VRAM</a>
-</li>
-<li>createDescriptorPool()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a50682cab01c74cdbf228299b2467377f">le::graphics::Device</a>
-</li>
-<li>createDescriptorSetLayout()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a1b617e11b8aabdcaa16267efa07bb0dd">le::graphics::Device</a>
-</li>
-<li>createFence()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a4f36b412ca9a1268e96fdf48c54f80c8">le::graphics::Device</a>
-</li>
-<li>createFramebuffer()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a14dc3d4bf9c7f3a43b32312bad100251">le::graphics::Device</a>
-</li>
-<li>createImageView()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#ab76306775b03bead267d56371de960d2">le::graphics::Device</a>
+: <a class="el" href="classle_1_1BitmapFont.html#ae7abe23e91b0d9eaaaaf7963bc1985b7">le::BitmapFont</a>
+, <a class="el" href="structle_1_1BitmapText.html#adc838635c78e21c1b5814221245a6faf">le::BitmapText</a>
 </li>
 <li>CreateInfo()
 : <a class="el" href="structle_1_1DearImGui_1_1CreateInfo.html#a97e6c5cfc52f5c2ca37aecfca2d7a540">le::DearImGui::CreateInfo</a>
@@ -289,22 +292,16 @@ $(function() {
 <li>createInfo
 : <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html#a2396d2253bf049e6ea5f89351c26fa99">le::graphics::Image::CreateInfo</a>
 </li>
-<li>createPipelineLayout()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a376f071b0ea4bf2ab4f5a71b91575d2b">le::graphics::Device</a>
-</li>
-<li>createRenderPass()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a2abbf4b4874285bb9f7e637daeec97a5">le::graphics::Device</a>
-</li>
-<li>createSemaphore()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a6380509064ee0776a2fe3e68a5812a04">le::graphics::Device</a>
-</li>
-<li>CRTPTree()
-: <a class="el" href="classle_1_1CRTPTree.html#a9bc81e711ce9562655a071c3a4de4460">le::CRTPTree&lt; T &gt;</a>
+<li>Cubemap
+: <a class="el" href="classle_1_1graphics_1_1Texture.html#a8996448e016a15dcf89d38be78b68e31">le::graphics::Texture</a>
 </li>
 <li>cursor
-: <a class="el" href="classle_1_1Input.html#af43911bdeb9b679b7a0ed87f71ebbcf3">le::Input</a>
-, <a class="el" href="structle_1_1Input_1_1State.html#a425245039cf3d2bda168cdeaf4e003f0">le::Input::State</a>
+: <a class="el" href="classle_1_1input_1_1Driver.html#a1916f59c216a2f5b6f7a833b54b345c9">le::input::Driver</a>
+, <a class="el" href="structle_1_1input_1_1State.html#ab240d8c9ce9589ff1a1b04f8556f582e">le::input::State</a>
 , <a class="el" href="unionle_1_1window_1_1Event_1_1Store.html#a8d0312da38b8fb67e06a6718cdc6eab6">le::window::Event::Store</a>
+</li>
+<li>custom
+: <a class="el" href="structle_1_1graphics_1_1Swapchain_1_1CreateInfo.html#aae95b64e7639112c5210883fdd55dc6e">le::graphics::Swapchain::CreateInfo</a>
 </li>
 <li>customEntities
 : <a class="el" href="structle_1_1edi_1_1In.html#afccfa13a1a838674a9c89e6cec434219">le::edi::In</a>

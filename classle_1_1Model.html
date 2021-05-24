@@ -84,8 +84,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af2cb3fe0e22c31ebf7eb3ca9d85b7d88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Model.html#a3fb26b2e83a689a1851e4f51d8604576">Result</a>&lt; <a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt; <a class="el" href="structle_1_1Primitive.html">Primitive</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#af2cb3fe0e22c31ebf7eb3ca9d85b7d88">construct</a> (<a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> &amp;vram, <a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a> const &amp;info, <a class="el" href="classle_1_1Model.html#aec7ff8d6d28db7aa3f0717ca786dc019">Sampler</a> const &amp;sampler, vk::Format texFormat=<a class="el" href="classle_1_1graphics_1_1Texture.html#a100f332d762c9f788c5b2cb3ebf0789e">Texture::srgbFormat</a>)</td></tr>
-<tr class="separator:af2cb3fe0e22c31ebf7eb3ca9d85b7d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de99fd50cc0ab1624dfae917c5e71d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Model.html#a3fb26b2e83a689a1851e4f51d8604576">Result</a>&lt; <a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt; <a class="el" href="structle_1_1Primitive.html">Primitive</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a4de99fd50cc0ab1624dfae917c5e71d5">construct</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> * &gt; vram, <a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a> const &amp;info, <a class="el" href="classle_1_1Model.html#aec7ff8d6d28db7aa3f0717ca786dc019">Sampler</a> const &amp;sampler, std::optional&lt; vk::Format &gt; forceFormat)</td></tr>
+<tr class="separator:a4de99fd50cc0ab1624dfae917c5e71d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac02878dde75555266a546356c10278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt; <a class="el" href="structle_1_1Primitive.html">Primitive</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a7ac02878dde75555266a546356c10278">primitives</a> () const noexcept</td></tr>
 <tr class="separator:a7ac02878dde75555266a546356c10278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -168,8 +168,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af2cb3fe0e22c31ebf7eb3ca9d85b7d88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2cb3fe0e22c31ebf7eb3ca9d85b7d88">&#9670;&nbsp;</a></span>construct()</h2>
+<a id="a4de99fd50cc0ab1624dfae917c5e71d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de99fd50cc0ab1624dfae917c5e71d5">&#9670;&nbsp;</a></span>construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +177,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classle_1_1Model.html#a3fb26b2e83a689a1851e4f51d8604576">Result</a>&lt;<a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt;<a class="el" href="structle_1_1Primitive.html">Primitive</a>&gt; &gt; le::Model::construct </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> * &gt;&#160;</td>
           <td class="paramname"><em>vram</em>, </td>
         </tr>
         <tr>
@@ -195,8 +195,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vk::Format&#160;</td>
-          <td class="paramname"><em>texFormat</em> = <code><a class="el" href="classle_1_1graphics_1_1Texture.html#a100f332d762c9f788c5b2cb3ebf0789e">Texture::srgbFormat</a></code>&#160;</td>
+          <td class="paramtype">std::optional&lt; vk::Format &gt;&#160;</td>
+          <td class="paramname"><em>forceFormat</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

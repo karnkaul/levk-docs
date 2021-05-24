@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: le::RefTreeRoot&lt; T &gt; Class Template Reference</title>
+<title>LittleEngineVk: le::RefTreeRoot&lt; T, Base &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -51,89 +51,107 @@ $(function() {
 <a href="#friends">Friends</a> &#124;
 <a href="classle_1_1RefTreeRoot-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">le::RefTreeRoot&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">le::RefTreeRoot&lt; T, Base &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;ref_tree.hpp&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for le::RefTreeRoot&lt; T &gt;:</div>
+Inheritance diagram for le::RefTreeRoot&lt; T, Base &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classle_1_1RefTreeRoot.png" usemap="#le::RefTreeRoot_3C_20T_20_3E_map" alt=""/>
-  <map id="le::RefTreeRoot_3C_20T_20_3E_map" name="le::RefTreeRoot_3C_20T_20_3E_map">
-<area href="classle_1_1RefTreeNode.html" alt="le::RefTreeNode&lt; SceneNode &gt;" shape="rect" coords="0,56,193,80"/>
-<area href="classle_1_1RefTreeNode.html" alt="le::RefTreeNode&lt; T &gt;" shape="rect" coords="203,56,396,80"/>
-<area href="classle_1_1SceneNode.html" alt="le::SceneNode" shape="rect" coords="0,112,193,136"/>
+  <img src="classle_1_1RefTreeRoot.png" usemap="#le::RefTreeRoot_3C_20T_2C_20Base_20_3E_map" alt=""/>
+  <map id="le::RefTreeRoot_3C_20T_2C_20Base_20_3E_map" name="le::RefTreeRoot_3C_20T_2C_20Base_20_3E_map">
+<area href="structle_1_1RefTreeBase.html" alt="le::RefTreeBase" shape="rect" coords="0,0,193,24"/>
+<area href="classle_1_1RefTreeNode.html" alt="le::RefTreeNode&lt; SceneNode &gt;" shape="rect" coords="0,112,193,136"/>
+<area href="classle_1_1SceneNode.html" alt="le::SceneNode" shape="rect" coords="0,168,193,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a32b3eac5216beb0aebc8e0262284deec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a32b3eac5216beb0aebc8e0262284deec">type</a> = T</td></tr>
-<tr class="separator:a32b3eac5216beb0aebc8e0262284deec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d8aa0a0f1a2f9fc10a60cdfc6d3139"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a48d8aa0a0f1a2f9fc10a60cdfc6d3139">container_t</a> = std::forward_list&lt; <a class="el" href="structle_1_1Ref.html">Ref</a>&lt; <a class="el" href="classle_1_1RefTreeRoot.html#a32b3eac5216beb0aebc8e0262284deec">type</a> &gt; &gt;</td></tr>
-<tr class="separator:a48d8aa0a0f1a2f9fc10a60cdfc6d3139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1426f937beed41f7e4c9271c8366ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#afa1426f937beed41f7e4c9271c8366ee">type</a> = T</td></tr>
+<tr class="separator:afa1426f937beed41f7e4c9271c8366ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc3a727a6ef1281d93d64f906808c40"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#aebc3a727a6ef1281d93d64f906808c40">base_t</a> = Base</td></tr>
+<tr class="separator:aebc3a727a6ef1281d93d64f906808c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eb74f3677a6cfad12adfc76b07ca45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a79eb74f3677a6cfad12adfc76b07ca45">container_t</a> = std::forward_list&lt; <a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1RefTreeRoot.html#afa1426f937beed41f7e4c9271c8366ee">type</a> * &gt; &gt;</td></tr>
+<tr class="separator:a79eb74f3677a6cfad12adfc76b07ca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9ff88bfc8f748a387eb7cf41a3a39d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#ae9ff88bfc8f748a387eb7cf41a3a39d2">RefTreeRoot</a> ()=default</td></tr>
-<tr class="separator:ae9ff88bfc8f748a387eb7cf41a3a39d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6923db7246c18732e4bed44372c5d1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a6923db7246c18732e4bed44372c5d1d0">RefTreeRoot</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a6923db7246c18732e4bed44372c5d1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbdf325bf2571dc34c401f1a2de9b8e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#acbdf325bf2571dc34c401f1a2de9b8e4">operator=</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:acbdf325bf2571dc34c401f1a2de9b8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a100c40370a0df0489fe27029d1d051f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a100c40370a0df0489fe27029d1d051f5">RefTreeRoot</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> const &amp;)=delete</td></tr>
-<tr class="separator:a100c40370a0df0489fe27029d1d051f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c7dc49d6acb12f72813b190b997116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a84c7dc49d6acb12f72813b190b997116">operator=</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> const &amp;)=delete</td></tr>
-<tr class="separator:a84c7dc49d6acb12f72813b190b997116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55970ad564eb8297a049ade4585c11fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a55970ad564eb8297a049ade4585c11fd">~RefTreeRoot</a> ()=default</td></tr>
-<tr class="separator:a55970ad564eb8297a049ade4585c11fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae15a3d248bc3b4200e2837c0be4eb970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1RefTreeRoot.html#a48d8aa0a0f1a2f9fc10a60cdfc6d3139">container_t</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#ae15a3d248bc3b4200e2837c0be4eb970">children</a> () const noexcept</td></tr>
-<tr class="separator:ae15a3d248bc3b4200e2837c0be4eb970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f82a0722563c05b45ce4361d9d67d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a55f82a0722563c05b45ce4361d9d67d9">isRoot</a> () const noexcept</td></tr>
-<tr class="separator:a55f82a0722563c05b45ce4361d9d67d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8451f97ea189ad15f9b1d56f29172a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#ac8451f97ea189ad15f9b1d56f29172a8">RefTreeRoot</a> ()=default</td></tr>
+<tr class="separator:ac8451f97ea189ad15f9b1d56f29172a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95ece446903b158ca7dff96b6a5173f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#ac95ece446903b158ca7dff96b6a5173f">RefTreeRoot</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ac95ece446903b158ca7dff96b6a5173f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c50a6539a0b42453af2690f5c446bfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a5c50a6539a0b42453af2690f5c446bfe">operator=</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a5c50a6539a0b42453af2690f5c446bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e05622515dd5367f16436a6a3400963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a4e05622515dd5367f16436a6a3400963">RefTreeRoot</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> const &amp;)=delete</td></tr>
+<tr class="separator:a4e05622515dd5367f16436a6a3400963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63fd254c4d86490ac182da542555a80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#aa63fd254c4d86490ac182da542555a80">operator=</a> (<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> const &amp;)=delete</td></tr>
+<tr class="separator:aa63fd254c4d86490ac182da542555a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a8122772dd0bf2ff3d00837c239a62"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a58a8122772dd0bf2ff3d00837c239a62">~RefTreeRoot</a> ()=default</td></tr>
+<tr class="separator:a58a8122772dd0bf2ff3d00837c239a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a57a1fbc739552d486245152ccb8bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1RefTreeRoot.html#a79eb74f3677a6cfad12adfc76b07ca45">container_t</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a0a57a1fbc739552d486245152ccb8bb3">children</a> () const noexcept</td></tr>
+<tr class="separator:a0a57a1fbc739552d486245152ccb8bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7ae02f262eb3be0d1a41dc2eedf273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a5f7ae02f262eb3be0d1a41dc2eedf273">isRoot</a> () const noexcept</td></tr>
+<tr class="separator:a5f7ae02f262eb3be0d1a41dc2eedf273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a271d1623cd8d6f1aa1d9cfe8aad1533d"><td class="memTemplParams" colspan="2">template&lt;typename U , typename Pred &gt; </td></tr>
-<tr class="memitem:a271d1623cd8d6f1aa1d9cfe8aad1533d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a271d1623cd8d6f1aa1d9cfe8aad1533d">walk</a> (U &amp;&amp;root, Pred pred)</td></tr>
-<tr class="memdesc:a271d1623cd8d6f1aa1d9cfe8aad1533d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth-first walk.  <a href="classle_1_1RefTreeRoot.html#a271d1623cd8d6f1aa1d9cfe8aad1533d">More...</a><br /></td></tr>
-<tr class="separator:a271d1623cd8d6f1aa1d9cfe8aad1533d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03470d52c12ce672b147dd465f3567b"><td class="memTemplParams" colspan="2">template&lt;typename U , typename Pred &gt; </td></tr>
+<tr class="memitem:aa03470d52c12ce672b147dd465f3567b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#aa03470d52c12ce672b147dd465f3567b">walk</a> (U &amp;&amp;root, Pred pred)</td></tr>
+<tr class="memdesc:aa03470d52c12ce672b147dd465f3567b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth-first walk.  <a href="classle_1_1RefTreeRoot.html#aa03470d52c12ce672b147dd465f3567b">More...</a><br /></td></tr>
+<tr class="separator:aa03470d52c12ce672b147dd465f3567b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8a52c9354e7e43f0b670910977430eff"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a8a52c9354e7e43f0b670910977430eff"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a8a52c9354e7e43f0b670910977430eff">RefTreeNode</a></td></tr>
-<tr class="separator:a8a52c9354e7e43f0b670910977430eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cad0730c10c0fe0c7d3376931f6694c"><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr class="memitem:a2cad0730c10c0fe0c7d3376931f6694c"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1RefTreeRoot.html#a2cad0730c10c0fe0c7d3376931f6694c">RefTreeNode</a></td></tr>
+<tr class="separator:a2cad0730c10c0fe0c7d3376931f6694c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a48d8aa0a0f1a2f9fc10a60cdfc6d3139"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48d8aa0a0f1a2f9fc10a60cdfc6d3139">&#9670;&nbsp;</a></span>container_t</h2>
+<a id="aebc3a727a6ef1281d93d64f906808c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc3a727a6ef1281d93d64f906808c40">&#9670;&nbsp;</a></span>base_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#a48d8aa0a0f1a2f9fc10a60cdfc6d3139">container_t</a> =  std::forward_list&lt;<a class="el" href="structle_1_1Ref.html">Ref</a>&lt;<a class="el" href="classle_1_1RefTreeRoot.html#a32b3eac5216beb0aebc8e0262284deec">type</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#aebc3a727a6ef1281d93d64f906808c40">base_t</a> =  Base</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a32b3eac5216beb0aebc8e0262284deec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b3eac5216beb0aebc8e0262284deec">&#9670;&nbsp;</a></span>type</h2>
+<a id="a79eb74f3677a6cfad12adfc76b07ca45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79eb74f3677a6cfad12adfc76b07ca45">&#9670;&nbsp;</a></span>container_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#a32b3eac5216beb0aebc8e0262284deec">type</a> =  T</td>
+          <td class="memname">using <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#a79eb74f3677a6cfad12adfc76b07ca45">container_t</a> =  std::forward_list&lt;<a class="el" href="classle_1_1not__null.html">not_null</a>&lt;<a class="el" href="classle_1_1RefTreeRoot.html#afa1426f937beed41f7e4c9271c8366ee">type</a>*&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa1426f937beed41f7e4c9271c8366ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1426f937beed41f7e4c9271c8366ee">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#afa1426f937beed41f7e4c9271c8366ee">type</a> =  T</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -141,19 +159,19 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae9ff88bfc8f748a387eb7cf41a3a39d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9ff88bfc8f748a387eb7cf41a3a39d2">&#9670;&nbsp;</a></span>RefTreeRoot() <span class="overload">[1/3]</span></h2>
+<a id="ac8451f97ea189ad15f9b1d56f29172a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8451f97ea189ad15f9b1d56f29172a8">&#9670;&nbsp;</a></span>RefTreeRoot() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
+          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -168,21 +186,21 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6923db7246c18732e4bed44372c5d1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6923db7246c18732e4bed44372c5d1d0">&#9670;&nbsp;</a></span>RefTreeRoot() <span class="overload">[2/3]</span></h2>
+<a id="ac95ece446903b158ca7dff96b6a5173f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95ece446903b158ca7dff96b6a5173f">&#9670;&nbsp;</a></span>RefTreeRoot() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
+          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T, Base &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -196,21 +214,21 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a100c40370a0df0489fe27029d1d051f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a100c40370a0df0489fe27029d1d051f5">&#9670;&nbsp;</a></span>RefTreeRoot() <span class="overload">[3/3]</span></h2>
+<a id="a4e05622515dd5367f16436a6a3400963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e05622515dd5367f16436a6a3400963">&#9670;&nbsp;</a></span>RefTreeRoot() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
+          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T, Base &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -224,19 +242,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a55970ad564eb8297a049ade4585c11fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55970ad564eb8297a049ade4585c11fd">&#9670;&nbsp;</a></span>~RefTreeRoot()</h2>
+<a id="a58a8122772dd0bf2ff3d00837c239a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a8122772dd0bf2ff3d00837c239a62">&#9670;&nbsp;</a></span>~RefTreeRoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::~<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
+          <td class="memname">virtual <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::~<a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -252,19 +270,19 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae15a3d248bc3b4200e2837c0be4eb970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae15a3d248bc3b4200e2837c0be4eb970">&#9670;&nbsp;</a></span>children()</h2>
+<a id="a0a57a1fbc739552d486245152ccb8bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a57a1fbc739552d486245152ccb8bb3">&#9670;&nbsp;</a></span>children()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#a48d8aa0a0f1a2f9fc10a60cdfc6d3139">container_t</a> const  &amp; <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::children</td>
+          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T, Base &gt;::<a class="el" href="classle_1_1RefTreeRoot.html#a79eb74f3677a6cfad12adfc76b07ca45">container_t</a> const  &amp; <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::children</td>
         </tr>
       </table>
   </td>
@@ -276,19 +294,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a55f82a0722563c05b45ce4361d9d67d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f82a0722563c05b45ce4361d9d67d9">&#9670;&nbsp;</a></span>isRoot()</h2>
+<a id="a5f7ae02f262eb3be0d1a41dc2eedf273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7ae02f262eb3be0d1a41dc2eedf273">&#9670;&nbsp;</a></span>isRoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::isRoot</td>
+          <td class="memname">bool <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::isRoot</td>
         </tr>
       </table>
   </td>
@@ -300,21 +318,21 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="acbdf325bf2571dc34c401f1a2de9b8e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbdf325bf2571dc34c401f1a2de9b8e4">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a5c50a6539a0b42453af2690f5c446bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c50a6539a0b42453af2690f5c446bfe">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&amp; <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&amp; <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T, Base &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -328,21 +346,21 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a84c7dc49d6acb12f72813b190b997116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84c7dc49d6acb12f72813b190b997116">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="aa63fd254c4d86490ac182da542555a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63fd254c4d86490ac182da542555a80">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&amp; <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&amp; <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1RefTreeRoot.html">RefTreeRoot</a>&lt; T, Base &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -356,13 +374,13 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a271d1623cd8d6f1aa1d9cfe8aad1533d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a271d1623cd8d6f1aa1d9cfe8aad1533d">&#9670;&nbsp;</a></span>walk()</h2>
+<a id="aa03470d52c12ce672b147dd465f3567b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03470d52c12ce672b147dd465f3567b">&#9670;&nbsp;</a></span>walk()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base &gt; </div>
 <div class="memtemplate">
 template&lt;typename U , typename Pred &gt; </div>
 <table class="mlabels">
@@ -370,7 +388,7 @@ template&lt;typename U , typename Pred &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T &gt;::walk </td>
+          <td class="memname">void <a class="el" href="classle_1_1RefTreeRoot.html">le::RefTreeRoot</a>&lt; T, Base &gt;::walk </td>
           <td>(</td>
           <td class="paramtype">U &amp;&amp;&#160;</td>
           <td class="paramname"><em>root</em>, </td>
@@ -406,15 +424,15 @@ template&lt;typename U , typename Pred &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a8a52c9354e7e43f0b670910977430eff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a52c9354e7e43f0b670910977430eff">&#9670;&nbsp;</a></span>RefTreeNode</h2>
+<a id="a2cad0730c10c0fe0c7d3376931f6694c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cad0730c10c0fe0c7d3376931f6694c">&#9670;&nbsp;</a></span>RefTreeNode</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Base  = RefTreeBase&gt; </div>
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U , typename V &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

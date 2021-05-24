@@ -52,7 +52,8 @@ $(function() {
 <div class="title">ubyte.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;compare&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -68,20 +69,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a896e5f089a3a9a1481c0306324963baa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a896e5f089a3a9a1481c0306324963baa">le::operator==</a> (UByte lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:a896e5f089a3a9a1481c0306324963baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c989f0c56c8621cbd65c7d57b428e4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a3c989f0c56c8621cbd65c7d57b428e4d">le::operator!=</a> (UByte lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:a3c989f0c56c8621cbd65c7d57b428e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4bf46ea8c6362cd6757df8338d631c6"><td class="memItemLeft" align="right" valign="top">UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ae4bf46ea8c6362cd6757df8338d631c6">le::operator+</a> (UByte lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:ae4bf46ea8c6362cd6757df8338d631c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac1376602a41f17ebc1d75e1bfc1ab2"><td class="memItemLeft" align="right" valign="top">UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aaac1376602a41f17ebc1d75e1bfc1ab2">le::operator-</a> (UByte lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:aaac1376602a41f17ebc1d75e1bfc1ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b8cab86c9be6c14b63d287d1622b489"><td class="memItemLeft" align="right" valign="top">UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a4b8cab86c9be6c14b63d287d1622b489">le::operator*</a> (UByte lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:a4b8cab86c9be6c14b63d287d1622b489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313ba2a77b9f8dc1714ca1584c47c77e"><td class="memItemLeft" align="right" valign="top">UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a313ba2a77b9f8dc1714ca1584c47c77e">le::operator/</a> (UByte lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:a313ba2a77b9f8dc1714ca1584c47c77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dec127ad6e913684c4c289977bf2736"><td class="memItemLeft" align="right" valign="top">UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a5dec127ad6e913684c4c289977bf2736">le::operator*</a> (f32 lhs, UByte rhs) noexcept</td></tr>
-<tr class="separator:a5dec127ad6e913684c4c289977bf2736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b94293d73096039cea718a64ea3a8b"><td class="memItemLeft" align="right" valign="top">constexpr UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a39b94293d73096039cea718a64ea3a8b">le::operator+</a> (UByte lhs, UByte rhs) noexcept</td></tr>
+<tr class="separator:a39b94293d73096039cea718a64ea3a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf8f0a4b58b8c270aac9e969a0d85de"><td class="memItemLeft" align="right" valign="top">constexpr UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aedf8f0a4b58b8c270aac9e969a0d85de">le::operator-</a> (UByte lhs, UByte rhs) noexcept</td></tr>
+<tr class="separator:aedf8f0a4b58b8c270aac9e969a0d85de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9179343095133431daa416f360490c0"><td class="memItemLeft" align="right" valign="top">constexpr UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ae9179343095133431daa416f360490c0">le::operator*</a> (UByte lhs, UByte rhs) noexcept</td></tr>
+<tr class="separator:ae9179343095133431daa416f360490c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963dc9329f78274447b6f2d8ed76262b"><td class="memItemLeft" align="right" valign="top">constexpr UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a963dc9329f78274447b6f2d8ed76262b">le::operator/</a> (UByte lhs, UByte rhs) noexcept</td></tr>
+<tr class="separator:a963dc9329f78274447b6f2d8ed76262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058a467a14d02c0038d5135fb86058bd"><td class="memItemLeft" align="right" valign="top">constexpr UByte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a058a467a14d02c0038d5135fb86058bd">le::operator*</a> (f32 lhs, UByte rhs) noexcept</td></tr>
+<tr class="separator:a058a467a14d02c0038d5135fb86058bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
