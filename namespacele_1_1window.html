@@ -61,9 +61,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1EventQueue.html">EventQueue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1window_1_1IInstance.html">IInstance</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1window_1_1InstanceBase.html">InstanceBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1ISurface.html">ISurface</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Surface.html">Surface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Joystick.html">Joystick</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,8 +341,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5ea3e49cdb7dd3bf163ebffcff4db8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a24188fa89a22403bd00557c028755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1window.html#a72f1f380aa779a0fbbf2080b139b779d">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ab3a24188fa89a22403bd00557c028755">parseAction</a> (std::string_view str) noexcept</td></tr>
 <tr class="separator:ab3a24188fa89a22403bd00557c028755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25ca18e841e381720d8818da875a41c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1window.html#a52e094d5ce0b482b848b470862f0d97a">Mods</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ad25ca18e841e381720d8818da875a41c">parseMods</a> (<a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt; std::string &gt; vec) noexcept</td></tr>
-<tr class="separator:ad25ca18e841e381720d8818da875a41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8c7a44af0d26263bb773977073c248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1window.html#a52e094d5ce0b482b848b470862f0d97a">Mods</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#a7c8c7a44af0d26263bb773977073c248">parseMods</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; std::string const &gt; vec) noexcept</td></tr>
+<tr class="separator:a7c8c7a44af0d26263bb773977073c248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3fdcc2875067db9c010b052c15067a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">Axis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ab3fdcc2875067db9c010b052c15067a2">parseAxis</a> (std::string_view str) noexcept</td></tr>
 <tr class="separator:ab3fdcc2875067db9c010b052c15067a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70f7de6f686425f7845cb9f06010fd98"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#a70f7de6f686425f7845cb9f06010fd98">isMouseButton</a> (<a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">Key</a> key) noexcept</td></tr>
@@ -892,8 +892,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad25ca18e841e381720d8818da875a41c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad25ca18e841e381720d8818da875a41c">&#9670;&nbsp;</a></span>parseMods()</h2>
+<a id="a7c8c7a44af0d26263bb773977073c248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8c7a44af0d26263bb773977073c248">&#9670;&nbsp;</a></span>parseMods()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +904,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacele_1_1window.html#a52e094d5ce0b482b848b470862f0d97a">Mods</a> le::window::parseMods </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a556965d701f871672b8c4342a2412f4c">View</a>&lt; std::string &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; std::string const &gt;&#160;</td>
           <td class="paramname"><em>vec</em></td><td>)</td>
           <td></td>
         </tr>

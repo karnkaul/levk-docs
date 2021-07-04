@@ -48,6 +48,7 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">common.hpp File Reference</div>  </div>
@@ -56,6 +57,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;string_view&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;<a class="el" href="lib__logger_8hpp.html">core/lib_logger.hpp</a>&gt;</code><br />
+<code>#include &lt;glm/vec2.hpp&gt;</code><br />
 <code>#include &lt;vulkan/vulkan.hpp&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -74,6 +76,23 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a29a56bb9778e7be066c3d27c111488c1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a29a56bb9778e7be066c3d27c111488c1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a29a56bb9778e7be066c3d27c111488c1">le::graphics::vAP</a> = vk::ArrayProxy&lt; T const  &gt; const  &amp;</td></tr>
 <tr class="separator:a29a56bb9778e7be066c3d27c111488c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96e77907a32237d77ad98c30cec1c9a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = T&gt; </td></tr>
+<tr class="memitem:aa96e77907a32237d77ad98c30cec1c9a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">le::graphics::TPair</a> = std::pair&lt; T, U &gt;</td></tr>
+<tr class="separator:aa96e77907a32237d77ad98c30cec1c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f988335951f108c5282678cb0f6a66"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#aa3f988335951f108c5282678cb0f6a66">le::graphics::StagePair</a> = TPair&lt; vk::PipelineStageFlags &gt;</td></tr>
+<tr class="separator:aa3f988335951f108c5282678cb0f6a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab98dd6fa59e9d6daf4a17c37ef9d2a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#aab98dd6fa59e9d6daf4a17c37ef9d2a0">le::graphics::AccessPair</a> = TPair&lt; vk::AccessFlags &gt;</td></tr>
+<tr class="separator:aab98dd6fa59e9d6daf4a17c37ef9d2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83806501f039eabf3abd1248c441fda"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#ae83806501f039eabf3abd1248c441fda">le::graphics::LayoutPair</a> = TPair&lt; vk::ImageLayout &gt;</td></tr>
+<tr class="separator:ae83806501f039eabf3abd1248c441fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81c0504f75ea1c573b97271f26892f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#aa81c0504f75ea1c573b97271f26892f7">le::graphics::vIL</a> = vk::ImageLayout</td></tr>
+<tr class="separator:aa81c0504f75ea1c573b97271f26892f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e935bfc08942a78b1b6ff683565849"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a30e935bfc08942a78b1b6ff683565849">le::graphics::vAFB</a> = vk::AccessFlagBits</td></tr>
+<tr class="separator:a30e935bfc08942a78b1b6ff683565849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4023959aca2ace0f46aaf80ddd6796"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a5a4023959aca2ace0f46aaf80ddd6796">le::graphics::vPSFB</a> = vk::PipelineStageFlagBits</td></tr>
+<tr class="separator:a5a4023959aca2ace0f46aaf80ddd6796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af590eb6934b4aae9ed3788ec859fa9bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#af590eb6934b4aae9ed3788ec859fa9bb">le::graphics::Extent2D</a> = glm::tvec2&lt; u32 &gt;</td></tr>
+<tr class="separator:af590eb6934b4aae9ed3788ec859fa9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -81,6 +100,15 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacele_1_1graphics.html#a1192aa904c727fc9f8df54deafbb818eabe988781e4e1de1c6a36fb698afbbe1f">le::graphics::eNone</a>
  }</td></tr>
 <tr class="separator:a1192aa904c727fc9f8df54deafbb818e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acea8ad5977edc019cc8f8bdd86b8980a"><td class="memItemLeft" align="right" valign="top">constexpr Extent2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#acea8ad5977edc019cc8f8bdd86b8980a">le::graphics::cast</a> (vk::Extent2D extent) noexcept</td></tr>
+<tr class="separator:acea8ad5977edc019cc8f8bdd86b8980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45166b594b360b5d562e350ddd45666"><td class="memItemLeft" align="right" valign="top">constexpr Extent2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#ad45166b594b360b5d562e350ddd45666">le::graphics::cast</a> (vk::Extent3D extent) noexcept</td></tr>
+<tr class="separator:ad45166b594b360b5d562e350ddd45666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173b06fc01d618848660d9ea6faa02ff"><td class="memItemLeft" align="right" valign="top">constexpr vk::Extent2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a173b06fc01d618848660d9ea6faa02ff">le::graphics::cast</a> (Extent2D extent) noexcept</td></tr>
+<tr class="separator:a173b06fc01d618848660d9ea6faa02ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

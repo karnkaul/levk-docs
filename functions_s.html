@@ -109,6 +109,9 @@ $(function() {
 <li>s_scaleFactor
 : <a class="el" href="structle_1_1Fixed.html#a20f87911f6d46bc87c031d4f92bc67b5">le::Fixed</a>
 </li>
+<li>s_serial_opts
+: <a class="el" href="classdj_1_1json__t.html#ae6332a99f1cb80b94be1a7a3aebeb4da">dj::json_t</a>
+</li>
 <li>s_trisDrawn
 : <a class="el" href="classle_1_1graphics_1_1Mesh.html#ae9c0177042ae45920e908a34cec1dd00">le::graphics::Mesh</a>
 </li>
@@ -116,10 +119,7 @@ $(function() {
 : <a class="el" href="classle_1_1Singleton_3_01T_00_01SingletonStorage_1_1eHeap_01_4.html#abd31d3849c70ce296918f9ce14b961d7">le::Singleton&lt; T, SingletonStorage::eHeap &gt;</a>
 </li>
 <li>safe()
-: <a class="el" href="structle_1_1Camera.html#a7b2738566b1e1a70f854cce299a8d349">le::Camera</a>
-</li>
-<li>safe_get()
-: <a class="el" href="classdj_1_1node__t.html#aa69dbd26178ac37a4d4ef52b2cbc4075">dj::node_t</a>
+: <a class="el" href="structle_1_1graphics_1_1Camera.html#ae50819d603fefb5df708b5443244941b">le::graphics::Camera</a>
 </li>
 <li>Sampler
 : <a class="el" href="classle_1_1BitmapFont.html#aaf0cddf303a88ffeb24be385cfbcf7da">le::BitmapFont</a>
@@ -129,7 +129,7 @@ $(function() {
 , <a class="el" href="classle_1_1graphics_1_1Sampler.html#a1a6e3af5accf9a3015ee01a9b097caf5">le::graphics::Sampler</a>
 </li>
 <li>Sampler()
-: <a class="el" href="classle_1_1graphics_1_1Sampler.html#a7af5a829f357d4bd239a4ed53f7ce5c6">le::graphics::Sampler</a>
+: <a class="el" href="classle_1_1graphics_1_1Sampler.html#a6f7a044e088719047e68778cab984509">le::graphics::Sampler</a>
 </li>
 <li>sampler
 : <a class="el" href="structle_1_1graphics_1_1Texture_1_1CreateInfo.html#a198087405aabf9cd56b5dc8b37b5d6e1">le::graphics::Texture::CreateInfo</a>
@@ -144,6 +144,9 @@ $(function() {
 , <a class="el" href="structle_1_1AssetLoadData_3_01Model_01_4.html#af9d65a1aa102df88f9753b2ecc021dd6">le::AssetLoadData&lt; Model &gt;</a>
 , <a class="el" href="structle_1_1Model_1_1TexData.html#aeb2cb08dedd0439fbf5e1ba2da34993e">le::Model::TexData</a>
 </li>
+<li>save()
+: <a class="el" href="classdj_1_1json__t.html#a0ed9a7007f492797e8dd3e4d6571ddec">dj::json_t</a>
+</li>
 <li>scale
 : <a class="el" href="structle_1_1graphics_1_1TextFactory_1_1Layout.html#a5629ef4f3d244df3cb4a8c993d45f268">le::graphics::TextFactory::Layout</a>
 , <a class="el" href="structle_1_1input_1_1Space.html#a63a2632f91cea214d7183200fc1415ff">le::input::Space</a>
@@ -151,11 +154,21 @@ $(function() {
 , <a class="el" href="structle_1_1SceneTransform.html#a1ff2bf46c2a95aee5ea040f5fc4d810f">le::SceneTransform</a>
 , <a class="el" href="structle_1_1Viewport.html#a9ec7fd0c7654aa32562f6b1c6be3922a">le::Viewport</a>
 </li>
+<li>scaleExtent()
+: <a class="el" href="classle_1_1graphics_1_1ARenderer.html#a86e51e346444b34ea40a2c1a642f2f32">le::graphics::ARenderer</a>
+</li>
 <li>scancode
 : <a class="el" href="structle_1_1window_1_1Event_1_1Input.html#aa18b36311ded44724e81c3d6f1b92c9e">le::window::Event::Input</a>
 </li>
+<li>scene
+: <a class="el" href="structle_1_1input_1_1Driver_1_1In.html#a7a7074aee796a4bf98c82f6cc76bad3b">le::input::Driver::In</a>
+, <a class="el" href="structle_1_1input_1_1Space.html#a756fbc826fd9f1c14563b62e71234b60">le::input::Space</a>
+</li>
 <li>SceneNode()
 : <a class="el" href="classle_1_1SceneNode.html#a9044a556c01526acb3a5676e7bc18798">le::SceneNode</a>
+</li>
+<li>sceneSpace()
+: <a class="el" href="classle_1_1Engine.html#ad929b748ea731378aa1fe410a7631877">le::Engine</a>
 </li>
 <li>scheduler()
 : <a class="el" href="classdts_1_1scheduler.html#a9d71dfeb70a31fddc03b05c54dd80adb">dts::scheduler</a>
@@ -164,8 +177,8 @@ $(function() {
 : <a class="el" href="classle_1_1AssetListLoader.html#ab91c63acdae811d4083d25bae0d43d1a">le::AssetListLoader</a>
 </li>
 <li>scissor()
-: <a class="el" href="classle_1_1Engine.html#ac4685442c364fa50e9575d1432ca149a">le::Engine</a>
-, <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a1f2aa6fa93f6cbd24ab5f6710d583474">le::graphics::RenderContext</a>
+: <a class="el" href="classle_1_1graphics_1_1ARenderer.html#a50b636a413a8521cd9904e590817d940">le::graphics::ARenderer</a>
+, <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a5112d8c78e4ea9fdde977be952f01478">le::graphics::RenderContext</a>
 , <a class="el" href="structle_1_1SceneDrawer_1_1Item.html#ae8d910dde7455dd46c25c3559e703ff5">le::SceneDrawer::Item</a>
 </li>
 <li>Score
@@ -174,11 +187,8 @@ $(function() {
 <li>score()
 : <a class="el" href="classle_1_1graphics_1_1DevicePicker.html#ac459616631715636b20b26b3e084a001">le::graphics::DevicePicker</a>
 </li>
-<li>screen()
-: <a class="el" href="structle_1_1input_1_1Space.html#a46b3606cfd2b3e1294a1a3d9feb67927">le::input::Space</a>
-</li>
 <li>screenID
-: <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#a0a93c94014082e3c6c8493bd61d0f227">le::window::IInstance::CreateInfo</a>
+: <a class="el" href="structle_1_1window_1_1InstanceBase_1_1CreateInfo.html#ac623a1d7a754cb3c51b4175dd310a3cd">le::window::InstanceBase::CreateInfo</a>
 </li>
 <li>screenPos
 : <a class="el" href="structle_1_1input_1_1Cursor.html#a2cc6eaa78bcfd3dd311e39fd7963d972">le::input::Cursor</a>
@@ -188,9 +198,6 @@ $(function() {
 </li>
 <li>scroll
 : <a class="el" href="structle_1_1input_1_1Cursor.html#a9390205c97eb2224240782e9a67b64d2">le::input::Cursor</a>
-</li>
-<li>secondary
-: <a class="el" href="structle_1_1graphics_1_1FrameSync.html#a3ff8def3b1763fcf6bcd78a22e9cb5c8">le::graphics::FrameSync</a>
 </li>
 <li>seed()
 : <a class="el" href="classle_1_1maths_1_1Random.html#af2e2afeda716ccf6db96b3ca9985e5e4">le::maths::Random</a>
@@ -210,35 +217,36 @@ $(function() {
 <li>separator
 : <a class="el" href="structle_1_1edi_1_1MenuList_1_1Menu.html#a898c23df00dbc3ecb420929cec5c0347">le::edi::MenuList::Menu</a>
 </li>
-<li>serialise()
-: <a class="el" href="classdj_1_1node__t.html#adcfca2901461fa7845eefe162caec1ae">dj::node_t</a>
+<li>serialize()
+: <a class="el" href="classdj_1_1json__t.html#a73d05b41ff8e5e939b7296041af8d7a7">dj::json_t</a>
 </li>
 <li>Service()
-: <a class="el" href="classle_1_1io_1_1Service.html#ac371d08bf083c05b92de16165145a102">le::io::Service</a>
-</li>
-<li>Services()
-: <a class="el" href="classle_1_1Services.html#adc60608ef8514381908edd63bc63121c">le::Services</a>
+: <a class="el" href="classle_1_1io_1_1Service.html#aa896b4eb3e2add4e97e2c2f1c62a5f0b">le::io::Service</a>
+, <a class="el" href="classle_1_1Service.html#a5b4477b7cec35c2cb75b427d61869978">le::Service&lt; T &gt;</a>
 </li>
 <li>set()
-: <a class="el" href="classdj_1_1node__t.html#a98e284c04d733b6d6c41963e42fa5e4a">dj::node_t</a>
+: <a class="el" href="classdj_1_1json__t.html#a96425cc59b50c47f2530803e853f4b86">dj::json_t</a>
 , <a class="el" href="structdts_1_1task__queue_1_1status__map.html#a85e4d20fb95d86fa2dc62bdd52e99533">dts::task_queue::status_map&lt; K &gt;</a>
 , <a class="el" href="structkt_1_1enum__flags.html#ae6b00090b50a75799f21c0058adfd693">kt::enum_flags&lt; Enum, N &gt;</a>
 , <a class="el" href="structle_1_1BitmapText.html#a58c55f2af39f449ed7d41a2eb7ad78af">le::BitmapText</a>
+, <a class="el" href="classle_1_1DescriptorMap.html#a01c18a2853dd6616fce3b70e54f1d195">le::DescriptorMap</a>
 , <a class="el" href="structle_1_1graphics_1_1Pipeline_1_1SetIndex.html#a72d44750d27c593e5006805dd6f606d1">le::graphics::Pipeline::SetIndex</a>
-, <a class="el" href="classle_1_1graphics_1_1ShaderInput.html#a35e0b53f9921cf167121e027069461c4">le::graphics::ShaderInput</a>
 , <a class="el" href="structle_1_1gui_1_1Style.html#ad9c1f8567e0d36db99ce4b75832adedc">le::gui::Style&lt; T &gt;</a>
-</li>
-<li>set_callback()
-: <a class="el" href="structdj_1_1error__handler__t.html#a703ccf874448bdbe8ebd13f00101f448">dj::error_handler_t</a>
+, <a class="el" href="classle_1_1gui_1_1Text.html#a5c844b8bfc779af833df989b3b48e107">le::gui::Text</a>
+, <a class="el" href="classle_1_1gui_1_1Widget.html#ac4ceb8e3b98a448b502dbaf33f7d9de8">le::gui::Widget</a>
+, <a class="el" href="unionle_1_1window_1_1Event_1_1Store.html#af0701474f51be2b1a048dc6a6fcbdb2b">le::window::Event::Store</a>
 </li>
 <li>set_error()
-: <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#ae4b20755d6358385c2206bc563515cb0">kt::result&lt; T, T &gt;</a>
+: <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#a4d3d1e9139b28afafa704514decab59c">kt::result&lt; T, T &gt;</a>
 </li>
 <li>set_result()
-: <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#aa566732f6c0642c6a6764d2fc06569d5">kt::result&lt; T, T &gt;</a>
+: <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#a79c11725b1be17662fc2456ecabc5565">kt::result&lt; T, T &gt;</a>
 </li>
 <li>setDebugUtilsName()
 : <a class="el" href="classle_1_1graphics_1_1Device.html#a5416dc2d761d595583f9929ec829ccc2">le::graphics::Device</a>
+</li>
+<li>setDestroyed()
+: <a class="el" href="classle_1_1gui_1_1View.html#a8698860aba9ca54c50c3a612143dba64">le::gui::View</a>
 </li>
 <li>setLayout()
 : <a class="el" href="classle_1_1graphics_1_1Pipeline.html#a4074750b00bdbe3ad5538bc97538b654">le::graphics::Pipeline</a>
@@ -246,9 +254,6 @@ $(function() {
 <li>setNumber
 : <a class="el" href="structle_1_1graphics_1_1DescriptorSet_1_1CreateInfo.html#af77857c7cf33e702b05463dd700ae9c9">le::graphics::DescriptorSet::CreateInfo</a>
 , <a class="el" href="classle_1_1graphics_1_1DescriptorSet.html#aa229628c2e988a21bc3c4ea2f55c0d33">le::graphics::DescriptorSet</a>
-</li>
-<li>SetPool()
-: <a class="el" href="classle_1_1graphics_1_1SetPool.html#a6065142691c926a67413e1c8cc270e3b">le::graphics::SetPool</a>
 </li>
 <li>sets
 : <a class="el" href="structle_1_1graphics_1_1utils_1_1SetBindings.html#ad480931763e408489b2ececb51c520c7">le::graphics::utils::SetBindings</a>
@@ -268,11 +273,15 @@ $(function() {
 <li>Shader()
 : <a class="el" href="classle_1_1graphics_1_1Shader.html#a2ad305317c620d485c87a0f5b4f6ca07">le::graphics::Shader</a>
 </li>
-<li>ShaderBuffer()
-: <a class="el" href="classle_1_1graphics_1_1ShaderBuffer.html#ae5458ff19480d260ad09bd08e7908519">le::graphics::ShaderBuffer</a>
+<li>ShaderBuffer
+: <a class="el" href="classle_1_1DescriptorHelper.html#a78d055751877e0b4cd8153e8d496afb8">le::DescriptorHelper</a>
+, <a class="el" href="classle_1_1graphics_1_1ShaderBuffer.html#ae5458ff19480d260ad09bd08e7908519">le::graphics::ShaderBuffer</a>
 </li>
 <li>shaderID
 : <a class="el" href="structle_1_1AssetLoadData_3_01graphics_1_1Pipeline_01_4.html#ac7456829ccf6d4082618a96cf281285f">le::AssetLoadData&lt; graphics::Pipeline &gt;</a>
+</li>
+<li>ShaderInput
+: <a class="el" href="classle_1_1DescriptorHelper.html#a5de3cb3d3306b87f9cc74432155f57a7">le::DescriptorHelper</a>
 </li>
 <li>shaderInput()
 : <a class="el" href="classle_1_1graphics_1_1Pipeline.html#a423968f10d7407e12216fd7b06d72d34">le::graphics::Pipeline</a>
@@ -287,13 +296,13 @@ $(function() {
 : <a class="el" href="structle_1_1graphics_1_1ResourceCreateInfo.html#a77fd0ffb0f75d467d28291dae8dceaf3">le::graphics::ResourceCreateInfo</a>
 </li>
 <li>show()
-: <a class="el" href="classle_1_1window_1_1IInstance.html#a50e4905dab6bba07844e84b1711036d9">le::window::IInstance</a>
+: <a class="el" href="classle_1_1window_1_1InstanceBase.html#a928ad783f4cd449daaa304310ba2ebf7">le::window::InstanceBase</a>
 </li>
 <li>sign()
 : <a class="el" href="classdecf_1_1registry__t.html#a482864e310971890b80f5fe0e56924cd">decf::registry_t</a>
 </li>
 <li>signalled()
-: <a class="el" href="classle_1_1graphics_1_1Device.html#a69ffca7b6aa7386a67be081c08ddcacf">le::graphics::Device</a>
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a6482b99297df7c3eb4c7ea1d6545e829">le::graphics::Device</a>
 </li>
 <li>signs()
 : <a class="el" href="classdecf_1_1registry__t.html#acb31e15c35323a31ef1b9d73ab3b91f4">decf::registry_t</a>
@@ -308,33 +317,41 @@ $(function() {
 <li>size()
 : <a class="el" href="classdecf_1_1registry__t.html#a7348471f2d57a998693cd0a2bfd6bfb2">decf::registry_t</a>
 , <a class="el" href="structkt_1_1enum__flags.html#a1d56e85eeb72d1545faa9538fe253b13">kt::enum_flags&lt; Enum, N &gt;</a>
-, <a class="el" href="classkt_1_1fixed__vector.html#a15ff08a2c8eace4ddb9bc72d1508315c">kt::fixed_vector&lt; T, N &gt;</a>
+, <a class="el" href="classkt_1_1fixed__vector.html#a18cd6711a6107a71f1cbc8904e510687">kt::fixed_vector&lt; T, N &gt;</a>
 , <a class="el" href="classkt_1_1monotonic__map.html#a0bbb19712bb37aadf2439c584ba28221">kt::monotonic_map&lt; T, Mp &gt;</a>
 , <a class="el" href="structle_1_1edi_1_1FlagsWidget.html#ac60d225dd9f964b292261a6b9587e1ba">le::edi::FlagsWidget&lt; Flags &gt;</a>
+, <a class="el" href="classle_1_1Engine.html#a754c0fecabebc563806ba920ceab409a">le::Engine</a>
 , <a class="el" href="structle_1_1graphics_1_1Buffer_1_1CreateInfo.html#ab92692c6f9a958c67f745631e3ee018b">le::graphics::Buffer::CreateInfo</a>
 , <a class="el" href="structle_1_1graphics_1_1Buffer_1_1Span.html#a90803dd8e56d5c486ca29e705fefe5e7">le::graphics::Buffer::Span</a>
 , <a class="el" href="structle_1_1graphics_1_1DescriptorSet_1_1BO.html#a80843d5706ab73e3af2e39b7d509e67c">le::graphics::DescriptorSet::BO</a>
 , <a class="el" href="structle_1_1graphics_1_1QuickVertexInput.html#a432951184aa8ee32df88f5d0dac3f728">le::graphics::QuickVertexInput</a>
 , <a class="el" href="structle_1_1graphics_1_1TBitmap.html#a36c92b3cc96d9b57ac4f475a9880e04c">le::graphics::TBitmap&lt; T &gt;</a>
+, <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a60fe0663bb0470f4196faecbe0534aaf">le::graphics::TextFactory</a>
 </li>
 <li>Size
 : <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">le::graphics::TextFactory</a>
 </li>
 <li>size
-: <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a60fe0663bb0470f4196faecbe0534aaf">le::graphics::TextFactory</a>
-, <a class="el" href="structle_1_1graphics_1_1Texture_1_1Data.html#a040f0b6ad0bdc827e6cad3ec76168959">le::graphics::Texture::Data</a>
+: <a class="el" href="structle_1_1graphics_1_1Texture_1_1Data.html#a040f0b6ad0bdc827e6cad3ec76168959">le::graphics::Texture::Data</a>
 , <a class="el" href="structle_1_1graphics_1_1Transfer_1_1MemRange.html#a823b2ab3cb0c3553d2e1395ed1f3cdb8">le::graphics::Transfer::MemRange</a>
 , <a class="el" href="structle_1_1graphics_1_1TRect.html#acea8e051e9aba984295f4567b16dc567">le::graphics::TRect&lt; T, Min, Max &gt;</a>
 , <a class="el" href="structle_1_1graphics_1_1VertexInputCreateInfo_1_1Type.html#af593011c6ccd03e3b5c37d95c5b3ff56">le::graphics::VertexInputCreateInfo::Type</a>
+, <a class="el" href="structle_1_1gui_1_1Canvas.html#acb8a8abf823145c03d8d639126056844">le::gui::Canvas</a>
+, <a class="el" href="structle_1_1input_1_1Driver_1_1In.html#a7b8a9eddbb085c554edf502d17d6e2b8">le::input::Driver::In</a>
+, <a class="el" href="structle_1_1input_1_1Space.html#ae287097d2cc89d69e7eb089f467ced34">le::input::Space</a>
 , <a class="el" href="structle_1_1RingBuffer.html#a185fa989ac99139e30acfecc782d4adc">le::RingBuffer&lt; T &gt;</a>
 , <a class="el" href="classle_1_1Span.html#a6cff647b774496aa057c67a511ace706">le::Span&lt; T &gt;</a>
 , <a class="el" href="classle_1_1Span_3_01T_01const_01_4.html#aa9944cf882ca27b2c90c5b51e11ac645">le::Span&lt; T const &gt;</a>
+, <a class="el" href="structle_1_1utils_1_1AABB.html#ad02940038e70049c0f454c420f1fc0e4">le::utils::AABB</a>
 , <a class="el" href="structle_1_1Viewport.html#a2995c6748243b4637f42dd7d0e2f35ef">le::Viewport</a>
-, <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#ae85fa5579ff65b1af27397ace5470adb">le::window::IInstance::CreateInfo</a>
+, <a class="el" href="structle_1_1window_1_1InstanceBase_1_1CreateInfo.html#a5757a4d8106472d2d710c92dc4372d2f">le::window::InstanceBase::CreateInfo</a>
 </li>
 <li>size_bytes()
 : <a class="el" href="classle_1_1Span.html#ad21746af1f4cdf2177e0b44250b62de2">le::Span&lt; T &gt;</a>
 , <a class="el" href="classle_1_1Span_3_01T_01const_01_4.html#ae0ed9c554ddc125bdba02e2286914846">le::Span&lt; T const &gt;</a>
+</li>
+<li>size_type
+: <a class="el" href="classkt_1_1fixed__vector.html#ad6ab70a94225d73193fc8d19a6cf6bba">kt::fixed_vector&lt; T, N &gt;</a>
 </li>
 <li>sizeCentre()
 : <a class="el" href="structle_1_1graphics_1_1TRect.html#a5a680583f5aef26274fe014a47fd7c6f">le::graphics::TRect&lt; T, Min, Max &gt;</a>
@@ -345,21 +362,18 @@ $(function() {
 <li>sleep_for()
 : <a class="el" href="classkt_1_1kthread.html#a4eb0b8f14f0e0c85b7a8055069510cbc">kt::kthread</a>
 </li>
-<li>sort()
-: <a class="el" href="classle_1_1SceneDrawer.html#a04a46ecbf0a84ee064c3d68b829fd692">le::SceneDrawer</a>
-</li>
 <li>sort_keys
 : <a class="el" href="structdj_1_1serial__opts__t.html#ad7f7b0eaa68f07369ec29ab4d4344406">dj::serial_opts_t</a>
 </li>
-<li>Space()
-: <a class="el" href="structle_1_1input_1_1Space.html#ae9567faf01c90a2c2026e32873974aba">le::input::Space</a>
+<li>space
+: <a class="el" href="structle_1_1input_1_1Frame.html#a065d8161e723d21e7f1fe7d7c0295cb4">le::input::Frame</a>
 </li>
 <li>space_indent
 : <a class="el" href="structdj_1_1serial__opts__t.html#a79afe834aea81b693c24b1a15a7c8862">dj::serial_opts_t</a>
 </li>
 <li>Span()
-: <a class="el" href="classle_1_1Span.html#a482622d7e00bb8b9a205ada5cf2ec087">le::Span&lt; T &gt;</a>
-, <a class="el" href="classle_1_1Span_3_01T_01const_01_4.html#a3e25ecb9da7ee4b5fb29128d8299c440">le::Span&lt; T const &gt;</a>
+: <a class="el" href="classle_1_1Span.html#a93a942c3465764afab39badadd963352">le::Span&lt; T &gt;</a>
+, <a class="el" href="classle_1_1Span_3_01T_01const_01_4.html#afd485b6bd879c19c98559f4a5626f699">le::Span&lt; T const &gt;</a>
 </li>
 <li>spawn()
 : <a class="el" href="classdecf_1_1registry__t.html#a96a816f0240a8aa1b5dc8540035ddd27">decf::registry_t</a>
@@ -377,6 +391,13 @@ $(function() {
 <li>sqrt()
 : <a class="el" href="structle_1_1Fixed.html#af86bdf82f4d46db49c17816f4f1b3995">le::Fixed</a>
 </li>
+<li>src
+: <a class="el" href="structle_1_1graphics_1_1lt_1_1ColourWrite.html#a05372b1eee8bc87cf60e2527cc9238b9">le::graphics::lt::ColourWrite</a>
+, <a class="el" href="structle_1_1graphics_1_1lt_1_1DepthStencilWrite.html#a91be64cf8ad63e4e049931460c121dd2">le::graphics::lt::DepthStencilWrite</a>
+, <a class="el" href="structle_1_1graphics_1_1lt_1_1DrawPresent.html#ab522e8f65c65c0401112420e7a0cca66">le::graphics::lt::DrawPresent</a>
+, <a class="el" href="structle_1_1graphics_1_1lt_1_1partial_1_1Transfer.html#acd3e1ccf52f7797d80bda45618cec2d6">le::graphics::lt::partial::Transfer</a>
+, <a class="el" href="structle_1_1graphics_1_1lt_1_1TransferPresent.html#ad16edc18533354072636c199dc8bf975">le::graphics::lt::TransferPresent</a>
+</li>
 <li>srgb()
 : <a class="el" href="classle_1_1graphics_1_1Swapchain.html#ab5f1cad478f291c2e7161b56b82f474d">le::graphics::Swapchain</a>
 , <a class="el" href="classle_1_1graphics_1_1Texture.html#a15913c1c3c588451b57803ccdec39498">le::graphics::Texture</a>
@@ -392,7 +413,7 @@ $(function() {
 </li>
 <li>stage()
 : <a class="el" href="classdts_1_1scheduler.html#ac6c96cc7286f5e186d6ceb283aaf89f0">dts::scheduler</a>
-, <a class="el" href="classle_1_1AssetListLoader.html#a0e97bd61f50862f0ac38aac54379a17c">le::AssetListLoader</a>
+, <a class="el" href="classle_1_1AssetListLoader.html#a56582fd3aabf6b7f2ca25d2dc2328adb">le::AssetListLoader</a>
 , <a class="el" href="classle_1_1graphics_1_1VRAM.html#ac967f021bba5ebfedb27619f5a1c661d">le::graphics::VRAM</a>
 </li>
 <li>stage_done()
@@ -405,17 +426,18 @@ $(function() {
 : <a class="el" href="classle_1_1AssetListLoader.html#afd2b374894db6490bd2973e5a95c90b4">le::AssetListLoader</a>
 </li>
 <li>Stages
-: <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a02b0cc222d83019c7f53e29a7c21d9ca">le::graphics::CommandBuffer</a>
+: <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a74a7b9b06617f11c5658b4f10040ec5e">le::graphics::CommandBuffer</a>
 </li>
-<li>stages()
-: <a class="el" href="classle_1_1graphics_1_1Shader.html#a43887411ec4ccae549aacec62639c5f0">le::graphics::Shader</a>
+<li>stages
+: <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html#a850e1e7aed3539a2596d140cd30a1872">le::graphics::Memory::ImgMeta</a>
+, <a class="el" href="classle_1_1graphics_1_1Shader.html#a43887411ec4ccae549aacec62639c5f0">le::graphics::Shader</a>
 , <a class="el" href="classle_1_1graphics_1_1VRAM.html#a8ec180f253e3e98dbb2d6e5027b4d641">le::graphics::VRAM</a>
 </li>
 <li>stages_done()
 : <a class="el" href="classdts_1_1scheduler.html#aa99b5e7ca7e8954858b6e567f21bbf4f">dts::scheduler</a>
 </li>
-<li>stagingThread
-: <a class="el" href="classle_1_1graphics_1_1Transfer.html#a4ceeac65fe65f3ef762b93e76dba01f8">le::graphics::Transfer</a>
+<li>staging
+: <a class="el" href="classle_1_1graphics_1_1Transfer.html#a14d3961baa55ef3596efe8b2a0cadf27">le::graphics::Transfer</a>
 </li>
 <li>stale()
 : <a class="el" href="classle_1_1SceneNode.html#a480f83bba5f54cd1ac2b1925b1378b15">le::SceneNode</a>
@@ -423,27 +445,34 @@ $(function() {
 <li>stamp
 : <a class="el" href="classle_1_1Engine.html#a836b96c97e41c479bc4b8c55ec62bdab">le::Engine</a>
 </li>
-<li>state()
-: <a class="el" href="classle_1_1DearImGui.html#a75fc728d4848233e78afbeb3a893b1dc">le::DearImGui</a>
-</li>
 <li>State
 : <a class="el" href="classle_1_1DearImGui.html#a02bbea831603ebd13d9886944f22ef6a">le::DearImGui</a>
 </li>
+<li>state()
+: <a class="el" href="classle_1_1DearImGui.html#a75fc728d4848233e78afbeb3a893b1dc">le::DearImGui</a>
+, <a class="el" href="structle_1_1graphics_1_1RenderFence_1_1Fence.html#a97551ff65c45cc26f3390bdea608cb99">le::graphics::RenderFence::Fence</a>
+</li>
+<li>State
+: <a class="el" href="classle_1_1graphics_1_1RenderFence.html#a22f3b2b639e4250631b962251ea0358c">le::graphics::RenderFence</a>
+</li>
 <li>state
-: <a class="el" href="structle_1_1input_1_1Driver_1_1Out.html#a5ac51d242501a81b1f8a147f41733be8">le::input::Driver::Out</a>
+: <a class="el" href="structle_1_1input_1_1Frame.html#a9bd3a6091dac95e129ff422f9a751883">le::input::Frame</a>
 , <a class="el" href="structle_1_1utils_1_1Future.html#af322b71bfeaec70e5327e1531d38e55d">le::utils::Future&lt; T &gt;</a>
 </li>
 <li>state_
 : <a class="el" href="classclap_1_1basic__parser.html#a6ae898c9968e2aa75982a46a5ff93a59">clap::basic_parser&lt; Ch &gt;</a>
 </li>
+<li>Stats
+: <a class="el" href="classle_1_1Engine.html#a842d17fa2ea437975120722a0717dc3f">le::Engine</a>
+</li>
 <li>stats()
-: <a class="el" href="classle_1_1Engine.html#a9c14f2206aa214e7334ec709f7286a64">le::Engine</a>
+: <a class="el" href="classle_1_1Engine.html#ad6ada1b9458c37e66f4aa2c6c8766f7c">le::Engine</a>
 </li>
 <li>Status
 : <a class="el" href="classle_1_1graphics_1_1RenderContext.html#ac331ca860e519eb9d363b4fcda1a94dd">le::graphics::RenderContext</a>
 </li>
 <li>status()
-: <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a8d41d5fcc0c824ccc9378405c2f3648a">le::graphics::RenderContext</a>
+: <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a6bdbc115b5db5c0430d52fc7946686d1">le::graphics::RenderContext</a>
 , <a class="el" href="classle_1_1gui_1_1Widget.html#abb210b10bd9755e6e60da5dfe1aa936f">le::gui::Widget</a>
 </li>
 <li>Status
@@ -459,6 +488,9 @@ $(function() {
 <li>STBImg()
 : <a class="el" href="classle_1_1graphics_1_1utils_1_1STBImg.html#a9909d83efcd073004b2a042203936f1a">le::graphics::utils::STBImg</a>
 </li>
+<li>stop_requested()
+: <a class="el" href="classkt_1_1kthread_1_1stop__t.html#aa08a9a0d9fb7be168e24b220925a50ad">kt::kthread::stop_t</a>
+</li>
 <li>storage
 : <a class="el" href="structkt_1_1enum__flags.html#a1b610e242e93fb91c638941d0426c2ef">kt::enum_flags&lt; Enum, N &gt;</a>
 </li>
@@ -466,12 +498,19 @@ $(function() {
 : <a class="el" href="classle_1_1Delegate.html#abdf83dc909c89499a3f4af0e60935ddd">le::Delegate&lt; Args &gt;</a>
 </li>
 <li>storage_t
-: <a class="el" href="structkt_1_1fixed__vector_1_1const__iterator.html#a41c6348725cb97b94a430fd37ab9cf90">kt::fixed_vector&lt; T, N &gt;::const_iterator</a>
-, <a class="el" href="structkt_1_1fixed__vector_1_1iterator.html#aba1b13214056ec14287cd0cb09478e78">kt::fixed_vector&lt; T, N &gt;::iterator</a>
+: <a class="el" href="structdj_1_1array__t.html#a33c0ec9622531a8113adecfddecdae85">dj::array_t</a>
+, <a class="el" href="structdj_1_1boolean__t.html#a7b0756dccfcaf40b9e4eba9234f4f3bc">dj::boolean_t</a>
+, <a class="el" href="classdj_1_1json__t.html#a0cf549e3c9800854f919c92dc04d93bb">dj::json_t</a>
+, <a class="el" href="structdj_1_1null__t.html#a2b9c45f836bdb7bb33c05d03aaaf8757">dj::null_t</a>
+, <a class="el" href="structdj_1_1number__t.html#a44359b82dbf849df654fdc5f45687350">dj::number_t</a>
+, <a class="el" href="structdj_1_1object__t.html#a50a8abfd83e41ce433e5ff0170a06ed5">dj::object_t</a>
+, <a class="el" href="structdj_1_1string__t.html#a1a065685038e8824e739526781c76f5e">dj::string_t</a>
+, <a class="el" href="classkt_1_1fixed__vector_1_1iter__t.html#a9f93e2af7ef70c6a56d310b846aa645c">kt::fixed_vector&lt; T, N &gt;::iter_t&lt; IsConst &gt;</a>
 , <a class="el" href="classkt_1_1n__tree.html#a4fce817aa532b3e9c981959cc78be566">kt::n_tree&lt; T &gt;</a>
 </li>
 <li>str
 : <a class="el" href="structktest_1_1expr__t.html#ac34bb3ae78da6d965ed16c18bfe87006">ktest::expr_t</a>
+, <a class="el" href="classle_1_1gui_1_1Text.html#a48dc4fb0fdeafe2b5e6f34b6cb69bf3a">le::gui::Text</a>
 </li>
 <li>stream()
 : <a class="el" href="structclap_1_1basic__interpreter_1_1printer__t_1_1stream.html#ac3bbe5023089776e81a9ad47c142aa5b">clap::basic_interpreter&lt; Ch &gt;::printer_t::stream</a>
@@ -490,16 +529,18 @@ $(function() {
 , <a class="el" href="structkt_1_1string__trie.html#acef3688dd6df1c4acb0d12dedcf95aec">kt::string_trie&lt; T &gt;</a>
 </li>
 <li>style
-: <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#a26c8b6e0407cb4cfbfabb8e1a0825d63">le::window::IInstance::CreateInfo</a>
+: <a class="el" href="structle_1_1window_1_1InstanceBase_1_1CreateInfo.html#adafa4aa9ba4ee7632a7fbd186ed9f64b">le::window::InstanceBase::CreateInfo</a>
 </li>
 <li>Styler()
 : <a class="el" href="structle_1_1edi_1_1Styler.html#a98fd9124439544db760d029daeb1375b">le::edi::Styler</a>
 </li>
-<li>sub()
-: <a class="el" href="classdj_1_1node__t.html#ab0cf41e39aef09811cd0beb47b4af47c">dj::node_t</a>
-</li>
 <li>submit()
-: <a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#a8859a73478816a55fb67a7b3c59c8aae">le::graphics::QueueMultiplex</a>
+: <a class="el" href="classle_1_1graphics_1_1CommandPool.html#a70b287f5103594cba153ec4b1f9c9c59">le::graphics::CommandPool</a>
+, <a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#af638388b9b1ca772c9fe08311bbe43de">le::graphics::QueueMultiplex</a>
+</li>
+<li>submitFrame()
+: <a class="el" href="classle_1_1graphics_1_1ARenderer.html#a3e9d1ccdc0d3f5e9e90fe85d445167c6">le::graphics::ARenderer</a>
+, <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a330d24614d7bd852ffb41d2868d92eb0">le::graphics::RenderContext</a>
 </li>
 <li>submitted
 : <a class="el" href="classle_1_1graphics_1_1Transfer.html#a0f90707e632a91d3b97ffb28c43ec21e">le::graphics::Transfer</a>
@@ -529,18 +570,15 @@ $(function() {
 <li>surfaceSupport()
 : <a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html#a01b64a9904d1bf8c7e24523202f78fff">le::graphics::PhysicalDevice</a>
 </li>
-<li>Suspend
-: <a class="el" href="structle_1_1window_1_1Event.html#afc080b4a06e49c9845b315fd29d55852">le::window::Event</a>
-</li>
 <li>suspended
 : <a class="el" href="classle_1_1input_1_1Driver.html#a4812f3f6eb24b83330fdf2f34e6496a6">le::input::Driver</a>
 , <a class="el" href="structle_1_1input_1_1State.html#a1d7867f3a2b56a893d76fcc755c23202">le::input::State</a>
 </li>
 <li>swap()
 : <a class="el" href="classkt_1_1kthread.html#a2fd5f143eaff4fa402291b1f7d86abf4">kt::kthread</a>
-, <a class="el" href="classle_1_1graphics_1_1BufferedFrameSync.html#a3aa05258fb90781fbfb0cdd37c716c6d">le::graphics::BufferedFrameSync</a>
+, <a class="el" href="classle_1_1graphics_1_1DescriptorPool.html#a6050d12d6fbef88cb2ac7fda9703a9c8">le::graphics::DescriptorPool</a>
 , <a class="el" href="classle_1_1graphics_1_1DescriptorSet.html#a2942e00a4a9ec5090348e5e254f01146">le::graphics::DescriptorSet</a>
-, <a class="el" href="classle_1_1graphics_1_1SetPool.html#a848c1434312c48266ad634d6a770a87a">le::graphics::SetPool</a>
+, <a class="el" href="classle_1_1graphics_1_1Pipeline.html#a7a7c825e2e6f2fe9ee00491738235229">le::graphics::Pipeline</a>
 , <a class="el" href="classle_1_1graphics_1_1ShaderBuffer.html#abd503a6a1b507c5f2d653f80f2953017">le::graphics::ShaderBuffer</a>
 , <a class="el" href="classle_1_1graphics_1_1ShaderInput.html#a71387e7c7e5691c59d87387ae1841f5f">le::graphics::ShaderInput</a>
 </li>
@@ -550,20 +588,15 @@ $(function() {
 </li>
 <li>Swapchain()
 : <a class="el" href="classle_1_1graphics_1_1Swapchain.html#ad637f6399422c63ee0292130a48797cb">le::graphics::Swapchain</a>
+, <a class="el" href="classle_1_1graphics_1_1VRAM.html#a2420518f1639a43d38fd830ce4de7d3e">le::graphics::VRAM</a>
+</li>
+<li>swapchain
+: <a class="el" href="structle_1_1input_1_1Driver_1_1In.html#a7f2c869616218c36c12f265447b7732d">le::input::Driver::In</a>
+, <a class="el" href="structle_1_1input_1_1Space.html#a0961d4aa103a82d32fc610c0760b32c0">le::input::Space</a>
+, <a class="el" href="structle_1_1utils_1_1EngineStats_1_1Gfx.html#a36fcc2d29c5803ff617e4631aab37683">le::utils::EngineStats::Gfx</a>
 </li>
 <li>swapchainFormat()
 : <a class="el" href="classle_1_1graphics_1_1RenderContext.html#aa33ae4642e846967de886b85fcf4e831">le::graphics::RenderContext</a>
-</li>
-<li>sync
-: <a class="el" href="classkt_1_1async__queue.html#a5f62e018073a114283a06b98b4e4943c">kt::async_queue&lt; T, Mutex &gt;</a>
-, <a class="el" href="classle_1_1graphics_1_1BufferedFrameSync.html#a17acc65874e46117e426c0945eb1a2f1">le::graphics::BufferedFrameSync</a>
-, <a class="el" href="structle_1_1graphics_1_1FrameSync.html#a3cfd404392d583cfe61da7c159d53dfb">le::graphics::FrameSync</a>
-</li>
-<li>szFile
-: <a class="el" href="structle_1_1src__loc.html#ae585c39a56a6654abb5443835cdf89c3">le::src_loc</a>
-</li>
-<li>szFunc
-: <a class="el" href="structle_1_1src__loc.html#ab2aed8d33d09a528e0357ae2580be614">le::src_loc</a>
 </li>
 </ul>
 </div><!-- contents -->

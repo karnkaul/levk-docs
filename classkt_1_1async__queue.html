@@ -63,16 +63,14 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:a71ec608405b21ff5bb3a8bb75e3aae19"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a71ec608405b21ff5bb3a8bb75e3aae19">type</a> = T</td></tr>
 <tr class="separator:a71ec608405b21ff5bb3a8bb75e3aae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f62e018073a114283a06b98b4e4943c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a5f62e018073a114283a06b98b4e4943c">sync</a> = Mutex</td></tr>
-<tr class="separator:a5f62e018073a114283a06b98b4e4943c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4523ae33ce9c6d7f3ca2611c4ae0b7db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a4523ae33ce9c6d7f3ca2611c4ae0b7db">mutex_t</a> = Mutex</td></tr>
+<tr class="separator:a4523ae33ce9c6d7f3ca2611c4ae0b7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d7684aeca1a1c3e50cdea0c5410fdff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a5d7684aeca1a1c3e50cdea0c5410fdff">async_queue</a> ()=default</td></tr>
-<tr class="memdesc:a5d7684aeca1a1c3e50cdea0c5410fdff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classkt_1_1async__queue.html#a5d7684aeca1a1c3e50cdea0c5410fdff">More...</a><br /></td></tr>
 <tr class="separator:a5d7684aeca1a1c3e50cdea0c5410fdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df00acac2567383dddd4958ea2fb714"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a2df00acac2567383dddd4958ea2fb714">~async_queue</a> ()</td></tr>
-<tr class="memdesc:a2df00acac2567383dddd4958ea2fb714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polymorhic destructor.  <a href="classkt_1_1async__queue.html#a2df00acac2567383dddd4958ea2fb714">More...</a><br /></td></tr>
 <tr class="separator:a2df00acac2567383dddd4958ea2fb714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa295827008221b86bc26674fee6ae1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#aa295827008221b86bc26674fee6ae1a6">push</a> (T &amp;&amp;t)</td></tr>
 <tr class="memdesc:aa295827008221b86bc26674fee6ae1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a T to the back of the queue and notify one.  <a href="classkt_1_1async__queue.html#aa295827008221b86bc26674fee6ae1a6">More...</a><br /></td></tr>
@@ -111,8 +109,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab51507dbf2e339ea83aa856302765a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3fe8e005c32ed851eb65bbd33bade91"><td class="memItemLeft" align="right" valign="top">std::deque&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#ae3fe8e005c32ed851eb65bbd33bade91">m_queue</a></td></tr>
 <tr class="separator:ae3fe8e005c32ed851eb65bbd33bade91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10045340c660eba04fe75bdacc0b0eb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkt_1_1lockable__t.html">lockable_t</a>&lt; Mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a10045340c660eba04fe75bdacc0b0eb9">m_mutex</a></td></tr>
-<tr class="separator:a10045340c660eba04fe75bdacc0b0eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0530104a1c032d4252b7bbc486b5ef95"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a0530104a1c032d4252b7bbc486b5ef95">m_mutex</a></td></tr>
+<tr class="separator:a0530104a1c032d4252b7bbc486b5ef95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e62b11a493341fe6f871ff547f20a31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html#a5e62b11a493341fe6f871ff547f20a31">m_active</a> = true</td></tr>
 <tr class="memdesc:a5e62b11a493341fe6f871ff547f20a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to halt / deactivate queue.  <a href="classkt_1_1async__queue.html#a5e62b11a493341fe6f871ff547f20a31">More...</a><br /></td></tr>
 <tr class="separator:a5e62b11a493341fe6f871ff547f20a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,8 +127,8 @@ class kt::async_queue&lt; T, Mutex &gt;</h3>
 <li>Deactivate queue (as secondary wait condition) </li>
 </ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5f62e018073a114283a06b98b4e4943c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f62e018073a114283a06b98b4e4943c">&#9670;&nbsp;</a></span>sync</h2>
+<a id="a4523ae33ce9c6d7f3ca2611c4ae0b7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4523ae33ce9c6d7f3ca2611c4ae0b7db">&#9670;&nbsp;</a></span>mutex_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +136,7 @@ class kt::async_queue&lt; T, Mutex &gt;</h3>
 template&lt;typename T , typename Mutex  = std::mutex&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classkt_1_1async__queue.html">kt::async_queue</a>&lt; T, Mutex &gt;::<a class="el" href="classkt_1_1async__queue.html#a5f62e018073a114283a06b98b4e4943c">sync</a> =  Mutex</td>
+          <td class="memname">using <a class="el" href="classkt_1_1async__queue.html">kt::async_queue</a>&lt; T, Mutex &gt;::<a class="el" href="classkt_1_1async__queue.html#a4523ae33ce9c6d7f3ca2611c4ae0b7db">mutex_t</a> =  Mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,8 +185,6 @@ template&lt;typename T , typename Mutex  = std::mutex&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Default constructor. </p>
-
 </div>
 </div>
 <a id="a2df00acac2567383dddd4958ea2fb714"></a>
@@ -215,8 +211,6 @@ template&lt;typename T , typename Mutex  = std::mutex&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Polymorhic destructor. </p>
 
 </div>
 </div>
@@ -471,8 +465,8 @@ template&lt;typename T , typename Mutex  = std::mutex&gt; </div>
 
 </div>
 </div>
-<a id="a10045340c660eba04fe75bdacc0b0eb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10045340c660eba04fe75bdacc0b0eb9">&#9670;&nbsp;</a></span>m_mutex</h2>
+<a id="a0530104a1c032d4252b7bbc486b5ef95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0530104a1c032d4252b7bbc486b5ef95">&#9670;&nbsp;</a></span>m_mutex</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +477,7 @@ template&lt;typename T , typename Mutex  = std::mutex&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structkt_1_1lockable__t.html">lockable_t</a>&lt;Mutex&gt; <a class="el" href="classkt_1_1async__queue.html">kt::async_queue</a>&lt; T, Mutex &gt;::m_mutex</td>
+          <td class="memname">Mutex <a class="el" href="classkt_1_1async__queue.html">kt::async_queue</a>&lt; T, Mutex &gt;::m_mutex</td>
         </tr>
       </table>
   </td>

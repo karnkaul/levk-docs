@@ -58,19 +58,19 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12fbea08283307679f009e2c6996d621"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a12fbea08283307679f009e2c6996d621">ErasedPtr</a> ()=default</td></tr>
 <tr class="separator:a12fbea08283307679f009e2c6996d621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a546fc9c852e8120cbfdbf9a6eaf6a02a"><td class="memTemplParams" colspan="2">template&lt;pointer_t T&gt; </td></tr>
-<tr class="memitem:a546fc9c852e8120cbfdbf9a6eaf6a02a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a546fc9c852e8120cbfdbf9a6eaf6a02a">ErasedPtr</a> (T t) noexcept</td></tr>
-<tr class="separator:a546fc9c852e8120cbfdbf9a6eaf6a02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82380677aee6f9dd3096556a8aad2670"><td class="memTemplParams" colspan="2">template&lt;pointer_t T&gt; </td></tr>
-<tr class="memitem:a82380677aee6f9dd3096556a8aad2670"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a82380677aee6f9dd3096556a8aad2670">contains</a> () const noexcept</td></tr>
-<tr class="separator:a82380677aee6f9dd3096556a8aad2670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485529e06d558e734fb63b5f86cff1cd"><td class="memTemplParams" colspan="2">template&lt;pointer_t T&gt; </td></tr>
-<tr class="memitem:a485529e06d558e734fb63b5f86cff1cd"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a485529e06d558e734fb63b5f86cff1cd">get</a> () const</td></tr>
-<tr class="separator:a485529e06d558e734fb63b5f86cff1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cc50241e27fcb9cafcd4bbe542aa87"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a64cc50241e27fcb9cafcd4bbe542aa87"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a64cc50241e27fcb9cafcd4bbe542aa87">requires</a> (std::is_pointer_v&lt; T &gt;) const expr <a class="el" href="classle_1_1ErasedPtr.html">ErasedPtr</a>(T t) noexcept</td></tr>
+<tr class="separator:a64cc50241e27fcb9cafcd4bbe542aa87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fb78755e4dafb3bdf0b1973819f103"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a89fb78755e4dafb3bdf0b1973819f103"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a89fb78755e4dafb3bdf0b1973819f103">requires</a> (std::is_pointer_v&lt; T &gt;) const expr bool contains() const noexcept</td></tr>
+<tr class="separator:a89fb78755e4dafb3bdf0b1973819f103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf718ba998a5afe77a1973bbd06b6dd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8bf718ba998a5afe77a1973bbd06b6dd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1ErasedPtr.html#a8bf718ba998a5afe77a1973bbd06b6dd">requires</a> (std::is_pointer_v&lt; T &gt;) const expr T get() const</td></tr>
+<tr class="separator:a8bf718ba998a5afe77a1973bbd06b6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a12fbea08283307679f009e2c6996d621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12fbea08283307679f009e2c6996d621">&#9670;&nbsp;</a></span>ErasedPtr() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a12fbea08283307679f009e2c6996d621">&#9670;&nbsp;</a></span>ErasedPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -94,83 +94,85 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a546fc9c852e8120cbfdbf9a6eaf6a02a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a546fc9c852e8120cbfdbf9a6eaf6a02a">&#9670;&nbsp;</a></span>ErasedPtr() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;pointer_t T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr le::ErasedPtr::ErasedPtr </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a82380677aee6f9dd3096556a8aad2670"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82380677aee6f9dd3096556a8aad2670">&#9670;&nbsp;</a></span>contains()</h2>
+<a id="a89fb78755e4dafb3bdf0b1973819f103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89fb78755e4dafb3bdf0b1973819f103">&#9670;&nbsp;</a></span>requires() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;pointer_t T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool le::ErasedPtr::contains </td>
+          <td class="memname">le::ErasedPtr::requires </td>
           <td>(</td>
+          <td class="paramtype">std::is_pointer_v&lt; T &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a485529e06d558e734fb63b5f86cff1cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a485529e06d558e734fb63b5f86cff1cd">&#9670;&nbsp;</a></span>get()</h2>
+<a id="a64cc50241e27fcb9cafcd4bbe542aa87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64cc50241e27fcb9cafcd4bbe542aa87">&#9670;&nbsp;</a></span>requires() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;pointer_t T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T le::ErasedPtr::get </td>
+          <td class="memname">le::ErasedPtr::requires </td>
           <td>(</td>
+          <td class="paramtype">std::is_pointer_v&lt; T &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bf718ba998a5afe77a1973bbd06b6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf718ba998a5afe77a1973bbd06b6dd">&#9670;&nbsp;</a></span>requires() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">le::ErasedPtr::requires </td>
+          <td>(</td>
+          <td class="paramtype">std::is_pointer_v&lt; T &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

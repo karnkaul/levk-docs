@@ -46,7 +46,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fixed_vector.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -55,6 +56,7 @@ $(function() {
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;initializer_list&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;new&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
@@ -62,17 +64,24 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1fixed__vector.html">kt::fixed_vector&lt; T, N &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector-like container using bytearray as storage Refer to std::vector for API documentation Supports: insertion, deletion (pop only), random access iteration, ranged for Limitations: insert(), <a class="el" href="namespacele_1_1utils.html#ad44523a97bc2cfdaa9917ad18a9c0d95">erase()</a>  <a href="classkt_1_1fixed__vector.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector-like container using bytearray as storage Refer to std::vector for API documentation  <a href="classkt_1_1fixed__vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1fixed__vector_1_1iterator.html">kt::fixed_vector&lt; T, N &gt;::iterator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1fixed__vector_1_1const__iterator.html">kt::fixed_vector&lt; T, N &gt;::const_iterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1fixed__vector_1_1iter__t.html">kt::fixed_vector&lt; T, N &gt;::iter_t&lt; IsConst &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacekt"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html">kt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acba49abeb49842a87ecb4179444be460"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:acba49abeb49842a87ecb4179444be460"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#acba49abeb49842a87ecb4179444be460">kt::operator==</a> (fixed_vector&lt; T, N &gt; const &amp;lhs, fixed_vector&lt; T, N &gt; const &amp;rhs) noexcept</td></tr>
+<tr class="separator:acba49abeb49842a87ecb4179444be460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa112706b0219b4bdb41b5371200c3cc8"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:aa112706b0219b4bdb41b5371200c3cc8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#aa112706b0219b4bdb41b5371200c3cc8">kt::operator!=</a> (fixed_vector&lt; T, N &gt; const &amp;lhs, fixed_vector&lt; T, N &gt; const &amp;rhs) noexcept</td></tr>
+<tr class="separator:aa112706b0219b4bdb41b5371200c3cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

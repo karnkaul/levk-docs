@@ -58,37 +58,52 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9567faf01c90a2c2026e32873974aba"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#ae9567faf01c90a2c2026e32873974aba">Space</a> ()=default</td></tr>
-<tr class="separator:ae9567faf01c90a2c2026e32873974aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a916774116152a943332636609f56fe"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a3a916774116152a943332636609f56fe">Space</a> (glm::vec2 <a class="el" href="structle_1_1input_1_1Space.html#a9248c002368b94acf177bb8aa1231ed6">fbSize</a>, glm::vec2 <a class="el" href="structle_1_1input_1_1Space.html#aa2d7972166f58e5fbf998c5af43be374">wSize</a>, <a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;view) noexcept</td></tr>
-<tr class="separator:a3a916774116152a943332636609f56fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad312f7dc525373277b7ec366574974b7"><td class="memItemLeft" align="right" valign="top">constexpr glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#ad312f7dc525373277b7ec366574974b7">density</a> () const noexcept</td></tr>
-<tr class="separator:ad312f7dc525373277b7ec366574974b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf818de55f9faf81dd013cf857efbe7b"><td class="memItemLeft" align="right" valign="top">constexpr glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#aaf818de55f9faf81dd013cf857efbe7b">world</a> (glm::vec2 <a class="el" href="structle_1_1input_1_1Space.html#a46b3606cfd2b3e1294a1a3d9feb67927">screen</a>, bool normalised) const noexcept</td></tr>
-<tr class="separator:aaf818de55f9faf81dd013cf857efbe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b3606cfd2b3e1294a1a3d9feb67927"><td class="memItemLeft" align="right" valign="top">constexpr glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a46b3606cfd2b3e1294a1a3d9feb67927">screen</a> (glm::vec2 <a class="el" href="structle_1_1input_1_1Space.html#aaf818de55f9faf81dd013cf857efbe7b">world</a>, bool normalised) const noexcept</td></tr>
-<tr class="separator:a46b3606cfd2b3e1294a1a3d9feb67927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e10d9553a62afcb8f62f91a7be4b9b"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a53e10d9553a62afcb8f62f91a7be4b9b">unproject</a> (glm::vec2 screen, bool normalised) const noexcept</td></tr>
+<tr class="separator:a53e10d9553a62afcb8f62f91a7be4b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7938275fc984c903895f4d0acb3c49d3"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a7938275fc984c903895f4d0acb3c49d3">project</a> (glm::vec2 ui, bool normalised) const noexcept</td></tr>
+<tr class="separator:a7938275fc984c903895f4d0acb3c49d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f16cd48d3c80b7bb6e4da0d6f0e8a7b"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a3f16cd48d3c80b7bb6e4da0d6f0e8a7b"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a3f16cd48d3c80b7bb6e4da0d6f0e8a7b">anyZero</a> (T const &amp;... t) noexcept</td></tr>
-<tr class="separator:a3f16cd48d3c80b7bb6e4da0d6f0e8a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1cb65f75d8cf4baee6637f9c52c3fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1input_1_1Space.html">Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a9d1cb65f75d8cf4baee6637f9c52c3fa">make</a> (glm::vec2 <a class="el" href="structle_1_1input_1_1Space.html#a756fbc826fd9f1c14563b62e71234b60">scene</a>, glm::uvec2 swap, glm::uvec2 win, <a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;view, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> rscale) noexcept</td></tr>
+<tr class="separator:a9d1cb65f75d8cf4baee6637f9c52c3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9248c002368b94acf177bb8aa1231ed6"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a9248c002368b94acf177bb8aa1231ed6">fbSize</a> = {}</td></tr>
-<tr class="separator:a9248c002368b94acf177bb8aa1231ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d7972166f58e5fbf998c5af43be374"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#aa2d7972166f58e5fbf998c5af43be374">wSize</a> = {}</td></tr>
-<tr class="separator:aa2d7972166f58e5fbf998c5af43be374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224a900b646f4f330b08d81150964508"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a224a900b646f4f330b08d81150964508">delta</a> = {}</td></tr>
-<tr class="separator:a224a900b646f4f330b08d81150964508"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a2632f91cea214d7183200fc1415ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a63a2632f91cea214d7183200fc1415ff">scale</a> = 1.0f</td></tr>
-<tr class="separator:a63a2632f91cea214d7183200fc1415ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295746f9e52549aa3aac2af0010bdde8"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a6f0ff3a0b4c720854c6784f4904cd014"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a0bfbc0b09b16df5d0a652a93b369ce66">window</a> {}</td></tr>
+<tr class="separator:a6f0ff3a0b4c720854c6784f4904cd014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4204734753c9a3506f867f726dc46a"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a0961d4aa103a82d32fc610c0760b32c0">swapchain</a> {}</td></tr>
+<tr class="separator:a4f4204734753c9a3506f867f726dc46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefb49a14c4b81d273ab28ebbf68ef75"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a8cd9f3121d2111fd22c175fbb566013c">density</a> = {1.0f, 1.0f}</td></tr>
+<tr class="separator:acefb49a14c4b81d273ab28ebbf68ef75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295746f9e52549aa3aac2af0010bdde8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a295746f9e52549aa3aac2af0010bdde8">display</a></td></tr>
+<tr class="separator:a295746f9e52549aa3aac2af0010bdde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5ba16178a9e243d32bdd28f8fb1686"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a57608de33eb24a1e095a7c3798a174c4"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a1dfc7dc4ad7a1df8d5e8fab27d9fb152">area</a> {}</td></tr>
+<tr class="separator:a57608de33eb24a1e095a7c3798a174c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3905b407ce30d4b93f0c3ea490d992b"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a63a2632f91cea214d7183200fc1415ff">scale</a> = 1.0f</td></tr>
+<tr class="separator:af3905b407ce30d4b93f0c3ea490d992b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5ba16178a9e243d32bdd28f8fb1686"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a1d5ba16178a9e243d32bdd28f8fb1686">render</a></td></tr>
+<tr class="separator:a1d5ba16178a9e243d32bdd28f8fb1686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756fbc826fd9f1c14563b62e71234b60"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:ac512080c2a14ecc0f5245103f84de11b"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#ae287097d2cc89d69e7eb089f467ced34">size</a> {}</td></tr>
+<tr class="separator:ac512080c2a14ecc0f5245103f84de11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e761f35a6b7b39e36e2f501a52bc6f"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a8cd9f3121d2111fd22c175fbb566013c">density</a> = {1.0f, 1.0f}</td></tr>
+<tr class="separator:a02e761f35a6b7b39e36e2f501a52bc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756fbc826fd9f1c14563b62e71234b60"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a756fbc826fd9f1c14563b62e71234b60">scene</a></td></tr>
+<tr class="separator:a756fbc826fd9f1c14563b62e71234b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d55394299880b8a37c48a2611002b8"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a8179d36f051deac81c57a199080d5046"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a002ca7e86b723e405e5548e1737c7df0">offset</a> {}</td></tr>
+<tr class="separator:a8179d36f051deac81c57a199080d5046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5f71f92cf7e0c1c3e52efa73ac6784"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Space.html#a63a2632f91cea214d7183200fc1415ff">scale</a> = 1.0f</td></tr>
+<tr class="separator:a0b5f71f92cf7e0c1c3e52efa73ac6784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d55394299880b8a37c48a2611002b8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Space.html#a49d55394299880b8a37c48a2611002b8">viewport</a></td></tr>
+<tr class="separator:a49d55394299880b8a37c48a2611002b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae9567faf01c90a2c2026e32873974aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9567faf01c90a2c2026e32873974aba">&#9670;&nbsp;</a></span>Space() <span class="overload">[1/2]</span></h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9d1cb65f75d8cf4baee6637f9c52c3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1cb65f75d8cf4baee6637f9c52c3fa">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -97,47 +112,34 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr le::input::Space::Space </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3a916774116152a943332636609f56fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a916774116152a943332636609f56fe">&#9670;&nbsp;</a></span>Space() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr le::input::Space::Space </td>
+          <td class="memname">static <a class="el" href="structle_1_1input_1_1Space.html">Space</a> le::input::Space::make </td>
           <td>(</td>
           <td class="paramtype">glm::vec2&#160;</td>
-          <td class="paramname"><em>fbSize</em>, </td>
+          <td class="paramname"><em>scene</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec2&#160;</td>
-          <td class="paramname"><em>wSize</em>, </td>
+          <td class="paramtype">glm::uvec2&#160;</td>
+          <td class="paramname"><em>swap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::uvec2&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;&#160;</td>
-          <td class="paramname"><em>view</em>&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td>
+          <td class="paramname"><em>rscale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,44 +149,15 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3f16cd48d3c80b7bb6e4da0d6f0e8a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f16cd48d3c80b7bb6e4da0d6f0e8a7b">&#9670;&nbsp;</a></span>anyZero()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool le::input::Space::anyZero </td>
-          <td>(</td>
-          <td class="paramtype">T const &amp;...&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad312f7dc525373277b7ec366574974b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad312f7dc525373277b7ec366574974b7">&#9670;&nbsp;</a></span>density()</h2>
+<a id="a7938275fc984c903895f4d0acb3c49d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7938275fc984c903895f4d0acb3c49d3">&#9670;&nbsp;</a></span>project()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,35 +166,10 @@ template&lt;typename... T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr glm::vec2 le::input::Space::density </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a46b3606cfd2b3e1294a1a3d9feb67927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b3606cfd2b3e1294a1a3d9feb67927">&#9670;&nbsp;</a></span>screen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr glm::vec2 le::input::Space::screen </td>
+          <td class="memname">glm::vec2 le::input::Space::project </td>
           <td>(</td>
           <td class="paramtype">glm::vec2&#160;</td>
-          <td class="paramname"><em>world</em>, </td>
+          <td class="paramname"><em>ui</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -237,15 +185,15 @@ template&lt;typename... T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aaf818de55f9faf81dd013cf857efbe7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf818de55f9faf81dd013cf857efbe7b">&#9670;&nbsp;</a></span>world()</h2>
+<a id="a53e10d9553a62afcb8f62f91a7be4b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e10d9553a62afcb8f62f91a7be4b9b">&#9670;&nbsp;</a></span>unproject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +202,7 @@ template&lt;typename... T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr glm::vec2 le::input::Space::world </td>
+          <td class="memname">glm::vec2 le::input::Space::unproject </td>
           <td>(</td>
           <td class="paramtype">glm::vec2&#160;</td>
           <td class="paramname"><em>screen</em>, </td>
@@ -273,7 +221,7 @@ template&lt;typename... T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -281,28 +229,70 @@ template&lt;typename... T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a224a900b646f4f330b08d81150964508"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a224a900b646f4f330b08d81150964508">&#9670;&nbsp;</a></span>delta</h2>
+<a id="a1dfc7dc4ad7a1df8d5e8fab27d9fb152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfc7dc4ad7a1df8d5e8fab27d9fb152">&#9670;&nbsp;</a></span>area</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">glm::vec2 le::input::Space::delta = {}</td>
+          <td class="memname">glm::vec2 le::input::Space::area {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9248c002368b94acf177bb8aa1231ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9248c002368b94acf177bb8aa1231ed6">&#9670;&nbsp;</a></span>fbSize</h2>
+<a id="a8cd9f3121d2111fd22c175fbb566013c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd9f3121d2111fd22c175fbb566013c">&#9670;&nbsp;</a></span>density</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">glm::vec2 le::input::Space::fbSize = {}</td>
+          <td class="memname">glm::vec2 le::input::Space::density = {1.0f, 1.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a295746f9e52549aa3aac2af0010bdde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295746f9e52549aa3aac2af0010bdde8">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  le::input::Space::display</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a002ca7e86b723e405e5548e1737c7df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002ca7e86b723e405e5548e1737c7df0">&#9670;&nbsp;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec2 le::input::Space::offset {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d5ba16178a9e243d32bdd28f8fb1686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d5ba16178a9e243d32bdd28f8fb1686">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  le::input::Space::render</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -323,14 +313,70 @@ template&lt;typename... T&gt; </div>
 
 </div>
 </div>
-<a id="aa2d7972166f58e5fbf998c5af43be374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2d7972166f58e5fbf998c5af43be374">&#9670;&nbsp;</a></span>wSize</h2>
+<a id="a756fbc826fd9f1c14563b62e71234b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756fbc826fd9f1c14563b62e71234b60">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">glm::vec2 le::input::Space::wSize = {}</td>
+          <td class="memname">struct { ... }  le::input::Space::scene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae287097d2cc89d69e7eb089f467ced34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae287097d2cc89d69e7eb089f467ced34">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec2 le::input::Space::size {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0961d4aa103a82d32fc610c0760b32c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0961d4aa103a82d32fc610c0760b32c0">&#9670;&nbsp;</a></span>swapchain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec2 le::input::Space::swapchain {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49d55394299880b8a37c48a2611002b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d55394299880b8a37c48a2611002b8">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  le::input::Space::viewport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bfbc0b09b16df5d0a652a93b369ce66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bfbc0b09b16df5d0a652a93b369ce66">&#9670;&nbsp;</a></span>window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec2 le::input::Space::window {}</td>
         </tr>
       </table>
 </div><div class="memdoc">

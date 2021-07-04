@@ -46,7 +46,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -54,61 +53,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;<a class="el" href="src__loc_8hpp.html">core/src_loc.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a6b5546b87a94cd1558a6b7b04b3b3784"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ensure_8hpp.html#a6b5546b87a94cd1558a6b7b04b3b3784">ENSURE</a>(predicate,  message)&#160;&#160;&#160;::<a class="el" href="namespacele.html#a7ac32ed87d6debf7fec05d0c184f407d">le::ensure</a>(!!(predicate), message, <a class="el" href="src__loc_8hpp.html#ae27a7a394ff1c34269910474155a8bd0">SRC_LOC</a>())</td></tr>
-<tr class="separator:a6b5546b87a94cd1558a6b7b04b3b3784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aca843b59f9d831ab522ae6f7228bcc76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aca843b59f9d831ab522ae6f7228bcc76">le::ensureImpl</a> (std::string_view message, src_loc const &amp;sl)</td></tr>
-<tr class="separator:aca843b59f9d831ab522ae6f7228bcc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac32ed87d6debf7fec05d0c184f407d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a7ac32ed87d6debf7fec05d0c184f407d">le::ensure</a> ([[maybe_unused]] bool predicate, [[maybe_unused]] std::string_view message, [[maybe_unused]] src_loc const &amp;sl)</td></tr>
-<tr class="memdesc:a7ac32ed87d6debf7fec05d0c184f407d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a break (if debugger present) / assert if predicate is false.  <a href="namespacele.html#a7ac32ed87d6debf7fec05d0c184f407d">More...</a><br /></td></tr>
-<tr class="separator:a7ac32ed87d6debf7fec05d0c184f407d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aa448893d51cbb5f1fab6861fdb4bcc81">le::ensure</a> (bool pred, std::string_view msg, char const *fl=__builtin_FILE(), char const *fn=__builtin_FUNCTION(), int ln=__builtin_LINE())</td></tr>
+<tr class="memdesc:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a break (if debugger present) / assert if predicate is false.  <a href="namespacele.html#aa448893d51cbb5f1fab6861fdb4bcc81">More...</a><br /></td></tr>
+<tr class="separator:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:abd308f253d0fa957a4f19b1b6dbc415f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#abd308f253d0fa957a4f19b1b6dbc415f">le::levk_ensures</a> = false</td></tr>
 <tr class="separator:abd308f253d0fa957a4f19b1b6dbc415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a6b5546b87a94cd1558a6b7b04b3b3784"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b5546b87a94cd1558a6b7b04b3b3784">&#9670;&nbsp;</a></span>ENSURE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ENSURE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">predicate, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">message&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;::<a class="el" href="namespacele.html#a7ac32ed87d6debf7fec05d0c184f407d">le::ensure</a>(!!(predicate), message, <a class="el" href="src__loc_8hpp.html#ae27a7a394ff1c34269910474155a8bd0">SRC_LOC</a>())</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

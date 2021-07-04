@@ -84,8 +84,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a446bc1d9215dd5c6c96203be2038609f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a563fa88f0348b96f9ed1b430b895c331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkt_1_1fixed__vector.html">kt::fixed_vector</a>&lt; <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#a563fa88f0348b96f9ed1b430b895c331">familyIndices</a> (<a class="el" href="namespacele_1_1graphics.html#ae809034031a9534a511663bbbcbc0f7e">QFlags</a> flags) const</td></tr>
 <tr class="separator:a563fa88f0348b96f9ed1b430b895c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8859a73478816a55fb67a7b3c59c8aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#a8859a73478816a55fb67a7b3c59c8aae">submit</a> (<a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a> type, vk::ArrayProxy&lt; vk::SubmitInfo const &gt; const &amp;infos, vk::Fence signal, bool bLock)</td></tr>
-<tr class="separator:a8859a73478816a55fb67a7b3c59c8aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af638388b9b1ca772c9fe08311bbe43de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#af638388b9b1ca772c9fe08311bbe43de">submit</a> (<a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a> type, vk::ArrayProxy&lt; vk::SubmitInfo const &gt; const &amp;infos, vk::Fence signal, bool <a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#abc35dd78c8d6dd61e12057fb0f44d03d">lock</a>)</td></tr>
+<tr class="separator:af638388b9b1ca772c9fe08311bbe43de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0564c50cad7bbadc5343e0f9780d23a6"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#a0564c50cad7bbadc5343e0f9780d23a6">present</a> (vk::PresentInfoKHR const &amp;info, bool bLock)</td></tr>
 <tr class="separator:a0564c50cad7bbadc5343e0f9780d23a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb59826665e6b97fde9478a039ea6a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html#adeb59826665e6b97fde9478a039ea6a6">familyCount</a> () const noexcept</td></tr>
@@ -421,8 +421,8 @@ template&lt;template&lt; typename... &gt; typename L = std::scoped_lock&gt; </di
 
 </div>
 </div>
-<a id="a8859a73478816a55fb67a7b3c59c8aae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8859a73478816a55fb67a7b3c59c8aae">&#9670;&nbsp;</a></span>submit()</h2>
+<a id="af638388b9b1ca772c9fe08311bbe43de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af638388b9b1ca772c9fe08311bbe43de">&#9670;&nbsp;</a></span>submit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +449,7 @@ template&lt;template&lt; typename... &gt; typename L = std::scoped_lock&gt; </di
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bLock</em>&#160;</td>
+          <td class="paramname"><em>lock</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -462,28 +462,28 @@ template&lt;template&lt; typename... &gt; typename L = std::scoped_lock&gt; </di
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae5cb19684f06819aeab7ec5e81bb0fd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5cb19684f06819aeab7ec5e81bb0fd8">&#9670;&nbsp;</a></span>gp</h2>
+<a id="ad5f92c157432d9cef4c2f782ea814ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f92c157432d9cef4c2f782ea814ff9">&#9670;&nbsp;</a></span>gp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structkt_1_1lockable__t.html">kt::lockable_t</a> le::graphics::QueueMultiplex::gp</td>
+          <td class="memname">std::mutex le::graphics::QueueMultiplex::gp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7decc93d7b2a64e9499b58a48cf1e598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7decc93d7b2a64e9499b58a48cf1e598">&#9670;&nbsp;</a></span>t</h2>
+<a id="a1f606cfcd87d29a2902e5ce33559b11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f606cfcd87d29a2902e5ce33559b11c">&#9670;&nbsp;</a></span>t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structkt_1_1lockable__t.html">kt::lockable_t</a> le::graphics::QueueMultiplex::t</td>
+          <td class="memname">std::mutex le::graphics::QueueMultiplex::t</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -62,13 +62,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size type erased storage.  <a href="classkt_1_1fixed__any.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector-like container using bytearray as storage Refer to std::vector for API documentation Supports: insertion, deletion (pop only), random access iteration, ranged for Limitations: insert(), <a class="el" href="namespacele_1_1utils.html#ad44523a97bc2cfdaa9917ad18a9c0d95">erase()</a>  <a href="classkt_1_1fixed__vector.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector-like container using bytearray as storage Refer to std::vector for API documentation  <a href="classkt_1_1fixed__vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1monotonic__map.html">monotonic_map</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper over an (un)ordered map Associates each T with a unique RAII handle which can be used to unregister the instance.  <a href="classkt_1_1monotonic__map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1n__tree.html">n_tree</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a "forward" N-tree (no parent link) via std::forward_list.  <a href="classkt_1_1n__tree.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1not__null.html">not_null</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for raw / smart pointers that is restricted from being null.  <a href="classkt_1_1not__null.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1result.html">result</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a result (T) or an error (E) value Note: T cannot be void Specializations:  <a href="classkt_1_1result.html#details">More...</a><br /></td></tr>
@@ -82,6 +85,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1string__trie.html">string_trie</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root node for a trie of T per node.  <a href="structkt_1_1string__trie.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1tmutex.html">tmutex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic wrapper for a T and its mutex.  <a href="structkt_1_1tmutex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1strict__tmutex.html">strict_tmutex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strict wrapper for a T and its mutex (T accessible through tlock only)  <a href="classkt_1_1strict__tmutex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1tlock.html">tlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a scoped mutex lock and the underlying value in a <a class="el" href="classkt_1_1strict__tmutex.html" title="Strict wrapper for a T and its mutex (T accessible through tlock only)">strict_tmutex</a> / tmutex.  <a href="classkt_1_1tlock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1trilean.html">trilean</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1uint__flags.html">uint_flags</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around an integral type used as bit flags.  <a href="structkt_1_1uint__flags.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,17 +104,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html">async_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO std::deque wrapper with thread safe API.  <a href="classkt_1_1async__queue.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1lockable__t.html">lockable_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a mutex and associated locks.  <a href="structkt_1_1lockable__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1locker__t.html">locker_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for a T and an associated mutex.  <a href="structkt_1_1locker__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1locked__t.html">locked_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper modelling a held lock and a (reference to a) T.  <a href="structkt_1_1locked__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkt_1_1locked__t_3_01T_01const_00_01L_00_01M_01_4.html">locked_t&lt; T const, L, M &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html">kthread</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::thread wrapper that joins on destruction / move  <a href="classkt_1_1kthread.html#details">More...</a><br /></td></tr>
@@ -114,6 +117,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:abaec65dbf993366ab1c0c4c75e6fac2f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename M  = std::shared_mutex&gt; </td></tr>
+<tr class="memitem:abaec65dbf993366ab1c0c4c75e6fac2f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#abaec65dbf993366ab1c0c4c75e6fac2f">shared_tmutex</a> = <a class="el" href="structkt_1_1tmutex.html">tmutex</a>&lt; T, M &gt;</td></tr>
+<tr class="memdesc:abaec65dbf993366ab1c0c4c75e6fac2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for std::shared_mutex.  <a href="namespacekt.html#abaec65dbf993366ab1c0c4c75e6fac2f">More...</a><br /></td></tr>
+<tr class="separator:abaec65dbf993366ab1c0c4c75e6fac2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa939d1842f80313917962c27f5e56cb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename M  = std::shared_mutex&gt; </td></tr>
+<tr class="memitem:aaa939d1842f80313917962c27f5e56cb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#aaa939d1842f80313917962c27f5e56cb">shared_strict_tmutex</a> = <a class="el" href="structkt_1_1tmutex.html">tmutex</a>&lt; T, M &gt;</td></tr>
+<tr class="memdesc:aaa939d1842f80313917962c27f5e56cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for std::shared_mutex (strict)  <a href="namespacekt.html#aaa939d1842f80313917962c27f5e56cb">More...</a><br /></td></tr>
+<tr class="separator:aaa939d1842f80313917962c27f5e56cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdcb6d8744d98598eb8b787678b1dcb"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename L = std::shared_lock, typename M  = std::shared_mutex&gt; </td></tr>
+<tr class="memitem:afbdcb6d8744d98598eb8b787678b1dcb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#afbdcb6d8744d98598eb8b787678b1dcb">shared_tlock</a> = <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt; T, L, M &gt;</td></tr>
+<tr class="memdesc:afbdcb6d8744d98598eb8b787678b1dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for std::shared_lock.  <a href="namespacekt.html#afbdcb6d8744d98598eb8b787678b1dcb">More...</a><br /></td></tr>
+<tr class="separator:afbdcb6d8744d98598eb8b787678b1dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cdba17a172b01787ca901d763ec01f"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename L = std::unique_lock, typename M  = std::shared_mutex&gt; </td></tr>
+<tr class="memitem:ab5cdba17a172b01787ca901d763ec01f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ab5cdba17a172b01787ca901d763ec01f">unique_tlock</a> = <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt; T, L, M &gt;</td></tr>
+<tr class="memdesc:ab5cdba17a172b01787ca901d763ec01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for std::unique_lock.  <a href="namespacekt.html#ab5cdba17a172b01787ca901d763ec01f">More...</a><br /></td></tr>
+<tr class="separator:ab5cdba17a172b01787ca901d763ec01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1eb0d880d1a379007069d56065ad7ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#af1eb0d880d1a379007069d56065ad7ae">func_t</a> = void(*)(<a class="el" href="classkt_1_1executor__t.html">executor_t</a> const  &amp;exec)</td></tr>
 <tr class="memdesc:af1eb0d880d1a379007069d56065ad7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prototype of a test function.  <a href="namespacekt.html#af1eb0d880d1a379007069d56065ad7ae">More...</a><br /></td></tr>
 <tr class="separator:af1eb0d880d1a379007069d56065ad7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,24 +142,32 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a546ffa713abaaa8ceefe0b7d157af47e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a546ffa713abaaa8ceefe0b7d157af47e"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a546ffa713abaaa8ceefe0b7d157af47e">format_str</a> (std::string_view fmt, Args const &amp;... args)</td></tr>
-<tr class="memdesc:a546ffa713abaaa8ceefe0b7d157af47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain formatted string.  <a href="namespacekt.html#a546ffa713abaaa8ceefe0b7d157af47e">More...</a><br /></td></tr>
-<tr class="separator:a546ffa713abaaa8ceefe0b7d157af47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b6886415810a1413e5b33975d629e33"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#a3b6886415810a1413e5b33975d629e33">format_str</a> (std::ostream &amp;out, std::string_view fmt)</td></tr>
-<tr class="separator:a3b6886415810a1413e5b33975d629e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4c648eb23017e3f68e0abc63f659729"><td class="memTemplParams" colspan="2">template&lt;typename Arg , typename... Args&gt; </td></tr>
-<tr class="memitem:ab4c648eb23017e3f68e0abc63f659729"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ab4c648eb23017e3f68e0abc63f659729">format_str</a> (std::ostream &amp;out, std::string_view fmt, Arg const &amp;arg, Args const &amp;... args)</td></tr>
-<tr class="separator:ab4c648eb23017e3f68e0abc63f659729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba49abeb49842a87ecb4179444be460"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:acba49abeb49842a87ecb4179444be460"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#acba49abeb49842a87ecb4179444be460">operator==</a> (<a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;lhs, <a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;rhs) noexcept</td></tr>
+<tr class="separator:acba49abeb49842a87ecb4179444be460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa112706b0219b4bdb41b5371200c3cc8"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:aa112706b0219b4bdb41b5371200c3cc8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#aa112706b0219b4bdb41b5371200c3cc8">operator!=</a> (<a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;lhs, <a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;rhs) noexcept</td></tr>
+<tr class="separator:aa112706b0219b4bdb41b5371200c3cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6bf3c338b93d5a09dd9f800ee590770"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename L = std::scoped_lock&gt; </td></tr>
+<tr class="memitem:ab6bf3c338b93d5a09dd9f800ee590770"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#ab6bf3c338b93d5a09dd9f800ee590770">tlock</a> (T &amp;) -&gt; <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt; typename T::type, L, typename T::mutex_type &gt;</td></tr>
+<tr class="memdesc:ab6bf3c338b93d5a09dd9f800ee590770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for lvalue argument.  <a href="namespacekt.html#ab6bf3c338b93d5a09dd9f800ee590770">More...</a><br /></td></tr>
+<tr class="separator:ab6bf3c338b93d5a09dd9f800ee590770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fea47393986e1c127690ca5782d6ad"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename L = std::scoped_lock&gt; </td></tr>
+<tr class="memitem:a17fea47393986e1c127690ca5782d6ad"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a17fea47393986e1c127690ca5782d6ad">tlock</a> (T const &amp;) -&gt; <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt; typename T::type const, L, typename T::mutex_type &gt;</td></tr>
+<tr class="memdesc:a17fea47393986e1c127690ca5782d6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for const lvalue argument.  <a href="namespacekt.html#a17fea47393986e1c127690ca5782d6ad">More...</a><br /></td></tr>
+<tr class="separator:a17fea47393986e1c127690ca5782d6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35eb3820f31afd66bd2576888f2e12c8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a35eb3820f31afd66bd2576888f2e12c8"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a35eb3820f31afd66bd2576888f2e12c8">operator==</a> (<a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; T &gt; lhs, <a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; U &gt; rhs) noexcept</td></tr>
+<tr class="separator:a35eb3820f31afd66bd2576888f2e12c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9f38e3b8810f1800bf0cabae8d3c64"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a3d9f38e3b8810f1800bf0cabae8d3c64"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekt.html#a3d9f38e3b8810f1800bf0cabae8d3c64">operator!=</a> (<a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; T &gt; lhs, <a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; U &gt; rhs) noexcept</td></tr>
+<tr class="separator:a3d9f38e3b8810f1800bf0cabae8d3c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae55323ad32ee62bc2749dca2761cd55f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#ae55323ad32ee62bc2749dca2761cd55f">null_result</a> = nullptr</td></tr>
 <tr class="memdesc:ae55323ad32ee62bc2749dca2761cd55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for no result.  <a href="namespacekt.html#ae55323ad32ee62bc2749dca2761cd55f">More...</a><br /></td></tr>
 <tr class="separator:ae55323ad32ee62bc2749dca2761cd55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html#aa0963dd3a6d75717a2a10eb32b5bd9f7">fmt_token</a> = &quot;{}&quot;</td></tr>
-<tr class="memdesc:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format token.  <a href="namespacekt.html#aa0963dd3a6d75717a2a10eb32b5bd9f7">More...</a><br /></td></tr>
-<tr class="separator:aa0963dd3a6d75717a2a10eb32b5bd9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="af1eb0d880d1a379007069d56065ad7ae"></a>
@@ -156,6 +183,60 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prototype of a test function. </p>
+
+</div>
+</div>
+<a id="aaa939d1842f80313917962c27f5e56cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa939d1842f80313917962c27f5e56cb">&#9670;&nbsp;</a></span>shared_strict_tmutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename M  = std::shared_mutex&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacekt.html#aaa939d1842f80313917962c27f5e56cb">kt::shared_strict_tmutex</a> = typedef <a class="el" href="structkt_1_1tmutex.html">tmutex</a>&lt;T, M&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for std::shared_mutex (strict) </p>
+
+</div>
+</div>
+<a id="afbdcb6d8744d98598eb8b787678b1dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdcb6d8744d98598eb8b787678b1dcb">&#9670;&nbsp;</a></span>shared_tlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , template&lt; typename... &gt; typename L = std::shared_lock, typename M  = std::shared_mutex&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacekt.html#afbdcb6d8744d98598eb8b787678b1dcb">kt::shared_tlock</a> = typedef <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt;T, L, M&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for std::shared_lock. </p>
+
+</div>
+</div>
+<a id="abaec65dbf993366ab1c0c4c75e6fac2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaec65dbf993366ab1c0c4c75e6fac2f">&#9670;&nbsp;</a></span>shared_tmutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename M  = std::shared_mutex&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacekt.html#abaec65dbf993366ab1c0c4c75e6fac2f">kt::shared_tmutex</a> = typedef <a class="el" href="structkt_1_1tmutex.html">tmutex</a>&lt;T, M&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for std::shared_mutex. </p>
 
 </div>
 </div>
@@ -175,27 +256,47 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a3b6886415810a1413e5b33975d629e33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b6886415810a1413e5b33975d629e33">&#9670;&nbsp;</a></span>format_str() <span class="overload">[1/3]</span></h2>
+<a id="ab5cdba17a172b01787ca901d763ec01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5cdba17a172b01787ca901d763ec01f">&#9670;&nbsp;</a></span>unique_tlock</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , template&lt; typename... &gt; typename L = std::unique_lock, typename M  = std::shared_mutex&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacekt.html#ab5cdba17a172b01787ca901d763ec01f">kt::unique_tlock</a> = typedef <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt;T, L, M&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for std::unique_lock. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa112706b0219b4bdb41b5371200c3cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa112706b0219b4bdb41b5371200c3cc8">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; kt::format_str </td>
+          <td class="memname">bool kt::operator!= </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramtype"><a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>fmt</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -205,44 +306,35 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab4c648eb23017e3f68e0abc63f659729"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4c648eb23017e3f68e0abc63f659729">&#9670;&nbsp;</a></span>format_str() <span class="overload">[2/3]</span></h2>
+<a id="a3d9f38e3b8810f1800bf0cabae8d3c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9f38e3b8810f1800bf0cabae8d3c64">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Arg , typename... Args&gt; </div>
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; kt::format_str </td>
+          <td class="memname">constexpr bool kt::operator!= </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramtype"><a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Arg const &amp;&#160;</td>
-          <td class="paramname"><em>arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args const &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -250,29 +342,37 @@ template&lt;typename Arg , typename... Args&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a546ffa713abaaa8ceefe0b7d157af47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a546ffa713abaaa8ceefe0b7d157af47e">&#9670;&nbsp;</a></span>format_str() <span class="overload">[3/3]</span></h2>
+<a id="acba49abeb49842a87ecb4179444be460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba49abeb49842a87ecb4179444be460">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string kt::format_str </td>
+          <td class="memname">bool kt::operator== </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
+          <td class="paramtype"><a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Args const &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classkt_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -280,44 +380,98 @@ template&lt;typename... Args&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Obtain formatted string. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fmt</td><td>Interpolated string format (only exact fmt_token literal supported for direct argument replacement) </td></tr>
-    <tr><td class="paramname">args</td><td>Arguments </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a id="a35eb3820f31afd66bd2576888f2e12c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35eb3820f31afd66bd2576888f2e12c8">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool kt::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classkt_1_1trilean.html">trilean</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6bf3c338b93d5a09dd9f800ee590770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6bf3c338b93d5a09dd9f800ee590770">&#9670;&nbsp;</a></span>tlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , template&lt; typename... &gt; typename L = std::scoped_lock&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classkt_1_1tlock.html">kt::tlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt; typename T::type, L, typename T::mutex_type &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deduction guide for lvalue argument. </p>
+
+</div>
+</div>
+<a id="a17fea47393986e1c127690ca5782d6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17fea47393986e1c127690ca5782d6ad">&#9670;&nbsp;</a></span>tlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , template&lt; typename... &gt; typename L = std::scoped_lock&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classkt_1_1tlock.html">kt::tlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="classkt_1_1tlock.html">tlock</a>&lt; typename T::type const, L, typename T::mutex_type &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deduction guide for const lvalue argument. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aa0963dd3a6d75717a2a10eb32b5bd9f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0963dd3a6d75717a2a10eb32b5bd9f7">&#9670;&nbsp;</a></span>fmt_token</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::string_view kt::fmt_token = &quot;{}&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format token. </p>
-
-</div>
-</div>
 <a id="ae55323ad32ee62bc2749dca2761cd55f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae55323ad32ee62bc2749dca2761cd55f">&#9670;&nbsp;</a></span>null_result</h2>
 

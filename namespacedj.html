@@ -45,7 +45,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">dj Namespace Reference</div>  </div>
 </div><!--header-->
@@ -58,31 +58,29 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1node__t.html">node_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1not__found__exception.html">not_found_exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception type thrown on operator[] when key/index doesn't exist.  <a href="structdj_1_1not__found__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1converter__t.html">converter_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialise this functor to parse scalars into custom types built-in specialisations: std::string, numeric types, bool.  <a href="structdj_1_1converter__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json__t.html">json_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a JSON value, provides primary API.  <a href="classdj_1_1json__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1converter__t_3_01std_1_1string_01_4.html">converter_t&lt; std::string &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1null__t.html">null_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null type.  <a href="structdj_1_1null__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1converter__t_3_01std_1_1int64__t_01_4.html">converter_t&lt; std::int64_t &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1boolean__t.html">boolean_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean type.  <a href="structdj_1_1boolean__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1converter__t_3_01std_1_1uint64__t_01_4.html">converter_t&lt; std::uint64_t &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1number__t.html">number_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number type (stored as std::string)  <a href="structdj_1_1number__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1converter__t_3_01double_01_4.html">converter_t&lt; double &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1string__t.html">string_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">String type.  <a href="structdj_1_1string__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1converter__t_3_01bool_01_4.html">converter_t&lt; bool &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1array__t.html">array_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array type.  <a href="structdj_1_1array__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1error__location__t.html">error_location_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic report type.  <a href="structdj_1_1error__location__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1parse__error__t.html">parse_error_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception type for parse errors.  <a href="structdj_1_1parse__error__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1node__error.html">node_error</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception type for node errors.  <a href="structdj_1_1node__error.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1error__handler__t.html">error_handler_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1object__t.html">object_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object type.  <a href="structdj_1_1object__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdj_1_1serial__opts__t.html">serial_opts_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialisation options.  <a href="structdj_1_1serial__opts__t.html#details">More...</a><br /></td></tr>
@@ -90,54 +88,64 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a01bd1c356620ce474343d3b2834382a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a01bd1c356620ce474343d3b2834382a9">log_error_t</a> = void(*)(<a class="el" href="structdj_1_1error__location__t.html">error_location_t</a> const  &amp;)</td></tr>
-<tr class="memdesc:a01bd1c356620ce474343d3b2834382a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error log callback.  <a href="namespacedj.html#a01bd1c356620ce474343d3b2834382a9">More...</a><br /></td></tr>
-<tr class="separator:a01bd1c356620ce474343d3b2834382a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c985ad58f8d54d0cc1b529b4f8329ba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a> = std::shared_ptr&lt; <a class="el" href="classdj_1_1node__t.html">node_t</a> &gt;</td></tr>
-<tr class="separator:a2c985ad58f8d54d0cc1b529b4f8329ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c38b7dcdffbd5f427d76ea52610f44"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a90c38b7dcdffbd5f427d76ea52610f44">field_map_t</a> = std::unordered_map&lt; std::string, <a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a> &gt;</td></tr>
-<tr class="memdesc:a90c38b7dcdffbd5f427d76ea52610f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aa8cfde6331bd59eb2ac96f8911c4b666">node_type::object</a>.  <a href="namespacedj.html#a90c38b7dcdffbd5f427d76ea52610f44">More...</a><br /></td></tr>
-<tr class="separator:a90c38b7dcdffbd5f427d76ea52610f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10f060c320a4dee1a5b764e980c0a83"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#ae10f060c320a4dee1a5b764e980c0a83">field_array_t</a> = std::vector&lt; <a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a> &gt;</td></tr>
-<tr class="memdesc:ae10f060c320a4dee1a5b764e980c0a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317af1f713c9e000f5d3f280adbd124df4f5">node_type::array</a>.  <a href="namespacedj.html#ae10f060c320a4dee1a5b764e980c0a83">More...</a><br /></td></tr>
-<tr class="separator:ae10f060c320a4dee1a5b764e980c0a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f803067215a59e0417e3272e96a696"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a72f803067215a59e0417e3272e96a696">scalar_t</a> = std::string</td></tr>
-<tr class="memdesc:a72f803067215a59e0417e3272e96a696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aa27a6549ade38cc036f7b8c58a840510">node_type::scalar</a>.  <a href="namespacedj.html#a72f803067215a59e0417e3272e96a696">More...</a><br /></td></tr>
-<tr class="separator:a72f803067215a59e0417e3272e96a696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b20f481cf661f8053e78910079cd3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#ae0b20f481cf661f8053e78910079cd3e">value_t</a> = std::variant&lt; <a class="el" href="namespacedj.html#a72f803067215a59e0417e3272e96a696">scalar_t</a>, <a class="el" href="namespacedj.html#a90c38b7dcdffbd5f427d76ea52610f44">field_map_t</a>, <a class="el" href="namespacedj.html#ae10f060c320a4dee1a5b764e980c0a83">field_array_t</a> &gt;</td></tr>
-<tr class="memdesc:ae0b20f481cf661f8053e78910079cd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant for node's data.  <a href="namespacedj.html#ae0b20f481cf661f8053e78910079cd3e">More...</a><br /></td></tr>
-<tr class="separator:ae0b20f481cf661f8053e78910079cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93effee5a154bd545948368b2f869214"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a93effee5a154bd545948368b2f869214"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedj.html#a93effee5a154bd545948368b2f869214">map_fields_t</a> = std::unordered_map&lt; std::string_view, T &gt;</td></tr>
-<tr class="memdesc:a93effee5a154bd545948368b2f869214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for reading values as objects.  <a href="namespacedj.html#a93effee5a154bd545948368b2f869214">More...</a><br /></td></tr>
-<tr class="separator:a93effee5a154bd545948368b2f869214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4cbca8eef4bb699b209bb47e8145694"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#aa4cbca8eef4bb699b209bb47e8145694">map_nodes_t</a> = <a class="el" href="namespacedj.html#a93effee5a154bd545948368b2f869214">map_fields_t</a>&lt; <a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a> &gt;</td></tr>
-<tr class="separator:aa4cbca8eef4bb699b209bb47e8145694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0607a2434e5e07d6c79f2e2880e705e8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0607a2434e5e07d6c79f2e2880e705e8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedj.html#a0607a2434e5e07d6c79f2e2880e705e8">array_fields_t</a> = std::vector&lt; T &gt;</td></tr>
-<tr class="memdesc:a0607a2434e5e07d6c79f2e2880e705e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for reading values as arrays.  <a href="namespacedj.html#a0607a2434e5e07d6c79f2e2880e705e8">More...</a><br /></td></tr>
-<tr class="separator:a0607a2434e5e07d6c79f2e2880e705e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6699cdbfcf9b8106b1df2121d77ec52e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a6699cdbfcf9b8106b1df2121d77ec52e">array_nodes_t</a> = <a class="el" href="namespacedj.html#a0607a2434e5e07d6c79f2e2880e705e8">array_fields_t</a>&lt; <a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a> &gt;</td></tr>
-<tr class="separator:a6699cdbfcf9b8106b1df2121d77ec52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314a3a609f32e642a64967f26b720d8e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a314a3a609f32e642a64967f26b720d8e">vec_t</a> = <a class="el" href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">query_t</a>&lt; <a class="el" href="structdj_1_1array__t.html">array_t</a> &gt;</td></tr>
+<tr class="memdesc:a314a3a609f32e642a64967f26b720d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for array type (use with as&lt;T&gt;())  <a href="namespacedj.html#a314a3a609f32e642a64967f26b720d8e">More...</a><br /></td></tr>
+<tr class="separator:a314a3a609f32e642a64967f26b720d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e1be46286dcbedfdb0e1a7a02f5fd3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a87e1be46286dcbedfdb0e1a7a02f5fd3">map_t</a> = <a class="el" href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">query_t</a>&lt; <a class="el" href="structdj_1_1object__t.html">object_t</a> &gt;</td></tr>
+<tr class="memdesc:a87e1be46286dcbedfdb0e1a7a02f5fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for object type (use with as&lt;T&gt;())  <a href="namespacedj.html#a87e1be46286dcbedfdb0e1a7a02f5fd3">More...</a><br /></td></tr>
+<tr class="separator:a87e1be46286dcbedfdb0e1a7a02f5fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fee42f7fec8e909821b37efdb9046ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4fee42f7fec8e909821b37efdb9046ee"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedj.html#a4fee42f7fec8e909821b37efdb9046ee">ptr</a> = std::shared_ptr&lt; T &gt;</td></tr>
+<tr class="memdesc:a4fee42f7fec8e909821b37efdb9046ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for std::shared_ptr&lt;T&gt;  <a href="namespacedj.html#a4fee42f7fec8e909821b37efdb9046ee">More...</a><br /></td></tr>
+<tr class="separator:a4fee42f7fec8e909821b37efdb9046ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada192cb5f6b955c7b44e19fa7ceee65c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ada192cb5f6b955c7b44e19fa7ceee65c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">query_t</a> = typename T::storage_t</td></tr>
+<tr class="memdesc:ada192cb5f6b955c7b44e19fa7ceee65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for storage of a json value type.  <a href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">More...</a><br /></td></tr>
+<tr class="separator:ada192cb5f6b955c7b44e19fa7ceee65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a51226aec3d09a489a65d88d095a75317"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317">node_type</a> { <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aad921d60486366258809553a3db49a4a">unknown</a>
-, <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aa27a6549ade38cc036f7b8c58a840510">scalar</a>
-, <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aa8cfde6331bd59eb2ac96f8911c4b666">object</a>
-, <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317af1f713c9e000f5d3f280adbd124df4f5">array</a>
+<tr class="memitem:a668164145abf16d520e22a3477e78865"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865">json_type</a> { <br />
+&#160;&#160;<a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865a37a6259cc0c1dae299a7866489dff0bd">null</a>
+, <a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865a84e2c64f38f78ba3ea5c905ab5a2da27">boolean</a>
+, <a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865ab1bc248a7ff2b2e95569f56de68615df">number</a>
+, <a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865ab45cffe084dd3d20d928bee85e7b0f21">string</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865af1f713c9e000f5d3f280adbd124df4f5">array</a>
+, <a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865aa8cfde6331bd59eb2ac96f8911c4b666">object</a>
+<br />
  }</td></tr>
-<tr class="memdesc:a51226aec3d09a489a65d88d095a75317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a node.  <a href="namespacedj.html#a51226aec3d09a489a65d88d095a75317">More...</a><br /></td></tr>
-<tr class="separator:a51226aec3d09a489a65d88d095a75317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a668164145abf16d520e22a3477e78865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type of json.  <a href="namespacedj.html#a668164145abf16d520e22a3477e78865">More...</a><br /></td></tr>
+<tr class="separator:a668164145abf16d520e22a3477e78865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a19c2ce2227720ffa7a6a4f51e6824a51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdj_1_1error__handler__t.html">error_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a19c2ce2227720ffa7a6a4f51e6824a51">g_error</a></td></tr>
-<tr class="separator:a19c2ce2227720ffa7a6a4f51e6824a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a29142e7782df7a8c7dc0396e04134a6e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a29142e7782df7a8c7dc0396e04134a6e">operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="classdj_1_1json__t.html">json_t</a> const &amp;json)</td></tr>
+<tr class="memdesc:a29142e7782df7a8c7dc0396e04134a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output json value to stream.  <a href="namespacedj.html#a29142e7782df7a8c7dc0396e04134a6e">More...</a><br /></td></tr>
+<tr class="separator:a29142e7782df7a8c7dc0396e04134a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e259c52ec0950dde0746f550caa4f47"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedj.html#a0e259c52ec0950dde0746f550caa4f47">operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="structdj_1_1json__t_1_1result__t.html">json_t::result_t</a> const &amp;result)</td></tr>
+<tr class="memdesc:a0e259c52ec0950dde0746f550caa4f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output json result to stream.  <a href="namespacedj.html#a0e259c52ec0950dde0746f550caa4f47">More...</a><br /></td></tr>
+<tr class="separator:a0e259c52ec0950dde0746f550caa4f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a0607a2434e5e07d6c79f2e2880e705e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0607a2434e5e07d6c79f2e2880e705e8">&#9670;&nbsp;</a></span>array_fields_t</h2>
+<a id="a87e1be46286dcbedfdb0e1a7a02f5fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e1be46286dcbedfdb0e1a7a02f5fd3">&#9670;&nbsp;</a></span>map_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedj.html#a87e1be46286dcbedfdb0e1a7a02f5fd3">dj::map_t</a> = typedef <a class="el" href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">query_t</a>&lt;<a class="el" href="structdj_1_1object__t.html">object_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for object type (use with as&lt;T&gt;()) </p>
+
+</div>
+</div>
+<a id="a4fee42f7fec8e909821b37efdb9046ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fee42f7fec8e909821b37efdb9046ee">&#9670;&nbsp;</a></span>ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,79 +153,17 @@ Variables</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a0607a2434e5e07d6c79f2e2880e705e8">dj::array_fields_t</a> = typedef std::vector&lt;T&gt;</td>
+          <td class="memname">using <a class="el" href="namespacedj.html#a4fee42f7fec8e909821b37efdb9046ee">dj::ptr</a> = typedef std::shared_ptr&lt;T&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Alias for reading values as arrays. </p>
+<p>Type alias for std::shared_ptr&lt;T&gt; </p>
 
 </div>
 </div>
-<a id="a6699cdbfcf9b8106b1df2121d77ec52e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6699cdbfcf9b8106b1df2121d77ec52e">&#9670;&nbsp;</a></span>array_nodes_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a6699cdbfcf9b8106b1df2121d77ec52e">dj::array_nodes_t</a> = typedef <a class="el" href="namespacedj.html#a0607a2434e5e07d6c79f2e2880e705e8">array_fields_t</a>&lt;<a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae10f060c320a4dee1a5b764e980c0a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae10f060c320a4dee1a5b764e980c0a83">&#9670;&nbsp;</a></span>field_array_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#ae10f060c320a4dee1a5b764e980c0a83">dj::field_array_t</a> = typedef std::vector&lt;<a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Storage for <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317af1f713c9e000f5d3f280adbd124df4f5">node_type::array</a>. </p>
-
-</div>
-</div>
-<a id="a90c38b7dcdffbd5f427d76ea52610f44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c38b7dcdffbd5f427d76ea52610f44">&#9670;&nbsp;</a></span>field_map_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a90c38b7dcdffbd5f427d76ea52610f44">dj::field_map_t</a> = typedef std::unordered_map&lt;std::string, <a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Storage for <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aa8cfde6331bd59eb2ac96f8911c4b666">node_type::object</a>. </p>
-
-</div>
-</div>
-<a id="a01bd1c356620ce474343d3b2834382a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01bd1c356620ce474343d3b2834382a9">&#9670;&nbsp;</a></span>log_error_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a01bd1c356620ce474343d3b2834382a9">dj::log_error_t</a> = typedef void (*)(<a class="el" href="structdj_1_1error__location__t.html">error_location_t</a> const&amp;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Error log callback. </p>
-
-</div>
-</div>
-<a id="a93effee5a154bd545948368b2f869214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93effee5a154bd545948368b2f869214">&#9670;&nbsp;</a></span>map_fields_t</h2>
+<a id="ada192cb5f6b955c7b44e19fa7ceee65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada192cb5f6b955c7b44e19fa7ceee65c">&#9670;&nbsp;</a></span>query_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,78 +171,34 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a93effee5a154bd545948368b2f869214">dj::map_fields_t</a> = typedef std::unordered_map&lt;std::string_view, T&gt;</td>
+          <td class="memname">using <a class="el" href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">dj::query_t</a> = typedef typename T::storage_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Alias for reading values as objects. </p>
+<p>Type alias for storage of a json value type. </p>
 
 </div>
 </div>
-<a id="aa4cbca8eef4bb699b209bb47e8145694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4cbca8eef4bb699b209bb47e8145694">&#9670;&nbsp;</a></span>map_nodes_t</h2>
+<a id="a314a3a609f32e642a64967f26b720d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314a3a609f32e642a64967f26b720d8e">&#9670;&nbsp;</a></span>vec_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#aa4cbca8eef4bb699b209bb47e8145694">dj::map_nodes_t</a> = typedef <a class="el" href="namespacedj.html#a93effee5a154bd545948368b2f869214">map_fields_t</a>&lt;<a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">node_ptr</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespacedj.html#a314a3a609f32e642a64967f26b720d8e">dj::vec_t</a> = typedef <a class="el" href="namespacedj.html#ada192cb5f6b955c7b44e19fa7ceee65c">query_t</a>&lt;<a class="el" href="structdj_1_1array__t.html">array_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a2c985ad58f8d54d0cc1b529b4f8329ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c985ad58f8d54d0cc1b529b4f8329ba">&#9670;&nbsp;</a></span>node_ptr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a2c985ad58f8d54d0cc1b529b4f8329ba">dj::node_ptr</a> = typedef std::shared_ptr&lt;<a class="el" href="classdj_1_1node__t.html">node_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72f803067215a59e0417e3272e96a696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72f803067215a59e0417e3272e96a696">&#9670;&nbsp;</a></span>scalar_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#a72f803067215a59e0417e3272e96a696">dj::scalar_t</a> = typedef std::string</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Storage for <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317aa27a6549ade38cc036f7b8c58a840510">node_type::scalar</a>. </p>
-
-</div>
-</div>
-<a id="ae0b20f481cf661f8053e78910079cd3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0b20f481cf661f8053e78910079cd3e">&#9670;&nbsp;</a></span>value_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedj.html#ae0b20f481cf661f8053e78910079cd3e">dj::value_t</a> = typedef std::variant&lt;<a class="el" href="namespacedj.html#a72f803067215a59e0417e3272e96a696">scalar_t</a>, <a class="el" href="namespacedj.html#a90c38b7dcdffbd5f427d76ea52610f44">field_map_t</a>, <a class="el" href="namespacedj.html#ae10f060c320a4dee1a5b764e980c0a83">field_array_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Variant for node's data. </p>
+<p>Type alias for array type (use with as&lt;T&gt;()) </p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a51226aec3d09a489a65d88d095a75317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51226aec3d09a489a65d88d095a75317">&#9670;&nbsp;</a></span>node_type</h2>
+<a id="a668164145abf16d520e22a3477e78865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668164145abf16d520e22a3477e78865">&#9670;&nbsp;</a></span>json_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +207,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedj.html#a51226aec3d09a489a65d88d095a75317">dj::node_type</a></td>
+          <td class="memname">enum <a class="el" href="namespacedj.html#a668164145abf16d520e22a3477e78865">dj::json_type</a></td>
         </tr>
       </table>
   </td>
@@ -315,36 +217,76 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Type of a node. </p>
+<p>Value type of json. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a51226aec3d09a489a65d88d095a75317aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a51226aec3d09a489a65d88d095a75317aa27a6549ade38cc036f7b8c58a840510"></a>scalar&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a51226aec3d09a489a65d88d095a75317aa8cfde6331bd59eb2ac96f8911c4b666"></a>object&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a51226aec3d09a489a65d88d095a75317af1f713c9e000f5d3f280adbd124df4f5"></a>array&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a668164145abf16d520e22a3477e78865a37a6259cc0c1dae299a7866489dff0bd"></a>null&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a668164145abf16d520e22a3477e78865a84e2c64f38f78ba3ea5c905ab5a2da27"></a>boolean&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a668164145abf16d520e22a3477e78865ab1bc248a7ff2b2e95569f56de68615df"></a>number&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a668164145abf16d520e22a3477e78865ab45cffe084dd3d20d928bee85e7b0f21"></a>string&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a668164145abf16d520e22a3477e78865af1f713c9e000f5d3f280adbd124df4f5"></a>array&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a668164145abf16d520e22a3477e78865aa8cfde6331bd59eb2ac96f8911c4b666"></a>object&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a19c2ce2227720ffa7a6a4f51e6824a51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c2ce2227720ffa7a6a4f51e6824a51">&#9670;&nbsp;</a></span>g_error</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a29142e7782df7a8c7dc0396e04134a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29142e7782df7a8c7dc0396e04134a6e">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdj_1_1error__handler__t.html">error_handler_t</a> dj::g_error</td>
+          <td class="memname">std::ostream&amp; dj::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdj_1_1json__t.html">json_t</a> const &amp;&#160;</td>
+          <td class="paramname"><em>json</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Output json value to stream. </p>
+
+</div>
+</div>
+<a id="a0e259c52ec0950dde0746f550caa4f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e259c52ec0950dde0746f550caa4f47">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; dj::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdj_1_1json__t_1_1result__t.html">json_t::result_t</a> const &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output json result to stream. </p>
 
 </div>
 </div>

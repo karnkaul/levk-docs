@@ -63,9 +63,13 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab4f71cb258d3e6248b2a620db88be4e3"><td class="memTemplParams" colspan="2">template&lt;typename... U&gt; </td></tr>
-<tr class="memitem:ab4f71cb258d3e6248b2a620db88be4e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html#ab4f71cb258d3e6248b2a620db88be4e3">push</a> (U &amp;&amp;... u)</td></tr>
-<tr class="separator:ab4f71cb258d3e6248b2a620db88be4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa685c2af6d5691afe4520db387a64a3"><td class="memTemplParams" colspan="2">template&lt;typename... U&gt; </td></tr>
+<tr class="memitem:afa685c2af6d5691afe4520db387a64a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html#afa685c2af6d5691afe4520db387a64a3">emplace</a> (U &amp;&amp;... u)</td></tr>
+<tr class="separator:afa685c2af6d5691afe4520db387a64a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf179d3b1553e3159efc6a183e8b8e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html#aaf179d3b1553e3159efc6a183e8b8e00">push</a> (T &amp;&amp;t)</td></tr>
+<tr class="separator:aaf179d3b1553e3159efc6a183e8b8e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6d85a54bfcf9546772cf339beefa59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html#a8a6d85a54bfcf9546772cf339beefa59">push</a> (T const &amp;t)</td></tr>
+<tr class="separator:a8a6d85a54bfcf9546772cf339beefa59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3374efa58134fb474b65e019652f85"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html#a1a3374efa58134fb474b65e019652f85">get</a> ()</td></tr>
 <tr class="separator:a1a3374efa58134fb474b65e019652f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ee7d479c0d2e784ed3f588f6c09e03"><td class="memItemLeft" align="right" valign="top">T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html#ac0ee7d479c0d2e784ed3f588f6c09e03">get</a> () const</td></tr>
@@ -104,6 +108,28 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa685c2af6d5691afe4520db387a64a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa685c2af6d5691afe4520db387a64a3">&#9670;&nbsp;</a></span>emplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename... U&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structle_1_1RingBuffer.html">le::RingBuffer</a>&lt; T &gt;::emplace </td>
+          <td>(</td>
+          <td class="paramtype">U &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a91d2b155cfc0bbfb9a8ed55fcbdf64aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91d2b155cfc0bbfb9a8ed55fcbdf64aa">&#9670;&nbsp;</a></span>empty()</h2>
 
@@ -184,24 +210,58 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab4f71cb258d3e6248b2a620db88be4e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4f71cb258d3e6248b2a620db88be4e3">&#9670;&nbsp;</a></span>push()</h2>
+<a id="aaf179d3b1553e3159efc6a183e8b8e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf179d3b1553e3159efc6a183e8b8e00">&#9670;&nbsp;</a></span>push() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<div class="memtemplate">
-template&lt;typename... U&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structle_1_1RingBuffer.html">le::RingBuffer</a>&lt; T &gt;::push </td>
           <td>(</td>
-          <td class="paramtype">U &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a6d85a54bfcf9546772cf339beefa59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6d85a54bfcf9546772cf339beefa59">&#9670;&nbsp;</a></span>push() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structle_1_1RingBuffer.html">le::RingBuffer</a>&lt; T &gt;::push </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

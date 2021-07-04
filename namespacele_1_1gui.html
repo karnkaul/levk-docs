@@ -46,7 +46,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">le::gui Namespace Reference</div>  </div>
 </div><!--header-->
@@ -54,18 +56,33 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1Root.html">Root</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1Node.html">Node</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1Quad.html">Quad</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1Rect.html">Rect</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1Style.html">Style</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1Text.html">Text</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeRoot.html">TreeRoot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html">TreeNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1Measure.html">Measure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1Canvas.html">Canvas</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1View.html">View</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1ViewStack.html">ViewStack</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1Widget.html">Widget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a820427692ad325752cc2976aec5512d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html#a820427692ad325752cc2976aec5512d2">OnClick</a> = <a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt;&gt;</td></tr>
+<tr class="separator:a820427692ad325752cc2976aec5512d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -80,7 +97,31 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a7eb472c8507b9d0e1b6d10e7a03845e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710640ed21cf579fe83c338fe0d8d5c6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html#a710640ed21cf579fe83c338fe0d8d5c6">Unit</a> { <a class="el" href="namespacele_1_1gui.html#a710640ed21cf579fe83c338fe0d8d5c6a2689d2b7758026180e073876cba9dda2">eRelative</a>
+, <a class="el" href="namespacele_1_1gui.html#a710640ed21cf579fe83c338fe0d8d5c6aa4fbcf9ada3e92e9fe74dc1873afb5be">eAbsolute</a>
+ }</td></tr>
+<tr class="separator:a710640ed21cf579fe83c338fe0d8d5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afca639bf8c81e2086d0e1fb061c3c9b4"><td class="memItemLeft" align="right" valign="top">DrawScissor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html#afca639bf8c81e2086d0e1fb061c3c9b4">scissor</a> (<a class="el" href="structle_1_1input_1_1Space.html">input::Space</a> const &amp;space, glm::vec2 centre={}, glm::vec2 halfSize={0.5f, -0.5f}, bool normalised=true) noexcept</td></tr>
+<tr class="separator:afca639bf8c81e2086d0e1fb061c3c9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a820427692ad325752cc2976aec5512d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820427692ad325752cc2976aec5512d2">&#9670;&nbsp;</a></span>OnClick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacele_1_1gui.html#a820427692ad325752cc2976aec5512d2">le::gui::OnClick</a> = typedef <a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a7eb472c8507b9d0e1b6d10e7a03845e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7eb472c8507b9d0e1b6d10e7a03845e5">&#9670;&nbsp;</a></span>Status</h2>
@@ -109,6 +150,81 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a7eb472c8507b9d0e1b6d10e7a03845e5ad46d3b94b78c854273c61f3f14435b9f"></a>eRelease&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7eb472c8507b9d0e1b6d10e7a03845e5a98ce873df53900dd5454baba574ecb06"></a>eCOUNT_&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<a id="a710640ed21cf579fe83c338fe0d8d5c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710640ed21cf579fe83c338fe0d8d5c6">&#9670;&nbsp;</a></span>Unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacele_1_1gui.html#a710640ed21cf579fe83c338fe0d8d5c6">le::gui::Unit</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a710640ed21cf579fe83c338fe0d8d5c6a2689d2b7758026180e073876cba9dda2"></a>eRelative&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a710640ed21cf579fe83c338fe0d8d5c6aa4fbcf9ada3e92e9fe74dc1873afb5be"></a>eAbsolute&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="afca639bf8c81e2086d0e1fb061c3c9b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca639bf8c81e2086d0e1fb061c3c9b4">&#9670;&nbsp;</a></span>scissor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DrawScissor le::gui::scissor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1input_1_1Space.html">input::Space</a> const &amp;&#160;</td>
+          <td class="paramname"><em>space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec2&#160;</td>
+          <td class="paramname"><em>centre</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec2&#160;</td>
+          <td class="paramname"><em>halfSize</em> = <code>{0.5f,&#160;-0.5f}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalised</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

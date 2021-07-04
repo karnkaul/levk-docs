@@ -81,7 +81,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8abe39d0f699991f4841e0e2d1e5a0a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Transfer.html#a8abe39d0f699991f4841e0e2d1e5a0a1">Transfer</a> (<a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory, <a class="el" href="structle_1_1graphics_1_1Transfer_1_1CreateInfo.html">CreateInfo</a> const &amp;info)</td></tr>
+<tr class="memitem:a8abe39d0f699991f4841e0e2d1e5a0a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Transfer.html#a8abe39d0f699991f4841e0e2d1e5a0a1">Transfer</a> (<a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory, <a class="el" href="structle_1_1graphics_1_1Transfer_1_1CreateInfo.html">CreateInfo</a> const &amp;info)</td></tr>
 <tr class="separator:a8abe39d0f699991f4841e0e2d1e5a0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15e93d3a800211f7781344cdd6896ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Transfer.html#ae15e93d3a800211f7781344cdd6896ad">~Transfer</a> ()</td></tr>
 <tr class="separator:ae15e93d3a800211f7781344cdd6896ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +162,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">le::graphics::Transfer::Transfer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1not__null.html">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td>
           <td class="paramname"><em>memory</em>, </td>
         </tr>
         <tr>
@@ -350,20 +350,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a187be89408d731a735edd8b1d4273aa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a187be89408d731a735edd8b1d4273aa1">&#9670;&nbsp;</a></span>bPoll</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;bool&gt; le::graphics::Transfer::bPoll</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8fec376df2604ccaa6c37b209da3943d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fec376df2604ccaa6c37b209da3943d">&#9670;&nbsp;</a></span>buffers</h2>
 
@@ -428,28 +414,28 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a6f2d2154a37dac87a4b277af5d5afb0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f2d2154a37dac87a4b277af5d5afb0f">&#9670;&nbsp;</a></span>mutex</h2>
+<a id="a98a5d614501c4f327bde7afcac5ea5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98a5d614501c4f327bde7afcac5ea5fd">&#9670;&nbsp;</a></span>mutex</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structkt_1_1lockable__t.html">kt::lockable_t</a> le::graphics::Transfer::mutex</td>
+          <td class="memname">std::mutex le::graphics::Transfer::mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3ad1bcd1d741bc6fd39edba83cc0ce4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ad1bcd1d741bc6fd39edba83cc0ce4d">&#9670;&nbsp;</a></span>pollThread</h2>
+<a id="a31423bf96afeaaa67c49590682ca4505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31423bf96afeaaa67c49590682ca4505">&#9670;&nbsp;</a></span>poll</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt;<a class="el" href="classkt_1_1kthread.html">kt::kthread</a>&gt; le::graphics::Transfer::pollThread</td>
+          <td class="memname"><a class="el" href="classkt_1_1kthread.html">kt::kthread</a> le::graphics::Transfer::poll</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -470,14 +456,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ceeac65fe65f3ef762b93e76dba01f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ceeac65fe65f3ef762b93e76dba01f8">&#9670;&nbsp;</a></span>stagingThread</h2>
+<a id="a14d3961baa55ef3596efe8b2a0cadf27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d3961baa55ef3596efe8b2a0cadf27">&#9670;&nbsp;</a></span>staging</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt;<a class="el" href="classkt_1_1kthread.html">kt::kthread</a>&gt; le::graphics::Transfer::stagingThread</td>
+          <td class="memname"><a class="el" href="classkt_1_1kthread.html">kt::kthread</a> le::graphics::Transfer::staging</td>
         </tr>
       </table>
 </div><div class="memdoc">

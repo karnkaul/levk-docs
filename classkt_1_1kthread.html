@@ -45,8 +45,11 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classkt_1_1kthread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">kt::kthread Class Reference</div>  </div>
@@ -58,12 +61,29 @@ $(function() {
 
 <p><code>#include &lt;kthread.hpp&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread_1_1stop__t.html">stop_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop Token.  <a href="classkt_1_1kthread_1_1stop__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa75bb5378587688006d46395ae221795"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795">policy</a> { <a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795a49256b9819abacbb8e6e031a03abe81b">wait</a>
+, <a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795aef399b2d446bb37b7c32ad2cc1b6045b">stop</a>
+ }</td></tr>
+<tr class="separator:aa75bb5378587688006d46395ae221795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe4d120e9c6fb436b61025309185ab4"><td class="memTemplParams" colspan="2">template&lt;typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:acfe4d120e9c6fb436b61025309185ab4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#acfe4d120e9c6fb436b61025309185ab4">invocable_t</a> = std::enable_if_t&lt; std::is_invocable_v&lt; F, Args... &gt;||std::is_invocable_v&lt; F, <a class="el" href="classkt_1_1kthread_1_1stop__t.html">stop_t</a>, Args... &gt; &gt;</td></tr>
+<tr class="separator:acfe4d120e9c6fb436b61025309185ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a99e27e973adb003b62cfdaef176bf4fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a99e27e973adb003b62cfdaef176bf4fb">kthread</a> ()=default</td></tr>
 <tr class="separator:a99e27e973adb003b62cfdaef176bf4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e33f2b4857c221cb7e684d7bb3aae6"><td class="memTemplParams" colspan="2">template&lt;typename F , typename... Args, typename  = std::enable_if_t&lt;guard&lt;F&gt;&gt;&gt; </td></tr>
+<tr class="memitem:ad6e33f2b4857c221cb7e684d7bb3aae6"><td class="memTemplParams" colspan="2">template&lt;typename F , typename... Args, typename  = invocable_t&lt;F, Args...&gt;&gt; </td></tr>
 <tr class="memitem:ad6e33f2b4857c221cb7e684d7bb3aae6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#ad6e33f2b4857c221cb7e684d7bb3aae6">kthread</a> (F &amp;&amp;func, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ad6e33f2b4857c221cb7e684d7bb3aae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke F(Args...) or F(stop_t, Args...) on a new thread.  <a href="classkt_1_1kthread.html#ad6e33f2b4857c221cb7e684d7bb3aae6">More...</a><br /></td></tr>
 <tr class="separator:ad6e33f2b4857c221cb7e684d7bb3aae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b9664c3442e9e95e06d27d3d06cb46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#aa9b9664c3442e9e95e06d27d3d06cb46">kthread</a> (<a class="el" href="classkt_1_1kthread.html">kthread</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:aa9b9664c3442e9e95e06d27d3d06cb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -77,20 +97,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fd5f143eaff4fa402291b1f7d86abf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a2fd5f143eaff4fa402291b1f7d86abf4">swap</a> (<a class="el" href="classkt_1_1kthread.html">kthread</a> &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a2fd5f143eaff4fa402291b1f7d86abf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap this instance with rhs.  <a href="classkt_1_1kthread.html#a2fd5f143eaff4fa402291b1f7d86abf4">More...</a><br /></td></tr>
 <tr class="separator:a2fd5f143eaff4fa402291b1f7d86abf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a8722580f877f9b1e4eebc130e424f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#ad6a8722580f877f9b1e4eebc130e424f">request_stop</a> () noexcept</td></tr>
+<tr class="memdesc:ad6a8722580f877f9b1e4eebc130e424f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal stop token (if existent)  <a href="classkt_1_1kthread.html#ad6a8722580f877f9b1e4eebc130e424f">More...</a><br /></td></tr>
+<tr class="separator:ad6a8722580f877f9b1e4eebc130e424f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93493352f86d61b5cac820f376d450e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a93493352f86d61b5cac820f376d450e0">active</a> () const noexcept</td></tr>
+<tr class="memdesc:a93493352f86d61b5cac820f376d450e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an execution context is running.  <a href="classkt_1_1kthread.html#a93493352f86d61b5cac820f376d450e0">More...</a><br /></td></tr>
+<tr class="separator:a93493352f86d61b5cac820f376d450e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e1292c1366e6b497b54b6164a2fc08a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a7e1292c1366e6b497b54b6164a2fc08a">yield</a> ()</td></tr>
-<tr class="memdesc:a7e1292c1366e6b497b54b6164a2fc08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield execution of the calling thread.  <a href="classkt_1_1kthread.html#a7e1292c1366e6b497b54b6164a2fc08a">More...</a><br /></td></tr>
-<tr class="separator:a7e1292c1366e6b497b54b6164a2fc08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8c16c9fef2544f308cbed5ef4eed67"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a1f8c16c9fef2544f308cbed5ef4eed67">yield</a> ()</td></tr>
+<tr class="memdesc:a1f8c16c9fef2544f308cbed5ef4eed67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield execution of the calling thread.  <a href="classkt_1_1kthread.html#a1f8c16c9fef2544f308cbed5ef4eed67">More...</a><br /></td></tr>
+<tr class="separator:a1f8c16c9fef2544f308cbed5ef4eed67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eb0b8f14f0e0c85b7a8055069510cbc"><td class="memTemplParams" colspan="2">template&lt;typename Dur &gt; </td></tr>
 <tr class="memitem:a4eb0b8f14f0e0c85b7a8055069510cbc"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a4eb0b8f14f0e0c85b7a8055069510cbc">sleep_for</a> (Dur &amp;&amp;duration)</td></tr>
 <tr class="memdesc:a4eb0b8f14f0e0c85b7a8055069510cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep calling thread for a specific duration (approximate)  <a href="classkt_1_1kthread.html#a4eb0b8f14f0e0c85b7a8055069510cbc">More...</a><br /></td></tr>
 <tr class="separator:a4eb0b8f14f0e0c85b7a8055069510cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a593957ae3049d028c2c2149a6514cb2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795">policy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1kthread.html#a593957ae3049d028c2c2149a6514cb2e">m_join</a> = <a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795a49256b9819abacbb8e6e031a03abe81b">policy::wait</a></td></tr>
+<tr class="memdesc:a593957ae3049d028c2c2149a6514cb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to send stop signal before joining.  <a href="classkt_1_1kthread.html#a593957ae3049d028c2c2149a6514cb2e">More...</a><br /></td></tr>
+<tr class="separator:a593957ae3049d028c2c2149a6514cb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>std::thread wrapper that joins on destruction / move </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="acfe4d120e9c6fb436b61025309185ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe4d120e9c6fb436b61025309185ab4">&#9670;&nbsp;</a></span>invocable_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classkt_1_1kthread.html#acfe4d120e9c6fb436b61025309185ab4">kt::kthread::invocable_t</a> =  std::enable_if_t&lt;std::is_invocable_v&lt;F, Args...&gt; || std::is_invocable_v&lt;F, <a class="el" href="classkt_1_1kthread_1_1stop__t.html">stop_t</a>, Args...&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa75bb5378587688006d46395ae221795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75bb5378587688006d46395ae221795">&#9670;&nbsp;</a></span>policy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795">kt::kthread::policy</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa75bb5378587688006d46395ae221795a49256b9819abacbb8e6e031a03abe81b"></a>wait&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa75bb5378587688006d46395ae221795aef399b2d446bb37b7c32ad2cc1b6045b"></a>stop&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a99e27e973adb003b62cfdaef176bf4fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99e27e973adb003b62cfdaef176bf4fb">&#9670;&nbsp;</a></span>kthread() <span class="overload">[1/3]</span></h2>
 
@@ -152,6 +228,8 @@ template&lt;typename F , typename... Args, typename &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Invoke F(Args...) or F(stop_t, Args...) on a new thread. </p>
+
 </div>
 </div>
 <a id="aa9b9664c3442e9e95e06d27d3d06cb46"></a>
@@ -206,6 +284,33 @@ template&lt;typename F , typename... Args, typename &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a93493352f86d61b5cac820f376d450e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93493352f86d61b5cac820f376d450e0">&#9670;&nbsp;</a></span>active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool kt::kthread::active </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if an execution context is running. </p>
+
+</div>
+</div>
 <a id="a0823c0e1b280fe4ab5c58610a58d7664"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0823c0e1b280fe4ab5c58610a58d7664">&#9670;&nbsp;</a></span>join()</h2>
 
@@ -256,6 +361,33 @@ template&lt;typename F , typename... Args, typename &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6a8722580f877f9b1e4eebc130e424f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a8722580f877f9b1e4eebc130e424f">&#9670;&nbsp;</a></span>request_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool kt::kthread::request_stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal stop token (if existent) </p>
 
 </div>
 </div>
@@ -317,8 +449,8 @@ template&lt;typename Dur &gt; </div>
 
 </div>
 </div>
-<a id="a7e1292c1366e6b497b54b6164a2fc08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e1292c1366e6b497b54b6164a2fc08a">&#9670;&nbsp;</a></span>yield()</h2>
+<a id="a1f8c16c9fef2544f308cbed5ef4eed67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8c16c9fef2544f308cbed5ef4eed67">&#9670;&nbsp;</a></span>yield()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +459,7 @@ template&lt;typename Dur &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void kt::kthread::yield </td>
+          <td class="memname">static void kt::kthread::yield </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -341,6 +473,23 @@ template&lt;typename Dur &gt; </div>
 </div><div class="memdoc">
 
 <p>Yield execution of the calling thread. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a593957ae3049d028c2c2149a6514cb2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593957ae3049d028c2c2149a6514cb2e">&#9670;&nbsp;</a></span>m_join</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795">policy</a> kt::kthread::m_join = <a class="el" href="classkt_1_1kthread.html#aa75bb5378587688006d46395ae221795a49256b9819abacbb8e6e031a03abe81b">policy::wait</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to send stop signal before joining. </p>
 
 </div>
 </div>

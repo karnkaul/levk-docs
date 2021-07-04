@@ -47,6 +47,7 @@ $(function() {
 : <a class="el" href="classdecf_1_1entity__t.html#aa182a323fbecbea80fc86659e490e1a3">decf::entity_t</a>
 , <a class="el" href="classkt_1_1monotonic__map_1_1handle.html#a2072c23127eb22afe73797e8c7394249">kt::monotonic_map&lt; T, Mp &gt;::handle</a>
 , <a class="el" href="classle_1_1BitmapFont.html#afb7b71472a91d4f4dfcc3bf5b11fd83d">le::BitmapFont</a>
+, <a class="el" href="classle_1_1DescriptorUpdater.html#aba18e0e4c0aaa8c96fe064e6ad57ad61">le::DescriptorUpdater</a>
 , <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a2e7f0e655591edd39e1526ba173d1f5c">le::graphics::CommandBuffer</a>
 , <a class="el" href="classle_1_1graphics_1_1Device.html#a45b3250ab0fba9c04f8371180dcd131b">le::graphics::Device</a>
 , <a class="el" href="classle_1_1graphics_1_1Mesh.html#a7122dd968b9548e01fcc19999af5e092">le::graphics::Mesh</a>
@@ -60,7 +61,19 @@ $(function() {
 </li>
 <li>value
 : <a class="el" href="structclap_1_1basic__parser_1_1option__t.html#a5ccf065fe8b136135c10522d7c9e0fe4">clap::basic_parser&lt; Ch &gt;::option_t</a>
+, <a class="el" href="structdj_1_1array__t.html#a98a85f82290eaab45a6202ac76027482">dj::array_t</a>
+, <a class="el" href="structdj_1_1boolean__t.html#a3a1c422ea72be52673d5979739ad2d3c">dj::boolean_t</a>
+, <a class="el" href="classdj_1_1json__t.html#a5859103dbfc272ead649cfa9c163e660">dj::json_t</a>
+, <a class="el" href="structdj_1_1number__t.html#a505b585f6f33fc803ca6e7a2072837b9">dj::number_t</a>
+, <a class="el" href="structdj_1_1object__t.html#af4b03fdc0ef0d3bad96f9949d6929aaf">dj::object_t</a>
+, <a class="el" href="structdj_1_1string__t.html#a643f168af89157590b49cd43b6792caa">dj::string_t</a>
+, <a class="el" href="classkt_1_1result.html#ae0304a82114bef6c0ba60b23c959d1e5">kt::result&lt; T, E &gt;</a>
+, <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#a4c94ec3605d6b2de480facc01e98d0be">kt::result&lt; T, T &gt;</a>
+, <a class="el" href="classkt_1_1result_3_01T_00_01void_01_4.html#a1cdf423931ac3de9a301bb97edd1844a">kt::result&lt; T, void &gt;</a>
 , <a class="el" href="structkt_1_1string__trie_1_1node__t.html#af68ae5dd785d284b4d5135ba51a14719">kt::string_trie&lt; T &gt;::node_t</a>
+, <a class="el" href="classkt_1_1trilean.html#a71518e186de834c4f547ab0d5c6d25e1">kt::trilean&lt; Tr &gt;</a>
+, <a class="el" href="structle_1_1graphics_1_1Buffering.html#ae11759d055e079cb2f65fdb30ee4e670">le::graphics::Buffering</a>
+, <a class="el" href="structle_1_1gui_1_1Measure.html#a28fa2c184465ecab3f050e70841691a3">le::gui::Measure&lt; T &gt;</a>
 , <a class="el" href="structle_1_1UByte.html#abe3c1c020337ef68aaa3958c380795af">le::UByte</a>
 </li>
 <li>value_fmt
@@ -68,24 +81,30 @@ $(function() {
 </li>
 <li>value_or()
 : <a class="el" href="classkt_1_1fixed__any.html#a6a6cb16847392134d0d0f49d7369736c">kt::fixed_any&lt; N &gt;</a>
-, <a class="el" href="classkt_1_1result.html#ab342561b6a0656d54bff1abde60c5078">kt::result&lt; T, E &gt;</a>
-, <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#a5ca8500702981e7232aa7e8b84e2e595">kt::result&lt; T, T &gt;</a>
-, <a class="el" href="classkt_1_1result_3_01T_00_01void_01_4.html#a31660be208ab7fb1ed2a6da8813ecc93">kt::result&lt; T, void &gt;</a>
+, <a class="el" href="classkt_1_1result.html#adca9f3af8633d633f0c3a61ff8780a9c">kt::result&lt; T, E &gt;</a>
+, <a class="el" href="classkt_1_1result_3_01T_00_01T_01_4.html#a95c4c8b973f87d402efc07a424b8e899">kt::result&lt; T, T &gt;</a>
+, <a class="el" href="classkt_1_1result_3_01T_00_01void_01_4.html#a02bd7a038b9e22a2257b3d9fde883f05">kt::result&lt; T, void &gt;</a>
+</li>
+<li>value_t
+: <a class="el" href="classkt_1_1trilean.html#acae9561060e97e839dcc635ae56d3608">kt::trilean&lt; Tr &gt;</a>
 </li>
 <li>value_type
-: <a class="el" href="structkt_1_1fixed__vector_1_1const__iterator.html#a7eaffe83eb90f9c9a70da8f5fa36b8a2">kt::fixed_vector&lt; T, N &gt;::const_iterator</a>
-, <a class="el" href="structkt_1_1fixed__vector_1_1iterator.html#a804c6575a751daabda3a8000de6114b9">kt::fixed_vector&lt; T, N &gt;::iterator</a>
+: <a class="el" href="classkt_1_1fixed__vector_1_1iter__t.html#a34f98ebaa6cee3fd42227077eee19581">kt::fixed_vector&lt; T, N &gt;::iter_t&lt; IsConst &gt;</a>
 , <a class="el" href="classkt_1_1fixed__vector.html#a317eb3559a78346c37dd94e034ee762c">kt::fixed_vector&lt; T, N &gt;</a>
 , <a class="el" href="classkt_1_1n__tree.html#aaeb3dbcd2c4020f0da5da10b4a921627">kt::n_tree&lt; T &gt;</a>
+, <a class="el" href="classle_1_1Enumerator_1_1iter__t.html#aa1917cc11628bba2ad188df36ae2329c">le::Enumerator&lt; Cont, I &gt;::iter_t&lt; It &gt;</a>
 , <a class="el" href="classle_1_1Span.html#a3510bcbed1d455b5f4911ba866781a6c">le::Span&lt; T &gt;</a>
 , <a class="el" href="classle_1_1Span_3_01T_01const_01_4.html#a04552fabf30e4737e8fe53635e1c8566">le::Span&lt; T const &gt;</a>
 </li>
 <li>vAP
-: <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#abc117638e84d22ddefc8c1070d6a38ad">le::graphics::CommandBuffer</a>
-, <a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">le::graphics::Device</a>
+: <a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">le::graphics::Device</a>
+, <a class="el" href="classle_1_1graphics_1_1Memory.html#ac0ed075208791ff2dcaa4da80617f393">le::graphics::Memory</a>
 </li>
 <li>variant()
 : <a class="el" href="classle_1_1graphics_1_1Pipeline.html#add5a62cfd66ea285eb0f71205b61858e">le::graphics::Pipeline</a>
+</li>
+<li>VBase()
+: <a class="el" href="structle_1_1utils_1_1VBase.html#ac36d651e674dfa21cae192f53faf1de9">le::utils::VBase</a>
 </li>
 <li>vbo()
 : <a class="el" href="classle_1_1graphics_1_1Mesh.html#a0e1f5be33f67feb821f9f0acaa87b13b">le::graphics::Mesh</a>
@@ -101,14 +120,14 @@ $(function() {
 : <a class="el" href="structle_1_1LibLogger.html#a813da2f624d2d4920c0b27e7eb2f042a">le::LibLogger</a>
 </li>
 <li>verbosity
-: <a class="el" href="structle_1_1window_1_1IInstance_1_1CreateInfo.html#aa79f504ef726e4b4414a6627e910b843">le::window::IInstance::CreateInfo</a>
+: <a class="el" href="structle_1_1window_1_1InstanceBase_1_1CreateInfo.html#a911a3aff78dea3360961c48fc12d8446">le::window::InstanceBase::CreateInfo</a>
 </li>
 <li>version
 : <a class="el" href="structclap_1_1basic__interpreter_1_1spec__t_1_1main__t.html#ad5be07a1f666f4452cc6ce9bb4abb9ec">clap::basic_interpreter&lt; Ch &gt;::spec_t::main_t</a>
 , <a class="el" href="classle_1_1Engine.html#af8c4944aa312ab0421f907fc8f005b1a">le::Engine</a>
 </li>
 <li>Version()
-: <a class="el" href="structle_1_1Version.html#a8c937ef27fcbfa00c15418e5c258c0aa">le::Version</a>
+: <a class="el" href="structle_1_1Version.html#ab3815bc18803a5b0f0d150ea53ac8019">le::Version</a>
 </li>
 <li>version_id()
 : <a class="el" href="classclap_1_1basic__interpreter_1_1printer__t.html#a2753578b8dbb8d7a95fb11bf8ef92888">clap::basic_interpreter&lt; Ch &gt;::printer_t</a>
@@ -122,25 +141,38 @@ $(function() {
 </li>
 <li>view()
 : <a class="el" href="classdecf_1_1registry__t.html#a493912655d78e3c3c7f13bbb8c4e009b">decf::registry_t</a>
-, <a class="el" href="structle_1_1Camera.html#a0130dbcb8e3789bb36825cfc6972a851">le::Camera</a>
 , <a class="el" href="classle_1_1Editor.html#aaac5754efa5945cb4d7271f7674ddcf4">le::Editor</a>
+, <a class="el" href="structle_1_1graphics_1_1Camera.html#a8b24d922efbefaa0b85b8a3c3e464691">le::graphics::Camera</a>
+, <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html#aa884adb41ad5961320df96c9feec05a1">le::graphics::Image::CreateInfo</a>
+, <a class="el" href="structle_1_1graphics_1_1Image_1_1Storage.html#a198e70e5624b921b4076a64085df5053">le::graphics::Image::Storage</a>
+, <a class="el" href="classle_1_1graphics_1_1Image.html#a1745ab660813f38740060811149abf57">le::graphics::Image</a>
 , <a class="el" href="structle_1_1graphics_1_1RenderImage.html#ae49d168777da42b60111dc5ccfb29e05">le::graphics::RenderImage</a>
 </li>
+<li>View()
+: <a class="el" href="classle_1_1gui_1_1View.html#af1df2ce7670c3f8744416c6e0bda3b0e">le::gui::View</a>
+</li>
 <li>viewport()
-: <a class="el" href="classle_1_1Engine.html#a5c13f74300c89caf5aa80499903ddeaa">le::Engine</a>
-, <a class="el" href="classle_1_1graphics_1_1RenderContext.html#afb6a47f2d085281c3fb468e73a4f6b46">le::graphics::RenderContext</a>
+: <a class="el" href="classle_1_1graphics_1_1ARenderer.html#adc478127c070ea2c722336c39473f4d6">le::graphics::ARenderer</a>
+, <a class="el" href="classle_1_1graphics_1_1RenderContext.html#a51c3ca985903a131fd4358ff229ecf24">le::graphics::RenderContext</a>
+, <a class="el" href="structle_1_1input_1_1Space.html#a49d55394299880b8a37c48a2611002b8">le::input::Space</a>
 </li>
 <li>Viewport()
-: <a class="el" href="structle_1_1Viewport.html#a397bf627feb5cd38d3c9fbaa120ecc34">le::Viewport</a>
+: <a class="el" href="structle_1_1Viewport.html#a7053e688085e4169e565e240bde73087">le::Viewport</a>
+</li>
+<li>views()
+: <a class="el" href="classle_1_1gui_1_1ViewStack.html#ab97beea7431b821df6f3a7f9ef140c6c">le::gui::ViewStack</a>
+</li>
+<li>ViewStack()
+: <a class="el" href="classle_1_1gui_1_1ViewStack.html#afcd176f5e3c09b3c8869c783989da2b0">le::gui::ViewStack</a>
 </li>
 <li>virtualGPU()
 : <a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html#aaf9fc059303925aba07e3df9fc91b72d">le::graphics::PhysicalDevice</a>
 </li>
 <li>vkCreateSurface()
-: <a class="el" href="structle_1_1window_1_1ISurface.html#ad3e0b92de21175f906f8e3aad55cab2a">le::window::ISurface</a>
+: <a class="el" href="structle_1_1window_1_1Surface.html#abfc9a8197e7e28b0b7a0126bbd6df7a4">le::window::Surface</a>
 </li>
 <li>vkInstanceExtensions()
-: <a class="el" href="structle_1_1window_1_1ISurface.html#af8e2af1d3424092a3b4df3c4ba1a7143">le::window::ISurface</a>
+: <a class="el" href="structle_1_1window_1_1Surface.html#a40ee03a4dc175d24cc4efb1a21fec669">le::window::Surface</a>
 </li>
 <li>vmaUsage
 : <a class="el" href="structle_1_1graphics_1_1ResourceCreateInfo.html#a16459067da3d4680eb7c966034c817cb">le::graphics::ResourceCreateInfo</a>
@@ -152,6 +184,7 @@ $(function() {
 </li>
 <li>VRAM
 : <a class="el" href="classle_1_1BitmapFont.html#a04f5bc9f2d726679983204fbcc031a33">le::BitmapFont</a>
+, <a class="el" href="classle_1_1Engine.html#a0f92f6ab10402e8e5f1447ef64973dc0">le::Engine</a>
 </li>
 <li>vram
 : <a class="el" href="structle_1_1graphics_1_1Bootstrap.html#ac09e87c94abe20f5d2fb2f93d332c1d7">le::graphics::Bootstrap</a>
@@ -159,7 +192,12 @@ $(function() {
 <li>VRAM
 : <a class="el" href="classle_1_1graphics_1_1Buffer.html#ae8e37d6575e39d84067eb2202a39b180">le::graphics::Buffer</a>
 , <a class="el" href="classle_1_1graphics_1_1Image.html#ae8e37d6575e39d84067eb2202a39b180">le::graphics::Image</a>
-, <a class="el" href="classle_1_1graphics_1_1Resource.html#ae8e37d6575e39d84067eb2202a39b180">le::graphics::Resource</a>
+</li>
+<li>vram
+: <a class="el" href="structle_1_1graphics_1_1ImageMaker.html#ae30a8e6498ead9172a025c18a88eea6f">le::graphics::ImageMaker</a>
+</li>
+<li>VRAM
+: <a class="el" href="classle_1_1graphics_1_1Resource.html#ae8e37d6575e39d84067eb2202a39b180">le::graphics::Resource</a>
 , <a class="el" href="classle_1_1graphics_1_1Transfer.html#ae8e37d6575e39d84067eb2202a39b180">le::graphics::Transfer</a>
 , <a class="el" href="classle_1_1graphics_1_1VRAM.html#afbdca664cd95bc3a86973ebe0ce22eff">le::graphics::VRAM</a>
 , <a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">le::Model</a>

@@ -47,21 +47,21 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">scene_drawer.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;unordered_set&gt;</code><br />
+<div class="textblock"><code>#include &lt;compare&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;<a class="el" href="span_8hpp.html">core/span.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="libs_2decf_2include_2dumb__ecf_2types_8hpp.html">dumb_ecf/types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="primitive_8hpp.html">engine/scene/primitive.hpp</a>&gt;</code><br />
 <code>#include &lt;glm/mat4x4.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="command__buffer_8hpp.html">graphics/context/command_buffer.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="descriptor__set_8hpp.html">graphics/descriptor_set.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="pipeline_8hpp.html">graphics/pipeline.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="command__buffer_8hpp.html">graphics/render/command_buffer.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="descriptor__set_8hpp.html">graphics/render/descriptor_set.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pipeline_8hpp.html">graphics/render/pipeline.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -75,7 +75,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1SceneDrawer_1_1Group.html">le::SceneDrawer::Group</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1SceneDrawer_1_1Populator.html">le::SceneDrawer::Populator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1SceneDrawer_1_1Populator3D.html">le::SceneDrawer::Populator3D</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1SceneDrawer_1_1PopulatorUI.html">le::SceneDrawer::PopulatorUI</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -91,11 +93,6 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aabed230b418f9d858a43493f5da9b677"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aabed230b418f9d858a43493f5da9b677">le::PrimList</a> = std::vector&lt; Primitive &gt;</td></tr>
 <tr class="separator:aabed230b418f9d858a43493f5da9b677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a984cd804259128f871dad4d7aad20876"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a984cd804259128f871dad4d7aad20876">le::operator==</a> (DrawGroup const &amp;l, DrawGroup const &amp;r) noexcept</td></tr>
-<tr class="separator:a984cd804259128f871dad4d7aad20876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
