@@ -80,6 +80,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aced9cf4d9f318f8646ce37c9695fad80"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#aced9cf4d9f318f8646ce37c9695fad80">inRange</a> (T const &amp;value, T const &amp;min, T const &amp;<a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a>, bool bInclusive=true) noexcept</td></tr>
 <tr class="memdesc:aced9cf4d9f318f8646ce37c9695fad80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <code>value</code> is within <code>min</code> and <code>max</code>  <a href="namespacele_1_1maths.html#aced9cf4d9f318f8646ce37c9695fad80">More...</a><br /></td></tr>
 <tr class="separator:aced9cf4d9f318f8646ce37c9695fad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27353a0a5d2168aa0f6da05119dfd571"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a27353a0a5d2168aa0f6da05119dfd571">pow2</a> (<a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a> exp) noexcept</td></tr>
+<tr class="memdesc:a27353a0a5d2168aa0f6da05119dfd571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain 2 raised to exp.  <a href="namespacele_1_1maths.html#a27353a0a5d2168aa0f6da05119dfd571">More...</a><br /></td></tr>
+<tr class="separator:a27353a0a5d2168aa0f6da05119dfd571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bcd66cf050ca89474b71eef453e536"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a08bcd66cf050ca89474b71eef453e536">log2</a> (<a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> pot) noexcept</td></tr>
+<tr class="memdesc:a08bcd66cf050ca89474b71eef453e536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain log base 2 of power of two.  <a href="namespacele_1_1maths.html#a08bcd66cf050ca89474b71eef453e536">More...</a><br /></td></tr>
+<tr class="separator:a08bcd66cf050ca89474b71eef453e536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0769e1217d8375b13e2c18bb16aa6286"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0769e1217d8375b13e2c18bb16aa6286"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a0769e1217d8375b13e2c18bb16aa6286">lerp</a> (T const &amp;min, T const &amp;<a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> alpha) noexcept</td></tr>
 <tr class="memdesc:a0769e1217d8375b13e2c18bb16aa6286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolate between <code>min</code> to <code>max</code> based on <code>alpha</code>  <a href="namespacele_1_1maths.html#a0769e1217d8375b13e2c18bb16aa6286">More...</a><br /></td></tr>
@@ -88,14 +94,6 @@ Functions</h2></td></tr>
 <tr class="memitem:acdda8ff8f80aaa39f6a7685232556c8e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#acdda8ff8f80aaa39f6a7685232556c8e">randomRange</a> (T min, T <a class="el" href="namespacele_1_1maths.html#a547218b4f8abea61d21b7471e9dd0fac">max</a>) noexcept</td></tr>
 <tr class="memdesc:acdda8ff8f80aaa39f6a7685232556c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a random number between min and max.  <a href="namespacele_1_1maths.html#acdda8ff8f80aaa39f6a7685232556c8e">More...</a><br /></td></tr>
 <tr class="separator:acdda8ff8f80aaa39f6a7685232556c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebb65c5a9c0495143bbc024dfc5b1e59"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aebb65c5a9c0495143bbc024dfc5b1e59"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::uint8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#aebb65c5a9c0495143bbc024dfc5b1e59">lsbIndex</a> (T num) noexcept</td></tr>
-<tr class="memdesc:aebb65c5a9c0495143bbc024dfc5b1e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the index of the least significant set bit (0xff if none) of num.  <a href="namespacele_1_1maths.html#aebb65c5a9c0495143bbc024dfc5b1e59">More...</a><br /></td></tr>
-<tr class="separator:aebb65c5a9c0495143bbc024dfc5b1e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0837b20c4275651ec5c52ec410c7ca44"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0837b20c4275651ec5c52ec410c7ca44"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::uint8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1maths.html#a0837b20c4275651ec5c52ec410c7ca44">enumEnd</a> (T lastEnum) noexcept</td></tr>
-<tr class="memdesc:a0837b20c4275651ec5c52ec410c7ca44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the index of the least significant set bit (0xff if none) of lastEnum plus one.  <a href="namespacele_1_1maths.html#a0837b20c4275651ec5c52ec410c7ca44">More...</a><br /></td></tr>
-<tr class="separator:a0837b20c4275651ec5c52ec410c7ca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a802b49d47e173d25beec82915f6524fc"></a>
@@ -125,36 +123,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Obtain the absolute value of <code>val</code> </p>
-
-</div>
-</div>
-<a id="a0837b20c4275651ec5c52ec410c7ca44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0837b20c4275651ec5c52ec410c7ca44">&#9670;&nbsp;</a></span>enumEnd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::uint8_t le::maths::enumEnd </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>lastEnum</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Obtain the index of the least significant set bit (0xff if none) of lastEnum plus one. </p>
 
 </div>
 </div>
@@ -331,22 +299,20 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aebb65c5a9c0495143bbc024dfc5b1e59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebb65c5a9c0495143bbc024dfc5b1e59">&#9670;&nbsp;</a></span>lsbIndex()</h2>
+<a id="a08bcd66cf050ca89474b71eef453e536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bcd66cf050ca89474b71eef453e536">&#9670;&nbsp;</a></span>log2()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::uint8_t le::maths::lsbIndex </td>
+          <td class="memname">constexpr <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> le::maths::log2 </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>num</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&#160;</td>
+          <td class="paramname"><em>pot</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -357,7 +323,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Obtain the index of the least significant set bit (0xff if none) of num. </p>
+<p>Obtain log base 2 of power of two. </p>
 
 </div>
 </div>
@@ -387,6 +353,34 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Obtain the max value for <code>T</code> </p>
+
+</div>
+</div>
+<a id="a27353a0a5d2168aa0f6da05119dfd571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27353a0a5d2168aa0f6da05119dfd571">&#9670;&nbsp;</a></span>pow2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> le::maths::pow2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a>&#160;</td>
+          <td class="paramname"><em>exp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain 2 raised to exp. </p>
 
 </div>
 </div>

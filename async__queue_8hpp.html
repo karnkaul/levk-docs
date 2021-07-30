@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/dtasks/include/kt/async_queue/async_queue.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/ktl/include/ktl/async_queue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_dbb162e9efc522647ca38859aecf9442.html">dtasks</a></li><li class="navelem"><a class="el" href="dir_e1ea39b3e5d56b49e51868c301b52f42.html">include</a></li><li class="navelem"><a class="el" href="dir_9dc38c5545fee0c344ed5876df7de944.html">kt</a></li><li class="navelem"><a class="el" href="dir_a544365b05abd1e07fa59697b69121c1.html">async_queue</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_bd919531b1c58bc2a7298d45ea66ce9a.html">ktl</a></li><li class="navelem"><a class="el" href="dir_0f675e3e07b3dc0062c4f22255d425ad.html">include</a></li><li class="navelem"><a class="el" href="dir_09af6a88adc981668f2282e27b08bd04.html">ktl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -51,20 +51,25 @@ $(function() {
 <div class="title">async_queue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;condition_variable&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;condition_variable&gt;</code><br />
 <code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkt_1_1async__queue.html">kt::async_queue&lt; T, Mutex &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO std::deque wrapper with thread safe API.  <a href="classkt_1_1async__queue.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1async__queue__policy.html">ktl::async_queue_policy&lt; M, Alloc &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Policy customization.  <a href="structktl_1_1async__queue__policy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1async__queue.html">ktl::async_queue&lt; T, Policy &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO queue with thread safe "sleepy" API.  <a href="classktl_1_1async__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacekt"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekt.html">kt</a></td></tr>
+<tr class="memitem:namespacektl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacektl.html">ktl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

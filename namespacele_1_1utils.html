@@ -69,16 +69,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1RefTreeNode.html">RefTreeNode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1VBase.html">VBase</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html">FutureBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html">Future</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::future wrapper  <a href="structle_1_1utils_1_1Future.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper over std::future&lt;T&gt;  <a href="structle_1_1utils_1_1Future.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Lockable.html">Lockable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for kt::lockable.  <a href="structle_1_1utils_1_1Lockable.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future_3_01void_01_4.html">Future&lt; void &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper over std::future&lt;void&gt;  <a href="structle_1_1utils_1_1Future_3_01void_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Lockable_3_01false_00_01M_01_4.html">Lockable&lt; false, M &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation for <a class="el" href="structle_1_1utils_1_1Lockable_3_01false_00_01M_01_4_1_1Dummy.html">Dummy</a> lock.  <a href="structle_1_1utils_1_1Lockable_3_01false_00_01M_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1VBase.html">VBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -151,10 +150,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a1fd167fa297b4f395cee3b36fcd32442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a1fd167fa297b4f395cee3b36fcd32442">substitute</a> (std::string &amp;out_input, std::initializer_list&lt; std::pair&lt; char, char &gt;&gt; replacements)</td></tr>
 <tr class="memdesc:a1fd167fa297b4f395cee3b36fcd32442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substitute an input set of chars with a given replacement.  <a href="namespacele_1_1utils.html#a1fd167fa297b4f395cee3b36fcd32442">More...</a><br /></td></tr>
 <tr class="separator:a1fd167fa297b4f395cee3b36fcd32442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ea87855653a9208fc3f07c8c2637ec"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
-<tr class="memitem:a59ea87855653a9208fc3f07c8c2637ec"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classkt_1_1fixed__vector.html">kt::fixed_vector</a>&lt; std::string_view, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a59ea87855653a9208fc3f07c8c2637ec">tokenise</a> (std::string_view text, char delim)</td></tr>
-<tr class="memdesc:a59ea87855653a9208fc3f07c8c2637ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tokenise a string in place via <code>delimiter</code>  <a href="namespacele_1_1utils.html#a59ea87855653a9208fc3f07c8c2637ec">More...</a><br /></td></tr>
-<tr class="separator:a59ea87855653a9208fc3f07c8c2637ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe3ecedcab01a7672859fc31a624e62"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a1fe3ecedcab01a7672859fc31a624e62"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classktl_1_1fixed__vector.html">ktl::fixed_vector</a>&lt; std::string_view, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a1fe3ecedcab01a7672859fc31a624e62">tokenise</a> (std::string_view text, char delim)</td></tr>
+<tr class="memdesc:a1fe3ecedcab01a7672859fc31a624e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tokenise a string in place via <code>delimiter</code>  <a href="namespacele_1_1utils.html#a1fe3ecedcab01a7672859fc31a624e62">More...</a><br /></td></tr>
+<tr class="separator:a1fe3ecedcab01a7672859fc31a624e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a923dc352dcfaf6c8cf43a7e52bb1c"><td class="memTemplParams" colspan="2">template&lt;typename Cont , typename Delim &gt; </td></tr>
 <tr class="memitem:a74a923dc352dcfaf6c8cf43a7e52bb1c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a74a923dc352dcfaf6c8cf43a7e52bb1c">concatenate</a> (Cont &amp;&amp;strings, Delim const &amp;delim)</td></tr>
 <tr class="memdesc:a74a923dc352dcfaf6c8cf43a7e52bb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a container of strings via delim.  <a href="namespacele_1_1utils.html#a74a923dc352dcfaf6c8cf43a7e52bb1c">More...</a><br /></td></tr>
@@ -817,8 +816,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a59ea87855653a9208fc3f07c8c2637ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59ea87855653a9208fc3f07c8c2637ec">&#9670;&nbsp;</a></span>tokenise()</h2>
+<a id="a1fe3ecedcab01a7672859fc31a624e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe3ecedcab01a7672859fc31a624e62">&#9670;&nbsp;</a></span>tokenise()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -826,7 +825,7 @@ template&lt;typename T &gt; </div>
 template&lt;std::size_t N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classkt_1_1fixed__vector.html">kt::fixed_vector</a>&lt; std::string_view, N &gt; le::utils::tokenise </td>
+          <td class="memname"><a class="el" href="classktl_1_1fixed__vector.html">ktl::fixed_vector</a>&lt; std::string_view, N &gt; le::utils::tokenise </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>text</em>, </td>

@@ -54,25 +54,37 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;asset_store.hpp&gt;</code></p>
+<p><code>#include &lt;asset.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a07dcf60e15d36cfe25c125ae4d324bb2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> = T</td></tr>
 <tr class="separator:a07dcf60e15d36cfe25c125ae4d324bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6275473178b3e9d54fb64b3eb8f181c0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a6275473178b3e9d54fb64b3eb8f181c0">OnModified</a> = <a class="el" href="classle_1_1AssetStore.html#a5019187d37a49794622a1bb75718e188">AssetStore::OnModified</a></td></tr>
-<tr class="separator:a6275473178b3e9d54fb64b3eb8f181c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4a2f22181cc3ec2ffd2b713f39ca61"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a9a4a2f22181cc3ec2ffd2b713f39ca61">OnModified</a> = <a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt;&gt;</td></tr>
+<tr class="separator:a9a4a2f22181cc3ec2ffd2b713f39ca61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a43abdb4688260eede15e8ac1d85120f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a43abdb4688260eede15e8ac1d85120f8">Asset</a> (<a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> * &gt; t, <a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1Asset.html#a6275473178b3e9d54fb64b3eb8f181c0">OnModified</a> * &gt; onMod, std::string_view id)</td></tr>
-<tr class="separator:a43abdb4688260eede15e8ac1d85120f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a29eef773fc6b28a81a8fe872165140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a3a29eef773fc6b28a81a8fe872165140">get</a> () const</td></tr>
-<tr class="separator:a3a29eef773fc6b28a81a8fe872165140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83fbf367fb6311fda0eae3ca3db36b21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a83fbf367fb6311fda0eae3ca3db36b21">operator*</a> () const</td></tr>
-<tr class="separator:a83fbf367fb6311fda0eae3ca3db36b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adefbc870f9ed0d176fa177c19836bc72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#adefbc870f9ed0d176fa177c19836bc72">operator-&gt;</a> () const</td></tr>
-<tr class="separator:adefbc870f9ed0d176fa177c19836bc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3479d9ff3f2de839f5cad141f1ef03c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a3479d9ff3f2de839f5cad141f1ef03c8">Asset</a> ()=default</td></tr>
+<tr class="separator:a3479d9ff3f2de839f5cad141f1ef03c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457b15dc8cb7213fef2fdd3fb4e02570"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a457b15dc8cb7213fef2fdd3fb4e02570">Asset</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> * &gt; t, std::string_view id, <a class="el" href="classle_1_1Asset.html#a9a4a2f22181cc3ec2ffd2b713f39ca61">OnModified</a> *onMod={}) noexcept</td></tr>
+<tr class="separator:a457b15dc8cb7213fef2fdd3fb4e02570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5076b7ceade1afbb3d9acc2a02cc0588"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a5076b7ceade1afbb3d9acc2a02cc0588">operator Asset&lt; T const &gt;</a> () const noexcept</td></tr>
+<tr class="separator:a5076b7ceade1afbb3d9acc2a02cc0588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb545c5c1fbe2669f3dce4228fcf459d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#adb545c5c1fbe2669f3dce4228fcf459d">valid</a> () const noexcept</td></tr>
+<tr class="separator:adb545c5c1fbe2669f3dce4228fcf459d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8222b54e395fd36c3a965d9cb5e9b9e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a8222b54e395fd36c3a965d9cb5e9b9e9">operator bool</a> () const noexcept</td></tr>
+<tr class="separator:a8222b54e395fd36c3a965d9cb5e9b9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060fbb361559a1bfcd5f44d5c8e54717"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a060fbb361559a1bfcd5f44d5c8e54717">operator==</a> (<a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt; const &amp;rhs) const noexcept</td></tr>
+<tr class="separator:a060fbb361559a1bfcd5f44d5c8e54717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d25c88b3da85d6d7414206725c4e044"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#a4d25c88b3da85d6d7414206725c4e044">peek</a> () const noexcept</td></tr>
+<tr class="separator:a4d25c88b3da85d6d7414206725c4e044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afedadb94f65cf511f694452f67e3ed05"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#afedadb94f65cf511f694452f67e3ed05">get</a> () const</td></tr>
+<tr class="separator:afedadb94f65cf511f694452f67e3ed05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaeb112c1a5365edc7871dcc715aca30"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#acaeb112c1a5365edc7871dcc715aca30">operator*</a> () const</td></tr>
+<tr class="separator:acaeb112c1a5365edc7871dcc715aca30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc341068013c49c511cb88692baa0a82"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#adc341068013c49c511cb88692baa0a82">operator-&gt;</a> () const</td></tr>
+<tr class="separator:adc341068013c49c511cb88692baa0a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace608e813a9f2dc8143e98c492bb3170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Delegate.html#a2346e74ee54874e7e15510770640105a">OnModified::Tk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html#ace608e813a9f2dc8143e98c492bb3170">onModified</a> (<a class="el" href="classle_1_1Delegate.html#ac5350006a8ddf040f73b9fac79f734bd">OnModified::Callback</a> const &amp;callback)</td></tr>
 <tr class="separator:ace608e813a9f2dc8143e98c492bb3170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -82,8 +94,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8efb11ca25606c78d0fac15d8b162f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a6275473178b3e9d54fb64b3eb8f181c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6275473178b3e9d54fb64b3eb8f181c0">&#9670;&nbsp;</a></span>OnModified</h2>
+<a id="a9a4a2f22181cc3ec2ffd2b713f39ca61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4a2f22181cc3ec2ffd2b713f39ca61">&#9670;&nbsp;</a></span>OnModified</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -91,7 +103,7 @@ Public Attributes</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html#a6275473178b3e9d54fb64b3eb8f181c0">OnModified</a> =  <a class="el" href="classle_1_1AssetStore.html#a5019187d37a49794622a1bb75718e188">AssetStore::OnModified</a></td>
+          <td class="memname">using <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html#a9a4a2f22181cc3ec2ffd2b713f39ca61">OnModified</a> =  <a class="el" href="classle_1_1Delegate.html">Delegate</a>&lt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -115,31 +127,61 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a43abdb4688260eede15e8ac1d85120f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43abdb4688260eede15e8ac1d85120f8">&#9670;&nbsp;</a></span>Asset()</h2>
+<a id="a3479d9ff3f2de839f5cad141f1ef03c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3479d9ff3f2de839f5cad141f1ef03c8">&#9670;&nbsp;</a></span>Asset() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html">Asset</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> * &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a457b15dc8cb7213fef2fdd3fb4e02570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457b15dc8cb7213fef2fdd3fb4e02570">&#9670;&nbsp;</a></span>Asset() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html">Asset</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> * &gt;&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1Asset.html#a6275473178b3e9d54fb64b3eb8f181c0">OnModified</a> * &gt;&#160;</td>
-          <td class="paramname"><em>onMod</em>, </td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Asset.html#a9a4a2f22181cc3ec2ffd2b713f39ca61">OnModified</a> *&#160;</td>
+          <td class="paramname"><em>onMod</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,13 +189,18 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3a29eef773fc6b28a81a8fe872165140"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a29eef773fc6b28a81a8fe872165140">&#9670;&nbsp;</a></span>get()</h2>
+<a id="afedadb94f65cf511f694452f67e3ed05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afedadb94f65cf511f694452f67e3ed05">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +208,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> &amp; <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::get</td>
+          <td class="memname">T &amp; <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::get</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -188,34 +235,192 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a83fbf367fb6311fda0eae3ca3db36b21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83fbf367fb6311fda0eae3ca3db36b21">&#9670;&nbsp;</a></span>operator*()</h2>
+<a id="a5076b7ceade1afbb3d9acc2a02cc0588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5076b7ceade1afbb3d9acc2a02cc0588">&#9670;&nbsp;</a></span>operator Asset&lt; T const &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> &amp; <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator*</td>
+          <td class="memname"><a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator <a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T const &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adefbc870f9ed0d176fa177c19836bc72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adefbc870f9ed0d176fa177c19836bc72">&#9670;&nbsp;</a></span>operator-&gt;()</h2>
+<a id="a8222b54e395fd36c3a965d9cb5e9b9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8222b54e395fd36c3a965d9cb5e9b9e9">&#9670;&nbsp;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;::<a class="el" href="classle_1_1Asset.html#a07dcf60e15d36cfe25c125ae4d324bb2">type</a> * <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator-&gt;</td>
+          <td class="memname"><a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acaeb112c1a5365edc7871dcc715aca30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaeb112c1a5365edc7871dcc715aca30">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T&amp; <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc341068013c49c511cb88692baa0a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc341068013c49c511cb88692baa0a82">&#9670;&nbsp;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a060fbb361559a1bfcd5f44d5c8e54717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060fbb361559a1bfcd5f44d5c8e54717">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d25c88b3da85d6d7414206725c4e044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d25c88b3da85d6d7414206725c4e044">&#9670;&nbsp;</a></span>peek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::peek </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb545c5c1fbe2669f3dce4228fcf459d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb545c5c1fbe2669f3dce4228fcf459d">&#9670;&nbsp;</a></span>valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classle_1_1Asset.html">le::Asset</a>&lt; T &gt;::valid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

@@ -47,19 +47,23 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">asset_list.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="path_8hpp.html">core/io/path.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;<a class="el" href="path_8hpp.html">core/io/path.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="services_8hpp.html">core/services.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__hash_8hpp.html">core/utils/std_hash.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scheduler_8hpp.html">dumb_tasks/scheduler.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__store_8hpp.html">engine/assets/asset_store.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="enum__flags_8hpp.html">ktl/enum_flags/enum_flags.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetList.html">le::AssetList&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1TAssetList.html">le::TAssetList&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetListLoader.html">le::AssetListLoader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -69,14 +73,23 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aca031fe8f944a1d3537b76c908b8f9d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aca031fe8f944a1d3537b76c908b8f9d6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#aca031fe8f944a1d3537b76c908b8f9d6">le::AssetList</a> = TAssetList&lt; std::function&lt; T()&gt; &gt;</td></tr>
+<tr class="separator:aca031fe8f944a1d3537b76c908b8f9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acb5ce7ece335d9512dba1bc0ffff98"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1acb5ce7ece335d9512dba1bc0ffff98"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a1acb5ce7ece335d9512dba1bc0ffff98">le::AssetLoadList</a> = TAssetList&lt; AssetLoadData&lt; T &gt; &gt;</td></tr>
+<tr class="separator:a1acb5ce7ece335d9512dba1bc0ffff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8e555b6761a77b6170492c1dae75c635"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8e555b6761a77b6170492c1dae75c635"><td class="memTemplItemLeft" align="right" valign="top">AssetList&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a8e555b6761a77b6170492c1dae75c635">le::operator-</a> (AssetList&lt; T &gt; const &amp;lhs, AssetList&lt; T &gt; const &amp;rhs)</td></tr>
-<tr class="separator:a8e555b6761a77b6170492c1dae75c635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615afd93f9114841cfb29411e792eed5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a615afd93f9114841cfb29411e792eed5"><td class="memTemplItemLeft" align="right" valign="top">AssetList&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a615afd93f9114841cfb29411e792eed5">le::operator+</a> (AssetList&lt; T &gt; const &amp;lhs, AssetList&lt; T &gt; const &amp;rhs)</td></tr>
-<tr class="separator:a615afd93f9114841cfb29411e792eed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace554ce4610b16085852a026b8a2ad1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aace554ce4610b16085852a026b8a2ad1"><td class="memTemplItemLeft" align="right" valign="top">TAssetList&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#aace554ce4610b16085852a026b8a2ad1">le::operator-</a> (TAssetList&lt; T &gt; const &amp;lhs, TAssetList&lt; T &gt; const &amp;rhs)</td></tr>
+<tr class="separator:aace554ce4610b16085852a026b8a2ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64e76c3281a2c6589acb7e33a050559"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae64e76c3281a2c6589acb7e33a050559"><td class="memTemplItemLeft" align="right" valign="top">TAssetList&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#ae64e76c3281a2c6589acb7e33a050559">le::operator+</a> (TAssetList&lt; T &gt; const &amp;lhs, TAssetList&lt; T &gt; const &amp;rhs)</td></tr>
+<tr class="separator:ae64e76c3281a2c6589acb7e33a050559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

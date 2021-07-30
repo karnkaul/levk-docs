@@ -74,6 +74,7 @@ var menudata={children:[
 {text:"w",url:"namespacemembers_func.html#index_w"},
 {text:"y",url:"namespacemembers_func.html#index_y"}]},
 {text:"Variables",url:"namespacemembers_vars.html",children:[
+{text:"a",url:"namespacemembers_vars.html#index_a"},
 {text:"b",url:"namespacemembers_vars.html#index_b"},
 {text:"c",url:"namespacemembers_vars.html#index_c"},
 {text:"d",url:"namespacemembers_vars.html#index_d"},
@@ -83,6 +84,7 @@ var menudata={children:[
 {text:"l",url:"namespacemembers_vars.html#index_l"},
 {text:"n",url:"namespacemembers_vars.html#index_n"},
 {text:"p",url:"namespacemembers_vars.html#index_p"},
+{text:"q",url:"namespacemembers_vars.html#index_q"},
 {text:"r",url:"namespacemembers_vars.html#index_r"},
 {text:"s",url:"namespacemembers_vars.html#index_s"},
 {text:"t",url:"namespacemembers_vars.html#index_t"},
@@ -222,6 +224,7 @@ var menudata={children:[
 {text:"f",url:"functions_type.html#index_f"},
 {text:"g",url:"functions_type.html#index_g"},
 {text:"i",url:"functions_type.html#index_i"},
+{text:"k",url:"functions_type.html#index_k"},
 {text:"l",url:"functions_type.html#index_l"},
 {text:"m",url:"functions_type.html#index_m"},
 {text:"n",url:"functions_type.html#index_n"},
@@ -231,6 +234,7 @@ var menudata={children:[
 {text:"r",url:"functions_type.html#index_r"},
 {text:"s",url:"functions_type.html#index_s"},
 {text:"t",url:"functions_type.html#index_t"},
+{text:"u",url:"functions_type.html#index_u"},
 {text:"v",url:"functions_type.html#index_v"},
 {text:"w",url:"functions_type.html#index_w"},
 {text:"z",url:"functions_type.html#index_z"}]},
@@ -254,9 +258,9 @@ var menudata={children:[
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
 {text:"a",url:"globals.html#index_a"},
+{text:"d",url:"globals.html#index_d"},
 {text:"e",url:"globals.html#index_e"},
 {text:"i",url:"globals.html#index_i"},
-{text:"k",url:"globals.html#index_k"},
 {text:"l",url:"globals.html#index_l"},
 {text:"t",url:"globals.html#index_t"}]},
 {text:"Variables",url:"globals_vars.html"},

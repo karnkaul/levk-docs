@@ -58,8 +58,9 @@ $(function() {
 <code>#include &lt;shared_mutex&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;<a class="el" href="async__queue_8hpp.html">kt/async_queue/async_queue.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kthread_8hpp.html">kt/kthread/kthread.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="id_8hpp.html">dumb_tasks/detail/id.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="async__queue_8hpp.html">ktl/async_queue.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kthread_8hpp.html">ktl/kthread.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -67,7 +68,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type safe ID per task.  <a href="structdts_1_1task__id.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html">dts::task_queue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central task manager, uses thread pool/workers and an async task queue.  <a href="classdts_1_1task__queue.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central task manager, uses thread pool/agents and an async task queue.  <a href="classdts_1_1task__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdts_1_1task__queue_1_1status__map.html">dts::task_queue::status_map&lt; K &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -79,7 +80,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aac53ac3dcfdcf77754bafbedc9fe8a87"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#aac53ac3dcfdcf77754bafbedc9fe8a87">dts::catch_runtime_errors</a> = false</td></tr>
+<tr class="memitem:aac53ac3dcfdcf77754bafbedc9fe8a87"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#aac53ac3dcfdcf77754bafbedc9fe8a87">dts::catch_runtime_errors</a></td></tr>
 <tr class="separator:aac53ac3dcfdcf77754bafbedc9fe8a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

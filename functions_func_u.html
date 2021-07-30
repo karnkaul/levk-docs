@@ -53,8 +53,12 @@ $(function() {
 <li>unboot()
 : <a class="el" href="classle_1_1Engine.html#ae8b274735ee311c45f201a38cd699a8f">le::Engine</a>
 </li>
+<li>unitCubemap()
+: <a class="el" href="classle_1_1graphics_1_1Texture.html#a4d10f208e387afd8c461bc1a510eeba6">le::graphics::Texture</a>
+</li>
 <li>unload()
-: <a class="el" href="classle_1_1AssetStore.html#a47fabbce697fab08aaf1f287781c017a">le::AssetStore</a>
+: <a class="el" href="classle_1_1AssetManifest.html#acc46df10e6ffdf3e6b7be197439194cd">le::AssetManifest</a>
+, <a class="el" href="classle_1_1AssetStore.html#a47fabbce697fab08aaf1f287781c017a">le::AssetStore</a>
 </li>
 <li>unmap()
 : <a class="el" href="classle_1_1graphics_1_1Buffer.html#a0c07cf8317ea39893c57db077efa4427">le::graphics::Buffer</a>
@@ -63,22 +67,24 @@ $(function() {
 : <a class="el" href="structle_1_1input_1_1Space.html#a53e10d9553a62afcb8f62f91a7be4b9b">le::input::Space</a>
 </li>
 <li>untrack()
-: <a class="el" href="classle_1_1ServiceLocator.html#ab0efbe69b291ae57ec0e0372f8027090">le::ServiceLocator&lt; N &gt;</a>
+: <a class="el" href="classle_1_1Services.html#a2518416b242a8be957c8b4c2afe85cbc">le::Services</a>
 </li>
 <li>update()
-: <a class="el" href="structkt_1_1uint__flags.html#a347ad490ed980794385a6d47c9b831b9">kt::uint_flags&lt; Ty &gt;</a>
+: <a class="el" href="classktl_1_1enum__flags.html#a5425fc5d19822d31a25428a29c3ed42f">ktl::enum_flags&lt; Enum, Ty, Tr &gt;</a>
+, <a class="el" href="structktl_1_1uint__flags.html#a0bf7dba886b88718fbd5663ad478d398">ktl::uint_flags&lt; Ty &gt;</a>
 , <a class="el" href="classle_1_1AssetStore.html#ae023df83fc8c1a6926ab13cee0af44e4">le::AssetStore</a>
+, <a class="el" href="structle_1_1BitmapText.html#af8351418962795c8fca0ea4121169668">le::BitmapText</a>
 , <a class="el" href="classle_1_1DescriptorUpdater.html#a3ab18c030ea21e449a9c9c6ed034e335">le::DescriptorUpdater</a>
 , <a class="el" href="classle_1_1edi_1_1Control.html#acd7b24ae7f4befb24978701876d011df">le::edi::Control</a>
 , <a class="el" href="classle_1_1edi_1_1Inspector.html#ae4f8640fa2fd4aaf1c46162f6414e753">le::edi::Inspector</a>
 , <a class="el" href="classle_1_1edi_1_1Palette.html#a0532385d2b7a4d0494cbb332da4f17b3">le::edi::Palette</a>
 , <a class="el" href="classle_1_1edi_1_1SceneTree.html#a979347de29970ff5d8c046e2d4a6c5fb">le::edi::SceneTree</a>
-, <a class="el" href="classle_1_1Editor.html#a87cb1cad74c9af4d882987c30c1d4afd">le::Editor</a>
+, <a class="el" href="classle_1_1edi_1_1Settings.html#af1379592926d7fc0d6c98397d5106b7c">le::edi::Settings</a>
 , <a class="el" href="classle_1_1Engine.html#acefa9be8518e7ba1bfb2486eef800aa3">le::Engine</a>
 , <a class="el" href="classle_1_1graphics_1_1CommandPool.html#a7b7aefd30bf8a930a8e5ad45f2254592">le::graphics::CommandPool</a>
-, <a class="el" href="classle_1_1graphics_1_1DescriptorSet.html#a594eda561a1f0786e9b01d5385a87079">le::graphics::DescriptorSet</a>
+, <a class="el" href="classle_1_1graphics_1_1DescriptorSet.html#aacbd00d5b5b14bbbded5b1bd2301fc96">le::graphics::DescriptorSet</a>
 , <a class="el" href="classle_1_1graphics_1_1ShaderBuffer.html#afa9715debd1d6cf057117e766d58f8ab">le::graphics::ShaderBuffer</a>
-, <a class="el" href="classle_1_1graphics_1_1ShaderInput.html#a74ef7e3d0f6d9dc5bf1053356c9f773a">le::graphics::ShaderInput</a>
+, <a class="el" href="classle_1_1graphics_1_1ShaderInput.html#a8bcb21b79c2c1c7b3dd2a030b1e46c85">le::graphics::ShaderInput</a>
 , <a class="el" href="classle_1_1graphics_1_1Transfer.html#ae55e49c3c1ecb2f43be7a140f28fe614">le::graphics::Transfer</a>
 , <a class="el" href="classle_1_1graphics_1_1VRAM.html#a0d81e7553d08295cc48aa572f0f6f42f">le::graphics::VRAM</a>
 , <a class="el" href="classle_1_1gui_1_1TreeNode.html#a631473ef440b5c95657f2f7f48da36de">le::gui::TreeNode</a>
@@ -87,6 +93,7 @@ $(function() {
 , <a class="el" href="classle_1_1input_1_1Driver.html#a17f7b5b90f6f085a4fa3a712249dc24e">le::input::Driver</a>
 , <a class="el" href="classle_1_1io_1_1FileMonitor.html#a16d4a524b6e52d01a3f446db6cf2864a">le::io::FileMonitor</a>
 , <a class="el" href="classle_1_1Resources.html#a0f23b0e9a0a83920afd057245ad3d453">le::Resources</a>
+, <a class="el" href="structle_1_1utils_1_1EngineStats_1_1Counter.html#ac74c4ea4233f87155eb9fe0cf797f1b2">le::utils::EngineStats::Counter</a>
 </li>
 <li>updateBufs()
 : <a class="el" href="classle_1_1graphics_1_1DescriptorSet.html#ac5f2c448fa0d8ff9a3971f9e30233ad6">le::graphics::DescriptorSet</a>

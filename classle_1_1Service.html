@@ -45,6 +45,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classle_1_1Service-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -52,18 +53,52 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>CRTP base class for RAII service types note: creating multiple instances of a service type is UB.  
+ <a href="classle_1_1Service.html#details">More...</a></p>
+
 <p><code>#include &lt;services.hpp&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3598c875d35c234b78ceae20ee336f5a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#a3598c875d35c234b78ceae20ee336f5a">type</a> = T</td></tr>
+<tr class="separator:a3598c875d35c234b78ceae20ee336f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b4477b7cec35c2cb75b427d61869978"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#a5b4477b7cec35c2cb75b427d61869978">Service</a> () noexcept</td></tr>
-<tr class="separator:a5b4477b7cec35c2cb75b427d61869978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27c2dee82261268904da6c437cb4ee0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#ad27c2dee82261268904da6c437cb4ee0">~Service</a> () noexcept</td></tr>
-<tr class="separator:ad27c2dee82261268904da6c437cb4ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536f51304006ed87dede87a28ee33f8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#a536f51304006ed87dede87a28ee33f8f">Service</a> ()</td></tr>
+<tr class="separator:a536f51304006ed87dede87a28ee33f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb71fbcb82b45ecc347a68beb8de25ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#adb71fbcb82b45ecc347a68beb8de25ed">Service</a> (<a class="el" href="classle_1_1Service.html">Service</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:adb71fbcb82b45ecc347a68beb8de25ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c9d55c9a2a8c609a8a074467fbcbe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Service.html">Service</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#ab4c9d55c9a2a8c609a8a074467fbcbe6">operator=</a> (<a class="el" href="classle_1_1Service.html">Service</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:ab4c9d55c9a2a8c609a8a074467fbcbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4a14c333cd5c4b9774350d3dac5e31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html#aff4a14c333cd5c4b9774350d3dac5e31">~Service</a> () noexcept</td></tr>
+<tr class="separator:aff4a14c333cd5c4b9774350d3dac5e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class le::Service&lt; T &gt;</h3>
+
+<p>CRTP base class for RAII service types note: creating multiple instances of a service type is UB. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3598c875d35c234b78ceae20ee336f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3598c875d35c234b78ceae20ee336f5a">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1Service.html">le::Service</a>&lt; T &gt;::<a class="el" href="classle_1_1Service.html#a3598c875d35c234b78ceae20ee336f5a">type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5b4477b7cec35c2cb75b427d61869978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b4477b7cec35c2cb75b427d61869978">&#9670;&nbsp;</a></span>Service()</h2>
+<a id="a536f51304006ed87dede87a28ee33f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a536f51304006ed87dede87a28ee33f8f">&#9670;&nbsp;</a></span>Service() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -82,15 +117,15 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad27c2dee82261268904da6c437cb4ee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad27c2dee82261268904da6c437cb4ee0">&#9670;&nbsp;</a></span>~Service()</h2>
+<a id="adb71fbcb82b45ecc347a68beb8de25ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb71fbcb82b45ecc347a68beb8de25ed">&#9670;&nbsp;</a></span>Service() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,7 +136,35 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1Service.html">le::Service</a>&lt; T &gt;::~<a class="el" href="classle_1_1Service.html">Service</a> </td>
+          <td class="memname"><a class="el" href="classle_1_1Service.html">le::Service</a>&lt; T &gt;::<a class="el" href="classle_1_1Service.html">Service</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Service.html">Service</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff4a14c333cd5c4b9774350d3dac5e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4a14c333cd5c4b9774350d3dac5e31">&#9670;&nbsp;</a></span>~Service()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1Service.html">le::Service</a>&lt; T &gt;::~<a class="el" href="classle_1_1Service.html">Service</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -109,7 +172,36 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab4c9d55c9a2a8c609a8a074467fbcbe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c9d55c9a2a8c609a8a074467fbcbe6">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1Service.html">Service</a>&amp; <a class="el" href="classle_1_1Service.html">le::Service</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Service.html">Service</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

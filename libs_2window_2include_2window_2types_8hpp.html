@@ -58,7 +58,7 @@ $(function() {
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;<a class="el" href="span_8hpp.html">core/span.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="uint__flags_8hpp.html">kt/uint_flags/uint_flags.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uint__flags_8hpp.html">ktl/enum_flags/uint_flags.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -76,8 +76,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a52e094d5ce0b482b848b470862f0d97a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#a52e094d5ce0b482b848b470862f0d97a">le::window::Mods</a> = <a class="el" href="structkt_1_1uint__flags.html">kt::uint_flags</a>&lt;&gt;</td></tr>
-<tr class="separator:a52e094d5ce0b482b848b470862f0d97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f69fd81ccb4d5d937a1960b59b2855"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ae8f69fd81ccb4d5d937a1960b59b2855">le::window::Mods</a> = <a class="el" href="structktl_1_1uint__flags.html">ktl::uint_flags</a>&lt; u8 &gt;</td></tr>
+<tr class="separator:ae8f69fd81ccb4d5d937a1960b59b2855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -283,18 +283,18 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a4084735a3ea5a75c95c1fe8cc87b6a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc606d0b823ad1ea9800203916dd4631"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631">le::window::Mod</a> : s8 { <br />
-&#160;&#160;<a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631abe988781e4e1de1c6a36fb698afbbe1f">le::window::eNone</a> = 0
-, <a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631a9e62f71ce009d65471fccb01fdb3245d">le::window::eShift</a> = 1 &lt;&lt; 0
-, <a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631ae234b7ec5d85953adbeb894cccb72987">le::window::eControl</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631a449749529584a602aedac2269581bd74">le::window::eAlt</a> = 1 &lt;&lt; 2
+<tr class="memitem:a60b1f2ebcc9783480d1b90b4576ac6e3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3">le::window::Mod</a> : u8 { <br />
+&#160;&#160;<a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3abe988781e4e1de1c6a36fb698afbbe1f">le::window::eNone</a> = 0
+, <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3a9e62f71ce009d65471fccb01fdb3245d">le::window::eShift</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3ae234b7ec5d85953adbeb894cccb72987">le::window::eControl</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3a449749529584a602aedac2269581bd74">le::window::eAlt</a> = 1 &lt;&lt; 2
 , <br />
-&#160;&#160;<a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631ac9c88affff6f7d1bfa7776585510aa7d">le::window::eSuper</a> = 1 &lt;&lt; 3
-, <a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631a03313000bddbe627fe74259a63974c64">le::window::eCapsLock</a> = 1 &lt;&lt; 4
-, <a class="el" href="namespacele_1_1window.html#abc606d0b823ad1ea9800203916dd4631ab47d4037e1ca28b5a006254158e0436d">le::window::eNumLock</a> = 1 &lt;&lt; 5
+&#160;&#160;<a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3ac9c88affff6f7d1bfa7776585510aa7d">le::window::eSuper</a> = 1 &lt;&lt; 3
+, <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3a03313000bddbe627fe74259a63974c64">le::window::eCapsLock</a> = 1 &lt;&lt; 4
+, <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3ab47d4037e1ca28b5a006254158e0436d">le::window::eNumLock</a> = 1 &lt;&lt; 5
 <br />
  }</td></tr>
-<tr class="separator:abc606d0b823ad1ea9800203916dd4631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a60b1f2ebcc9783480d1b90b4576ac6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac068701b5cc3c3a31911b64cdd171ed7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">le::window::Axis</a> : s8 { <br />
 &#160;&#160;<a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7a64c3acc11ffdb1be30ea339290bd1508">le::window::eUnknown</a>
 , <a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7a7ea7f801892a6358b5aeb4579bc6942d">le::window::eLeftX</a> = 0

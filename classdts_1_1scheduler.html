@@ -64,7 +64,7 @@ Inheritance diagram for dts::scheduler:</div>
  <div class="center">
   <img src="classdts_1_1scheduler.png" usemap="#dts::scheduler_map" alt=""/>
   <map id="dts::scheduler_map" name="dts::scheduler_map">
-<area href="classdts_1_1task__queue.html" title="Central task manager, uses thread pool/workers and an async task queue." alt="dts::task_queue" shape="rect" coords="0,0,97,24"/>
+<area href="classdts_1_1task__queue.html" title="Central task manager, uses thread pool/agents and an async task queue." alt="dts::task_queue" shape="rect" coords="0,0,97,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -97,21 +97,21 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6ba3d2f8915748413e1b1f520bd6150c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of a task (identified by a <a class="el" href="structdts_1_1task__id.html" title="Type safe ID per task.">task_id</a>)  <a href="classdts_1_1task__queue.html#a6ba3d2f8915748413e1b1f520bd6150c">More...</a><br /></td></tr>
 <tr class="separator:a6ba3d2f8915748413e1b1f520bd6150c inherit pub_types_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328e8f4659408518803129b607657189 inherit pub_types_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> = queue_t::queue_id</td></tr>
+<tr class="memdesc:a328e8f4659408518803129b607657189 inherit pub_types_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for queue index.  <a href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">More...</a><br /></td></tr>
+<tr class="separator:a328e8f4659408518803129b607657189 inherit pub_types_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb0c87d0f26b66d6812ae2dbf3648bd inherit pub_types_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> = std::function&lt; void()&gt;</td></tr>
 <tr class="memdesc:a9fb0c87d0f26b66d6812ae2dbf3648bd inherit pub_types_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for tasks.  <a href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">More...</a><br /></td></tr>
 <tr class="separator:a9fb0c87d0f26b66d6812ae2dbf3648bd inherit pub_types_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d71dfeb70a31fddc03b05c54dd80adb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html#a9d71dfeb70a31fddc03b05c54dd80adb">scheduler</a> (std::uint8_t worker_count=4)</td></tr>
-<tr class="memdesc:a9d71dfeb70a31fddc03b05c54dd80adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classdts_1_1scheduler.html#a9d71dfeb70a31fddc03b05c54dd80adb">More...</a><br /></td></tr>
-<tr class="separator:a9d71dfeb70a31fddc03b05c54dd80adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c96cc7286f5e186d6ceb283aaf89f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1scheduler_1_1stage__id.html">stage_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html#ac6c96cc7286f5e186d6ceb283aaf89f0">stage</a> (<a class="el" href="structdts_1_1scheduler_1_1stage__t.html">stage_t</a> &amp;&amp;stage)</td></tr>
-<tr class="memdesc:ac6c96cc7286f5e186d6ceb283aaf89f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stage a batch of tasks.  <a href="classdts_1_1scheduler.html#ac6c96cc7286f5e186d6ceb283aaf89f0">More...</a><br /></td></tr>
-<tr class="separator:ac6c96cc7286f5e186d6ceb283aaf89f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29a59692272809a8317f07f74e7f8d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1scheduler_1_1stage__id.html">stage_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html#af29a59692272809a8317f07f74e7f8d4">stage</a> (<a class="el" href="structdts_1_1scheduler_1_1stage__t.html">stage_t</a> const &amp;stage)</td></tr>
-<tr class="memdesc:af29a59692272809a8317f07f74e7f8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stage a batch of tasks.  <a href="classdts_1_1scheduler.html#af29a59692272809a8317f07f74e7f8d4">More...</a><br /></td></tr>
-<tr class="separator:af29a59692272809a8317f07f74e7f8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2689cf8805b232ccabfa5fc6e7128a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html#afc2689cf8805b232ccabfa5fc6e7128a">scheduler</a> (std::uint8_t agent_count=2)</td></tr>
+<tr class="memdesc:afc2689cf8805b232ccabfa5fc6e7128a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classdts_1_1scheduler.html#afc2689cf8805b232ccabfa5fc6e7128a">More...</a><br /></td></tr>
+<tr class="separator:afc2689cf8805b232ccabfa5fc6e7128a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2bcc8a27d81b3e391b3a1467712305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1scheduler_1_1stage__id.html">stage_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html#a5a2bcc8a27d81b3e391b3a1467712305">stage</a> (<a class="el" href="structdts_1_1scheduler_1_1stage__t.html">stage_t</a> stage, <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> qid=0)</td></tr>
+<tr class="memdesc:a5a2bcc8a27d81b3e391b3a1467712305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stage a batch of tasks.  <a href="classdts_1_1scheduler.html#a5a2bcc8a27d81b3e391b3a1467712305">More...</a><br /></td></tr>
+<tr class="separator:a5a2bcc8a27d81b3e391b3a1467712305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124637a7cd63d64d4f57945b18be36fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdts_1_1task__queue.html#a6ba3d2f8915748413e1b1f520bd6150c">status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html#a124637a7cd63d64d4f57945b18be36fe">stage_status</a> (<a class="el" href="structdts_1_1scheduler_1_1stage__id.html">stage_id</a> id) const</td></tr>
 <tr class="memdesc:a124637a7cd63d64d4f57945b18be36fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain status of <a class="el" href="structdts_1_1scheduler_1_1stage__t.html" title="Batch of tasks and dependencies (as a stage_id each)">stage_t</a> identified by id.  <a href="classdts_1_1scheduler.html#a124637a7cd63d64d4f57945b18be36fe">More...</a><br /></td></tr>
 <tr class="separator:a124637a7cd63d64d4f57945b18be36fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,19 +136,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac7ee74674afc4a62e7f3069c76cf0552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for task_t identified by id to complete (or throw); blocks calling thread.  <a href="classdts_1_1scheduler.html#ac7ee74674afc4a62e7f3069c76cf0552">More...</a><br /></td></tr>
 <tr class="separator:ac7ee74674afc4a62e7f3069c76cf0552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdts_1_1task__queue"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdts_1_1task__queue')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdts_1_1task__queue.html">dts::task_queue</a></td></tr>
-<tr class="memitem:a4eaeff0fc35e55510bf07e3267b8e2ec inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a4eaeff0fc35e55510bf07e3267b8e2ec">task_queue</a> (std::uint8_t worker_count=4)</td></tr>
-<tr class="memdesc:a4eaeff0fc35e55510bf07e3267b8e2ec inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classdts_1_1task__queue.html#a4eaeff0fc35e55510bf07e3267b8e2ec">More...</a><br /></td></tr>
-<tr class="separator:a4eaeff0fc35e55510bf07e3267b8e2ec inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447f4b2f8b42be43e8687afd661e7378 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a447f4b2f8b42be43e8687afd661e7378">task_queue</a> (std::uint8_t agent_count=2)</td></tr>
+<tr class="memdesc:a447f4b2f8b42be43e8687afd661e7378 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classdts_1_1task__queue.html#a447f4b2f8b42be43e8687afd661e7378">More...</a><br /></td></tr>
+<tr class="separator:a447f4b2f8b42be43e8687afd661e7378 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ab255af2d16872d84674e990313ff9 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#af9ab255af2d16872d84674e990313ff9">~task_queue</a> ()</td></tr>
 <tr class="memdesc:af9ab255af2d16872d84674e990313ff9 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classdts_1_1task__queue.html#af9ab255af2d16872d84674e990313ff9">More...</a><br /></td></tr>
 <tr class="separator:af9ab255af2d16872d84674e990313ff9 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03cd76c7234a202e91007d970da81248 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1task__id.html">task_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a03cd76c7234a202e91007d970da81248">enqueue</a> (<a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> const &amp;task)</td></tr>
-<tr class="memdesc:a03cd76c7234a202e91007d970da81248 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a task.  <a href="classdts_1_1task__queue.html#a03cd76c7234a202e91007d970da81248">More...</a><br /></td></tr>
-<tr class="separator:a03cd76c7234a202e91007d970da81248 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace56ba0bebb9931d3288930dbd653c4d inherit pub_methods_classdts_1_1task__queue"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr class="memitem:ace56ba0bebb9931d3288930dbd653c4d inherit pub_methods_classdts_1_1task__queue"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdts_1_1task__id.html">task_id</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#ace56ba0bebb9931d3288930dbd653c4d">enqueue_all</a> (C &amp;&amp;container)</td></tr>
-<tr class="memdesc:ace56ba0bebb9931d3288930dbd653c4d inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a (sequence) container of tasks.  <a href="classdts_1_1task__queue.html#ace56ba0bebb9931d3288930dbd653c4d">More...</a><br /></td></tr>
-<tr class="separator:ace56ba0bebb9931d3288930dbd653c4d inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4de1802a83a30df85ec3af1ede5bc8 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a0f4de1802a83a30df85ec3af1ede5bc8">add_queue</a> ()</td></tr>
+<tr class="memdesc:a0f4de1802a83a30df85ec3af1ede5bc8 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new task queue and obtain its qid.  <a href="classdts_1_1task__queue.html#a0f4de1802a83a30df85ec3af1ede5bc8">More...</a><br /></td></tr>
+<tr class="separator:a0f4de1802a83a30df85ec3af1ede5bc8 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cad842673a8fcdceb088c3e26dee635 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a6cad842673a8fcdceb088c3e26dee635">add_agent</a> (std::vector&lt; <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> &gt; qids={})</td></tr>
+<tr class="memdesc:a6cad842673a8fcdceb088c3e26dee635 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new agent that polls the given qids.  <a href="classdts_1_1task__queue.html#a6cad842673a8fcdceb088c3e26dee635">More...</a><br /></td></tr>
+<tr class="separator:a6cad842673a8fcdceb088c3e26dee635 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0647690eed3e1b5ab1f96a8854025cb1 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1task__id.html">task_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a0647690eed3e1b5ab1f96a8854025cb1">enqueue</a> (<a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> const &amp;task, <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> qid=0)</td></tr>
+<tr class="memdesc:a0647690eed3e1b5ab1f96a8854025cb1 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a task.  <a href="classdts_1_1task__queue.html#a0647690eed3e1b5ab1f96a8854025cb1">More...</a><br /></td></tr>
+<tr class="separator:a0647690eed3e1b5ab1f96a8854025cb1 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc646b484e9130205df2535d13b6f15 inherit pub_methods_classdts_1_1task__queue"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
+<tr class="memitem:a1fc646b484e9130205df2535d13b6f15 inherit pub_methods_classdts_1_1task__queue"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdts_1_1task__id.html">task_id</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a1fc646b484e9130205df2535d13b6f15">enqueue_all</a> (C &amp;&amp;container, <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> qid=0)</td></tr>
+<tr class="memdesc:a1fc646b484e9130205df2535d13b6f15 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a (sequence) container of tasks.  <a href="classdts_1_1task__queue.html#a1fc646b484e9130205df2535d13b6f15">More...</a><br /></td></tr>
+<tr class="separator:a1fc646b484e9130205df2535d13b6f15 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c92fa7f41cf79bcade2b4f59fc172a5 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdts_1_1task__queue.html#a6ba3d2f8915748413e1b1f520bd6150c">status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a3c92fa7f41cf79bcade2b4f59fc172a5">task_status</a> (<a class="el" href="structdts_1_1task__id.html">task_id</a> id) const</td></tr>
 <tr class="memdesc:a3c92fa7f41cf79bcade2b4f59fc172a5 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain status of task_t identified by id.  <a href="classdts_1_1task__queue.html#a3c92fa7f41cf79bcade2b4f59fc172a5">More...</a><br /></td></tr>
 <tr class="separator:a3c92fa7f41cf79bcade2b4f59fc172a5 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +173,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4aab059e35f998fa4bfa8264136362bb inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for container of <a class="el" href="structdts_1_1task__id.html" title="Type safe ID per task.">task_id</a> to complete (or throw); blocks calling thread.  <a href="classdts_1_1task__queue.html#a4aab059e35f998fa4bfa8264136362bb">More...</a><br /></td></tr>
 <tr class="separator:a4aab059e35f998fa4bfa8264136362bb inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a059fd2cf81624db304f16989aef579a6 inherit pub_methods_classdts_1_1task__queue"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a059fd2cf81624db304f16989aef579a6">wait_idle</a> ()</td></tr>
-<tr class="memdesc:a059fd2cf81624db304f16989aef579a6 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for queue to drain and all workers to be idle Warning: do not enqueue tasks (on other threads) while blocked on this call!  <a href="classdts_1_1task__queue.html#a059fd2cf81624db304f16989aef579a6">More...</a><br /></td></tr>
+<tr class="memdesc:a059fd2cf81624db304f16989aef579a6 inherit pub_methods_classdts_1_1task__queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for queue to drain and all agents to be idle Warning: do not enqueue tasks (on other threads) while blocked on this call!  <a href="classdts_1_1task__queue.html#a059fd2cf81624db304f16989aef579a6">More...</a><br /></td></tr>
 <tr class="separator:a059fd2cf81624db304f16989aef579a6 inherit pub_methods_classdts_1_1task__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -215,8 +221,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9d71dfeb70a31fddc03b05c54dd80adb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d71dfeb70a31fddc03b05c54dd80adb">&#9670;&nbsp;</a></span>scheduler()</h2>
+<a id="afc2689cf8805b232ccabfa5fc6e7128a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2689cf8805b232ccabfa5fc6e7128a">&#9670;&nbsp;</a></span>scheduler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +234,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">dts::scheduler::scheduler </td>
           <td>(</td>
           <td class="paramtype">std::uint8_t&#160;</td>
-          <td class="paramname"><em>worker_count</em> = <code>4</code></td><td>)</td>
+          <td class="paramname"><em>agent_count</em> = <code>2</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -242,7 +248,7 @@ Public Member Functions</h2></td></tr>
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">worker_count</td><td>Number of threads and workers to create (min 1) </td></tr>
+    <tr><td class="paramname">agent_count</td><td>Number of threads and agents to create </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,8 +275,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6c96cc7286f5e186d6ceb283aaf89f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6c96cc7286f5e186d6ceb283aaf89f0">&#9670;&nbsp;</a></span>stage() <span class="overload">[1/2]</span></h2>
+<a id="a5a2bcc8a27d81b3e391b3a1467712305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2bcc8a27d81b3e391b3a1467712305">&#9670;&nbsp;</a></span>stage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,36 +284,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structdts_1_1scheduler_1_1stage__id.html">stage_id</a> dts::scheduler::stage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structdts_1_1scheduler_1_1stage__t.html">stage_t</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>stage</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="structdts_1_1scheduler_1_1stage__t.html">stage_t</a>&#160;</td>
+          <td class="paramname"><em>stage</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stage a batch of tasks. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stage</td><td>Tasks to stage </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structdts_1_1scheduler_1_1stage__id.html" title="Type safe ID per stage_t.">stage_id</a> instance identifying this batch </dd></dl>
-
-</div>
-</div>
-<a id="af29a59692272809a8317f07f74e7f8d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af29a59692272809a8317f07f74e7f8d4">&#9670;&nbsp;</a></span>stage() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdts_1_1scheduler_1_1stage__id.html">stage_id</a> dts::scheduler::stage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdts_1_1scheduler_1_1stage__t.html">stage_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>stage</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a>&#160;</td>
+          <td class="paramname"><em>qid</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

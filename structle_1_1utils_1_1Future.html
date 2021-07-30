@@ -46,111 +46,56 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structle_1_1utils_1_1Future-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">le::utils::Future&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>std::future wrapper  
+<p>Convenience wrapper over std::future&lt;T&gt;  
  <a href="structle_1_1utils_1_1Future.html#details">More...</a></p>
 
 <p><code>#include &lt;future.hpp&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for le::utils::Future&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structle_1_1utils_1_1Future.png" usemap="#le::utils::Future_3C_20T_20_3E_map" alt=""/>
+  <map id="le::utils::Future_3C_20T_20_3E_map" name="le::utils::Future_3C_20T_20_3E_map">
+<area href="structle_1_1utils_1_1FutureBase.html" alt="le::utils::FutureBase&lt; T &gt;" shape="rect" coords="0,0,152,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af322b71bfeaec70e5327e1531d38e55d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350">FutureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html#af322b71bfeaec70e5327e1531d38e55d">state</a> () const</td></tr>
-<tr class="separator:af322b71bfeaec70e5327e1531d38e55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9973d403ac46f8159d0e09e9a89b20e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html#ad9973d403ac46f8159d0e09e9a89b20e">busy</a> () const</td></tr>
-<tr class="separator:ad9973d403ac46f8159d0e09e9a89b20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c21ae2a5b2445fcb5ec445e19a9fa0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html#ae6c21ae2a5b2445fcb5ec445e19a9fa0">ready</a> (bool bAllowInvalid) const</td></tr>
-<tr class="separator:ae6c21ae2a5b2445fcb5ec445e19a9fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d19e61d80d8c06d79d18e7576dceac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html#a16d19e61d80d8c06d79d18e7576dceac">wait</a> () const</td></tr>
-<tr class="separator:a16d19e61d80d8c06d79d18e7576dceac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f2cea77ca39c76a770a08c0210013f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html#ac4f2cea77ca39c76a770a08c0210013f">get</a> (T const &amp;fallback={}) const</td></tr>
+<tr class="separator:ac4f2cea77ca39c76a770a08c0210013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structle_1_1utils_1_1FutureBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1utils_1_1FutureBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1utils_1_1FutureBase.html">le::utils::FutureBase&lt; T &gt;</a></td></tr>
+<tr class="memitem:a26aa7965cba0edba6a1a920f228840fb inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html#a26aa7965cba0edba6a1a920f228840fb">FutureBase</a> (std::future&lt; T &gt; <a class="el" href="structle_1_1utils_1_1FutureBase.html#aca9313ce529b55bae1ae277b1b09ce8b">future</a>={}) noexcept</td></tr>
+<tr class="separator:a26aa7965cba0edba6a1a920f228840fb inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff5c97a8651ee1edb05ec119d7789c8 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350">FutureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html#acff5c97a8651ee1edb05ec119d7789c8">state</a> () const</td></tr>
+<tr class="separator:acff5c97a8651ee1edb05ec119d7789c8 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a67ee0662828dbf48a239c89375b05 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html#a39a67ee0662828dbf48a239c89375b05">busy</a> () const</td></tr>
+<tr class="separator:a39a67ee0662828dbf48a239c89375b05 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a5bbc5fb6771ed01810e42fe89eee7 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html#aa7a5bbc5fb6771ed01810e42fe89eee7">ready</a> (bool allowInvalid) const</td></tr>
+<tr class="separator:aa7a5bbc5fb6771ed01810e42fe89eee7 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2536b5589b755af7b50ba8f933c50575 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html#a2536b5589b755af7b50ba8f933c50575">wait</a> () const</td></tr>
+<tr class="separator:a2536b5589b755af7b50ba8f933c50575 inherit pub_methods_structle_1_1utils_1_1FutureBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af1e9d9e114266163ed8e1712aefdf5ef"><td class="memItemLeft" align="right" valign="top">std::future&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html#af1e9d9e114266163ed8e1712aefdf5ef">future</a></td></tr>
-<tr class="separator:af1e9d9e114266163ed8e1712aefdf5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_structle_1_1utils_1_1FutureBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structle_1_1utils_1_1FutureBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structle_1_1utils_1_1FutureBase.html">le::utils::FutureBase&lt; T &gt;</a></td></tr>
+<tr class="memitem:aca9313ce529b55bae1ae277b1b09ce8b inherit pub_attribs_structle_1_1utils_1_1FutureBase"><td class="memItemLeft" align="right" valign="top">std::future&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html#aca9313ce529b55bae1ae277b1b09ce8b">future</a></td></tr>
+<tr class="separator:aca9313ce529b55bae1ae277b1b09ce8b inherit pub_attribs_structle_1_1utils_1_1FutureBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 struct le::utils::Future&lt; T &gt;</h3>
 
-<p>std::future wrapper </p>
+<p>Convenience wrapper over std::future&lt;T&gt; </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad9973d403ac46f8159d0e09e9a89b20e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9973d403ac46f8159d0e09e9a89b20e">&#9670;&nbsp;</a></span>busy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="structle_1_1utils_1_1Future.html">le::utils::Future</a>&lt; T &gt;::busy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae6c21ae2a5b2445fcb5ec445e19a9fa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6c21ae2a5b2445fcb5ec445e19a9fa0">&#9670;&nbsp;</a></span>ready()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="structle_1_1utils_1_1Future.html">le::utils::Future</a>&lt; T &gt;::ready </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bAllowInvalid</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af322b71bfeaec70e5327e1531d38e55d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af322b71bfeaec70e5327e1531d38e55d">&#9670;&nbsp;</a></span>state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350">FutureState</a> <a class="el" href="structle_1_1utils_1_1Future.html">le::utils::Future</a>&lt; T &gt;::state</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a16d19e61d80d8c06d79d18e7576dceac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16d19e61d80d8c06d79d18e7576dceac">&#9670;&nbsp;</a></span>wait()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structle_1_1utils_1_1Future.html">le::utils::Future</a>&lt; T &gt;::wait</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af1e9d9e114266163ed8e1712aefdf5ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1e9d9e114266163ed8e1712aefdf5ef">&#9670;&nbsp;</a></span>future</h2>
+<a id="ac4f2cea77ca39c76a770a08c0210013f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f2cea77ca39c76a770a08c0210013f">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,12 +106,16 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::future&lt;T&gt; <a class="el" href="structle_1_1utils_1_1Future.html">le::utils::Future</a>&lt; T &gt;::future</td>
+          <td class="memname">T <a class="el" href="structle_1_1utils_1_1Future.html">le::utils::Future</a>&lt; T &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>fallback</em> = <code>{}</code></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -54,7 +54,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Central task manager, uses thread pool/workers and an async task queue.  
+<p>Central task manager, uses thread pool/agents and an async task queue.  
  <a href="classdts_1_1task__queue.html#details">More...</a></p>
 
 <p><code>#include &lt;task_queue.hpp&gt;</code></p>
@@ -86,25 +86,34 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6ba3d2f8915748413e1b1f520bd6150c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of a task (identified by a <a class="el" href="structdts_1_1task__id.html" title="Type safe ID per task.">task_id</a>)  <a href="classdts_1_1task__queue.html#a6ba3d2f8915748413e1b1f520bd6150c">More...</a><br /></td></tr>
 <tr class="separator:a6ba3d2f8915748413e1b1f520bd6150c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328e8f4659408518803129b607657189"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> = queue_t::queue_id</td></tr>
+<tr class="memdesc:a328e8f4659408518803129b607657189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for queue index.  <a href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">More...</a><br /></td></tr>
+<tr class="separator:a328e8f4659408518803129b607657189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb0c87d0f26b66d6812ae2dbf3648bd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> = std::function&lt; void()&gt;</td></tr>
 <tr class="memdesc:a9fb0c87d0f26b66d6812ae2dbf3648bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for tasks.  <a href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">More...</a><br /></td></tr>
 <tr class="separator:a9fb0c87d0f26b66d6812ae2dbf3648bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4eaeff0fc35e55510bf07e3267b8e2ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a4eaeff0fc35e55510bf07e3267b8e2ec">task_queue</a> (std::uint8_t worker_count=4)</td></tr>
-<tr class="memdesc:a4eaeff0fc35e55510bf07e3267b8e2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classdts_1_1task__queue.html#a4eaeff0fc35e55510bf07e3267b8e2ec">More...</a><br /></td></tr>
-<tr class="separator:a4eaeff0fc35e55510bf07e3267b8e2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447f4b2f8b42be43e8687afd661e7378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a447f4b2f8b42be43e8687afd661e7378">task_queue</a> (std::uint8_t agent_count=2)</td></tr>
+<tr class="memdesc:a447f4b2f8b42be43e8687afd661e7378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classdts_1_1task__queue.html#a447f4b2f8b42be43e8687afd661e7378">More...</a><br /></td></tr>
+<tr class="separator:a447f4b2f8b42be43e8687afd661e7378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ab255af2d16872d84674e990313ff9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#af9ab255af2d16872d84674e990313ff9">~task_queue</a> ()</td></tr>
 <tr class="memdesc:af9ab255af2d16872d84674e990313ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classdts_1_1task__queue.html#af9ab255af2d16872d84674e990313ff9">More...</a><br /></td></tr>
 <tr class="separator:af9ab255af2d16872d84674e990313ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03cd76c7234a202e91007d970da81248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1task__id.html">task_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a03cd76c7234a202e91007d970da81248">enqueue</a> (<a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> const &amp;task)</td></tr>
-<tr class="memdesc:a03cd76c7234a202e91007d970da81248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a task.  <a href="classdts_1_1task__queue.html#a03cd76c7234a202e91007d970da81248">More...</a><br /></td></tr>
-<tr class="separator:a03cd76c7234a202e91007d970da81248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace56ba0bebb9931d3288930dbd653c4d"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr class="memitem:ace56ba0bebb9931d3288930dbd653c4d"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdts_1_1task__id.html">task_id</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#ace56ba0bebb9931d3288930dbd653c4d">enqueue_all</a> (C &amp;&amp;container)</td></tr>
-<tr class="memdesc:ace56ba0bebb9931d3288930dbd653c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a (sequence) container of tasks.  <a href="classdts_1_1task__queue.html#ace56ba0bebb9931d3288930dbd653c4d">More...</a><br /></td></tr>
-<tr class="separator:ace56ba0bebb9931d3288930dbd653c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4de1802a83a30df85ec3af1ede5bc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a0f4de1802a83a30df85ec3af1ede5bc8">add_queue</a> ()</td></tr>
+<tr class="memdesc:a0f4de1802a83a30df85ec3af1ede5bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new task queue and obtain its qid.  <a href="classdts_1_1task__queue.html#a0f4de1802a83a30df85ec3af1ede5bc8">More...</a><br /></td></tr>
+<tr class="separator:a0f4de1802a83a30df85ec3af1ede5bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cad842673a8fcdceb088c3e26dee635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a6cad842673a8fcdceb088c3e26dee635">add_agent</a> (std::vector&lt; <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> &gt; qids={})</td></tr>
+<tr class="memdesc:a6cad842673a8fcdceb088c3e26dee635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new agent that polls the given qids.  <a href="classdts_1_1task__queue.html#a6cad842673a8fcdceb088c3e26dee635">More...</a><br /></td></tr>
+<tr class="separator:a6cad842673a8fcdceb088c3e26dee635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0647690eed3e1b5ab1f96a8854025cb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1task__id.html">task_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a0647690eed3e1b5ab1f96a8854025cb1">enqueue</a> (<a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> const &amp;task, <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> qid=0)</td></tr>
+<tr class="memdesc:a0647690eed3e1b5ab1f96a8854025cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a task.  <a href="classdts_1_1task__queue.html#a0647690eed3e1b5ab1f96a8854025cb1">More...</a><br /></td></tr>
+<tr class="separator:a0647690eed3e1b5ab1f96a8854025cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc646b484e9130205df2535d13b6f15"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
+<tr class="memitem:a1fc646b484e9130205df2535d13b6f15"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdts_1_1task__id.html">task_id</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a1fc646b484e9130205df2535d13b6f15">enqueue_all</a> (C &amp;&amp;container, <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> qid=0)</td></tr>
+<tr class="memdesc:a1fc646b484e9130205df2535d13b6f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a (sequence) container of tasks.  <a href="classdts_1_1task__queue.html#a1fc646b484e9130205df2535d13b6f15">More...</a><br /></td></tr>
+<tr class="separator:a1fc646b484e9130205df2535d13b6f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c92fa7f41cf79bcade2b4f59fc172a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdts_1_1task__queue.html#a6ba3d2f8915748413e1b1f520bd6150c">status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a3c92fa7f41cf79bcade2b4f59fc172a5">task_status</a> (<a class="el" href="structdts_1_1task__id.html">task_id</a> id) const</td></tr>
 <tr class="memdesc:a3c92fa7f41cf79bcade2b4f59fc172a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain status of task_t identified by id.  <a href="classdts_1_1task__queue.html#a3c92fa7f41cf79bcade2b4f59fc172a5">More...</a><br /></td></tr>
 <tr class="separator:a3c92fa7f41cf79bcade2b4f59fc172a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,12 +132,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4aab059e35f998fa4bfa8264136362bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for container of <a class="el" href="structdts_1_1task__id.html" title="Type safe ID per task.">task_id</a> to complete (or throw); blocks calling thread.  <a href="classdts_1_1task__queue.html#a4aab059e35f998fa4bfa8264136362bb">More...</a><br /></td></tr>
 <tr class="separator:a4aab059e35f998fa4bfa8264136362bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a059fd2cf81624db304f16989aef579a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html#a059fd2cf81624db304f16989aef579a6">wait_idle</a> ()</td></tr>
-<tr class="memdesc:a059fd2cf81624db304f16989aef579a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for queue to drain and all workers to be idle Warning: do not enqueue tasks (on other threads) while blocked on this call!  <a href="classdts_1_1task__queue.html#a059fd2cf81624db304f16989aef579a6">More...</a><br /></td></tr>
+<tr class="memdesc:a059fd2cf81624db304f16989aef579a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for queue to drain and all agents to be idle Warning: do not enqueue tasks (on other threads) while blocked on this call!  <a href="classdts_1_1task__queue.html#a059fd2cf81624db304f16989aef579a6">More...</a><br /></td></tr>
 <tr class="separator:a059fd2cf81624db304f16989aef579a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Central task manager, uses thread pool/workers and an async task queue. </p>
+<div class="textblock"><p>Central task manager, uses thread pool/agents and an async task queue. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a328e8f4659408518803129b607657189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328e8f4659408518803129b607657189">&#9670;&nbsp;</a></span>queue_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">dts::task_queue::queue_id</a> =  queue_t::queue_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for queue index. </p>
+
+</div>
+</div>
 <a id="a9fb0c87d0f26b66d6812ae2dbf3648bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fb0c87d0f26b66d6812ae2dbf3648bd">&#9670;&nbsp;</a></span>task_t</h2>
 
@@ -178,8 +203,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4eaeff0fc35e55510bf07e3267b8e2ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4eaeff0fc35e55510bf07e3267b8e2ec">&#9670;&nbsp;</a></span>task_queue()</h2>
+<a id="a447f4b2f8b42be43e8687afd661e7378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447f4b2f8b42be43e8687afd661e7378">&#9670;&nbsp;</a></span>task_queue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +216,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">dts::task_queue::task_queue </td>
           <td>(</td>
           <td class="paramtype">std::uint8_t&#160;</td>
-          <td class="paramname"><em>worker_count</em> = <code>4</code></td><td>)</td>
+          <td class="paramname"><em>agent_count</em> = <code>2</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -205,7 +230,7 @@ Public Member Functions</h2></td></tr>
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">worker_count</td><td>Number of threads and workers to create (min 1) </td></tr>
+    <tr><td class="paramname">agent_count</td><td>Number of threads and agents to create </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,8 +265,55 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a03cd76c7234a202e91007d970da81248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03cd76c7234a202e91007d970da81248">&#9670;&nbsp;</a></span>enqueue()</h2>
+<a id="a6cad842673a8fcdceb088c3e26dee635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cad842673a8fcdceb088c3e26dee635">&#9670;&nbsp;</a></span>add_agent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dts::task_queue::add_agent </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> &gt;&#160;</td>
+          <td class="paramname"><em>qids</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new agent that polls the given qids. </p>
+
+</div>
+</div>
+<a id="a0f4de1802a83a30df85ec3af1ede5bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f4de1802a83a30df85ec3af1ede5bc8">&#9670;&nbsp;</a></span>add_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a> dts::task_queue::add_queue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a new task queue and obtain its qid. </p>
+
+</div>
+</div>
+<a id="a0647690eed3e1b5ab1f96a8854025cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0647690eed3e1b5ab1f96a8854025cb1">&#9670;&nbsp;</a></span>enqueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,8 +322,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="structdts_1_1task__id.html">task_id</a> dts::task_queue::enqueue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdts_1_1task__queue.html#a9fb0c87d0f26b66d6812ae2dbf3648bd">task_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>task</em></td><td>)</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a>&#160;</td>
+          <td class="paramname"><em>qid</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -267,8 +349,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace56ba0bebb9931d3288930dbd653c4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace56ba0bebb9931d3288930dbd653c4d">&#9670;&nbsp;</a></span>enqueue_all()</h2>
+<a id="a1fc646b484e9130205df2535d13b6f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc646b484e9130205df2535d13b6f15">&#9670;&nbsp;</a></span>enqueue_all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,8 +361,18 @@ template&lt;typename C &gt; </div>
           <td class="memname">std::vector&lt; <a class="el" href="structdts_1_1task__id.html">task_id</a> &gt; dts::task_queue::enqueue_all </td>
           <td>(</td>
           <td class="paramtype">C &amp;&amp;&#160;</td>
-          <td class="paramname"><em>container</em></td><td>)</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classdts_1_1task__queue.html#a328e8f4659408518803129b607657189">queue_id</a>&#160;</td>
+          <td class="paramname"><em>qid</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -386,7 +478,7 @@ template&lt;typename C &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Wait for queue to drain and all workers to be idle Warning: do not enqueue tasks (on other threads) while blocked on this call! </p>
+<p>Wait for queue to drain and all agents to be idle Warning: do not enqueue tasks (on other threads) while blocked on this call! </p>
 
 </div>
 </div>

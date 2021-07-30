@@ -53,6 +53,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="span_8hpp.html">core/span.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
 <code>#include &lt;glm/vec2.hpp&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -69,10 +70,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af424404c3fe00807fe78c42ccc26b297"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#af424404c3fe00807fe78c42ccc26b297">le::graphics::Bitmap</a> = TBitmap&lt; bytearray &gt;</td></tr>
-<tr class="separator:af424404c3fe00807fe78c42ccc26b297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87002760772c4465f0e53dfae83bb432"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a87002760772c4465f0e53dfae83bb432">le::graphics::BMPview</a> = Span&lt; Bitmap::type::value_type const  &gt;</td></tr>
-<tr class="separator:a87002760772c4465f0e53dfae83bb432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539c57ca2ed3771e98b83b05ed438f1a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">le::graphics::Extent2D</a> = glm::uvec2</td></tr>
+<tr class="separator:a539c57ca2ed3771e98b83b05ed438f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c5ec17b16b3caa8b72263a19aac06a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#ae3c5ec17b16b3caa8b72263a19aac06a">le::graphics::BmpBytes</a> = std::vector&lt; u8 &gt;</td></tr>
+<tr class="separator:ae3c5ec17b16b3caa8b72263a19aac06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d36025f4a54c120a7bef66d32ae56ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a5d36025f4a54c120a7bef66d32ae56ef">le::graphics::CubeBytes</a> = std::array&lt; BmpBytes, 6 &gt;</td></tr>
+<tr class="separator:a5d36025f4a54c120a7bef66d32ae56ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a41f32e5cb2c0e1ee86abfc4caee32e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a5a41f32e5cb2c0e1ee86abfc4caee32e">le::graphics::Bitmap</a> = TBitmap&lt; BmpBytes &gt;</td></tr>
+<tr class="separator:a5a41f32e5cb2c0e1ee86abfc4caee32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1537d7e0e6fada74213a367baef3c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a6d1537d7e0e6fada74213a367baef3c3">le::graphics::Cubemap</a> = TBitmap&lt; CubeBytes &gt;</td></tr>
+<tr class="separator:a6d1537d7e0e6fada74213a367baef3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902553e98ec747fcfeff374e5988f4cb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a902553e98ec747fcfeff374e5988f4cb">le::graphics::ImgView</a> = Span&lt; u8 const  &gt;</td></tr>
+<tr class="separator:a902553e98ec747fcfeff374e5988f4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

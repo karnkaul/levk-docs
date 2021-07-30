@@ -41,18 +41,22 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">dts Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacedts_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts_1_1detail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdts_1_1error__handler__t.html">error_handler_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base type for handling errors (only when DTASKS_CATCH_RUNTIME_ERRORS is defined)  <a href="structdts_1_1error__handler__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1scheduler.html">scheduler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task scheduler: enqueues batches of tasks with dependencies.  <a href="classdts_1_1scheduler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -60,20 +64,40 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type safe ID per task.  <a href="structdts_1_1task__id.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdts_1_1task__queue.html">task_queue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central task manager, uses thread pool/workers and an async task queue.  <a href="classdts_1_1task__queue.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central task manager, uses thread pool/agents and an async task queue.  <a href="classdts_1_1task__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a793f6b73366cd373d3144f57266b5866"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#a793f6b73366cd373d3144f57266b5866">on_err_t</a> = void(*)(std::runtime_error const  &amp;err, std::uint64_t <a class="el" href="structdts_1_1task__id.html">task_id</a>)</td></tr>
+<tr class="memdesc:a793f6b73366cd373d3144f57266b5866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type for handling errors (unused if DTASKS_CATCH_RUNTIME_ERRORS is not defined)  <a href="namespacedts.html#a793f6b73366cd373d3144f57266b5866">More...</a><br /></td></tr>
+<tr class="separator:a793f6b73366cd373d3144f57266b5866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0b831a9826877ad60da597157e0bb5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1error__handler__t.html">error_handler_t</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#a0b831a9826877ad60da597157e0bb5e8">g_default_error_handler</a></td></tr>
-<tr class="memdesc:a0b831a9826877ad60da597157e0bb5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base handler instance.  <a href="namespacedts.html#a0b831a9826877ad60da597157e0bb5e8">More...</a><br /></td></tr>
-<tr class="separator:a0b831a9826877ad60da597157e0bb5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d5b0f79d348a0f504a94e7ec1d1b134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdts_1_1error__handler__t.html">error_handler_t</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#a9d5b0f79d348a0f504a94e7ec1d1b134">g_error_handler</a> = &amp;<a class="el" href="namespacedts.html#a0b831a9826877ad60da597157e0bb5e8">g_default_error_handler</a></td></tr>
-<tr class="memdesc:a9d5b0f79d348a0f504a94e7ec1d1b134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error dispatch: set to custom derived instance / nullptr to customize.  <a href="namespacedts.html#a9d5b0f79d348a0f504a94e7ec1d1b134">More...</a><br /></td></tr>
-<tr class="separator:a9d5b0f79d348a0f504a94e7ec1d1b134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac53ac3dcfdcf77754bafbedc9fe8a87"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#aac53ac3dcfdcf77754bafbedc9fe8a87">catch_runtime_errors</a> = false</td></tr>
+<tr class="memitem:a2b75e1a4422b93ac7ee6ea65e0744d54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedts.html#a793f6b73366cd373d3144f57266b5866">on_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#a2b75e1a4422b93ac7ee6ea65e0744d54">g_error_handler</a> = nullptr</td></tr>
+<tr class="memdesc:a2b75e1a4422b93ac7ee6ea65e0744d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unused, define DTASKS_CATCH_RUNTIME_ERRORS to enable.  <a href="namespacedts.html#a2b75e1a4422b93ac7ee6ea65e0744d54">More...</a><br /></td></tr>
+<tr class="separator:a2b75e1a4422b93ac7ee6ea65e0744d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac53ac3dcfdcf77754bafbedc9fe8a87"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedts.html#aac53ac3dcfdcf77754bafbedc9fe8a87">catch_runtime_errors</a></td></tr>
 <tr class="separator:aac53ac3dcfdcf77754bafbedc9fe8a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a793f6b73366cd373d3144f57266b5866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793f6b73366cd373d3144f57266b5866">&#9670;&nbsp;</a></span>on_err_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedts.html#a793f6b73366cd373d3144f57266b5866">dts::on_err_t</a> = typedef void (*)(std::runtime_error const&amp; err, std::uint64_t <a class="el" href="structdts_1_1task__id.html">task_id</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback type for handling errors (unused if DTASKS_CATCH_RUNTIME_ERRORS is not defined) </p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aac53ac3dcfdcf77754bafbedc9fe8a87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac53ac3dcfdcf77754bafbedc9fe8a87">&#9670;&nbsp;</a></span>catch_runtime_errors</h2>
@@ -85,7 +109,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool dts::catch_runtime_errors = false</td>
+          <td class="memname">constexpr bool dts::catch_runtime_errors</td>
         </tr>
       </table>
   </td>
@@ -94,11 +118,16 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">false</span></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a0b831a9826877ad60da597157e0bb5e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b831a9826877ad60da597157e0bb5e8">&#9670;&nbsp;</a></span>g_default_error_handler</h2>
+<a id="a2b75e1a4422b93ac7ee6ea65e0744d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b75e1a4422b93ac7ee6ea65e0744d54">&#9670;&nbsp;</a></span>g_error_handler</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +136,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdts_1_1error__handler__t.html">error_handler_t</a> const dts::g_default_error_handler</td>
+          <td class="memname"><a class="el" href="namespacedts.html#a793f6b73366cd373d3144f57266b5866">on_err_t</a> dts::g_error_handler = nullptr</td>
         </tr>
       </table>
   </td>
@@ -117,31 +146,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Base handler instance. </p>
-
-</div>
-</div>
-<a id="a9d5b0f79d348a0f504a94e7ec1d1b134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d5b0f79d348a0f504a94e7ec1d1b134">&#9670;&nbsp;</a></span>g_error_handler</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdts_1_1error__handler__t.html">error_handler_t</a> const* dts::g_error_handler = &amp;<a class="el" href="namespacedts.html#a0b831a9826877ad60da597157e0bb5e8">g_default_error_handler</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Error dispatch: set to custom derived instance / nullptr to customize. </p>
+<p>Unused, define DTASKS_CATCH_RUNTIME_ERRORS to enable. </p>
 
 </div>
 </div>

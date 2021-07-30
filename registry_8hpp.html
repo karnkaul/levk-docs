@@ -53,19 +53,21 @@ $(function() {
 <div class="title">registry.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;typeindex&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
 <code>#include &lt;<a class="el" href="storage_8hpp.html">dumb_ecf/detail/storage.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="enum__flags_8hpp.html">kt/enum_flags/enum_flags.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="enum__flags_8hpp.html">ktl/enum_flags/enum_flags.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdecf_1_1registry__t.html">decf::registry_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdecf_1_1registry.html">decf::registry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdecf_1_1registry__t_1_1info__t.html">decf::registry_t::info_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdecf_1_1entity__t.html" title="Entity is a glorified, type-safe combination of its ID and the owning registry&#39;s ID.">entity_t</a> metadata  <a href="structdecf_1_1registry__t_1_1info__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdecf_1_1registry_1_1info__t.html">decf::registry::info_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">entity metadata  <a href="structdecf_1_1registry_1_1info__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -75,15 +77,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a874266be32c11d920cc236ed27f48b32"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedecf.html#a874266be32c11d920cc236ed27f48b32">decf::flags_t</a> = <a class="el" href="structkt_1_1enum__flags.html">kt::enum_flags</a>&lt; flag_t, 2 &gt;</td></tr>
-<tr class="separator:a874266be32c11d920cc236ed27f48b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96be4b5f47c013b8c9ddc13ff50298cd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedecf.html#a96be4b5f47c013b8c9ddc13ff50298cd">decf::flags_t</a> = <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; flag_t, std::uint8_t &gt;</td></tr>
+<tr class="separator:a96be4b5f47c013b8c9ddc13ff50298cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a9582d19a49ce91f15f0d1ea3405f74f5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedecf.html#a9582d19a49ce91f15f0d1ea3405f74f5">decf::flag_t</a> { <a class="el" href="namespacedecf.html#a9582d19a49ce91f15f0d1ea3405f74f5a075ae3d2fc31640504f814f60e5ef713">decf::disabled</a>
 , <a class="el" href="namespacedecf.html#a9582d19a49ce91f15f0d1ea3405f74f5aad42f6697b035b7580e4fef93be20b4d">decf::debug</a>
  }</td></tr>
-<tr class="memdesc:a9582d19a49ce91f15f0d1ea3405f74f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired flags can be combined with a mask as per-entity_t filters for <code>view()</code>  <a href="namespacedecf.html#a9582d19a49ce91f15f0d1ea3405f74f5">More...</a><br /></td></tr>
+<tr class="memdesc:a9582d19a49ce91f15f0d1ea3405f74f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired flags can be combined with a mask as per-entity filters for <code>view()</code>  <a href="namespacedecf.html#a9582d19a49ce91f15f0d1ea3405f74f5">More...</a><br /></td></tr>
 <tr class="separator:a9582d19a49ce91f15f0d1ea3405f74f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -59,15 +59,14 @@ $(function() {
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2include_2core_2log_8hpp.html">core/log.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="algo_8hpp.html">core/utils/algo.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset_8hpp.html">engine/assets/asset.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__loader_8hpp.html">engine/assets/asset_loader.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logger_8hpp.html">engine/utils/logger.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="shared__tmutex_8hpp.html">kt/tmutex/shared_tmutex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="shared__tmutex_8hpp.html">ktl/shared_tmutex.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html">le::AssetStore</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Asset.html">le::Asset&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -81,15 +80,12 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a00e2edf05eb2df3ff988008dc4f91cae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a00e2edf05eb2df3ff988008dc4f91cae">le::detail::AssetMapPtr</a> = std::unique_ptr&lt; AssetMap &gt;</td></tr>
 <tr class="separator:a00e2edf05eb2df3ff988008dc4f91cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91980fd2ff46e9f9380a514adf050e8d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a91980fd2ff46e9f9380a514adf050e8d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a91980fd2ff46e9f9380a514adf050e8d">le::OptAsset</a> = std::optional&lt; Asset&lt; T &gt; &gt;</td></tr>
-<tr class="separator:a91980fd2ff46e9f9380a514adf050e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a00b11d0da95171f1edab53e0d96ef8e7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a00b11d0da95171f1edab53e0d96ef8e7"><td class="memTemplItemLeft" align="right" valign="top">constexpr Asset&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a00b11d0da95171f1edab53e0d96ef8e7">le::detail::makeAsset</a> (U &amp;&amp;wrap, AssetStore::OnModified &amp;onModified) noexcept</td></tr>
-<tr class="separator:a00b11d0da95171f1edab53e0d96ef8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a63a455ef1bff3eb3e6c6c6c005e3db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5a63a455ef1bff3eb3e6c6c6c005e3db"><td class="memTemplItemLeft" align="right" valign="top">constexpr Asset&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a5a63a455ef1bff3eb3e6c6c6c005e3db">le::detail::wrap</a> (TAsset&lt; T &gt; &amp;u, AssetStore::OnModified &amp;onModified) noexcept</td></tr>
+<tr class="separator:a5a63a455ef1bff3eb3e6c6c6c005e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

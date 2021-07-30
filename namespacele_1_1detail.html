@@ -55,11 +55,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>specialized_asset_loader</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>TAsset</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>TAssetMap</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>TAssets</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>TAsset</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>AssetMap</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -73,9 +75,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a00b11d0da95171f1edab53e0d96ef8e7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a00b11d0da95171f1edab53e0d96ef8e7"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a00b11d0da95171f1edab53e0d96ef8e7">makeAsset</a> (U &amp;&amp;wrap, <a class="el" href="classle_1_1AssetStore.html#a5019187d37a49794622a1bb75718e188">AssetStore::OnModified</a> &amp;onModified) noexcept</td></tr>
-<tr class="separator:a00b11d0da95171f1edab53e0d96ef8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a63a455ef1bff3eb3e6c6c6c005e3db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5a63a455ef1bff3eb3e6c6c6c005e3db"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#a5a63a455ef1bff3eb3e6c6c6c005e3db">wrap</a> (TAsset&lt; T &gt; &amp;u, <a class="el" href="classle_1_1AssetStore.html#a5019187d37a49794622a1bb75718e188">AssetStore::OnModified</a> &amp;onModified) noexcept</td></tr>
+<tr class="separator:a5a63a455ef1bff3eb3e6c6c6c005e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc674df139d93991edeb5c73ef3b4a61"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:afc674df139d93991edeb5c73ef3b4a61"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1detail.html#afc674df139d93991edeb5c73ef3b4a61">logImpl</a> (<a class="el" href="namespacedl.html#a64bf6957dc7a07332cf5cff75ea9c766">dl::level</a> level, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:afc674df139d93991edeb5c73ef3b4a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,22 +134,22 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a00b11d0da95171f1edab53e0d96ef8e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00b11d0da95171f1edab53e0d96ef8e7">&#9670;&nbsp;</a></span>makeAsset()</h2>
+<a id="a5a63a455ef1bff3eb3e6c6c6c005e3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a63a455ef1bff3eb3e6c6c6c005e3db">&#9670;&nbsp;</a></span>wrap()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classle_1_1Asset.html">Asset</a>&lt;T&gt; le::detail::makeAsset </td>
+          <td class="memname">constexpr <a class="el" href="classle_1_1Asset.html">Asset</a>&lt;T&gt; le::detail::wrap </td>
           <td>(</td>
-          <td class="paramtype">U &amp;&amp;&#160;</td>
-          <td class="paramname"><em>wrap</em>, </td>
+          <td class="paramtype">TAsset&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

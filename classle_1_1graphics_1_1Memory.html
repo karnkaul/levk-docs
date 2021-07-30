@@ -82,7 +82,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4819dfeddfabe4514c5b11c3f916058c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a4819dfeddfabe4514c5b11c3f916058c">Memory</a> (<a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device)</td></tr>
+<tr class="memitem:a4819dfeddfabe4514c5b11c3f916058c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a4819dfeddfabe4514c5b11c3f916058c">Memory</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device)</td></tr>
 <tr class="separator:a4819dfeddfabe4514c5b11c3f916058c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0edf6486d647bc8c7a1562f9f87ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a0b0edf6486d647bc8c7a1562f9f87ebf">~Memory</a> ()</td></tr>
 <tr class="separator:a0b0edf6486d647bc8c7a1562f9f87ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,8 +95,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa1741b0655c1841c2cea8f551948f843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa511526188776bf37c834b281c2e11f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aa511526188776bf37c834b281c2e11f0">copy</a> (vk::CommandBuffer cb, vk::Buffer src, vk::Image dst, <a class="el" href="classle_1_1graphics_1_1Memory.html#ac0ed075208791ff2dcaa4da80617f393">vAP</a>&lt; vk::BufferImageCopy &gt; regions, <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">ImgMeta</a> const &amp;meta)</td></tr>
 <tr class="separator:aa511526188776bf37c834b281c2e11f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99ee57f8f4176ac71406dae5dc0689b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aa99ee57f8f4176ac71406dae5dc0689b">blit</a> (vk::CommandBuffer cb, vk::Image src, vk::Image dst, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Extent3D &gt; extents, <a class="el" href="namespacele_1_1graphics.html#ae83806501f039eabf3abd1248c441fda">LayoutPair</a> layouts={vIL::eTransferSrcOptimal, vIL::eTransferDstOptimal}, vk::Filter filter=vk::Filter::eLinear, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::ImageAspectFlags &gt; aspects={vk::ImageAspectFlagBits::eColor, vk::ImageAspectFlagBits::eColor})</td></tr>
-<tr class="separator:aa99ee57f8f4176ac71406dae5dc0689b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e372a9df5307ffdcd5bc74ee2fc02a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ad3e372a9df5307ffdcd5bc74ee2fc02a">blit</a> (vk::CommandBuffer cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Image &gt; images, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Extent3D &gt; extents, <a class="el" href="namespacele_1_1graphics.html#ae83806501f039eabf3abd1248c441fda">LayoutPair</a> layouts={vIL::eTransferSrcOptimal, vIL::eTransferDstOptimal}, vk::Filter filter=vk::Filter::eLinear, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::ImageAspectFlags &gt; aspects={vk::ImageAspectFlagBits::eColor, vk::ImageAspectFlagBits::eColor})</td></tr>
+<tr class="separator:ad3e372a9df5307ffdcd5bc74ee2fc02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac9a92c87ae94320adabae08c3a25d43"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aac9a92c87ae94320adabae08c3a25d43">imageBarrier</a> (vk::CommandBuffer cb, vk::Image image, <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">ImgMeta</a> const &amp;meta)</td></tr>
 <tr class="separator:aac9a92c87ae94320adabae08c3a25d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015c295b98c32082b65be9e77f242124"><td class="memItemLeft" align="right" valign="top">static vk::BufferImageCopy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a015c295b98c32082b65be9e77f242124">bufferImageCopy</a> (vk::Extent3D extent, vk::ImageAspectFlags aspects=vk::ImageAspectFlagBits::eColor, vk::DeviceSize offset=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerIdx=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerCount=1)</td></tr>
@@ -106,7 +106,7 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9e5c2ed22de93ae53fdfdfc644b79b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedl.html#a64bf6957dc7a07332cf5cff75ea9c766">dl::level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a9e5c2ed22de93ae53fdfdfc644b79b3f">m_logLevel</a> = <a class="el" href="namespacedl.html#a64bf6957dc7a07332cf5cff75ea9c766aad42f6697b035b7580e4fef93be20b4d">dl::level::debug</a></td></tr>
 <tr class="separator:a9e5c2ed22de93ae53fdfdfc644b79b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9d4cd75b0d8e2cc8bca1571064042a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ad9d4cd75b0d8e2cc8bca1571064042a2">m_device</a></td></tr>
+<tr class="memitem:ad9d4cd75b0d8e2cc8bca1571064042a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ad9d4cd75b0d8e2cc8bca1571064042a2">m_device</a></td></tr>
 <tr class="separator:ad9d4cd75b0d8e2cc8bca1571064042a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -150,7 +150,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">le::graphics::Memory::Memory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>
@@ -177,8 +177,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa99ee57f8f4176ac71406dae5dc0689b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa99ee57f8f4176ac71406dae5dc0689b">&#9670;&nbsp;</a></span>blit()</h2>
+<a id="ad3e372a9df5307ffdcd5bc74ee2fc02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e372a9df5307ffdcd5bc74ee2fc02a">&#9670;&nbsp;</a></span>blit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,14 +195,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vk::Image&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::Image&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Image &gt;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -564,7 +558,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele.html#a28a8c18c95ec8f883e5468434402edf5">not_null</a>&lt;<a class="el" href="classle_1_1graphics_1_1Device.html">Device</a>*&gt; le::graphics::Memory::m_device</td>
+          <td class="memname"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt;<a class="el" href="classle_1_1graphics_1_1Device.html">Device</a>*&gt; le::graphics::Memory::m_device</td>
         </tr>
       </table>
 </div><div class="memdoc">
