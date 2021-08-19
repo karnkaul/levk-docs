@@ -61,6 +61,8 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Model_1_1Error.html">Error</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Model_1_1MatData.html">MatData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Model_1_1MeshData.html">MeshData</a></td></tr>
@@ -70,6 +72,21 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:aef2d5ac6bf03064d6e0d53aa903229e5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5">Failcode</a> { <br />
+&#160;&#160;<a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5a64c3acc11ffdb1be30ea339290bd1508">eUnknown</a>
+, <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5a2bc13780a99852ab81003a621678b013">eJsonNotFound</a>
+, <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5ae3a3178cb1b1020fa89b105382011060">eJsonMissingData</a>
+, <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5a98178bd0934553a68147bb0d8139e850">eJsonReadFailure</a>
+, <br />
+&#160;&#160;<a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5a7bdf5630e038780d6cfec8e0d54394b7">eObjMtlReadFailure</a>
+, <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5aa228b1bfc1f0cd5dfff25c9edfa7f51d">eTextureNotFound</a>
+, <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5a68dc7e90d842383df08b39014ebe93bb">eObjNotFound</a>
+, <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5a2370c46ee00a8eb0bacaa13a77ec0525">eMtlNotFound</a>
+, <br />
+&#160;&#160;<a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5ad649297049358a16f192737f013e60bb">eTextureCreateFailure</a>
+<br />
+ }</td></tr>
+<tr class="separator:aef2d5ac6bf03064d6e0d53aa903229e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0490463685cd75115a90495f314c0fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> = <a class="el" href="classle_1_1graphics_1_1VRAM.html">graphics::VRAM</a></td></tr>
 <tr class="separator:ac0490463685cd75115a90495f314c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7ff8d6d28db7aa3f0717ca786dc019"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#aec7ff8d6d28db7aa3f0717ca786dc019">Sampler</a> = <a class="el" href="classle_1_1graphics_1_1Sampler.html">graphics::Sampler</a></td></tr>
@@ -78,22 +95,22 @@ Public Types</h2></td></tr>
 <tr class="separator:adf0734dad716af51257c1126b1071c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6139c7cea652cb71d770dce99b9fea7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#aa6139c7cea652cb71d770dce99b9fea7">Mesh</a> = <a class="el" href="classle_1_1graphics_1_1Mesh.html">graphics::Mesh</a></td></tr>
 <tr class="separator:aa6139c7cea652cb71d770dce99b9fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c062b07cd540ec7c8aeac4282725223"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2c062b07cd540ec7c8aeac4282725223"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a2c062b07cd540ec7c8aeac4282725223">Result</a> = <a class="el" href="classktl_1_1result.html">ktl::result</a>&lt; T, std::string &gt;</td></tr>
-<tr class="separator:a2c062b07cd540ec7c8aeac4282725223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7fef375d74148bbf2662abd95f9a6c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aba7fef375d74148bbf2662abd95f9a6c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#aba7fef375d74148bbf2662abd95f9a6c">Result</a> = <a class="el" href="classktl_1_1expected.html">ktl::expected</a>&lt; T, <a class="el" href="structle_1_1Model_1_1Error.html">Error</a> &gt;</td></tr>
+<tr class="separator:aba7fef375d74148bbf2662abd95f9a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aadbc96e4e5c833f8c9398e7d720a2753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Model.html#a2c062b07cd540ec7c8aeac4282725223">Result</a>&lt; <a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Primitive.html">Primitive</a> const  &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#aadbc96e4e5c833f8c9398e7d720a2753">construct</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> * &gt; vram, <a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a> const &amp;info, <a class="el" href="classle_1_1Model.html#aec7ff8d6d28db7aa3f0717ca786dc019">Sampler</a> const &amp;sampler, std::optional&lt; vk::Format &gt; forceFormat)</td></tr>
-<tr class="separator:aadbc96e4e5c833f8c9398e7d720a2753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc5a68d4a1ea69b37fdddb9a3dbc072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Primitive.html">Primitive</a> const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a6bc5a68d4a1ea69b37fdddb9a3dbc072">primitives</a> () const noexcept</td></tr>
-<tr class="separator:a6bc5a68d4a1ea69b37fdddb9a3dbc072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b5af88ee5cf26d9bba23855fbfbdda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Primitive.html">Primitive</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#af8b5af88ee5cf26d9bba23855fbfbdda">primitivesRW</a> () noexcept</td></tr>
-<tr class="separator:af8b5af88ee5cf26d9bba23855fbfbdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99aa6d571b1e8b3e0f1642823af7f45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Model.html#aba7fef375d74148bbf2662abd95f9a6c">Result</a>&lt; <a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Prop.html">Prop</a> const  &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#ae99aa6d571b1e8b3e0f1642823af7f45">construct</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> * &gt; vram, <a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a> const &amp;info, <a class="el" href="classle_1_1Model.html#aec7ff8d6d28db7aa3f0717ca786dc019">Sampler</a> const &amp;sampler, std::optional&lt; vk::Format &gt; forceFormat)</td></tr>
+<tr class="separator:ae99aa6d571b1e8b3e0f1642823af7f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ef315c423c7fa892a557de1373ca57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Prop.html">Prop</a> const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#ac4ef315c423c7fa892a557de1373ca57">props</a> () const noexcept</td></tr>
+<tr class="separator:ac4ef315c423c7fa892a557de1373ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8621e10693f58ebd11ff9991ab80c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Prop.html">Prop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a1d8621e10693f58ebd11ff9991ab80c6">propsRW</a> () noexcept</td></tr>
+<tr class="separator:a1d8621e10693f58ebd11ff9991ab80c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a79593ade5f2a6b2f1e831ee18a7f2a43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1Model.html#a2c062b07cd540ec7c8aeac4282725223">Result</a>&lt; <a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a79593ade5f2a6b2f1e831ee18a7f2a43">load</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> modelID, <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> jsonID, <a class="el" href="classle_1_1io_1_1Reader.html">io::Reader</a> const &amp;reader)</td></tr>
+<tr class="memitem:a79593ade5f2a6b2f1e831ee18a7f2a43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1Model.html#aba7fef375d74148bbf2662abd95f9a6c">Result</a>&lt; <a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Model.html#a79593ade5f2a6b2f1e831ee18a7f2a43">load</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> modelID, <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> jsonID, <a class="el" href="classle_1_1io_1_1Reader.html">io::Reader</a> const &amp;reader)</td></tr>
 <tr class="separator:a79593ade5f2a6b2f1e831ee18a7f2a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -111,8 +128,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c062b07cd540ec7c8aeac4282725223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c062b07cd540ec7c8aeac4282725223">&#9670;&nbsp;</a></span>Result</h2>
+<a id="aba7fef375d74148bbf2662abd95f9a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7fef375d74148bbf2662abd95f9a6c">&#9670;&nbsp;</a></span>Result</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,7 +137,7 @@ Static Public Member Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1Model.html#a2c062b07cd540ec7c8aeac4282725223">le::Model::Result</a> =  <a class="el" href="classktl_1_1result.html">ktl::result</a>&lt;T, std::string&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1Model.html#aba7fef375d74148bbf2662abd95f9a6c">le::Model::Result</a> =  <a class="el" href="classktl_1_1expected.html">ktl::expected</a>&lt;T, <a class="el" href="structle_1_1Model_1_1Error.html">Error</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,15 +186,49 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aef2d5ac6bf03064d6e0d53aa903229e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2d5ac6bf03064d6e0d53aa903229e5">&#9670;&nbsp;</a></span>Failcode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classle_1_1Model.html#aef2d5ac6bf03064d6e0d53aa903229e5">le::Model::Failcode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5a64c3acc11ffdb1be30ea339290bd1508"></a>eUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5a2bc13780a99852ab81003a621678b013"></a>eJsonNotFound&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5ae3a3178cb1b1020fa89b105382011060"></a>eJsonMissingData&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5a98178bd0934553a68147bb0d8139e850"></a>eJsonReadFailure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5a7bdf5630e038780d6cfec8e0d54394b7"></a>eObjMtlReadFailure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5aa228b1bfc1f0cd5dfff25c9edfa7f51d"></a>eTextureNotFound&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5a68dc7e90d842383df08b39014ebe93bb"></a>eObjNotFound&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5a2370c46ee00a8eb0bacaa13a77ec0525"></a>eMtlNotFound&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aef2d5ac6bf03064d6e0d53aa903229e5ad649297049358a16f192737f013e60bb"></a>eTextureCreateFailure&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aadbc96e4e5c833f8c9398e7d720a2753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadbc96e4e5c833f8c9398e7d720a2753">&#9670;&nbsp;</a></span>construct()</h2>
+<a id="ae99aa6d571b1e8b3e0f1642823af7f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99aa6d571b1e8b3e0f1642823af7f45">&#9670;&nbsp;</a></span>construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Model.html#a2c062b07cd540ec7c8aeac4282725223">Result</a>&lt;<a class="el" href="classle_1_1Span.html">Span</a>&lt;<a class="el" href="structle_1_1Primitive.html">Primitive</a> const&gt; &gt; le::Model::construct </td>
+          <td class="memname"><a class="el" href="classle_1_1Model.html#aba7fef375d74148bbf2662abd95f9a6c">Result</a>&lt;<a class="el" href="classle_1_1Span.html">Span</a>&lt;<a class="el" href="structle_1_1Prop.html">Prop</a> const&gt; &gt; le::Model::construct </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1Model.html#ac0490463685cd75115a90495f314c0fe">VRAM</a> * &gt;&#160;</td>
           <td class="paramname"><em>vram</em>, </td>
@@ -220,7 +271,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classle_1_1Model.html#a2c062b07cd540ec7c8aeac4282725223">Result</a>&lt;<a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a>&gt; le::Model::load </td>
+          <td class="memname">static <a class="el" href="classle_1_1Model.html#aba7fef375d74148bbf2662abd95f9a6c">Result</a>&lt;<a class="el" href="structle_1_1Model_1_1CreateInfo.html">CreateInfo</a>&gt; le::Model::load </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a>&#160;</td>
           <td class="paramname"><em>modelID</em>, </td>
@@ -252,8 +303,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6bc5a68d4a1ea69b37fdddb9a3dbc072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc5a68d4a1ea69b37fdddb9a3dbc072">&#9670;&nbsp;</a></span>primitives()</h2>
+<a id="ac4ef315c423c7fa892a557de1373ca57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ef315c423c7fa892a557de1373ca57">&#9670;&nbsp;</a></span>props()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +313,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Span.html">Span</a>&lt;<a class="el" href="structle_1_1Primitive.html">Primitive</a> const&gt; le::Model::primitives </td>
+          <td class="memname"><a class="el" href="classle_1_1Span.html">Span</a>&lt;<a class="el" href="structle_1_1Prop.html">Prop</a> const&gt; le::Model::props </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -277,8 +328,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af8b5af88ee5cf26d9bba23855fbfbdda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8b5af88ee5cf26d9bba23855fbfbdda">&#9670;&nbsp;</a></span>primitivesRW()</h2>
+<a id="a1d8621e10693f58ebd11ff9991ab80c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d8621e10693f58ebd11ff9991ab80c6">&#9670;&nbsp;</a></span>propsRW()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +338,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1Span.html">Span</a>&lt;<a class="el" href="structle_1_1Primitive.html">Primitive</a>&gt; le::Model::primitivesRW </td>
+          <td class="memname"><a class="el" href="classle_1_1Span.html">Span</a>&lt;<a class="el" href="structle_1_1Prop.html">Prop</a>&gt; le::Model::propsRW </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -331,14 +382,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae043248576c9c5f0f0087173d2a385c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae043248576c9c5f0f0087173d2a385c0">&#9670;&nbsp;</a></span>primitives</h2>
+<a id="a802494ca71c405c5a5acec3a4b673293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802494ca71c405c5a5acec3a4b673293">&#9670;&nbsp;</a></span>props</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structle_1_1Primitive.html">Primitive</a>&gt; le::Model::primitives</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structle_1_1Prop.html">Prop</a>&gt; le::Model::props</td>
         </tr>
       </table>
 </div><div class="memdoc">

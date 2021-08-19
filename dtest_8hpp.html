@@ -74,7 +74,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a45feb1f37ce559e49baf8655d769ef85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dtest_8hpp.html#a45feb1f37ce559e49baf8655d769ef85">TEST</a>(name)</td></tr>
 <tr class="memdesc:a45feb1f37ce559e49baf8655d769ef85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usage: <a class="el" href="dtest_8hpp.html#a45feb1f37ce559e49baf8655d769ef85" title="Usage: TEST(foo) { // test body... } Create and register a new test.">TEST(foo)</a> { // test body... } Create and register a new test.  <a href="dtest_8hpp.html#a45feb1f37ce559e49baf8655d769ef85">More...</a><br /></td></tr>
 <tr class="separator:a45feb1f37ce559e49baf8655d769ef85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb3787db220580c293b6684d1ad6658a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dtest_8hpp.html#adb3787db220580c293b6684d1ad6658a">DTEST_CHECK</a>(a,  b,  op,  req)&#160;&#160;&#160;this-&gt;check&lt;op&gt;(#a &quot; &quot; #op &quot; &quot; #b, a, b, req, __FILE__, __LINE__)</td></tr>
+<tr class="memitem:adb3787db220580c293b6684d1ad6658a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dtest_8hpp.html#adb3787db220580c293b6684d1ad6658a">DTEST_CHECK</a>(a,  b,  op,  req)&#160;&#160;&#160;this-&gt;check&lt;op&gt;(#a, #b, a, b, req, __FILE__, __LINE__)</td></tr>
 <tr class="separator:adb3787db220580c293b6684d1ad6658a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c198106d8a380a0b194d16c918943d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dtest_8hpp.html#a7c198106d8a380a0b194d16c918943d2">EXPECT_EQ</a>(a,  b)&#160;&#160;&#160;<a class="el" href="dtest_8hpp.html#adb3787db220580c293b6684d1ad6658a">DTEST_CHECK</a>(a, b, ::<a class="el" href="namespacedtest.html#a50e5511339447670ca09e3a9baf23327adf22f17124884fc51f1ac69d610096ac">dtest::oper::eq</a>, false)</td></tr>
 <tr class="separator:a7c198106d8a380a0b194d16c918943d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +308,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;this-&gt;check&lt;op&gt;(#a &quot; &quot; #op &quot; &quot; #b, a, b, req, __FILE__, __LINE__)</td>
+          <td></td><td>&#160;&#160;&#160;this-&gt;check&lt;op&gt;(#a, #b, a, b, req, __FILE__, __LINE__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -505,8 +505,8 @@ Functions</h2></td></tr>
 <div class="line">    test_##name g_##name;                                                                                                                                      \</div>
 <div class="line">    void test_##name::operator()()</div>
 <div class="ttc" id="anamespacedtest_html"><div class="ttname"><a href="namespacedtest.html">dtest</a></div><div class="ttdef"><b>Definition:</b> operators.hpp:6</div></div>
-<div class="ttc" id="astructdtest_1_1atest__t_html"><div class="ttname"><a href="structdtest_1_1atest__t.html">dtest::atest_t</a></div><div class="ttdef"><b>Definition:</b> dtest.hpp:43</div></div>
-<div class="ttc" id="astructdtest_1_1atest__t_html_a6aa382fda505d7fd07ba334e9ecf6fe1"><div class="ttname"><a href="structdtest_1_1atest__t.html#a6aa382fda505d7fd07ba334e9ecf6fe1">dtest::atest_t::name</a></div><div class="ttdeci">std::string_view name</div><div class="ttdef"><b>Definition:</b> dtest.hpp:45</div></div>
+<div class="ttc" id="astructdtest_1_1atest__t_html"><div class="ttname"><a href="structdtest_1_1atest__t.html">dtest::atest_t</a></div><div class="ttdef"><b>Definition:</b> dtest.hpp:45</div></div>
+<div class="ttc" id="astructdtest_1_1atest__t_html_a6aa382fda505d7fd07ba334e9ecf6fe1"><div class="ttname"><a href="structdtest_1_1atest__t.html#a6aa382fda505d7fd07ba334e9ecf6fe1">dtest::atest_t::name</a></div><div class="ttdeci">std::string_view name</div><div class="ttdef"><b>Definition:</b> dtest.hpp:47</div></div>
 <div class="ttc" id="astructdtest_1_1atest__t_html_a6eef9efe4eac42b9cabbb3007bc22dd5"><div class="ttname"><a href="structdtest_1_1atest__t.html#a6eef9efe4eac42b9cabbb3007bc22dd5">dtest::atest_t::operator()</a></div><div class="ttdeci">virtual void operator()()=0</div></div>
 </div><!-- fragment -->
 <p>Usage: <a class="el" href="dtest_8hpp.html#a45feb1f37ce559e49baf8655d769ef85" title="Usage: TEST(foo) { // test body... } Create and register a new test.">TEST(foo)</a> { // test body... } Create and register a new test. </p>

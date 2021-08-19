@@ -45,8 +45,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ktl Namespace Reference</div>  </div>
 </div><!--header-->
@@ -64,6 +63,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1async__queue.html">async_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO queue with thread safe "sleepy" API.  <a href="classktl_1_1async__queue.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1overloaded.html">overloaded</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for visitor.  <a href="structktl_1_1overloaded.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html">either</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII union of two types.  <a href="classktl_1_1either.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html">enum_flags</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around an integral type used as bit flags.  <a href="classktl_1_1enum__flags.html#details">More...</a><br /></td></tr>
@@ -83,7 +88,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1uint__flags.html">uint_flags</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trivial wrapper for unsigned int as bit flags (union friendly)  <a href="structktl_1_1uint__flags.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1erased__semantics__t.html">erased_semantics_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1erased__semantics.html">erased_semantics</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic type eraser that supports move/copy construct/assign and destroy semantics.  <a href="classktl_1_1erased__semantics.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1unexpected.html">unexpected</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper type for any T.  <a href="structktl_1_1unexpected.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1expected.html">expected</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models an expected value an unexpected error.  <a href="classktl_1_1expected.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html">fixed_any</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size type erased storage.  <a href="classktl_1_1fixed__any.html#details">More...</a><br /></td></tr>
@@ -117,21 +129,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1not__null.html">not_null</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for raw / smart pointers that is restricted from being null.  <a href="classktl_1_1not__null.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1result.html">result</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a result (T) or an error (E) value Note: T cannot be void Specializations:  <a href="classktl_1_1result.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1result_3_01T_00_01T_01_4.html">result&lt; T, T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a result or an error value (T) Note: T cannot be void.  <a href="classktl_1_1result_3_01T_00_01T_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1result_3_01T_00_01void_01_4.html">result&lt; T, void &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models an optional result (T) Note: T cannot be void.  <a href="classktl_1_1result_3_01T_00_01void_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1fmt__token__t.html">fmt_token_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customization point; metafunction must provide static std::basic_string_view&lt;Ch&gt; value.  <a href="structktl_1_1fmt__token__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1fmt__token__t_3_01char_01_4.html">fmt_token_t&lt; char &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1fmt__token__t_3_01wchar__t_01_4.html">fmt_token_t&lt; wchar_t &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1str__formatter.html">str_formatter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1tmutex.html">tmutex</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic wrapper for a T and its (mutable) mutex.  <a href="structktl_1_1tmutex.html#details">More...</a><br /></td></tr>
@@ -173,24 +171,19 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acf57bb5dca3bb44b6338d6ed5873484a"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:acf57bb5dca3bb44b6338d6ed5873484a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#acf57bb5dca3bb44b6338d6ed5873484a">overloaded</a> (T...) -&gt; <a class="el" href="structktl_1_1overloaded.html">overloaded</a>&lt; T... &gt;</td></tr>
+<tr class="separator:acf57bb5dca3bb44b6338d6ed5873484a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba7d189a3489f71793ef1a635db84b26"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:aba7d189a3489f71793ef1a635db84b26"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#aba7d189a3489f71793ef1a635db84b26">operator==</a> (<a class="el" href="classktl_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;lhs, <a class="el" href="classktl_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;rhs) noexcept</td></tr>
 <tr class="separator:aba7d189a3489f71793ef1a635db84b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08179ff5009432de7475e3704548a329"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a08179ff5009432de7475e3704548a329"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a08179ff5009432de7475e3704548a329">operator!=</a> (<a class="el" href="classktl_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;lhs, <a class="el" href="classktl_1_1fixed__vector.html">fixed_vector</a>&lt; T, N &gt; const &amp;rhs) noexcept</td></tr>
 <tr class="separator:a08179ff5009432de7475e3704548a329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memTemplParams" colspan="2">template&lt;typename Tk  = fmt_token_t&lt;char&gt;, typename... Args&gt; </td></tr>
+<tr class="memitem:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memTemplParams" colspan="2">template&lt;typename Ftr  = str_formatter, typename... Args&gt; </td></tr>
 <tr class="memitem:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a36aee688f73a36de9cda7edb3ed5a1bf">format</a> (std::string_view fmt, Args const &amp;... args)</td></tr>
-<tr class="memdesc:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a std::string using provided interpolation token ("{}" by default)  <a href="namespacektl.html#a36aee688f73a36de9cda7edb3ed5a1bf">More...</a><br /></td></tr>
+<tr class="memdesc:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format using Ftr and return a std::string.  <a href="namespacektl.html#a36aee688f73a36de9cda7edb3ed5a1bf">More...</a><br /></td></tr>
 <tr class="separator:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e04d83645ddbe90ff642aa298708f50"><td class="memTemplParams" colspan="2">template&lt;typename Tk  = fmt_token_t&lt;wchar_t&gt;, typename... Args&gt; </td></tr>
-<tr class="memitem:a3e04d83645ddbe90ff642aa298708f50"><td class="memTemplItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a3e04d83645ddbe90ff642aa298708f50">format</a> (std::wstring_view fmt, Args const &amp;... args)</td></tr>
-<tr class="memdesc:a3e04d83645ddbe90ff642aa298708f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a std::wstring using provided interpolation token (L"{}" by default)  <a href="namespacektl.html#a3e04d83645ddbe90ff642aa298708f50">More...</a><br /></td></tr>
-<tr class="separator:a3e04d83645ddbe90ff642aa298708f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe81e8ba76507ed1fd743c3308c6903"><td class="memTemplParams" colspan="2">template&lt;typename Ch  = char, typename Tk  = fmt_token_t&lt;Ch&gt;, typename... Args&gt; </td></tr>
-<tr class="memitem:a0fe81e8ba76507ed1fd743c3308c6903"><td class="memTemplItemLeft" align="right" valign="top">std::basic_string&lt; Ch &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a0fe81e8ba76507ed1fd743c3308c6903">format</a> (std::basic_string_view&lt; Ch &gt; fmt, Args const &amp;... args)</td></tr>
-<tr class="memdesc:a0fe81e8ba76507ed1fd743c3308c6903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a std::basic_string&lt;Ch&gt; using provided interpolation token.  <a href="namespacektl.html#a0fe81e8ba76507ed1fd743c3308c6903">More...</a><br /></td></tr>
-<tr class="separator:a0fe81e8ba76507ed1fd743c3308c6903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb762d1863ee562f228292253c5cb210"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename L = std::scoped_lock&gt; </td></tr>
 <tr class="memitem:abb762d1863ee562f228292253c5cb210"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#abb762d1863ee562f228292253c5cb210">tlock</a> (T &amp;) -&gt; <a class="el" href="classktl_1_1tlock.html">tlock</a>&lt; typename T::type, L, typename T::mutex_type &gt;</td></tr>
 <tr class="memdesc:abb762d1863ee562f228292253c5cb210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for lvalue argument.  <a href="namespacektl.html#abb762d1863ee562f228292253c5cb210">More...</a><br /></td></tr>
@@ -199,12 +192,6 @@ Functions</h2></td></tr>
 <tr class="memitem:acfcf24ebf6345f5aedb3c24dc6f3d78e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#acfcf24ebf6345f5aedb3c24dc6f3d78e">tlock</a> (T const &amp;) -&gt; <a class="el" href="classktl_1_1tlock.html">tlock</a>&lt; typename T::type const, L, typename T::mutex_type &gt;</td></tr>
 <tr class="memdesc:acfcf24ebf6345f5aedb3c24dc6f3d78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for const lvalue argument.  <a href="namespacektl.html#acfcf24ebf6345f5aedb3c24dc6f3d78e">More...</a><br /></td></tr>
 <tr class="separator:acfcf24ebf6345f5aedb3c24dc6f3d78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af83bc2693725720bfa9943b098e507d8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacektl.html#af83bc2693725720bfa9943b098e507d8">null_result</a> = nullptr</td></tr>
-<tr class="memdesc:af83bc2693725720bfa9943b098e507d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for no result.  <a href="namespacektl.html#af83bc2693725720bfa9943b098e507d8">More...</a><br /></td></tr>
-<tr class="separator:af83bc2693725720bfa9943b098e507d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ab55fd13863e4b3100565a09857c62b06"></a>
@@ -310,45 +297,13 @@ template&lt;typename T , template&lt; typename... &gt; typename L = std::unique_
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0fe81e8ba76507ed1fd743c3308c6903"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fe81e8ba76507ed1fd743c3308c6903">&#9670;&nbsp;</a></span>format() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Ch  = char, typename Tk  = fmt_token_t&lt;Ch&gt;, typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::basic_string&lt; Ch &gt; ktl::format </td>
-          <td>(</td>
-          <td class="paramtype">std::basic_string_view&lt; Ch &gt;&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args const &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Format a std::basic_string&lt;Ch&gt; using provided interpolation token. </p>
-
-</div>
-</div>
 <a id="a36aee688f73a36de9cda7edb3ed5a1bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36aee688f73a36de9cda7edb3ed5a1bf">&#9670;&nbsp;</a></span>format() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a36aee688f73a36de9cda7edb3ed5a1bf">&#9670;&nbsp;</a></span>format()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Tk  = fmt_token_t&lt;char&gt;, typename... Args&gt; </div>
+template&lt;typename Ftr  = str_formatter, typename... Args&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::string ktl::format </td>
@@ -370,39 +325,7 @@ template&lt;typename Tk  = fmt_token_t&lt;char&gt;, typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Format a std::string using provided interpolation token ("{}" by default) </p>
-
-</div>
-</div>
-<a id="a3e04d83645ddbe90ff642aa298708f50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e04d83645ddbe90ff642aa298708f50">&#9670;&nbsp;</a></span>format() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Tk  = fmt_token_t&lt;wchar_t&gt;, typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::wstring ktl::format </td>
-          <td>(</td>
-          <td class="paramtype">std::wstring_view&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args const &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Format a std::wstring using provided interpolation token (L"{}" by default) </p>
+<p>Format using Ftr and return a std::string. </p>
 
 </div>
 </div>
@@ -482,6 +405,26 @@ template&lt;typename T , std::size_t N&gt; </div>
 
 </div>
 </div>
+<a id="acf57bb5dca3bb44b6338d6ed5873484a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf57bb5dca3bb44b6338d6ed5873484a">&#9670;&nbsp;</a></span>overloaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structktl_1_1overloaded.html">ktl::overloaded</a> </td>
+          <td>(</td>
+          <td class="paramtype">T...&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="structktl_1_1overloaded.html">overloaded</a>&lt; T... &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abb762d1863ee562f228292253c5cb210"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb762d1863ee562f228292253c5cb210">&#9670;&nbsp;</a></span>tlock() <span class="overload">[1/2]</span></h2>
 
@@ -523,31 +466,6 @@ template&lt;typename T , template&lt; typename... &gt; typename L = std::scoped_
 </div><div class="memdoc">
 
 <p>Deduction guide for const lvalue argument. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="af83bc2693725720bfa9943b098e507d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af83bc2693725720bfa9943b098e507d8">&#9670;&nbsp;</a></span>null_result</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto ktl::null_result = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Type alias for no result. </p>
 
 </div>
 </div>

@@ -75,11 +75,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>is_comparable_to_nullptr&lt; T, std::enable_if_t&lt; std::is_convertible_v&lt; decltype(std::declval&lt; T &gt;() !=nullptr), bool &gt; &gt; &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>result_storage_t</b></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>ostream_defined</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>result_storage_t&lt; T, void &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>result_storage_t&lt; bool, void &gt;</b></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>ostream_defined&lt; T, std::void_t&lt; decltype(std::declval&lt; std::ostream &amp; &gt;()&lt;&lt; std::declval&lt; T const &amp; &gt;())&gt; &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -90,18 +88,18 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4332afbebfb90f6f236a3581caa02563"><td class="memTemplParams" colspan="2">template&lt;typename Ch &gt; </td></tr>
-<tr class="memitem:a4332afbebfb90f6f236a3581caa02563"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; Ch &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a4332afbebfb90f6f236a3581caa02563">format_str</a> (std::basic_ostream&lt; Ch &gt; &amp;out, std::basic_string_view&lt; Ch &gt; fmt)</td></tr>
-<tr class="separator:a4332afbebfb90f6f236a3581caa02563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba42b90c606e4f545e2faaa6c44f005"><td class="memTemplParams" colspan="2">template&lt;typename Ch , typename Tk , typename Arg , typename... Args&gt; </td></tr>
-<tr class="memitem:a4ba42b90c606e4f545e2faaa6c44f005"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; Ch &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a4ba42b90c606e4f545e2faaa6c44f005">format_str</a> (std::basic_ostream&lt; Ch &gt; &amp;out, std::basic_string_view&lt; Ch &gt; fmt, Arg const &amp;arg, Args const &amp;... args)</td></tr>
-<tr class="separator:a4ba42b90c606e4f545e2faaa6c44f005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3a82c68f489f006576e832fc175ded"><td class="memTemplParams" colspan="2">template&lt;typename Ftr , typename T , typename... Ts&gt; </td></tr>
+<tr class="memitem:a2c3a82c68f489f006576e832fc175ded"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a2c3a82c68f489f006576e832fc175ded">format_str</a> (std::ostream &amp;out, std::string_view fmt, T const &amp;t, Ts const &amp;... ts)</td></tr>
+<tr class="separator:a2c3a82c68f489f006576e832fc175ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a5f5093fbf087ec282fba04f7533a81b8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5f5093fbf087ec282fba04f7533a81b8"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a5f5093fbf087ec282fba04f7533a81b8">is_comparable_to_nullptr_v</a> = is_comparable_to_nullptr&lt;T&gt;::value</td></tr>
 <tr class="separator:a5f5093fbf087ec282fba04f7533a81b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb652194d031dd9dd2cce50c6a1abdff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afb652194d031dd9dd2cce50c6a1abdff"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#afb652194d031dd9dd2cce50c6a1abdff">ostream_operator_defined_v</a> = ostream_defined&lt;T&gt;::value</td></tr>
+<tr class="separator:afb652194d031dd9dd2cce50c6a1abdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ad359d83bfe30ffebae78d661855268e4"></a>
@@ -121,67 +119,37 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4332afbebfb90f6f236a3581caa02563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4332afbebfb90f6f236a3581caa02563">&#9670;&nbsp;</a></span>format_str() <span class="overload">[1/2]</span></h2>
+<a id="a2c3a82c68f489f006576e832fc175ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3a82c68f489f006576e832fc175ded">&#9670;&nbsp;</a></span>format_str()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Ch &gt; </div>
+template&lt;typename Ftr , typename T , typename... Ts&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::basic_ostream&lt;Ch&gt;&amp; ktl::detail::format_str </td>
+          <td class="memname">std::ostream&amp; ktl::detail::format_str </td>
           <td>(</td>
-          <td class="paramtype">std::basic_ostream&lt; Ch &gt; &amp;&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::basic_string_view&lt; Ch &gt;&#160;</td>
-          <td class="paramname"><em>fmt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4ba42b90c606e4f545e2faaa6c44f005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba42b90c606e4f545e2faaa6c44f005">&#9670;&nbsp;</a></span>format_str() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Ch , typename Tk , typename Arg , typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::basic_ostream&lt;Ch&gt;&amp; ktl::detail::format_str </td>
-          <td>(</td>
-          <td class="paramtype">std::basic_ostream&lt; Ch &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::basic_string_view&lt; Ch &gt;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Arg const &amp;&#160;</td>
-          <td class="paramname"><em>arg</em>, </td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Args const &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype">Ts const &amp;...&#160;</td>
+          <td class="paramname"><em>ts</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,6 +175,30 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">constexpr bool ktl::detail::is_comparable_to_nullptr_v = is_comparable_to_nullptr&lt;T&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb652194d031dd9dd2cce50c6a1abdff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb652194d031dd9dd2cce50c6a1abdff">&#9670;&nbsp;</a></span>ostream_operator_defined_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool ktl::detail::ostream_operator_defined_v = ostream_defined&lt;T&gt;::value</td>
         </tr>
       </table>
   </td>

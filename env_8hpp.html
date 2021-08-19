@@ -52,10 +52,10 @@ $(function() {
 <div class="title">env.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="interpreter_8hpp.html">clap/interpreter.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;<a class="el" href="interpreter_8hpp.html">clap/interpreter.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="path_8hpp.html">core/io/path.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="result_8hpp.html">ktl/result.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -68,8 +68,6 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a29fb99e29dc3b43b16eb9a4d62ce792b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1env.html#a29fb99e29dc3b43b16eb9a4d62ce792b">le::env::Spec</a> = <a class="el" href="structclap_1_1basic__interpreter_1_1spec__t.html">clap::interpreter::spec_t</a></td></tr>
 <tr class="separator:a29fb99e29dc3b43b16eb9a4d62ce792b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83effcae893b29723d91421bcbb7ca20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1env.html#a83effcae893b29723d91421bcbb7ca20">le::env::Option</a> = <a class="el" href="structclap_1_1basic__parser_1_1option__t.html">clap::interpreter::option_t</a></td></tr>
-<tr class="separator:a83effcae893b29723d91421bcbb7ca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa78246290b3ae7164c21326283ea1cc8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1env.html#aa78246290b3ae7164c21326283ea1cc8">le::env::Run</a> = <a class="el" href="classclap_1_1basic__interpreter.html#a1388383dfd83119cbe552a93a79213e3">clap::interpreter::result</a></td></tr>
 <tr class="separator:aa78246290b3ae7164c21326283ea1cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -77,9 +75,9 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a1cd7a900e4062e92b58a3f63e52791d9"><td class="memItemLeft" align="right" valign="top">Run&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1env.html#a1cd7a900e4062e92b58a3f63e52791d9">le::env::init</a> (int argc, char const *const argv[], Spec::cmd_map_t cmds)</td></tr>
 <tr class="separator:a1cd7a900e4062e92b58a3f63e52791d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55df1be546a1aec214ca04cf47a3306f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classktl_1_1result.html">ktl::result</a>&lt; io::Path, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1env.html#a55df1be546a1aec214ca04cf47a3306f">le::env::findData</a> (io::Path pattern=&quot;data&quot;, u8 maxHeight=10)</td></tr>
-<tr class="memdesc:a55df1be546a1aec214ca04cf47a3306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain full path to directory containing pattern, traced from the executable path.  <a href="namespacele_1_1env.html#a55df1be546a1aec214ca04cf47a3306f">More...</a><br /></td></tr>
-<tr class="separator:a55df1be546a1aec214ca04cf47a3306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868f1fe88d54737b24a8b805097fd7c2"><td class="memItemLeft" align="right" valign="top">std::optional&lt; io::Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1env.html#a868f1fe88d54737b24a8b805097fd7c2">le::env::findData</a> (io::Path pattern=&quot;data&quot;, u8 maxHeight=10)</td></tr>
+<tr class="memdesc:a868f1fe88d54737b24a8b805097fd7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain full path to directory containing pattern, traced from the executable path.  <a href="namespacele_1_1env.html#a868f1fe88d54737b24a8b805097fd7c2">More...</a><br /></td></tr>
+<tr class="separator:a868f1fe88d54737b24a8b805097fd7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

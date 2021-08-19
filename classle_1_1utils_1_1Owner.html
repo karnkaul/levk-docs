@@ -69,9 +69,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a405dec8d90e7f0ced63239ce3f6f41dc"><td class="memTemplParams" colspan="2">template&lt;typename Ty , typename... Args&gt; </td></tr>
 <tr class="memitem:a405dec8d90e7f0ced63239ce3f6f41dc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1Owner.html#a405dec8d90e7f0ced63239ce3f6f41dc">requires</a> (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98a3014e3530e462">is_derived_v</a>&lt; Ty &gt;) Ty &amp;push(Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a405dec8d90e7f0ced63239ce3f6f41dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a011ff68e9db26fa4539530aec107e890"><td class="memTemplParams" colspan="2">template&lt;typename Ty &gt; </td></tr>
-<tr class="memitem:a011ff68e9db26fa4539530aec107e890"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1Owner.html#a011ff68e9db26fa4539530aec107e890">requires</a> (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98a3014e3530e462">is_derived_v</a>&lt; std::decay_t&lt; Ty &gt;&gt;) void pop(Ty const &amp;t) noexcept</td></tr>
-<tr class="separator:a011ff68e9db26fa4539530aec107e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ba9b3095420a5408920f497ce7ff71"><td class="memTemplParams" colspan="2">template&lt;typename Ty &gt; </td></tr>
+<tr class="memitem:a92ba9b3095420a5408920f497ce7ff71"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1Owner.html#a92ba9b3095420a5408920f497ce7ff71">requires</a> (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98a3014e3530e462">is_derived_v</a>&lt; std::decay_t&lt; Ty &gt;&gt;) bool pop(Ty const *t) noexcept</td></tr>
+<tr class="separator:a92ba9b3095420a5408920f497ce7ff71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -118,8 +118,8 @@ template&lt;typename T , template&lt; typename... &gt; typename Cont = std::vect
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a011ff68e9db26fa4539530aec107e890"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a011ff68e9db26fa4539530aec107e890">&#9670;&nbsp;</a></span>requires() <span class="overload">[1/2]</span></h2>
+<a id="a92ba9b3095420a5408920f497ce7ff71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ba9b3095420a5408920f497ce7ff71">&#9670;&nbsp;</a></span>requires() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ template&lt;typename Ty &gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98a3014e3530e462">is_derived_v</a>&lt; std::decay_t&lt; Ty &gt;&gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> const &amp;</td>
+          <td> const</td>
         </tr>
       </table>
   </td>

@@ -48,23 +48,22 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">instance.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;<a class="el" href="lib__logger_8hpp.html">core/lib_logger.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mono__instance_8hpp.html">core/mono_instance.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="event__queue_8hpp.html">window/event_queue.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="surface_8hpp.html">window/surface.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1window_1_1InstanceBase.html">le::window::InstanceBase</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1window_1_1Manager.html">le::window::Manager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1InstanceBase_1_1CreateInfo.html">le::window::InstanceBase::CreateInfo</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1CreateInfo.html">le::window::CreateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1window_1_1Instance.html">le::window::Instance</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -86,17 +85,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a8d3af5257aaef7a0c95fe9106ca4fcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a5ea3e49cdb7dd3bf163ebffcff4db8fb"><td class="memItemLeft" align="right" valign="top">Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#a5ea3e49cdb7dd3bf163ebffcff4db8fb">le::window::parseKey</a> (std::string_view str) noexcept</td></tr>
-<tr class="separator:a5ea3e49cdb7dd3bf163ebffcff4db8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a24188fa89a22403bd00557c028755"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ab3a24188fa89a22403bd00557c028755">le::window::parseAction</a> (std::string_view str) noexcept</td></tr>
-<tr class="separator:ab3a24188fa89a22403bd00557c028755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8c7a44af0d26263bb773977073c248"><td class="memItemLeft" align="right" valign="top">Mods&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#a7c8c7a44af0d26263bb773977073c248">le::window::parseMods</a> (Span&lt; std::string const &gt; vec) noexcept</td></tr>
-<tr class="separator:a7c8c7a44af0d26263bb773977073c248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3fdcc2875067db9c010b052c15067a2"><td class="memItemLeft" align="right" valign="top">Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html#ab3fdcc2875067db9c010b052c15067a2">le::window::parseAxis</a> (std::string_view str) noexcept</td></tr>
-<tr class="separator:ab3fdcc2875067db9c010b052c15067a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

@@ -46,6 +46,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -69,6 +71,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1RefTreeNode.html">RefTreeNode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1Enumerator.html">Enumerator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1ExceptionHandler.html">ExceptionHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default exception handler (logs error)  <a href="structle_1_1utils_1_1ExceptionHandler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1ExecPolicy.html">ExecPolicy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default execution policy.  <a href="structle_1_1utils_1_1ExecPolicy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1Execute.html">Execute</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executor, customized via Policy.  <a href="classle_1_1utils_1_1Execute.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1FutureBase.html">FutureBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future.html">Future</a></td></tr>
@@ -77,8 +90,47 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Future_3_01void_01_4.html">Future&lt; void &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper over std::future&lt;void&gt;  <a href="structle_1_1utils_1_1Future_3_01void_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1ProfileEntry.html">ProfileEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1ProfileDevNull.html">ProfileDevNull</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1ProfileLogger.html">ProfileLogger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1ProfileCacher.html">ProfileCacher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1DProfiler.html">DProfiler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1DProfiler_3_01ProfileDevNull_01_4.html">DProfiler&lt; ProfileDevNull &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1ProfileDB.html">ProfileDB</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1NullProfileDB.html">NullProfileDB</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1Ratio.html">Ratio</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1TweenLerp.html">TweenLerp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1TweenEase.html">TweenEase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1utils_1_1Tweener.html">Tweener</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1utils_1_1VBase.html">VBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:afd3196f93a61b748fc4233961668e02f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#afd3196f93a61b748fc4233961668e02f">LogProfiler</a> = <a class="el" href="classle_1_1utils_1_1DProfiler.html">DProfiler</a>&lt; <a class="el" href="structle_1_1utils_1_1ProfileLogger.html">ProfileLogger</a> &gt;</td></tr>
+<tr class="separator:afd3196f93a61b748fc4233961668e02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb0c539dc6421b681f61995c1d9039c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#aacb0c539dc6421b681f61995c1d9039c">NullProfiler</a> = <a class="el" href="classle_1_1utils_1_1DProfiler.html">DProfiler</a>&lt; <a class="el" href="structle_1_1utils_1_1ProfileDevNull.html">ProfileDevNull</a> &gt;</td></tr>
+<tr class="separator:aacb0c539dc6421b681f61995c1d9039c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aac452b94f17da6bbd5d0fbb17dae1d22"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#aac452b94f17da6bbd5d0fbb17dae1d22">TweenCycle</a> { <a class="el" href="namespacele_1_1utils.html#aac452b94f17da6bbd5d0fbb17dae1d22a4a33d5bd8c5ac0d00e9cb15fc7d375fc">eOnce</a>
+, <a class="el" href="namespacele_1_1utils.html#aac452b94f17da6bbd5d0fbb17dae1d22a07e7fb0218048bfe218573753efbf58b">eSwing</a>
+, <a class="el" href="namespacele_1_1utils.html#aac452b94f17da6bbd5d0fbb17dae1d22a1ad9d28dbf37224044c05ec6a2576382">eLoop</a>
+ }</td></tr>
+<tr class="separator:aac452b94f17da6bbd5d0fbb17dae1d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -106,6 +158,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a35c5f7a5acc2d29f3384e53830ffa0b9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename In &gt; </td></tr>
 <tr class="memitem:a35c5f7a5acc2d29f3384e53830ffa0b9"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a35c5f7a5acc2d29f3384e53830ffa0b9">overwrite</a> (std::vector&lt; T &gt; &amp;out, In const &amp;in)</td></tr>
 <tr class="separator:a35c5f7a5acc2d29f3384e53830ffa0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae518ff822edba79318686f13e713107"><td class="memTemplParams" colspan="2">template&lt;typename Cont , typename I  = std::size_t&gt; </td></tr>
+<tr class="memitem:aae518ff822edba79318686f13e713107"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1utils_1_1Enumerator.html">Enumerator</a>&lt; Cont, I &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#aae518ff822edba79318686f13e713107">enumerate</a> (Cont &amp;container) noexcept</td></tr>
+<tr class="separator:aae518ff822edba79318686f13e713107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340c250f4ef464f33788ed31e095b64a"><td class="memTemplParams" colspan="2">template&lt;typename Handler  = ExceptionHandler, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:a340c250f4ef464f33788ed31e095b64a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a340c250f4ef464f33788ed31e095b64a">safeInvoke</a> (F &amp;&amp;func, Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:a340c250f4ef464f33788ed31e095b64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke a callable within a try-catch block.  <a href="namespacele_1_1utils.html#a340c250f4ef464f33788ed31e095b64a">More...</a><br /></td></tr>
+<tr class="separator:a340c250f4ef464f33788ed31e095b64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8726c53755f06c6699cdd886dfd6e96d"><td class="memTemplParams" colspan="2">template&lt;typename Handler  = ExceptionHandler, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:a8726c53755f06c6699cdd886dfd6e96d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a8726c53755f06c6699cdd886dfd6e96d">safeInvokeR</a> (F &amp;&amp;func, Args &amp;&amp;... args, std::invoke_result_t&lt; F, Args... &gt; const &amp;except) noexcept</td></tr>
+<tr class="memdesc:a8726c53755f06c6699cdd886dfd6e96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke a callable within a try-catch block.  <a href="namespacele_1_1utils.html#a8726c53755f06c6699cdd886dfd6e96d">More...</a><br /></td></tr>
+<tr class="separator:a8726c53755f06c6699cdd886dfd6e96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67dd4cc42cd1a988bc4b49032e8eb19"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac67dd4cc42cd1a988bc4b49032e8eb19"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350">FutureState</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#ac67dd4cc42cd1a988bc4b49032e8eb19">futureState</a> (std::future&lt; T &gt; const &amp;future) noexcept</td></tr>
 <tr class="separator:ac67dd4cc42cd1a988bc4b49032e8eb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +229,63 @@ Variables</h2></td></tr>
 <tr class="memitem:a3b75e25543c09b7673e61c9fc18b4664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1LibLogger.html">LibLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a3b75e25543c09b7673e61c9fc18b4664">g_log</a></td></tr>
 <tr class="separator:a3b75e25543c09b7673e61c9fc18b4664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="afd3196f93a61b748fc4233961668e02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3196f93a61b748fc4233961668e02f">&#9670;&nbsp;</a></span>LogProfiler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacele_1_1utils.html#afd3196f93a61b748fc4233961668e02f">le::utils::LogProfiler</a> = typedef <a class="el" href="classle_1_1utils_1_1DProfiler.html">DProfiler</a>&lt;<a class="el" href="structle_1_1utils_1_1ProfileLogger.html">ProfileLogger</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacb0c539dc6421b681f61995c1d9039c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb0c539dc6421b681f61995c1d9039c">&#9670;&nbsp;</a></span>NullProfiler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacele_1_1utils.html#aacb0c539dc6421b681f61995c1d9039c">le::utils::NullProfiler</a> = typedef <a class="el" href="classle_1_1utils_1_1DProfiler.html">DProfiler</a>&lt;<a class="el" href="structle_1_1utils_1_1ProfileDevNull.html">ProfileDevNull</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aac452b94f17da6bbd5d0fbb17dae1d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac452b94f17da6bbd5d0fbb17dae1d22">&#9670;&nbsp;</a></span>TweenCycle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacele_1_1utils.html#aac452b94f17da6bbd5d0fbb17dae1d22">le::utils::TweenCycle</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aac452b94f17da6bbd5d0fbb17dae1d22a4a33d5bd8c5ac0d00e9cb15fc7d375fc"></a>eOnce&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac452b94f17da6bbd5d0fbb17dae1d22a07e7fb0218048bfe218573753efbf58b"></a>eSwing&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac452b94f17da6bbd5d0fbb17dae1d22a1ad9d28dbf37224044c05ec6a2576382"></a>eLoop&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a878ad0958e532bdee4213c54726c7027"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a878ad0958e532bdee4213c54726c7027">&#9670;&nbsp;</a></span>bisect()</h2>
@@ -332,6 +452,34 @@ template&lt;typename In , template&lt; typename... &gt; typename Out, typename..
 </div><div class="memdoc">
 
 <p>Demangle a compiler symbol name. </p>
+
+</div>
+</div>
+<a id="aae518ff822edba79318686f13e713107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae518ff822edba79318686f13e713107">&#9670;&nbsp;</a></span>enumerate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Cont , typename I  = std::size_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1utils_1_1Enumerator.html">Enumerator</a>&lt;Cont, I&gt; le::utils::enumerate </td>
+          <td>(</td>
+          <td class="paramtype">Cont &amp;&#160;</td>
+          <td class="paramname"><em>container</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -649,6 +797,94 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Remove namespace prefixes from a type string. </p>
+
+</div>
+</div>
+<a id="a340c250f4ef464f33788ed31e095b64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340c250f4ef464f33788ed31e095b64a">&#9670;&nbsp;</a></span>safeInvoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Handler  = ExceptionHandler, typename F , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::utils::safeInvoke </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoke a callable within a try-catch block. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if exception was caught </dd></dl>
+
+</div>
+</div>
+<a id="a8726c53755f06c6699cdd886dfd6e96d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8726c53755f06c6699cdd886dfd6e96d">&#9670;&nbsp;</a></span>safeInvokeR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Handler  = ExceptionHandler, typename F , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto le::utils::safeInvokeR </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::invoke_result_t&lt; F, Args... &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>except</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoke a callable within a try-catch block. </p>
+<dl class="section return"><dt>Returns</dt><dd>invocation result or except if exception caught </dd></dl>
 
 </div>
 </div>

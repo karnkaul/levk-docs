@@ -69,9 +69,9 @@ Inheritance diagram for le::edi::Inspector:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4f8640fa2fd4aaf1c46162f6414e753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1edi_1_1Inspector.html#ae4f8640fa2fd4aaf1c46162f6414e753">update</a> () override</td></tr>
 <tr class="separator:ae4f8640fa2fd4aaf1c46162f6414e753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a88113bb6d8d58193f72ecce8e6d968"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:a3a88113bb6d8d58193f72ecce8e6d968"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1edi_1_1Inspector.html#a3a88113bb6d8d58193f72ecce8e6d968">attach</a> (std::string id, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a3a88113bb6d8d58193f72ecce8e6d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4670cf87b1cf46d311d39af78813c892"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a4670cf87b1cf46d311d39af78813c892"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1edi_1_1Inspector.html#a4670cf87b1cf46d311d39af78813c892">requires</a> (std::is_base_of_v&lt; <a class="el" href="structle_1_1edi_1_1Gadget.html">Gadget</a>, T &gt;||std::is_base_of_v&lt; <a class="el" href="structle_1_1edi_1_1GuiGadget.html">GuiGadget</a>, T &gt;) T &amp;attach(Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a4670cf87b1cf46d311d39af78813c892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95da6b17a732303c8b59c784a8ddf433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1edi_1_1Inspector.html#a95da6b17a732303c8b59c784a8ddf433">detach</a> (std::string const &amp;id)</td></tr>
 <tr class="separator:a95da6b17a732303c8b59c784a8ddf433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1utils_1_1VBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1utils_1_1VBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1utils_1_1VBase.html">le::utils::VBase</a></td></tr>
@@ -104,36 +104,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3598c875d35c234b78ceae20ee336f5a inherit pub_types_classle_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3a88113bb6d8d58193f72ecce8e6d968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a88113bb6d8d58193f72ecce8e6d968">&#9670;&nbsp;</a></span>attach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T &amp; le::edi::Inspector::attach </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a95da6b17a732303c8b59c784a8ddf433"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95da6b17a732303c8b59c784a8ddf433">&#9670;&nbsp;</a></span>detach()</h2>
 
@@ -146,6 +116,26 @@ template&lt;typename T , typename... Args&gt; </div>
           <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4670cf87b1cf46d311d39af78813c892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4670cf87b1cf46d311d39af78813c892">&#9670;&nbsp;</a></span>requires()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">le::edi::Inspector::requires </td>
+          <td>(</td>
+          <td class="paramtype">std::is_base_of_v&lt; <a class="el" href="structle_1_1edi_1_1Gadget.html">Gadget</a>, T &gt;||std::is_base_of_v&lt; <a class="el" href="structle_1_1edi_1_1GuiGadget.html">GuiGadget</a>, T &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> &amp;&amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">

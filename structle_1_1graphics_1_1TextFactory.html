@@ -64,42 +64,40 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a21e4f99033c8ff7338c9ff33c10e0961"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">Size</a> = std::variant&lt; <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;</td></tr>
-<tr class="separator:a21e4f99033c8ff7338c9ff33c10e0961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdc335c4d78f0f41992a3803a5ad286"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a4fdc335c4d78f0f41992a3803a5ad286">Size</a> = <a class="el" href="classktl_1_1either.html">ktl::either</a>&lt; <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;</td></tr>
+<tr class="separator:a4fdc335c4d78f0f41992a3803a5ad286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a199c3eb85974953de301beb2544f0d50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#a5f08e945fcff8031c8d63e3464809631">Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a199c3eb85974953de301beb2544f0d50">generate</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt; glyphs, glm::ivec2 texSize, std::optional&lt; <a class="el" href="structle_1_1graphics_1_1TextFactory_1_1Layout.html">Layout</a> &gt; <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a5491c40f994890b76c7251a276fa4ab4">layout</a>=std::nullopt) const noexcept</td></tr>
-<tr class="separator:a199c3eb85974953de301beb2544f0d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3baafa1cf61e2f3049527c43d886f975"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a3baafa1cf61e2f3049527c43d886f975">glyphBounds</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt; glyphs, std::string_view <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a1ef2dd4234c39b8cedf49564461aa539">text</a>={}) const noexcept</td></tr>
+<tr class="memitem:a069679e61d670887d14f27571f6e3d97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#a5f08e945fcff8031c8d63e3464809631">Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a069679e61d670887d14f27571f6e3d97">generate</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt; glyphs, std::string_view text, glm::ivec2 texSize, std::optional&lt; <a class="el" href="structle_1_1graphics_1_1TextFactory_1_1Layout.html">Layout</a> &gt; <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a5491c40f994890b76c7251a276fa4ab4">layout</a>=std::nullopt) const noexcept</td></tr>
+<tr class="separator:a069679e61d670887d14f27571f6e3d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3baafa1cf61e2f3049527c43d886f975"><td class="memItemLeft" align="right" valign="top">glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a3baafa1cf61e2f3049527c43d886f975">glyphBounds</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt; glyphs, std::string_view text={}) const noexcept</td></tr>
 <tr class="separator:a3baafa1cf61e2f3049527c43d886f975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5491c40f994890b76c7251a276fa4ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1TextFactory_1_1Layout.html">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a5491c40f994890b76c7251a276fa4ab4">layout</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt; glyphs, std::string_view <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a1ef2dd4234c39b8cedf49564461aa539">text</a>, <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">Size</a> <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a60fe0663bb0470f4196faecbe0534aaf">size</a>=1.0f, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> nPadY=0.1f) const noexcept</td></tr>
+<tr class="memitem:a5491c40f994890b76c7251a276fa4ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1TextFactory_1_1Layout.html">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a5491c40f994890b76c7251a276fa4ab4">layout</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt; glyphs, std::string_view text, <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a4fdc335c4d78f0f41992a3803a5ad286">Size</a> <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a60fe0663bb0470f4196faecbe0534aaf">size</a>=1.0f, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> nPadY=0.1f) const noexcept</td></tr>
 <tr class="separator:a5491c40f994890b76c7251a276fa4ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1ef2dd4234c39b8cedf49564461aa539"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a1ef2dd4234c39b8cedf49564461aa539">text</a></td></tr>
-<tr class="separator:a1ef2dd4234c39b8cedf49564461aa539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af005b7b2d4dc9aa1584f30ed289c29a2"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#af005b7b2d4dc9aa1584f30ed289c29a2">pos</a> = glm::vec3(0.0f)</td></tr>
 <tr class="separator:af005b7b2d4dc9aa1584f30ed289c29a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196ff7b6058eb26e6e62d516230586a0"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a196ff7b6058eb26e6e62d516230586a0">align</a> = {}</td></tr>
 <tr class="separator:a196ff7b6058eb26e6e62d516230586a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60fe0663bb0470f4196faecbe0534aaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a60fe0663bb0470f4196faecbe0534aaf">size</a> = 1.0f</td></tr>
+<tr class="memitem:a60fe0663bb0470f4196faecbe0534aaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a4fdc335c4d78f0f41992a3803a5ad286">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a60fe0663bb0470f4196faecbe0534aaf">size</a> = 1.0f</td></tr>
 <tr class="separator:a60fe0663bb0470f4196faecbe0534aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a540ab248b837d8457d7ab5f8dca4c173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a540ab248b837d8457d7ab5f8dca4c173">nYPad</a> = 0.2f</td></tr>
 <tr class="separator:a540ab248b837d8457d7ab5f8dca4c173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b9f7b447e68e88abe84a98d7dd9120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Colour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#ad6b9f7b447e68e88abe84a98d7dd9120">colour</a> = <a class="el" href="namespacele_1_1colours.html#a3b5e5c49b3dbb91980b9c088edead159">colours::white</a></td></tr>
-<tr class="separator:ad6b9f7b447e68e88abe84a98d7dd9120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4df22f89d7a292917347f83cf4f04ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1RGBA.html">RGBA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#ae4df22f89d7a292917347f83cf4f04ae">colour</a> = <a class="el" href="namespacele_1_1colours.html#a3b5e5c49b3dbb91980b9c088edead159">colours::white</a></td></tr>
+<tr class="separator:ae4df22f89d7a292917347f83cf4f04ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a21e4f99033c8ff7338c9ff33c10e0961"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e4f99033c8ff7338c9ff33c10e0961">&#9670;&nbsp;</a></span>Size</h2>
+<a id="a4fdc335c4d78f0f41992a3803a5ad286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdc335c4d78f0f41992a3803a5ad286">&#9670;&nbsp;</a></span>Size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">le::graphics::TextFactory::Size</a> =  std::variant&lt;<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&gt;</td>
+          <td class="memname">using <a class="el" href="structle_1_1graphics_1_1TextFactory.html#a4fdc335c4d78f0f41992a3803a5ad286">le::graphics::TextFactory::Size</a> =  <a class="el" href="classktl_1_1either.html">ktl::either</a>&lt;<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -107,8 +105,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a199c3eb85974953de301beb2544f0d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199c3eb85974953de301beb2544f0d50">&#9670;&nbsp;</a></span>generate()</h2>
+<a id="a069679e61d670887d14f27571f6e3d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069679e61d670887d14f27571f6e3d97">&#9670;&nbsp;</a></span>generate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,6 +119,12 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1graphics_1_1Glyph.html">Glyph</a> const &gt;&#160;</td>
           <td class="paramname"><em>glyphs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -209,7 +213,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">Size</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a4fdc335c4d78f0f41992a3803a5ad286">Size</a>&#160;</td>
           <td class="paramname"><em>size</em> = <code>1.0f</code>, </td>
         </tr>
         <tr>
@@ -248,14 +252,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6b9f7b447e68e88abe84a98d7dd9120"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6b9f7b447e68e88abe84a98d7dd9120">&#9670;&nbsp;</a></span>colour</h2>
+<a id="ae4df22f89d7a292917347f83cf4f04ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4df22f89d7a292917347f83cf4f04ae">&#9670;&nbsp;</a></span>colour</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1Colour.html">Colour</a> le::graphics::TextFactory::colour = <a class="el" href="namespacele_1_1colours.html#a3b5e5c49b3dbb91980b9c088edead159">colours::white</a></td>
+          <td class="memname"><a class="el" href="structle_1_1graphics_1_1RGBA.html">RGBA</a> le::graphics::TextFactory::colour = <a class="el" href="namespacele_1_1colours.html#a3b5e5c49b3dbb91980b9c088edead159">colours::white</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -297,21 +301,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a21e4f99033c8ff7338c9ff33c10e0961">Size</a> le::graphics::TextFactory::size = 1.0f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1ef2dd4234c39b8cedf49564461aa539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ef2dd4234c39b8cedf49564461aa539">&#9670;&nbsp;</a></span>text</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string le::graphics::TextFactory::text</td>
+          <td class="memname"><a class="el" href="structle_1_1graphics_1_1TextFactory.html#a4fdc335c4d78f0f41992a3803a5ad286">Size</a> le::graphics::TextFactory::size = 1.0f</td>
         </tr>
       </table>
 </div><div class="memdoc">

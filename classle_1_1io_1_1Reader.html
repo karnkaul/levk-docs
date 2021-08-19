@@ -45,7 +45,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -65,18 +64,11 @@ Inheritance diagram for le::io::Reader:</div>
  <div class="center">
   <img src="classle_1_1io_1_1Reader.png" usemap="#le::io::Reader_map" alt=""/>
   <map id="le::io::Reader_map" name="le::io::Reader_map">
-<area href="classle_1_1io_1_1AAssetReader.html" title="Concrete class for Android AAsset IO." alt="le::io::AAssetReader" shape="rect" coords="0,56,125,80"/>
-<area href="classle_1_1io_1_1FileReader.html" title="Concrete class for filesystem IO." alt="le::io::FileReader" shape="rect" coords="135,56,260,80"/>
-<area href="classle_1_1io_1_1ZIPReader.html" title="Concrete class for .zip IO." alt="le::io::ZIPReader" shape="rect" coords="270,56,395,80"/>
+<area href="classle_1_1io_1_1FileReader.html" title="Concrete class for filesystem IO." alt="le::io::FileReader" shape="rect" coords="0,56,106,80"/>
+<area href="classle_1_1io_1_1ZIPReader.html" title="Concrete class for .zip IO." alt="le::io::ZIPReader" shape="rect" coords="116,56,222,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a97d1f9ea3d4315bce5192d84291f7ddc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a97d1f9ea3d4315bce5192d84291f7ddc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a> = <a class="el" href="classktl_1_1result.html">ktl::result</a>&lt; T &gt;</td></tr>
-<tr class="separator:a97d1f9ea3d4315bce5192d84291f7ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae29c1723fb80164a5f2579abe2f6e899"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#ae29c1723fb80164a5f2579abe2f6e899">Reader</a> () noexcept</td></tr>
@@ -100,26 +92,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf63751d0c46ad9cd7e353910403f77f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#abf63751d0c46ad9cd7e353910403f77f">checkPresences</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &gt; ids) const</td></tr>
 <tr class="memdesc:abf63751d0c46ad9cd7e353910403f77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <code>id</code>s are present to load, and log errors if not.  <a href="classle_1_1io_1_1Reader.html#abf63751d0c46ad9cd7e353910403f77f">More...</a><br /></td></tr>
 <tr class="separator:abf63751d0c46ad9cd7e353910403f77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaada53f61625f40493baeea0377428f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#afaada53f61625f40493baeea0377428f">string</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const</td></tr>
-<tr class="memdesc:afaada53f61625f40493baeea0377428f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain data as <code>std::string</code>  <a href="classle_1_1io_1_1Reader.html#afaada53f61625f40493baeea0377428f">More...</a><br /></td></tr>
-<tr class="separator:afaada53f61625f40493baeea0377428f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102cfe436167bf45288cd0363f697143"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a102cfe436167bf45288cd0363f697143">string</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const</td></tr>
+<tr class="memdesc:a102cfe436167bf45288cd0363f697143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain data as <code>std::string</code>  <a href="classle_1_1io_1_1Reader.html#a102cfe436167bf45288cd0363f697143">More...</a><br /></td></tr>
+<tr class="separator:a102cfe436167bf45288cd0363f697143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d23686736c64564f84b77d0522deea"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a53d23686736c64564f84b77d0522deea">medium</a> () const</td></tr>
 <tr class="memdesc:a53d23686736c64564f84b77d0522deea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the IO medium (of the concrete class)  <a href="classle_1_1io_1_1Reader.html#a53d23686736c64564f84b77d0522deea">More...</a><br /></td></tr>
 <tr class="separator:a53d23686736c64564f84b77d0522deea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8935b1c88890f963094056be45dba24d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a8935b1c88890f963094056be45dba24d">mount</a> ([[maybe_unused]] <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> path)</td></tr>
 <tr class="memdesc:a8935b1c88890f963094056be45dba24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a path on the IO medium Mounted paths are prefixed to <code>id</code>s being searched.  <a href="classle_1_1io_1_1Reader.html#a8935b1c88890f963094056be45dba24d">More...</a><br /></td></tr>
 <tr class="separator:a8935b1c88890f963094056be45dba24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef338351c605fe645ea98f0baf5b79dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt; <a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">bytearray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#aef338351c605fe645ea98f0baf5b79dd">bytes</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const =0</td></tr>
-<tr class="memdesc:aef338351c605fe645ea98f0baf5b79dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain data as <code>bytearray</code> (<code>std::vector&lt;std::byte&gt;</code>)  <a href="classle_1_1io_1_1Reader.html#aef338351c605fe645ea98f0baf5b79dd">More...</a><br /></td></tr>
-<tr class="separator:aef338351c605fe645ea98f0baf5b79dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16173ec70af410ff50dba0d5b8ae755b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt; std::stringstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a16173ec70af410ff50dba0d5b8ae755b">sstream</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const =0</td></tr>
-<tr class="memdesc:a16173ec70af410ff50dba0d5b8ae755b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain data as <code>std::stringstream</code>  <a href="classle_1_1io_1_1Reader.html#a16173ec70af410ff50dba0d5b8ae755b">More...</a><br /></td></tr>
-<tr class="separator:a16173ec70af410ff50dba0d5b8ae755b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06775ff9037ef071ab73b815bca4e5fe"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">bytearray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a06775ff9037ef071ab73b815bca4e5fe">bytes</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const =0</td></tr>
+<tr class="memdesc:a06775ff9037ef071ab73b815bca4e5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain data as <code>bytearray</code> (<code>std::vector&lt;std::byte&gt;</code>)  <a href="classle_1_1io_1_1Reader.html#a06775ff9037ef071ab73b815bca4e5fe">More...</a><br /></td></tr>
+<tr class="separator:a06775ff9037ef071ab73b815bca4e5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8920083bc682544630e13ea9f8a413"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; std::stringstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#a9c8920083bc682544630e13ea9f8a413">sstream</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const =0</td></tr>
+<tr class="memdesc:a9c8920083bc682544630e13ea9f8a413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain data as <code>std::stringstream</code>  <a href="classle_1_1io_1_1Reader.html#a9c8920083bc682544630e13ea9f8a413">More...</a><br /></td></tr>
+<tr class="separator:a9c8920083bc682544630e13ea9f8a413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aad4e5737214e8859098c67ef2441a1e7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt; <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#aad4e5737214e8859098c67ef2441a1e7">findPrefixed</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const =0</td></tr>
-<tr class="separator:aad4e5737214e8859098c67ef2441a1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace07aa0fbab6ddf1f7a6e8a70a6e3b54"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1io_1_1Reader.html#ace07aa0fbab6ddf1f7a6e8a70a6e3b54">findPrefixed</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;id) const =0</td></tr>
+<tr class="separator:ace07aa0fbab6ddf1f7a6e8a70a6e3b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -128,24 +120,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for reading data from various IO. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a97d1f9ea3d4315bce5192d84291f7ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97d1f9ea3d4315bce5192d84291f7ddc">&#9670;&nbsp;</a></span>Result</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">le::io::Reader::Result</a> =  <a class="el" href="classktl_1_1result.html">ktl::result</a>&lt;T&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae29c1723fb80164a5f2579abe2f6e899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae29c1723fb80164a5f2579abe2f6e899">&#9670;&nbsp;</a></span>Reader() <span class="overload">[1/3]</span></h2>
 
@@ -241,8 +216,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aef338351c605fe645ea98f0baf5b79dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef338351c605fe645ea98f0baf5b79dd">&#9670;&nbsp;</a></span>bytes()</h2>
+<a id="a06775ff9037ef071ab73b815bca4e5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06775ff9037ef071ab73b815bca4e5fe">&#9670;&nbsp;</a></span>bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +226,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt;<a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">bytearray</a>&gt; le::io::Reader::bytes </td>
+          <td class="memname">virtual std::optional&lt;<a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">bytearray</a>&gt; le::io::Reader::bytes </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -267,7 +242,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain data as <code>bytearray</code> (<code>std::vector&lt;std::byte&gt;</code>) </p>
 
-<p>Implemented in <a class="el" href="classle_1_1io_1_1AAssetReader.html#a421dbd26ec27791b287dd18835f5a9c2">le::io::AAssetReader</a>, <a class="el" href="classle_1_1io_1_1ZIPReader.html#ae48c2897ec823d9278e54dd2cc550ef8">le::io::ZIPReader</a>, and <a class="el" href="classle_1_1io_1_1FileReader.html#a563076abd029161bc220605e8b10b324">le::io::FileReader</a>.</p>
+<p>Implemented in <a class="el" href="classle_1_1io_1_1ZIPReader.html#a624a5ecf9e9bfd0ee96c3fea27748eac">le::io::ZIPReader</a>, and <a class="el" href="classle_1_1io_1_1FileReader.html#a75af1084807fb7e5b8058143b08a96df">le::io::FileReader</a>.</p>
 
 </div>
 </div>
@@ -311,8 +286,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aad4e5737214e8859098c67ef2441a1e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad4e5737214e8859098c67ef2441a1e7">&#9670;&nbsp;</a></span>findPrefixed()</h2>
+<a id="ace07aa0fbab6ddf1f7a6e8a70a6e3b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace07aa0fbab6ddf1f7a6e8a70a6e3b54">&#9670;&nbsp;</a></span>findPrefixed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +296,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt;<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a>&gt; le::io::Reader::findPrefixed </td>
+          <td class="memname">virtual std::optional&lt;<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a>&gt; le::io::Reader::findPrefixed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -448,8 +423,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a16173ec70af410ff50dba0d5b8ae755b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16173ec70af410ff50dba0d5b8ae755b">&#9670;&nbsp;</a></span>sstream()</h2>
+<a id="a9c8920083bc682544630e13ea9f8a413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8920083bc682544630e13ea9f8a413">&#9670;&nbsp;</a></span>sstream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,7 +433,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt;std::stringstream&gt; le::io::Reader::sstream </td>
+          <td class="memname">virtual std::optional&lt;std::stringstream&gt; le::io::Reader::sstream </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -474,18 +449,18 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain data as <code>std::stringstream</code> </p>
 
-<p>Implemented in <a class="el" href="classle_1_1io_1_1AAssetReader.html#ad36864ff34ce2342d03ad78f07cc8874">le::io::AAssetReader</a>, <a class="el" href="classle_1_1io_1_1ZIPReader.html#a23398550e2184c9955e8eac4dd9ce096">le::io::ZIPReader</a>, and <a class="el" href="classle_1_1io_1_1FileReader.html#a9336db38b6c9ed8059239e6fdcf973fe">le::io::FileReader</a>.</p>
+<p>Implemented in <a class="el" href="classle_1_1io_1_1ZIPReader.html#a674d8434d69f438d64c75e991a818287">le::io::ZIPReader</a>, and <a class="el" href="classle_1_1io_1_1FileReader.html#ae98e82b12f55943eb7b45c587233d112">le::io::FileReader</a>.</p>
 
 </div>
 </div>
-<a id="afaada53f61625f40493baeea0377428f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaada53f61625f40493baeea0377428f">&#9670;&nbsp;</a></span>string()</h2>
+<a id="a102cfe436167bf45288cd0363f697143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102cfe436167bf45288cd0363f697143">&#9670;&nbsp;</a></span>string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1io_1_1Reader.html#a97d1f9ea3d4315bce5192d84291f7ddc">Result</a>&lt;std::string&gt; le::io::Reader::string </td>
+          <td class="memname">std::optional&lt;std::string&gt; le::io::Reader::string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>

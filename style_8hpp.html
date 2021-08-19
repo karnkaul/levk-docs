@@ -47,17 +47,30 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">style.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;<a class="el" href="ensure_8hpp.html">core/ensure.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="hash_8hpp.html">core/hash.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="interact_8hpp.html">engine/gui/interact.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="material_8hpp.html">engine/render/material.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rgba_8hpp.html">graphics/render/rgba.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="text__factory_8hpp.html">graphics/text_factory.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1Style.html">le::gui::Style&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1TextStyle.html">le::gui::TextStyle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1BaseStyle.html">le::gui::BaseStyle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1WidgetStyle.html">le::gui::WidgetStyle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1gui_1_1Style.html">le::gui::Style</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1Styles.html">le::gui::Styles</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -67,19 +80,10 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacele_1_1gui"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html">le::gui</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a7eb472c8507b9d0e1b6d10e7a03845e5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5">le::gui::Status</a> { <br />
-&#160;&#160;<a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5a7b9cf82c13307a24d74c2fec226a83cc">le::gui::eIdle</a>
-, <a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5a49814cf348a68d7ed96988ce0171eb60">le::gui::eHover</a>
-, <a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5a20cb9d4ecd52623df4ac9fd8b23f9fb2">le::gui::ePress</a>
-, <a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5ad718269beac51e780e634533cc954209">le::gui::eHold</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5ad46d3b94b78c854273c61f3f14435b9f">le::gui::eRelease</a>
-, <a class="el" href="namespacele_1_1gui.html#a7eb472c8507b9d0e1b6d10e7a03845e5a98ce873df53900dd5454baba574ecb06">le::gui::eCOUNT_</a>
-<br />
- }</td></tr>
-<tr class="separator:a7eb472c8507b9d0e1b6d10e7a03845e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab8edeb704a593ad00ff77a4f96ab5ff5"><td class="memItemLeft" align="right" valign="top">constexpr InteractStyle&lt; Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html#ab8edeb704a593ad00ff77a4f96ab5ff5">le::gui::defaultQuadInteractStyle</a> () noexcept</td></tr>
+<tr class="separator:ab8edeb704a593ad00ff77a4f96ab5ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

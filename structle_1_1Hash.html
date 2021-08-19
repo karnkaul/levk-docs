@@ -46,6 +46,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structle_1_1Hash-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -53,7 +54,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper struct for storing the hash (via <code>std::hash</code>) for common types.  
+<p>Wrapper struct for storing the hash (via std::hash) for common types.  
  <a href="structle_1_1Hash.html#details">More...</a></p>
 
 <p><code>#include &lt;hash.hpp&gt;</code></p>
@@ -62,17 +63,26 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afd32f5375015f4407ebcfee08980e30a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#afd32f5375015f4407ebcfee08980e30a">Hash</a> () noexcept=default</td></tr>
 <tr class="separator:afd32f5375015f4407ebcfee08980e30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d558dae4bb11babb97f68a751ec992"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af1d558dae4bb11babb97f68a751ec992"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#af1d558dae4bb11babb97f68a751ec992">Hash</a> (T const &amp;t)</td></tr>
-<tr class="memdesc:af1d558dae4bb11babb97f68a751ec992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handled types: <code>char const*</code>, <code>std::string</code>, <a class="el" href="classle_1_1io_1_1Path.html" title="Lightweight std::filesystem::path alternative.">io::Path</a>.  <a href="structle_1_1Hash.html#af1d558dae4bb11babb97f68a751ec992">More...</a><br /></td></tr>
-<tr class="separator:af1d558dae4bb11babb97f68a751ec992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9a4b0fdaab0aba905fcc9667ea6c4d"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
-<tr class="memitem:aee9a4b0fdaab0aba905fcc9667ea6c4d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#aee9a4b0fdaab0aba905fcc9667ea6c4d">Hash</a> (char const (&amp;t)[N])</td></tr>
-<tr class="memdesc:aee9a4b0fdaab0aba905fcc9667ea6c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handled types: string literals.  <a href="structle_1_1Hash.html#aee9a4b0fdaab0aba905fcc9667ea6c4d">More...</a><br /></td></tr>
-<tr class="separator:aee9a4b0fdaab0aba905fcc9667ea6c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d94f215510b23ee01203f0598076e8"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#ac2d94f215510b23ee01203f0598076e8">operator==</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> const &amp;) const =default</td></tr>
+<tr class="memdesc:ac2d94f215510b23ee01203f0598076e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator.  <a href="structle_1_1Hash.html#ac2d94f215510b23ee01203f0598076e8">More...</a><br /></td></tr>
+<tr class="separator:ac2d94f215510b23ee01203f0598076e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f21fc9bf987e8f92cf4adf39141dfb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a79f21fc9bf987e8f92cf4adf39141dfb"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#a79f21fc9bf987e8f92cf4adf39141dfb">Hash</a> (T const &amp;t) noexcept</td></tr>
+<tr class="memdesc:a79f21fc9bf987e8f92cf4adf39141dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handled types: char const*, std::string, <a class="el" href="classle_1_1io_1_1Path.html" title="Lightweight std::filesystem::path alternative.">io::Path</a>.  <a href="structle_1_1Hash.html#a79f21fc9bf987e8f92cf4adf39141dfb">More...</a><br /></td></tr>
+<tr class="separator:a79f21fc9bf987e8f92cf4adf39141dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c12ac35fa8cae56ea6d3cbc2acb020"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a51c12ac35fa8cae56ea6d3cbc2acb020"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#a51c12ac35fa8cae56ea6d3cbc2acb020">Hash</a> (char const (&amp;str)[N]) noexcept</td></tr>
+<tr class="memdesc:a51c12ac35fa8cae56ea6d3cbc2acb020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handled types: string literals.  <a href="structle_1_1Hash.html#a51c12ac35fa8cae56ea6d3cbc2acb020">More...</a><br /></td></tr>
+<tr class="separator:a51c12ac35fa8cae56ea6d3cbc2acb020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df90ed7685838352080e78d47d8f11d"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#a5df90ed7685838352080e78d47d8f11d">operator std::size_t</a> () const noexcept</td></tr>
-<tr class="memdesc:a5df90ed7685838352080e78d47d8f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to <code>std::std::size_t</code>  <a href="structle_1_1Hash.html#a5df90ed7685838352080e78d47d8f11d">More...</a><br /></td></tr>
+<tr class="memdesc:a5df90ed7685838352080e78d47d8f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to std::std::size_t.  <a href="structle_1_1Hash.html#a5df90ed7685838352080e78d47d8f11d">More...</a><br /></td></tr>
 <tr class="separator:a5df90ed7685838352080e78d47d8f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a21338e7e6ab9299cf7a1cd31b413c9b9"><td class="memTemplParams" colspan="2">template&lt;hashable_t T&gt; </td></tr>
+<tr class="memitem:a21338e7e6ab9299cf7a1cd31b413c9b9"><td class="memTemplItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structle_1_1Hash.html#a21338e7e6ab9299cf7a1cd31b413c9b9">compute</a> (T const &amp;t) noexcept</td></tr>
+<tr class="separator:a21338e7e6ab9299cf7a1cd31b413c9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -80,7 +90,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a02b575740059543882f4342fcebdadf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrapper struct for storing the hash (via <code>std::hash</code>) for common types. </p>
+<div class="textblock"><p>Wrapper struct for storing the hash (via std::hash) for common types. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afd32f5375015f4407ebcfee08980e30a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd32f5375015f4407ebcfee08980e30a">&#9670;&nbsp;</a></span>Hash() <span class="overload">[1/3]</span></h2>
@@ -107,13 +117,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af1d558dae4bb11babb97f68a751ec992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1d558dae4bb11babb97f68a751ec992">&#9670;&nbsp;</a></span>Hash() <span class="overload">[2/3]</span></h2>
+<a id="a79f21fc9bf987e8f92cf4adf39141dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f21fc9bf987e8f92cf4adf39141dfb">&#9670;&nbsp;</a></span>Hash() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">le::Hash::Hash </td>
@@ -123,28 +136,41 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Handled types: <code>char const*</code>, <code>std::string</code>, <a class="el" href="classle_1_1io_1_1Path.html" title="Lightweight std::filesystem::path alternative.">io::Path</a>. </p>
+<p>Handled types: char const*, std::string, <a class="el" href="classle_1_1io_1_1Path.html" title="Lightweight std::filesystem::path alternative.">io::Path</a>. </p>
 
 </div>
 </div>
-<a id="aee9a4b0fdaab0aba905fcc9667ea6c4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee9a4b0fdaab0aba905fcc9667ea6c4d">&#9670;&nbsp;</a></span>Hash() <span class="overload">[3/3]</span></h2>
+<a id="a51c12ac35fa8cae56ea6d3cbc2acb020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c12ac35fa8cae56ea6d3cbc2acb020">&#9670;&nbsp;</a></span>Hash() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">le::Hash::Hash </td>
           <td>(</td>
           <td class="paramtype">char const (&amp;)&#160;</td>
-          <td class="paramname"><em>t</em>[N]</td><td>)</td>
+          <td class="paramname"><em>str</em>[N]</td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Handled types: string literals. </p>
@@ -152,6 +178,34 @@ template&lt;std::size_t N&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a21338e7e6ab9299cf7a1cd31b413c9b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21338e7e6ab9299cf7a1cd31b413c9b9">&#9670;&nbsp;</a></span>compute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;hashable_t T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t le::Hash::compute </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5df90ed7685838352080e78d47d8f11d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5df90ed7685838352080e78d47d8f11d">&#9670;&nbsp;</a></span>operator std::size_t()</h2>
 
@@ -175,7 +229,35 @@ template&lt;std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implicit conversion to <code>std::std::size_t</code> </p>
+<p>Implicit conversion to std::std::size_t. </p>
+
+</div>
+</div>
+<a id="ac2d94f215510b23ee01203f0598076e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d94f215510b23ee01203f0598076e8">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool le::Hash::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comparison operator. </p>
 
 </div>
 </div>

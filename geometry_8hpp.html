@@ -49,7 +49,8 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">geometry.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -71,6 +72,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Geom.html">le::graphics::Geom&lt; V &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Albedo.html">le::graphics::Albedo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1UVQuad.html">le::graphics::UVQuad</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1GeomInfo.html">le::graphics::GeomInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1IndexStitcher.html">le::graphics::IndexStitcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -94,19 +101,37 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacele_1_1graphics.html#ab075876a6b4b35f6a0b5a0e835ce6861ad317613b13930f68ea636e1bcffd5700">le::graphics::ePosColNormUV</a>
  }</td></tr>
 <tr class="separator:ab075876a6b4b35f6a0b5a0e835ce6861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360160e16de35aeeaeb9ecbe7bcf5747"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a360160e16de35aeeaeb9ecbe7bcf5747">le::graphics::Topology</a> { <a class="el" href="namespacele_1_1graphics.html#a360160e16de35aeeaeb9ecbe7bcf5747a7a9c6f0a40cca6450996ed801cfd1442">le::graphics::eLineList</a> = 1
+, <a class="el" href="namespacele_1_1graphics.html#a360160e16de35aeeaeb9ecbe7bcf5747a80654072020daeb5e86f3e24e409a7d3">le::graphics::eTriangleList</a> = 2
+ }</td></tr>
+<tr class="separator:a360160e16de35aeeaeb9ecbe7bcf5747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a39caa24fb2a61b324dc79fa316703c82"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a39caa24fb2a61b324dc79fa316703c82">le::graphics::makeQuad</a> (glm::vec2 size={1.0f, 1.0f}, glm::vec2 origin={0.0f, 0.0f})</td></tr>
-<tr class="separator:a39caa24fb2a61b324dc79fa316703c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636934f17344b1b9a68a7e470dce30ff"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a636934f17344b1b9a68a7e470dce30ff">le::graphics::makeCube</a> (f32 side=1.0f)</td></tr>
-<tr class="separator:a636934f17344b1b9a68a7e470dce30ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e1c88e5f960031fad826cc13e8aafc"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#af0e1c88e5f960031fad826cc13e8aafc">le::graphics::makeCircle</a> (f32 diameter=1.0f, u16 points=16)</td></tr>
-<tr class="separator:af0e1c88e5f960031fad826cc13e8aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b6794360180841599304aafd98b0010"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a7b6794360180841599304aafd98b0010">le::graphics::makeCone</a> (f32 diam=1.0f, f32 height=1.0f, u16 points=16)</td></tr>
-<tr class="separator:a7b6794360180841599304aafd98b0010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b971dbf2254b70c0af47b4a771afc5"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a18b971dbf2254b70c0af47b4a771afc5">le::graphics::makeCubedSphere</a> (f32 diameter, u8 quadsPerSide)</td></tr>
-<tr class="separator:a18b971dbf2254b70c0af47b4a771afc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca9a10f5ea769aef513f26187af3db6"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#abca9a10f5ea769aef513f26187af3db6">le::graphics::makeQuad</a> (glm::vec2 size={1.0f, 1.0f}, GeomInfo const &amp;info={}, UVQuad const &amp;uv={}, Topology topo=Topology::eTriangleList)</td></tr>
+<tr class="separator:abca9a10f5ea769aef513f26187af3db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc073a6abab6fe389fcd9457864c74cf"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#abc073a6abab6fe389fcd9457864c74cf">le::graphics::makeSector</a> (glm::vec2 radExtent, f32 diameter, u16 points, GeomInfo const &amp;info={})</td></tr>
+<tr class="separator:abc073a6abab6fe389fcd9457864c74cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850381225b35541e5c36ae7b9d81b67e"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a850381225b35541e5c36ae7b9d81b67e">le::graphics::makeCircle</a> (f32 diameter=1.0f, u16 points=32, GeomInfo const &amp;info={})</td></tr>
+<tr class="separator:a850381225b35541e5c36ae7b9d81b67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef310832b057427c7065bac4261fdd8"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a5ef310832b057427c7065bac4261fdd8">le::graphics::makeCone</a> (f32 diam=1.0f, f32 height=1.0f, u16 points=32, GeomInfo const &amp;info={})</td></tr>
+<tr class="separator:a5ef310832b057427c7065bac4261fdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531849c1099c83d7bb961454a7bd6c16"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a531849c1099c83d7bb961454a7bd6c16">le::graphics::makeCube</a> (f32 side=1.0f, GeomInfo const &amp;info={}, Topology topo=Topology::eTriangleList)</td></tr>
+<tr class="separator:a531849c1099c83d7bb961454a7bd6c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada185cd1462bebccc30280adcb5f9ff6"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#ada185cd1462bebccc30280adcb5f9ff6">le::graphics::makeCubedSphere</a> (f32 diameter=1.0f, u8 quadsPerSide=8, GeomInfo const &amp;info={})</td></tr>
+<tr class="separator:ada185cd1462bebccc30280adcb5f9ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d23831e4d77f5d06c3741731c77797"><td class="memItemLeft" align="right" valign="top">Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a69d23831e4d77f5d06c3741731c77797">le::graphics::makeRoundedQuad</a> (glm::vec2 size={1.0f, 1.0f}, f32 radius=0.25f, u16 points=32, GeomInfo const &amp;info={})</td></tr>
+<tr class="separator:a69d23831e4d77f5d06c3741731c77797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf2b2561c77cb2e1931dc3ead4b0164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#a6bf2b2561c77cb2e1931dc3ead4b0164">le::graphics::append</a> (Geometry &amp;out_dst, Geometry const &amp;in)</td></tr>
+<tr class="separator:a6bf2b2561c77cb2e1931dc3ead4b0164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23477f31271e0188e235e9eb7d727c4"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:ac23477f31271e0188e235e9eb7d727c4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#ac23477f31271e0188e235e9eb7d727c4">le::graphics::requires</a> ((sizeof...(T) &gt; 1) &amp;&amp;(std::is_same_v&lt; T, Geometry &gt; &amp;&amp;...)) void append(Geometry &amp;out_dst</td></tr>
+<tr class="separator:ac23477f31271e0188e235e9eb7d727c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abeeb0c9e45b9668102941523dd26a775"><td class="memItemLeft" align="right" valign="top">T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#abeeb0c9e45b9668102941523dd26a775">le::graphics::src</a> { (append(out_dst, src), ...)</td></tr>
+<tr class="separator:abeeb0c9e45b9668102941523dd26a775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
