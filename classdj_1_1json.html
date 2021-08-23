@@ -51,7 +51,7 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classdj_1_1json-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dj::json Class Reference</div>  </div>
+<div class="title">dj::json Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -85,6 +85,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5933d0d96db1b88dfdf151dc3f46748"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#ad5933d0d96db1b88dfdf151dc3f46748">json</a> ()=default</td></tr>
 <tr class="memdesc:ad5933d0d96db1b88dfdf151dc3f46748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default construct.  <a href="classdj_1_1json.html#ad5933d0d96db1b88dfdf151dc3f46748">More...</a><br /></td></tr>
 <tr class="separator:ad5933d0d96db1b88dfdf151dc3f46748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3994143485c8db51974452e05bef2e7a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;is_settable&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a3994143485c8db51974452e05bef2e7a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a3994143485c8db51974452e05bef2e7a">json</a> (T t)</td></tr>
+<tr class="memdesc:a3994143485c8db51974452e05bef2e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and set t.  <a href="classdj_1_1json.html#a3994143485c8db51974452e05bef2e7a">More...</a><br /></td></tr>
+<tr class="separator:a3994143485c8db51974452e05bef2e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57573e8308e62372035b65fd06fee869"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a57573e8308e62372035b65fd06fee869">json</a> (<a class="el" href="classdj_1_1json.html#a032d154c74e52f7d849ab870ed25802d">storage_t</a> <a class="el" href="classdj_1_1json.html#ab8577e5d4a10931044b84bb9c9dc8b56">value</a>) noexcept</td></tr>
 <tr class="memdesc:a57573e8308e62372035b65fd06fee869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct using an existing value.  <a href="classdj_1_1json.html#a57573e8308e62372035b65fd06fee869">More...</a><br /></td></tr>
 <tr class="separator:a57573e8308e62372035b65fd06fee869"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad87dab6cde20b8cecd037007386cef86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#ad87dab6cde20b8cecd037007386cef86">to_string</a> (<a class="el" href="structdj_1_1serial__opts__t.html">serial_opts_t</a> const &amp;opts=<a class="el" href="classdj_1_1json.html#ac3cab916558c5ff88ab90288b19756c0">s_serial_opts</a>) const</td></tr>
 <tr class="memdesc:ad87dab6cde20b8cecd037007386cef86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain value as a std::string.  <a href="classdj_1_1json.html#ad87dab6cde20b8cecd037007386cef86">More...</a><br /></td></tr>
 <tr class="separator:ad87dab6cde20b8cecd037007386cef86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74737f064816da4e3504f0d5bfd48dfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a74737f064816da4e3504f0d5bfd48dfb">save</a> (std::string const &amp;path) const</td></tr>
-<tr class="memdesc:a74737f064816da4e3504f0d5bfd48dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output value to file at path.  <a href="classdj_1_1json.html#a74737f064816da4e3504f0d5bfd48dfb">More...</a><br /></td></tr>
-<tr class="separator:a74737f064816da4e3504f0d5bfd48dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59bbda0cbaeb6c831c0829e6a4e0f3e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a59bbda0cbaeb6c831c0829e6a4e0f3e3">save</a> (std::string const &amp;path, <a class="el" href="structdj_1_1serial__opts__t.html">serial_opts_t</a> const &amp;opts=<a class="el" href="classdj_1_1json.html#ac3cab916558c5ff88ab90288b19756c0">s_serial_opts</a>) const</td></tr>
+<tr class="memdesc:a59bbda0cbaeb6c831c0829e6a4e0f3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output value to file at path.  <a href="classdj_1_1json.html#a59bbda0cbaeb6c831c0829e6a4e0f3e3">More...</a><br /></td></tr>
+<tr class="separator:a59bbda0cbaeb6c831c0829e6a4e0f3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ddf142b8676b61908868d454175f32f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a2ddf142b8676b61908868d454175f32f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a2ddf142b8676b61908868d454175f32f">as</a> () const</td></tr>
 <tr class="memdesc:a2ddf142b8676b61908868d454175f32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain value as C++ type.  <a href="classdj_1_1json.html#a2ddf142b8676b61908868d454175f32f">More...</a><br /></td></tr>
@@ -145,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1257dcb6e411d9490f0399dbf641b13"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#ac1257dcb6e411d9490f0399dbf641b13">get_as</a> (std::string const &amp;key, T const &amp;fallback={}) const</td></tr>
 <tr class="memdesc:ac1257dcb6e411d9490f0399dbf641b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain value as T of object type corresponding to key, else fallback.  <a href="classdj_1_1json.html#ac1257dcb6e411d9490f0399dbf641b13">More...</a><br /></td></tr>
 <tr class="separator:ac1257dcb6e411d9490f0399dbf641b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7166b8127773ec7cc2dcd2ff09de6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdj_1_1json.html">json</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#abc7166b8127773ec7cc2dcd2ff09de6e">get</a> (std::string const &amp;key) const noexcept</td></tr>
+<tr class="memdesc:abc7166b8127773ec7cc2dcd2ff09de6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain value associated with key, else null instance.  <a href="classdj_1_1json.html#abc7166b8127773ec7cc2dcd2ff09de6e">More...</a><br /></td></tr>
+<tr class="separator:abc7166b8127773ec7cc2dcd2ff09de6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40f4aff87f026373af15c61198c3d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdj_1_1json.html">json</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#ad40f4aff87f026373af15c61198c3d24">operator[]</a> (std::string const &amp;key) const noexcept(false)</td></tr>
 <tr class="memdesc:ad40f4aff87f026373af15c61198c3d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain value of object type corresponding to key Warning: throws <a class="el" href="structdj_1_1not__found__exception.html" title="Exception type thrown on operator[] when key/index doesn&#39;t exist.">not_found_exception</a> if not present.  <a href="classdj_1_1json.html#ad40f4aff87f026373af15c61198c3d24">More...</a><br /></td></tr>
 <tr class="separator:ad40f4aff87f026373af15c61198c3d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +180,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4de084cac19ca745b78a366d902ef836"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4de084cac19ca745b78a366d902ef836"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a4de084cac19ca745b78a366d902ef836">is_settable</a> = std::is_arithmetic_v&lt;T&gt; || std::is_convertible_v&lt;T, std::string&gt;</td></tr>
+<tr class="separator:a4de084cac19ca745b78a366d902ef836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10eb58d8c07bf31ef37f47e9ef7df7a8"><td class="memItemLeft" align="right" valign="top">static constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#a10eb58d8c07bf31ef37f47e9ef7df7a8">error_type_names</a> [] = {&quot;syntax&quot;, &quot;parse&quot;, &quot;io&quot;}</td></tr>
 <tr class="separator:a10eb58d8c07bf31ef37f47e9ef7df7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3cab916558c5ff88ab90288b19756c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdj_1_1serial__opts__t.html">serial_opts_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdj_1_1json.html#ac3cab916558c5ff88ab90288b19756c0">s_serial_opts</a></td></tr>
@@ -228,7 +238,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad5933d0d96db1b88dfdf151dc3f46748"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5933d0d96db1b88dfdf151dc3f46748">&#9670;&nbsp;</a></span>json() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5933d0d96db1b88dfdf151dc3f46748">&#9670;&nbsp;</a></span>json() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,8 +264,38 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3994143485c8db51974452e05bef2e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3994143485c8db51974452e05bef2e7a">&#9670;&nbsp;</a></span>json() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dj::json::json </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct and set t. </p>
+
+</div>
+</div>
 <a id="a57573e8308e62372035b65fd06fee869"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57573e8308e62372035b65fd06fee869">&#9670;&nbsp;</a></span>json() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a57573e8308e62372035b65fd06fee869">&#9670;&nbsp;</a></span>json() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,6 +499,34 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Obtain value as T of object type corresponding to key, if present. </p>
+
+</div>
+</div>
+<a id="abc7166b8127773ec7cc2dcd2ff09de6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7166b8127773ec7cc2dcd2ff09de6e">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdj_1_1json.html">json</a> const&amp; dj::json::get </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain value associated with key, else null instance. </p>
 
 </div>
 </div>
@@ -790,8 +858,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a74737f064816da4e3504f0d5bfd48dfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74737f064816da4e3504f0d5bfd48dfb">&#9670;&nbsp;</a></span>save()</h2>
+<a id="a59bbda0cbaeb6c831c0829e6a4e0f3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59bbda0cbaeb6c831c0829e6a4e0f3e3">&#9670;&nbsp;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,8 +868,18 @@ template&lt;typename T &gt; </div>
           <td class="memname">bool dj::json::save </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdj_1_1serial__opts__t.html">serial_opts_t</a> const &amp;&#160;</td>
+          <td class="paramname"><em>opts</em> = <code><a class="el" href="classdj_1_1json.html#ac3cab916558c5ff88ab90288b19756c0">s_serial_opts</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -998,6 +1076,30 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">constexpr std::string_view dj::json::error_type_names[] = {&quot;syntax&quot;, &quot;parse&quot;, &quot;io&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4de084cac19ca745b78a366d902ef836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de084cac19ca745b78a366d902ef836">&#9670;&nbsp;</a></span>is_settable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool dj::json::is_settable = std::is_arithmetic_v&lt;T&gt; || std::is_convertible_v&lt;T, std::string&gt;</td>
         </tr>
       </table>
   </td>

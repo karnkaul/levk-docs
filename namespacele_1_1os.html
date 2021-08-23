@@ -105,13 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe">debugBreak</a> ()</td></tr>
 <tr class="memdesc:a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise a breakpoint signal.  <a href="namespacele_1_1os.html#a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe">More...</a><br /></td></tr>
 <tr class="separator:a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a1acd051f29dc28241f3dda61ca4fa5f2">sysCall</a> (std::string_view command)</td></tr>
-<tr class="memdesc:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a system call.  <a href="namespacele_1_1os.html#a1acd051f29dc28241f3dda61ca4fa5f2">More...</a><br /></td></tr>
-<tr class="separator:a1acd051f29dc28241f3dda61ca4fa5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplParams" colspan="2">template&lt;typename Arg1 , typename... Args&gt; </td></tr>
-<tr class="memitem:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">sysCall</a> (std::string_view expr, Arg1 &amp;&amp;arg1, <a class="el" href="namespacele_1_1os.html#a5808990d07daa91e8212dcedf64a491c">Args</a> &amp;&amp;... args)</td></tr>
-<tr class="memdesc:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a system call.  <a href="namespacele_1_1os.html#aa7c3b1ec0464c357b7ee9ad3651546ad">More...</a><br /></td></tr>
-<tr class="separator:aa7c3b1ec0464c357b7ee9ad3651546ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b78e3daeabfb8f12ff25f049a8c47f"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1os.html#a69b78e3daeabfb8f12ff25f049a8c47f">cpuID</a> ()</td></tr>
+<tr class="memdesc:a69b78e3daeabfb8f12ff25f049a8c47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the CPU ID (if possible)  <a href="namespacele_1_1os.html#a69b78e3daeabfb8f12ff25f049a8c47f">More...</a><br /></td></tr>
+<tr class="separator:a69b78e3daeabfb8f12ff25f049a8c47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a5808990d07daa91e8212dcedf64a491c"></a>
@@ -242,6 +238,25 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a69b78e3daeabfb8f12ff25f049a8c47f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b78e3daeabfb8f12ff25f049a8c47f">&#9670;&nbsp;</a></span>cpuID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view le::os::cpuID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain the CPU ID (if possible) </p>
+
+</div>
+</div>
 <a id="a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f8c6d9b4de0e00e1fdd5b8b0b8cdefe">&#9670;&nbsp;</a></span>debugBreak()</h2>
 
@@ -324,64 +339,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialise environment. </p>
-
-</div>
-</div>
-<a id="a1acd051f29dc28241f3dda61ca4fa5f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acd051f29dc28241f3dda61ca4fa5f2">&#9670;&nbsp;</a></span>sysCall() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::os::sysCall </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Perform a system call. </p>
-
-</div>
-</div>
-<a id="aa7c3b1ec0464c357b7ee9ad3651546ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7c3b1ec0464c357b7ee9ad3651546ad">&#9670;&nbsp;</a></span>sysCall() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Arg1 , typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::os::sysCall </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>expr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Arg1 &amp;&amp;&#160;</td>
-          <td class="paramname"><em>arg1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1os.html#a5808990d07daa91e8212dcedf64a491c">Args</a> &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Perform a system call. </p>
 
 </div>
 </div>

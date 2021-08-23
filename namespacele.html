@@ -223,6 +223,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1LibLogger.html">LibLogger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1nvec2.html">nvec2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">glm::vec2 wrapper that normalizes on constructiom  <a href="structle_1_1nvec2.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1nvec3.html">nvec3</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">glm::vec3 wrapper that normalizes on constructiom  <a href="structle_1_1nvec3.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Service.html">Service</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRTP base class for RAII service types note: creating multiple instances of a service type is UB.  <a href="classle_1_1Service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,6 +307,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a7a8c13a502727ed2560ac9e037f42b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4b6b35bf1146e8039b26cb0cef0c3d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">bytearray</a> = std::vector&lt; std::byte &gt;</td></tr>
 <tr class="separator:ab4b6b35bf1146e8039b26cb0cef0c3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed2332e3c3080e47f81fcc1cb3ff4b0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#afed2332e3c3080e47f81fcc1cb3ff4b0">SysTime</a> = stdch::system_clock::time_point</td></tr>
+<tr class="memdesc:afed2332e3c3080e47f81fcc1cb3ff4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a time point on the system clock.  <a href="namespacele.html#afed2332e3c3080e47f81fcc1cb3ff4b0">More...</a><br /></td></tr>
+<tr class="separator:afed2332e3c3080e47f81fcc1cb3ff4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05e65d34b625e4188f4f7c1f023a02f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">Time_s</a> = <a class="el" href="namespacele_1_1time.html#a1f25ad2d724ea7d526e27ec08e72d321">time::Duration</a>&lt; <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>, std::ratio&lt; 1 &gt; &gt;</td></tr>
 <tr class="memdesc:a05e65d34b625e4188f4f7c1f023a02f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for f32 seconds.  <a href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">More...</a><br /></td></tr>
 <tr class="separator:a05e65d34b625e4188f4f7c1f023a02f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,12 +326,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacele.html#ab9b7b749127ad785fc30832257745bd1aa355f2c78eab3acbcc5464c9be3b9dc8">eHeap</a>
  }</td></tr>
 <tr class="separator:ab9b7b749127ad785fc30832257745bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af099207c3bd813887f5fbd052834f350"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350">FutureState</a> : s8 { <a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350ac755153be5e641cf4748e990da4eaf3b">eInvalid</a>
-, <a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350aaf15e622936042b36ffe0258ae7cc271">eDeferred</a>
-, <a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350ae25389fdbd87cc583cb309cf7f349634">eReady</a>
-, <a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350a1be2d08eb04888bcbe7642b5d9d892eb">eTimeout</a>
- }</td></tr>
-<tr class="separator:af099207c3bd813887f5fbd052834f350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -365,9 +368,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad09c6f0f9aa5ac07fc50f155a7c3a304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37b144850c844128edb3bd8bc537c54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#ac37b144850c844128edb3bd8bc537c54">operator!=</a> (<a class="el" href="structle_1_1Colour.html">Colour</a> lhs, <a class="el" href="structle_1_1Colour.html">Colour</a> rhs) noexcept</td></tr>
 <tr class="separator:ac37b144850c844128edb3bd8bc537c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aa448893d51cbb5f1fab6861fdb4bcc81">ensure</a> (bool pred, std::string_view msg, char const *fl=__builtin_FILE(), char const *fn=__builtin_FUNCTION(), int ln=__builtin_LINE())</td></tr>
-<tr class="memdesc:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a break (if debugger present) / assert if predicate is false.  <a href="namespacele.html#aa448893d51cbb5f1fab6861fdb4bcc81">More...</a><br /></td></tr>
-<tr class="separator:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c619aa6ebd127b8f00bce54135c7b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a11c619aa6ebd127b8f00bce54135c7b8">ensure</a> (bool pred, std::string_view msg={}, char const *fl=__builtin_FILE(), char const *fn=__builtin_FUNCTION(), int ln=__builtin_LINE())</td></tr>
+<tr class="memdesc:a11c619aa6ebd127b8f00bce54135c7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespacele_1_1utils.html#a9adb20015ac1890b83fbbbf58c29909f" title="Log msg as an error, break if debugging, and throw Error.">utils::error</a> if pred is false.  <a href="namespacele.html#a11c619aa6ebd127b8f00bce54135c7b8">More...</a><br /></td></tr>
+<tr class="separator:a11c619aa6ebd127b8f00bce54135c7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731fa78a10a24abce2cf485601034d56"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a731fa78a10a24abce2cf485601034d56">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="structle_1_1Fixed.html">Fixed</a> rhs)</td></tr>
 <tr class="separator:a731fa78a10a24abce2cf485601034d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a777f0e8bd26e13a054c9fa3b12a91d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Fixed.html">Fixed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a777f0e8bd26e13a054c9fa3b12a91d5c">operator+</a> (<a class="el" href="structle_1_1Fixed.html">Fixed</a> lhs, <a class="el" href="structle_1_1Fixed.html">Fixed</a> rhs)</td></tr>
@@ -413,6 +416,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a9cc28a92b22f12aec041ef9c0c3e6026"><td class="memTemplParams" colspan="2">template&lt;typename Pred , typename... Args&gt; </td></tr>
 <tr class="memitem:a9cc28a92b22f12aec041ef9c0c3e6026"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a9cc28a92b22f12aec041ef9c0c3e6026">logE_if</a> (Pred pred, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a9cc28a92b22f12aec041ef9c0c3e6026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348d66507f37bb0966b2a97a16eed828"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a348d66507f37bb0966b2a97a16eed828">lengthSq</a> (glm::vec2 vec) noexcept</td></tr>
+<tr class="separator:a348d66507f37bb0966b2a97a16eed828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a1be6082ce8e034eb8b142ad9f215b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a39a1be6082ce8e034eb8b142ad9f215b">lengthSq</a> (glm::vec3 const &amp;vec) noexcept</td></tr>
+<tr class="separator:a39a1be6082ce8e034eb8b142ad9f215b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5924da5b2e796d82ce1aeb367308d1ca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5924da5b2e796d82ce1aeb367308d1ca"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a5924da5b2e796d82ce1aeb367308d1ca">isNormalized</a> (T const &amp;vec, <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> epsilon=0.001f) noexcept</td></tr>
+<tr class="separator:a5924da5b2e796d82ce1aeb367308d1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada96c15aab553049e679f12ce739e8fc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ada96c15aab553049e679f12ce739e8fc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#ada96c15aab553049e679f12ce739e8fc">normalized</a> (T const &amp;t) noexcept</td></tr>
+<tr class="memdesc:ada96c15aab553049e679f12ce739e8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain normalized vector.  <a href="namespacele.html#ada96c15aab553049e679f12ce739e8fc">More...</a><br /></td></tr>
+<tr class="separator:ada96c15aab553049e679f12ce739e8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab9df1cff1b0d9a91ab65a40fa5a31d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7ab9df1cff1b0d9a91ab65a40fa5a31d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a7ab9df1cff1b0d9a91ab65a40fa5a31d">requires</a> (!std::is_reference_v&lt; T &gt;) class Ref</td></tr>
 <tr class="memdesc:a7ab9df1cff1b0d9a91ab65a40fa5a31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ultra-light reference wrapper.  <a href="namespacele.html#a7ab9df1cff1b0d9a91ab65a40fa5a31d">More...</a><br /></td></tr>
@@ -437,8 +451,6 @@ Variables</h2></td></tr>
 <tr class="memitem:aa3062dfb69d1120c0ae60ac3eb8cdbd3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa3062dfb69d1120c0ae60ac3eb8cdbd3"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#aa3062dfb69d1120c0ae60ac3eb8cdbd3">is_atomic_counter_v</a> = T::is_atomic</td></tr>
 <tr class="separator:aa3062dfb69d1120c0ae60ac3eb8cdbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd308f253d0fa957a4f19b1b6dbc415f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#abd308f253d0fa957a4f19b1b6dbc415f">levk_ensures</a> = false</td></tr>
-<tr class="separator:abd308f253d0fa957a4f19b1b6dbc415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc8458492b7f5f8ccccc9022367dbdc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aafc8458492b7f5f8ccccc9022367dbdc"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#aafc8458492b7f5f8ccccc9022367dbdc">hashable_t</a></td></tr>
 <tr class="separator:aafc8458492b7f5f8ccccc9022367dbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,6 +622,22 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="afed2332e3c3080e47f81fcc1cb3ff4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed2332e3c3080e47f81fcc1cb3ff4b0">&#9670;&nbsp;</a></span>SysTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacele.html#afed2332e3c3080e47f81fcc1cb3ff4b0">le::SysTime</a> = typedef stdch::system_clock::time_point</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typedef for a time point on the system clock. </p>
+
+</div>
+</div>
 <a id="a1be6bd550d2d4d643195576cc0e9b6e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1be6bd550d2d4d643195576cc0e9b6e9">&#9670;&nbsp;</a></span>Time_ms</h2>
 
@@ -715,34 +743,6 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="af099207c3bd813887f5fbd052834f350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af099207c3bd813887f5fbd052834f350">&#9670;&nbsp;</a></span>FutureState</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacele.html#af099207c3bd813887f5fbd052834f350">le::FutureState</a> : <a class="el" href="namespacele.html#af9e0cf7215603bba4aa12fe79e815d5f">s8</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af099207c3bd813887f5fbd052834f350ac755153be5e641cf4748e990da4eaf3b"></a>eInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af099207c3bd813887f5fbd052834f350aaf15e622936042b36ffe0258ae7cc271"></a>eDeferred&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af099207c3bd813887f5fbd052834f350ae25389fdbd87cc583cb309cf7f349634"></a>eReady&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af099207c3bd813887f5fbd052834f350a1be2d08eb04888bcbe7642b5d9d892eb"></a>eTimeout&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="ab9b7b749127ad785fc30832257745bd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9b7b749127ad785fc30832257745bd1">&#9670;&nbsp;</a></span>SingletonStorage</h2>
 
@@ -800,8 +800,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="aa448893d51cbb5f1fab6861fdb4bcc81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa448893d51cbb5f1fab6861fdb4bcc81">&#9670;&nbsp;</a></span>ensure()</h2>
+<a id="a11c619aa6ebd127b8f00bce54135c7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c619aa6ebd127b8f00bce54135c7b8">&#9670;&nbsp;</a></span>ensure()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -816,7 +816,7 @@ template&lt;typename T , std::size_t N&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>msg</em>, </td>
+          <td class="paramname"><em>msg</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -844,7 +844,97 @@ template&lt;typename T , std::size_t N&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Trigger a break (if debugger present) / assert if predicate is false. </p>
+<p>Call <a class="el" href="namespacele_1_1utils.html#a9adb20015ac1890b83fbbbf58c29909f" title="Log msg as an error, break if debugging, and throw Error.">utils::error</a> if pred is false. </p>
+
+</div>
+</div>
+<a id="a5924da5b2e796d82ce1aeb367308d1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5924da5b2e796d82ce1aeb367308d1ca">&#9670;&nbsp;</a></span>isNormalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool le::isNormalized </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code>0.001f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a348d66507f37bb0966b2a97a16eed828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348d66507f37bb0966b2a97a16eed828">&#9670;&nbsp;</a></span>lengthSq() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::lengthSq </td>
+          <td>(</td>
+          <td class="paramtype">glm::vec2&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39a1be6082ce8e034eb8b142ad9f215b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a1be6082ce8e034eb8b142ad9f215b">&#9670;&nbsp;</a></span>lengthSq() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::lengthSq </td>
+          <td>(</td>
+          <td class="paramtype">glm::vec3 const &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1151,6 +1241,36 @@ template&lt;typename Pred , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada96c15aab553049e679f12ce739e8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada96c15aab553049e679f12ce739e8fc">&#9670;&nbsp;</a></span>normalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T le::normalized </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain normalized vector. </p>
 
 </div>
 </div>
@@ -2247,28 +2367,6 @@ template&lt;typename T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd308f253d0fa957a4f19b1b6dbc415f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd308f253d0fa957a4f19b1b6dbc415f">&#9670;&nbsp;</a></span>levk_ensures</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool le::levk_ensures = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

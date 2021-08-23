@@ -46,8 +46,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ensure.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -61,14 +60,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aa448893d51cbb5f1fab6861fdb4bcc81">le::ensure</a> (bool pred, std::string_view msg, char const *fl=__builtin_FILE(), char const *fn=__builtin_FUNCTION(), int ln=__builtin_LINE())</td></tr>
-<tr class="memdesc:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a break (if debugger present) / assert if predicate is false.  <a href="namespacele.html#aa448893d51cbb5f1fab6861fdb4bcc81">More...</a><br /></td></tr>
-<tr class="separator:aa448893d51cbb5f1fab6861fdb4bcc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:abd308f253d0fa957a4f19b1b6dbc415f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#abd308f253d0fa957a4f19b1b6dbc415f">le::levk_ensures</a> = false</td></tr>
-<tr class="separator:abd308f253d0fa957a4f19b1b6dbc415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c619aa6ebd127b8f00bce54135c7b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a11c619aa6ebd127b8f00bce54135c7b8">le::ensure</a> (bool pred, std::string_view msg={}, char const *fl=__builtin_FILE(), char const *fn=__builtin_FUNCTION(), int ln=__builtin_LINE())</td></tr>
+<tr class="memdesc:a11c619aa6ebd127b8f00bce54135c7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespacele_1_1utils.html#a9adb20015ac1890b83fbbbf58c29909f" title="Log msg as an error, break if debugging, and throw Error.">utils::error</a> if pred is false.  <a href="namespacele.html#a11c619aa6ebd127b8f00bce54135c7b8">More...</a><br /></td></tr>
+<tr class="separator:a11c619aa6ebd127b8f00bce54135c7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

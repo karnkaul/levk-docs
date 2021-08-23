@@ -71,15 +71,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:afed2332e3c3080e47f81fcc1cb3ff4b0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#afed2332e3c3080e47f81fcc1cb3ff4b0">le::SysTime</a> = stdch::system_clock::time_point</td></tr>
+<tr class="memdesc:afed2332e3c3080e47f81fcc1cb3ff4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a time point on the system clock.  <a href="namespacele.html#afed2332e3c3080e47f81fcc1cb3ff4b0">More...</a><br /></td></tr>
+<tr class="separator:afed2332e3c3080e47f81fcc1cb3ff4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a706c934a6a576201c9a38a0a5bb5f5f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a706c934a6a576201c9a38a0a5bb5f5f5">le::time::Clock</a> = stdch::steady_clock</td></tr>
 <tr class="memdesc:a706c934a6a576201c9a38a0a5bb5f5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for clock used for <a class="el" href="namespacele_1_1time.html#aae8bd4e10d494180e464fc176acb3486" title="Obtain the current time Point.">now()</a>  <a href="namespacele_1_1time.html#a706c934a6a576201c9a38a0a5bb5f5f5">More...</a><br /></td></tr>
 <tr class="separator:a706c934a6a576201c9a38a0a5bb5f5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d863df615210d1fc8707f9b452c637"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a49d863df615210d1fc8707f9b452c637">le::time::Point</a> = Clock::time_point</td></tr>
 <tr class="memdesc:a49d863df615210d1fc8707f9b452c637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a time point on Clock.  <a href="namespacele_1_1time.html#a49d863df615210d1fc8707f9b452c637">More...</a><br /></td></tr>
 <tr class="separator:a49d863df615210d1fc8707f9b452c637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd9212e5b26522d0259d22d21d37bd61"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#acd9212e5b26522d0259d22d21d37bd61">le::time::SysTime</a> = stdch::system_clock::time_point</td></tr>
-<tr class="memdesc:acd9212e5b26522d0259d22d21d37bd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a time point on the system clock.  <a href="namespacele_1_1time.html#acd9212e5b26522d0259d22d21d37bd61">More...</a><br /></td></tr>
-<tr class="separator:acd9212e5b26522d0259d22d21d37bd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f25ad2d724ea7d526e27ec08e72d321"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period &gt; </td></tr>
 <tr class="memitem:a1f25ad2d724ea7d526e27ec08e72d321"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a1f25ad2d724ea7d526e27ec08e72d321">le::time::Duration</a> = stdch::duration&lt; Rep, Period &gt;</td></tr>
 <tr class="memdesc:a1f25ad2d724ea7d526e27ec08e72d321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a duration of time.  <a href="namespacele_1_1time.html#a1f25ad2d724ea7d526e27ec08e72d321">More...</a><br /></td></tr>
@@ -99,9 +99,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aae8bd4e10d494180e464fc176acb3486"><td class="memItemLeft" align="right" valign="top">Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#aae8bd4e10d494180e464fc176acb3486">le::time::now</a> () noexcept</td></tr>
 <tr class="memdesc:aae8bd4e10d494180e464fc176acb3486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the current time Point.  <a href="namespacele_1_1time.html#aae8bd4e10d494180e464fc176acb3486">More...</a><br /></td></tr>
 <tr class="separator:aae8bd4e10d494180e464fc176acb3486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c082aa688ae6be70c53539c7f06dd48"><td class="memItemLeft" align="right" valign="top">SysTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a7c082aa688ae6be70c53539c7f06dd48">le::time::sysTime</a> () noexcept</td></tr>
-<tr class="memdesc:a7c082aa688ae6be70c53539c7f06dd48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the current system time.  <a href="namespacele_1_1time.html#a7c082aa688ae6be70c53539c7f06dd48">More...</a><br /></td></tr>
-<tr class="separator:a7c082aa688ae6be70c53539c7f06dd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994ae2b8b57230e132e815fbcba83943"><td class="memItemLeft" align="right" valign="top">SysTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a994ae2b8b57230e132e815fbcba83943">le::time::sysTime</a> () noexcept</td></tr>
+<tr class="memdesc:a994ae2b8b57230e132e815fbcba83943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the current system time.  <a href="namespacele_1_1time.html#a994ae2b8b57230e132e815fbcba83943">More...</a><br /></td></tr>
+<tr class="separator:a994ae2b8b57230e132e815fbcba83943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa203047244548c8c991310f2fb8f9a56"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#aa203047244548c8c991310f2fb8f9a56">le::time::format</a> (SysTime const &amp;tm=sysTime(), std::string_view fmt=&quot;{:%Y-%m-%d}&quot;)</td></tr>
 <tr class="memdesc:aa203047244548c8c991310f2fb8f9a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialise point as formatted string.  <a href="namespacele_1_1time.html#aa203047244548c8c991310f2fb8f9a56">More...</a><br /></td></tr>
 <tr class="separator:aa203047244548c8c991310f2fb8f9a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +117,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a73f81e4cc89f10a98f04be5317864f53"><td class="memTemplItemLeft" align="right" valign="top">constexpr Ret&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a73f81e4cc89f10a98f04be5317864f53">le::time::diffExchg</a> (Point &amp;out_from, Point const &amp;to=now()) noexcept</td></tr>
 <tr class="memdesc:a73f81e4cc89f10a98f04be5317864f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the time difference and set out_from = to.  <a href="namespacele_1_1time.html#a73f81e4cc89f10a98f04be5317864f53">More...</a><br /></td></tr>
 <tr class="separator:a73f81e4cc89f10a98f04be5317864f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a570e8a4631be870eb1e9cc79e36e1764"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a570e8a4631be870eb1e9cc79e36e1764">le::time::format</a> (Time_s duration)</td></tr>
-<tr class="memdesc:a570e8a4631be870eb1e9cc79e36e1764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format duration as d:HH:MM:SS[:ms].  <a href="namespacele_1_1time.html#a570e8a4631be870eb1e9cc79e36e1764">More...</a><br /></td></tr>
-<tr class="separator:a570e8a4631be870eb1e9cc79e36e1764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08adbc44d821691c90592e74e0701f1b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1time.html#a08adbc44d821691c90592e74e0701f1b">le::time::format</a> (Time_s duration, std::string_view fmt={})</td></tr>
+<tr class="memdesc:a08adbc44d821691c90592e74e0701f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format duration using dynamic / custom spec.  <a href="namespacele_1_1time.html#a08adbc44d821691c90592e74e0701f1b">More...</a><br /></td></tr>
+<tr class="separator:a08adbc44d821691c90592e74e0701f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
