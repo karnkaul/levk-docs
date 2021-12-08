@@ -58,7 +58,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;resources.hpp&gt;</code></p>
+<p><code>#include &lt;memory.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for le::graphics::Memory:</div>
 <div class="dyncontent">
@@ -77,6 +77,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:ac31c799d73459a5ecf9308e3d5da1627"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627">Type</a> { <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ad6f224d8cfcc09952d4e9ba2211186a8">eBuffer</a>
+, <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ac8cb98c5bfd36f031e9e987c48553cca">eImage</a>
+ }</td></tr>
+<tr class="separator:ac31c799d73459a5ecf9308e3d5da1627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ed075208791ff2dcaa4da80617f393"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac0ed075208791ff2dcaa4da80617f393"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ac0ed075208791ff2dcaa4da80617f393">vAP</a> = vk::ArrayProxy&lt; T const  &gt; const  &amp;</td></tr>
 <tr class="separator:ac0ed075208791ff2dcaa4da80617f393"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,8 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4819dfeddfabe4514c5b11c3f916058c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0edf6486d647bc8c7a1562f9f87ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a0b0edf6486d647bc8c7a1562f9f87ebf">~Memory</a> ()</td></tr>
 <tr class="separator:a0b0edf6486d647bc8c7a1562f9f87ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14c88f4d20084a0f42477d8812f177bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a14c88f4d20084a0f42477d8812f177bb">bytes</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Resource::Kind</a> type) const noexcept</td></tr>
-<tr class="separator:a14c88f4d20084a0f42477d8812f177bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3933f91cbab664c9ca71f774740991d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ac3933f91cbab664c9ca71f774740991d">bytes</a> (<a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627">Type</a> type) const noexcept</td></tr>
+<tr class="separator:ac3933f91cbab664c9ca71f774740991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1Pinned"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1Pinned')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1Pinned.html">le::Pinned</a></td></tr>
 <tr class="memitem:a1c65ae37cffd96c8fbc46bc52eb02e96 inherit pub_methods_structle_1_1Pinned"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Pinned.html#a1c65ae37cffd96c8fbc46bc52eb02e96">Pinned</a> ()=default</td></tr>
 <tr class="separator:a1c65ae37cffd96c8fbc46bc52eb02e96 inherit pub_methods_structle_1_1Pinned"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,12 +111,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa1741b0655c1841c2cea8f551948f843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa511526188776bf37c834b281c2e11f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aa511526188776bf37c834b281c2e11f0">copy</a> (vk::CommandBuffer cb, vk::Buffer src, vk::Image dst, <a class="el" href="classle_1_1graphics_1_1Memory.html#ac0ed075208791ff2dcaa4da80617f393">vAP</a>&lt; vk::BufferImageCopy &gt; regions, <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">ImgMeta</a> const &amp;meta)</td></tr>
 <tr class="separator:aa511526188776bf37c834b281c2e11f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e372a9df5307ffdcd5bc74ee2fc02a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ad3e372a9df5307ffdcd5bc74ee2fc02a">blit</a> (vk::CommandBuffer cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Image &gt; images, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Extent3D &gt; extents, <a class="el" href="namespacele_1_1graphics.html#ae83806501f039eabf3abd1248c441fda">LayoutPair</a> layouts={vIL::eTransferSrcOptimal, vIL::eTransferDstOptimal}, vk::Filter filter=vk::Filter::eLinear, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::ImageAspectFlags &gt; aspects={vk::ImageAspectFlagBits::eColor, vk::ImageAspectFlagBits::eColor})</td></tr>
-<tr class="separator:ad3e372a9df5307ffdcd5bc74ee2fc02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0750d8b97e3f99ddbbd63036abcfcf6b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a0750d8b97e3f99ddbbd63036abcfcf6b">copy</a> (vk::CommandBuffer cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Image &gt; images, vk::Extent3D extent, vk::ImageAspectFlags aspects)</td></tr>
+<tr class="separator:a0750d8b97e3f99ddbbd63036abcfcf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5ae3f5bbfba962c43097242591add9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a9c5ae3f5bbfba962c43097242591add9">blit</a> (vk::CommandBuffer cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Image &gt; images, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Extent3D &gt; extents, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::ImageAspectFlags &gt; aspects, vk::Filter filter)</td></tr>
+<tr class="separator:a9c5ae3f5bbfba962c43097242591add9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac9a92c87ae94320adabae08c3a25d43"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aac9a92c87ae94320adabae08c3a25d43">imageBarrier</a> (vk::CommandBuffer cb, vk::Image image, <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">ImgMeta</a> const &amp;meta)</td></tr>
 <tr class="separator:aac9a92c87ae94320adabae08c3a25d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015c295b98c32082b65be9e77f242124"><td class="memItemLeft" align="right" valign="top">static vk::BufferImageCopy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a015c295b98c32082b65be9e77f242124">bufferImageCopy</a> (vk::Extent3D extent, vk::ImageAspectFlags aspects=vk::ImageAspectFlagBits::eColor, vk::DeviceSize offset=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerIdx=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerCount=1)</td></tr>
-<tr class="separator:a015c295b98c32082b65be9e77f242124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bc807d10293b0cf406759c64a71481"><td class="memItemLeft" align="right" valign="top">static vk::BufferImageCopy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a15bc807d10293b0cf406759c64a71481">bufferImageCopy</a> (vk::Extent3D extent, vk::ImageAspectFlags aspects, vk::DeviceSize offset, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerIdx, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerCount)</td></tr>
+<tr class="separator:a15bc807d10293b0cf406759c64a71481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -125,8 +131,8 @@ Public Attributes</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:afdabbc6a7135cf9566d816671fe5da22"><td class="memItemLeft" align="right" valign="top">VmaAllocator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#afdabbc6a7135cf9566d816671fe5da22">m_allocator</a></td></tr>
 <tr class="separator:afdabbc6a7135cf9566d816671fe5da22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cffa50a0521cf6eb7ebf1cf155b7c76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt; <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Resource::Kind</a>, std::atomic&lt; <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a4cffa50a0521cf6eb7ebf1cf155b7c76">m_allocations</a></td></tr>
-<tr class="separator:a4cffa50a0521cf6eb7ebf1cf155b7c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cfafaf5d07d2d63c194d3220858a3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627">Type</a>, std::atomic&lt; <a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a02cfafaf5d07d2d63c194d3220858a3a">m_allocations</a></td></tr>
+<tr class="separator:a02cfafaf5d07d2d63c194d3220858a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -149,6 +155,33 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ac31c799d73459a5ecf9308e3d5da1627" name="ac31c799d73459a5ecf9308e3d5da1627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31c799d73459a5ecf9308e3d5da1627">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627">le::graphics::Memory::Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac31c799d73459a5ecf9308e3d5da1627ad6f224d8cfcc09952d4e9ba2211186a8" name="ac31c799d73459a5ecf9308e3d5da1627ad6f224d8cfcc09952d4e9ba2211186a8"></a>eBuffer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac31c799d73459a5ecf9308e3d5da1627ac8cb98c5bfd36f031e9e987c48553cca" name="ac31c799d73459a5ecf9308e3d5da1627ac8cb98c5bfd36f031e9e987c48553cca"></a>eImage&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -189,8 +222,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad3e372a9df5307ffdcd5bc74ee2fc02a" name="ad3e372a9df5307ffdcd5bc74ee2fc02a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3e372a9df5307ffdcd5bc74ee2fc02a">&#9670;&nbsp;</a></span>blit()</h2>
+<a id="a9c5ae3f5bbfba962c43097242591add9" name="a9c5ae3f5bbfba962c43097242591add9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5ae3f5bbfba962c43097242591add9">&#9670;&nbsp;</a></span>blit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,20 +252,14 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#ae83806501f039eabf3abd1248c441fda">LayoutPair</a>&#160;</td>
-          <td class="paramname"><em>layouts</em> = <code>{vIL::eTransferSrcOptimal,&#160;vIL::eTransferDstOptimal}</code>, </td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::ImageAspectFlags &gt;&#160;</td>
+          <td class="paramname"><em>aspects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::Filter&#160;</td>
-          <td class="paramname"><em>filter</em> = <code>vk::Filter::eLinear</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::ImageAspectFlags &gt;&#160;</td>
-          <td class="paramname"><em>aspects</em> = <code>{vk::ImageAspectFlagBits::eColor,&#160;vk::ImageAspectFlagBits::eColor}</code>&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -249,8 +276,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a015c295b98c32082b65be9e77f242124" name="a015c295b98c32082b65be9e77f242124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a015c295b98c32082b65be9e77f242124">&#9670;&nbsp;</a></span>bufferImageCopy()</h2>
+<a id="a15bc807d10293b0cf406759c64a71481" name="a15bc807d10293b0cf406759c64a71481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15bc807d10293b0cf406759c64a71481">&#9670;&nbsp;</a></span>bufferImageCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,25 +295,25 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::ImageAspectFlags&#160;</td>
-          <td class="paramname"><em>aspects</em> = <code>vk::ImageAspectFlagBits::eColor</code>, </td>
+          <td class="paramname"><em>aspects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::DeviceSize&#160;</td>
-          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
+          <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>layerIdx</em> = <code>0</code>, </td>
+          <td class="paramname"><em>layerIdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>layerCount</em> = <code>1</code>&#160;</td>
+          <td class="paramname"><em>layerCount</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -303,8 +330,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a14c88f4d20084a0f42477d8812f177bb" name="a14c88f4d20084a0f42477d8812f177bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14c88f4d20084a0f42477d8812f177bb">&#9670;&nbsp;</a></span>bytes()</h2>
+<a id="ac3933f91cbab664c9ca71f774740991d" name="ac3933f91cbab664c9ca71f774740991d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3933f91cbab664c9ca71f774740991d">&#9670;&nbsp;</a></span>bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +342,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a> le::graphics::Memory::bytes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Resource::Kind</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627">Type</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -329,8 +356,56 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a0750d8b97e3f99ddbbd63036abcfcf6b" name="a0750d8b97e3f99ddbbd63036abcfcf6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0750d8b97e3f99ddbbd63036abcfcf6b">&#9670;&nbsp;</a></span>copy() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void le::graphics::Memory::copy </td>
+          <td>(</td>
+          <td class="paramtype">vk::CommandBuffer&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Image &gt;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::Extent3D&#160;</td>
+          <td class="paramname"><em>extent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::ImageAspectFlags&#160;</td>
+          <td class="paramname"><em>aspects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa1741b0655c1841c2cea8f551948f843" name="aa1741b0655c1841c2cea8f551948f843"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1741b0655c1841c2cea8f551948f843">&#9670;&nbsp;</a></span>copy() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1741b0655c1841c2cea8f551948f843">&#9670;&nbsp;</a></span>copy() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +453,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aa511526188776bf37c834b281c2e11f0" name="aa511526188776bf37c834b281c2e11f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa511526188776bf37c834b281c2e11f0">&#9670;&nbsp;</a></span>copy() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa511526188776bf37c834b281c2e11f0">&#9670;&nbsp;</a></span>copy() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,8 +594,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4cffa50a0521cf6eb7ebf1cf155b7c76" name="a4cffa50a0521cf6eb7ebf1cf155b7c76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cffa50a0521cf6eb7ebf1cf155b7c76">&#9670;&nbsp;</a></span>m_allocations</h2>
+<a id="a02cfafaf5d07d2d63c194d3220858a3a" name="a02cfafaf5d07d2d63c194d3220858a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02cfafaf5d07d2d63c194d3220858a3a">&#9670;&nbsp;</a></span>m_allocations</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,7 +604,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt;<a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Resource::Kind</a>, std::atomic&lt;<a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&gt; &gt; le::graphics::Memory::m_allocations</td>
+          <td class="memname"><a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt;<a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627">Type</a>, std::atomic&lt;<a class="el" href="namespacele.html#a7afef247f7b9cf645212e059314a2fa8">u64</a>&gt;, 2&gt; le::graphics::Memory::m_allocations</td>
         </tr>
       </table>
   </td>

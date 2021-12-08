@@ -57,16 +57,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;resources.hpp&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for le::graphics::Buffer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classle_1_1graphics_1_1Buffer.png" usemap="#le::graphics::Buffer_map" alt=""/>
-  <map id="le::graphics::Buffer_map" name="le::graphics::Buffer_map">
-<area href="classle_1_1graphics_1_1Resource.html" alt="le::graphics::Resource" shape="rect" coords="0,0,137,24"/>
-  </map>
-</div></div>
+<p><code>#include &lt;memory.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -83,12 +74,6 @@ Public Types</h2></td></tr>
 , <a class="el" href="classle_1_1graphics_1_1Buffer.html#a69e76b6fb3e45c4392e5b71d3fdd88e9ab131be88d5bc2f6fc6d84ed3e2a2fb60">eGpuOnly</a>
  }</td></tr>
 <tr class="separator:a69e76b6fb3e45c4392e5b71d3fdd88e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:a20c06e824854609824cff642f8be2007 inherit pub_types_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a> { <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ad6f224d8cfcc09952d4e9ba2211186a8">eBuffer</a>
-, <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ac8cb98c5bfd36f031e9e987c48553cca">eImage</a>
-, <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007a98ce873df53900dd5454baba574ecb06">eCOUNT_</a>
- }</td></tr>
-<tr class="separator:a20c06e824854609824cff642f8be2007 inherit pub_types_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -98,10 +83,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0ac13f51ebbe79877f21bf773cbd4c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d3e0b7bfcad3abebf3a9bd52b327691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a7d3e0b7bfcad3abebf3a9bd52b327691">operator=</a> (<a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> rhs) noexcept</td></tr>
 <tr class="separator:a7d3e0b7bfcad3abebf3a9bd52b327691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a32ffddfe30abe1012588557e031434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a1a32ffddfe30abe1012588557e031434">~Buffer</a> () override</td></tr>
-<tr class="separator:a1a32ffddfe30abe1012588557e031434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e24b54411fcd4976b7435f0dd66e824"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a7e24b54411fcd4976b7435f0dd66e824">kind</a> () const noexcept override</td></tr>
-<tr class="separator:a7e24b54411fcd4976b7435f0dd66e824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4110daeda593945e6fd6bc1704a0b93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ac4110daeda593945e6fd6bc1704a0b93">~Buffer</a> ()</td></tr>
+<tr class="separator:ac4110daeda593945e6fd6bc1704a0b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b18e01822d05ef7ccb10c29a7741bf"><td class="memItemLeft" align="right" valign="top">vk::Buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ad3b18e01822d05ef7ccb10c29a7741bf">buffer</a> () const noexcept</td></tr>
 <tr class="separator:ad3b18e01822d05ef7ccb10c29a7741bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6930d0cc4daa9b3338eb7b71505e710a"><td class="memItemLeft" align="right" valign="top">vk::DeviceSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a6930d0cc4daa9b3338eb7b71505e710a">writeSize</a> () const noexcept</td></tr>
@@ -123,43 +106,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b30ec9cf3056358a3e1d270c53958a1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6b30ec9cf3056358a3e1d270c53958a1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a6b30ec9cf3056358a3e1d270c53958a1">writeT</a> (T const &amp;t, vk::DeviceSize offset=0)</td></tr>
 <tr class="separator:a6b30ec9cf3056358a3e1d270c53958a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:ace69e474ec52f06683443a3a6d76769b inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#ace69e474ec52f06683443a3a6d76769b">Resource</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory)</td></tr>
-<tr class="separator:ace69e474ec52f06683443a3a6d76769b inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de6ba58421ded020ca62a9a03b16ad9 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a9de6ba58421ded020ca62a9a03b16ad9">Resource</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a9de6ba58421ded020ca62a9a03b16ad9 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab054d798353081418c45a3e737792b22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#ab054d798353081418c45a3e737792b22">operator=</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ab054d798353081418c45a3e737792b22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cef69c5e3e2797d570d79ef33c4ed22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a4cef69c5e3e2797d570d79ef33c4ed22">~Resource</a> ()=default</td></tr>
-<tr class="separator:a4cef69c5e3e2797d570d79ef33c4ed22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67bb297833b65ee345f8497c7d4e9cfc inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Resource_1_1Data.html">Data</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a67bb297833b65ee345f8497c7d4e9cfc">data</a> () const noexcept</td></tr>
-<tr class="separator:a67bb297833b65ee345f8497c7d4e9cfc inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a80cac1d58e28e2776311915793c0e31c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a80cac1d58e28e2776311915793c0e31c">kind_v</a> = <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ad6f224d8cfcc09952d4e9ba2211186a8">Kind::eBuffer</a></td></tr>
-<tr class="separator:a80cac1d58e28e2776311915793c0e31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e93d1b36c17d53da07925c9ceb72c7"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a69e93d1b36c17d53da07925c9ceb72c7">allocation_type_v</a> = <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ad6f224d8cfcc09952d4e9ba2211186a8">Memory::Type::eBuffer</a></td></tr>
+<tr class="separator:a69e93d1b36c17d53da07925c9ceb72c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5770aec66ea6b65a7722632dc20a54ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Storage.html">Storage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a5770aec66ea6b65a7722632dc20a54ab">m_storage</a></td></tr>
 <tr class="separator:a5770aec66ea6b65a7722632dc20a54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:aca4d4c4453e019fa918ca9e85cdd7308 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Resource_1_1Data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#aca4d4c4453e019fa918ca9e85cdd7308">m_data</a></td></tr>
-<tr class="separator:aca4d4c4453e019fa918ca9e85cdd7308 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c560f540092a699d3d666c8aa44e1e7 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a2c560f540092a699d3d666c8aa44e1e7">m_memory</a></td></tr>
-<tr class="separator:a2c560f540092a699d3d666c8aa44e1e7 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c9b8180ec6e74e2a750a0b9ee1d63e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ad6c9b8180ec6e74e2a750a0b9ee1d63e">m_memory</a></td></tr>
+<tr class="separator:ad6c9b8180ec6e74e2a750a0b9ee1d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ae8e37d6575e39d84067eb2202a39b180"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ae8e37d6575e39d84067eb2202a39b180">VRAM</a></td></tr>
 <tr class="separator:ae8e37d6575e39d84067eb2202a39b180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_static_methods_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:a1d2bb18dd2f76c6d42f9775de45d72de inherit pro_static_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a1d2bb18dd2f76c6d42f9775de45d72de">exchg</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;lhs, <a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;rhs) noexcept</td></tr>
-<tr class="separator:a1d2bb18dd2f76c6d42f9775de45d72de inherit pro_static_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a69e76b6fb3e45c4392e5b71d3fdd88e9" name="a69e76b6fb3e45c4392e5b71d3fdd88e9"></a>
@@ -243,14 +206,11 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a32ffddfe30abe1012588557e031434" name="a1a32ffddfe30abe1012588557e031434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a32ffddfe30abe1012588557e031434">&#9670;&nbsp;</a></span>~Buffer()</h2>
+<a id="ac4110daeda593945e6fd6bc1704a0b93" name="ac4110daeda593945e6fd6bc1704a0b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4110daeda593945e6fd6bc1704a0b93">&#9670;&nbsp;</a></span>~Buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">le::graphics::Buffer::~Buffer </td>
@@ -259,11 +219,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -316,33 +271,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e24b54411fcd4976b7435f0dd66e824" name="a7e24b54411fcd4976b7435f0dd66e824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e24b54411fcd4976b7435f0dd66e824">&#9670;&nbsp;</a></span>kind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a> le::graphics::Buffer::kind </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classle_1_1graphics_1_1Resource.html#a69d147f2e19e9454c113bf34f8594d4d">le::graphics::Resource</a>.</p>
 
 </div>
 </div>
@@ -594,8 +522,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a80cac1d58e28e2776311915793c0e31c" name="a80cac1d58e28e2776311915793c0e31c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80cac1d58e28e2776311915793c0e31c">&#9670;&nbsp;</a></span>kind_v</h2>
+<a id="a69e93d1b36c17d53da07925c9ceb72c7" name="a69e93d1b36c17d53da07925c9ceb72c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e93d1b36c17d53da07925c9ceb72c7">&#9670;&nbsp;</a></span>allocation_type_v</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,12 +532,34 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a> le::graphics::Buffer::kind_v = <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ad6f224d8cfcc09952d4e9ba2211186a8">Kind::eBuffer</a></td>
+          <td class="memname">constexpr auto le::graphics::Buffer::allocation_type_v = <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ad6f224d8cfcc09952d4e9ba2211186a8">Memory::Type::eBuffer</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6c9b8180ec6e74e2a750a0b9ee1d63e" name="ad6c9b8180ec6e74e2a750a0b9ee1d63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c9b8180ec6e74e2a750a0b9ee1d63e">&#9670;&nbsp;</a></span>m_memory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt;<a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a>*&gt; le::graphics::Buffer::m_memory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

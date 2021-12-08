@@ -88,8 +88,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8d4e1861c85d91decbe4c616c9a5cc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0d39e8eaf548719af5f87fafb3b3be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html#afd0d39e8eaf548719af5f87fafb3b3be">hit</a> (glm::vec2 point) const noexcept</td></tr>
 <tr class="separator:afd0d39e8eaf548719af5f87fafb3b3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeeb2bde74272af2008c6fdbb9e1117e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Prop.html">Prop</a> const &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html#abeeb2bde74272af2008c6fdbb9e1117e">props</a> () const noexcept</td></tr>
-<tr class="separator:abeeb2bde74272af2008c6fdbb9e1117e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171ffe05ef9e4d2151bd9068210b14cf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1MeshView.html">MeshView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html#a171ffe05ef9e4d2151bd9068210b14cf">mesh</a> () const noexcept</td></tr>
+<tr class="separator:a171ffe05ef9e4d2151bd9068210b14cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classle_1_1gui_1_1TreeRoot"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classle_1_1gui_1_1TreeRoot')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classle_1_1gui_1_1TreeRoot.html">le::gui::TreeRoot</a></td></tr>
 <tr class="memitem:a6168cf592ba5f2e9359dcc7f8864478a inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; <br />
 requires (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98a3014e3530e462">is_derived_v</a>&lt;T&gt;)</td></tr>
@@ -97,6 +97,8 @@ requires (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98
 <tr class="separator:a6168cf592ba5f2e9359dcc7f8864478a inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b37ad0a77884132c2ad49b2ab77d47 inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1utils_1_1Owner.html#abc19ee48098390ae2cb93bf85bc44dce">container_t</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeRoot.html#a89b37ad0a77884132c2ad49b2ab77d47">nodes</a> () const noexcept</td></tr>
 <tr class="separator:a89b37ad0a77884132c2ad49b2ab77d47 inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc590f7a6beb0d6240bdf415df08e57d inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1BitmapFont.html">BitmapFont</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeRoot.html#afc590f7a6beb0d6240bdf415df08e57d">findFont</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri=<a class="el" href="namespacele_1_1gui.html#ab1950e8d746d1f4d4c21b6f92414e799">defaultFontURI</a>) const</td></tr>
+<tr class="separator:afc590f7a6beb0d6240bdf415df08e57d inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4be664ef5b6b7691ca5ca09396056b6 inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Ret , typename... Args&gt; <br />
 requires (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98a3014e3530e462">is_derived_v</a>&lt;T&gt;)</td></tr>
 <tr class="memitem:aa4be664ef5b6b7691ca5ca09396056b6 inherit pub_methods_classle_1_1gui_1_1TreeRoot"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeRoot.html#aa4be664ef5b6b7691ca5ca09396056b6">forEachNode</a> (Ret(T::*memberFunc)(Args...), Args &amp;&amp;... args) const</td></tr>
@@ -122,7 +124,7 @@ requires (<a class="el" href="classle_1_1utils_1_1Owner.html#ae3670799458009aa98
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab1ed2afa2dd84677ad99586b5a3e0712"><td class="memItemLeft" align="right" valign="top">DrawScissor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html#ab1ed2afa2dd84677ad99586b5a3e0712">m_scissor</a></td></tr>
+<tr class="memitem:ab1ed2afa2dd84677ad99586b5a3e0712"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1DrawScissor.html">DrawScissor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html#ab1ed2afa2dd84677ad99586b5a3e0712">m_scissor</a></td></tr>
 <tr class="separator:ab1ed2afa2dd84677ad99586b5a3e0712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ff89435b948b302824709ab88a23b96"><td class="memItemLeft" align="right" valign="top">glm::quat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1gui_1_1TreeNode.html#a0ff89435b948b302824709ab88a23b96">m_orientation</a> = <a class="el" href="namespacele_1_1graphics.html#ae978c2523365176b7f9f9afa9663ea6f">graphics::identity</a></td></tr>
 <tr class="separator:a0ff89435b948b302824709ab88a23b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +205,33 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a171ffe05ef9e4d2151bd9068210b14cf" name="a171ffe05ef9e4d2151bd9068210b14cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171ffe05ef9e4d2151bd9068210b14cf">&#9670;&nbsp;</a></span>mesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classle_1_1MeshView.html">MeshView</a> le::gui::TreeNode::mesh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classle_1_1gui_1_1Quad.html#a136c3e032c5955597f48143f9c5c100c">le::gui::Quad</a>, <a class="el" href="classle_1_1gui_1_1Shape.html#a4c8202d636fd1cc05e8a8a67c4ff3bcb">le::gui::Shape</a>, <a class="el" href="classle_1_1gui_1_1Text.html#aeb110c13265ce461d5fcc82fc8ea8d91">le::gui::Text</a>, and <a class="el" href="classle_1_1gui_1_1InputField.html#a3cda21259c8363aef8978d406ddbddfb">le::gui::InputField</a>.</p>
 
 </div>
 </div>
@@ -292,33 +321,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="abeeb2bde74272af2008c6fdbb9e1117e" name="abeeb2bde74272af2008c6fdbb9e1117e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeeb2bde74272af2008c6fdbb9e1117e">&#9670;&nbsp;</a></span>props()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="structle_1_1Prop.html">Prop</a> const  &gt; le::gui::TreeNode::props </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classle_1_1gui_1_1Quad.html#a9ef120f127fd93caca105bd4d4164b5b">le::gui::Quad</a>, <a class="el" href="classle_1_1gui_1_1Shape.html#abdd97ecad349b61e0ae9aac7ed25b696">le::gui::Shape</a>, <a class="el" href="classle_1_1gui_1_1Text.html#adf5641690fc7a38b670e347345231535">le::gui::Text</a>, and <a class="el" href="classle_1_1gui_1_1InputField.html#a00320e1dbee2808281b7c7bdda88df13">le::gui::InputField</a>.</p>
-
-</div>
-</div>
 <a id="a631473ef440b5c95657f2f7f48da36de" name="a631473ef440b5c95657f2f7f48da36de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a631473ef440b5c95657f2f7f48da36de">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -401,7 +403,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DrawScissor le::gui::TreeNode::m_scissor</td>
+          <td class="memname"><a class="el" href="structle_1_1DrawScissor.html">DrawScissor</a> le::gui::TreeNode::m_scissor</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -46,8 +46,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classle_1_1AssetStore-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">le::AssetStore Class Reference</div></div>
 </div><!--header-->
@@ -64,34 +66,48 @@ Inheritance diagram for le::AssetStore:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1AssetStore_1_1Base.html">Base</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1AssetStore_1_1Index.html">Index</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae0a5e52b4c70e3d7d9f8a22d78126258"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ae0a5e52b4c70e3d7d9f8a22d78126258">OnModified</a> = <a class="el" href="namespacektl.html#a858afa769c8bb10600f99f0f9374a76b">ktl::delegate</a>&lt;&gt;</td></tr>
 <tr class="separator:ae0a5e52b4c70e3d7d9f8a22d78126258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba608b431970c32a0d52885d10d512f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">Sign</a> = dens::detail::sign_t</td></tr>
+<tr class="separator:aba608b431970c32a0d52885d10d512f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a57c72fd01dd6589413b5b295330b2c64"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a57c72fd01dd6589413b5b295330b2c64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a57c72fd01dd6589413b5b295330b2c64">add</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;uri, T t)</td></tr>
-<tr class="separator:a57c72fd01dd6589413b5b295330b2c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c644d1b5cdb87cc12412491cd372c3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a69c644d1b5cdb87cc12412491cd372c3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a69c644d1b5cdb87cc12412491cd372c3">add</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;uri, std::unique_ptr&lt; T &gt; t)</td></tr>
-<tr class="separator:a69c644d1b5cdb87cc12412491cd372c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06cc2ec1315d9074db75056d9da20e9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab06cc2ec1315d9074db75056d9da20e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ab06cc2ec1315d9074db75056d9da20e9">load</a> (<a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;uri, <a class="el" href="structle_1_1AssetLoadData.html">AssetLoadData</a>&lt; T &gt; data)</td></tr>
-<tr class="separator:ab06cc2ec1315d9074db75056d9da20e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41611533afe12fdbeb8cc6c68405e805"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a41611533afe12fdbeb8cc6c68405e805"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a41611533afe12fdbeb8cc6c68405e805">add</a> (std::string uri, T t)</td></tr>
+<tr class="separator:a41611533afe12fdbeb8cc6c68405e805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249fa9e8c5be14ec306b26155e52c288"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a249fa9e8c5be14ec306b26155e52c288"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a249fa9e8c5be14ec306b26155e52c288">add</a> (std::string uri, std::unique_ptr&lt; T &gt; &amp;&amp;t)</td></tr>
+<tr class="separator:a249fa9e8c5be14ec306b26155e52c288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc446f8a21840f364189754b73a397d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adc446f8a21840f364189754b73a397d6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#adc446f8a21840f364189754b73a397d6">load</a> (std::string uri, <a class="el" href="structle_1_1AssetLoadData.html">AssetLoadData</a>&lt; T &gt; data)</td></tr>
+<tr class="separator:adc446f8a21840f364189754b73a397d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace12d44a6f32ea2bd6160f43db13aa03"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ace12d44a6f32ea2bd6160f43db13aa03"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ace12d44a6f32ea2bd6160f43db13aa03">find</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri) const</td></tr>
 <tr class="separator:ace12d44a6f32ea2bd6160f43db13aa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2abc7e238fcf570649f7975ec8994ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#af2abc7e238fcf570649f7975ec8994ad">exists</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri) const noexcept</td></tr>
+<tr class="separator:af2abc7e238fcf570649f7975ec8994ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf977225fa33a2bacac60a93adf29d7e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aaf977225fa33a2bacac60a93adf29d7e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#aaf977225fa33a2bacac60a93adf29d7e">exists</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri) const noexcept</td></tr>
 <tr class="separator:aaf977225fa33a2bacac60a93adf29d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab386ba2e274ea3f6f5dedaecfae574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a0ab386ba2e274ea3f6f5dedaecfae574">unload</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri)</td></tr>
+<tr class="separator:a0ab386ba2e274ea3f6f5dedaecfae574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed99b5ccd5d6a92bf085ac301a016aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3ed99b5ccd5d6a92bf085ac301a016aa"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a3ed99b5ccd5d6a92bf085ac301a016aa">unload</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri)</td></tr>
 <tr class="separator:a3ed99b5ccd5d6a92bf085ac301a016aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c604377c3266ce0aa6939663fca4a0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad9c604377c3266ce0aa6939663fca4a0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ad9c604377c3266ce0aa6939663fca4a0">reload</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri)</td></tr>
-<tr class="separator:ad9c604377c3266ce0aa6939663fca4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc44afa1ed73b201e6f1a8a8029cb254"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires (detail::reloadable_asset_v&lt;T&gt;)</td></tr>
+<tr class="memitem:abc44afa1ed73b201e6f1a8a8029cb254"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#abc44afa1ed73b201e6f1a8a8029cb254">reload</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> uri)</td></tr>
+<tr class="separator:abc44afa1ed73b201e6f1a8a8029cb254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae023df83fc8c1a6926ab13cee0af44e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ae023df83fc8c1a6926ab13cee0af44e4">update</a> ()</td></tr>
 <tr class="separator:ae023df83fc8c1a6926ab13cee0af44e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba01d5ea6d0f76f9dba20c28b4621c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#aba01d5ea6d0f76f9dba20c28b4621c3e">clear</a> ()</td></tr>
@@ -103,6 +119,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81ed75e61442f23dd990a51e1a01c901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29675ac8765ee5f1fff598de5b0a5a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1Resources.html">Resources</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ad29675ac8765ee5f1fff598de5b0a5a5">resources</a> () const noexcept</td></tr>
 <tr class="separator:ad29675ac8765ee5f1fff598de5b0a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43be69cb83036141088e380afc5081c1"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a43be69cb83036141088e380afc5081c1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structle_1_1AssetStore_1_1Index.html">Index</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a43be69cb83036141088e380afc5081c1">index</a> (std::string_view filter={}) const</td></tr>
+<tr class="separator:a43be69cb83036141088e380afc5081c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ff2f139342a44a6851bafc93832199"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1AssetStore_1_1Index.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#ae2ff2f139342a44a6851bafc93832199">index</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">Sign</a> const &gt; <a class="el" href="classle_1_1AssetStore.html#a49a4ee4d5e8c95ea48d87c5519cbf995">signs</a>, std::string_view filter) const</td></tr>
+<tr class="separator:ae2ff2f139342a44a6851bafc93832199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1NoCopy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1NoCopy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1NoCopy.html">le::NoCopy</a></td></tr>
 <tr class="memitem:a0525fab0a0ff2ac0241d7f791ba55169 inherit pub_methods_structle_1_1NoCopy"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1NoCopy.html#a0525fab0a0ff2ac0241d7f791ba55169">NoCopy</a> ()=default</td></tr>
 <tr class="separator:a0525fab0a0ff2ac0241d7f791ba55169 inherit pub_methods_structle_1_1NoCopy"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +135,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac5e6f62f98ff9ef27b6c84cca7b6edd5 inherit pub_methods_structle_1_1NoCopy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07d1487a1cc2f5b1f39b357a29d17a0 inherit pub_methods_structle_1_1NoCopy"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1NoCopy.html">NoCopy</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1NoCopy.html#ac07d1487a1cc2f5b1f39b357a29d17a0">operator=</a> (<a class="el" href="structle_1_1NoCopy.html">NoCopy</a> const &amp;)=delete</td></tr>
 <tr class="separator:ac07d1487a1cc2f5b1f39b357a29d17a0 inherit pub_methods_structle_1_1NoCopy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aacefa49e4cbf9a7217eb8bdfa70377eb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aacefa49e4cbf9a7217eb8bdfa70377eb"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">Sign</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#aacefa49e4cbf9a7217eb8bdfa70377eb">sign</a> ()</td></tr>
+<tr class="separator:aacefa49e4cbf9a7217eb8bdfa70377eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a4ee4d5e8c95ea48d87c5519cbf995"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a49a4ee4d5e8c95ea48d87c5519cbf995"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">Sign</a> const &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetStore.html#a49a4ee4d5e8c95ea48d87c5519cbf995">signs</a> ()</td></tr>
+<tr class="separator:a49a4ee4d5e8c95ea48d87c5519cbf995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae0a5e52b4c70e3d7d9f8a22d78126258" name="ae0a5e52b4c70e3d7d9f8a22d78126258"></a>
@@ -130,9 +160,23 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aba608b431970c32a0d52885d10d512f8" name="aba608b431970c32a0d52885d10d512f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba608b431970c32a0d52885d10d512f8">&#9670;&nbsp;</a></span>Sign</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">le::AssetStore::Sign</a> =  dens::detail::sign_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69c644d1b5cdb87cc12412491cd372c3" name="a69c644d1b5cdb87cc12412491cd372c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69c644d1b5cdb87cc12412491cd372c3">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+<a id="a249fa9e8c5be14ec306b26155e52c288" name="a249fa9e8c5be14ec306b26155e52c288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249fa9e8c5be14ec306b26155e52c288">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,13 +186,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt; le::AssetStore::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unique_ptr&lt; T &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>t</em>&#160;</td>
         </tr>
         <tr>
@@ -161,8 +205,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a57c72fd01dd6589413b5b295330b2c64" name="a57c72fd01dd6589413b5b295330b2c64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57c72fd01dd6589413b5b295330b2c64">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+<a id="a41611533afe12fdbeb8cc6c68405e805" name="a41611533afe12fdbeb8cc6c68405e805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41611533afe12fdbeb8cc6c68405e805">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +216,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt; le::AssetStore::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
         </tr>
         <tr>
@@ -208,8 +252,34 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af2abc7e238fcf570649f7975ec8994ad" name="af2abc7e238fcf570649f7975ec8994ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2abc7e238fcf570649f7975ec8994ad">&#9670;&nbsp;</a></span>exists() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::AssetStore::exists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaf977225fa33a2bacac60a93adf29d7e" name="aaf977225fa33a2bacac60a93adf29d7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf977225fa33a2bacac60a93adf29d7e">&#9670;&nbsp;</a></span>exists()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf977225fa33a2bacac60a93adf29d7e">&#9670;&nbsp;</a></span>exists() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,8 +326,56 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab06cc2ec1315d9074db75056d9da20e9" name="ab06cc2ec1315d9074db75056d9da20e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab06cc2ec1315d9074db75056d9da20e9">&#9670;&nbsp;</a></span>load()</h2>
+<a id="ae2ff2f139342a44a6851bafc93832199" name="ae2ff2f139342a44a6851bafc93832199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ff2f139342a44a6851bafc93832199">&#9670;&nbsp;</a></span>index() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1AssetStore_1_1Index.html">Index</a> le::AssetStore::index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">Sign</a> const &gt;&#160;</td>
+          <td class="paramname"><em>signs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43be69cb83036141088e380afc5081c1" name="a43be69cb83036141088e380afc5081c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43be69cb83036141088e380afc5081c1">&#9670;&nbsp;</a></span>index() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structle_1_1AssetStore_1_1Index.html">AssetStore::Index</a> le::AssetStore::index </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>filter</em> = <code>{}</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc446f8a21840f364189754b73a397d6" name="adc446f8a21840f364189754b73a397d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc446f8a21840f364189754b73a397d6">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +385,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classle_1_1Asset.html">Asset</a>&lt; T &gt; le::AssetStore::load </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
         </tr>
         <tr>
@@ -286,13 +404,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad9c604377c3266ce0aa6939663fca4a0" name="ad9c604377c3266ce0aa6939663fca4a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9c604377c3266ce0aa6939663fca4a0">&#9670;&nbsp;</a></span>reload()</h2>
+<a id="abc44afa1ed73b201e6f1a8a8029cb254" name="abc44afa1ed73b201e6f1a8a8029cb254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc44afa1ed73b201e6f1a8a8029cb254">&#9670;&nbsp;</a></span>reload()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T &gt; <br />
+requires (detail::reloadable_asset_v&lt;T&gt;)</div>
       <table class="memname">
         <tr>
           <td class="memname">bool le::AssetStore::reload </td>
@@ -372,8 +491,74 @@ template&lt;template&lt; typename... &gt; typename L&gt; </div>
 
 </div>
 </div>
+<a id="aacefa49e4cbf9a7217eb8bdfa70377eb" name="aacefa49e4cbf9a7217eb8bdfa70377eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacefa49e4cbf9a7217eb8bdfa70377eb">&#9670;&nbsp;</a></span>sign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">AssetStore::Sign</a> le::AssetStore::sign</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49a4ee4d5e8c95ea48d87c5519cbf995" name="a49a4ee4d5e8c95ea48d87c5519cbf995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a4ee4d5e8c95ea48d87c5519cbf995">&#9670;&nbsp;</a></span>signs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="classle_1_1AssetStore.html#aba608b431970c32a0d52885d10d512f8">AssetStore::Sign</a> const &gt; le::AssetStore::signs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ab386ba2e274ea3f6f5dedaecfae574" name="a0ab386ba2e274ea3f6f5dedaecfae574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab386ba2e274ea3f6f5dedaecfae574">&#9670;&nbsp;</a></span>unload() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::AssetStore::unload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1Hash.html">Hash</a>&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3ed99b5ccd5d6a92bf085ac301a016aa" name="a3ed99b5ccd5d6a92bf085ac301a016aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed99b5ccd5d6a92bf085ac301a016aa">&#9670;&nbsp;</a></span>unload()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed99b5ccd5d6a92bf085ac301a016aa">&#9670;&nbsp;</a></span>unload() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

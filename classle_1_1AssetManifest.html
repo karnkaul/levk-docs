@@ -72,11 +72,14 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba7bb42ee00d346d90b918eb8867fc52eb">eSampler</a>
 , <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6bad90325ad971eceed761d75ce960ccaa8">eSpirV</a>
 , <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6bac9e394bbf95e981b8642e652f30aa3d6">eTexture</a>
-, <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6bae4e8102552a2779d090bea13a31dc52a">ePipelineState</a>
+, <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6baa252a32d399230628bde82b62dab8966">eRenderLayer</a>
 , <br />
-&#160;&#160;<a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba6f1e544098ea26ac3842980ab2725e8a">eDrawGroup</a>
+&#160;&#160;<a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6babe06dcdf9282acf1a714b92d80760140">eRenderPipeline</a>
 , <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba15797cb898c5c56d301bd92e6eff1995">eBitmapFont</a>
-, <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba008100f73a61ef32a50e3dd11de3d02e">eModel</a>
+, <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6baed4256d4006aafecb89a04b9c823389c">eMaterial</a>
+, <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba983a99e993c0f4ac67380ee7f720828c">eSkybox</a>
+, <br />
+&#160;&#160;<a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba008100f73a61ef32a50e3dd11de3d02e">eModel</a>
 , <a class="el" href="classle_1_1AssetManifest.html#a3244935376dbadf6452f922857f09a6ba98ce873df53900dd5454baba574ecb06">eCOUNT_</a>
 <br />
  }</td></tr>
@@ -148,6 +151,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a42ca7fcf18b3503920b33094404d4ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5829b89c0407d4e0d218258ec37d898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1AssetStore.html">AssetStore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1AssetManifest.html#ad5829b89c0407d4e0d218258ec37d898">store</a> ()</td></tr>
 <tr class="separator:ad5829b89c0407d4e0d218258ec37d898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99e71ba163debd8ad209141a0d065e1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae99e71ba163debd8ad209141a0d065e1"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1AssetManifest.html#ae99e71ba163debd8ad209141a0d065e1">unloadMap</a> (T &amp;map)</td></tr>
+<tr class="separator:ae99e71ba163debd8ad209141a0d065e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7545a6445316c21b9ab6b368de92b893" name="a7545a6445316c21b9ab6b368de92b893"></a>
@@ -244,9 +250,11 @@ Protected Member Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6ba7bb42ee00d346d90b918eb8867fc52eb" name="a3244935376dbadf6452f922857f09a6ba7bb42ee00d346d90b918eb8867fc52eb"></a>eSampler&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6bad90325ad971eceed761d75ce960ccaa8" name="a3244935376dbadf6452f922857f09a6bad90325ad971eceed761d75ce960ccaa8"></a>eSpirV&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6bac9e394bbf95e981b8642e652f30aa3d6" name="a3244935376dbadf6452f922857f09a6bac9e394bbf95e981b8642e652f30aa3d6"></a>eTexture&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6bae4e8102552a2779d090bea13a31dc52a" name="a3244935376dbadf6452f922857f09a6bae4e8102552a2779d090bea13a31dc52a"></a>ePipelineState&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6ba6f1e544098ea26ac3842980ab2725e8a" name="a3244935376dbadf6452f922857f09a6ba6f1e544098ea26ac3842980ab2725e8a"></a>eDrawGroup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6baa252a32d399230628bde82b62dab8966" name="a3244935376dbadf6452f922857f09a6baa252a32d399230628bde82b62dab8966"></a>eRenderLayer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6babe06dcdf9282acf1a714b92d80760140" name="a3244935376dbadf6452f922857f09a6babe06dcdf9282acf1a714b92d80760140"></a>eRenderPipeline&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6ba15797cb898c5c56d301bd92e6eff1995" name="a3244935376dbadf6452f922857f09a6ba15797cb898c5c56d301bd92e6eff1995"></a>eBitmapFont&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6baed4256d4006aafecb89a04b9c823389c" name="a3244935376dbadf6452f922857f09a6baed4256d4006aafecb89a04b9c823389c"></a>eMaterial&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6ba983a99e993c0f4ac67380ee7f720828c" name="a3244935376dbadf6452f922857f09a6ba983a99e993c0f4ac67380ee7f720828c"></a>eSkybox&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6ba008100f73a61ef32a50e3dd11de3d02e" name="a3244935376dbadf6452f922857f09a6ba008100f73a61ef32a50e3dd11de3d02e"></a>eModel&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3244935376dbadf6452f922857f09a6ba98ce873df53900dd5454baba574ecb06" name="a3244935376dbadf6452f922857f09a6ba98ce873df53900dd5454baba574ecb06"></a>eCOUNT_&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -610,6 +618,34 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae99e71ba163debd8ad209141a0d065e1" name="ae99e71ba163debd8ad209141a0d065e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99e71ba163debd8ad209141a0d065e1">&#9670;&nbsp;</a></span>unloadMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t le::AssetManifest::unloadMap </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

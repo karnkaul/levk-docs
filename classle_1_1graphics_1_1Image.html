@@ -57,16 +57,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;resources.hpp&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for le::graphics::Image:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classle_1_1graphics_1_1Image.png" usemap="#le::graphics::Image_map" alt=""/>
-  <map id="le::graphics::Image_map" name="le::graphics::Image_map">
-<area href="classle_1_1graphics_1_1Resource.html" alt="le::graphics::Resource" shape="rect" coords="0,0,137,24"/>
-  </map>
-</div></div>
+<p><code>#include &lt;memory.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -77,16 +68,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8059828abc6e53a18691cf781cfe2dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ae8059828abc6e53a18691cf781cfe2dc">Image</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory, <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a> const &amp;<a class="el" href="classle_1_1graphics_1_1Image.html#a34391b3906cf41d52dac3ba8dba069df">info</a>)</td></tr>
+<tr class="memitem:ae8059828abc6e53a18691cf781cfe2dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ae8059828abc6e53a18691cf781cfe2dc">Image</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory, <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a> const &amp;<a class="el" href="classle_1_1graphics_1_1Image.html#a0eb15227782ada3f6441766198426922">info</a>)</td></tr>
 <tr class="separator:ae8059828abc6e53a18691cf781cfe2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07d58f0a4e9da4a659374e82935074b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#af07d58f0a4e9da4a659374e82935074b">Image</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory, <a class="el" href="structle_1_1graphics_1_1RenderTarget.html">RenderTarget</a> const &amp;rt, vk::Format format, vk::ImageUsageFlags <a class="el" href="classle_1_1graphics_1_1Image.html#aadabfe229e0c82af0e50dc89e2407ecd">usage</a>)</td></tr>
+<tr class="separator:af07d58f0a4e9da4a659374e82935074b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab73e04985d29e9ef6f4281981c24fcf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ab73e04985d29e9ef6f4281981c24fcf1">Image</a> (<a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;&amp;rhs) noexcept</td></tr>
 <tr class="separator:ab73e04985d29e9ef6f4281981c24fcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb3728594e6d3d695339a1d7827cb90d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#adb3728594e6d3d695339a1d7827cb90d">operator=</a> (<a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> rhs) noexcept</td></tr>
 <tr class="separator:adb3728594e6d3d695339a1d7827cb90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6501cd39fd0a92d5fc77256e963b0c75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a6501cd39fd0a92d5fc77256e963b0c75">~Image</a> () override</td></tr>
-<tr class="separator:a6501cd39fd0a92d5fc77256e963b0c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d260cc5af1b4b638b1942fa74523f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a54d260cc5af1b4b638b1942fa74523f6">kind</a> () const noexcept override</td></tr>
-<tr class="separator:a54d260cc5af1b4b638b1942fa74523f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172dcd4688a99f981a503e375fefe162"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a172dcd4688a99f981a503e375fefe162">~Image</a> ()</td></tr>
+<tr class="separator:a172dcd4688a99f981a503e375fefe162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93efae3b11ff1ec1229235d96b7e8b34"><td class="memItemLeft" align="right" valign="top">vk::Image&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a93efae3b11ff1ec1229235d96b7e8b34">image</a> () const noexcept</td></tr>
 <tr class="separator:a93efae3b11ff1ec1229235d96b7e8b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1745ab660813f38740060811149abf57"><td class="memItemLeft" align="right" valign="top">vk::ImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a1745ab660813f38740060811149abf57">view</a> () const noexcept</td></tr>
@@ -97,33 +88,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac15d92c4aa878166dbb8df13970eab6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c5ed701c8805c708389cfe10ae63173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a3c5ed701c8805c708389cfe10ae63173">layerCount</a> () const noexcept</td></tr>
 <tr class="separator:a3c5ed701c8805c708389cfe10ae63173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a52505aa6db70efd0c50164b751aaf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#af8e565e10e37efab0caad4929cc1aa62">BlitFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a9a52505aa6db70efd0c50164b751aaf1">blitFlags</a> () const noexcept</td></tr>
+<tr class="separator:a9a52505aa6db70efd0c50164b751aaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a764ab799b8f15a769752abf20e2a02d0"><td class="memItemLeft" align="right" valign="top">vk::Extent3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a764ab799b8f15a769752abf20e2a02d0">extent</a> () const noexcept</td></tr>
 <tr class="separator:a764ab799b8f15a769752abf20e2a02d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2563a1e43fb761253c62c36b68d10677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a2563a1e43fb761253c62c36b68d10677">extent2D</a> () const noexcept</td></tr>
 <tr class="separator:a2563a1e43fb761253c62c36b68d10677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadabfe229e0c82af0e50dc89e2407ecd"><td class="memItemLeft" align="right" valign="top">vk::ImageUsageFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#aadabfe229e0c82af0e50dc89e2407ecd">usage</a> () const noexcept</td></tr>
 <tr class="separator:aadabfe229e0c82af0e50dc89e2407ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:ace69e474ec52f06683443a3a6d76769b inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#ace69e474ec52f06683443a3a6d76769b">Resource</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory)</td></tr>
-<tr class="separator:ace69e474ec52f06683443a3a6d76769b inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de6ba58421ded020ca62a9a03b16ad9 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a9de6ba58421ded020ca62a9a03b16ad9">Resource</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a9de6ba58421ded020ca62a9a03b16ad9 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab054d798353081418c45a3e737792b22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#ab054d798353081418c45a3e737792b22">operator=</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ab054d798353081418c45a3e737792b22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cef69c5e3e2797d570d79ef33c4ed22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a4cef69c5e3e2797d570d79ef33c4ed22">~Resource</a> ()=default</td></tr>
-<tr class="separator:a4cef69c5e3e2797d570d79ef33c4ed22 inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67bb297833b65ee345f8497c7d4e9cfc inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Resource_1_1Data.html">Data</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a67bb297833b65ee345f8497c7d4e9cfc">data</a> () const noexcept</td></tr>
-<tr class="separator:a67bb297833b65ee345f8497c7d4e9cfc inherit pub_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51548d4f5f617acc99a604d2c8e39309"><td class="memItemLeft" align="right" valign="top">void const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a51548d4f5f617acc99a604d2c8e39309">mapped</a> () const noexcept</td></tr>
+<tr class="separator:a51548d4f5f617acc99a604d2c8e39309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26235d8ec52715061e0e55a0d95a210f"><td class="memItemLeft" align="right" valign="top">void const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a26235d8ec52715061e0e55a0d95a210f">map</a> ()</td></tr>
+<tr class="separator:a26235d8ec52715061e0e55a0d95a210f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e3d866d4c44655eb21299f9aad9024"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a01e3d866d4c44655eb21299f9aad9024">unmap</a> ()</td></tr>
+<tr class="separator:a01e3d866d4c44655eb21299f9aad9024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a34391b3906cf41d52dac3ba8dba069df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a34391b3906cf41d52dac3ba8dba069df">info</a> (<a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> <a class="el" href="classle_1_1graphics_1_1Image.html#a764ab799b8f15a769752abf20e2a02d0">extent</a>, vk::ImageUsageFlags <a class="el" href="classle_1_1graphics_1_1Image.html#aadabfe229e0c82af0e50dc89e2407ecd">usage</a>, vk::ImageAspectFlags <a class="el" href="classle_1_1graphics_1_1Image.html#a1745ab660813f38740060811149abf57">view</a>, VmaMemoryUsage vmaUsage, vk::Format format, bool linear)</td></tr>
-<tr class="separator:a34391b3906cf41d52dac3ba8dba069df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb15227782ada3f6441766198426922"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a0eb15227782ada3f6441766198426922">info</a> (<a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> <a class="el" href="classle_1_1graphics_1_1Image.html#a764ab799b8f15a769752abf20e2a02d0">extent</a>, vk::ImageUsageFlags <a class="el" href="classle_1_1graphics_1_1Image.html#aadabfe229e0c82af0e50dc89e2407ecd">usage</a>, vk::ImageAspectFlags <a class="el" href="classle_1_1graphics_1_1Image.html#a1745ab660813f38740060811149abf57">view</a>, VmaMemoryUsage vmaUsage, vk::Format format) noexcept</td></tr>
+<tr class="separator:a0eb15227782ada3f6441766198426922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32d49636aa2df23d17f0ac7930b6c63"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ad32d49636aa2df23d17f0ac7930b6c63">textureInfo</a> (<a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> <a class="el" href="classle_1_1graphics_1_1Image.html#a764ab799b8f15a769752abf20e2a02d0">extent</a>, vk::Format format=<a class="el" href="classle_1_1graphics_1_1Image.html#a59a018e570d749108c2c72750abe1425">srgb_v</a>, bool cubemap=false) noexcept</td></tr>
+<tr class="separator:ad32d49636aa2df23d17f0ac7930b6c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4342faf139160eaf6931bc56f1919dce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a4342faf139160eaf6931bc56f1919dce">storageInfo</a> (<a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> <a class="el" href="classle_1_1graphics_1_1Image.html#a764ab799b8f15a769752abf20e2a02d0">extent</a>, vk::Format format=<a class="el" href="classle_1_1graphics_1_1Image.html#ae991cb718f678e7878c60426de892e93">linear_v</a>) noexcept</td></tr>
+<tr class="separator:a4342faf139160eaf6931bc56f1919dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad7dbd1f0db40e3c4a7d17cfe4050a952"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ad7dbd1f0db40e3c4a7d17cfe4050a952">kind_v</a> = <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ac8cb98c5bfd36f031e9e987c48553cca">Kind::eImage</a></td></tr>
-<tr class="separator:ad7dbd1f0db40e3c4a7d17cfe4050a952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0f068b2a6cf5b10177d5c4e636fbcc"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a8b0f068b2a6cf5b10177d5c4e636fbcc">allocation_type_v</a> = <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ac8cb98c5bfd36f031e9e987c48553cca">Memory::Type::eImage</a></td></tr>
+<tr class="separator:a8b0f068b2a6cf5b10177d5c4e636fbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59a018e570d749108c2c72750abe1425"><td class="memItemLeft" align="right" valign="top">static constexpr vk::Format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a59a018e570d749108c2c72750abe1425">srgb_v</a> = vk::Format::eR8G8B8A8Srgb</td></tr>
 <tr class="separator:a59a018e570d749108c2c72750abe1425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae991cb718f678e7878c60426de892e93"><td class="memItemLeft" align="right" valign="top">static constexpr vk::Format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ae991cb718f678e7878c60426de892e93">linear_v</a> = vk::Format::eR8G8B8A8Unorm</td></tr>
@@ -133,32 +125,17 @@ Static Public Attributes</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aaa38427576989940bd33e9f2c6b4a09f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Image_1_1Storage.html">Storage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#aaa38427576989940bd33e9f2c6b4a09f">m_storage</a></td></tr>
 <tr class="separator:aaa38427576989940bd33e9f2c6b4a09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:aca4d4c4453e019fa918ca9e85cdd7308 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Resource_1_1Data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#aca4d4c4453e019fa918ca9e85cdd7308">m_data</a></td></tr>
-<tr class="separator:aca4d4c4453e019fa918ca9e85cdd7308 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c560f540092a699d3d666c8aa44e1e7 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a2c560f540092a699d3d666c8aa44e1e7">m_memory</a></td></tr>
-<tr class="separator:a2c560f540092a699d3d666c8aa44e1e7 inherit pro_attribs_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e96965d2b330a9a0285cd88b06414c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#a6e96965d2b330a9a0285cd88b06414c8">m_memory</a></td></tr>
+<tr class="separator:a6e96965d2b330a9a0285cd88b06414c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ae8e37d6575e39d84067eb2202a39b180"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html#ae8e37d6575e39d84067eb2202a39b180">VRAM</a></td></tr>
 <tr class="separator:ae8e37d6575e39d84067eb2202a39b180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:a20c06e824854609824cff642f8be2007 inherit pub_types_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a> { <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ad6f224d8cfcc09952d4e9ba2211186a8">eBuffer</a>
-, <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ac8cb98c5bfd36f031e9e987c48553cca">eImage</a>
-, <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007a98ce873df53900dd5454baba574ecb06">eCOUNT_</a>
- }</td></tr>
-<tr class="separator:a20c06e824854609824cff642f8be2007 inherit pub_types_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_classle_1_1graphics_1_1Resource"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classle_1_1graphics_1_1Resource')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classle_1_1graphics_1_1Resource.html">le::graphics::Resource</a></td></tr>
-<tr class="memitem:a1d2bb18dd2f76c6d42f9775de45d72de inherit pro_static_methods_classle_1_1graphics_1_1Resource"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Resource.html#a1d2bb18dd2f76c6d42f9775de45d72de">exchg</a> (<a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;lhs, <a class="el" href="classle_1_1graphics_1_1Resource.html">Resource</a> &amp;rhs) noexcept</td></tr>
-<tr class="separator:a1d2bb18dd2f76c6d42f9775de45d72de inherit pro_static_methods_classle_1_1graphics_1_1Resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae8059828abc6e53a18691cf781cfe2dc" name="ae8059828abc6e53a18691cf781cfe2dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8059828abc6e53a18691cf781cfe2dc">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8059828abc6e53a18691cf781cfe2dc">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,8 +162,48 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af07d58f0a4e9da4a659374e82935074b" name="af07d58f0a4e9da4a659374e82935074b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af07d58f0a4e9da4a659374e82935074b">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">le::graphics::Image::Image </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1RenderTarget.html">RenderTarget</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::Format&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::ImageUsageFlags&#160;</td>
+          <td class="paramname"><em>usage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab73e04985d29e9ef6f4281981c24fcf1" name="ab73e04985d29e9ef6f4281981c24fcf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab73e04985d29e9ef6f4281981c24fcf1">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73e04985d29e9ef6f4281981c24fcf1">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,14 +228,11 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a6501cd39fd0a92d5fc77256e963b0c75" name="a6501cd39fd0a92d5fc77256e963b0c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6501cd39fd0a92d5fc77256e963b0c75">&#9670;&nbsp;</a></span>~Image()</h2>
+<a id="a172dcd4688a99f981a503e375fefe162" name="a172dcd4688a99f981a503e375fefe162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172dcd4688a99f981a503e375fefe162">&#9670;&nbsp;</a></span>~Image()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">le::graphics::Image::~Image </td>
@@ -227,16 +241,36 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9a52505aa6db70efd0c50164b751aaf1" name="a9a52505aa6db70efd0c50164b751aaf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a52505aa6db70efd0c50164b751aaf1">&#9670;&nbsp;</a></span>blitFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele_1_1graphics.html#af8e565e10e37efab0caad4929cc1aa62">BlitFlags</a> le::graphics::Image::blitFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a764ab799b8f15a769752abf20e2a02d0" name="a764ab799b8f15a769752abf20e2a02d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a764ab799b8f15a769752abf20e2a02d0">&#9670;&nbsp;</a></span>extent()</h2>
 
@@ -337,8 +371,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a34391b3906cf41d52dac3ba8dba069df" name="a34391b3906cf41d52dac3ba8dba069df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34391b3906cf41d52dac3ba8dba069df">&#9670;&nbsp;</a></span>info()</h2>
+<a id="a0eb15227782ada3f6441766198426922" name="a0eb15227782ada3f6441766198426922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb15227782ada3f6441766198426922">&#9670;&nbsp;</a></span>info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,13 +408,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::Format&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>linear</em>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -390,37 +418,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54d260cc5af1b4b638b1942fa74523f6" name="a54d260cc5af1b4b638b1942fa74523f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d260cc5af1b4b638b1942fa74523f6">&#9670;&nbsp;</a></span>kind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a> le::graphics::Image::kind </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classle_1_1graphics_1_1Resource.html#a69d147f2e19e9454c113bf34f8594d4d">le::graphics::Resource</a>.</p>
 
 </div>
 </div>
@@ -435,6 +436,48 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> le::graphics::Image::layerCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26235d8ec52715061e0e55a0d95a210f" name="a26235d8ec52715061e0e55a0d95a210f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26235d8ec52715061e0e55a0d95a210f">&#9670;&nbsp;</a></span>map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void const  * le::graphics::Image::map </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51548d4f5f617acc99a604d2c8e39309" name="a51548d4f5f617acc99a604d2c8e39309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51548d4f5f617acc99a604d2c8e39309">&#9670;&nbsp;</a></span>mapped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void const  * le::graphics::Image::mapped </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -471,6 +514,101 @@ Additional Inherited Members</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4342faf139160eaf6931bc56f1919dce" name="a4342faf139160eaf6931bc56f1919dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4342faf139160eaf6931bc56f1919dce">&#9670;&nbsp;</a></span>storageInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a> le::graphics::Image::storageInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td>
+          <td class="paramname"><em>extent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::Format&#160;</td>
+          <td class="paramname"><em>format</em> = <code><a class="el" href="classle_1_1graphics_1_1Image.html#ae991cb718f678e7878c60426de892e93">linear_v</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad32d49636aa2df23d17f0ac7930b6c63" name="ad32d49636aa2df23d17f0ac7930b6c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32d49636aa2df23d17f0ac7930b6c63">&#9670;&nbsp;</a></span>textureInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">CreateInfo</a> le::graphics::Image::textureInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td>
+          <td class="paramname"><em>extent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::Format&#160;</td>
+          <td class="paramname"><em>format</em> = <code><a class="el" href="classle_1_1graphics_1_1Image.html#a59a018e570d749108c2c72750abe1425">srgb_v</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cubemap</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01e3d866d4c44655eb21299f9aad9024" name="a01e3d866d4c44655eb21299f9aad9024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e3d866d4c44655eb21299f9aad9024">&#9670;&nbsp;</a></span>unmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::graphics::Image::unmap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -574,8 +712,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad7dbd1f0db40e3c4a7d17cfe4050a952" name="ad7dbd1f0db40e3c4a7d17cfe4050a952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7dbd1f0db40e3c4a7d17cfe4050a952">&#9670;&nbsp;</a></span>kind_v</h2>
+<a id="a8b0f068b2a6cf5b10177d5c4e636fbcc" name="a8b0f068b2a6cf5b10177d5c4e636fbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0f068b2a6cf5b10177d5c4e636fbcc">&#9670;&nbsp;</a></span>allocation_type_v</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,7 +722,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007">Kind</a> le::graphics::Image::kind_v = <a class="el" href="classle_1_1graphics_1_1Resource.html#a20c06e824854609824cff642f8be2007ac8cb98c5bfd36f031e9e987c48553cca">Kind::eImage</a></td>
+          <td class="memname">constexpr auto le::graphics::Image::allocation_type_v = <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ac8cb98c5bfd36f031e9e987c48553cca">Memory::Type::eImage</a></td>
         </tr>
       </table>
   </td>
@@ -612,6 +750,28 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e96965d2b330a9a0285cd88b06414c8" name="a6e96965d2b330a9a0285cd88b06414c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e96965d2b330a9a0285cd88b06414c8">&#9670;&nbsp;</a></span>m_memory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt;<a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a>*&gt; le::graphics::Image::m_memory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -49,6 +49,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classle_1_1graphics_1_1CommandRotator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">le::graphics::CommandRotator Class Reference</div></div>
 </div><!--header-->
@@ -58,6 +59,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator_1_1Instant.html">Instant</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator_1_1Pool.html">Pool</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -65,10 +68,12 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab32c324d16933830512035bcd261042d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#ab32c324d16933830512035bcd261042d">CommandRotator</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, <a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a> qtype=<a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904aae96dc49a56fd0c22927d672cb979537">QType::eGraphics</a>)</td></tr>
 <tr class="separator:ab32c324d16933830512035bcd261042d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace498985e2b634e76afe664c3c017da6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1CommandRotator_1_1Instant.html">Instant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#ace498985e2b634e76afe664c3c017da6">instant</a> () const</td></tr>
+<tr class="separator:ace498985e2b634e76afe664c3c017da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a7646d44ec31b3bc1bbbd69825e2682"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#a5a7646d44ec31b3bc1bbbd69825e2682">get</a> () const noexcept</td></tr>
 <tr class="separator:a5a7646d44ec31b3bc1bbbd69825e2682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d3b10ff1b44adea67cb5bb2b4e99dd"><td class="memItemLeft" align="right" valign="top">vk::Fence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#a79d3b10ff1b44adea67cb5bb2b4e99dd">fence</a> () const noexcept</td></tr>
-<tr class="separator:a79d3b10ff1b44adea67cb5bb2b4e99dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3541339cf176f69894df681ebfc3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classktl_1_1future.html">ktl::future</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#a5d3541339cf176f69894df681ebfc3d4">future</a> () const</td></tr>
+<tr class="separator:a5d3541339cf176f69894df681ebfc3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc20a4ad4f3ccade335b1c48d6ffc1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#aecc20a4ad4f3ccade335b1c48d6ffc1e">submit</a> ()</td></tr>
 <tr class="separator:aecc20a4ad4f3ccade335b1c48d6ffc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -76,6 +81,11 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad2749e9beacf34bec0cd52dae30f97d4"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#ad2749e9beacf34bec0cd52dae30f97d4">pool_flags_v</a> = vk::CommandPoolCreateFlagBits::eResetCommandBuffer | vk::CommandPoolCreateFlagBits::eTransient</td></tr>
 <tr class="separator:ad2749e9beacf34bec0cd52dae30f97d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a56fb84f68201da1ca61922dfb699fe13"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandRotator.html#a56fb84f68201da1ca61922dfb699fe13">Instant</a></td></tr>
+<tr class="separator:a56fb84f68201da1ca61922dfb699fe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab32c324d16933830512035bcd261042d" name="ab32c324d16933830512035bcd261042d"></a>
@@ -107,8 +117,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79d3b10ff1b44adea67cb5bb2b4e99dd" name="a79d3b10ff1b44adea67cb5bb2b4e99dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d3b10ff1b44adea67cb5bb2b4e99dd">&#9670;&nbsp;</a></span>fence()</h2>
+<a id="a5d3541339cf176f69894df681ebfc3d4" name="a5d3541339cf176f69894df681ebfc3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3541339cf176f69894df681ebfc3d4">&#9670;&nbsp;</a></span>future()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +127,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vk::Fence le::graphics::CommandRotator::fence </td>
+          <td class="memname"><a class="el" href="classktl_1_1future.html">ktl::future</a>&lt; void &gt; le::graphics::CommandRotator::future </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -125,7 +135,7 @@ Static Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -157,6 +167,23 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ace498985e2b634e76afe664c3c017da6" name="ace498985e2b634e76afe664c3c017da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace498985e2b634e76afe664c3c017da6">&#9670;&nbsp;</a></span>instant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classle_1_1graphics_1_1CommandRotator_1_1Instant.html">Instant</a> le::graphics::CommandRotator::instant </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aecc20a4ad4f3ccade335b1c48d6ffc1e" name="aecc20a4ad4f3ccade335b1c48d6ffc1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecc20a4ad4f3ccade335b1c48d6ffc1e">&#9670;&nbsp;</a></span>submit()</h2>
 
@@ -170,6 +197,29 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a56fb84f68201da1ca61922dfb699fe13" name="a56fb84f68201da1ca61922dfb699fe13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56fb84f68201da1ca61922dfb699fe13">&#9670;&nbsp;</a></span>Instant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classle_1_1graphics_1_1CommandRotator_1_1Instant.html">Instant</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

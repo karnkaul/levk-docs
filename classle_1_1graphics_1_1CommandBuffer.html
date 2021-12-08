@@ -81,10 +81,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acce09565b494a5eb1119bb8e18185742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9aadb2b1904ec9aa9dafa74476c1986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ae9aadb2b1904ec9aa9dafa74476c1986">CommandBuffer</a> (vk::CommandBuffer cmd)</td></tr>
 <tr class="separator:ae9aadb2b1904ec9aa9dafa74476c1986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd69e62e1d171406ffa4fe6ad09de93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#abcd69e62e1d171406ffa4fe6ad09de93">CommandBuffer</a> (<a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &amp;device, vk::CommandPool cmd)</td></tr>
-<tr class="separator:abcd69e62e1d171406ffa4fe6ad09de93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af230e588f5172a58efe4c088e714a072"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#af230e588f5172a58efe4c088e714a072">begin</a> (vk::CommandBufferUsageFlags usage)</td></tr>
-<tr class="separator:af230e588f5172a58efe4c088e714a072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59c1ac6c226f6a32694a933e68fbc4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ab59c1ac6c226f6a32694a933e68fbc4e">CommandBuffer</a> (<a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &amp;device, vk::CommandPool cmd, vk::CommandBufferLevel level=vk::CommandBufferLevel::ePrimary)</td></tr>
+<tr class="separator:ab59c1ac6c226f6a32694a933e68fbc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6a12b1d49a4938b44e77744f139be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a5a6a12b1d49a4938b44e77744f139be5">begin</a> (vk::CommandBufferUsageFlags usage, vk::CommandBufferInheritanceInfo const *inheritance={})</td></tr>
+<tr class="separator:a5a6a12b1d49a4938b44e77744f139be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8d03e5d582b1c270cfee520ec7753a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a3a8d03e5d582b1c270cfee520ec7753a">beginRenderPass</a> (vk::RenderPass renderPass, vk::Framebuffer framebuffer, <a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> extent, <a class="el" href="structle_1_1graphics_1_1CommandBuffer_1_1PassInfo.html">PassInfo</a> const &amp;info)</td></tr>
 <tr class="separator:a3a8d03e5d582b1c270cfee520ec7753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db141c7c3e12c820831090c9ac81712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a5db141c7c3e12c820831090c9ac81712">setViewport</a> (vk::Viewport viewport) const</td></tr>
@@ -253,8 +253,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abcd69e62e1d171406ffa4fe6ad09de93" name="abcd69e62e1d171406ffa4fe6ad09de93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd69e62e1d171406ffa4fe6ad09de93">&#9670;&nbsp;</a></span>CommandBuffer() <span class="overload">[3/3]</span></h2>
+<a id="ab59c1ac6c226f6a32694a933e68fbc4e" name="ab59c1ac6c226f6a32694a933e68fbc4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59c1ac6c226f6a32694a933e68fbc4e">&#9670;&nbsp;</a></span>CommandBuffer() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +269,13 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::CommandPool&#160;</td>
-          <td class="paramname"><em>cmd</em>&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::CommandBufferLevel&#160;</td>
+          <td class="paramname"><em>level</em> = <code>vk::CommandBufferLevel::ePrimary</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -282,8 +288,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af230e588f5172a58efe4c088e714a072" name="af230e588f5172a58efe4c088e714a072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af230e588f5172a58efe4c088e714a072">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a5a6a12b1d49a4938b44e77744f139be5" name="a5a6a12b1d49a4938b44e77744f139be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6a12b1d49a4938b44e77744f139be5">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,8 +298,18 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">void le::graphics::CommandBuffer::begin </td>
           <td>(</td>
           <td class="paramtype">vk::CommandBufferUsageFlags&#160;</td>
-          <td class="paramname"><em>usage</em></td><td>)</td>
+          <td class="paramname"><em>usage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">vk::CommandBufferInheritanceInfo const *&#160;</td>
+          <td class="paramname"><em>inheritance</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

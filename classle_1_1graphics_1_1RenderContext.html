@@ -90,8 +90,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc23e77c23dbcc5bb0dbc1a54e268bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e79168949dbdd135b30cef361b97e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#a35e79168949dbdd135b30cef361b97e5">waitForFrame</a> ()</td></tr>
 <tr class="separator:a35e79168949dbdd135b30cef361b97e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17723e5baaa49c3fc2b2fb2465cf49e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#a17723e5baaa49c3fc2b2fb2465cf49e8">render</a> (<a class="el" href="classle_1_1graphics_1_1IDrawer.html">IDrawer</a> &amp;out_drawer, <a class="el" href="structle_1_1graphics_1_1RenderBegin.html">RenderBegin</a> const &amp;rb, <a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> fbSize)</td></tr>
-<tr class="separator:a17723e5baaa49c3fc2b2fb2465cf49e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be3f6fa318ce60c2f9b4a9ace5903c3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classle_1_1graphics_1_1RenderPass.html">RenderPass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#a9be3f6fa318ce60c2f9b4a9ace5903c3">beginMainPass</a> (<a class="el" href="structle_1_1graphics_1_1RenderBegin.html">RenderBegin</a> const &amp;rb, <a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> fbSize)</td></tr>
+<tr class="separator:a9be3f6fa318ce60c2f9b4a9ace5903c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a5542ea593b8dc529b5da93d6f05ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#a67a5542ea593b8dc529b5da93d6f05ff">endMainPass</a> (<a class="el" href="classle_1_1graphics_1_1RenderPass.html">RenderPass</a> &amp;out_rp, <a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> fbSize)</td></tr>
+<tr class="separator:a67a5542ea593b8dc529b5da93d6f05ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58cda6b550eaa3d644b61e796624c6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#af58cda6b550eaa3d644b61e796624c6d">recreateSwapchain</a> (<a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> fbSize, std::optional&lt; <a class="el" href="namespacele_1_1graphics.html#acc4ffd81fba6dad7d13da286f08e56d2">VSync</a> &gt; vsync)</td></tr>
 <tr class="separator:af58cda6b550eaa3d644b61e796624c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf31fa0161010cb73d6f0602771bb699"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Surface.html">Surface</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#acf31fa0161010cb73d6f0602771bb699">surface</a> () const noexcept</td></tr>
@@ -118,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af49f9131db2bb35a1a374963de70cdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8ffd9391dbb115a1d54f13b7f01a3f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1RenderTarget.html">RenderTarget</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#ae8ffd9391dbb115a1d54f13b7f01a3f1">previousFrame</a> () const noexcept</td></tr>
 <tr class="separator:ae8ffd9391dbb115a1d54f13b7f01a3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad610799cb15f8b3adeb6c83b164b7dc9"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1RenderContext.html#ad610799cb15f8b3adeb6c83b164b7dc9">previousFrameAsImage</a> () const</td></tr>
+<tr class="separator:ad610799cb15f8b3adeb6c83b164b7dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1NoCopy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1NoCopy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1NoCopy.html">le::NoCopy</a></td></tr>
 <tr class="memitem:a0525fab0a0ff2ac0241d7f791ba55169 inherit pub_methods_structle_1_1NoCopy"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1NoCopy.html#a0525fab0a0ff2ac0241d7f791ba55169">NoCopy</a> ()=default</td></tr>
 <tr class="separator:a0525fab0a0ff2ac0241d7f791ba55169 inherit pub_methods_structle_1_1NoCopy"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +257,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9be3f6fa318ce60c2f9b4a9ace5903c3" name="a9be3f6fa318ce60c2f9b4a9ace5903c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be3f6fa318ce60c2f9b4a9ace5903c3">&#9670;&nbsp;</a></span>beginMainPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classle_1_1graphics_1_1RenderPass.html">RenderPass</a> &gt; le::graphics::RenderContext::beginMainPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1RenderBegin.html">RenderBegin</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td>
+          <td class="paramname"><em>fbSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4025c4dc0b68e5a48123b86a96653c74" name="a4025c4dc0b68e5a48123b86a96653c74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4025c4dc0b68e5a48123b86a96653c74">&#9670;&nbsp;</a></span>buffering()</h2>
 
@@ -370,6 +402,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a67a5542ea593b8dc529b5da93d6f05ff" name="a67a5542ea593b8dc529b5da93d6f05ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a5542ea593b8dc529b5da93d6f05ff">&#9670;&nbsp;</a></span>endMainPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::graphics::RenderContext::endMainPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1RenderPass.html">RenderPass</a> &amp;&#160;</td>
+          <td class="paramname"><em>out_rp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td>
+          <td class="paramname"><em>fbSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a35327ee9799c1e2694ce5f3edc19caf6" name="a35327ee9799c1e2694ce5f3edc19caf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35327ee9799c1e2694ce5f3edc19caf6">&#9670;&nbsp;</a></span>pipelineFactory() <span class="overload">[1/2]</span></h2>
 
@@ -445,6 +505,23 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad610799cb15f8b3adeb6c83b164b7dc9" name="ad610799cb15f8b3adeb6c83b164b7dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad610799cb15f8b3adeb6c83b164b7dc9">&#9670;&nbsp;</a></span>previousFrameAsImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &gt; le::graphics::RenderContext::previousFrameAsImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af58cda6b550eaa3d644b61e796624c6d" name="af58cda6b550eaa3d644b61e796624c6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af58cda6b550eaa3d644b61e796624c6d">&#9670;&nbsp;</a></span>recreateSwapchain()</h2>
 
@@ -462,40 +539,6 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">std::optional&lt; <a class="el" href="namespacele_1_1graphics.html#acc4ffd81fba6dad7d13da286f08e56d2">VSync</a> &gt;&#160;</td>
           <td class="paramname"><em>vsync</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a17723e5baaa49c3fc2b2fb2465cf49e8" name="a17723e5baaa49c3fc2b2fb2465cf49e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17723e5baaa49c3fc2b2fb2465cf49e8">&#9670;&nbsp;</a></span>render()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool le::graphics::RenderContext::render </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1IDrawer.html">IDrawer</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_drawer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1RenderBegin.html">RenderBegin</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td>
-          <td class="paramname"><em>fbSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
