@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/include/engine/utils/logger.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/core/include/core/log_channel.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,31 +41,36 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a7f531b1c37460085cedd304cb8df01d.html">engine</a></li><li class="navelem"><a class="el" href="dir_fedb79ab69ff427d880534878bf0de26.html">utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_6f77a39b07c019ccd7492ea87272f732.html">core</a></li><li class="navelem"><a class="el" href="dir_25de89a49d1da2858ac6330785c12b40.html">include</a></li><li class="navelem"><a class="el" href="dir_675588880d5acaab1ae503e87aff3526.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">logger.hpp File Reference</div></div>
+  <div class="headertitle"><div class="title">log_channel.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="lib__logger_8hpp.html">core/lib_logger.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="log_8hpp.html">core/log.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacele_1_1utils"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html">le::utils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a69464d7fa248b3b91271a271138949c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a69464d7fa248b3b91271a271138949c4">le::LogChannelMask</a> : LogChannel { <a class="el" href="namespacele.html#a69464d7fa248b3b91271a271138949c4aa75729560f58525b1a92d260e5bb2ffd">le::LC_EndUser</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespacele.html#a69464d7fa248b3b91271a271138949c4ae569d6da73f3dd1e446ae42f1af524da">le::LC_LibUser</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacele.html#a69464d7fa248b3b91271a271138949c4af680d06994fa9b6304e7964671fbbe9f">le::LC_Library</a> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="separator:a69464d7fa248b3b91271a271138949c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a65b0f5e09372d7ff2db651df19396d24"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a65b0f5e09372d7ff2db651df19396d24">le::utils::g_name</a> = &quot;Engine&quot;</td></tr>
-<tr class="separator:a65b0f5e09372d7ff2db651df19396d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b75e25543c09b7673e61c9fc18b4664"><td class="memItemLeft" align="right" valign="top">LibLogger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html#a3b75e25543c09b7673e61c9fc18b4664">le::utils::g_log</a></td></tr>
-<tr class="separator:a3b75e25543c09b7673e61c9fc18b4664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa953645c7cd072d7c026f5a65d137200"><td class="memItemLeft" align="right" valign="top">constexpr LogChannel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#aa953645c7cd072d7c026f5a65d137200">le::log_channels_v</a> = <a class="el" href="std__types_8hpp.html#a4cc9b5f3a680eb787ad77a9f3b06befe">levk_pre_release</a> ? LC_EndUser | LC_Library | LC_LibUser : LC_EndUser</td></tr>
+<tr class="separator:aa953645c7cd072d7c026f5a65d137200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

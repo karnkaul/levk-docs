@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/dlog/include/dumb_log/log.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/dlog/include/dumb_log/channel_flags.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,28 +46,36 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">log.hpp File Reference</div></div>
+  <div class="headertitle"><div class="title">channel_flags.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fmt/format.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="level_8hpp.html">dumb_log/level.hpp</a>&gt;</code><br />
-</div><table class="memberdecls">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdlog_1_1channel__flags.html">dlog::channel_flags</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacedl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedl.html">dl</a></td></tr>
+<tr class="memitem:namespacedlog"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedlog.html">dlog</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedlog_1_1literals"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedlog_1_1literals.html">dlog::literals</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0f9e22174410cb87a0379c41842e33ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedlog.html#a0f9e22174410cb87a0379c41842e33ce">dlog::channel</a> = unsigned char</td></tr>
+<tr class="memdesc:a0f9e22174410cb87a0379c41842e33ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrary 8-bit flags for filtering logs.  <a href="namespacedlog.html#a0f9e22174410cb87a0379c41842e33ce">More...</a><br /></td></tr>
+<tr class="separator:a0f9e22174410cb87a0379c41842e33ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4ea5bbc8d6b60798682088368f9da471"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedl.html#a4ea5bbc8d6b60798682088368f9da471">dl::format</a> (level level, std::string_view text)</td></tr>
-<tr class="memdesc:a4ea5bbc8d6b60798682088368f9da471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain meta-formatted string.  <a href="namespacedl.html#a4ea5bbc8d6b60798682088368f9da471">More...</a><br /></td></tr>
-<tr class="separator:a4ea5bbc8d6b60798682088368f9da471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e8b4b9168b00a8befe890df562b921"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ad6e8b4b9168b00a8befe890df562b921"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedl.html#ad6e8b4b9168b00a8befe890df562b921">dl::log</a> (level level, std::string_view fmt, Args const &amp;... args)</td></tr>
-<tr class="memdesc:ad6e8b4b9168b00a8befe890df562b921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to mapped output (stdout / stderr by default)  <a href="namespacedl.html#ad6e8b4b9168b00a8befe890df562b921">More...</a><br /></td></tr>
-<tr class="separator:ad6e8b4b9168b00a8befe890df562b921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42efcdad0f201ff6305332ecab122bd9"><td class="memItemLeft" align="right" valign="top">constexpr channel_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedlog_1_1literals.html#a42efcdad0f201ff6305332ecab122bd9">dlog::literals::operator&quot;&quot;_cf</a> (unsigned long long ch) noexcept</td></tr>
+<tr class="separator:a42efcdad0f201ff6305332ecab122bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
