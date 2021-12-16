@@ -47,45 +47,32 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">memory.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;vk_mem_alloc.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="log_8hpp.html">core/log.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2include_2core_2not__null_8hpp.html">core/not_null.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="std__types_8hpp.html">core/std_types.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="error_8hpp.html">core/utils/error.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="bitmap_8hpp.html">graphics/bitmap.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="common_8hpp.html">graphics/common.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="qflags_8hpp.html">graphics/qflags.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="image__ref_8hpp.html">graphics/image_ref.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="qtype_8hpp.html">graphics/qtype.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="either_8hpp.html">ktl/either.hpp</a>&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1QShare.html">le::graphics::QShare</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Allocation.html">le::graphics::Allocation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html">le::graphics::Memory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">le::graphics::Memory::ImgMeta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html">le::graphics::Buffer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Memory_1_1AllocInfo.html">le::graphics::Memory::AllocInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Storage.html">le::graphics::Buffer::Storage</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Memory_1_1Resource.html">le::graphics::Memory::Resource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Span.html">le::graphics::Buffer::Span</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Image.html">le::graphics::Image</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Image_1_1Storage.html">le::graphics::Image::Storage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1AllocationInfo.html">le::graphics::AllocationInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1CreateInfo.html">le::graphics::Buffer::CreateInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Image_1_1CreateInfo.html">le::graphics::Image::CreateInfo</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Memory_1_1Deleter.html">le::graphics::Memory::Deleter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -94,6 +81,13 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacele_1_1graphics"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html">le::graphics</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aeb1acedbb438dae7a8505f780604adab"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">le::graphics::BlitFilter</a> { <a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">le::graphics::eLinear</a>
+, <a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adaba6d4cace607e544346702a204c5e524c8">le::graphics::eNearest</a>
+ }</td></tr>
+<tr class="separator:aeb1acedbb438dae7a8505f780604adab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

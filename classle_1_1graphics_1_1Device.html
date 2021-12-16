@@ -118,10 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a995f95f287cab30c6db8dc9e3e2605ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6482b99297df7c3eb4c7ea1d6545e829"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a6482b99297df7c3eb4c7ea1d6545e829">signalled</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::Fence const &gt; fences) const</td></tr>
 <tr class="separator:a6482b99297df7c3eb4c7ea1d6545e829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0279cfd65a2047c6f0feb87acc83dff"><td class="memItemLeft" align="right" valign="top">vk::CommandPool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ab0279cfd65a2047c6f0feb87acc83dff">makeCommandPool</a> (vk::CommandPoolCreateFlags flags, <a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a> qtype) const</td></tr>
-<tr class="separator:ab0279cfd65a2047c6f0feb87acc83dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1d14798cfecad2e49839b6b9d641507"><td class="memItemLeft" align="right" valign="top">vk::ImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ac1d14798cfecad2e49839b6b9d641507">makeImageView</a> (vk::Image image, vk::Format format, vk::ImageAspectFlags aspectFlags=vk::ImageAspectFlagBits::eColor, vk::ImageViewType type=vk::ImageViewType::e2D) const</td></tr>
-<tr class="separator:ac1d14798cfecad2e49839b6b9d641507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91ac2995f89df48299dc9a98d23446d"><td class="memItemLeft" align="right" valign="top">vk::ImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ab91ac2995f89df48299dc9a98d23446d">makeImageView</a> (vk::Image image, vk::Format format, vk::ImageAspectFlags aspectFlags=vk::ImageAspectFlagBits::eColor, vk::ImageViewType type=vk::ImageViewType::e2D, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> mipLevels=1U) const</td></tr>
+<tr class="separator:ab91ac2995f89df48299dc9a98d23446d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37ae21c5490676da55114ea92302e3a"><td class="memItemLeft" align="right" valign="top">vk::PipelineCache&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ae37ae21c5490676da55114ea92302e3a">makePipelineCache</a> () const</td></tr>
 <tr class="separator:ae37ae21c5490676da55114ea92302e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6197b0d552ed935b74e76ed6f6bb06a0"><td class="memItemLeft" align="right" valign="top">vk::PipelineLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a6197b0d552ed935b74e76ed6f6bb06a0">makePipelineLayout</a> (<a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a>&lt; vk::PushConstantRange &gt; pushConstants, <a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a>&lt; vk::DescriptorSetLayout &gt; setLayouts) const</td></tr>
@@ -152,16 +150,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a999c51fb96b93da61ebb9abc8324e40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba9918b79f075caedf42ee8100a31d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html">PhysicalDevice</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aba9918b79f075caedf42ee8100a31d09">physicalDevice</a> () const noexcept</td></tr>
 <tr class="separator:aba9918b79f075caedf42ee8100a31d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db94b65e15deb59c9122a9122d9c114"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html">QueueMultiplex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a6db94b65e15deb59c9122a9122d9c114">queues</a> () noexcept</td></tr>
-<tr class="separator:a6db94b65e15deb59c9122a9122d9c114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad496ec0f436f3e985f58fa08219e188a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html">QueueMultiplex</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ad496ec0f436f3e985f58fa08219e188a">queues</a> () const noexcept</td></tr>
-<tr class="separator:ad496ec0f436f3e985f58fa08219e188a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270ec45e806643424f1193b37cab4be9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Queues.html">Queues</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a270ec45e806643424f1193b37cab4be9">queues</a> () const noexcept</td></tr>
+<tr class="separator:a270ec45e806643424f1193b37cab4be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a424c8882e660bb0e1def478adc931e18"><td class="memItemLeft" align="right" valign="top">vk::Instance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a424c8882e660bb0e1def478adc931e18">instance</a> () const noexcept</td></tr>
 <tr class="separator:a424c8882e660bb0e1def478adc931e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa80fb336776befd45270b24f3dfb3cad"><td class="memItemLeft" align="right" valign="top">vk::Device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aa80fb336776befd45270b24f3dfb3cad">device</a> () const noexcept</td></tr>
 <tr class="separator:aa80fb336776befd45270b24f3dfb3cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d5de0d52fc0815d8af87ea8b8f5d44f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a0d5de0d52fc0815d8af87ea8b8f5d44f">lineWidthLimit</a> () const noexcept</td></tr>
 <tr class="separator:a0d5de0d52fc0815d8af87ea8b8f5d44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e16810140188b693bcacf7d544827a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a83e16810140188b693bcacf7d544827a">maxAnisotropy</a> () const noexcept</td></tr>
+<tr class="separator:a83e16810140188b693bcacf7d544827a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1Pinned"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1Pinned')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1Pinned.html">le::Pinned</a></td></tr>
 <tr class="memitem:a1c65ae37cffd96c8fbc46bc52eb02e96 inherit pub_methods_structle_1_1Pinned"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Pinned.html#a1c65ae37cffd96c8fbc46bc52eb02e96">Pinned</a> ()=default</td></tr>
 <tr class="separator:a1c65ae37cffd96c8fbc46bc52eb02e96 inherit pub_methods_structle_1_1Pinned"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,8 +192,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab5b2c50849da4dfa76344ab6a130f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9630d5aaddb3326aea5a6a323ce03326"><td class="memItemLeft" align="right" valign="top">vk::PhysicalDeviceLimits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a9630d5aaddb3326aea5a6a323ce03326">limits</a></td></tr>
 <tr class="separator:a9630d5aaddb3326aea5a6a323ce03326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7838f97f57449721eebe3d2e801474c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ad7838f97f57449721eebe3d2e801474c">lineWidth</a></td></tr>
+<tr class="memitem:ad7838f97f57449721eebe3d2e801474c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ad7838f97f57449721eebe3d2e801474c">lineWidth</a> {}</td></tr>
 <tr class="separator:ad7838f97f57449721eebe3d2e801474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fe00693aefa268aaaedd881950b767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a19fe00693aefa268aaaedd881950b767">anisotropy</a> {}</td></tr>
+<tr class="separator:a19fe00693aefa268aaaedd881950b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -566,34 +566,6 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ab0279cfd65a2047c6f0feb87acc83dff" name="ab0279cfd65a2047c6f0feb87acc83dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0279cfd65a2047c6f0feb87acc83dff">&#9670;&nbsp;</a></span>makeCommandPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vk::CommandPool le::graphics::Device::makeCommandPool </td>
-          <td>(</td>
-          <td class="paramtype">vk::CommandPoolCreateFlags&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a>&#160;</td>
-          <td class="paramname"><em>qtype</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4ffe6d1602d3cc57d8a0442777239703" name="a4ffe6d1602d3cc57d8a0442777239703"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ffe6d1602d3cc57d8a0442777239703">&#9670;&nbsp;</a></span>makeDescriptorPool()</h2>
 
@@ -698,8 +670,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ac1d14798cfecad2e49839b6b9d641507" name="ac1d14798cfecad2e49839b6b9d641507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1d14798cfecad2e49839b6b9d641507">&#9670;&nbsp;</a></span>makeImageView()</h2>
+<a id="ab91ac2995f89df48299dc9a98d23446d" name="ab91ac2995f89df48299dc9a98d23446d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91ac2995f89df48299dc9a98d23446d">&#9670;&nbsp;</a></span>makeImageView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -726,7 +698,13 @@ template&lt;typename T , typename... Args&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::ImageViewType&#160;</td>
-          <td class="paramname"><em>type</em> = <code>vk::ImageViewType::e2D</code>&#160;</td>
+          <td class="paramname"><em>type</em> = <code>vk::ImageViewType::e2D</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
+          <td class="paramname"><em>mipLevels</em> = <code>1U</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -835,6 +813,31 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="a83e16810140188b693bcacf7d544827a" name="a83e16810140188b693bcacf7d544827a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e16810140188b693bcacf7d544827a">&#9670;&nbsp;</a></span>maxAnisotropy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::graphics::Device::maxAnisotropy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aba9918b79f075caedf42ee8100a31d09" name="aba9918b79f075caedf42ee8100a31d09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba9918b79f075caedf42ee8100a31d09">&#9670;&nbsp;</a></span>physicalDevice()</h2>
 
@@ -885,8 +888,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ad496ec0f436f3e985f58fa08219e188a" name="ad496ec0f436f3e985f58fa08219e188a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad496ec0f436f3e985f58fa08219e188a">&#9670;&nbsp;</a></span>queues() <span class="overload">[1/2]</span></h2>
+<a id="a270ec45e806643424f1193b37cab4be9" name="a270ec45e806643424f1193b37cab4be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270ec45e806643424f1193b37cab4be9">&#9670;&nbsp;</a></span>queues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -895,35 +898,10 @@ template&lt;typename T , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html">QueueMultiplex</a> const  &amp; le::graphics::Device::queues </td>
+          <td class="memname"><a class="el" href="classle_1_1graphics_1_1Queues.html">Queues</a> const  &amp; le::graphics::Device::queues </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6db94b65e15deb59c9122a9122d9c114" name="a6db94b65e15deb59c9122a9122d9c114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6db94b65e15deb59c9122a9122d9c114">&#9670;&nbsp;</a></span>queues() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classle_1_1graphics_1_1QueueMultiplex.html">QueueMultiplex</a> &amp; le::graphics::Device::queues </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>
@@ -1159,6 +1137,20 @@ template&lt;typename T , typename... Args&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a19fe00693aefa268aaaedd881950b767" name="a19fe00693aefa268aaaedd881950b767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fe00693aefa268aaaedd881950b767">&#9670;&nbsp;</a></span>anisotropy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::graphics::Device::anisotropy {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab5b2c50849da4dfa76344ab6a130f89e" name="ab5b2c50849da4dfa76344ab6a130f89e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5b2c50849da4dfa76344ab6a130f89e">&#9670;&nbsp;</a></span>available</h2>
 
@@ -1208,7 +1200,7 @@ template&lt;typename T , typename... Args&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&gt; le::graphics::Device::lineWidth</td>
+          <td class="memname"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&gt; le::graphics::Device::lineWidth {}</td>
         </tr>
       </table>
 </div><div class="memdoc">

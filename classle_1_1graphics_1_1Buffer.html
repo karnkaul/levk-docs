@@ -50,22 +50,17 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classle_1_1graphics_1_1Buffer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">le::graphics::Buffer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;memory.hpp&gt;</code></p>
+<p><code>#include &lt;buffer.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1CreateInfo.html">CreateInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Span.html">Span</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Storage.html">Storage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -79,12 +74,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acd481b7b483a01e69cdac355b5efb312"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#acd481b7b483a01e69cdac355b5efb312">Buffer</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt; memory, <a class="el" href="structle_1_1graphics_1_1Buffer_1_1CreateInfo.html">CreateInfo</a> const &amp;info)</td></tr>
 <tr class="separator:acd481b7b483a01e69cdac355b5efb312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac13f51ebbe79877f21bf773cbd4c76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a0ac13f51ebbe79877f21bf773cbd4c76">Buffer</a> (<a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> &amp;&amp;rhs) noexcept</td></tr>
-<tr class="separator:a0ac13f51ebbe79877f21bf773cbd4c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d3e0b7bfcad3abebf3a9bd52b327691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a7d3e0b7bfcad3abebf3a9bd52b327691">operator=</a> (<a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> rhs) noexcept</td></tr>
-<tr class="separator:a7d3e0b7bfcad3abebf3a9bd52b327691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4110daeda593945e6fd6bc1704a0b93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ac4110daeda593945e6fd6bc1704a0b93">~Buffer</a> ()</td></tr>
-<tr class="separator:ac4110daeda593945e6fd6bc1704a0b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b18e01822d05ef7ccb10c29a7741bf"><td class="memItemLeft" align="right" valign="top">vk::Buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ad3b18e01822d05ef7ccb10c29a7741bf">buffer</a> () const noexcept</td></tr>
 <tr class="separator:ad3b18e01822d05ef7ccb10c29a7741bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6930d0cc4daa9b3338eb7b71505e710a"><td class="memItemLeft" align="right" valign="top">vk::DeviceSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a6930d0cc4daa9b3338eb7b71505e710a">writeSize</a> () const noexcept</td></tr>
@@ -101,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8bcd8da386442b6a3d1adaa818b07957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c07cf8317ea39893c57db077efa4427"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a0c07cf8317ea39893c57db077efa4427">unmap</a> ()</td></tr>
 <tr class="separator:a0c07cf8317ea39893c57db077efa4427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7d07d35bddeb718f4e221209641777"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a4c7d07d35bddeb718f4e221209641777">write</a> (void const *pData, vk::DeviceSize size=0, vk::DeviceSize offset=0)</td></tr>
-<tr class="separator:a4c7d07d35bddeb718f4e221209641777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be6d285cbcd619e1c4282c0fa630a87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a0be6d285cbcd619e1c4282c0fa630a87">write</a> (void const *data, vk::DeviceSize size=0, vk::DeviceSize offset=0)</td></tr>
+<tr class="separator:a0be6d285cbcd619e1c4282c0fa630a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b30ec9cf3056358a3e1d270c53958a1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6b30ec9cf3056358a3e1d270c53958a1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a6b30ec9cf3056358a3e1d270c53958a1">writeT</a> (T const &amp;t, vk::DeviceSize offset=0)</td></tr>
 <tr class="separator:a6b30ec9cf3056358a3e1d270c53958a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,13 +100,6 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a69e93d1b36c17d53da07925c9ceb72c7"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a69e93d1b36c17d53da07925c9ceb72c7">allocation_type_v</a> = <a class="el" href="classle_1_1graphics_1_1Memory.html#ac31c799d73459a5ecf9308e3d5da1627ad6f224d8cfcc09952d4e9ba2211186a8">Memory::Type::eBuffer</a></td></tr>
 <tr class="separator:a69e93d1b36c17d53da07925c9ceb72c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a5770aec66ea6b65a7722632dc20a54ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Storage.html">Storage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#a5770aec66ea6b65a7722632dc20a54ab">m_storage</a></td></tr>
-<tr class="separator:a5770aec66ea6b65a7722632dc20a54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c9b8180ec6e74e2a750a0b9ee1d63e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Buffer.html#ad6c9b8180ec6e74e2a750a0b9ee1d63e">m_memory</a></td></tr>
-<tr class="separator:ad6c9b8180ec6e74e2a750a0b9ee1d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -153,7 +135,7 @@ Friends</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acd481b7b483a01e69cdac355b5efb312" name="acd481b7b483a01e69cdac355b5efb312"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd481b7b483a01e69cdac355b5efb312">&#9670;&nbsp;</a></span>Buffer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd481b7b483a01e69cdac355b5efb312">&#9670;&nbsp;</a></span>Buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,49 +156,6 @@ Friends</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0ac13f51ebbe79877f21bf773cbd4c76" name="a0ac13f51ebbe79877f21bf773cbd4c76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac13f51ebbe79877f21bf773cbd4c76">&#9670;&nbsp;</a></span>Buffer() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">le::graphics::Buffer::Buffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac4110daeda593945e6fd6bc1704a0b93" name="ac4110daeda593945e6fd6bc1704a0b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4110daeda593945e6fd6bc1704a0b93">&#9670;&nbsp;</a></span>~Buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">le::graphics::Buffer::~Buffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -316,32 +255,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d3e0b7bfcad3abebf3a9bd52b327691" name="a7d3e0b7bfcad3abebf3a9bd52b327691"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d3e0b7bfcad3abebf3a9bd52b327691">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a> &amp; le::graphics::Buffer::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Buffer.html">Buffer</a>&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0c07cf8317ea39893c57db077efa4427" name="a0c07cf8317ea39893c57db077efa4427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c07cf8317ea39893c57db077efa4427">&#9670;&nbsp;</a></span>unmap()</h2>
 
@@ -384,8 +297,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c7d07d35bddeb718f4e221209641777" name="a4c7d07d35bddeb718f4e221209641777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c7d07d35bddeb718f4e221209641777">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a0be6d285cbcd619e1c4282c0fa630a87" name="a0be6d285cbcd619e1c4282c0fa630a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be6d285cbcd619e1c4282c0fa630a87">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,7 +307,7 @@ Friends</h2></td></tr>
           <td class="memname">bool le::graphics::Buffer::write </td>
           <td>(</td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>pData</em>, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -538,50 +451,6 @@ template&lt;typename T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad6c9b8180ec6e74e2a750a0b9ee1d63e" name="ad6c9b8180ec6e74e2a750a0b9ee1d63e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6c9b8180ec6e74e2a750a0b9ee1d63e">&#9670;&nbsp;</a></span>m_memory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt;<a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a>*&gt; le::graphics::Buffer::m_memory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5770aec66ea6b65a7722632dc20a54ab" name="a5770aec66ea6b65a7722632dc20a54ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5770aec66ea6b65a7722632dc20a54ab">&#9670;&nbsp;</a></span>m_storage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structle_1_1graphics_1_1Buffer_1_1Storage.html">Storage</a> le::graphics::Buffer::m_storage</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -106,20 +106,20 @@ requires (std::is_convertible_v&lt;T, std::size_t&gt; || std::is_enum_v&lt;T&gt;
 <tr class="separator:a2d469bd80b5b9fc9104650b3e05295ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8a6b39a3cc65e01e3b3942fbd3c197"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="namespacele.html#ab4b6b35bf1146e8039b26cb0cef0c3d5">bytearray</a>, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#adf8a6b39a3cc65e01e3b3942fbd3c197">loadCubemap</a> (<a class="el" href="classle_1_1io_1_1Media.html">io::Media</a> const &amp;media, <a class="el" href="classle_1_1io_1_1Path.html">io::Path</a> const &amp;prefix, std::string_view ext=&quot;.jpg&quot;, CubeImageURIs const &amp;ids=<a class="el" href="namespacele_1_1graphics_1_1utils.html#a2cc4b8b3a7aba3a4dcec32f43a11d0d4">cubeImageURIs</a>)</td></tr>
 <tr class="separator:adf8a6b39a3cc65e01e3b3942fbd3c197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad58bcc428e94346a76ff8dfa6b424b0f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structle_1_1graphics_1_1QueueMultiplex_1_1Family.html">QueueMultiplex::Family</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#ad58bcc428e94346a76ff8dfa6b424b0f">queueFamilies</a> (<a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html">PhysicalDevice</a> const &amp;device, vk::SurfaceKHR surface)</td></tr>
-<tr class="separator:ad58bcc428e94346a76ff8dfa6b424b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6c09db71464a71f6367522e9f73eb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a3e6c09db71464a71f6367522e9f73eb6">canBlit</a> (<a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;src, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;dst) noexcept</td></tr>
-<tr class="separator:a3e6c09db71464a71f6367522e9f73eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37061298a1eefd5ce73ab99998c10f5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a37061298a1eefd5ce73ab99998c10f5c">blit</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;src, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;out_dst, vk::Filter filter=vk::Filter::eLinear)</td></tr>
-<tr class="separator:a37061298a1eefd5ce73ab99998c10f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0942f2a3cde6e454bf3f2adfc915dc4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a0942f2a3cde6e454bf3f2adfc915dc4e">copy</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;src, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;out_dst)</td></tr>
-<tr class="separator:a0942f2a3cde6e454bf3f2adfc915dc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1a4d83d2477914d0afd747e1f5219a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a9f1a4d83d2477914d0afd747e1f5219a">blitOrCopy</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;src, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;out_dst, vk::Filter filter=vk::Filter::eLinear)</td></tr>
-<tr class="separator:a9f1a4d83d2477914d0afd747e1f5219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf5e2165452b31c513002f02a98629bd"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#acf5e2165452b31c513002f02a98629bd">makeStorage</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandRotator.html">CommandRotator</a> const &amp;cr, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;img)</td></tr>
-<tr class="separator:acf5e2165452b31c513002f02a98629bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9db30b702fb222ef7da16d3c9e62c1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a2a9db30b702fb222ef7da16d3c9e62c1">writePPM</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;out_img, std::ostream &amp;out_str)</td></tr>
-<tr class="separator:a2a9db30b702fb222ef7da16d3c9e62c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959a56c52d99257e217d3c431a439988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#af8e565e10e37efab0caad4929cc1aa62">BlitFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a959a56c52d99257e217d3c431a439988">blitFlags</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> const &amp;img)</td></tr>
+<tr class="separator:a959a56c52d99257e217d3c431a439988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9614cb96fc39f0d1cc3f4c8913162a21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a9614cb96fc39f0d1cc3f4c8913162a21">canBlit</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;images, <a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">BlitFilter</a> filter=<a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">BlitFilter::eLinear</a>)</td></tr>
+<tr class="separator:a9614cb96fc39f0d1cc3f4c8913162a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcc9e0f62bcf4342ac8feea6a932093"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#aadcc9e0f62bcf4342ac8feea6a932093">blit</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;images, <a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">BlitFilter</a> filter=<a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">BlitFilter::eLinear</a>)</td></tr>
+<tr class="separator:aadcc9e0f62bcf4342ac8feea6a932093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e44ae7542b4159bff400a4fb9df5840"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a8e44ae7542b4159bff400a4fb9df5840">copy</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;images)</td></tr>
+<tr class="separator:a8e44ae7542b4159bff400a4fb9df5840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb45aa79d9db37cc8e18ac8d6da1966a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#adb45aa79d9db37cc8e18ac8d6da1966a">blitOrCopy</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;images, <a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">BlitFilter</a> filter=<a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">BlitFilter::eLinear</a>)</td></tr>
+<tr class="separator:adb45aa79d9db37cc8e18ac8d6da1966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe907c547725361d4a3c9a10d8d5f828"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#afe907c547725361d4a3c9a10d8d5f828">makeStorage</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1CommandRotator.html">CommandRotator</a> const &amp;cr, <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> const &amp;img)</td></tr>
+<tr class="separator:afe907c547725361d4a3c9a10d8d5f828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ac5944138cd0dc5f38f3cfb268bc28"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#a36ac5944138cd0dc5f38f3cfb268bc28">writePPM</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt; device, <a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;img, std::ostream &amp;out_str)</td></tr>
+<tr class="separator:a36ac5944138cd0dc5f38f3cfb268bc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab60d59a69dbd755a4110a120327456ea"><td class="memItemLeft" align="right" valign="top">constexpr vk::Viewport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#ab60d59a69dbd755a4110a120327456ea">viewport</a> (<a class="el" href="structle_1_1graphics_1_1DrawViewport.html">DrawViewport</a> const &amp;viewport) noexcept</td></tr>
 <tr class="separator:ab60d59a69dbd755a4110a120327456ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcb8de0518d7880c74f8a68c187be3d"><td class="memItemLeft" align="right" valign="top">constexpr vk::Rect2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics_1_1utils.html#acbcb8de0518d7880c74f8a68c187be3d">scissor</a> (<a class="el" href="namespacele_1_1graphics.html#a0967ce72e4c292ef467e9590ccb14ef0">DrawScissor</a> const &amp;scissor) noexcept</td></tr>
@@ -266,8 +266,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a37061298a1eefd5ce73ab99998c10f5c" name="a37061298a1eefd5ce73ab99998c10f5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37061298a1eefd5ce73ab99998c10f5c">&#9670;&nbsp;</a></span>blit()</h2>
+<a id="aadcc9e0f62bcf4342ac8feea6a932093" name="aadcc9e0f62bcf4342ac8feea6a932093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcc9e0f62bcf4342ac8feea6a932093">&#9670;&nbsp;</a></span>blit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,20 +287,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::Filter&#160;</td>
-          <td class="paramname"><em>filter</em> = <code>vk::Filter::eLinear</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">BlitFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em> = <code><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">BlitFilter::eLinear</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -312,8 +306,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f1a4d83d2477914d0afd747e1f5219a" name="a9f1a4d83d2477914d0afd747e1f5219a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1a4d83d2477914d0afd747e1f5219a">&#9670;&nbsp;</a></span>blitOrCopy()</h2>
+<a id="a959a56c52d99257e217d3c431a439988" name="a959a56c52d99257e217d3c431a439988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959a56c52d99257e217d3c431a439988">&#9670;&nbsp;</a></span>blitFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacele_1_1graphics.html#af8e565e10e37efab0caad4929cc1aa62">BlitFlags</a> le::graphics::utils::blitFlags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> const &amp;&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb45aa79d9db37cc8e18ac8d6da1966a" name="adb45aa79d9db37cc8e18ac8d6da1966a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb45aa79d9db37cc8e18ac8d6da1966a">&#9670;&nbsp;</a></span>blitOrCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,20 +355,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::Filter&#160;</td>
-          <td class="paramname"><em>filter</em> = <code>vk::Filter::eLinear</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">BlitFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em> = <code><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">BlitFilter::eLinear</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -358,26 +374,29 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e6c09db71464a71f6367522e9f73eb6" name="a3e6c09db71464a71f6367522e9f73eb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e6c09db71464a71f6367522e9f73eb6">&#9670;&nbsp;</a></span>canBlit()</h2>
+<a id="a9614cb96fc39f0d1cc3f4c8913162a21" name="a9614cb96fc39f0d1cc3f4c8913162a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9614cb96fc39f0d1cc3f4c8913162a21">&#9670;&nbsp;</a></span>canBlit()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool le::graphics::utils::canBlit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> * &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
-          <td class="paramname"><em>dst</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adab">BlitFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em> = <code><a class="el" href="namespacele_1_1graphics.html#aeb1acedbb438dae7a8505f780604adabab4f471e7b4231c34ab95df36681e7a86">BlitFilter::eLinear</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -385,11 +404,6 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -434,8 +448,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0942f2a3cde6e454bf3f2adfc915dc4e" name="a0942f2a3cde6e454bf3f2adfc915dc4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0942f2a3cde6e454bf3f2adfc915dc4e">&#9670;&nbsp;</a></span>copy()</h2>
+<a id="a8e44ae7542b4159bff400a4fb9df5840" name="a8e44ae7542b4159bff400a4fb9df5840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e44ae7542b4159bff400a4fb9df5840">&#9670;&nbsp;</a></span>copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,14 +469,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_dst</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>images</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -598,8 +606,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acf5e2165452b31c513002f02a98629bd" name="acf5e2165452b31c513002f02a98629bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf5e2165452b31c513002f02a98629bd">&#9670;&nbsp;</a></span>makeStorage()</h2>
+<a id="afe907c547725361d4a3c9a10d8d5f828" name="afe907c547725361d4a3c9a10d8d5f828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe907c547725361d4a3c9a10d8d5f828">&#9670;&nbsp;</a></span>makeStorage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +627,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1ImageRef.html">ImageRef</a> const &amp;&#160;</td>
           <td class="paramname"><em>img</em>&#160;</td>
         </tr>
         <tr>
@@ -783,34 +791,6 @@ requires (std::is_convertible_v&lt;T, std::size_t&gt; || std::is_enum_v&lt;T&gt;
 
 </div>
 </div>
-<a id="ad58bcc428e94346a76ff8dfa6b424b0f" name="ad58bcc428e94346a76ff8dfa6b424b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad58bcc428e94346a76ff8dfa6b424b0f">&#9670;&nbsp;</a></span>queueFamilies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="structle_1_1graphics_1_1QueueMultiplex_1_1Family.html">QueueMultiplex::Family</a> &gt; le::graphics::utils::queueFamilies </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html">PhysicalDevice</a> const &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::SurfaceKHR&#160;</td>
-          <td class="paramname"><em>surface</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="acbcb8de0518d7880c74f8a68c187be3d" name="acbcb8de0518d7880c74f8a68c187be3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbcb8de0518d7880c74f8a68c187be3d">&#9670;&nbsp;</a></span>scissor()</h2>
 
@@ -909,8 +889,8 @@ requires (std::is_convertible_v&lt;T, std::size_t&gt; || std::is_enum_v&lt;T&gt;
 
 </div>
 </div>
-<a id="a2a9db30b702fb222ef7da16d3c9e62c1" name="a2a9db30b702fb222ef7da16d3c9e62c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a9db30b702fb222ef7da16d3c9e62c1">&#9670;&nbsp;</a></span>writePPM()</h2>
+<a id="a36ac5944138cd0dc5f38f3cfb268bc28" name="a36ac5944138cd0dc5f38f3cfb268bc28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ac5944138cd0dc5f38f3cfb268bc28">&#9670;&nbsp;</a></span>writePPM()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -924,8 +904,8 @@ requires (std::is_convertible_v&lt;T, std::size_t&gt; || std::is_enum_v&lt;T&gt;
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_img</em>, </td>
+          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

@@ -58,8 +58,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a84d131a7695dcdeee86c5322c40d4a68"><td class="memItemLeft" align="right" valign="top">vk::ImageLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1LayoutState.html#a84d131a7695dcdeee86c5322c40d4a68">get</a> (vk::Image img) const</td></tr>
 <tr class="separator:a84d131a7695dcdeee86c5322c40d4a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01237b32f362426f9ae2872172f2eb0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1LayoutState.html#a01237b32f362426f9ae2872172f2eb0c">transition</a> (<a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, vk::Image img, vk::ImageLayout layout, <a class="el" href="structle_1_1graphics_1_1LayoutStages.html">LayoutStages</a> const &amp;ls)</td></tr>
-<tr class="separator:a01237b32f362426f9ae2872172f2eb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9104603bb2f43be747166be16cf36cf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1LayoutState.html#a9104603bb2f43be747166be16cf36cf6">transition</a> (<a class="el" href="classle_1_1graphics_1_1CommandBuffer.html">CommandBuffer</a> cb, vk::Image img, vk::ImageLayout layout, <a class="el" href="structle_1_1graphics_1_1LayoutStages.html">LayoutStages</a> const &amp;ls, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layers=1U, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> mips=1U)</td></tr>
+<tr class="separator:a9104603bb2f43be747166be16cf36cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad04cc8099f716482996c2ffea24a286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1LayoutState.html#aad04cc8099f716482996c2ffea24a286">clear</a> ()</td></tr>
 <tr class="separator:aad04cc8099f716482996c2ffea24a286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3a7828dd7ed1ac8f3708116f2c4427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1LayoutState.html#a5d3a7828dd7ed1ac8f3708116f2c4427">presented</a> (vk::Image image)</td></tr>
@@ -204,8 +204,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a01237b32f362426f9ae2872172f2eb0c" name="a01237b32f362426f9ae2872172f2eb0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01237b32f362426f9ae2872172f2eb0c">&#9670;&nbsp;</a></span>transition() <span class="overload">[1/2]</span></h2>
+<a id="a9104603bb2f43be747166be16cf36cf6" name="a9104603bb2f43be747166be16cf36cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9104603bb2f43be747166be16cf36cf6">&#9670;&nbsp;</a></span>transition() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +232,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1LayoutStages.html">LayoutStages</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ls</em>&#160;</td>
+          <td class="paramname"><em>ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
+          <td class="paramname"><em>layers</em> = <code>1U</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
+          <td class="paramname"><em>mips</em> = <code>1U</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
