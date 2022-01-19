@@ -51,7 +51,7 @@ $(function() {
   <div class="headertitle"><div class="title">bitflags.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<div class="textblock"><code>#include &lt;concepts&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -62,19 +62,19 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac6faf18f7bc41a66e3fd8162fbe1007b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac6faf18f7bc41a66e3fd8162fbe1007b"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
 <tr class="memitem:ac6faf18f7bc41a66e3fd8162fbe1007b"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1flags.html#ac6faf18f7bc41a66e3fd8162fbe1007b">ktl::flags::all</a> (T const flags, T const mask) noexcept</td></tr>
 <tr class="memdesc:ac6faf18f7bc41a66e3fd8162fbe1007b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if all bits in mask are set in flags.  <a href="namespacektl_1_1flags.html#ac6faf18f7bc41a66e3fd8162fbe1007b">More...</a><br /></td></tr>
 <tr class="separator:ac6faf18f7bc41a66e3fd8162fbe1007b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4baa40e21c1bc4377764c7e287ed03d1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4baa40e21c1bc4377764c7e287ed03d1"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
 <tr class="memitem:a4baa40e21c1bc4377764c7e287ed03d1"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1flags.html#a4baa40e21c1bc4377764c7e287ed03d1">ktl::flags::any</a> (T const flags, T const mask) noexcept</td></tr>
 <tr class="memdesc:a4baa40e21c1bc4377764c7e287ed03d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if any bits in mask are set in flags.  <a href="namespacektl_1_1flags.html#a4baa40e21c1bc4377764c7e287ed03d1">More...</a><br /></td></tr>
 <tr class="separator:a4baa40e21c1bc4377764c7e287ed03d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8576c956d183783849dbdf423d36b363"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8576c956d183783849dbdf423d36b363"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
 <tr class="memitem:a8576c956d183783849dbdf423d36b363"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1flags.html#a8576c956d183783849dbdf423d36b363">ktl::flags::update</a> (T const flags, T const set, T const unset) noexcept</td></tr>
 <tr class="memdesc:a8576c956d183783849dbdf423d36b363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update flags: unset active bits in unset, and set active bits in set.  <a href="namespacektl_1_1flags.html#a8576c956d183783849dbdf423d36b363">More...</a><br /></td></tr>
 <tr class="separator:a8576c956d183783849dbdf423d36b363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3d69ec07994a074c59fa267f8cb8e74"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad3d69ec07994a074c59fa267f8cb8e74"><td class="memTemplParams" colspan="2">template&lt;std::integral T&gt; </td></tr>
 <tr class="memitem:ad3d69ec07994a074c59fa267f8cb8e74"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1flags.html#ad3d69ec07994a074c59fa267f8cb8e74">ktl::flags::count</a> (T const flags) noexcept</td></tr>
 <tr class="memdesc:ad3d69ec07994a074c59fa267f8cb8e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of bits set in flags.  <a href="namespacektl_1_1flags.html#ad3d69ec07994a074c59fa267f8cb8e74">More...</a><br /></td></tr>
 <tr class="separator:ad3d69ec07994a074c59fa267f8cb8e74"><td class="memSeparator" colspan="2">&#160;</td></tr>

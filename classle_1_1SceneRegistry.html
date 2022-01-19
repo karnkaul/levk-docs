@@ -61,6 +61,7 @@ Inheritance diagram for le::SceneRegistry:</div>
   <img src="classle_1_1SceneRegistry.png" usemap="#le::SceneRegistry_map" alt=""/>
   <map id="le::SceneRegistry_map" name="le::SceneRegistry_map">
 <area href="structle_1_1utils_1_1VBase.html" alt="le::utils::VBase" shape="rect" coords="0,0,110,24"/>
+<area href="classle_1_1Scene.html" alt="le::Scene" shape="rect" coords="0,112,110,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -86,8 +87,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a93d7efc52ca096daf80919efde7d6b82"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a93d7efc52ca096daf80919efde7d6b82"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdens_1_1entity.html">dens::entity</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1SceneRegistry.html#a93d7efc52ca096daf80919efde7d6b82">spawn</a> (std::string name, std::string layerURI, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a93d7efc52ca096daf80919efde7d6b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af650ca8913c9f7576a9a45b3e1767c2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneRegistry.html#af650ca8913c9f7576a9a45b3e1767c2e">updateSystems</a> (<a class="el" href="classdts_1_1scheduler.html">dts::scheduler</a> &amp;scheduler, <a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">Time_s</a> dt, <a class="el" href="structle_1_1input_1_1Frame.html">input::Frame</a> const *frame={})</td></tr>
-<tr class="separator:af650ca8913c9f7576a9a45b3e1767c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6298d2923fb3d3a7150024e0b19c925a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneRegistry.html#a6298d2923fb3d3a7150024e0b19c925a">updateSystems</a> (<a class="el" href="classdts_1_1scheduler.html">dts::scheduler</a> &amp;scheduler, <a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">Time_s</a> dt, <a class="el" href="classle_1_1Engine_1_1Service.html">Engine::Service</a> const &amp;engine)</td></tr>
+<tr class="separator:a6298d2923fb3d3a7150024e0b19c925a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31dc05582212c4cc816dbc52010cd926"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1Material.html">Material</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneRegistry.html#a31dc05582212c4cc816dbc52010cd926">defaultMaterial</a> () const</td></tr>
 <tr class="separator:a31dc05582212c4cc816dbc52010cd926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d129dd5ad3a04e58714d5307ea58f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1edi_1_1SceneRef.html">edi::SceneRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1SceneRegistry.html#a06d129dd5ad3a04e58714d5307ea58f5">ediScene</a> () noexcept</td></tr>
@@ -412,8 +413,8 @@ template&lt;MeshAPI T&gt; </div>
 
 </div>
 </div>
-<a id="af650ca8913c9f7576a9a45b3e1767c2e" name="af650ca8913c9f7576a9a45b3e1767c2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af650ca8913c9f7576a9a45b3e1767c2e">&#9670;&nbsp;</a></span>updateSystems()</h2>
+<a id="a6298d2923fb3d3a7150024e0b19c925a" name="a6298d2923fb3d3a7150024e0b19c925a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6298d2923fb3d3a7150024e0b19c925a">&#9670;&nbsp;</a></span>updateSystems()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,8 +434,8 @@ template&lt;MeshAPI T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1input_1_1Frame.html">input::Frame</a> const *&#160;</td>
-          <td class="paramname"><em>frame</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Engine_1_1Service.html">Engine::Service</a> const &amp;&#160;</td>
+          <td class="paramname"><em>engine</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -77,8 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4de32b369019f37aa8cbd8725de03b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab695c6d24b8774ef505d60ee683a6dd8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1either.html">either</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#ab695c6d24b8774ef505d60ee683a6dd8">operator=</a> (<a class="el" href="classktl_1_1either.html">either</a> rhs) noexcept(noexcept_movable_v)</td></tr>
 <tr class="separator:ab695c6d24b8774ef505d60ee683a6dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac01909611f6a807d57e4a699125ee499"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#ac01909611f6a807d57e4a699125ee499">~either</a> () noexcept</td></tr>
-<tr class="separator:ac01909611f6a807d57e4a699125ee499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced4c0baed8aeee6ea800c57aaed5759"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#aced4c0baed8aeee6ea800c57aaed5759">~either</a> () noexcept</td></tr>
+<tr class="separator:aced4c0baed8aeee6ea800c57aaed5759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55890cb11a27c81045a843506553ef4a"><td class="memTemplParams" colspan="2">template&lt;typename Ty &gt; </td></tr>
 <tr class="memitem:a55890cb11a27c81045a843506553ef4a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#a55890cb11a27c81045a843506553ef4a">contains</a> () const noexcept</td></tr>
 <tr class="memdesc:a55890cb11a27c81045a843506553ef4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check which type is currently held.  <a href="classktl_1_1either.html#a55890cb11a27c81045a843506553ef4a">More...</a><br /></td></tr>
@@ -106,10 +106,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae84500319d76f78b63def3a85546411b"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#ae84500319d76f78b63def3a85546411b">set</a> (T &amp;out_t, U &amp;out_u) const noexcept</td></tr>
 <tr class="memdesc:ae84500319d76f78b63def3a85546411b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set either out_t or out_u based on held value.  <a href="classktl_1_1either.html#ae84500319d76f78b63def3a85546411b">More...</a><br /></td></tr>
 <tr class="separator:ae84500319d76f78b63def3a85546411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e0fc58d2a028ca72d7d8a674a38949"><td class="memTemplParams" colspan="2">template&lt;typename F , typename  = std::enable_if_t&lt;visitable_v&lt;F&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ab0e0fc58d2a028ca72d7d8a674a38949"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#ab0e0fc58d2a028ca72d7d8a674a38949">visit</a> (F &amp;&amp;func) const noexcept</td></tr>
-<tr class="memdesc:ab0e0fc58d2a028ca72d7d8a674a38949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor for T and U.  <a href="classktl_1_1either.html#ab0e0fc58d2a028ca72d7d8a674a38949">More...</a><br /></td></tr>
-<tr class="separator:ab0e0fc58d2a028ca72d7d8a674a38949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25c0a31c72174bd81b2310fd39462ee"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; <br />
+requires (visitable_v&lt;F&gt;)</td></tr>
+<tr class="memitem:ad25c0a31c72174bd81b2310fd39462ee"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#ad25c0a31c72174bd81b2310fd39462ee">visit</a> (F &amp;&amp;func) const noexcept</td></tr>
+<tr class="memdesc:ad25c0a31c72174bd81b2310fd39462ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor for T and U.  <a href="classktl_1_1either.html#ad25c0a31c72174bd81b2310fd39462ee">More...</a><br /></td></tr>
+<tr class="separator:ad25c0a31c72174bd81b2310fd39462ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a462e6d54746ebbd0bebfd29d6fa315e6"><td class="memTemplParams" colspan="2">template&lt;typename Ty &gt; </td></tr>
 <tr class="memitem:a462e6d54746ebbd0bebfd29d6fa315e6"><td class="memTemplItemLeft" align="right" valign="top">constexpr Ty const &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1either.html#a462e6d54746ebbd0bebfd29d6fa315e6">get</a> () const &amp;noexcept</td></tr>
 <tr class="separator:a462e6d54746ebbd0bebfd29d6fa315e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,8 +241,8 @@ template&lt;typename T , typename U &gt; </div>
 
 </div>
 </div>
-<a id="ac01909611f6a807d57e4a699125ee499" name="ac01909611f6a807d57e4a699125ee499"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac01909611f6a807d57e4a699125ee499">&#9670;&nbsp;</a></span>~either()</h2>
+<a id="aced4c0baed8aeee6ea800c57aaed5759" name="aced4c0baed8aeee6ea800c57aaed5759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced4c0baed8aeee6ea800c57aaed5759">&#9670;&nbsp;</a></span>~either()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +253,7 @@ template&lt;typename T , typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classktl_1_1either.html">ktl::either</a>&lt; T, U &gt;::~<a class="el" href="classktl_1_1either.html">either</a> </td>
+          <td class="memname">constexpr <a class="el" href="classktl_1_1either.html">ktl::either</a>&lt; T, U &gt;::~<a class="el" href="classktl_1_1either.html">either</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -260,7 +261,7 @@ template&lt;typename T , typename U &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -632,15 +633,16 @@ template&lt;typename T , typename U &gt; </div>
 
 </div>
 </div>
-<a id="ab0e0fc58d2a028ca72d7d8a674a38949" name="ab0e0fc58d2a028ca72d7d8a674a38949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0e0fc58d2a028ca72d7d8a674a38949">&#9670;&nbsp;</a></span>visit()</h2>
+<a id="ad25c0a31c72174bd81b2310fd39462ee" name="ad25c0a31c72174bd81b2310fd39462ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25c0a31c72174bd81b2310fd39462ee">&#9670;&nbsp;</a></span>visit()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T , typename U &gt; </div>
 <div class="memtemplate">
-template&lt;typename F , typename &gt; </div>
+template&lt;typename F &gt; <br />
+requires (visitable_v&lt;F&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -655,7 +657,7 @@ template&lt;typename F , typename &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

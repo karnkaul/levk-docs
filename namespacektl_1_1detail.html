@@ -48,8 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ktl::detail Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -62,44 +61,27 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>future_traits_t&lt; void &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>is_comparable_to_nullptr</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>is_comparable_to_nullptr&lt; T, std::enable_if_t&lt; std::is_convertible_v&lt; decltype(std::declval&lt; T &gt;() !=nullptr), bool &gt; &gt; &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>ostream_defined</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>ostream_defined&lt; T, std::void_t&lt; decltype(std::declval&lt; std::ostream &amp; &gt;()&lt;&lt; std::declval&lt; T const &amp; &gt;())&gt; &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>promise_base_t</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae8879e6ee9cec9779dd9ed92ffe37fc6"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ae8879e6ee9cec9779dd9ed92ffe37fc6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#ae8879e6ee9cec9779dd9ed92ffe37fc6">delegate_callback</a> = <a class="el" href="classktl_1_1move__only__function.html">move_only_function</a>&lt; void(Args const  &amp;...)&gt;</td></tr>
-<tr class="separator:ae8879e6ee9cec9779dd9ed92ffe37fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad359d83bfe30ffebae78d661855268e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad359d83bfe30ffebae78d661855268e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#ad359d83bfe30ffebae78d661855268e4">future_block_ptr</a> = std::shared_ptr&lt; future_block_t&lt; T &gt; &gt;</td></tr>
 <tr class="separator:ad359d83bfe30ffebae78d661855268e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad5bd8f03e6ca08112498b6cc1ba0ce"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aaad5bd8f03e6ca08112498b6cc1ba0ce"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#aaad5bd8f03e6ca08112498b6cc1ba0ce">delegate_callback</a> = <a class="el" href="classktl_1_1kfunction.html">kfunction</a>&lt; void(Args const  &amp;...)&gt;</td></tr>
+<tr class="separator:aaad5bd8f03e6ca08112498b6cc1ba0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a24be93f09b1551e85532eb45de50ba71"><td class="memTemplParams" colspan="2">template&lt;typename Ftr , typename T , typename... Ts&gt; </td></tr>
+<tr class="memitem:a24be93f09b1551e85532eb45de50ba71"><td class="memTemplParams" colspan="2">template&lt;typename Ftr , ostreamable T, ostreamable... Ts&gt; </td></tr>
 <tr class="memitem:a24be93f09b1551e85532eb45de50ba71"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a24be93f09b1551e85532eb45de50ba71">format_str</a> (std::ostream &amp;out, std::string_view fmt, T const &amp;t, Ts const &amp;... ts)</td></tr>
 <tr class="separator:a24be93f09b1551e85532eb45de50ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a5f5093fbf087ec282fba04f7533a81b8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5f5093fbf087ec282fba04f7533a81b8"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a5f5093fbf087ec282fba04f7533a81b8">is_comparable_to_nullptr_v</a> = is_comparable_to_nullptr&lt;T&gt;::value</td></tr>
-<tr class="separator:a5f5093fbf087ec282fba04f7533a81b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb652194d031dd9dd2cce50c6a1abdff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afb652194d031dd9dd2cce50c6a1abdff"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#afb652194d031dd9dd2cce50c6a1abdff">ostream_operator_defined_v</a> = ostream_defined&lt;T&gt;::value</td></tr>
-<tr class="separator:afb652194d031dd9dd2cce50c6a1abdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ae8879e6ee9cec9779dd9ed92ffe37fc6" name="ae8879e6ee9cec9779dd9ed92ffe37fc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8879e6ee9cec9779dd9ed92ffe37fc6">&#9670;&nbsp;</a></span>delegate_callback</h2>
+<a id="aaad5bd8f03e6ca08112498b6cc1ba0ce" name="aaad5bd8f03e6ca08112498b6cc1ba0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad5bd8f03e6ca08112498b6cc1ba0ce">&#9670;&nbsp;</a></span>delegate_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +89,7 @@ Variables</h2></td></tr>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacektl_1_1detail.html#ae8879e6ee9cec9779dd9ed92ffe37fc6">ktl::detail::delegate_callback</a> = typedef <a class="el" href="classktl_1_1move__only__function.html">move_only_function</a>&lt;void(Args const&amp;...)&gt;</td>
+          <td class="memname">using <a class="el" href="namespacektl_1_1detail.html#aaad5bd8f03e6ca08112498b6cc1ba0ce">ktl::detail::delegate_callback</a> = typedef <a class="el" href="classktl_1_1kfunction.html">kfunction</a>&lt;void(Args const&amp;...)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -137,7 +119,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Ftr , typename T , typename... Ts&gt; </div>
+template&lt;typename Ftr , ostreamable T, ostreamable... Ts&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::ostream &amp; ktl::detail::format_str </td>
@@ -169,55 +151,6 @@ template&lt;typename Ftr , typename T , typename... Ts&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a5f5093fbf087ec282fba04f7533a81b8" name="a5f5093fbf087ec282fba04f7533a81b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f5093fbf087ec282fba04f7533a81b8">&#9670;&nbsp;</a></span>is_comparable_to_nullptr_v</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool ktl::detail::is_comparable_to_nullptr_v = is_comparable_to_nullptr&lt;T&gt;::value</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afb652194d031dd9dd2cce50c6a1abdff" name="afb652194d031dd9dd2cce50c6a1abdff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb652194d031dd9dd2cce50c6a1abdff">&#9670;&nbsp;</a></span>ostream_operator_defined_v</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool ktl::detail::ostream_operator_defined_v = ostream_defined&lt;T&gt;::value</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

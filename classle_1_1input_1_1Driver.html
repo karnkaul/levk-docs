@@ -48,6 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classle_1_1input_1_1Driver-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">le::input::Driver Class Reference</div></div>
 </div><!--header-->
@@ -59,17 +60,18 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Driver_1_1In.html">In</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Driver_1_1Out.html">Out</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f34d97dbed596510f30ede99a67e660"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html#a6f34d97dbed596510f30ede99a67e660">Driver</a> ()</td></tr>
 <tr class="separator:a6f34d97dbed596510f30ede99a67e660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c14c9b99a277fafebf5e27d694cbb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1Driver_1_1Out.html">Out</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html#ac4c14c9b99a277fafebf5e27d694cbb9">update</a> (<a class="el" href="structle_1_1input_1_1Driver_1_1In.html">In</a> in, <a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;view, bool consume=true)</td></tr>
-<tr class="separator:ac4c14c9b99a277fafebf5e27d694cbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e9c6cec3f47e64cff52b6f33ca23f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html#a69e9c6cec3f47e64cff52b6f33ca23f1">operator()</a> (<a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> const &amp;event, <a class="el" href="structle_1_1input_1_1State.html">State</a> &amp;out_state) noexcept</td></tr>
-<tr class="separator:a69e9c6cec3f47e64cff52b6f33ca23f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a6c707b199c69d024176a3efa50858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1input_1_1Frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html#a19a6c707b199c69d024176a3efa50858">update</a> (<a class="el" href="structle_1_1input_1_1Driver_1_1In.html">In</a> const &amp;in, <a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;view)</td></tr>
+<tr class="separator:a19a6c707b199c69d024176a3efa50858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1c35e5d06dfe657e602c9d264581fd69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html#a1c35e5d06dfe657e602c9d264581fd69">parse</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> const &gt; events, <a class="el" href="structle_1_1input_1_1EventParser.html">EventParser</a> &amp;parser)</td></tr>
+<tr class="separator:a1c35e5d06dfe657e602c9d264581fd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6f34d97dbed596510f30ede99a67e660" name="a6f34d97dbed596510f30ede99a67e660"></a>
@@ -90,8 +92,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69e9c6cec3f47e64cff52b6f33ca23f1" name="a69e9c6cec3f47e64cff52b6f33ca23f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e9c6cec3f47e64cff52b6f33ca23f1">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="a1c35e5d06dfe657e602c9d264581fd69" name="a1c35e5d06dfe657e602c9d264581fd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c35e5d06dfe657e602c9d264581fd69">&#9670;&nbsp;</a></span>parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,16 +102,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool le::input::Driver::operator() </td>
+          <td class="memname">static void le::input::Driver::parse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> const &amp;&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
+          <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; <a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> const &gt;&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1input_1_1State.html">State</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_state</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1input_1_1EventParser.html">EventParser</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -119,36 +121,30 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac4c14c9b99a277fafebf5e27d694cbb9" name="ac4c14c9b99a277fafebf5e27d694cbb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4c14c9b99a277fafebf5e27d694cbb9">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a19a6c707b199c69d024176a3efa50858" name="a19a6c707b199c69d024176a3efa50858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a6c707b199c69d024176a3efa50858">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1input_1_1Driver_1_1Out.html">Out</a> le::input::Driver::update </td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Frame.html">Frame</a> le::input::Driver::update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1input_1_1Driver_1_1In.html">In</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structle_1_1input_1_1Driver_1_1In.html">In</a> const &amp;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structle_1_1Viewport.html">Viewport</a> const &amp;&#160;</td>
-          <td class="paramname"><em>view</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>consume</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -203,14 +199,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4812f3f6eb24b83330fdf2f34e6496a6" name="a4812f3f6eb24b83330fdf2f34e6496a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4812f3f6eb24b83330fdf2f34e6496a6">&#9670;&nbsp;</a></span>suspended</h2>
+<a id="a181cbf3059bba31dac58b4ada8115423" name="a181cbf3059bba31dac58b4ada8115423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181cbf3059bba31dac58b4ada8115423">&#9670;&nbsp;</a></span>iconified</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool le::input::Driver::suspended = false</td>
+          <td class="memname">bool le::input::Driver::iconified = false</td>
         </tr>
       </table>
 </div><div class="memdoc">

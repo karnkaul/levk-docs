@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/include/engine/input/driver.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/levk/engine/include/levk/engine/input/driver.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,29 +41,28 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a7f531b1c37460085cedd304cb8df01d.html">engine</a></li><li class="navelem"><a class="el" href="dir_f77ff83871a8c0c224aa74732336c103.html">input</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_22fb9e805a3ef0d7bfe64c1f98d33877.html">levk</a></li><li class="navelem"><a class="el" href="dir_d5432766aeb61d1ec251296d15ef3c0c.html">engine</a></li><li class="navelem"><a class="el" href="dir_cd8d20e6109d7e7565beed787e25057c.html">include</a></li><li class="navelem"><a class="el" href="dir_44643f72f87ad9563d4696b50868916b.html">levk</a></li><li class="navelem"><a class="el" href="dir_f849c01ee3ef47a8e30bd901026536c2.html">engine</a></li><li class="navelem"><a class="el" href="dir_9ad34cb7c2190904f25a6e383d69eecd.html">input</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">driver.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="frame_8hpp.html">engine/input/frame.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="event__queue_8hpp.html">window/event_queue.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="input_2frame_8hpp.html">levk/engine/input/frame.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="event_8hpp.html">levk/window/event.hpp</a>&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1EventParser.html">le::input::EventParser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html">le::input::Driver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Driver_1_1In.html">le::input::Driver::In</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Driver_1_1Out.html">le::input::Driver::Out</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -77,14 +76,8 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aecd583fa05eaa462d084edd0bedf9dc0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">le::input::Event</a> = window::Event</td></tr>
 <tr class="separator:aecd583fa05eaa462d084edd0bedf9dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0e9a278db2ba854679ec71df4fb6b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#afa0e9a278db2ba854679ec71df4fb6b1">le::input::EventQueue</a> = window::EventQueue</td></tr>
-<tr class="separator:afa0e9a278db2ba854679ec71df4fb6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a9f72922c1d60182f795fa91f25074793"><td class="memTemplParams" colspan="2">template&lt;typename Parser &gt; </td></tr>
-<tr class="memitem:a9f72922c1d60182f795fa91f25074793"><td class="memTemplItemLeft" align="right" valign="top">EventQueue&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a9f72922c1d60182f795fa91f25074793">le::input::parse</a> (Parser &amp;parser, EventQueue const &amp;in, State &amp;out)</td></tr>
-<tr class="separator:a9f72922c1d60182f795fa91f25074793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e507f041fac1f876402d188a7fba38"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad4e507f041fac1f876402d188a7fba38">le::input::EventQueue</a> = std::vector&lt; Event &gt;</td></tr>
+<tr class="separator:ad4e507f041fac1f876402d188a7fba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -52,6 +52,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classle_1_1graphics_1_1Device-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">le::graphics::Device Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -82,16 +83,14 @@ Public Types</h2></td></tr>
 , <a class="el" href="classle_1_1graphics_1_1Device.html#ad0c0c373490c50474f3bea9fe0e96923adc0ea0b0c0481d2d500f5581cf5e9db1">eSingleQueue</a>
  }</td></tr>
 <tr class="separator:ad0c0c373490c50474f3bea9fe0e96923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3147f105fb3903ac71771984a875fc42"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a3147f105fb3903ac71771984a875fc42">MakeSurface</a> = <a class="el" href="classktl_1_1move__only__function.html">ktl::move_only_function</a>&lt; vk::SurfaceKHR(vk::Instance)&gt;</td></tr>
-<tr class="separator:a3147f105fb3903ac71771984a875fc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16caa3602c6f07f5b270710bb47ad184"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a16caa3602c6f07f5b270710bb47ad184">MakeSurface</a> = <a class="el" href="classktl_1_1kfunction.html">ktl::kfunction</a>&lt; vk::SurfaceKHR(vk::Instance)&gt;</td></tr>
+<tr class="separator:a16caa3602c6f07f5b270710bb47ad184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ddf8e27597122e3807ba41b4ad4c723"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3ddf8e27597122e3807ba41b4ad4c723"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a> = vk::ArrayProxy&lt; T const  &gt; const  &amp;</td></tr>
 <tr class="separator:a3ddf8e27597122e3807ba41b4ad4c723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c5967ce0f4ef32a2676f53ec4ab44fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a8c5967ce0f4ef32a2676f53ec4ab44fa">Device</a> (<a class="el" href="structle_1_1graphics_1_1Device_1_1CreateInfo.html">CreateInfo</a> const &amp;info, <a class="el" href="classle_1_1graphics_1_1Device.html#a3147f105fb3903ac71771984a875fc42">MakeSurface</a> &amp;&amp;<a class="el" href="classle_1_1graphics_1_1Device.html#aac9c46b6313d584f772e673fe302f3ec">makeSurface</a>)</td></tr>
-<tr class="separator:a8c5967ce0f4ef32a2676f53ec4ab44fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c1557cd5ad43a7c53d01f50ede17a96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a5c1557cd5ad43a7c53d01f50ede17a96">~Device</a> ()</td></tr>
 <tr class="separator:a5c1557cd5ad43a7c53d01f50ede17a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa66f73a3bfe2470fc9214505b32128fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aa66f73a3bfe2470fc9214505b32128fc">waitIdle</a> ()</td></tr>
@@ -102,18 +101,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac9c46b6313d584f772e673fe302f3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2f2d2bd5ce7b894ec59fcbb99c0f14"><td class="memItemLeft" align="right" valign="top">vk::Semaphore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#adc2f2d2bd5ce7b894ec59fcbb99c0f14">makeSemaphore</a> () const</td></tr>
 <tr class="separator:adc2f2d2bd5ce7b894ec59fcbb99c0f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161f542e1c7b8d85db16355eddfe1268"><td class="memItemLeft" align="right" valign="top">vk::Fence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a161f542e1c7b8d85db16355eddfe1268">makeFence</a> (bool bSignalled) const</td></tr>
-<tr class="separator:a161f542e1c7b8d85db16355eddfe1268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc2c58f70b402dc382e9e46548630f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aacc2c58f70b402dc382e9e46548630f4">resetOrMakeFence</a> (vk::Fence &amp;out_fence, bool bSignalled) const</td></tr>
-<tr class="separator:aacc2c58f70b402dc382e9e46548630f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06fc44e3357696bca99d52e25fb5aa6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a06fc44e3357696bca99d52e25fb5aa6f">waitFor</a> (vk::Fence optional) const</td></tr>
-<tr class="separator:a06fc44e3357696bca99d52e25fb5aa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ddf6dd127e43d7986d2281bd0f6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ad0ddf6dd127e43d7986d2281bd0f6118">waitAll</a> (<a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a>&lt; vk::Fence &gt; validFences) const</td></tr>
-<tr class="separator:ad0ddf6dd127e43d7986d2281bd0f6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a28b3cb71f6c7083584fcb6bec182b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a2a28b3cb71f6c7083584fcb6bec182b9">resetFence</a> (vk::Fence optional) const</td></tr>
-<tr class="separator:a2a28b3cb71f6c7083584fcb6bec182b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b9f4812862b4e69d022d6fc41febe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ae7b9f4812862b4e69d022d6fc41febe7">resetAll</a> (<a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a>&lt; vk::Fence &gt; validFences) const</td></tr>
-<tr class="separator:ae7b9f4812862b4e69d022d6fc41febe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074a9def3e8c95f1e81af6b7c5c7cbd7"><td class="memItemLeft" align="right" valign="top">vk::Fence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a074a9def3e8c95f1e81af6b7c5c7cbd7">makeFence</a> (bool <a class="el" href="classle_1_1graphics_1_1Device.html#a6482b99297df7c3eb4c7ea1d6545e829">signalled</a>) const</td></tr>
+<tr class="separator:a074a9def3e8c95f1e81af6b7c5c7cbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df6dad0c8b7d1c7714567480d78f05b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a5df6dad0c8b7d1c7714567480d78f05b">resetOrMakeFence</a> (vk::Fence &amp;out_fence, bool <a class="el" href="classle_1_1graphics_1_1Device.html#a6482b99297df7c3eb4c7ea1d6545e829">signalled</a>) const</td></tr>
+<tr class="separator:a5df6dad0c8b7d1c7714567480d78f05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93819aceba2056e3f06eb9a5478018e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aa93819aceba2056e3f06eb9a5478018e">isBusy</a> (vk::Fence fence) const</td></tr>
+<tr class="separator:aa93819aceba2056e3f06eb9a5478018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbae10678f0827e53ad487a5ce8cb20f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#acbae10678f0827e53ad487a5ce8cb20f">waitFor</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::Fence const &gt; fences, stdch::nanoseconds wait=<a class="el" href="classle_1_1graphics_1_1Device.html#ab7e8271cfef95f0f82f90bc95c8e38c0">fenceWait</a>) const</td></tr>
+<tr class="separator:acbae10678f0827e53ad487a5ce8cb20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a7c6955618c893f40e94757f743e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a87a7c6955618c893f40e94757f743e1c">resetFence</a> (vk::Fence fence, bool wait) const</td></tr>
+<tr class="separator:a87a7c6955618c893f40e94757f743e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1374e560b70624971891821b43d4ad19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a1374e560b70624971891821b43d4ad19">resetAll</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::Fence const &gt; fences) const</td></tr>
+<tr class="separator:a1374e560b70624971891821b43d4ad19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a995f95f287cab30c6db8dc9e3e2605ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a995f95f287cab30c6db8dc9e3e2605ed">resetCommandPool</a> (vk::CommandPool pool) const</td></tr>
 <tr class="separator:a995f95f287cab30c6db8dc9e3e2605ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6482b99297df7c3eb4c7ea1d6545e829"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a6482b99297df7c3eb4c7ea1d6545e829">signalled</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::Fence const &gt; fences) const</td></tr>
@@ -144,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeca1a767d21008642e77dffab6ddd189"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Ts&gt; </td></tr>
 <tr class="memitem:aeca1a767d21008642e77dffab6ddd189"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aeca1a767d21008642e77dffab6ddd189">destroy</a> (T &amp;out_t, Ts &amp;... out_ts)</td></tr>
 <tr class="separator:aeca1a767d21008642e77dffab6ddd189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7f9676cd74cbdc9921a63e1597a19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a1a7f9676cd74cbdc9921a63e1597a19c">defer</a> (<a class="el" href="classle_1_1graphics_1_1DeferQueue.html#a6f7ddaf377590ce5f0db0c24add1c570">DeferQueue::Callback</a> &amp;&amp;callback, <a class="el" href="structle_1_1graphics_1_1Buffering.html">Buffering</a> defer=<a class="el" href="classle_1_1graphics_1_1DeferQueue.html#adde8b2603b48c1ad6e7d4744a76a689d">DeferQueue::defaultDefer</a>)</td></tr>
+<tr class="memitem:a1a7f9676cd74cbdc9921a63e1597a19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a1a7f9676cd74cbdc9921a63e1597a19c">defer</a> (<a class="el" href="classle_1_1graphics_1_1DeferQueue.html#a99b5c3a1401feed8d7e27af039185fec">DeferQueue::Callback</a> &amp;&amp;callback, <a class="el" href="namespacele_1_1graphics.html#ab583fa5551a0115f6b093304938fafd0">Buffering</a> defer=<a class="el" href="classle_1_1graphics_1_1DeferQueue.html#adde8b2603b48c1ad6e7d4744a76a689d">DeferQueue::defaultDefer</a>)</td></tr>
 <tr class="separator:a1a7f9676cd74cbdc9921a63e1597a19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a999c51fb96b93da61ebb9abc8324e40d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a999c51fb96b93da61ebb9abc8324e40d">decrementDeferred</a> ()</td></tr>
 <tr class="separator:a999c51fb96b93da61ebb9abc8324e40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +175,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab545e609fc2d57ddbe198bbfef537be2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classktl_1_1fixed__vector.html">ktl::fixed_vector</a>&lt; <a class="el" href="structle_1_1graphics_1_1PhysicalDevice.html">PhysicalDevice</a>, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ab545e609fc2d57ddbe198bbfef537be2">physicalDevices</a> ()</td></tr>
 <tr class="separator:ab545e609fc2d57ddbe198bbfef537be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c76b4431327defddde27b10efc3e410"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a3c76b4431327defddde27b10efc3e410">make</a> (<a class="el" href="structle_1_1graphics_1_1Device_1_1CreateInfo.html">CreateInfo</a> const &amp;info, <a class="el" href="classle_1_1graphics_1_1Device.html#a16caa3602c6f07f5b270710bb47ad184">MakeSurface</a> &amp;&amp;<a class="el" href="classle_1_1graphics_1_1Device.html#aac9c46b6313d584f772e673fe302f3ec">makeSurface</a>)</td></tr>
+<tr class="separator:a3c76b4431327defddde27b10efc3e410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52a711a9404d268bd16e9cea47e6984b"><td class="memItemLeft" align="right" valign="top">static constexpr vk::BufferUsageFlagBits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a52a711a9404d268bd16e9cea47e6984b">bufferUsage</a> (vk::DescriptorType type) noexcept</td></tr>
 <tr class="separator:a52a711a9404d268bd16e9cea47e6984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7009124d5b2af054800fda9ad152052a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -192,25 +193,28 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab5b2c50849da4dfa76344ab6a130f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9630d5aaddb3326aea5a6a323ce03326"><td class="memItemLeft" align="right" valign="top">vk::PhysicalDeviceLimits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a9630d5aaddb3326aea5a6a323ce03326">limits</a></td></tr>
 <tr class="separator:a9630d5aaddb3326aea5a6a323ce03326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7838f97f57449721eebe3d2e801474c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ad7838f97f57449721eebe3d2e801474c">lineWidth</a> {}</td></tr>
-<tr class="separator:ad7838f97f57449721eebe3d2e801474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19fe00693aefa268aaaedd881950b767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a19fe00693aefa268aaaedd881950b767">anisotropy</a> {}</td></tr>
-<tr class="separator:a19fe00693aefa268aaaedd881950b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a23a1f8d4dd579b5d1cbb77159765af5e"><td class="memItemLeft" align="right" valign="top">static constexpr std::array&lt; std::string_view, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#a23a1f8d4dd579b5d1cbb77159765af5e">requiredExtensions</a> = {VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_KHR_MAINTENANCE1_EXTENSION_NAME}</td></tr>
-<tr class="separator:a23a1f8d4dd579b5d1cbb77159765af5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb39fc5a430be3ae5a7456ce5e3eab24"><td class="memItemLeft" align="right" valign="top">static constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aeb39fc5a430be3ae5a7456ce5e3eab24">requiredExtensions</a> [] = {VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_KHR_MAINTENANCE1_EXTENSION_NAME}</td></tr>
+<tr class="separator:aeb39fc5a430be3ae5a7456ce5e3eab24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e8271cfef95f0f82f90bc95c8e38c0"><td class="memItemLeft" align="right" valign="top">static constexpr stdch::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#ab7e8271cfef95f0f82f90bc95c8e38c0">fenceWait</a> = 1s</td></tr>
+<tr class="separator:ab7e8271cfef95f0f82f90bc95c8e38c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aa9627c9772feb41db6450011b1efdb92"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Device.html#aa9627c9772feb41db6450011b1efdb92">FontFace</a></td></tr>
+<tr class="separator:aa9627c9772feb41db6450011b1efdb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3147f105fb3903ac71771984a875fc42" name="a3147f105fb3903ac71771984a875fc42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3147f105fb3903ac71771984a875fc42">&#9670;&nbsp;</a></span>MakeSurface</h2>
+<a id="a16caa3602c6f07f5b270710bb47ad184" name="a16caa3602c6f07f5b270710bb47ad184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16caa3602c6f07f5b270710bb47ad184">&#9670;&nbsp;</a></span>MakeSurface</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1Device.html#a3147f105fb3903ac71771984a875fc42">le::graphics::Device::MakeSurface</a> =  <a class="el" href="classktl_1_1move__only__function.html">ktl::move_only_function</a>&lt;vk::SurfaceKHR(vk::Instance)&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1Device.html#a16caa3602c6f07f5b270710bb47ad184">le::graphics::Device::MakeSurface</a> =  <a class="el" href="classktl_1_1kfunction.html">ktl::kfunction</a>&lt;vk::SurfaceKHR(vk::Instance)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,34 +266,6 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8c5967ce0f4ef32a2676f53ec4ab44fa" name="a8c5967ce0f4ef32a2676f53ec4ab44fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c5967ce0f4ef32a2676f53ec4ab44fa">&#9670;&nbsp;</a></span>Device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">le::graphics::Device::Device </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1Device_1_1CreateInfo.html">CreateInfo</a> const &amp;&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Device.html#a3147f105fb3903ac71771984a875fc42">MakeSurface</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>makeSurface</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5c1557cd5ad43a7c53d01f50ede17a96" name="a5c1557cd5ad43a7c53d01f50ede17a96"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c1557cd5ad43a7c53d01f50ede17a96">&#9670;&nbsp;</a></span>~Device()</h2>
 
@@ -422,13 +398,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void le::graphics::Device::defer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1DeferQueue.html#a6f7ddaf377590ce5f0db0c24add1c570">DeferQueue::Callback</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1DeferQueue.html#a99b5c3a1401feed8d7e27af039185fec">DeferQueue::Callback</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1Buffering.html">Buffering</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#ab583fa5551a0115f6b093304938fafd0">Buffering</a>&#160;</td>
           <td class="paramname"><em>defer</em> = <code><a class="el" href="classle_1_1graphics_1_1DeferQueue.html#adde8b2603b48c1ad6e7d4744a76a689d">DeferQueue::defaultDefer</a></code>&#160;</td>
         </tr>
         <tr>
@@ -521,6 +497,24 @@ template&lt;typename T , typename... Ts&gt; </div>
 
 </div>
 </div>
+<a id="aa93819aceba2056e3f06eb9a5478018e" name="aa93819aceba2056e3f06eb9a5478018e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93819aceba2056e3f06eb9a5478018e">&#9670;&nbsp;</a></span>isBusy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool le::graphics::Device::isBusy </td>
+          <td>(</td>
+          <td class="paramtype">vk::Fence&#160;</td>
+          <td class="paramname"><em>fence</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0d5de0d52fc0815d8af87ea8b8f5d44f" name="a0d5de0d52fc0815d8af87ea8b8f5d44f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d5de0d52fc0815d8af87ea8b8f5d44f">&#9670;&nbsp;</a></span>lineWidthLimit()</h2>
 
@@ -547,7 +541,7 @@ template&lt;typename T , typename... Ts&gt; </div>
 </div>
 </div>
 <a id="a6cf72845f11a0db0ac13f07e5e85f877" name="a6cf72845f11a0db0ac13f07e5e85f877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cf72845f11a0db0ac13f07e5e85f877">&#9670;&nbsp;</a></span>make()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf72845f11a0db0ac13f07e5e85f877">&#9670;&nbsp;</a></span>make() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -562,6 +556,42 @@ template&lt;typename T , typename... Args&gt; </div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c76b4431327defddde27b10efc3e410" name="a3c76b4431327defddde27b10efc3e410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c76b4431327defddde27b10efc3e410">&#9670;&nbsp;</a></span>make() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt; <a class="el" href="classle_1_1graphics_1_1Device.html">Device</a> &gt; le::graphics::Device::make </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1Device_1_1CreateInfo.html">CreateInfo</a> const &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Device.html#a16caa3602c6f07f5b270710bb47ad184">MakeSurface</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>makeSurface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -612,8 +642,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a161f542e1c7b8d85db16355eddfe1268" name="a161f542e1c7b8d85db16355eddfe1268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a161f542e1c7b8d85db16355eddfe1268">&#9670;&nbsp;</a></span>makeFence()</h2>
+<a id="a074a9def3e8c95f1e81af6b7c5c7cbd7" name="a074a9def3e8c95f1e81af6b7c5c7cbd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074a9def3e8c95f1e81af6b7c5c7cbd7">&#9670;&nbsp;</a></span>makeFence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,7 +652,7 @@ template&lt;typename T , typename... Args&gt; </div>
           <td class="memname">vk::Fence le::graphics::Device::makeFence </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bSignalled</em></td><td>)</td>
+          <td class="paramname"><em>signalled</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -913,8 +943,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ae7b9f4812862b4e69d022d6fc41febe7" name="ae7b9f4812862b4e69d022d6fc41febe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b9f4812862b4e69d022d6fc41febe7">&#9670;&nbsp;</a></span>resetAll()</h2>
+<a id="a1374e560b70624971891821b43d4ad19" name="a1374e560b70624971891821b43d4ad19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1374e560b70624971891821b43d4ad19">&#9670;&nbsp;</a></span>resetAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -922,8 +952,8 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td class="memname">void le::graphics::Device::resetAll </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a>&lt; vk::Fence &gt;&#160;</td>
-          <td class="paramname"><em>validFences</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::Fence const &gt;&#160;</td>
+          <td class="paramname"><em>fences</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -949,8 +979,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a2a28b3cb71f6c7083584fcb6bec182b9" name="a2a28b3cb71f6c7083584fcb6bec182b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a28b3cb71f6c7083584fcb6bec182b9">&#9670;&nbsp;</a></span>resetFence()</h2>
+<a id="a87a7c6955618c893f40e94757f743e1c" name="a87a7c6955618c893f40e94757f743e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a7c6955618c893f40e94757f743e1c">&#9670;&nbsp;</a></span>resetFence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -959,16 +989,26 @@ template&lt;typename T , typename... Args&gt; </div>
           <td class="memname">void le::graphics::Device::resetFence </td>
           <td>(</td>
           <td class="paramtype">vk::Fence&#160;</td>
-          <td class="paramname"><em>optional</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>fence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wait</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aacc2c58f70b402dc382e9e46548630f4" name="aacc2c58f70b402dc382e9e46548630f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacc2c58f70b402dc382e9e46548630f4">&#9670;&nbsp;</a></span>resetOrMakeFence()</h2>
+<a id="a5df6dad0c8b7d1c7714567480d78f05b" name="a5df6dad0c8b7d1c7714567480d78f05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df6dad0c8b7d1c7714567480d78f05b">&#9670;&nbsp;</a></span>resetOrMakeFence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -983,7 +1023,7 @@ template&lt;typename T , typename... Args&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bSignalled</em>&#160;</td>
+          <td class="paramname"><em>signalled</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1083,26 +1123,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ad0ddf6dd127e43d7986d2281bd0f6118" name="ad0ddf6dd127e43d7986d2281bd0f6118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ddf6dd127e43d7986d2281bd0f6118">&#9670;&nbsp;</a></span>waitAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void le::graphics::Device::waitAll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Device.html#a3ddf8e27597122e3807ba41b4ad4c723">vAP</a>&lt; vk::Fence &gt;&#160;</td>
-          <td class="paramname"><em>validFences</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a06fc44e3357696bca99d52e25fb5aa6f" name="a06fc44e3357696bca99d52e25fb5aa6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06fc44e3357696bca99d52e25fb5aa6f">&#9670;&nbsp;</a></span>waitFor()</h2>
+<a id="acbae10678f0827e53ad487a5ce8cb20f" name="acbae10678f0827e53ad487a5ce8cb20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbae10678f0827e53ad487a5ce8cb20f">&#9670;&nbsp;</a></span>waitFor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1110,9 +1132,19 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td class="memname">void le::graphics::Device::waitFor </td>
           <td>(</td>
-          <td class="paramtype">vk::Fence&#160;</td>
-          <td class="paramname"><em>optional</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::Fence const &gt;&#160;</td>
+          <td class="paramname"><em>fences</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdch::nanoseconds&#160;</td>
+          <td class="paramname"><em>wait</em> = <code><a class="el" href="classle_1_1graphics_1_1Device.html#ab7e8271cfef95f0f82f90bc95c8e38c0">fenceWait</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1136,21 +1168,30 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a19fe00693aefa268aaaedd881950b767" name="a19fe00693aefa268aaaedd881950b767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19fe00693aefa268aaaedd881950b767">&#9670;&nbsp;</a></span>anisotropy</h2>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aa9627c9772feb41db6450011b1efdb92" name="aa9627c9772feb41db6450011b1efdb92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9627c9772feb41db6450011b1efdb92">&#9670;&nbsp;</a></span>FontFace</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::graphics::Device::anisotropy {}</td>
+          <td class="memname">friend class <a class="el" href="classle_1_1graphics_1_1FontFace.html">FontFace</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ab5b2c50849da4dfa76344ab6a130f89e" name="ab5b2c50849da4dfa76344ab6a130f89e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5b2c50849da4dfa76344ab6a130f89e">&#9670;&nbsp;</a></span>available</h2>
 
@@ -1179,6 +1220,28 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="ab7e8271cfef95f0f82f90bc95c8e38c0" name="ab7e8271cfef95f0f82f90bc95c8e38c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e8271cfef95f0f82f90bc95c8e38c0">&#9670;&nbsp;</a></span>fenceWait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr stdch::nanoseconds le::graphics::Device::fenceWait = 1s</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9630d5aaddb3326aea5a6a323ce03326" name="a9630d5aaddb3326aea5a6a323ce03326"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9630d5aaddb3326aea5a6a323ce03326">&#9670;&nbsp;</a></span>limits</h2>
 
@@ -1187,20 +1250,6 @@ template&lt;typename T , typename... Args&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">vk::PhysicalDeviceLimits le::graphics::Device::limits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7838f97f57449721eebe3d2e801474c" name="ad7838f97f57449721eebe3d2e801474c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7838f97f57449721eebe3d2e801474c">&#9670;&nbsp;</a></span>lineWidth</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&gt; le::graphics::Device::lineWidth {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1221,8 +1270,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a23a1f8d4dd579b5d1cbb77159765af5e" name="a23a1f8d4dd579b5d1cbb77159765af5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a1f8d4dd579b5d1cbb77159765af5e">&#9670;&nbsp;</a></span>requiredExtensions</h2>
+<a id="aeb39fc5a430be3ae5a7456ce5e3eab24" name="aeb39fc5a430be3ae5a7456ce5e3eab24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb39fc5a430be3ae5a7456ce5e3eab24">&#9670;&nbsp;</a></span>requiredExtensions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1231,12 +1280,12 @@ template&lt;typename T , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::array&lt;std::string_view, 2&gt; le::graphics::Device::requiredExtensions = {VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_KHR_MAINTENANCE1_EXTENSION_NAME}</td>
+          <td class="memname">constexpr std::string_view le::graphics::Device::requiredExtensions[] = {VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_KHR_MAINTENANCE1_EXTENSION_NAME}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

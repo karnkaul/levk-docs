@@ -70,16 +70,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7a2300d8ab21c1b52bc3ff35e45c60ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35bb4fb756afd3a20a4ffcbd8bf19ae"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1fixed__any.html">fixed_any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#ab35bb4fb756afd3a20a4ffcbd8bf19ae">operator=</a> (<a class="el" href="classktl_1_1fixed__any.html">fixed_any</a> const &amp;rhs)</td></tr>
 <tr class="separator:ab35bb4fb756afd3a20a4ffcbd8bf19ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36496bc61b7749a1aff1faed0f9ed9e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#a36496bc61b7749a1aff1faed0f9ed9e3">~fixed_any</a> ()</td></tr>
-<tr class="separator:a36496bc61b7749a1aff1faed0f9ed9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a078d6c00e04776f60f00cbc7c09890c7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = enable_if_different&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a078d6c00e04776f60f00cbc7c09890c7"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#a078d6c00e04776f60f00cbc7c09890c7">fixed_any</a> (T &amp;&amp;t)</td></tr>
-<tr class="memdesc:a078d6c00e04776f60f00cbc7c09890c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with object of type T.  <a href="classktl_1_1fixed__any.html#a078d6c00e04776f60f00cbc7c09890c7">More...</a><br /></td></tr>
-<tr class="separator:a078d6c00e04776f60f00cbc7c09890c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f28fb06488842b29878edb204bede45"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = enable_if_different&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a1f28fb06488842b29878edb204bede45"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1fixed__any.html">fixed_any</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#a1f28fb06488842b29878edb204bede45">operator=</a> (T &amp;&amp;t)</td></tr>
-<tr class="memdesc:a1f28fb06488842b29878edb204bede45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to object of type T.  <a href="classktl_1_1fixed__any.html#a1f28fb06488842b29878edb204bede45">More...</a><br /></td></tr>
-<tr class="separator:a1f28fb06488842b29878edb204bede45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd83e148a8f0246ab5b99733ff63946"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#afbd83e148a8f0246ab5b99733ff63946">~fixed_any</a> ()</td></tr>
+<tr class="separator:afbd83e148a8f0246ab5b99733ff63946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5244fe86226180042cc282da55f139"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires is_different_v&lt;T&gt; &amp;&amp; is_copiable_v&lt;T&gt;</td></tr>
+<tr class="memitem:acf5244fe86226180042cc282da55f139"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#acf5244fe86226180042cc282da55f139">fixed_any</a> (T &amp;&amp;t) noexcept(std::is_nothrow_move_constructible_v&lt; T &gt;)</td></tr>
+<tr class="memdesc:acf5244fe86226180042cc282da55f139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with object of type T.  <a href="classktl_1_1fixed__any.html#acf5244fe86226180042cc282da55f139">More...</a><br /></td></tr>
+<tr class="separator:acf5244fe86226180042cc282da55f139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19f7eb8798545751a06277009d9fcb1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires is_different_v&lt;T&gt; &amp;&amp; is_copiable_v&lt;T&gt;</td></tr>
+<tr class="memitem:ad19f7eb8798545751a06277009d9fcb1"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1fixed__any.html">fixed_any</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#ad19f7eb8798545751a06277009d9fcb1">operator=</a> (T &amp;&amp;t)</td></tr>
+<tr class="memdesc:ad19f7eb8798545751a06277009d9fcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to object of type T.  <a href="classktl_1_1fixed__any.html#ad19f7eb8798545751a06277009d9fcb1">More...</a><br /></td></tr>
+<tr class="separator:ad19f7eb8798545751a06277009d9fcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f98a9dbbf9b179aec216f0146b9c90b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9f98a9dbbf9b179aec216f0146b9c90b"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#a9f98a9dbbf9b179aec216f0146b9c90b">contains</a> () const noexcept</td></tr>
 <tr class="memdesc:a9f98a9dbbf9b179aec216f0146b9c90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if held type (if any) matches T.  <a href="classktl_1_1fixed__any.html#a9f98a9dbbf9b179aec216f0146b9c90b">More...</a><br /></td></tr>
@@ -102,9 +104,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a927244c11d5be78c525145d139f2ba99"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#a927244c11d5be78c525145d139f2ba99">clear</a> () noexcept</td></tr>
 <tr class="memdesc:a927244c11d5be78c525145d139f2ba99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy held type (if any)  <a href="classktl_1_1fixed__any.html#a927244c11d5be78c525145d139f2ba99">More...</a><br /></td></tr>
 <tr class="separator:a927244c11d5be78c525145d139f2ba99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec0f831786b77f2b38f412c78e55c22"><td class="memTemplParams" colspan="2">template&lt;typename T , typename &gt; </td></tr>
-<tr class="memitem:abec0f831786b77f2b38f412c78e55c22"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1fixed__any.html">fixed_any</a>&lt; N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#abec0f831786b77f2b38f412c78e55c22">operator=</a> (T &amp;&amp;t)</td></tr>
-<tr class="separator:abec0f831786b77f2b38f412c78e55c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c9c45c5600ae62bec87b70fa87afa2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a72c9c45c5600ae62bec87b70fa87afa2"><td class="memTemplItemLeft" align="right" valign="top">constexpr T const &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1fixed__any.html#a72c9c45c5600ae62bec87b70fa87afa2">get</a> () const</td></tr>
 <tr class="separator:a72c9c45c5600ae62bec87b70fa87afa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,31 +203,40 @@ template&lt;std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a36496bc61b7749a1aff1faed0f9ed9e3" name="a36496bc61b7749a1aff1faed0f9ed9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36496bc61b7749a1aff1faed0f9ed9e3">&#9670;&nbsp;</a></span>~fixed_any()</h2>
+<a id="afbd83e148a8f0246ab5b99733ff63946" name="afbd83e148a8f0246ab5b99733ff63946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd83e148a8f0246ab5b99733ff63946">&#9670;&nbsp;</a></span>~fixed_any()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classktl_1_1fixed__any.html">ktl::fixed_any</a>&lt; N &gt;::~<a class="el" href="classktl_1_1fixed__any.html">fixed_any</a></td>
+          <td class="memname">constexpr <a class="el" href="classktl_1_1fixed__any.html">ktl::fixed_any</a>&lt; N &gt;::~<a class="el" href="classktl_1_1fixed__any.html">fixed_any</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a078d6c00e04776f60f00cbc7c09890c7" name="a078d6c00e04776f60f00cbc7c09890c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a078d6c00e04776f60f00cbc7c09890c7">&#9670;&nbsp;</a></span>fixed_any() <span class="overload">[4/4]</span></h2>
+<a id="acf5244fe86226180042cc282da55f139" name="acf5244fe86226180042cc282da55f139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5244fe86226180042cc282da55f139">&#9670;&nbsp;</a></span>fixed_any() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t N&gt; </div>
+template&lt;std::size_t N = sizeof(void*)&gt; </div>
 <div class="memtemplate">
-template&lt;typename T , typename &gt; </div>
+template&lt;typename T &gt; <br />
+requires is_different_v&lt;T&gt; &amp;&amp; is_copiable_v&lt;T&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -243,7 +251,7 @@ template&lt;typename T , typename &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -451,7 +459,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a7a2300d8ab21c1b52bc3ff35e45c60ee" name="a7a2300d8ab21c1b52bc3ff35e45c60ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a2300d8ab21c1b52bc3ff35e45c60ee">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2300d8ab21c1b52bc3ff35e45c60ee">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -479,7 +487,7 @@ template&lt;std::size_t N&gt; </div>
 </div>
 </div>
 <a id="ab35bb4fb756afd3a20a4ffcbd8bf19ae" name="ab35bb4fb756afd3a20a4ffcbd8bf19ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab35bb4fb756afd3a20a4ffcbd8bf19ae">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35bb4fb756afd3a20a4ffcbd8bf19ae">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,15 +514,16 @@ template&lt;std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a1f28fb06488842b29878edb204bede45" name="a1f28fb06488842b29878edb204bede45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f28fb06488842b29878edb204bede45">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/4]</span></h2>
+<a id="ad19f7eb8798545751a06277009d9fcb1" name="ad19f7eb8798545751a06277009d9fcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19f7eb8798545751a06277009d9fcb1">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t N = sizeof(void*)&gt; </div>
 <div class="memtemplate">
-template&lt;typename T , typename  = enable_if_different&lt;T&gt;&gt; </div>
+template&lt;typename T &gt; <br />
+requires is_different_v&lt;T&gt; &amp;&amp; is_copiable_v&lt;T&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -529,42 +538,12 @@ template&lt;typename T , typename  = enable_if_different&lt;T&gt;&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Assign to object of type T. </p>
-
-</div>
-</div>
-<a id="abec0f831786b77f2b38f412c78e55c22" name="abec0f831786b77f2b38f412c78e55c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abec0f831786b77f2b38f412c78e55c22">&#9670;&nbsp;</a></span>operator=() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t N = sizeof(void*)&gt; </div>
-<div class="memtemplate">
-template&lt;typename T , typename &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classktl_1_1fixed__any.html">fixed_any</a>&lt; N &gt; &amp; <a class="el" href="classktl_1_1fixed__any.html">ktl::fixed_any</a>&lt; N &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

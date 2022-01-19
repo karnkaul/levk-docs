@@ -104,6 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51dce4d68f0b003d03ccbdd8275fe2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22419e61e1ef5cd0b3e7a11d6ada4424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classle_1_1graphics_1_1Queue.html">Queue</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Queues.html#a22419e61e1ef5cd0b3e7a11d6ada4424">compute</a> () const noexcept</td></tr>
 <tr class="separator:a22419e61e1ef5cd0b3e7a11d6ada4424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac066203328a0e7e918145e9b51abccc6"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Queues.html#ac066203328a0e7e918145e9b51abccc6">submit</a> (<a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::SubmitInfo const &gt; infos, vk::Fence signal, <a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a> type=<a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904aae96dc49a56fd0c22927d672cb979537">QType::eGraphics</a>) const</td></tr>
+<tr class="separator:ac066203328a0e7e918145e9b51abccc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9feea4e034ecf4d4deec182826bbe8bb"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Queues.html#a9feea4e034ecf4d4deec182826bbe8bb">present</a> (vk::PresentInfoKHR const &amp;info) const</td></tr>
+<tr class="separator:a9feea4e034ecf4d4deec182826bbe8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1Pinned"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1Pinned')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1Pinned.html">le::Pinned</a></td></tr>
 <tr class="memitem:a1c65ae37cffd96c8fbc46bc52eb02e96 inherit pub_methods_structle_1_1Pinned"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Pinned.html#a1c65ae37cffd96c8fbc46bc52eb02e96">Pinned</a> ()=default</td></tr>
 <tr class="separator:a1c65ae37cffd96c8fbc46bc52eb02e96 inherit pub_methods_structle_1_1Pinned"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,6 +246,24 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9feea4e034ecf4d4deec182826bbe8bb" name="a9feea4e034ecf4d4deec182826bbe8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9feea4e034ecf4d4deec182826bbe8bb">&#9670;&nbsp;</a></span>present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vk::Result le::graphics::Queues::present </td>
+          <td>(</td>
+          <td class="paramtype">vk::PresentInfoKHR const &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a579d311ef7c9af3f2b2a05a22f8adde4" name="a579d311ef7c9af3f2b2a05a22f8adde4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a579d311ef7c9af3f2b2a05a22f8adde4">&#9670;&nbsp;</a></span>primary()</h2>
 
@@ -350,6 +372,40 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac066203328a0e7e918145e9b51abccc6" name="ac066203328a0e7e918145e9b51abccc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac066203328a0e7e918145e9b51abccc6">&#9670;&nbsp;</a></span>submit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vk::Result le::graphics::Queues::submit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classle_1_1Span.html">Span</a>&lt; vk::SubmitInfo const &gt;&#160;</td>
+          <td class="paramname"><em>infos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::Fence&#160;</td>
+          <td class="paramname"><em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904">QType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="namespacele_1_1graphics.html#ae128ba866f989ff7dcb985ab253f3904aae96dc49a56fd0c22927d672cb979537">QType::eGraphics</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">

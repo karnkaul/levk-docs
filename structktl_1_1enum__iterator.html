@@ -50,7 +50,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="structktl_1_1enum__iterator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ktl::enum_iterator&lt; Enum, Tr &gt; Struct Template Reference</div></div>
 </div><!--header-->
@@ -82,6 +81,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a234c4c24f0ec557d8acd3f492936a1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20a6868540f7a1f7e744b28c3c07138c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1enum__iterator.html#a20a6868540f7a1f7e744b28c3c07138c">operator--</a> (int) noexcept</td></tr>
 <tr class="separator:a20a6868540f7a1f7e744b28c3c07138c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4762f7030bb0de531bcbfbf72e5657f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1enum__iterator.html#ae4762f7030bb0de531bcbfbf72e5657f">operator&lt;=&gt;</a> (<a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a> const &amp;) const =default</td></tr>
+<tr class="separator:ae4762f7030bb0de531bcbfbf72e5657f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -92,13 +93,6 @@ Public Attributes</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad766d0b85765d7fe528819a23af63766"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1enum__iterator.html#ad766d0b85765d7fe528819a23af63766">is_pot_v</a> = std::is_same_v&lt;Tr, <a class="el" href="structktl_1_1enum__trait__pot.html">enum_trait_pot</a>&gt;</td></tr>
 <tr class="separator:ad766d0b85765d7fe528819a23af63766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a0c87a052011583276eb3a28a7ecd9d7d"><td class="memItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1enum__iterator.html#a0c87a052011583276eb3a28a7ecd9d7d">operator==</a> (<a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a> lhs, <a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a> rhs) noexcept</td></tr>
-<tr class="separator:a0c87a052011583276eb3a28a7ecd9d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc82a434cec1d72846ed79930892acb9"><td class="memItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structktl_1_1enum__iterator.html#adc82a434cec1d72846ed79930892acb9">operator!=</a> (<a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a> lhs, <a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a> rhs) noexcept</td></tr>
-<tr class="separator:adc82a434cec1d72846ed79930892acb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Enum, typename Tr&gt;<br />
@@ -290,9 +284,8 @@ template&lt;typename Enum , typename Tr &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="adc82a434cec1d72846ed79930892acb9" name="adc82a434cec1d72846ed79930892acb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc82a434cec1d72846ed79930892acb9">&#9670;&nbsp;</a></span>operator!=</h2>
+<a id="ae4762f7030bb0de531bcbfbf72e5657f" name="ae4762f7030bb0de531bcbfbf72e5657f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4762f7030bb0de531bcbfbf72e5657f">&#9670;&nbsp;</a></span>operator&lt;=&gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,64 +296,16 @@ template&lt;typename Enum , typename Tr &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr friend bool operator!= </td>
+          <td class="memname">constexpr auto <a class="el" href="structktl_1_1enum__iterator.html">ktl::enum_iterator</a>&lt; Enum, Tr &gt;::operator&lt;=&gt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a>&lt; Enum, Tr &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a>&lt; Enum, Tr &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype"><a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a>&lt; Enum, Tr &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c87a052011583276eb3a28a7ecd9d7d" name="a0c87a052011583276eb3a28a7ecd9d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c87a052011583276eb3a28a7ecd9d7d">&#9670;&nbsp;</a></span>operator==</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , typename Tr &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr friend bool operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a>&lt; Enum, Tr &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structktl_1_1enum__iterator.html">enum_iterator</a>&lt; Enum, Tr &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

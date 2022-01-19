@@ -89,6 +89,8 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac0ed075208791ff2dcaa4da80617f393"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac0ed075208791ff2dcaa4da80617f393"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#ac0ed075208791ff2dcaa4da80617f393">vAP</a> = vk::ArrayProxy&lt; T const  &gt; const  &amp;</td></tr>
 <tr class="separator:ac0ed075208791ff2dcaa4da80617f393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f94014c01a7770c33ae63f05ca9ca10"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a1f94014c01a7770c33ae63f05ca9ca10">Deferred</a> = <a class="el" href="classle_1_1graphics_1_1Defer.html">Defer</a>&lt; <a class="el" href="structle_1_1graphics_1_1Memory_1_1Resource.html">Resource</a>, <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a>, <a class="el" href="structle_1_1graphics_1_1Memory_1_1Deleter.html">Deleter</a> &gt;</td></tr>
+<tr class="separator:a1f94014c01a7770c33ae63f05ca9ca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -134,8 +136,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a857d184c837d71b79ff036e36b38a557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac9a92c87ae94320adabae08c3a25d43"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aac9a92c87ae94320adabae08c3a25d43">imageBarrier</a> (vk::CommandBuffer cb, vk::Image image, <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">ImgMeta</a> const &amp;meta)</td></tr>
 <tr class="separator:aac9a92c87ae94320adabae08c3a25d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcbf5b1b79aaad5f4d35bc6d2f3d87c0"><td class="memItemLeft" align="right" valign="top">static vk::BufferImageCopy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#abcbf5b1b79aaad5f4d35bc6d2f3d87c0">bufferImageCopy</a> (vk::Extent3D extent, vk::ImageAspectFlags aspects, vk::DeviceSize offset, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerIdx)</td></tr>
-<tr class="separator:abcbf5b1b79aaad5f4d35bc6d2f3d87c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cabf28ffb9d272b18c54a3afdf87c7f"><td class="memItemLeft" align="right" valign="top">static vk::BufferImageCopy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#a5cabf28ffb9d272b18c54a3afdf87c7f">bufferImageCopy</a> (vk::Extent3D extent, vk::ImageAspectFlags aspects, vk::DeviceSize bo, glm::ivec2 io, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> layerIdx)</td></tr>
+<tr class="separator:a5cabf28ffb9d272b18c54a3afdf87c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5203878c1f79e0f100a4df13716ca96"><td class="memItemLeft" align="right" valign="top">static vk::ImageBlit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1Memory.html#aa5203878c1f79e0f100a4df13716ca96">imageBlit</a> (<a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; <a class="el" href="structle_1_1graphics_1_1Memory_1_1ImgMeta.html">Memory::ImgMeta</a> &gt; const &amp;meta, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Offset3D &gt; const &amp;srcOff, <a class="el" href="namespacele_1_1graphics.html#aa96e77907a32237d77ad98c30cec1c9a">TPair</a>&lt; vk::Offset3D &gt; const &amp;dstOff) noexcept</td></tr>
 <tr class="separator:aa5203878c1f79e0f100a4df13716ca96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -152,6 +154,20 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a02cfafaf5d07d2d63c194d3220858a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a1f94014c01a7770c33ae63f05ca9ca10" name="a1f94014c01a7770c33ae63f05ca9ca10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f94014c01a7770c33ae63f05ca9ca10">&#9670;&nbsp;</a></span>Deferred</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1Memory.html#a1f94014c01a7770c33ae63f05ca9ca10">le::graphics::Memory::Deferred</a> =  <a class="el" href="classle_1_1graphics_1_1Defer.html">Defer</a>&lt;<a class="el" href="structle_1_1graphics_1_1Memory_1_1Resource.html">Resource</a>, <a class="el" href="classle_1_1graphics_1_1Memory.html">Memory</a>, <a class="el" href="structle_1_1graphics_1_1Memory_1_1Deleter.html">Deleter</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac0ed075208791ff2dcaa4da80617f393" name="ac0ed075208791ff2dcaa4da80617f393"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0ed075208791ff2dcaa4da80617f393">&#9670;&nbsp;</a></span>vAP</h2>
 
@@ -286,8 +302,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="abcbf5b1b79aaad5f4d35bc6d2f3d87c0" name="abcbf5b1b79aaad5f4d35bc6d2f3d87c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcbf5b1b79aaad5f4d35bc6d2f3d87c0">&#9670;&nbsp;</a></span>bufferImageCopy()</h2>
+<a id="a5cabf28ffb9d272b18c54a3afdf87c7f" name="a5cabf28ffb9d272b18c54a3afdf87c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cabf28ffb9d272b18c54a3afdf87c7f">&#9670;&nbsp;</a></span>bufferImageCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +327,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::DeviceSize&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
+          <td class="paramname"><em>bo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::ivec2&#160;</td>
+          <td class="paramname"><em>io</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

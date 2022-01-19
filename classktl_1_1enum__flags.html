@@ -74,32 +74,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68c76260381e698087ccce1dc86aacde"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a68c76260381e698087ccce1dc86aacde">enum_flags</a> (Enum e) noexcept</td></tr>
 <tr class="memdesc:a68c76260381e698087ccce1dc86aacde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flag e.  <a href="classktl_1_1enum__flags.html#a68c76260381e698087ccce1dc86aacde">More...</a><br /></td></tr>
 <tr class="separator:a68c76260381e698087ccce1dc86aacde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949c937c35797241d5fbb670957a6696"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a949c937c35797241d5fbb670957a6696"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a949c937c35797241d5fbb670957a6696">enum_flags</a> (T const ... t) noexcept</td></tr>
-<tr class="memdesc:a949c937c35797241d5fbb670957a6696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#a949c937c35797241d5fbb670957a6696">More...</a><br /></td></tr>
-<tr class="separator:a949c937c35797241d5fbb670957a6696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe318dcf2fe286879ddbcc6a9070a6df"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</td></tr>
+<tr class="memitem:abe318dcf2fe286879ddbcc6a9070a6df"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#abe318dcf2fe286879ddbcc6a9070a6df">enum_flags</a> (T const ... t) noexcept</td></tr>
+<tr class="memdesc:abe318dcf2fe286879ddbcc6a9070a6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#abe318dcf2fe286879ddbcc6a9070a6df">More...</a><br /></td></tr>
+<tr class="separator:abe318dcf2fe286879ddbcc6a9070a6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b17f5627a3c05c5dd248fb336e25612"><td class="memItemLeft" align="right" valign="top">constexpr Ty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a3b17f5627a3c05c5dd248fb336e25612">bits</a> () const noexcept</td></tr>
 <tr class="memdesc:a3b17f5627a3c05c5dd248fb336e25612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain underlying bits.  <a href="classktl_1_1enum__flags.html#a3b17f5627a3c05c5dd248fb336e25612">More...</a><br /></td></tr>
 <tr class="separator:a3b17f5627a3c05c5dd248fb336e25612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8c75dc53aa72f653fd626ff4484c887"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ac8c75dc53aa72f653fd626ff4484c887">operator Ty</a> () const noexcept</td></tr>
 <tr class="memdesc:ac8c75dc53aa72f653fd626ff4484c887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator.  <a href="classktl_1_1enum__flags.html#ac8c75dc53aa72f653fd626ff4484c887">More...</a><br /></td></tr>
 <tr class="separator:ac8c75dc53aa72f653fd626ff4484c887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f921fe5e5649ca40c40dc70c7df20e"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:ac9f921fe5e5649ca40c40dc70c7df20e"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ac9f921fe5e5649ca40c40dc70c7df20e">set</a> (T const ... t) noexcept</td></tr>
-<tr class="memdesc:ac9f921fe5e5649ca40c40dc70c7df20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#ac9f921fe5e5649ca40c40dc70c7df20e">More...</a><br /></td></tr>
-<tr class="separator:ac9f921fe5e5649ca40c40dc70c7df20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575e7eb6d9304986659dc15b26e7e165"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a575e7eb6d9304986659dc15b26e7e165"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a575e7eb6d9304986659dc15b26e7e165">reset</a> (T const ... t) noexcept</td></tr>
-<tr class="memdesc:a575e7eb6d9304986659dc15b26e7e165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#a575e7eb6d9304986659dc15b26e7e165">More...</a><br /></td></tr>
-<tr class="separator:a575e7eb6d9304986659dc15b26e7e165"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d578e2dbd6efca010f07941b0f31935"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a2d578e2dbd6efca010f07941b0f31935"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a2d578e2dbd6efca010f07941b0f31935">flip</a> (T const ... t) noexcept</td></tr>
-<tr class="memdesc:a2d578e2dbd6efca010f07941b0f31935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flip flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#a2d578e2dbd6efca010f07941b0f31935">More...</a><br /></td></tr>
-<tr class="separator:a2d578e2dbd6efca010f07941b0f31935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5d572c97a9313b3dbba46194b2eb52"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</td></tr>
+<tr class="memitem:a4f5d572c97a9313b3dbba46194b2eb52"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a4f5d572c97a9313b3dbba46194b2eb52">set</a> (T const ... t) noexcept</td></tr>
+<tr class="memdesc:a4f5d572c97a9313b3dbba46194b2eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#a4f5d572c97a9313b3dbba46194b2eb52">More...</a><br /></td></tr>
+<tr class="separator:a4f5d572c97a9313b3dbba46194b2eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c838cad41cc71956ea17be7bbc4dda3"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</td></tr>
+<tr class="memitem:a1c838cad41cc71956ea17be7bbc4dda3"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a1c838cad41cc71956ea17be7bbc4dda3">reset</a> (T const ... t) noexcept</td></tr>
+<tr class="memdesc:a1c838cad41cc71956ea17be7bbc4dda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#a1c838cad41cc71956ea17be7bbc4dda3">More...</a><br /></td></tr>
+<tr class="separator:a1c838cad41cc71956ea17be7bbc4dda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ddb83b1050d215aea02eb368f167093"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</td></tr>
+<tr class="memitem:a6ddb83b1050d215aea02eb368f167093"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a6ddb83b1050d215aea02eb368f167093">flip</a> (T const ... t) noexcept</td></tr>
+<tr class="memdesc:a6ddb83b1050d215aea02eb368f167093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flip flags (T must be Enum)  <a href="classktl_1_1enum__flags.html#a6ddb83b1050d215aea02eb368f167093">More...</a><br /></td></tr>
+<tr class="separator:a6ddb83b1050d215aea02eb368f167093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbb6957319b239fec997d5d0409bbd7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a9cbb6957319b239fec997d5d0409bbd7">assign</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> mask, bool value) noexcept</td></tr>
 <tr class="memdesc:a9cbb6957319b239fec997d5d0409bbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign value to mask bits.  <a href="classktl_1_1enum__flags.html#a9cbb6957319b239fec997d5d0409bbd7">More...</a><br /></td></tr>
 <tr class="separator:a9cbb6957319b239fec997d5d0409bbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5425fc5d19822d31a25428a29c3ed42f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a5425fc5d19822d31a25428a29c3ed42f">update</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> <a class="el" href="classktl_1_1enum__flags.html#ac9f921fe5e5649ca40c40dc70c7df20e">set</a>, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> <a class="el" href="classktl_1_1enum__flags.html#a575e7eb6d9304986659dc15b26e7e165">reset</a>={}) noexcept</td></tr>
+<tr class="memitem:a5425fc5d19822d31a25428a29c3ed42f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a5425fc5d19822d31a25428a29c3ed42f">update</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> <a class="el" href="classktl_1_1enum__flags.html#a4f5d572c97a9313b3dbba46194b2eb52">set</a>, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> <a class="el" href="classktl_1_1enum__flags.html#a1c838cad41cc71956ea17be7bbc4dda3">reset</a>={}) noexcept</td></tr>
 <tr class="memdesc:a5425fc5d19822d31a25428a29c3ed42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add set bits and remove unset bits.  <a href="classktl_1_1enum__flags.html#a5425fc5d19822d31a25428a29c3ed42f">More...</a><br /></td></tr>
 <tr class="separator:a5425fc5d19822d31a25428a29c3ed42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc74fa6f502c18485a96a82623ce1d0e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#acc74fa6f502c18485a96a82623ce1d0e">any</a> () const noexcept</td></tr>
@@ -120,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78397f411000ed64cc58ce8b5748d25b"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a78397f411000ed64cc58ce8b5748d25b">count</a> () const noexcept</td></tr>
 <tr class="memdesc:a78397f411000ed64cc58ce8b5748d25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain number of set bits.  <a href="classktl_1_1enum__flags.html#a78397f411000ed64cc58ce8b5748d25b">More...</a><br /></td></tr>
 <tr class="separator:a78397f411000ed64cc58ce8b5748d25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f14ca5a79b7fa4588876c0b48600fca"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a2f14ca5a79b7fa4588876c0b48600fca">operator==</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> const &amp;lhs) const noexcept=default</td></tr>
+<tr class="memdesc:a2f14ca5a79b7fa4588876c0b48600fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator.  <a href="classktl_1_1enum__flags.html#a2f14ca5a79b7fa4588876c0b48600fca">More...</a><br /></td></tr>
+<tr class="separator:a2f14ca5a79b7fa4588876c0b48600fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae966b20a232554270d4189574f72aace"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ae966b20a232554270d4189574f72aace">operator|=</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> mask) noexcept</td></tr>
 <tr class="memdesc:ae966b20a232554270d4189574f72aace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bitwise OR / add flags.  <a href="classktl_1_1enum__flags.html#ae966b20a232554270d4189574f72aace">More...</a><br /></td></tr>
 <tr class="separator:ae966b20a232554270d4189574f72aace"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,32 +136,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab37345fee9d11747b38b8ffae9e7d4ac"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ab37345fee9d11747b38b8ffae9e7d4ac">operator^=</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> mask) noexcept</td></tr>
 <tr class="memdesc:ab37345fee9d11747b38b8ffae9e7d4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bitwise XOR / exclusively add flags (add mod 2)  <a href="classktl_1_1enum__flags.html#ab37345fee9d11747b38b8ffae9e7d4ac">More...</a><br /></td></tr>
 <tr class="separator:ab37345fee9d11747b38b8ffae9e7d4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7f3a5adf4c7ec49aeabcb5521d8a4c"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a1d7f3a5adf4c7ec49aeabcb5521d8a4c"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a1d7f3a5adf4c7ec49aeabcb5521d8a4c">set</a> (T const ... t) noexcept</td></tr>
-<tr class="separator:a1d7f3a5adf4c7ec49aeabcb5521d8a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad08faa4c218d177187a2bc4acbe1b037"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:ad08faa4c218d177187a2bc4acbe1b037"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ad08faa4c218d177187a2bc4acbe1b037">reset</a> (T const ... t) noexcept</td></tr>
-<tr class="separator:ad08faa4c218d177187a2bc4acbe1b037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af30da3b54425fdd0bc23adc63b3f8a08"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:af30da3b54425fdd0bc23adc63b3f8a08"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#af30da3b54425fdd0bc23adc63b3f8a08">flip</a> (T const ... t) noexcept</td></tr>
-<tr class="separator:af30da3b54425fdd0bc23adc63b3f8a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a710d7eff23b1d973b4408237bf3d669a"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a710d7eff23b1d973b4408237bf3d669a">is_linear_v</a> = std::is_same_v&lt;Tr, <a class="el" href="structktl_1_1enum__trait__linear.html">enum_trait_linear</a>&gt;</td></tr>
 <tr class="separator:a710d7eff23b1d973b4408237bf3d669a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad75e3064e4a2cc5f586f01b7536258d1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad75e3064e4a2cc5f586f01b7536258d1"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a> = std::is_same_v&lt;T, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&gt; || std::is_same_v&lt;T, Enum&gt;</td></tr>
+<tr class="memitem:ad75e3064e4a2cc5f586f01b7536258d1"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:ad75e3064e4a2cc5f586f01b7536258d1"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a> = (... &amp;&amp; (std::is_same_v&lt;T, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&gt; || std::is_same_v&lt;T, Enum&gt;))</td></tr>
 <tr class="separator:ad75e3064e4a2cc5f586f01b7536258d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:adaf90186df58a4c77dece905dcc47083"><td class="memItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#adaf90186df58a4c77dece905dcc47083">operator==</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> lhs, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> rhs) noexcept</td></tr>
-<tr class="memdesc:adaf90186df58a4c77dece905dcc47083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator.  <a href="classktl_1_1enum__flags.html#adaf90186df58a4c77dece905dcc47083">More...</a><br /></td></tr>
-<tr class="separator:adaf90186df58a4c77dece905dcc47083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f00b21c1a6b5610e5765229fb86600"><td class="memItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a07f00b21c1a6b5610e5765229fb86600">operator!=</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> lhs, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> rhs) noexcept</td></tr>
-<tr class="memdesc:a07f00b21c1a6b5610e5765229fb86600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator.  <a href="classktl_1_1enum__flags.html#a07f00b21c1a6b5610e5765229fb86600">More...</a><br /></td></tr>
-<tr class="separator:a07f00b21c1a6b5610e5765229fb86600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2a56eda2e695c93a3daaf2f68885a6"><td class="memItemLeft" align="right" valign="top">constexpr friend <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1enum__flags.html#a3a2a56eda2e695c93a3daaf2f68885a6">operator|</a> (<a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> const lhs, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a> const rhs) noexcept</td></tr>
 <tr class="memdesc:a3a2a56eda2e695c93a3daaf2f68885a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bitwise OR / add flags.  <a href="classktl_1_1enum__flags.html#a3a2a56eda2e695c93a3daaf2f68885a6">More...</a><br /></td></tr>
 <tr class="separator:a3a2a56eda2e695c93a3daaf2f68885a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +158,7 @@ Friends</h2></td></tr>
 <tr class="separator:a7e1810cfa05da680edb14896a6ec9d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename Enum, typename Ty = std::uint32_t, typename Tr = enum_trait_linear&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Enum, std::integral Ty = std::uint32_t, typename Tr = enum_trait_linear&gt;<br />
 class ktl::enum_flags&lt; Enum, Ty, Tr &gt;</div><p >Wrapper around an integral type used as bit flags, constrained to use with a particular enum. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -183,7 +175,7 @@ class ktl::enum_flags&lt; Enum, Ty, Tr &gt;</div><p >Wrapper around an integral 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::<a class="el" href="classktl_1_1enum__flags.html#a992b011215ddfa3f6aa44ccad06bdb04">storage_t</a> =  Ty</td>
@@ -199,7 +191,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::<a class="el" href="classktl_1_1enum__flags.html#a36f3bd917011abb67a11830e11328d23">type</a> =  Enum</td>
@@ -216,7 +208,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -243,7 +235,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty, typename Tr &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -267,15 +259,16 @@ template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
 
 </div>
 </div>
-<a id="a949c937c35797241d5fbb670957a6696" name="a949c937c35797241d5fbb670957a6696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949c937c35797241d5fbb670957a6696">&#9670;&nbsp;</a></span>enum_flags() <span class="overload">[3/3]</span></h2>
+<a id="abe318dcf2fe286879ddbcc6a9070a6df" name="abe318dcf2fe286879ddbcc6a9070a6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe318dcf2fe286879ddbcc6a9070a6df">&#9670;&nbsp;</a></span>enum_flags() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <div class="memtemplate">
-template&lt;typename... T&gt; </div>
+template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -290,7 +283,7 @@ template&lt;typename... T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -306,7 +299,7 @@ template&lt;typename... T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -336,7 +329,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -365,7 +358,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -395,7 +388,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty, typename Tr &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -435,7 +428,7 @@ template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -464,7 +457,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -487,15 +480,16 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 
 </div>
 </div>
-<a id="a2d578e2dbd6efca010f07941b0f31935" name="a2d578e2dbd6efca010f07941b0f31935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d578e2dbd6efca010f07941b0f31935">&#9670;&nbsp;</a></span>flip() <span class="overload">[1/2]</span></h2>
+<a id="a6ddb83b1050d215aea02eb368f167093" name="a6ddb83b1050d215aea02eb368f167093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddb83b1050d215aea02eb368f167093">&#9670;&nbsp;</a></span>flip()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <div class="memtemplate">
-template&lt;typename... T&gt; </div>
+template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -510,42 +504,12 @@ template&lt;typename... T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Flip flags (T must be Enum) </p>
-
-</div>
-</div>
-<a id="af30da3b54425fdd0bc23adc63b3f8a08" name="af30da3b54425fdd0bc23adc63b3f8a08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af30da3b54425fdd0bc23adc63b3f8a08">&#9670;&nbsp;</a></span>flip() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
-<div class="memtemplate">
-template&lt;typename... T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; &amp; <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::flip </td>
-          <td>(</td>
-          <td class="paramtype">T const ...&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -555,7 +519,7 @@ template&lt;typename... T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -584,7 +548,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty, typename Tr &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -608,13 +572,43 @@ template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
 
 </div>
 </div>
+<a id="a2f14ca5a79b7fa4588876c0b48600fca" name="a2f14ca5a79b7fa4588876c0b48600fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f14ca5a79b7fa4588876c0b48600fca">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comparison operator. </p>
+
+</div>
+</div>
 <a id="a85550e47ac532f388ab97013b6653bcb" name="a85550e47ac532f388ab97013b6653bcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85550e47ac532f388ab97013b6653bcb">&#9670;&nbsp;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -644,7 +638,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty, typename Tr &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -674,7 +668,7 @@ template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty, typename Tr &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -698,15 +692,16 @@ template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
 
 </div>
 </div>
-<a id="a575e7eb6d9304986659dc15b26e7e165" name="a575e7eb6d9304986659dc15b26e7e165"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a575e7eb6d9304986659dc15b26e7e165">&#9670;&nbsp;</a></span>reset() <span class="overload">[1/2]</span></h2>
+<a id="a1c838cad41cc71956ea17be7bbc4dda3" name="a1c838cad41cc71956ea17be7bbc4dda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c838cad41cc71956ea17be7bbc4dda3">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <div class="memtemplate">
-template&lt;typename... T&gt; </div>
+template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -721,7 +716,7 @@ template&lt;typename... T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -730,45 +725,16 @@ template&lt;typename... T&gt; </div>
 
 </div>
 </div>
-<a id="ad08faa4c218d177187a2bc4acbe1b037" name="ad08faa4c218d177187a2bc4acbe1b037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad08faa4c218d177187a2bc4acbe1b037">&#9670;&nbsp;</a></span>reset() <span class="overload">[2/2]</span></h2>
+<a id="a4f5d572c97a9313b3dbba46194b2eb52" name="a4f5d572c97a9313b3dbba46194b2eb52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5d572c97a9313b3dbba46194b2eb52">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <div class="memtemplate">
-template&lt;typename... T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; &amp; <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::reset </td>
-          <td>(</td>
-          <td class="paramtype">T const ...&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9f921fe5e5649ca40c40dc70c7df20e" name="ac9f921fe5e5649ca40c40dc70c7df20e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9f921fe5e5649ca40c40dc70c7df20e">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
-<div class="memtemplate">
-template&lt;typename... T&gt; </div>
+template&lt;typename... T&gt; <br />
+requires (<a class="el" href="classktl_1_1enum__flags.html#ad75e3064e4a2cc5f586f01b7536258d1">valid_flag_v</a>&lt;T...&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -783,42 +749,12 @@ template&lt;typename... T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Set flags (T must be Enum) </p>
-
-</div>
-</div>
-<a id="a1d7f3a5adf4c7ec49aeabcb5521d8a4c" name="a1d7f3a5adf4c7ec49aeabcb5521d8a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d7f3a5adf4c7ec49aeabcb5521d8a4c">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
-<div class="memtemplate">
-template&lt;typename... T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt; &amp; <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::set </td>
-          <td>(</td>
-          <td class="paramtype">T const ...&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -828,7 +764,7 @@ template&lt;typename... T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -858,7 +794,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
+template&lt;typename Enum , std::integral Ty, typename Tr &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -893,53 +829,13 @@ template&lt;typename Enum , typename Ty , typename Tr &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a07f00b21c1a6b5610e5765229fb86600" name="a07f00b21c1a6b5610e5765229fb86600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f00b21c1a6b5610e5765229fb86600">&#9670;&nbsp;</a></span>operator!=</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr friend bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Comparison operator. </p>
-
-</div>
-</div>
 <a id="afd283676ec4972cad54b43cb2b504aa3" name="afd283676ec4972cad54b43cb2b504aa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd283676ec4972cad54b43cb2b504aa3">&#9670;&nbsp;</a></span>operator&amp;</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -973,53 +869,13 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 
 </div>
 </div>
-<a id="adaf90186df58a4c77dece905dcc47083" name="adaf90186df58a4c77dece905dcc47083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaf90186df58a4c77dece905dcc47083">&#9670;&nbsp;</a></span>operator==</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr friend bool operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&lt; Enum, Ty, Tr &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Comparison operator. </p>
-
-</div>
-</div>
 <a id="a7e1810cfa05da680edb14896a6ec9d74" name="a7e1810cfa05da680edb14896a6ec9d74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e1810cfa05da680edb14896a6ec9d74">&#9670;&nbsp;</a></span>operator^</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1059,7 +915,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1100,7 +956,7 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1124,15 +980,15 @@ template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_tr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Enum , typename Ty  = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
+template&lt;typename Enum , std::integral Ty = std::uint32_t, typename Tr  = enum_trait_linear&gt; </div>
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename... T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::valid_flag_v = std::is_same_v&lt;T, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&gt; || std::is_same_v&lt;T, Enum&gt;</td>
+          <td class="memname">constexpr bool <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; Enum, Ty, Tr &gt;::valid_flag_v = (... &amp;&amp; (std::is_same_v&lt;T, <a class="el" href="classktl_1_1enum__flags.html">enum_flags</a>&gt; || std::is_same_v&lt;T, Enum&gt;))</td>
         </tr>
       </table>
   </td>

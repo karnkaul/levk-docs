@@ -52,7 +52,7 @@ $(function() {
   <div class="headertitle"><div class="title">delegate.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="move__only__function_8hpp.html">move_only_function.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="kfunction_8hpp.html">async/kfunction.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tagged__store_8hpp.html">tagged_store.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -75,9 +75,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae8879e6ee9cec9779dd9ed92ffe37fc6"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ae8879e6ee9cec9779dd9ed92ffe37fc6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#ae8879e6ee9cec9779dd9ed92ffe37fc6">ktl::detail::delegate_callback</a> = move_only_function&lt; void(Args const  &amp;...)&gt;</td></tr>
-<tr class="separator:ae8879e6ee9cec9779dd9ed92ffe37fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad5bd8f03e6ca08112498b6cc1ba0ce"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aaad5bd8f03e6ca08112498b6cc1ba0ce"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#aaad5bd8f03e6ca08112498b6cc1ba0ce">ktl::detail::delegate_callback</a> = kfunction&lt; void(Args const  &amp;...)&gt;</td></tr>
+<tr class="separator:aaad5bd8f03e6ca08112498b6cc1ba0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858afa769c8bb10600f99f0f9374a76b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a858afa769c8bb10600f99f0f9374a76b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a858afa769c8bb10600f99f0f9374a76b">ktl::delegate</a> = policy_delegate&lt; tagged_store_policy, Args... &gt;</td></tr>
 <tr class="memdesc:a858afa769c8bb10600f99f0f9374a76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate: store for callbacks; provides RAII signal instances.  <a href="namespacektl.html#a858afa769c8bb10600f99f0f9374a76b">More...</a><br /></td></tr>

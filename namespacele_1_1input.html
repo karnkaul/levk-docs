@@ -48,8 +48,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">le::input Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -61,6 +60,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Cursor.html">Cursor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1Driver.html">Driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1EventParser.html">EventParser</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Frame.html">Frame</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -80,8 +81,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1State.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1TextCursor.html">TextCursor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interactive text input with cursor prop.  <a href="classle_1_1input_1_1TextCursor.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1input_1_1TextCursor2.html">TextCursor2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interactive text input with cursor prop.  <a href="classle_1_1input_1_1TextCursor2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1input_1_1Trigger.html">Trigger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,73 +96,267 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a82917a73b0ce833f9df307384ef0a45a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a82917a73b0ce833f9df307384ef0a45a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a82917a73b0ce833f9df307384ef0a45a">Options</a> = <a class="el" href="classktl_1_1fixed__vector.html">ktl::fixed_vector</a>&lt; T, maxOptions &gt;</td></tr>
 <tr class="separator:a82917a73b0ce833f9df307384ef0a45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd583fa05eaa462d084edd0bedf9dc0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> = <a class="el" href="structle_1_1window_1_1Event.html">window::Event</a></td></tr>
+<tr class="memitem:aecd583fa05eaa462d084edd0bedf9dc0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> = <a class="el" href="classle_1_1window_1_1Event.html">window::Event</a></td></tr>
 <tr class="separator:aecd583fa05eaa462d084edd0bedf9dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0e9a278db2ba854679ec71df4fb6b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#afa0e9a278db2ba854679ec71df4fb6b1">EventQueue</a> = <a class="el" href="namespacele_1_1window.html#a633774b5ab72c46e87d7d1ca0fbd41ec">window::EventQueue</a></td></tr>
-<tr class="separator:afa0e9a278db2ba854679ec71df4fb6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e507f041fac1f876402d188a7fba38"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad4e507f041fac1f876402d188a7fba38">EventQueue</a> = std::vector&lt; <a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a> &gt;</td></tr>
+<tr class="separator:ad4e507f041fac1f876402d188a7fba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa328d212604c06ba015c59fab5e43ce8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aa328d212604c06ba015c59fab5e43ce8">ReceiverStore</a> = <a class="el" href="classktl_1_1observer__store.html">ktl::observer_store</a>&lt; <a class="el" href="classle_1_1input_1_1Receiver.html">Receiver</a> * &gt;</td></tr>
 <tr class="separator:aa328d212604c06ba015c59fab5e43ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ebfe8b0ba47bbc3a55605c35f1ec4c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a8ebfe8b0ba47bbc3a55605c35f1ec4c4">Action</a> = <a class="el" href="namespacele_1_1window.html#a72f1f380aa779a0fbbf2080b139b779d">window::Action</a></td></tr>
-<tr class="separator:a8ebfe8b0ba47bbc3a55605c35f1ec4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a63ce153f7c0c729eacca206445ccd9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a3a63ce153f7c0c729eacca206445ccd9">Mod</a> = <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3">window::Mod</a></td></tr>
-<tr class="separator:a3a63ce153f7c0c729eacca206445ccd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6720d01510b819c174089b6bc1154fa0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a6720d01510b819c174089b6bc1154fa0">Mods</a> = <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3">Mod</a>, <a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a>, <a class="el" href="structktl_1_1enum__trait__pot.html">ktl::enum_trait_pot</a> &gt;</td></tr>
+<tr class="memitem:a6720d01510b819c174089b6bc1154fa0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a6720d01510b819c174089b6bc1154fa0">Mods</a> = <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt; <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faad">Mod</a>, <a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a>, <a class="el" href="structktl_1_1enum__trait__pot.html">ktl::enum_trait_pot</a> &gt;</td></tr>
 <tr class="separator:a6720d01510b819c174089b6bc1154fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69159deb8c0481a9b91059d9c802da7d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a69159deb8c0481a9b91059d9c802da7d">Gamepad</a> = <a class="el" href="structle_1_1window_1_1Gamepad.html">window::Gamepad</a></td></tr>
 <tr class="separator:a69159deb8c0481a9b91059d9c802da7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad458b7d2964092e1578f1f2bf70809f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ad458b7d2964092e1578f1f2bf70809f3">Window</a> = <a class="el" href="classle_1_1window_1_1Instance.html">window::Instance</a></td></tr>
-<tr class="separator:ad458b7d2964092e1578f1f2bf70809f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaadb369502e3000035c4be4d843fd1d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#aaadb369502e3000035c4be4d843fd1d7">Key</a> = <a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">window::Key</a></td></tr>
-<tr class="separator:aaadb369502e3000035c4be4d843fd1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc446697c30b97c30715f6888c66bdc8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#acc446697c30b97c30715f6888c66bdc8">Axis</a> = <a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">window::Axis</a></td></tr>
-<tr class="separator:acc446697c30b97c30715f6888c66bdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab709b0b0dab0e3796d63ba3b28b4c5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a5ab709b0b0dab0e3796d63ba3b28b4c5">Window</a> = <a class="el" href="classle_1_1window_1_1Window.html">window::Window</a></td></tr>
+<tr class="separator:a5ab709b0b0dab0e3796d63ba3b28b4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198961e99fcbfafc7140e4228b4096df"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a198961e99fcbfafc7140e4228b4096df"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a198961e99fcbfafc7140e4228b4096df">TKeyDB</a> = <a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt; <a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">Key</a>, T, 512 &gt;</td></tr>
+<tr class="memitem:a198961e99fcbfafc7140e4228b4096df"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a198961e99fcbfafc7140e4228b4096df">TKeyDB</a> = <a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt; <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">Key</a>, T, 512 &gt;</td></tr>
 <tr class="separator:a198961e99fcbfafc7140e4228b4096df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a2649b92a300307dc2a2fb3dc18561fb2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2">Action</a> : s8 { <a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2ad46d3b94b78c854273c61f3f14435b9f">eRelease</a>
+, <a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2a20cb9d4ecd52623df4ac9fd8b23f9fb2">ePress</a>
+, <a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2a63a63e3fefbb6e5459aa2e951740c277">eRepeat</a>
+ }</td></tr>
+<tr class="separator:a2649b92a300307dc2a2fb3dc18561fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda856c8317e5219d3838e54f6ca640b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">Key</a> { <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba64c3acc11ffdb1be30ea339290bd1508">eUnknown</a> = 0
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640babbf977b55bd3701863e3adc69358426e">eSpace</a> = 32
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0b0c76185106a754f2d6303958387f5d">eApostrophe</a> = 39
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bab029865857f8ff051b2794dc88d2f76c">eComma</a> = 44
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baba75e0163251e7472275e3d06cc14e27">eMinus</a> = 45
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba90c875d428d6ef2da05f9dd0e575945d">eFullstop</a> = 46
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba04050ca6bd4635557793af51b9ffd03f">eSlash</a> = 47
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba7aa23492064a9e2a97a6f8887659ec87">e0</a> = 48
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bacd3dc8b6cffb41e4163dcbd857ca87da">e1</a> = 49
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba68a9e49bbc88c02083a062a78ab3bf30">e2</a> = 50
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba7ed21b04c0dcde1c638e5c8480ad0026">e3</a> = 51
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba38de3f7d221a2910710874b0b220cb26">e4</a> = 52
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba72baa9d520b127dd4ab03ff904cc1959">e5</a> = 53
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baf38f5bf94ee2de0b42d1829fbf66ea9c">e6</a> = 54
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba492585e49f078b06b0cd507d42ae9da0">e7</a> = 55
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba3a876e157f4f77fe73c07fc77325a5e8">e8</a> = 56
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1effb78d80bd8fc7d4cab1161a34b255">e9</a> = 57
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bafd3e3cd9614009dae6979e400158e4cf">eSemicolon</a> = 59
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad641b5cd19a5befb96881807bf8f58ba">eEqual</a> = 61
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baaaf8e253d25fc68de51cc68a360868d6">eA</a> = 65
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba76f5a6e4de889068fb1b4c3e3c263666">eB</a> = 66
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0466dc667c3b135e90ac7cab8b325756">eC</a> = 67
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba38d66c22a1d4a2fa891333ea8bff88f4">eD</a> = 68
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baacd7664da6a1296fb47fcc89a830970d">eE</a> = 69
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba884621f737e7b573b9300d52edb48379">eF</a> = 70
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bacd5532a9977c28cb4bcea23ba3b0dc48">eG</a> = 71
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba638f8da31ea4241c05e1d29cfbe98895">eH</a> = 72
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baea94c39ed2b1e361e46f31ccbe2060a2">eI</a> = 73
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba4bbd88be6857315b78d5e679b266eee1">eJ</a> = 74
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad833e35c0af1fd7d8321324539dc2d4f">eK</a> = 75
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba6b8ea02d9d96e083b447f34911bb8735">eL</a> = 76
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bac36c611001d2da9d96f3d73ffdbb2b6d">eM</a> = 77
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba57b8a01b53f910671fee68ba5240c4f7">eN</a> = 78
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba103185db2aa7fabb09672d4604d07281">eO</a> = 79
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640badc2dc2ef5064d825bfcf012a0ae7c74e">eP</a> = 80
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba248f0e0cc68707cbe97dbb5565abbe93">eQ</a> = 81
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba2c8d3af323e82d44b5f7dda62485623f">eR</a> = 82
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0be6600367fee76523db94834295e241">eS</a> = 83
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba04602fd883d63a0a60a2ea5585ca3b9b">eT</a> = 84
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baef4130fca3e00a16c10e1d7a67684d81">eU</a> = 85
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baa34fe48def3e3d3ff7255b70ff87a181">eV</a> = 86
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba5d1dae965d94ba9ee15f1f9c03a5f525">eW</a> = 87
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba791c8faabb4af608ce8588393e66c7ff">eX</a> = 88
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad2ff0b655e01c091aac1e8b84cc395ca">eY</a> = 89
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baa363bc0d804aec432567128ed10416ee">eZ</a> = 90
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bacf942e3f95843e474abbaf5fb8ab318f">eLeftBracket</a> = 91
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba8327b6ef0a71ee1707e854830e905639">eBackslash</a> = 92
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba62dc9eb7555768c810e82852fb51d9ba">eRightBracket</a> = 93
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0a316f3c2a4954c15f27e4c6f9f6aeac">eGrave</a> = 94
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba04a13f05d0ff637841a37bd602c966db">eBacktick</a> = eGrave
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640babac65ad2365fb7e108767e040d20eb63">eEscape</a> = 256
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640badb9b98d61dc7fd361b583a10bb05b55f">eEnter</a> = 257
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baceae40230d2f0a107913c0a91afb4857">eTab</a> = 258
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baa6678a358c55df18cf59da348aa0a556">eBackspace</a> = 259
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba04ae3e5dd67f2eb8376107c00dbb5adf">eInsert</a> = 260
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640badc483630592ca5333ad2e2bb7880256e">eDelete</a> = 261
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baf47864efb86f863a0080026825b1303d">eRight</a> = 262
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba97d352658db7b34c35502f9cd535e48b">eLeft</a> = 263
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba9b99cd9a69140a1d7c7d483df619ea02">eDown</a> = 264
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bade2a1951a10731843b364fde00833a23">eUp</a> = 265
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba7e60fa5ac0a63018a7db7f7ba7232f8f">ePageUp</a> = 266
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba18fb3a0b50a3af341e5854c07428e6f5">ePageDown</a> = 267
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba528d11fa2db53949ee332e3e41ec3af4">eHome</a> = 268
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640babcc187cb95316db4a37190acdecb7e50">eEnd</a> = 269
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba03313000bddbe627fe74259a63974c64">eCapsLock</a> = 280
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1756f0c7a364b4c3402411fb60cd720d">eScrollLock</a> = 281
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bab47d4037e1ca28b5a006254158e0436d">eNumLock</a> = 282
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad09f03bf640b71cbd0292312aee6f45f">ePrintScreen</a> = 283
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baedf03b0280a340c11186b6981a490903">ePause</a> = 284
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba3c398e549bb226459373d9406b883465">eF1</a> = 290
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba71745a2f92f5b0fcf3d04d68826912f8">eF2</a> = 291
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bac74b1fed69261f2bf52d81945e210f33">eF3</a> = 292
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba651c5fa81a83ff975a169da776819530">eF4</a> = 293
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1f21e427c8a02981586087c31289c268">eF5</a> = 294
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad07e3252aa1ab535250d861e4ae8aed7">eF6</a> = 295
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baaa8f0a114c0b48dbdd042a07381b2840">eF7</a> = 296
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba4b6d8cd7151c00674e1e0a7d6bc89595">eF8</a> = 297
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba10d74d9a61e7072a7c415319f0fd719d">eF9</a> = 298
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640babf4a171a8b0bd7ed6bc1a847324d1727">eF10</a> = 299
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba35424be4c797534f2d07ae6c7051bfc5">eF11</a> = 300
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba494c91c4cc3b84fa3809700bce11eb0a">eF12</a> = 301
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baaa15a8cdc38e9700c32cc855553b209d">eF13</a> = 302
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba009470128c9e4d72527c34ce279474a7">eF14</a> = 303
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba536c1152e8d4a04c247ed6ef7ca0d457">eF15</a> = 304
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baf5615041f04e90613ac3009a02ff457a">eF16</a> = 305
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640badb7177c6af7fd835a2f46e09f587ff12">eF17</a> = 306
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba2fb8f8d622b6f982c0c9da08f85482bc">eF18</a> = 307
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1f5a6df1d833a5dc8cf6d3aebe3b6246">eF19</a> = 308
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba947a26f3f828e44db197f81392aa9c35">eF20</a> = 309
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bacaacfe86fb6919e6ddc131064b1fd819">eF21</a> = 310
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba798cba67a96e195aa1d6976fa3e8b2a5">eF22</a> = 311
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba9e75e1943152f059a45ff7adbc961391">eF23</a> = 312
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba4c8304dece44017c460079c4b4f2155f">eF24</a> = 313
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bae134c7581952af6d91996b6812e71623">eF25</a> = 314
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0aed222f954e2815cdb5918f9fb98807">eKp0</a> = 320
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba7a9a55342a0bd54468f75b2d0516acc3">eKp1</a> = 321
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba85148971178533db7e4f1869f63e1ab7">eKp2</a> = 322
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba83de85ec4cc44be16b6d8ad117666cd5">eKp3</a> = 323
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba9050a1f4e71788a91f11f526dd27f975">eKp4</a> = 324
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba219f8abc35036c80383762bf2bf6a24b">eKp5</a> = 325
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba28c7478180dd8b259f3faf2ebd2ba745">eKp6</a> = 326
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad93d65610189355028c43dfaf31a6825">eKp7</a> = 327
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baf78ed2265004eb191a64ee0e8426689a">eKp8</a> = 328
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba60392262be69d023edcdebdd7488c8ae">eKp9</a> = 329
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1a19841e113f590e4cb7811ee85577d0">eKpDecimal</a> = 330
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba91d11f9f49486f4f6c81663b6546906a">eKpDivide</a> = 331
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baa5cedefd339f67dfd12c0d13ef8a8930">eKpMultiply</a> = 332
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba3baaa36041b4f71b9843834ff6afadde">eKpSubtract</a> = 333
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bae17eae05354291750d980b4cd7998c91">eKpAdd</a> = 334
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baba5c51a89da0e19b5417f49d88544027">eKpEnter</a> = 335
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bab68b693b1f9e7764f3e4557d2311357b">eKpEqual</a> = 336
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba72f79d9bbfcbd7127255cebc41e5b054">eLeftShift</a> = 340
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba560d68390a533b092ae600f5933f90d1">eLeftControl</a> = 341
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1b3cf1f0e2862ef9b5561a8d65e00abc">eLeftAlt</a> = 342
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba9c7683f6aa3f55c44f234fd42e970b2a">eLeftSuper</a> = 343
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad7e491cf9b807d37e0eebf3e3c14e5e1">eRightShift</a> = 344
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bacc54d8f63af5b05694e7befd76245dbe">eRightControl</a> = 345
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0334297dfb39260c0d27a8c4e0593887">eRightAlt</a> = 346
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba25be77f835f7dc34ee8157f72fa87e5f">eRightSuper</a> = 347
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bae4f654dd61c2a97e0da4843c590b96a8">eMenu</a> = 348
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bab0ffa3ae6db8fd0a75f13ebb89d831e4">eKeyboardEnd</a>
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba99dd2022e2a99d2578c29bc486794edd">eKeyboardLast</a> = eMenu
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0d631313d1b547940c3c4f104d3a19e0">eMouseButtonBegin</a> = 400
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba9d5adbcd27e12f1553a39db2cf4cb665">eMouseButton1</a> = eMouseButtonBegin
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba8b80e0c5102d47de5fb978986e463a04">eMouseButton2</a> = 401
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad9b50998c97e55a7c2308500832ebb8f">eMouseButton3</a> = 402
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0f8d1df401318f4759d8fe5e1c33b22b">eMouseButton4</a> = 403
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba27c6f946b58f03c461ba278dea6d1b7c">eMouseButton5</a> = 404
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0b9801d96d9f6503b6439fc8d3e3cf61">eMouseButton6</a> = 405
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba3bfc70a9a7954ae82614fed2f2443506">eMouseButton7</a> = 406
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba41ccad9d68fe654d0ee8f13aa0151c4d">eMouseButton8</a> = 407
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baccf7a3801b3d79d097f2f033401b9767">eMouseButtonEnd</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba142204f5047042eed007d86b7db3770e">eMouseButtonLast</a> = eMouseButton8
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640babe8a6c64e841b36e8788d25a765d2385">eMouseButtonLeft</a> = eMouseButton1
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba64c1e00ecc96511abd65f9b6324a1a8f">eMouseButtonRight</a> = eMouseButton2
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba4def7c3415327a4030acf6ef89e091e7">eMouseButtonMiddle</a> = eMouseButton3
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba7bb61406d721505225de052118da187a">eGamepadButtonBegin</a> = 410
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baacbd094deeff79e8a2b3163e5f381e3e">eGamepadButtonA</a> = eGamepadButtonBegin
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baffc69ad7aac1e5b02499113ba04e244b">eGamepadButtonB</a> = 411
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba33e96486d1814737779c16b9d21ef2ff">eGamepadButtonX</a> = 412
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba389229c619ce45672c26d763917185c6">eGamepadButtonY</a> = 413
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba92f08aa90faabeabf0b7d6d45dc6bc2b">eGamepadButtonLeftBumper</a> = 414
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba2a30552f54c96f1a3e8db6ddb9d2d723">eGamepadButtonRightBumper</a> = 415
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba7540a0294d06a4cd5e2fcd18c9678fb6">eGamepadButtonBack</a> = 416
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba9df39174bdf58183f517151724092dac">eGamepadButtonStart</a> = 417
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba61a40e97154c651fa413b89c739f4065">eGamepadButtonGuide</a> = 418
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba851b8d97a257bcf6a40d943c08519dfc">eGamepadButtonLeftThumb</a> = 419
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad7b628d4c94c1540889cc6e2c0890444">eGamepadButtonRightThumb</a> = 420
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0341e1ae2653099b90c48bfb5f19ee11">eGamepadButtonDpadUp</a> = 421
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baee708b283ed8fb161c1fe1e716570723">eGamepadButtonDpadRight</a> = 422
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba48e5d5b1cc3a5193a7e14e7fe180e115">eGamepadButtonDpadDown</a> = 423
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba85f319f1102854792669d95aee71d35b">eGamepadButtonDpadLeft</a> = 424
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba148cdc2b996ffc7debf9335bff491479">eGamepadButtonEnd</a>
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bada803fc6d207291519303877888675f0">eGamepadButtonLast</a> = eGamepadButtonDpadLeft
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baa6a40f3eba9d14e1f5d58ae9f2689c25">eGamepadButtonCross</a> = eGamepadButtonA
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba1f35c0dccc4b7648820ad20ab5474990">eGamepadButtonCircle</a> = eGamepadButtonB
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba54058634364b5ffaf12f88fdaefacbe7">eGamepadButtonSquare</a> = eGamepadButtonX
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640bad54357d12e2241efe84563a29238724b">eGamepadButtonTriangle</a> = eGamepadButtonY
+, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba40d8e0a4be2b962273a6d3ae674f3c1b">eAllEnd</a> = eGamepadButtonEnd
+<br />
+ }</td></tr>
+<tr class="separator:adda856c8317e5219d3838e54f6ca640b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f5a2f997060ed3d20d47565ac8faad"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faad">Mod</a> : u8 { <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faadabe988781e4e1de1c6a36fb698afbbe1f">eNone</a> = 0
+, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faada9e62f71ce009d65471fccb01fdb3245d">eShift</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faada5677f2b1afa3fd6160c087c35c3f10a5">eCtrl</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faada449749529584a602aedac2269581bd74">eAlt</a> = 1 &lt;&lt; 2
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faadac9c88affff6f7d1bfa7776585510aa7d">eSuper</a> = 1 &lt;&lt; 3
+, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faada03313000bddbe627fe74259a63974c64">eCapsLock</a> = 1 &lt;&lt; 4
+, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faadab47d4037e1ca28b5a006254158e0436d">eNumLock</a> = 1 &lt;&lt; 5
+<br />
+ }</td></tr>
+<tr class="separator:a77f5a2f997060ed3d20d47565ac8faad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d27692a650594febda232933e96be"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96be">Axis</a> : s8 { <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea64c3acc11ffdb1be30ea339290bd1508">eUnknown</a>
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea7ea7f801892a6358b5aeb4579bc6942d">eLeftX</a> = 0
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea4f7a2881873ce562c24028d6e0516670">eLeftY</a>
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea13610d3bcbbdeea11cd7efc403723ea8">eRightX</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea217fca7ec182e9e820bf5e0ff846542d">eRightY</a>
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea89a0c434a3bd0a826ede27f7eada2af3">eLeftTrigger</a>
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea01c8412e0b7f34b60b042cf1f5dd15ed">eRightTrigger</a>
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bea3c9335bec80cccb812b86d4e2c788cb5">eMouseBegin</a> = 100
+, <br />
+&#160;&#160;<a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96beab676d54bd8389d2564f34a1fd55f9b85">eMouseScrollX</a> = eMouseBegin
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96beab9bbeeff928186fc0231d05cd317e77a">eMouseScrollY</a>
+, <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96bead0f98689d6f22a0d4c461c5a79b140e0">eMouseEnd</a>
+<br />
+ }</td></tr>
+<tr class="separator:a0e5d27692a650594febda232933e96be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5e514c5bd2d2fc7e129d99bbfc0cea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#ade5e514c5bd2d2fc7e129d99bbfc0cea">Focus</a> : u8 { <a class="el" href="namespacele_1_1input.html#ade5e514c5bd2d2fc7e129d99bbfc0ceaa2a6eeed479ba3181b5496e353eb11707">eUnchanged</a>
 , <a class="el" href="namespacele_1_1input.html#ade5e514c5bd2d2fc7e129d99bbfc0ceaa2bc417c86493393b27f22f4053b39ca6">eGained</a>
 , <a class="el" href="namespacele_1_1input.html#ade5e514c5bd2d2fc7e129d99bbfc0ceaa7c5bbe909f9b8b6fa24ea2924df4928a">eLost</a>
  }</td></tr>
 <tr class="separator:ade5e514c5bd2d2fc7e129d99bbfc0cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a9f72922c1d60182f795fa91f25074793"><td class="memTemplParams" colspan="2">template&lt;typename Parser &gt; </td></tr>
-<tr class="memitem:a9f72922c1d60182f795fa91f25074793"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacele_1_1input.html#afa0e9a278db2ba854679ec71df4fb6b1">EventQueue</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele_1_1input.html#a9f72922c1d60182f795fa91f25074793">parse</a> (Parser &amp;parser, <a class="el" href="namespacele_1_1input.html#afa0e9a278db2ba854679ec71df4fb6b1">EventQueue</a> const &amp;in, <a class="el" href="structle_1_1input_1_1State.html">State</a> &amp;out)</td></tr>
-<tr class="separator:a9f72922c1d60182f795fa91f25074793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a8ebfe8b0ba47bbc3a55605c35f1ec4c4" name="a8ebfe8b0ba47bbc3a55605c35f1ec4c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ebfe8b0ba47bbc3a55605c35f1ec4c4">&#9670;&nbsp;</a></span>Action</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1window.html#a72f1f380aa779a0fbbf2080b139b779d">le::input::Action</a> = typedef <a class="el" href="namespacele_1_1window.html#a72f1f380aa779a0fbbf2080b139b779d">window::Action</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acc446697c30b97c30715f6888c66bdc8" name="acc446697c30b97c30715f6888c66bdc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc446697c30b97c30715f6888c66bdc8">&#9670;&nbsp;</a></span>Axis</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">le::input::Axis</a> = typedef <a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">window::Axis</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aecd583fa05eaa462d084edd0bedf9dc0" name="aecd583fa05eaa462d084edd0bedf9dc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecd583fa05eaa462d084edd0bedf9dc0">&#9670;&nbsp;</a></span>Event</h2>
 
@@ -169,21 +364,21 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">le::input::Event</a> = typedef <a class="el" href="structle_1_1window_1_1Event.html">window::Event</a></td>
+          <td class="memname">using <a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">le::input::Event</a> = typedef <a class="el" href="classle_1_1window_1_1Event.html">window::Event</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afa0e9a278db2ba854679ec71df4fb6b1" name="afa0e9a278db2ba854679ec71df4fb6b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa0e9a278db2ba854679ec71df4fb6b1">&#9670;&nbsp;</a></span>EventQueue</h2>
+<a id="ad4e507f041fac1f876402d188a7fba38" name="ad4e507f041fac1f876402d188a7fba38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e507f041fac1f876402d188a7fba38">&#9670;&nbsp;</a></span>EventQueue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1input.html#afa0e9a278db2ba854679ec71df4fb6b1">le::input::EventQueue</a> = typedef <a class="el" href="namespacele_1_1window.html#a633774b5ab72c46e87d7d1ca0fbd41ec">window::EventQueue</a></td>
+          <td class="memname">using <a class="el" href="namespacele_1_1input.html#ad4e507f041fac1f876402d188a7fba38">le::input::EventQueue</a> = typedef std::vector&lt;<a class="el" href="namespacele_1_1input.html#aecd583fa05eaa462d084edd0bedf9dc0">Event</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,34 +399,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaadb369502e3000035c4be4d843fd1d7" name="aaadb369502e3000035c4be4d843fd1d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaadb369502e3000035c4be4d843fd1d7">&#9670;&nbsp;</a></span>Key</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">le::input::Key</a> = typedef <a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">window::Key</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3a63ce153f7c0c729eacca206445ccd9" name="a3a63ce153f7c0c729eacca206445ccd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a63ce153f7c0c729eacca206445ccd9">&#9670;&nbsp;</a></span>Mod</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3">le::input::Mod</a> = typedef <a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3">window::Mod</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6720d01510b819c174089b6bc1154fa0" name="a6720d01510b819c174089b6bc1154fa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6720d01510b819c174089b6bc1154fa0">&#9670;&nbsp;</a></span>Mods</h2>
 
@@ -239,7 +406,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1input.html#a6720d01510b819c174089b6bc1154fa0">le::input::Mods</a> = typedef <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt;<a class="el" href="namespacele_1_1window.html#a60b1f2ebcc9783480d1b90b4576ac6e3">Mod</a>, <a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a>, <a class="el" href="structktl_1_1enum__trait__pot.html">ktl::enum_trait_pot</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespacele_1_1input.html#a6720d01510b819c174089b6bc1154fa0">le::input::Mods</a> = typedef <a class="el" href="classktl_1_1enum__flags.html">ktl::enum_flags</a>&lt;<a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faad">Mod</a>, <a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a>, <a class="el" href="structktl_1_1enum__trait__pot.html">ktl::enum_trait_pot</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -285,7 +452,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1input.html#a198961e99fcbfafc7140e4228b4096df">le::input::TKeyDB</a> = typedef <a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt;<a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">Key</a>, T, 512&gt;</td>
+          <td class="memname">using <a class="el" href="namespacele_1_1input.html#a198961e99fcbfafc7140e4228b4096df">le::input::TKeyDB</a> = typedef <a class="el" href="structle_1_1EnumArray.html">EnumArray</a>&lt;<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">Key</a>, T, 512&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -320,14 +487,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad458b7d2964092e1578f1f2bf70809f3" name="ad458b7d2964092e1578f1f2bf70809f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad458b7d2964092e1578f1f2bf70809f3">&#9670;&nbsp;</a></span>Window</h2>
+<a id="a5ab709b0b0dab0e3796d63ba3b28b4c5" name="a5ab709b0b0dab0e3796d63ba3b28b4c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab709b0b0dab0e3796d63ba3b28b4c5">&#9670;&nbsp;</a></span>Window</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacele_1_1input.html#ad458b7d2964092e1578f1f2bf70809f3">le::input::Window</a> = typedef <a class="el" href="classle_1_1window_1_1Instance.html">window::Instance</a></td>
+          <td class="memname">using <a class="el" href="namespacele_1_1input.html#a5ab709b0b0dab0e3796d63ba3b28b4c5">le::input::Window</a> = typedef <a class="el" href="classle_1_1window_1_1Window.html">window::Window</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,6 +502,68 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a2649b92a300307dc2a2fb3dc18561fb2" name="a2649b92a300307dc2a2fb3dc18561fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2649b92a300307dc2a2fb3dc18561fb2">&#9670;&nbsp;</a></span>Action</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2">le::input::Action</a> : <a class="el" href="namespacele.html#af9e0cf7215603bba4aa12fe79e815d5f">s8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2649b92a300307dc2a2fb3dc18561fb2ad46d3b94b78c854273c61f3f14435b9f" name="a2649b92a300307dc2a2fb3dc18561fb2ad46d3b94b78c854273c61f3f14435b9f"></a>eRelease&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2649b92a300307dc2a2fb3dc18561fb2a20cb9d4ecd52623df4ac9fd8b23f9fb2" name="a2649b92a300307dc2a2fb3dc18561fb2a20cb9d4ecd52623df4ac9fd8b23f9fb2"></a>ePress&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2649b92a300307dc2a2fb3dc18561fb2a63a63e3fefbb6e5459aa2e951740c277" name="a2649b92a300307dc2a2fb3dc18561fb2a63a63e3fefbb6e5459aa2e951740c277"></a>eRepeat&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0e5d27692a650594febda232933e96be" name="a0e5d27692a650594febda232933e96be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5d27692a650594febda232933e96be">&#9670;&nbsp;</a></span>Axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96be">le::input::Axis</a> : <a class="el" href="namespacele.html#af9e0cf7215603bba4aa12fe79e815d5f">s8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea64c3acc11ffdb1be30ea339290bd1508" name="a0e5d27692a650594febda232933e96bea64c3acc11ffdb1be30ea339290bd1508"></a>eUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea7ea7f801892a6358b5aeb4579bc6942d" name="a0e5d27692a650594febda232933e96bea7ea7f801892a6358b5aeb4579bc6942d"></a>eLeftX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea4f7a2881873ce562c24028d6e0516670" name="a0e5d27692a650594febda232933e96bea4f7a2881873ce562c24028d6e0516670"></a>eLeftY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea13610d3bcbbdeea11cd7efc403723ea8" name="a0e5d27692a650594febda232933e96bea13610d3bcbbdeea11cd7efc403723ea8"></a>eRightX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea217fca7ec182e9e820bf5e0ff846542d" name="a0e5d27692a650594febda232933e96bea217fca7ec182e9e820bf5e0ff846542d"></a>eRightY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea89a0c434a3bd0a826ede27f7eada2af3" name="a0e5d27692a650594febda232933e96bea89a0c434a3bd0a826ede27f7eada2af3"></a>eLeftTrigger&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea01c8412e0b7f34b60b042cf1f5dd15ed" name="a0e5d27692a650594febda232933e96bea01c8412e0b7f34b60b042cf1f5dd15ed"></a>eRightTrigger&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bea3c9335bec80cccb812b86d4e2c788cb5" name="a0e5d27692a650594febda232933e96bea3c9335bec80cccb812b86d4e2c788cb5"></a>eMouseBegin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96beab676d54bd8389d2564f34a1fd55f9b85" name="a0e5d27692a650594febda232933e96beab676d54bd8389d2564f34a1fd55f9b85"></a>eMouseScrollX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96beab9bbeeff928186fc0231d05cd317e77a" name="a0e5d27692a650594febda232933e96beab9bbeeff928186fc0231d05cd317e77a"></a>eMouseScrollY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e5d27692a650594febda232933e96bead0f98689d6f22a0d4c461c5a79b140e0" name="a0e5d27692a650594febda232933e96bead0f98689d6f22a0d4c461c5a79b140e0"></a>eMouseEnd&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ade5e514c5bd2d2fc7e129d99bbfc0cea" name="ade5e514c5bd2d2fc7e129d99bbfc0cea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade5e514c5bd2d2fc7e129d99bbfc0cea">&#9670;&nbsp;</a></span>Focus</h2>
 
@@ -362,40 +591,217 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a9f72922c1d60182f795fa91f25074793" name="a9f72922c1d60182f795fa91f25074793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f72922c1d60182f795fa91f25074793">&#9670;&nbsp;</a></span>parse()</h2>
+<a id="adda856c8317e5219d3838e54f6ca640b" name="adda856c8317e5219d3838e54f6ca640b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda856c8317e5219d3838e54f6ca640b">&#9670;&nbsp;</a></span>Key</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Parser &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacele_1_1input.html#afa0e9a278db2ba854679ec71df4fb6b1">EventQueue</a> le::input::parse </td>
-          <td>(</td>
-          <td class="paramtype">Parser &amp;&#160;</td>
-          <td class="paramname"><em>parser</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1window.html#a633774b5ab72c46e87d7d1ca0fbd41ec">window::EventQueue</a> const &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1input_1_1State.html">State</a> &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum class <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640b">le::input::Key</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba64c3acc11ffdb1be30ea339290bd1508" name="adda856c8317e5219d3838e54f6ca640ba64c3acc11ffdb1be30ea339290bd1508"></a>eUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640babbf977b55bd3701863e3adc69358426e" name="adda856c8317e5219d3838e54f6ca640babbf977b55bd3701863e3adc69358426e"></a>eSpace&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0b0c76185106a754f2d6303958387f5d" name="adda856c8317e5219d3838e54f6ca640ba0b0c76185106a754f2d6303958387f5d"></a>eApostrophe&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bab029865857f8ff051b2794dc88d2f76c" name="adda856c8317e5219d3838e54f6ca640bab029865857f8ff051b2794dc88d2f76c"></a>eComma&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baba75e0163251e7472275e3d06cc14e27" name="adda856c8317e5219d3838e54f6ca640baba75e0163251e7472275e3d06cc14e27"></a>eMinus&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba90c875d428d6ef2da05f9dd0e575945d" name="adda856c8317e5219d3838e54f6ca640ba90c875d428d6ef2da05f9dd0e575945d"></a>eFullstop&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba04050ca6bd4635557793af51b9ffd03f" name="adda856c8317e5219d3838e54f6ca640ba04050ca6bd4635557793af51b9ffd03f"></a>eSlash&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba7aa23492064a9e2a97a6f8887659ec87" name="adda856c8317e5219d3838e54f6ca640ba7aa23492064a9e2a97a6f8887659ec87"></a>e0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bacd3dc8b6cffb41e4163dcbd857ca87da" name="adda856c8317e5219d3838e54f6ca640bacd3dc8b6cffb41e4163dcbd857ca87da"></a>e1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba68a9e49bbc88c02083a062a78ab3bf30" name="adda856c8317e5219d3838e54f6ca640ba68a9e49bbc88c02083a062a78ab3bf30"></a>e2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba7ed21b04c0dcde1c638e5c8480ad0026" name="adda856c8317e5219d3838e54f6ca640ba7ed21b04c0dcde1c638e5c8480ad0026"></a>e3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba38de3f7d221a2910710874b0b220cb26" name="adda856c8317e5219d3838e54f6ca640ba38de3f7d221a2910710874b0b220cb26"></a>e4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba72baa9d520b127dd4ab03ff904cc1959" name="adda856c8317e5219d3838e54f6ca640ba72baa9d520b127dd4ab03ff904cc1959"></a>e5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baf38f5bf94ee2de0b42d1829fbf66ea9c" name="adda856c8317e5219d3838e54f6ca640baf38f5bf94ee2de0b42d1829fbf66ea9c"></a>e6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba492585e49f078b06b0cd507d42ae9da0" name="adda856c8317e5219d3838e54f6ca640ba492585e49f078b06b0cd507d42ae9da0"></a>e7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba3a876e157f4f77fe73c07fc77325a5e8" name="adda856c8317e5219d3838e54f6ca640ba3a876e157f4f77fe73c07fc77325a5e8"></a>e8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1effb78d80bd8fc7d4cab1161a34b255" name="adda856c8317e5219d3838e54f6ca640ba1effb78d80bd8fc7d4cab1161a34b255"></a>e9&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bafd3e3cd9614009dae6979e400158e4cf" name="adda856c8317e5219d3838e54f6ca640bafd3e3cd9614009dae6979e400158e4cf"></a>eSemicolon&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad641b5cd19a5befb96881807bf8f58ba" name="adda856c8317e5219d3838e54f6ca640bad641b5cd19a5befb96881807bf8f58ba"></a>eEqual&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baaaf8e253d25fc68de51cc68a360868d6" name="adda856c8317e5219d3838e54f6ca640baaaf8e253d25fc68de51cc68a360868d6"></a>eA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba76f5a6e4de889068fb1b4c3e3c263666" name="adda856c8317e5219d3838e54f6ca640ba76f5a6e4de889068fb1b4c3e3c263666"></a>eB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0466dc667c3b135e90ac7cab8b325756" name="adda856c8317e5219d3838e54f6ca640ba0466dc667c3b135e90ac7cab8b325756"></a>eC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba38d66c22a1d4a2fa891333ea8bff88f4" name="adda856c8317e5219d3838e54f6ca640ba38d66c22a1d4a2fa891333ea8bff88f4"></a>eD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baacd7664da6a1296fb47fcc89a830970d" name="adda856c8317e5219d3838e54f6ca640baacd7664da6a1296fb47fcc89a830970d"></a>eE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba884621f737e7b573b9300d52edb48379" name="adda856c8317e5219d3838e54f6ca640ba884621f737e7b573b9300d52edb48379"></a>eF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bacd5532a9977c28cb4bcea23ba3b0dc48" name="adda856c8317e5219d3838e54f6ca640bacd5532a9977c28cb4bcea23ba3b0dc48"></a>eG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba638f8da31ea4241c05e1d29cfbe98895" name="adda856c8317e5219d3838e54f6ca640ba638f8da31ea4241c05e1d29cfbe98895"></a>eH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baea94c39ed2b1e361e46f31ccbe2060a2" name="adda856c8317e5219d3838e54f6ca640baea94c39ed2b1e361e46f31ccbe2060a2"></a>eI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba4bbd88be6857315b78d5e679b266eee1" name="adda856c8317e5219d3838e54f6ca640ba4bbd88be6857315b78d5e679b266eee1"></a>eJ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad833e35c0af1fd7d8321324539dc2d4f" name="adda856c8317e5219d3838e54f6ca640bad833e35c0af1fd7d8321324539dc2d4f"></a>eK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba6b8ea02d9d96e083b447f34911bb8735" name="adda856c8317e5219d3838e54f6ca640ba6b8ea02d9d96e083b447f34911bb8735"></a>eL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bac36c611001d2da9d96f3d73ffdbb2b6d" name="adda856c8317e5219d3838e54f6ca640bac36c611001d2da9d96f3d73ffdbb2b6d"></a>eM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba57b8a01b53f910671fee68ba5240c4f7" name="adda856c8317e5219d3838e54f6ca640ba57b8a01b53f910671fee68ba5240c4f7"></a>eN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba103185db2aa7fabb09672d4604d07281" name="adda856c8317e5219d3838e54f6ca640ba103185db2aa7fabb09672d4604d07281"></a>eO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640badc2dc2ef5064d825bfcf012a0ae7c74e" name="adda856c8317e5219d3838e54f6ca640badc2dc2ef5064d825bfcf012a0ae7c74e"></a>eP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba248f0e0cc68707cbe97dbb5565abbe93" name="adda856c8317e5219d3838e54f6ca640ba248f0e0cc68707cbe97dbb5565abbe93"></a>eQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba2c8d3af323e82d44b5f7dda62485623f" name="adda856c8317e5219d3838e54f6ca640ba2c8d3af323e82d44b5f7dda62485623f"></a>eR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0be6600367fee76523db94834295e241" name="adda856c8317e5219d3838e54f6ca640ba0be6600367fee76523db94834295e241"></a>eS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba04602fd883d63a0a60a2ea5585ca3b9b" name="adda856c8317e5219d3838e54f6ca640ba04602fd883d63a0a60a2ea5585ca3b9b"></a>eT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baef4130fca3e00a16c10e1d7a67684d81" name="adda856c8317e5219d3838e54f6ca640baef4130fca3e00a16c10e1d7a67684d81"></a>eU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baa34fe48def3e3d3ff7255b70ff87a181" name="adda856c8317e5219d3838e54f6ca640baa34fe48def3e3d3ff7255b70ff87a181"></a>eV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba5d1dae965d94ba9ee15f1f9c03a5f525" name="adda856c8317e5219d3838e54f6ca640ba5d1dae965d94ba9ee15f1f9c03a5f525"></a>eW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba791c8faabb4af608ce8588393e66c7ff" name="adda856c8317e5219d3838e54f6ca640ba791c8faabb4af608ce8588393e66c7ff"></a>eX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad2ff0b655e01c091aac1e8b84cc395ca" name="adda856c8317e5219d3838e54f6ca640bad2ff0b655e01c091aac1e8b84cc395ca"></a>eY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baa363bc0d804aec432567128ed10416ee" name="adda856c8317e5219d3838e54f6ca640baa363bc0d804aec432567128ed10416ee"></a>eZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bacf942e3f95843e474abbaf5fb8ab318f" name="adda856c8317e5219d3838e54f6ca640bacf942e3f95843e474abbaf5fb8ab318f"></a>eLeftBracket&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba8327b6ef0a71ee1707e854830e905639" name="adda856c8317e5219d3838e54f6ca640ba8327b6ef0a71ee1707e854830e905639"></a>eBackslash&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba62dc9eb7555768c810e82852fb51d9ba" name="adda856c8317e5219d3838e54f6ca640ba62dc9eb7555768c810e82852fb51d9ba"></a>eRightBracket&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0a316f3c2a4954c15f27e4c6f9f6aeac" name="adda856c8317e5219d3838e54f6ca640ba0a316f3c2a4954c15f27e4c6f9f6aeac"></a>eGrave&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba04a13f05d0ff637841a37bd602c966db" name="adda856c8317e5219d3838e54f6ca640ba04a13f05d0ff637841a37bd602c966db"></a>eBacktick&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640babac65ad2365fb7e108767e040d20eb63" name="adda856c8317e5219d3838e54f6ca640babac65ad2365fb7e108767e040d20eb63"></a>eEscape&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640badb9b98d61dc7fd361b583a10bb05b55f" name="adda856c8317e5219d3838e54f6ca640badb9b98d61dc7fd361b583a10bb05b55f"></a>eEnter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baceae40230d2f0a107913c0a91afb4857" name="adda856c8317e5219d3838e54f6ca640baceae40230d2f0a107913c0a91afb4857"></a>eTab&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baa6678a358c55df18cf59da348aa0a556" name="adda856c8317e5219d3838e54f6ca640baa6678a358c55df18cf59da348aa0a556"></a>eBackspace&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba04ae3e5dd67f2eb8376107c00dbb5adf" name="adda856c8317e5219d3838e54f6ca640ba04ae3e5dd67f2eb8376107c00dbb5adf"></a>eInsert&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640badc483630592ca5333ad2e2bb7880256e" name="adda856c8317e5219d3838e54f6ca640badc483630592ca5333ad2e2bb7880256e"></a>eDelete&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baf47864efb86f863a0080026825b1303d" name="adda856c8317e5219d3838e54f6ca640baf47864efb86f863a0080026825b1303d"></a>eRight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba97d352658db7b34c35502f9cd535e48b" name="adda856c8317e5219d3838e54f6ca640ba97d352658db7b34c35502f9cd535e48b"></a>eLeft&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba9b99cd9a69140a1d7c7d483df619ea02" name="adda856c8317e5219d3838e54f6ca640ba9b99cd9a69140a1d7c7d483df619ea02"></a>eDown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bade2a1951a10731843b364fde00833a23" name="adda856c8317e5219d3838e54f6ca640bade2a1951a10731843b364fde00833a23"></a>eUp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba7e60fa5ac0a63018a7db7f7ba7232f8f" name="adda856c8317e5219d3838e54f6ca640ba7e60fa5ac0a63018a7db7f7ba7232f8f"></a>ePageUp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba18fb3a0b50a3af341e5854c07428e6f5" name="adda856c8317e5219d3838e54f6ca640ba18fb3a0b50a3af341e5854c07428e6f5"></a>ePageDown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba528d11fa2db53949ee332e3e41ec3af4" name="adda856c8317e5219d3838e54f6ca640ba528d11fa2db53949ee332e3e41ec3af4"></a>eHome&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640babcc187cb95316db4a37190acdecb7e50" name="adda856c8317e5219d3838e54f6ca640babcc187cb95316db4a37190acdecb7e50"></a>eEnd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba03313000bddbe627fe74259a63974c64" name="adda856c8317e5219d3838e54f6ca640ba03313000bddbe627fe74259a63974c64"></a>eCapsLock&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1756f0c7a364b4c3402411fb60cd720d" name="adda856c8317e5219d3838e54f6ca640ba1756f0c7a364b4c3402411fb60cd720d"></a>eScrollLock&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bab47d4037e1ca28b5a006254158e0436d" name="adda856c8317e5219d3838e54f6ca640bab47d4037e1ca28b5a006254158e0436d"></a>eNumLock&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad09f03bf640b71cbd0292312aee6f45f" name="adda856c8317e5219d3838e54f6ca640bad09f03bf640b71cbd0292312aee6f45f"></a>ePrintScreen&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baedf03b0280a340c11186b6981a490903" name="adda856c8317e5219d3838e54f6ca640baedf03b0280a340c11186b6981a490903"></a>ePause&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba3c398e549bb226459373d9406b883465" name="adda856c8317e5219d3838e54f6ca640ba3c398e549bb226459373d9406b883465"></a>eF1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba71745a2f92f5b0fcf3d04d68826912f8" name="adda856c8317e5219d3838e54f6ca640ba71745a2f92f5b0fcf3d04d68826912f8"></a>eF2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bac74b1fed69261f2bf52d81945e210f33" name="adda856c8317e5219d3838e54f6ca640bac74b1fed69261f2bf52d81945e210f33"></a>eF3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba651c5fa81a83ff975a169da776819530" name="adda856c8317e5219d3838e54f6ca640ba651c5fa81a83ff975a169da776819530"></a>eF4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1f21e427c8a02981586087c31289c268" name="adda856c8317e5219d3838e54f6ca640ba1f21e427c8a02981586087c31289c268"></a>eF5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad07e3252aa1ab535250d861e4ae8aed7" name="adda856c8317e5219d3838e54f6ca640bad07e3252aa1ab535250d861e4ae8aed7"></a>eF6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baaa8f0a114c0b48dbdd042a07381b2840" name="adda856c8317e5219d3838e54f6ca640baaa8f0a114c0b48dbdd042a07381b2840"></a>eF7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba4b6d8cd7151c00674e1e0a7d6bc89595" name="adda856c8317e5219d3838e54f6ca640ba4b6d8cd7151c00674e1e0a7d6bc89595"></a>eF8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba10d74d9a61e7072a7c415319f0fd719d" name="adda856c8317e5219d3838e54f6ca640ba10d74d9a61e7072a7c415319f0fd719d"></a>eF9&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640babf4a171a8b0bd7ed6bc1a847324d1727" name="adda856c8317e5219d3838e54f6ca640babf4a171a8b0bd7ed6bc1a847324d1727"></a>eF10&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba35424be4c797534f2d07ae6c7051bfc5" name="adda856c8317e5219d3838e54f6ca640ba35424be4c797534f2d07ae6c7051bfc5"></a>eF11&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba494c91c4cc3b84fa3809700bce11eb0a" name="adda856c8317e5219d3838e54f6ca640ba494c91c4cc3b84fa3809700bce11eb0a"></a>eF12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baaa15a8cdc38e9700c32cc855553b209d" name="adda856c8317e5219d3838e54f6ca640baaa15a8cdc38e9700c32cc855553b209d"></a>eF13&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba009470128c9e4d72527c34ce279474a7" name="adda856c8317e5219d3838e54f6ca640ba009470128c9e4d72527c34ce279474a7"></a>eF14&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba536c1152e8d4a04c247ed6ef7ca0d457" name="adda856c8317e5219d3838e54f6ca640ba536c1152e8d4a04c247ed6ef7ca0d457"></a>eF15&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baf5615041f04e90613ac3009a02ff457a" name="adda856c8317e5219d3838e54f6ca640baf5615041f04e90613ac3009a02ff457a"></a>eF16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640badb7177c6af7fd835a2f46e09f587ff12" name="adda856c8317e5219d3838e54f6ca640badb7177c6af7fd835a2f46e09f587ff12"></a>eF17&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba2fb8f8d622b6f982c0c9da08f85482bc" name="adda856c8317e5219d3838e54f6ca640ba2fb8f8d622b6f982c0c9da08f85482bc"></a>eF18&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1f5a6df1d833a5dc8cf6d3aebe3b6246" name="adda856c8317e5219d3838e54f6ca640ba1f5a6df1d833a5dc8cf6d3aebe3b6246"></a>eF19&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba947a26f3f828e44db197f81392aa9c35" name="adda856c8317e5219d3838e54f6ca640ba947a26f3f828e44db197f81392aa9c35"></a>eF20&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bacaacfe86fb6919e6ddc131064b1fd819" name="adda856c8317e5219d3838e54f6ca640bacaacfe86fb6919e6ddc131064b1fd819"></a>eF21&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba798cba67a96e195aa1d6976fa3e8b2a5" name="adda856c8317e5219d3838e54f6ca640ba798cba67a96e195aa1d6976fa3e8b2a5"></a>eF22&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba9e75e1943152f059a45ff7adbc961391" name="adda856c8317e5219d3838e54f6ca640ba9e75e1943152f059a45ff7adbc961391"></a>eF23&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba4c8304dece44017c460079c4b4f2155f" name="adda856c8317e5219d3838e54f6ca640ba4c8304dece44017c460079c4b4f2155f"></a>eF24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bae134c7581952af6d91996b6812e71623" name="adda856c8317e5219d3838e54f6ca640bae134c7581952af6d91996b6812e71623"></a>eF25&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0aed222f954e2815cdb5918f9fb98807" name="adda856c8317e5219d3838e54f6ca640ba0aed222f954e2815cdb5918f9fb98807"></a>eKp0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba7a9a55342a0bd54468f75b2d0516acc3" name="adda856c8317e5219d3838e54f6ca640ba7a9a55342a0bd54468f75b2d0516acc3"></a>eKp1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba85148971178533db7e4f1869f63e1ab7" name="adda856c8317e5219d3838e54f6ca640ba85148971178533db7e4f1869f63e1ab7"></a>eKp2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba83de85ec4cc44be16b6d8ad117666cd5" name="adda856c8317e5219d3838e54f6ca640ba83de85ec4cc44be16b6d8ad117666cd5"></a>eKp3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba9050a1f4e71788a91f11f526dd27f975" name="adda856c8317e5219d3838e54f6ca640ba9050a1f4e71788a91f11f526dd27f975"></a>eKp4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba219f8abc35036c80383762bf2bf6a24b" name="adda856c8317e5219d3838e54f6ca640ba219f8abc35036c80383762bf2bf6a24b"></a>eKp5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba28c7478180dd8b259f3faf2ebd2ba745" name="adda856c8317e5219d3838e54f6ca640ba28c7478180dd8b259f3faf2ebd2ba745"></a>eKp6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad93d65610189355028c43dfaf31a6825" name="adda856c8317e5219d3838e54f6ca640bad93d65610189355028c43dfaf31a6825"></a>eKp7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baf78ed2265004eb191a64ee0e8426689a" name="adda856c8317e5219d3838e54f6ca640baf78ed2265004eb191a64ee0e8426689a"></a>eKp8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba60392262be69d023edcdebdd7488c8ae" name="adda856c8317e5219d3838e54f6ca640ba60392262be69d023edcdebdd7488c8ae"></a>eKp9&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1a19841e113f590e4cb7811ee85577d0" name="adda856c8317e5219d3838e54f6ca640ba1a19841e113f590e4cb7811ee85577d0"></a>eKpDecimal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba91d11f9f49486f4f6c81663b6546906a" name="adda856c8317e5219d3838e54f6ca640ba91d11f9f49486f4f6c81663b6546906a"></a>eKpDivide&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baa5cedefd339f67dfd12c0d13ef8a8930" name="adda856c8317e5219d3838e54f6ca640baa5cedefd339f67dfd12c0d13ef8a8930"></a>eKpMultiply&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba3baaa36041b4f71b9843834ff6afadde" name="adda856c8317e5219d3838e54f6ca640ba3baaa36041b4f71b9843834ff6afadde"></a>eKpSubtract&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bae17eae05354291750d980b4cd7998c91" name="adda856c8317e5219d3838e54f6ca640bae17eae05354291750d980b4cd7998c91"></a>eKpAdd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baba5c51a89da0e19b5417f49d88544027" name="adda856c8317e5219d3838e54f6ca640baba5c51a89da0e19b5417f49d88544027"></a>eKpEnter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bab68b693b1f9e7764f3e4557d2311357b" name="adda856c8317e5219d3838e54f6ca640bab68b693b1f9e7764f3e4557d2311357b"></a>eKpEqual&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba72f79d9bbfcbd7127255cebc41e5b054" name="adda856c8317e5219d3838e54f6ca640ba72f79d9bbfcbd7127255cebc41e5b054"></a>eLeftShift&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba560d68390a533b092ae600f5933f90d1" name="adda856c8317e5219d3838e54f6ca640ba560d68390a533b092ae600f5933f90d1"></a>eLeftControl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1b3cf1f0e2862ef9b5561a8d65e00abc" name="adda856c8317e5219d3838e54f6ca640ba1b3cf1f0e2862ef9b5561a8d65e00abc"></a>eLeftAlt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba9c7683f6aa3f55c44f234fd42e970b2a" name="adda856c8317e5219d3838e54f6ca640ba9c7683f6aa3f55c44f234fd42e970b2a"></a>eLeftSuper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad7e491cf9b807d37e0eebf3e3c14e5e1" name="adda856c8317e5219d3838e54f6ca640bad7e491cf9b807d37e0eebf3e3c14e5e1"></a>eRightShift&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bacc54d8f63af5b05694e7befd76245dbe" name="adda856c8317e5219d3838e54f6ca640bacc54d8f63af5b05694e7befd76245dbe"></a>eRightControl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0334297dfb39260c0d27a8c4e0593887" name="adda856c8317e5219d3838e54f6ca640ba0334297dfb39260c0d27a8c4e0593887"></a>eRightAlt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba25be77f835f7dc34ee8157f72fa87e5f" name="adda856c8317e5219d3838e54f6ca640ba25be77f835f7dc34ee8157f72fa87e5f"></a>eRightSuper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bae4f654dd61c2a97e0da4843c590b96a8" name="adda856c8317e5219d3838e54f6ca640bae4f654dd61c2a97e0da4843c590b96a8"></a>eMenu&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bab0ffa3ae6db8fd0a75f13ebb89d831e4" name="adda856c8317e5219d3838e54f6ca640bab0ffa3ae6db8fd0a75f13ebb89d831e4"></a>eKeyboardEnd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba99dd2022e2a99d2578c29bc486794edd" name="adda856c8317e5219d3838e54f6ca640ba99dd2022e2a99d2578c29bc486794edd"></a>eKeyboardLast&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0d631313d1b547940c3c4f104d3a19e0" name="adda856c8317e5219d3838e54f6ca640ba0d631313d1b547940c3c4f104d3a19e0"></a>eMouseButtonBegin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba9d5adbcd27e12f1553a39db2cf4cb665" name="adda856c8317e5219d3838e54f6ca640ba9d5adbcd27e12f1553a39db2cf4cb665"></a>eMouseButton1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba8b80e0c5102d47de5fb978986e463a04" name="adda856c8317e5219d3838e54f6ca640ba8b80e0c5102d47de5fb978986e463a04"></a>eMouseButton2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad9b50998c97e55a7c2308500832ebb8f" name="adda856c8317e5219d3838e54f6ca640bad9b50998c97e55a7c2308500832ebb8f"></a>eMouseButton3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0f8d1df401318f4759d8fe5e1c33b22b" name="adda856c8317e5219d3838e54f6ca640ba0f8d1df401318f4759d8fe5e1c33b22b"></a>eMouseButton4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba27c6f946b58f03c461ba278dea6d1b7c" name="adda856c8317e5219d3838e54f6ca640ba27c6f946b58f03c461ba278dea6d1b7c"></a>eMouseButton5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0b9801d96d9f6503b6439fc8d3e3cf61" name="adda856c8317e5219d3838e54f6ca640ba0b9801d96d9f6503b6439fc8d3e3cf61"></a>eMouseButton6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba3bfc70a9a7954ae82614fed2f2443506" name="adda856c8317e5219d3838e54f6ca640ba3bfc70a9a7954ae82614fed2f2443506"></a>eMouseButton7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba41ccad9d68fe654d0ee8f13aa0151c4d" name="adda856c8317e5219d3838e54f6ca640ba41ccad9d68fe654d0ee8f13aa0151c4d"></a>eMouseButton8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baccf7a3801b3d79d097f2f033401b9767" name="adda856c8317e5219d3838e54f6ca640baccf7a3801b3d79d097f2f033401b9767"></a>eMouseButtonEnd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba142204f5047042eed007d86b7db3770e" name="adda856c8317e5219d3838e54f6ca640ba142204f5047042eed007d86b7db3770e"></a>eMouseButtonLast&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640babe8a6c64e841b36e8788d25a765d2385" name="adda856c8317e5219d3838e54f6ca640babe8a6c64e841b36e8788d25a765d2385"></a>eMouseButtonLeft&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba64c1e00ecc96511abd65f9b6324a1a8f" name="adda856c8317e5219d3838e54f6ca640ba64c1e00ecc96511abd65f9b6324a1a8f"></a>eMouseButtonRight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba4def7c3415327a4030acf6ef89e091e7" name="adda856c8317e5219d3838e54f6ca640ba4def7c3415327a4030acf6ef89e091e7"></a>eMouseButtonMiddle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba7bb61406d721505225de052118da187a" name="adda856c8317e5219d3838e54f6ca640ba7bb61406d721505225de052118da187a"></a>eGamepadButtonBegin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baacbd094deeff79e8a2b3163e5f381e3e" name="adda856c8317e5219d3838e54f6ca640baacbd094deeff79e8a2b3163e5f381e3e"></a>eGamepadButtonA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baffc69ad7aac1e5b02499113ba04e244b" name="adda856c8317e5219d3838e54f6ca640baffc69ad7aac1e5b02499113ba04e244b"></a>eGamepadButtonB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba33e96486d1814737779c16b9d21ef2ff" name="adda856c8317e5219d3838e54f6ca640ba33e96486d1814737779c16b9d21ef2ff"></a>eGamepadButtonX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba389229c619ce45672c26d763917185c6" name="adda856c8317e5219d3838e54f6ca640ba389229c619ce45672c26d763917185c6"></a>eGamepadButtonY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba92f08aa90faabeabf0b7d6d45dc6bc2b" name="adda856c8317e5219d3838e54f6ca640ba92f08aa90faabeabf0b7d6d45dc6bc2b"></a>eGamepadButtonLeftBumper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba2a30552f54c96f1a3e8db6ddb9d2d723" name="adda856c8317e5219d3838e54f6ca640ba2a30552f54c96f1a3e8db6ddb9d2d723"></a>eGamepadButtonRightBumper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba7540a0294d06a4cd5e2fcd18c9678fb6" name="adda856c8317e5219d3838e54f6ca640ba7540a0294d06a4cd5e2fcd18c9678fb6"></a>eGamepadButtonBack&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba9df39174bdf58183f517151724092dac" name="adda856c8317e5219d3838e54f6ca640ba9df39174bdf58183f517151724092dac"></a>eGamepadButtonStart&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba61a40e97154c651fa413b89c739f4065" name="adda856c8317e5219d3838e54f6ca640ba61a40e97154c651fa413b89c739f4065"></a>eGamepadButtonGuide&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba851b8d97a257bcf6a40d943c08519dfc" name="adda856c8317e5219d3838e54f6ca640ba851b8d97a257bcf6a40d943c08519dfc"></a>eGamepadButtonLeftThumb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad7b628d4c94c1540889cc6e2c0890444" name="adda856c8317e5219d3838e54f6ca640bad7b628d4c94c1540889cc6e2c0890444"></a>eGamepadButtonRightThumb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba0341e1ae2653099b90c48bfb5f19ee11" name="adda856c8317e5219d3838e54f6ca640ba0341e1ae2653099b90c48bfb5f19ee11"></a>eGamepadButtonDpadUp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baee708b283ed8fb161c1fe1e716570723" name="adda856c8317e5219d3838e54f6ca640baee708b283ed8fb161c1fe1e716570723"></a>eGamepadButtonDpadRight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba48e5d5b1cc3a5193a7e14e7fe180e115" name="adda856c8317e5219d3838e54f6ca640ba48e5d5b1cc3a5193a7e14e7fe180e115"></a>eGamepadButtonDpadDown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba85f319f1102854792669d95aee71d35b" name="adda856c8317e5219d3838e54f6ca640ba85f319f1102854792669d95aee71d35b"></a>eGamepadButtonDpadLeft&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba148cdc2b996ffc7debf9335bff491479" name="adda856c8317e5219d3838e54f6ca640ba148cdc2b996ffc7debf9335bff491479"></a>eGamepadButtonEnd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bada803fc6d207291519303877888675f0" name="adda856c8317e5219d3838e54f6ca640bada803fc6d207291519303877888675f0"></a>eGamepadButtonLast&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640baa6a40f3eba9d14e1f5d58ae9f2689c25" name="adda856c8317e5219d3838e54f6ca640baa6a40f3eba9d14e1f5d58ae9f2689c25"></a>eGamepadButtonCross&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba1f35c0dccc4b7648820ad20ab5474990" name="adda856c8317e5219d3838e54f6ca640ba1f35c0dccc4b7648820ad20ab5474990"></a>eGamepadButtonCircle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba54058634364b5ffaf12f88fdaefacbe7" name="adda856c8317e5219d3838e54f6ca640ba54058634364b5ffaf12f88fdaefacbe7"></a>eGamepadButtonSquare&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640bad54357d12e2241efe84563a29238724b" name="adda856c8317e5219d3838e54f6ca640bad54357d12e2241efe84563a29238724b"></a>eGamepadButtonTriangle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda856c8317e5219d3838e54f6ca640ba40d8e0a4be2b962273a6d3ae674f3c1b" name="adda856c8317e5219d3838e54f6ca640ba40d8e0a4be2b962273a6d3ae674f3c1b"></a>eAllEnd&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a77f5a2f997060ed3d20d47565ac8faad" name="a77f5a2f997060ed3d20d47565ac8faad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f5a2f997060ed3d20d47565ac8faad">&#9670;&nbsp;</a></span>Mod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faad">le::input::Mod</a> : <a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faadabe988781e4e1de1c6a36fb698afbbe1f" name="a77f5a2f997060ed3d20d47565ac8faadabe988781e4e1de1c6a36fb698afbbe1f"></a>eNone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faada9e62f71ce009d65471fccb01fdb3245d" name="a77f5a2f997060ed3d20d47565ac8faada9e62f71ce009d65471fccb01fdb3245d"></a>eShift&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faada5677f2b1afa3fd6160c087c35c3f10a5" name="a77f5a2f997060ed3d20d47565ac8faada5677f2b1afa3fd6160c087c35c3f10a5"></a>eCtrl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faada449749529584a602aedac2269581bd74" name="a77f5a2f997060ed3d20d47565ac8faada449749529584a602aedac2269581bd74"></a>eAlt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faadac9c88affff6f7d1bfa7776585510aa7d" name="a77f5a2f997060ed3d20d47565ac8faadac9c88affff6f7d1bfa7776585510aa7d"></a>eSuper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faada03313000bddbe627fe74259a63974c64" name="a77f5a2f997060ed3d20d47565ac8faada03313000bddbe627fe74259a63974c64"></a>eCapsLock&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77f5a2f997060ed3d20d47565ac8faadab47d4037e1ca28b5a006254158e0436d" name="a77f5a2f997060ed3d20d47565ac8faadab47d4037e1ca28b5a006254158e0436d"></a>eNumLock&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

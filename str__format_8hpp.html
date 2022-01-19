@@ -48,12 +48,13 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#concepts">Concepts</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">str_format.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;concepts&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
@@ -71,21 +72,20 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacektl_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html">ktl::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptktl_1_1ostreamable.html">ktl::ostreamable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memTemplParams" colspan="2">template&lt;typename Ftr  = str_formatter, typename... Args&gt; </td></tr>
+<tr class="memitem:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memTemplParams" colspan="2">template&lt;typename Ftr  = str_formatter, ostreamable... Args&gt; </td></tr>
 <tr class="memitem:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a36aee688f73a36de9cda7edb3ed5a1bf">ktl::format</a> (std::string_view fmt, Args const &amp;... args)</td></tr>
 <tr class="memdesc:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format using Ftr and return a std::string.  <a href="namespacektl.html#a36aee688f73a36de9cda7edb3ed5a1bf">More...</a><br /></td></tr>
 <tr class="separator:a36aee688f73a36de9cda7edb3ed5a1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24be93f09b1551e85532eb45de50ba71"><td class="memTemplParams" colspan="2">template&lt;typename Ftr , typename T , typename... Ts&gt; </td></tr>
+<tr class="memitem:a24be93f09b1551e85532eb45de50ba71"><td class="memTemplParams" colspan="2">template&lt;typename Ftr , ostreamable T, ostreamable... Ts&gt; </td></tr>
 <tr class="memitem:a24be93f09b1551e85532eb45de50ba71"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#a24be93f09b1551e85532eb45de50ba71">ktl::detail::format_str</a> (std::ostream &amp;out, std::string_view fmt, T const &amp;t, Ts const &amp;... ts)</td></tr>
 <tr class="separator:a24be93f09b1551e85532eb45de50ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:afb652194d031dd9dd2cce50c6a1abdff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afb652194d031dd9dd2cce50c6a1abdff"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl_1_1detail.html#afb652194d031dd9dd2cce50c6a1abdff">ktl::detail::ostream_operator_defined_v</a> = ostream_defined&lt;T&gt;::value</td></tr>
-<tr class="separator:afb652194d031dd9dd2cce50c6a1abdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

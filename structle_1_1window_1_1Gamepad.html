@@ -65,10 +65,10 @@ Inheritance diagram for le::window::Gamepad:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae86d968ba431908724f573d3ef8fa28e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Gamepad.html#ae86d968ba431908724f573d3ef8fa28e">axis</a> (<a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">Axis</a> axis) const</td></tr>
-<tr class="separator:ae86d968ba431908724f573d3ef8fa28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c57c5e4b5ae971c7f5668cc15044e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Gamepad.html#a0c57c5e4b5ae971c7f5668cc15044e5d">pressed</a> (<a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">Key</a> button) const</td></tr>
-<tr class="separator:a0c57c5e4b5ae971c7f5668cc15044e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da70a50d00c5dffefa2720e562b892a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Gamepad.html#a3da70a50d00c5dffefa2720e562b892a">axis</a> (int axis) const noexcept</td></tr>
+<tr class="separator:a3da70a50d00c5dffefa2720e562b892a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc4b91f9939beddc699356ca73f03ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Gamepad.html#a3bc4b91f9939beddc699356ca73f03ef">pressed</a> (<a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a> button) const noexcept</td></tr>
+<tr class="separator:a3bc4b91f9939beddc699356ca73f03ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1window_1_1Joystick"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1window_1_1Joystick')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1window_1_1Joystick.html">le::window::Joystick</a></td></tr>
 <tr class="memitem:ac0bf10ef5aa8302f8109934c26394940 inherit pub_methods_structle_1_1window_1_1Joystick"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1window_1_1Joystick.html#ac0bf10ef5aa8302f8109934c26394940">name</a> () const</td></tr>
 <tr class="separator:ac0bf10ef5aa8302f8109934c26394940 inherit pub_methods_structle_1_1window_1_1Joystick"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,38 +84,54 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:add14639f6e3cd3087c3e7b88d2cba5a9 inherit pub_attribs_structle_1_1window_1_1Joystick"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae86d968ba431908724f573d3ef8fa28e" name="ae86d968ba431908724f573d3ef8fa28e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae86d968ba431908724f573d3ef8fa28e">&#9670;&nbsp;</a></span>axis()</h2>
+<a id="a3da70a50d00c5dffefa2720e562b892a" name="a3da70a50d00c5dffefa2720e562b892a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3da70a50d00c5dffefa2720e562b892a">&#9670;&nbsp;</a></span>axis()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a> le::window::Gamepad::axis </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1window.html#ac068701b5cc3c3a31911b64cdd171ed7">Axis</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>axis</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0c57c5e4b5ae971c7f5668cc15044e5d" name="a0c57c5e4b5ae971c7f5668cc15044e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c57c5e4b5ae971c7f5668cc15044e5d">&#9670;&nbsp;</a></span>pressed()</h2>
+<a id="a3bc4b91f9939beddc699356ca73f03ef" name="a3bc4b91f9939beddc699356ca73f03ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc4b91f9939beddc699356ca73f03ef">&#9670;&nbsp;</a></span>pressed()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool le::window::Gamepad::pressed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1window.html#a4084735a3ea5a75c95c1fe8cc87b6a0c">Key</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a9688a8b0790b320afdbb3b4ea817342f">u8</a>&#160;</td>
           <td class="paramname"><em>button</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

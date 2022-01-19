@@ -72,9 +72,9 @@ Inheritance diagram for ktl::policy_delegate&lt; StorePolicy, Args &gt;:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a1f2e2c52ef47d506443e57c1a629b5e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1policy__delegate.html#a1f2e2c52ef47d506443e57c1a629b5e9">policy_t</a> = StorePolicy</td></tr>
 <tr class="separator:a1f2e2c52ef47d506443e57c1a629b5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892588e85f7cf44f50aedab4a0577b96"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1policy__delegate.html#a892588e85f7cf44f50aedab4a0577b96">callback</a> = <a class="el" href="classktl_1_1move__only__function.html">move_only_function</a>&lt; void(Args const  &amp;...)&gt;</td></tr>
-<tr class="separator:a892588e85f7cf44f50aedab4a0577b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcf3ec1c96d47c5524c9e8605a9f356f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1policy__delegate.html#afcf3ec1c96d47c5524c9e8605a9f356f">signal</a> = typename <a class="el" href="classktl_1_1observer__store.html">observer_store</a>&lt; <a class="el" href="classktl_1_1policy__delegate.html#a892588e85f7cf44f50aedab4a0577b96">callback</a> &gt;::<a class="el" href="classktl_1_1observer__store.html#ad5131fca8411651b7eaed9ca2b4a6fef">handle</a></td></tr>
+<tr class="memitem:a1039922c9ac46503a2fa0c9add620653"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1policy__delegate.html#a1039922c9ac46503a2fa0c9add620653">callback</a> = <a class="el" href="classktl_1_1kfunction.html">kfunction</a>&lt; void(Args const  &amp;...)&gt;</td></tr>
+<tr class="separator:a1039922c9ac46503a2fa0c9add620653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf3ec1c96d47c5524c9e8605a9f356f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1policy__delegate.html#afcf3ec1c96d47c5524c9e8605a9f356f">signal</a> = typename <a class="el" href="classktl_1_1observer__store.html">observer_store</a>&lt; <a class="el" href="classktl_1_1policy__delegate.html#a1039922c9ac46503a2fa0c9add620653">callback</a> &gt;::<a class="el" href="classktl_1_1observer__store.html#ad5131fca8411651b7eaed9ca2b4a6fef">handle</a></td></tr>
 <tr class="separator:afcf3ec1c96d47c5524c9e8605a9f356f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename StorePolicy, typename... Args&gt;<br />
 class ktl::policy_delegate&lt; StorePolicy, Args &gt;</div><p >Delegate with customizable store policy. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a892588e85f7cf44f50aedab4a0577b96" name="a892588e85f7cf44f50aedab4a0577b96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892588e85f7cf44f50aedab4a0577b96">&#9670;&nbsp;</a></span>callback</h2>
+<a id="a1039922c9ac46503a2fa0c9add620653" name="a1039922c9ac46503a2fa0c9add620653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1039922c9ac46503a2fa0c9add620653">&#9670;&nbsp;</a></span>callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,7 +99,7 @@ class ktl::policy_delegate&lt; StorePolicy, Args &gt;</div><p >Delegate with cus
 template&lt;typename StorePolicy , typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classktl_1_1policy__delegate.html">ktl::policy_delegate</a>&lt; StorePolicy, Args &gt;::<a class="el" href="classktl_1_1policy__delegate.html#a892588e85f7cf44f50aedab4a0577b96">callback</a> =  <a class="el" href="classktl_1_1move__only__function.html">move_only_function</a>&lt;void(Args const&amp;...)&gt;</td>
+          <td class="memname">using <a class="el" href="classktl_1_1policy__delegate.html">ktl::policy_delegate</a>&lt; StorePolicy, Args &gt;::<a class="el" href="classktl_1_1policy__delegate.html#a1039922c9ac46503a2fa0c9add620653">callback</a> =  <a class="el" href="classktl_1_1kfunction.html">kfunction</a>&lt;void(Args const&amp;...)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -131,7 +131,7 @@ template&lt;typename StorePolicy , typename... Args&gt; </div>
 template&lt;typename StorePolicy , typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classktl_1_1policy__delegate.html">ktl::policy_delegate</a>&lt; StorePolicy, Args &gt;::<a class="el" href="classktl_1_1policy__delegate.html#afcf3ec1c96d47c5524c9e8605a9f356f">signal</a> =  typename <a class="el" href="classktl_1_1observer__store.html">observer_store</a>&lt;<a class="el" href="classktl_1_1policy__delegate.html#a892588e85f7cf44f50aedab4a0577b96">callback</a>&gt;::<a class="el" href="classktl_1_1observer__store.html#ad5131fca8411651b7eaed9ca2b4a6fef">handle</a></td>
+          <td class="memname">using <a class="el" href="classktl_1_1policy__delegate.html">ktl::policy_delegate</a>&lt; StorePolicy, Args &gt;::<a class="el" href="classktl_1_1policy__delegate.html#afcf3ec1c96d47c5524c9e8605a9f356f">signal</a> =  typename <a class="el" href="classktl_1_1observer__store.html">observer_store</a>&lt;<a class="el" href="classktl_1_1policy__delegate.html#a1039922c9ac46503a2fa0c9add620653">callback</a>&gt;::<a class="el" href="classktl_1_1observer__store.html#ad5131fca8411651b7eaed9ca2b4a6fef">handle</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

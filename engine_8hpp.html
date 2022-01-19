@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/include/engine/engine.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/levk/engine/include/levk/engine/engine.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,36 +41,27 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a7f531b1c37460085cedd304cb8df01d.html">engine</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_22fb9e805a3ef0d7bfe64c1f98d33877.html">levk</a></li><li class="navelem"><a class="el" href="dir_d5432766aeb61d1ec251296d15ef3c0c.html">engine</a></li><li class="navelem"><a class="el" href="dir_cd8d20e6109d7e7565beed787e25057c.html">include</a></li><li class="navelem"><a class="el" href="dir_44643f72f87ad9563d4696b50868916b.html">levk</a></li><li class="navelem"><a class="el" href="dir_f849c01ee3ef47a8e30bd901026536c2.html">engine</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">engine.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="services_8hpp.html">core/services.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="profiler_8hpp.html">core/utils/profiler.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="version_8hpp.html">core/version.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="driver_8hpp.html">engine/input/driver.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="receiver_8hpp.html">engine/input/receiver.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="scene_2space_8hpp.html">engine/scene/space.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="bootstrap_8hpp.html">graphics/context/bootstrap.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="context_8hpp.html">graphics/render/context.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="instance_8hpp.html">window/instance.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="profiler_8hpp.html">levk/core/utils/profiler.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="version_8hpp.html">levk/core/version.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="driver_8hpp.html">levk/engine/input/driver.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="receiver_8hpp.html">levk/engine/input/receiver.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scene_2space_8hpp.html">levk/engine/scene/space.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine.html">le::Engine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1CustomDevice.html">le::Engine::CustomDevice</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1CreateInfo.html">le::Engine::CreateInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1Engine_1_1GFX.html">le::Engine::GFX</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1Engine_1_1Service.html">le::Engine::Service</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -79,15 +70,14 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacele_1_1io"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1io.html">le::io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacele_1_1graphics"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1graphics.html">le::graphics</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacele_1_1window"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1window.html">le::window</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacele_1_1gui"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1gui.html">le::gui</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacele_1_1utils"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele_1_1utils.html">le::utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a52caf516170c4914ef453788905da7bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html#a52caf516170c4914ef453788905da7bb">le::Extent2D</a> = graphics::Extent2D</td></tr>
-<tr class="separator:a52caf516170c4914ef453788905da7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

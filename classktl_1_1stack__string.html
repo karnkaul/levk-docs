@@ -62,12 +62,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab95e51af27b37d56496a60fd8b8458c6"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#ab95e51af27b37d56496a60fd8b8458c6">stack_string</a> ()=default</td></tr>
 <tr class="separator:ab95e51af27b37d56496a60fd8b8458c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9257d60d9ee83c05fbda9c34d3b95514"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
-<tr class="memitem:a9257d60d9ee83c05fbda9c34d3b95514"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#a9257d60d9ee83c05fbda9c34d3b95514">stack_string</a> (char const (&amp;arr)[N]) noexcept</td></tr>
-<tr class="separator:a9257d60d9ee83c05fbda9c34d3b95514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e29d0df953b75fcaa14a7963eefd847"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a5e29d0df953b75fcaa14a7963eefd847"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#a5e29d0df953b75fcaa14a7963eefd847">stack_string</a> (std::string_view fmt, Args const &amp;... args) noexcept</td></tr>
-<tr class="separator:a5e29d0df953b75fcaa14a7963eefd847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b38285d07d6557a738c7adbcbc11cd"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; <br />
+requires (Capacity &gt; 0) template &lt;std::size_t N&gt;</td></tr>
+<tr class="memitem:a37b38285d07d6557a738c7adbcbc11cd"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#a37b38285d07d6557a738c7adbcbc11cd">stack_string</a> (char const (&amp;arr)[N]) noexcept</td></tr>
+<tr class="separator:a37b38285d07d6557a738c7adbcbc11cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd6b4fc1547605b3c1297a84b4a6b3b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
+requires (Capacity &gt; 0) template &lt;typename... Args&gt;</td></tr>
+<tr class="memitem:accd6b4fc1547605b3c1297a84b4a6b3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#accd6b4fc1547605b3c1297a84b4a6b3b">stack_string</a> (std::string_view fmt, Args const &amp;... args) noexcept</td></tr>
+<tr class="separator:accd6b4fc1547605b3c1297a84b4a6b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc60900e6a9571af8b133a0efeb32dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#a0fc60900e6a9571af8b133a0efeb32dd">stack_string</a> (std::string const &amp;str) noexcept</td></tr>
 <tr class="separator:a0fc60900e6a9571af8b133a0efeb32dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c2834abed82e42150b28c1b9d3e287"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
@@ -90,9 +92,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0913226cca30de3bbfc5bee555841809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93bbd9f74f0b7d03b7a786463dd582b3"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#a93bbd9f74f0b7d03b7a786463dd582b3">operator std::string_view</a> () const noexcept</td></tr>
 <tr class="separator:a93bbd9f74f0b7d03b7a786463dd582b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24e3cc9646fba15dd68e9ef54cf6378"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
-<tr class="memitem:ac24e3cc9646fba15dd68e9ef54cf6378"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1stack__string.html">stack_string</a>&lt; Capacity &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#ac24e3cc9646fba15dd68e9ef54cf6378">operator+=</a> (<a class="el" href="classktl_1_1stack__string.html">stack_string</a>&lt; N &gt; const &amp;rhs) noexcept</td></tr>
-<tr class="separator:ac24e3cc9646fba15dd68e9ef54cf6378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672838033ffc830032ad6885aacfde37"><td class="memTemplParams" colspan="2">template&lt;std::size_t Capacity&gt; <br />
+requires (Capacity &gt; 0) template &lt;std::size_t N&gt;</td></tr>
+<tr class="memitem:a672838033ffc830032ad6885aacfde37"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classktl_1_1stack__string.html">stack_string</a>&lt; Capacity &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classktl_1_1stack__string.html#a672838033ffc830032ad6885aacfde37">operator+=</a> (<a class="el" href="classktl_1_1stack__string.html">stack_string</a>&lt; N &gt; const &amp;rhs) noexcept</td></tr>
+<tr class="separator:a672838033ffc830032ad6885aacfde37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -103,6 +106,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Capacity&gt;<br />
+requires (Capacity &gt; 0)<br />
 class ktl::stack_string&lt; Capacity &gt;</div><p >Wrapper for stack allocated char buffer (null terminated) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab95e51af27b37d56496a60fd8b8458c6" name="ab95e51af27b37d56496a60fd8b8458c6"></a>
@@ -132,15 +136,16 @@ template&lt;std::size_t Capacity&gt; </div>
 
 </div>
 </div>
-<a id="a9257d60d9ee83c05fbda9c34d3b95514" name="a9257d60d9ee83c05fbda9c34d3b95514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9257d60d9ee83c05fbda9c34d3b95514">&#9670;&nbsp;</a></span>stack_string() <span class="overload">[2/5]</span></h2>
+<a id="a37b38285d07d6557a738c7adbcbc11cd" name="a37b38285d07d6557a738c7adbcbc11cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b38285d07d6557a738c7adbcbc11cd">&#9670;&nbsp;</a></span>stack_string() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t Capacity&gt; </div>
 <div class="memtemplate">
-template&lt;std::size_t N&gt; </div>
+template&lt;std::size_t N&gt; <br />
+requires (Capacity &gt; 0) template &lt;std::size_t N&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -162,15 +167,16 @@ template&lt;std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a5e29d0df953b75fcaa14a7963eefd847" name="a5e29d0df953b75fcaa14a7963eefd847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e29d0df953b75fcaa14a7963eefd847">&#9670;&nbsp;</a></span>stack_string() <span class="overload">[3/5]</span></h2>
+<a id="accd6b4fc1547605b3c1297a84b4a6b3b" name="accd6b4fc1547605b3c1297a84b4a6b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd6b4fc1547605b3c1297a84b4a6b3b">&#9670;&nbsp;</a></span>stack_string() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t Capacity&gt; </div>
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename... Args&gt; <br />
+requires (Capacity &gt; 0) template &lt;typename... Args&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -426,15 +432,16 @@ template&lt;std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="ac24e3cc9646fba15dd68e9ef54cf6378" name="ac24e3cc9646fba15dd68e9ef54cf6378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac24e3cc9646fba15dd68e9ef54cf6378">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
+<a id="a672838033ffc830032ad6885aacfde37" name="a672838033ffc830032ad6885aacfde37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672838033ffc830032ad6885aacfde37">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t Capacity&gt; </div>
 <div class="memtemplate">
-template&lt;std::size_t N&gt; </div>
+template&lt;std::size_t Capacity&gt; <br />
+requires (Capacity &gt; 0) template &lt;std::size_t N&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

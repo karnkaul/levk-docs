@@ -67,12 +67,12 @@ Inheritance diagram for le::FreeCam:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aacadd11ecdea78265c83dab4f5370c9b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#aacadd11ecdea78265c83dab4f5370c9b">Window</a> = <a class="el" href="classle_1_1window_1_1Instance.html">window::Instance</a></td></tr>
-<tr class="separator:aacadd11ecdea78265c83dab4f5370c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb48cb27ade81e4c76a71fef6450758"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#a0bb48cb27ade81e4c76a71fef6450758">Window</a> = <a class="el" href="classle_1_1window_1_1Window.html">window::Window</a></td></tr>
+<tr class="separator:a0bb48cb27ade81e4c76a71fef6450758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abefcd6526b362dccc328e25c552a42c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#abefcd6526b362dccc328e25c552a42c2">tick</a> (<a class="el" href="structle_1_1input_1_1State.html">input::State</a> const &amp;state, <a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">Time_s</a> dt, <a class="el" href="classle_1_1FreeCam.html#aacadd11ecdea78265c83dab4f5370c9b">Window</a> *win=nullptr)</td></tr>
+<tr class="memitem:abefcd6526b362dccc328e25c552a42c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#abefcd6526b362dccc328e25c552a42c2">tick</a> (<a class="el" href="structle_1_1input_1_1State.html">input::State</a> const &amp;state, <a class="el" href="namespacele.html#a05e65d34b625e4188f4f7c1f023a02f6">Time_s</a> dt, <a class="el" href="classle_1_1FreeCam.html#a0bb48cb27ade81e4c76a71fef6450758">Window</a> *win=nullptr)</td></tr>
 <tr class="separator:abefcd6526b362dccc328e25c552a42c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structle_1_1graphics_1_1Camera"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structle_1_1graphics_1_1Camera')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structle_1_1graphics_1_1Camera.html">le::graphics::Camera</a></td></tr>
 <tr class="memitem:a4297743c9ef3b1689f3400ce27ce467b inherit pub_methods_structle_1_1graphics_1_1Camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Camera.html#a4297743c9ef3b1689f3400ce27ce467b">look</a> (glm::vec3 const &amp;target, glm::vec3 const &amp;nUp=<a class="el" href="namespacele_1_1graphics.html#a685f0f61ed2e0f5e04acc9d46a266ae8">up</a>) noexcept</td></tr>
@@ -90,28 +90,28 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acf22649fd2ed411b7f1fde799d547596"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a38007a028d28170dd832754b5f2c1b3b"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a0b87e86124179baa5b211397e3934aa8">xz_speed</a> = 1.0f</td></tr>
-<tr class="separator:a38007a028d28170dd832754b5f2c1b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4378f7ed1ca059e488100c02557a555c"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a9f465b2a7c5641695e06ed099b7bd947">xz_speed_limit</a> = {0.01f, 100.0f}</td></tr>
-<tr class="separator:a4378f7ed1ca059e488100c02557a555c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be31ff44912634269d3cd7d2d21a15c"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a60ec699604213e88e6cdf974e75708cb">look_sens</a> = 1.0f</td></tr>
-<tr class="separator:a6be31ff44912634269d3cd7d2d21a15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf22649fd2ed411b7f1fde799d547596"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#acf22649fd2ed411b7f1fde799d547596">m_params</a></td></tr>
-<tr class="separator:acf22649fd2ed411b7f1fde799d547596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83582fb354102f00874bd0ce58eb6d95"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a2d040c498e94a07b4018314d91fbd420"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Range.html">input::Range</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#aaeb7d05775a9ba31d58e9944028c7696">mov_x</a> = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{input::Key::eA, input::Key::eD}</td></tr>
-<tr class="separator:a2d040c498e94a07b4018314d91fbd420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf60a92c30ae4f18bee60ee72d1b4e9d"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Range.html">input::Range</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a02c26b37aecda66ffec69d966ab5d165">mov_z</a> = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{input::Key::eS, input::Key::eW}</td></tr>
-<tr class="separator:acf60a92c30ae4f18bee60ee72d1b4e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a14356ab4ae69afa6d9a61886eab8b"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Range.html">input::Range</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a31daa18be5b7396c8f157b34628b7537">speed</a> = <a class="el" href="structle_1_1input_1_1AxisRange.html">input::AxisRange</a>{input::Axis::eMouseScrollY}</td></tr>
-<tr class="separator:a56a14356ab4ae69afa6d9a61886eab8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287ce940951881de2b3bb271b4a5e637"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#aeeaf0cdca37403d3310a3675b349cfca">look</a> = <a class="el" href="structle_1_1input_1_1Hold.html">input::Hold</a>{input::Key::eMouseButton2}</td></tr>
-<tr class="separator:a287ce940951881de2b3bb271b4a5e637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1145d0f9d67d37ed2712aa64ce0d0fd"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a251f654e55e77cf2d173b3e7be361598">look_toggle</a> = {input::Key::eL, input::Action::ePress, input::Mod::eCtrl}</td></tr>
-<tr class="separator:ad1145d0f9d67d37ed2712aa64ce0d0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83582fb354102f00874bd0ce58eb6d95"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#a83582fb354102f00874bd0ce58eb6d95">m_controls</a></td></tr>
-<tr class="separator:a83582fb354102f00874bd0ce58eb6d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ef34dbf5528bf31884f9b3aafb524b"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a3d8ff4fb1a0c2aac8ff1b4d36d67fcc7"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a0b87e86124179baa5b211397e3934aa8">xz_speed</a> = 1.0f</td></tr>
+<tr class="separator:a3d8ff4fb1a0c2aac8ff1b4d36d67fcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b96f3a86459395d056d7d188db718fa"><td class="memItemLeft" >&#160;&#160;&#160;glm::vec2&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a9f465b2a7c5641695e06ed099b7bd947">xz_speed_limit</a> = {0.01f, 100.0f}</td></tr>
+<tr class="separator:a8b96f3a86459395d056d7d188db718fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c3ba4050694b21f52003b70272f01a"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a60ec699604213e88e6cdf974e75708cb">look_sens</a> = 1.0f</td></tr>
+<tr class="separator:ae5c3ba4050694b21f52003b70272f01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ef34dbf5528bf31884f9b3aafb524b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#a58ef34dbf5528bf31884f9b3aafb524b">m_params</a></td></tr>
+<tr class="separator:a58ef34dbf5528bf31884f9b3aafb524b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af166ffec5871f1d1c120df34bf6c3a65"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:aeee955e487048f70985620e455caeb07"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Range.html">input::Range</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#aaeb7d05775a9ba31d58e9944028c7696">mov_x</a> = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baaaf8e253d25fc68de51cc68a360868d6">input::Key::eA</a>, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba38d66c22a1d4a2fa891333ea8bff88f4">input::Key::eD</a>}</td></tr>
+<tr class="separator:aeee955e487048f70985620e455caeb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af575354148a020b03cd931bd31eb6a0d"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Range.html">input::Range</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a02c26b37aecda66ffec69d966ab5d165">mov_z</a> = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0be6600367fee76523db94834295e241">input::Key::eS</a>, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba5d1dae965d94ba9ee15f1f9c03a5f525">input::Key::eW</a>}</td></tr>
+<tr class="separator:af575354148a020b03cd931bd31eb6a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6673bbe509d5d85efe9d4fd21ac167"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Range.html">input::Range</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a31daa18be5b7396c8f157b34628b7537">speed</a> = <a class="el" href="structle_1_1input_1_1AxisRange.html">input::AxisRange</a>{<a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96beab9bbeeff928186fc0231d05cd317e77a">input::Axis::eMouseScrollY</a>}</td></tr>
+<tr class="separator:a8f6673bbe509d5d85efe9d4fd21ac167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa626cee465c3042a07ed69ed0a08c4ba"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#aeeaf0cdca37403d3310a3675b349cfca">look</a> = <a class="el" href="structle_1_1input_1_1Hold.html">input::Hold</a>{<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba8b80e0c5102d47de5fb978986e463a04">input::Key::eMouseButton2</a>}</td></tr>
+<tr class="separator:aa626cee465c3042a07ed69ed0a08c4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9490f72fc952e9fc6803f9149bb15e"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a>&#160;&#160;&#160;<a class="el" href="classle_1_1FreeCam.html#a251f654e55e77cf2d173b3e7be361598">look_toggle</a> = {<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba6b8ea02d9d96e083b447f34911bb8735">input::Key::eL</a>, <a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2a20cb9d4ecd52623df4ac9fd8b23f9fb2">input::Action::ePress</a>, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faada5677f2b1afa3fd6160c087c35c3f10a5">input::Mod::eCtrl</a>}</td></tr>
+<tr class="separator:a7d9490f72fc952e9fc6803f9149bb15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af166ffec5871f1d1c120df34bf6c3a65"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#af166ffec5871f1d1c120df34bf6c3a65">m_controls</a></td></tr>
+<tr class="separator:af166ffec5871f1d1c120df34bf6c3a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcee821936d2f5bd283451f32f511f72"><td class="memItemLeft" align="right" valign="top">std::optional&lt; glm::vec2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1FreeCam.html#afcee821936d2f5bd283451f32f511f72">prev</a></td></tr>
 <tr class="separator:afcee821936d2f5bd283451f32f511f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structle_1_1graphics_1_1Camera"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structle_1_1graphics_1_1Camera')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structle_1_1graphics_1_1Camera.html">le::graphics::Camera</a></td></tr>
@@ -132,20 +132,20 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_structle_1_1graphics_1_1Camera"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_structle_1_1graphics_1_1Camera')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="structle_1_1graphics_1_1Camera.html">le::graphics::Camera</a></td></tr>
 <tr class="memitem:ace18860d9b1f1480d2fb4215efb8b842 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacele.html#afdb0b0272a15d6baa52cee8bfc6cf5f8">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Camera.html#ace18860d9b1f1480d2fb4215efb8b842">defaultFOV</a> = 45.0f</td></tr>
 <tr class="separator:ace18860d9b1f1480d2fb4215efb8b842 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad62146c7077bd4162742a38946111d0 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structle_1_1graphics_1_1Camera_1_1Z.html">Z</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Camera.html#aad62146c7077bd4162742a38946111d0">default3Dz</a> = {0.1f, 100.0f}</td></tr>
+<tr class="memitem:aad62146c7077bd4162742a38946111d0 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structle_1_1graphics_1_1Camera_1_1Z.html">Z</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Camera.html#aad62146c7077bd4162742a38946111d0">default3Dz</a> = {0.1f, 10000.0f}</td></tr>
 <tr class="separator:aad62146c7077bd4162742a38946111d0 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a562ef9392402e0f434b697ac18b03760 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structle_1_1graphics_1_1Camera_1_1Z.html">Z</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Camera.html#a562ef9392402e0f434b697ac18b03760">default2Dz</a> = {-1.0f, 1.0f}</td></tr>
+<tr class="memitem:a562ef9392402e0f434b697ac18b03760 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structle_1_1graphics_1_1Camera_1_1Z.html">Z</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1graphics_1_1Camera.html#a562ef9392402e0f434b697ac18b03760">default2Dz</a> = {-100.0f, 100.0f}</td></tr>
 <tr class="separator:a562ef9392402e0f434b697ac18b03760 inherit pub_static_attribs_structle_1_1graphics_1_1Camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aacadd11ecdea78265c83dab4f5370c9b" name="aacadd11ecdea78265c83dab4f5370c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacadd11ecdea78265c83dab4f5370c9b">&#9670;&nbsp;</a></span>Window</h2>
+<a id="a0bb48cb27ade81e4c76a71fef6450758" name="a0bb48cb27ade81e4c76a71fef6450758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb48cb27ade81e4c76a71fef6450758">&#9670;&nbsp;</a></span>Window</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1FreeCam.html#aacadd11ecdea78265c83dab4f5370c9b">le::FreeCam::Window</a> =  <a class="el" href="classle_1_1window_1_1Instance.html">window::Instance</a></td>
+          <td class="memname">using <a class="el" href="classle_1_1FreeCam.html#a0bb48cb27ade81e4c76a71fef6450758">le::FreeCam::Window</a> =  <a class="el" href="classle_1_1window_1_1Window.html">window::Window</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -174,7 +174,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1FreeCam.html#aacadd11ecdea78265c83dab4f5370c9b">Window</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1FreeCam.html#a0bb48cb27ade81e4c76a71fef6450758">Window</a> *&#160;</td>
           <td class="paramname"><em>win</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -195,7 +195,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a> le::FreeCam::look = <a class="el" href="structle_1_1input_1_1Hold.html">input::Hold</a>{input::Key::eMouseButton2}</td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a> le::FreeCam::look = <a class="el" href="structle_1_1input_1_1Hold.html">input::Hold</a>{<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba8b80e0c5102d47de5fb978986e463a04">input::Key::eMouseButton2</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,15 +223,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a> le::FreeCam::look_toggle = {input::Key::eL, input::Action::ePress, input::Mod::eCtrl}</td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Trigger.html">input::Trigger</a> le::FreeCam::look_toggle = {<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba6b8ea02d9d96e083b447f34911bb8735">input::Key::eL</a>, <a class="el" href="namespacele_1_1input.html#a2649b92a300307dc2a2fb3dc18561fb2a20cb9d4ecd52623df4ac9fd8b23f9fb2">input::Action::ePress</a>, <a class="el" href="namespacele_1_1input.html#a77f5a2f997060ed3d20d47565ac8faada5677f2b1afa3fd6160c087c35c3f10a5">input::Mod::eCtrl</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a83582fb354102f00874bd0ce58eb6d95" name="a83582fb354102f00874bd0ce58eb6d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83582fb354102f00874bd0ce58eb6d95">&#9670;&nbsp;</a></span></h2>
+<a id="af166ffec5871f1d1c120df34bf6c3a65" name="af166ffec5871f1d1c120df34bf6c3a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af166ffec5871f1d1c120df34bf6c3a65">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,8 +244,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acf22649fd2ed411b7f1fde799d547596" name="acf22649fd2ed411b7f1fde799d547596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf22649fd2ed411b7f1fde799d547596">&#9670;&nbsp;</a></span></h2>
+<a id="a58ef34dbf5528bf31884f9b3aafb524b" name="a58ef34dbf5528bf31884f9b3aafb524b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ef34dbf5528bf31884f9b3aafb524b">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1input_1_1Range.html">input::Range</a> le::FreeCam::mov_x = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{input::Key::eA, input::Key::eD}</td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Range.html">input::Range</a> le::FreeCam::mov_x = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640baaaf8e253d25fc68de51cc68a360868d6">input::Key::eA</a>, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba38d66c22a1d4a2fa891333ea8bff88f4">input::Key::eD</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -279,7 +279,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1input_1_1Range.html">input::Range</a> le::FreeCam::mov_z = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{input::Key::eS, input::Key::eW}</td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Range.html">input::Range</a> le::FreeCam::mov_z = <a class="el" href="structle_1_1input_1_1KeyRange.html">input::KeyRange</a>{<a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba0be6600367fee76523db94834295e241">input::Key::eS</a>, <a class="el" href="namespacele_1_1input.html#adda856c8317e5219d3838e54f6ca640ba5d1dae965d94ba9ee15f1f9c03a5f525">input::Key::eW</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -307,7 +307,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structle_1_1input_1_1Range.html">input::Range</a> le::FreeCam::speed = <a class="el" href="structle_1_1input_1_1AxisRange.html">input::AxisRange</a>{input::Axis::eMouseScrollY}</td>
+          <td class="memname"><a class="el" href="structle_1_1input_1_1Range.html">input::Range</a> le::FreeCam::speed = <a class="el" href="structle_1_1input_1_1AxisRange.html">input::AxisRange</a>{<a class="el" href="namespacele_1_1input.html#a0e5d27692a650594febda232933e96beab9bbeeff928186fc0231d05cd317e77a">input::Axis::eMouseScrollY</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">

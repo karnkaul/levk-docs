@@ -55,7 +55,7 @@ $(function() {
 <p><code>#include &lt;registry.hpp&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdens_1_1Component.html">dens::Component</a> =  not std::is_reference_v&lt;T&gt; and not std::is_const_v&lt;T&gt; and std::is_move_constructible_v&lt;T&gt;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdens_1_1Component.html">dens::Component</a> =  !std::is_reference_v&lt;T&gt; &amp;&amp; !std::is_const_v&lt;T&gt; &amp;&amp; std::is_move_constructible_v&lt;T&gt;</div>
 <div class="ttc" id="aconceptdens_1_1Component_html"><div class="ttname"><a href="conceptdens_1_1Component.html">dens::Component</a></div><div class="ttdoc">Components must be moveable values.</div><div class="ttdef"><b>Definition:</b> registry.hpp:11</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Components must be moveable values. </p>

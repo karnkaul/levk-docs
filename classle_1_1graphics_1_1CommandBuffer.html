@@ -85,7 +85,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab59c1ac6c226f6a32694a933e68fbc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a6a12b1d49a4938b44e77744f139be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a5a6a12b1d49a4938b44e77744f139be5">begin</a> (vk::CommandBufferUsageFlags usage, vk::CommandBufferInheritanceInfo const *inheritance={})</td></tr>
 <tr class="separator:a5a6a12b1d49a4938b44e77744f139be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a8d03e5d582b1c270cfee520ec7753a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a3a8d03e5d582b1c270cfee520ec7753a">beginRenderPass</a> (vk::RenderPass renderPass, vk::Framebuffer framebuffer, <a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a> extent, <a class="el" href="structle_1_1graphics_1_1CommandBuffer_1_1PassInfo.html">PassInfo</a> const &amp;info)</td></tr>
+<tr class="memitem:a3a8d03e5d582b1c270cfee520ec7753a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a3a8d03e5d582b1c270cfee520ec7753a">beginRenderPass</a> (vk::RenderPass renderPass, vk::Framebuffer framebuffer, <a class="el" href="namespacele.html#a485be98d73f6095de63633a639e1cde8">Extent2D</a> extent, <a class="el" href="structle_1_1graphics_1_1CommandBuffer_1_1PassInfo.html">PassInfo</a> const &amp;info)</td></tr>
 <tr class="separator:a3a8d03e5d582b1c270cfee520ec7753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db141c7c3e12c820831090c9ac81712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a5db141c7c3e12c820831090c9ac81712">setViewport</a> (vk::Viewport viewport) const</td></tr>
 <tr class="separator:a5db141c7c3e12c820831090c9ac81712"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,10 +112,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70e8916ebd40127dc8c3f6eae7454732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68ed49609d5ff5c04a72adf27b2e07c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a68ed49609d5ff5c04a72adf27b2e07c3">draw</a> (<a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> vertexCount, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> instanceCount=1, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstInstance=0, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> firstVertex=0) const</td></tr>
 <tr class="separator:a68ed49609d5ff5c04a72adf27b2e07c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2d67495214ba727e972811297c6188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#abe2d67495214ba727e972811297c6188">transitionImage</a> (<a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;image, vk::ImageAspectFlags aspect, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ab70730d5171b4a2efc9b93af73fad845">Layouts</a> transition, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#accc7131c38702179da83d998b92bae7d">Access</a> access, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a74a7b9b06617f11c5658b4f10040ec5e">Stages</a> stages) const</td></tr>
-<tr class="separator:abe2d67495214ba727e972811297c6188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab8d126d4033f036c6b0b4d3556cd3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a6ab8d126d4033f036c6b0b4d3556cd3c">transitionImage</a> (vk::Image im, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> lc, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> mc, <a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a> fm, vk::ImageAspectFlags as, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ab70730d5171b4a2efc9b93af73fad845">Layouts</a> tr, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#accc7131c38702179da83d998b92bae7d">Access</a> ac, <a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a74a7b9b06617f11c5658b4f10040ec5e">Stages</a> st) const</td></tr>
-<tr class="separator:a6ab8d126d4033f036c6b0b4d3556cd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab802780fa6b129d3a368481b56769915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ab802780fa6b129d3a368481b56769915">endRenderPass</a> ()</td></tr>
 <tr class="separator:ab802780fa6b129d3a368481b56769915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841c428b546b78ce139ad28e2cef4b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a841c428b546b78ce139ad28e2cef4b71">end</a> ()</td></tr>
@@ -347,7 +343,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#a539c57ca2ed3771e98b83b05ed438f1a">Extent2D</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele.html#a485be98d73f6095de63633a639e1cde8">Extent2D</a>&#160;</td>
           <td class="paramname"><em>extent</em>, </td>
         </tr>
         <tr>
@@ -919,116 +915,6 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">vk::Rect2D&#160;</td>
           <td class="paramname"><em>scissor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe2d67495214ba727e972811297c6188" name="abe2d67495214ba727e972811297c6188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe2d67495214ba727e972811297c6188">&#9670;&nbsp;</a></span>transitionImage() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void le::graphics::CommandBuffer::transitionImage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1Image.html">Image</a> const &amp;&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::ImageAspectFlags&#160;</td>
-          <td class="paramname"><em>aspect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ab70730d5171b4a2efc9b93af73fad845">Layouts</a>&#160;</td>
-          <td class="paramname"><em>transition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#accc7131c38702179da83d998b92bae7d">Access</a>&#160;</td>
-          <td class="paramname"><em>access</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a74a7b9b06617f11c5658b4f10040ec5e">Stages</a>&#160;</td>
-          <td class="paramname"><em>stages</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ab8d126d4033f036c6b0b4d3556cd3c" name="a6ab8d126d4033f036c6b0b4d3556cd3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab8d126d4033f036c6b0b4d3556cd3c">&#9670;&nbsp;</a></span>transitionImage() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void le::graphics::CommandBuffer::transitionImage </td>
-          <td>(</td>
-          <td class="paramtype">vk::Image&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>lc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>mc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacele.html#a3f346d22347931735dc4fb93ae793f40">u32</a>&#160;</td>
-          <td class="paramname"><em>fm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::ImageAspectFlags&#160;</td>
-          <td class="paramname"><em>as</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#ab70730d5171b4a2efc9b93af73fad845">Layouts</a>&#160;</td>
-          <td class="paramname"><em>tr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#accc7131c38702179da83d998b92bae7d">Access</a>&#160;</td>
-          <td class="paramname"><em>ac</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1CommandBuffer.html#a74a7b9b06617f11c5658b4f10040ec5e">Stages</a>&#160;</td>
-          <td class="paramname"><em>st</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

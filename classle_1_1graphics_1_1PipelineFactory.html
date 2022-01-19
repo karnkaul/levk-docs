@@ -66,13 +66,13 @@ Classes</h2></td></tr>
 Public Types</h2></td></tr>
 <tr class="memitem:a9c2f03ed0635b7b21755393b91398c6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a9c2f03ed0635b7b21755393b91398c6b">Spec</a> = <a class="el" href="structle_1_1graphics_1_1PipelineSpec.html">PipelineSpec</a></td></tr>
 <tr class="separator:a9c2f03ed0635b7b21755393b91398c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277efbace019a2bc232a6e36fb41aadb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a277efbace019a2bc232a6e36fb41aadb">GetSpirV</a> = <a class="el" href="classktl_1_1move__only__function.html">ktl::move_only_function</a>&lt; <a class="el" href="structle_1_1graphics_1_1SpirV.html">SpirV</a>(<a class="el" href="structle_1_1Hash.html">Hash</a>)&gt;</td></tr>
-<tr class="separator:a277efbace019a2bc232a6e36fb41aadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625d7f38a9f139380295a77d20d2a956"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a625d7f38a9f139380295a77d20d2a956">GetSpirV</a> = <a class="el" href="classktl_1_1kfunction.html">ktl::kfunction</a>&lt; <a class="el" href="structle_1_1graphics_1_1SpirV.html">SpirV</a>(<a class="el" href="structle_1_1Hash.html">Hash</a>)&gt;</td></tr>
+<tr class="separator:a625d7f38a9f139380295a77d20d2a956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9796d6970e9076ea5e00aa8296d79d3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a9796d6970e9076ea5e00aa8296d79d3e">PipelineFactory</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a277efbace019a2bc232a6e36fb41aadb">GetSpirV</a> &amp;&amp;getSpirV, <a class="el" href="structle_1_1graphics_1_1Buffering.html">Buffering</a> buffering=2_B) noexcept</td></tr>
-<tr class="separator:a9796d6970e9076ea5e00aa8296d79d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70bb72f600aa78c3509d26ed48f545c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#ad70bb72f600aa78c3509d26ed48f545c">PipelineFactory</a> (<a class="el" href="namespacele.html#acb60e5cf8dc59787af8eb64de062dd99">not_null</a>&lt; <a class="el" href="classle_1_1graphics_1_1VRAM.html">VRAM</a> * &gt; vram, <a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a625d7f38a9f139380295a77d20d2a956">GetSpirV</a> &amp;&amp;getSpirV, <a class="el" href="namespacele_1_1graphics.html#ab583fa5551a0115f6b093304938fafd0">Buffering</a> buffering=<a class="el" href="namespacele_1_1graphics.html#ab583fa5551a0115f6b093304938fafd0afb0a96d3d1a0e6fab85b4b99b193d204">Buffering::eDouble</a>) noexcept</td></tr>
+<tr class="separator:ad70bb72f600aa78c3509d26ed48f545c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d86d4f17430ca18df9579f8c4278b2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structle_1_1graphics_1_1Pipeline.html">Pipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a1d86d4f17430ca18df9579f8c4278b2e">get</a> (<a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a9c2f03ed0635b7b21755393b91398c6b">Spec</a> const &amp;<a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a1bb08d2cfd85d6594908a8ab755ddf1d">spec</a>, vk::RenderPass renderPass)</td></tr>
 <tr class="separator:a1d86d4f17430ca18df9579f8c4278b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714f56996bea1bf094f3ace9000b4067"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a714f56996bea1bf094f3ace9000b4067">contains</a> (<a class="el" href="structle_1_1Hash.html">Hash</a> <a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a1bb08d2cfd85d6594908a8ab755ddf1d">spec</a>, vk::RenderPass renderPass) const</td></tr>
@@ -98,14 +98,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a7375872bcbf32717881f1851f5ca0a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a277efbace019a2bc232a6e36fb41aadb" name="a277efbace019a2bc232a6e36fb41aadb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a277efbace019a2bc232a6e36fb41aadb">&#9670;&nbsp;</a></span>GetSpirV</h2>
+<a id="a625d7f38a9f139380295a77d20d2a956" name="a625d7f38a9f139380295a77d20d2a956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625d7f38a9f139380295a77d20d2a956">&#9670;&nbsp;</a></span>GetSpirV</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a277efbace019a2bc232a6e36fb41aadb">le::graphics::PipelineFactory::GetSpirV</a> =  <a class="el" href="classktl_1_1move__only__function.html">ktl::move_only_function</a>&lt;<a class="el" href="structle_1_1graphics_1_1SpirV.html">SpirV</a>(<a class="el" href="structle_1_1Hash.html">Hash</a>)&gt;</td>
+          <td class="memname">using <a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a625d7f38a9f139380295a77d20d2a956">le::graphics::PipelineFactory::GetSpirV</a> =  <a class="el" href="classktl_1_1kfunction.html">ktl::kfunction</a>&lt;<a class="el" href="structle_1_1graphics_1_1SpirV.html">SpirV</a>(<a class="el" href="structle_1_1Hash.html">Hash</a>)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -127,8 +127,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9796d6970e9076ea5e00aa8296d79d3e" name="a9796d6970e9076ea5e00aa8296d79d3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9796d6970e9076ea5e00aa8296d79d3e">&#9670;&nbsp;</a></span>PipelineFactory()</h2>
+<a id="ad70bb72f600aa78c3509d26ed48f545c" name="ad70bb72f600aa78c3509d26ed48f545c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70bb72f600aa78c3509d26ed48f545c">&#9670;&nbsp;</a></span>PipelineFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,14 +145,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a277efbace019a2bc232a6e36fb41aadb">GetSpirV</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classle_1_1graphics_1_1PipelineFactory.html#a625d7f38a9f139380295a77d20d2a956">GetSpirV</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>getSpirV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structle_1_1graphics_1_1Buffering.html">Buffering</a>&#160;</td>
-          <td class="paramname"><em>buffering</em> = <code>2_B</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacele_1_1graphics.html#ab583fa5551a0115f6b093304938fafd0">Buffering</a>&#160;</td>
+          <td class="paramname"><em>buffering</em> = <code><a class="el" href="namespacele_1_1graphics.html#ab583fa5551a0115f6b093304938fafd0afb0a96d3d1a0e6fab85b4b99b193d204">Buffering::eDouble</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>

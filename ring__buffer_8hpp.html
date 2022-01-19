@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/graphics/include/graphics/utils/ring_buffer.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/libs/ktl/include/ktl/ring_buffer.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,28 +41,48 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_29d2ad118978bc3ca2af8fdb6961b7f0.html">graphics</a></li><li class="navelem"><a class="el" href="dir_75f8932915965a1773397c30e279512c.html">include</a></li><li class="navelem"><a class="el" href="dir_e3dc554988c07ea3c8650875c240385a.html">graphics</a></li><li class="navelem"><a class="el" href="dir_adbe05143cf394da1d9a21360b70375a.html">utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_bd919531b1c58bc2a7298d45ea66ce9a.html">ktl</a></li><li class="navelem"><a class="el" href="dir_0f675e3e07b3dc0062c4f22255d425ad.html">include</a></li><li class="navelem"><a class="el" href="dir_09af6a88adc981668f2282e27b08bd04.html">ktl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#concepts">Concepts</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ring_buffer.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="error_8hpp.html">core/utils/error.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;span&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="ring__counter_8hpp.html">ring_counter.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle_1_1RingBuffer.html">le::RingBuffer&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classktl_1_1ring__buffer.html">ktl::ring_buffer&lt; T, Storage &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotating ring-buffer using contiguous storage. Overwrites on overflow.  <a href="classktl_1_1ring__buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacele"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacele.html">le</a></td></tr>
+<tr class="memitem:namespacektl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacektl.html">ktl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptktl_1_1RingElement.html">ktl::RingElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7c3e6c047ca6a929638415100ad360b0"><td class="memTemplParams" colspan="2">template&lt;RingElement T&gt; </td></tr>
+<tr class="memitem:a7c3e6c047ca6a929638415100ad360b0"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a7c3e6c047ca6a929638415100ad360b0">ktl::ring_buffer</a> (std::vector&lt; T &gt;) -&gt; ring_buffer&lt; T, std::vector&lt; T &gt; &gt;</td></tr>
+<tr class="separator:a7c3e6c047ca6a929638415100ad360b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c94c48bcf75df3cb6d505199d6dc43e"><td class="memTemplParams" colspan="2">template&lt;RingElement T, std::size_t N&gt; </td></tr>
+<tr class="memitem:a8c94c48bcf75df3cb6d505199d6dc43e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacektl.html#a8c94c48bcf75df3cb6d505199d6dc43e">ktl::ring_buffer</a> (std::array&lt; T, N &gt;) -&gt; ring_buffer&lt; T, std::array&lt; T, N &gt; &gt;</td></tr>
+<tr class="separator:a8c94c48bcf75df3cb6d505199d6dc43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

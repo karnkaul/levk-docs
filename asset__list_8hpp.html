@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/include/engine/assets/asset_list.hpp File Reference</title>
+<title>LittleEngineVk: /home/karnage/cpp/LittleEngineVk/levk/engine/include/levk/engine/assets/asset_list.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,7 +41,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a7f531b1c37460085cedd304cb8df01d.html">engine</a></li><li class="navelem"><a class="el" href="dir_740f89088fa43306fe6e792df15d866d.html">assets</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_22fb9e805a3ef0d7bfe64c1f98d33877.html">levk</a></li><li class="navelem"><a class="el" href="dir_d5432766aeb61d1ec251296d15ef3c0c.html">engine</a></li><li class="navelem"><a class="el" href="dir_cd8d20e6109d7e7565beed787e25057c.html">include</a></li><li class="navelem"><a class="el" href="dir_44643f72f87ad9563d4696b50868916b.html">levk</a></li><li class="navelem"><a class="el" href="dir_f849c01ee3ef47a8e30bd901026536c2.html">engine</a></li><li class="navelem"><a class="el" href="dir_ef21f24d363ed5d7f46ae3c01cbba667.html">assets</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -53,12 +53,13 @@ $(function() {
   <div class="headertitle"><div class="title">asset_list.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="services_8hpp.html">core/services.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ratio_8hpp.html">core/utils/ratio.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="std__hash_8hpp.html">core/utils/std_hash.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="scheduler_8hpp.html">dumb_tasks/scheduler.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="asset__store_8hpp.html">engine/assets/asset_store.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="scheduler_8hpp.html">dumb_tasks/scheduler.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kfunction_8hpp.html">ktl/async/kfunction.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="enum__flags_8hpp.html">ktl/enum_flags/enum_flags.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="services_8hpp.html">levk/core/services.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ratio_8hpp.html">levk/core/utils/ratio.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="std__hash_8hpp.html">levk/core/utils/std_hash.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__store_8hpp.html">levk/engine/assets/asset_store.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -74,9 +75,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab75b7a18e2019e3d8599e7403a406609"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab75b7a18e2019e3d8599e7403a406609"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#ab75b7a18e2019e3d8599e7403a406609">le::AssetList</a> = TAssetList&lt; std::function&lt; std::unique_ptr&lt; T &gt;()&gt; &gt;</td></tr>
-<tr class="separator:ab75b7a18e2019e3d8599e7403a406609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61dd2db6cc96540e305cf2eb990f89e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac61dd2db6cc96540e305cf2eb990f89e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#ac61dd2db6cc96540e305cf2eb990f89e">le::AssetList</a> = TAssetList&lt; <a class="el" href="classktl_1_1kfunction.html">ktl::kfunction</a>&lt; std::unique_ptr&lt; T &gt;()&gt; &gt;</td></tr>
+<tr class="separator:ac61dd2db6cc96540e305cf2eb990f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1acb5ce7ece335d9512dba1bc0ffff98"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1acb5ce7ece335d9512dba1bc0ffff98"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacele.html#a1acb5ce7ece335d9512dba1bc0ffff98">le::AssetLoadList</a> = TAssetList&lt; AssetLoadData&lt; T &gt; &gt;</td></tr>
 <tr class="separator:a1acb5ce7ece335d9512dba1bc0ffff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
